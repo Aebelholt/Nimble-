@@ -277,10 +277,12 @@ The codex reaches max Strain → it goes silent for a season; the knowledge insi
 - **Mage:** Force of Chaos. Whenever you cast a spell, you can choose to spend 1 less mana by Invoking Chaos: Roll on the Chaos Table. Whenever you crit you may also Invoke Chaos.
 - **Oathsworn:** Radiant Judgment. Whenever an enemy attacks you, roll and set aside 2d6 Judgment Dice (if you currently have none). They are expended on your next Reach attack this encounter, dealing their total as extra radiant damage (they are lost on a miss).
 - **Oathsworn:** Lay on Hands. Gain a magical pool of healing power. This pool’s maximum is always equal to 5×LVL and recharges on a Safe Rest. Action: Touch a target and spend any amount of remaining healing power to restore that many HP.
+- **Oathsworn:** Sacred Decree. Learn 1 Sacred Decree.
 - **Shadowmancer:** Pilfered Power. You can steal power from your Patron to cast tiered spells (DEX times before they notice). If you exceed this limit, your Patron damages you for half your max HP as recompense. This resets as you commune with your Patron during a Safe Rest.
 - **Shadowmancer:** Hollow One. Cut off from your Patron, you can no longer cast Shadow Blast, nor can you cast tiered spells using Pilfered Power. However, as a parting token, you have stolen a secret from your Patron: the magical Bonescythe, a weapon of sinew and bone, infused with shadowy magic.
 - **Shadowmancer:** Summon a magical Bonescythe, a melee weapon. (Reach 2) 2d12 slashing+DEX necrotic damage to EACH die (add 1 extra damage die every 5 Levels). On hit (or when combat ends): it shatters and must be resummoned to use again. Invocations affecting Shadow Blast affect your Bonescythe instead.
 - **Shepherd:** • Mend. 1 Action: (WIL/Safe Rest) It restores WIL d20 HP to a Dying creature.
+- **Shepherd:** My Buddy! Learn the Lifebinding Spirit cantrip.
 - **Shepherd:** Searing Light. 1 Action: (Reach 6) Whenever you heal HP, you may expend 1 use of Mend to damage another target for the amount of HP recovered.
 - **Songweaver:** Songweaver’s Inspiration. (2×WIL times/Safe Rest) Free Reaction: Allow an ally to reroll any single die or increase the result rolled by 1.
 - **Songweaver:** Perform! Whenever you perform in a place that inspires you, or exchange barbs with another competent wordsmith during a Safe Rest, you may choose different Songweaver options available to you.
@@ -311,7 +313,7 @@ Class arcana first, then found arcana. Each class arcanum belongs to the class n
 **Object.** A knucklebone worn smooth by a hundred years of handling, threaded on gut string. Taken from the body of a Berserker who died fighting in the Borderlands and was never retrieved. It arrived in a collector's satchel through one of the Market Square arches, and nobody knows which world it came from, or who carried it through.
 
 **Unlock.**
-- Defeat an enemy in single combat without any ally's assistance.
+- Defeat an enemy in single combat without any ally's assistance: no ally attacks it, heals you, or gives either of you a condition or advantage.
 - Keep one of the body's hand bones.
 - Spend a night alone with it before you sleep, and see how the ancestor fought.
 - Risk: At dawn, make a WIL save, DC 12. On a failure, the ancestor's last fight plays out in you: take 1 Wound you do not remember taking, and whatever hunted them learns where you sleep.
@@ -322,7 +324,7 @@ Class arcana first, then found arcana. Each class arcanum belongs to the class n
 - Echo Strike (Free, while Raging, spend 1 Fury Echo): Roll a Fury Die and set it aside with the rest, up to your maximum. This does not use your Rage action.
 - Death's Door (Free, 1/encounter, when you Rage, spend all 3 Fury Echo): For this encounter, your Rage does not end when you drop to 0 HP. Dying applies as normal.
 
-**Escalation.** If you drop to 0 HP with Death's Door active, the knucklebone cracks and stops working. Replace it with another ancestor's relic from the Borderlands, or take one from a worthy enemy. The GM decides where it is and how long the search takes. Whatever hunted the ancestor learns the bone has moved.
+**Escalation.** If you drop to 0 HP with Death's Door active, the knucklebone cracks at once and stops working. Your Rage still holds for the encounter. Replace it with another ancestor's relic from the Borderlands, or take one from a worthy enemy. The GM decides where it is and how long the search takes. Whatever hunted the ancestor learns the bone has moved.
 
 ### The Loaded Die
 `class_cheat` · class arcanum, Cheat
@@ -352,7 +354,7 @@ Class arcana first, then found arcana. Each class arcanum belongs to the class n
 - Plant the standard yourself, in plain sight of the enemy.
 - Risk: The first time you plant it, roll a d6. On a 1-3, someone in the watching crowd or the enemy ranks recognizes the standard, and the Knights of the Nameless King send an agent within two sessions.
 
-**Resource: Authority (pip tracker).** Authority (pip tracker, max 3). Gain 1 Authority whenever an ally within 4 spaces of the planted standard deals damage in a single attack equal to or greater than your level. Authority is strictly encounter-bound: all unspent pips are lost when combat ends, regardless of how many are held. It cannot be saved or stockpiled between encounters.
+**Resource: Authority (pip tracker).** Authority (pip tracker, max 3). Gain 1 Authority whenever an ally within 4 spaces of the planted standard deals damage in a single attack equal to or greater than your level, at most 1 Authority per attack. Authority is strictly encounter-bound: all unspent pips are lost when combat ends, regardless of how many are held. It cannot be saved or stockpiled between encounters.
 
 **Powers.**
 - Plant it (1 Action): Drive the standard into the ground within Reach 1. While it stands, allies within 4 spaces who can see it have advantage on their first attack each round. Spend 1 Authority to extend the aura by 2 spaces until your next turn.
@@ -370,7 +372,7 @@ Class arcana first, then found arcana. Each class arcanum belongs to the class n
 - Track a single creature across at least two sessions without losing the trail, through city, ruin, or wilderness. The creature must be aware it is being hunted, and must have tried to lose you at least once.
 - Risk: Each session you track the creature, the GM rolls a d6. On a 1, it doubles back and ambushes you, and it acts first in the next encounter.
 
-**Resource: Marks (d6 vs. accumulation).** Marks (d6 vs. accumulation). Your Mark count is the number of quarries the cord currently tracks. Roll 1d6 each time you use a cord ability (Mark a Quarry or Cord Pull). If you roll equal to or below your current Mark count, something near the quarry noticed you. A Mark clears when you confront that quarry directly or when you Cut its Mark. Resting does not clear Marks.
+**Resource: Marks (d6 vs. accumulation).** Marks (d6 vs. accumulation). Your Mark count is the number of quarries the cord currently tracks. Each quarry takes one token, so the cord tracks no more quarries than it has unburned tokens (six to begin with). Roll 1d6 each time you use a cord ability (Mark a Quarry or Cord Pull). If you roll equal to or below your current Mark count, something near the quarry noticed you. A Mark clears when you confront that quarry directly or when you Cut its Mark. Resting does not clear Marks.
 
 **Powers.**
 - Mark a Quarry (1 Action): Touch the cord to any physical trace of a creature: a footprint, a drop of blood, shed skin. Add 1 Mark. While that quarry is marked, you know its general direction and distance within 1 mile regardless of cover or concealment. This works on creatures you have not marked with Hunter's Mark, because the cord marks independently of the class ability.
@@ -390,10 +392,11 @@ Class arcana first, then found arcana. Each class arcanum belongs to the class n
 - Then cast a spell of the highest tier you can cast, with the lens held to your eye for the whole cast.
 - Risk: Roll a d6 when the cast ends. On a 1-2 the lens fails as its Escalation describes: take 1 Wound, the lens fuses to your face until the encounter ends, and Kartan is told. On a 3 or higher it bonds. If you flinch or remove the lens, the crack spreads and it is ruined.
 
-**Resource: Overcharge (d6 vs. accumulation).** Overcharge (d6 vs. accumulation). Roll 1d6 each time you cast a tiered spell while wearing the lens. If you roll equal to or below your current Overcharge, the lens fails (see Escalation). Overcharge clears when you hold the lens to the glass of the Observatory of Infinite Skies through one night.
+**Resource: Overcharge (d6 vs. accumulation).** Overcharge (d6 vs. accumulation). Roll 1d6 each time you cast a tiered spell while wearing the lens. If you roll equal to or below your current Overcharge, the lens fails (see Escalation). On a safe roll, add 1 Overcharge. Overcharge clears when you hold the lens to the glass of the Observatory of Infinite Skies through one night.
 
 **Powers.**
-- Controlled Upcast (while worn, on a safe roll, Control subclass only): When you cast a tiered spell and the d6 does not trigger, the spell gains one Upcast for free. Add 1 Overcharge. Chaos subclass: no upcast. On a safe roll, reduce Overcharge by 1 (minimum 0).
+- Controlled Upcast (on a safe roll, +1 Overcharge, Control subclass): The spell gains one Upcast for free.
+- Chaos Bloom (on a safe roll, +1 Overcharge, Chaos subclass): If you Invoke Chaos with this spell, roll on the Chaos Table with advantage.
 - Chaos Sight (Passive, while worn): You see magical auras on creatures and objects within 4 spaces without casting a spell. Illusions appear slightly wrong. Invisible creatures show as a faint shimmer.
 
 **Escalation.** When the d6 triggers, the glass heats to burning. Control Mage: you Lose Control, doing every option on the Control Table, with the GM choosing each time. Chaos Mage: you Invoke Chaos with disadvantage. Either way you take 1 Wound and cannot remove the lens until the encounter ends, because it has fused to your face. After the encounter, the Mages of Kartan sense the discharge and know its rough location. They send someone within 1 to 3 sessions. The fusing is now, the visitors are later.
@@ -408,13 +411,13 @@ Class arcana first, then found arcana. Each class arcanum belongs to the class n
 - The refusal must be genuine. The Verdict will know if you were simply afraid.
 - Risk: The GM starts a six-step clock for whoever was owed the verdict. It ticks whenever you are seen shielding the person you chose, and when it fills they act against you both.
 
-**Resource: Held Judgment (toggle).** Held Judgment (toggle, on/off). When your Radiant Judgment would roll Judgment Dice, you may put them on the scales instead, which turns the toggle on. While the scales hold dice, you roll no new Judgment Dice. Held dice stay on the scales past the end of the encounter. The toggle clears when you Release the dice on an attack, or when you perform a Sacred Decree (see Escalation).
+**Resource: Held Judgment (toggle).** Held Judgment (toggle, on/off). When your Radiant Judgment would roll Judgment Dice, you may put them on the scales instead, which turns the toggle on. While the scales hold dice, you roll no new Judgment Dice. Held dice stay on the scales past the end of the encounter. The toggle clears when you Release the dice on an attack, or when a Sacred Decree is performed for you (see Escalation).
 
 **Powers.**
 - Hold Judgment (Free, when Judgment Dice would be rolled): Keep the dice on the scales. While they are held, you see the remaining pan tilt when a creature within 6 spaces lies to you, visible only to you. You know. They do not know you know. You must decide what to do with that.
 - Release (Free, 1/encounter, on a Reach attack): Expend the held dice as Radiant Judgment normally does. This attack's radiant damage ignores armor.
 
-**Escalation.** If the scales hold dice through a full Safe Rest, they fuse with your Lay on Hands pool. You cannot spend from the pool until you perform a Sacred Decree at the Temple of the Three Sisters. The temple will want to know why.
+**Escalation.** If the scales hold dice through a full Safe Rest, they fuse with your Lay on Hands pool. You cannot spend from the pool until a Sacred Decree is performed at the Temple of the Three Sisters, by you or, if you know none yet, by a priest there. The temple will want to know why.
 
 ### The Hollow Contract
 `class_shadowmancer` · class arcanum, Shadowmancer
@@ -433,7 +436,7 @@ Class arcana first, then found arcana. Each class arcanum belongs to the class n
 - Patron's Margin (Free, 1/encounter, mark 2 Debt, patron path): Cast one tiered spell you know at +1 tier above your current maximum. The patron extends credit.
 - Reaver's Margin (Free, 1/encounter, mark 2 Debt, Reaver path): Your next Bonescythe strike this turn rolls 1 extra damage die.
 
-**Escalation.** When Debt reaches 4, the patron collects. It does not take power. It adds one sentence about your character to the contract, permanently. The GM decides what it says and reads it aloud. Debt clears. The sentence stays. A Reaver's former patron sends an agent to read the sentence to them in person.
+**Escalation.** When Debt reaches 4, the patron collects. It does not take power. It adds one sentence about your character to the contract, permanently. The GM decides what it says and reads it aloud. Debt clears. The sentence stays. A Reaver's contract still answers to the patron they left: that patron writes the sentence, and sends an agent to read it to them in person.
 
 ### The Bell of the Three Sisters
 `class_shepherd` · class arcanum, Shepherd
@@ -448,7 +451,7 @@ Class arcana first, then found arcana. Each class arcanum belongs to the class n
 **Resource: Resonance (pip tracker).** Resonance (pip tracker, max 4). Gain 1 Resonance by ringing the bell for an hour over a sickbed or a grave, at the Temple of the Three Sisters or among the tombs of the Cliffs of the Dead, and staying with whoever it is for until the hour ends. Resonance does not clear at a rest. Spent Resonance returns only this way.
 
 **Powers.**
-- Ring Out (Free, spend 1 Resonance): One Dying ally within 6 spaces hears the bell. On its next turn it acts as if it were not Dying: no 1-action limit, and no STR save to attack.
+- Ring Out (Free, spend 1 Resonance): One Dying ally within 6 spaces hears the bell. On its next turn it acts as if it were not Dying: no 1-action limit, and no STR save to attack. It is still Dying, and still takes Wounds from damage.
 - Chain Heal (Reaction, spend 2 Resonance): When your Lifebinding Spirit heals a creature to maximum HP, the excess healing carries to the nearest damaged ally within 4 spaces. The chain triggers once per Reaction.
 - Toll (1 Action, spend all 4): Ring the bell loudly. All Dying allies within 6 spaces gain 1 HP and are no longer Dying. You take 1 Wound.
 
@@ -464,10 +467,10 @@ Class arcana first, then found arcana. Each class arcanum belongs to the class n
 - Find someone who heard the setlist's owner perform, and learn the last song, which has no title.
 - Risk: Roll a d6 when the hour ends. On a 1-2, someone in that crowd knows the hand that wrote the setlist, and they find you within a session.
 
-**Resource: Crowd (d6 vs. accumulation).** Crowd (d6 vs. accumulation, max 4). Each time you Call the Song in combat, roll 1d6 against your current Crowd, then add 1 Crowd. If you roll equal to or below your Crowd before adding, someone recognises the song and has feelings about it: you have disadvantage on your next social roll with a stranger this session. Crowd clears when you play a full uninterrupted hour for a new audience of 20 or more.
+**Resource: Crowd (d6 vs. accumulation).** Crowd (d6 vs. accumulation, max 4). Each time you Call the Song in combat, roll 1d6 against your current Crowd, then add 1 Crowd. If you roll equal to or below your Crowd before adding, someone recognises the song and has feelings about it: you have disadvantage on your next social roll with a stranger this session. Crowd cannot pass 4; at 4 you cannot Call the Song until it clears. Crowd clears when you play a full uninterrupted hour for a new audience of 20 or more.
 
 **Powers.**
-- Call the Song (Free, in combat, 1/round): Name the song you are playing and roll against your Crowd. On a safe roll, you regain 1 spent use of Songweaver's Inspiration. This works once per encounter.
+- Call the Song (Free, in combat, 1/round): Name the song you are playing and roll against your Crowd. The first safe roll each encounter returns 1 spent use of Songweaver's Inspiration.
 - Protective Verse (Free, 1/encounter, remove 2 Crowd): A specific song from the setlist grants immunity to the Taunted or Frightened condition to all allies within 6 spaces until the end of the round.
 
 **Escalation.** When Crowd reaches 4, someone in the crowd knows who this setlist belonged to. They approach between encounters, or send someone. The GM decides who and what they want. They may be a fan. They may not.
@@ -486,7 +489,7 @@ Class arcana first, then found arcana. Each class arcanum belongs to the class n
 
 **Powers.**
 - Apply (1 Action, spend 1 Earthpulse): Smear the mud on yourself or a willing creature. While it is applied, the creature cannot be pushed, thrown, or moved by non-magical forced movement. Mud washes off in rain or after a Field Rest.
-- Extend the Beastshift (Free, spend 2 Earthpulse, once per Beastshift): Your Beastshift does not end when you cast a spell this encounter.
+- Extend the Beastshift (Free, spend 2 Earthpulse, once per Beastshift): Until the end of this encounter, casting spells does not end your Beastshift.
 - Mire (1 Action, spend all 4): Create a 3-space radius of difficult terrain centered on you that lasts until the end of the encounter. The ground thickens and pulls. Any creature that starts its turn in the mire is Slowed.
 
 **Escalation.** When the jar is empty, mud already applied does not dry, but no new mud can be applied until the jar is refilled. If the jar breaks, the mud it held dries at once and all its effects end. A skilled craftsperson can repair a broken jar, but the marshes must still refill it. Each time you return to refill it, the marshes have changed, and the GM says how.
@@ -565,7 +568,7 @@ Class arcana first, then found arcana. Each class arcanum belongs to the class n
 **Powers.**
 - Name It (Action, spend 1 Eye): Choose one creature you can see. You learn its True Name and have advantage on checks against it.
 - Named (Passive): You always know the direction and distance of any creature you have Named.
-- Speak the Name (Reaction, 1/encounter): A Named creature loses its next action. WIL DC 14 negates; Solo creatures save with advantage.
+- Speak the Name (Reaction, 1/encounter, when a Named creature you can see starts its turn): It loses one action this turn. WIL DC 14 negates; Solo creatures save with advantage.
 
 **Escalation.** Named creatures learn your name and heading each dawn. When the ninth eye closes, the axe speaks your True Name and all nine hear it. One engraved eye is scraped blank.
 
@@ -582,7 +585,7 @@ Class arcana first, then found arcana. Each class arcanum belongs to the class n
 **Resource: Sand (pip tracker).** Sand (pip tracker, max 3). Spend 1 Sand each time you Turn Back. Regain 1 by returning to the place where you last turned time back and letting the glass run for an hour. Sand returns only this way.
 
 **Powers.**
-- Turn Back (Reaction, spend 1 Sand): Any die roll you can see is rerolled. The new result stands.
+- Turn Back (Reaction, spend 1 Sand, after a die you can see is rolled and before its result is applied): The die is rerolled. The new result stands.
 - Sand Sense (Passive): You always know the exact time, and you can tell when a clock, a calendar, or a witness near you has it wrong.
 
 **Escalation.** When the last Sand falls, the original result happened somewhere. Within a session an Echo of you arrives carrying its consequences, and it wants the glass.
@@ -639,10 +642,10 @@ Class arcana first, then found arcana. Each class arcanum belongs to the class n
 **Resource: Tithe (pip tracker).** Tithe (pip tracker, max 3). Gain 1 Tithe each time you Call In. Tithe clears only when you do the patron a favor the GM presents.
 
 **Powers.**
-- Call In (Action, +1 Tithe): One small, specific impossibility. A door opens, a lie is believed, or a creature within 6 spaces loses its next action (WIL save, DC 13, negates).
+- Call In (Action, +1 Tithe): Name one small, specific impossibility, and the GM approves it before you take the Tithe. Examples: a door opens, a lie is believed, or a creature within 6 spaces loses its next action (WIL save, DC 13, negates).
 - Warm (Passive): The symbol grows hot when a worshipper of the Lower Twelve is within 6 spaces.
 
-**Escalation.** If you Call In with 3 Tithe, the patron collects first. Roll a d6. 1 Newt: tiny and actionless for 3 rounds. 2 Imps: lose 2 random items. 3 Salt ring: you cannot cross it until it breaks. 4 Cobwebs: no arcanum use until you atone. 5 Nemesis: someone is born who will hunt you. 6 Wither: take 1 Wound.
+**Escalation.** If you Call In with 3 Tithe, the patron collects first. Roll a d6. 1 Newt: you are Tiny and Incapacitated for 3 rounds. 2 Imps: lose 2 random items. 3 Salt ring: you cannot cross it until it breaks. 4 Cobwebs: no arcanum use until you atone. 5 Nemesis: someone is born who will hunt you. 6 Wither: take 1 Wound.
 
 ### The Valkyrie's Feather
 `valkyries_feather` · found, Minor
@@ -654,7 +657,7 @@ Class arcana first, then found arcana. Each class arcanum belongs to the class n
 - Learn the warrior's story
 - Risk: 1 in 20 the valkyrie comes for the grave-robber before you finish.
 
-**Resource: Tally (d6 vs. accumulation).** Tally (d6 vs. accumulation). Add 1 Tally each time you use Spared, then roll a d6. If it rolls equal to or under your Tally, a valkyrie comes for the spared life (see Escalation). Tally clears only when you carry the feather back to its stone in the grave it came from.
+**Resource: Tally (d6 vs. accumulation).** Tally (d6 vs. accumulation). Add 1 Tally each time you use Spared, then roll a d6. If it rolls equal to or under your Tally, a valkyrie comes for the spared life (see Escalation). Tally has no maximum, so at 6 or more every Spared calls her. Tally clears only when you carry the feather back to its stone in the grave it came from.
 
 **Powers.**
 - Spared (Reaction, 1/encounter, +1 Tally): You or an ally within 6 spaces stays at 1 HP instead of dropping to 0.
@@ -694,9 +697,9 @@ Class arcana first, then found arcana. Each class arcanum belongs to the class n
 
 **Powers.**
 - Thorned Bark (Passive): Defense 6+DEX (max 2) and advantage on Stealth in forests and jungles. Each Burden gives -1 Speed.
-- Snare (Reaction, +1 Burden): When a melee weapon hits you, the attacker makes a STR save, DC 13, or the weapon sticks. A creature using natural weapons is Grappled to you until it passes the save, and adds no Burden.
+- Snare (Reaction, +1 Burden): When a melee weapon hits you, the attacker makes a STR save, DC 13, or the weapon sticks. The attacker must let go of it or stay adjacent to you; anyone can pry a stuck weapon free with an action and a Might check, DC 13. A creature using natural weapons is Grappled to you until it passes the save, and adds no Burden.
 
-**Escalation.** When Burden would pass 3, the sap seals you in: you are Restrained until someone spends an action and passes a Might check, DC 14, to cut you out. Then the harness gives half its Defense until it is glued again with fresh sap.
+**Escalation.** When a fourth weapon would stick, the sap seals you in: you are Restrained until someone spends an action and passes a Might check, DC 14, to cut you out. Then the harness gives half its Defense until it is glued again with fresh sap.
 
 ### The Hellhide
 `hellhide` · found, Major
@@ -714,7 +717,7 @@ Class arcana first, then found arcana. Each class arcanum belongs to the class n
 **Powers.**
 - Demon Plate (Passive): Defense 14, with no STR requirement.
 - Terror (Passive): The first time a creature sees you in an encounter, it makes a WIL save, DC 14, or has -1 to all its rolls near you for the encounter.
-- Command (Action, +1 Thirst, 1/encounter): Order undead or a demon to obey one command.
+- Command (Action, +1 Thirst, 1/encounter): One undead or demon within 6 spaces that can hear you makes a WIL save, DC 14. On a failure, on its next turn it obeys one command of five words or fewer. It will not harm itself. Solo creatures save with advantage.
 
 **Escalation.** You cannot willingly part with the hide, and you will hunt anyone who takes it. If you end a day with 3 Thirst, it drinks from you at dawn: take 1 Wound that cannot heal while you wear it. If you die in it, you rise as a spectre.
 
@@ -733,7 +736,7 @@ Class arcana first, then found arcana. Each class arcanum belongs to the class n
 
 **Powers.**
 - Iron Joints (Passive): Defense 18, with no STR requirement.
-- Boiler Fire (spend 1 Steam): Choose one. A wrist crossbow shot (Free). A hidden blade strike (Action). Advantage on one Might check.
+- Boiler Fire (spend 1 Steam): Choose one. Wrist crossbow (Free, 1/turn): a ranged attack, Range 8, 1d8+DEX piercing, no loading. Hidden blade (Action): a melee attack, 1d8+STR slashing. Boiler surge (Free): advantage on one Might check.
 
 **Escalation.** At 0 Steam the servos lock: Speed 2 and disadvantage on DEX until stoked. If you spend the last Steam in combat, the boilers vent: 1d6 fire to you and everyone adjacent.
 
@@ -804,7 +807,7 @@ Class arcana first, then found arcana. Each class arcanum belongs to the class n
 **Resource: Teeth (finite never-refill).** Teeth (finite, 1d4+1, rolled at unlock). Each Sow uses up one tooth. A sown tooth never comes back, and nothing refills the satchel.
 
 **Powers.**
-- Sow (Action, spend 1 Tooth): An armored warrior rises from the ground beside you and obeys you for an hour. The GM uses a soldier stat block of your level.
+- Sow (Action, spend 1 Tooth): An armored warrior rises from the ground beside you and obeys you for an hour. It fights as a minion (GM guide): it attacks with a d8 (d10 from level 5, d12 from level 9), any damage destroys it, and all your warriors move and attack together on your turn.
 - Dragon's Click (Passive): The teeth click louder within 6 spaces of a dragon or dragonkin.
 
 **Escalation.** If two or more warriors stand and one is struck by surprise, they turn on each other, then on whoever is closest. Dragons and their kin can smell the satchel. When the last tooth is gone, the satchel is just a bag.
@@ -859,7 +862,7 @@ Class arcana first, then found arcana. Each class arcanum belongs to the class n
 - Hold the fragments together for 10 minutes and they fuse
 - Risk: Whoever carries another fragment feels yours wake. Roll a d6 when they fuse: on a 1-2 the fragments grind against each other and you take 1 Wound.
 
-**Resource: Runes (session-bound).** Runes (session-bound, up to 9, one per fused fragment). Each fragment carries one rune, rolled on a d8 when it fuses. Each rune works once, then goes dark. A dark rune relights when you carve it into a gravestone or a standing stone and speak aloud the name of someone who died for something.
+**Resource: Runes (pip tracker).** Runes (pip tracker, up to 9, one per fused fragment). Each fragment carries one rune, rolled on a d8 when it fuses. Each rune works once, then goes dark. A dark rune relights when you carve it into a gravestone or a standing stone and speak aloud the name of someone who died for something.
 
 **Powers.**
 - Fehu (Action): An item you touch gives +1 to its user for an hour.
@@ -871,7 +874,7 @@ Class arcana first, then found arcana. Each class arcanum belongs to the class n
 - Eihwaz (Reaction): Reduce one hit's damage by your level plus STR.
 - Sowilo (Action): Sunlight blinds every enemy within 6 spaces until your next turn. DEX save, DC 13, negates.
 
-**Escalation.** Fragments call to each other, and other holders follow the call. When the ninth fuses, its rune wakes once: change one result, even a past one. Then the stone falls to dust.
+**Escalation.** Fragments call to each other, and other holders follow the call. When the ninth fuses, its rune wakes once: change the result of one roll made this session, even one already applied, and play on from there. Then the stone falls to dust.
 
 ### The Binding Linens
 `binding_linens` · found, Minor
@@ -886,10 +889,10 @@ Class arcana first, then found arcana. Each class arcanum belongs to the class n
 **Resource: Strips (pip tracker).** Strips (pip tracker, max 3). Spend 1 Strip per Hold Back. Regain 1 by preparing and burying someone who has no one to do it for them. Strips return only this way.
 
 **Powers.**
-- Hold Back (Action, spend 1 Strip): Wrap a Dying creature. It stops dying and cannot die from Wounds until it is unwrapped or the next dawn, but it cannot act.
+- Hold Back (Action, spend 1 Strip): Wrap a Dying creature. It stays at 0 HP but is no longer Dying: it takes no Wounds from damage, and it cannot act. When it is unwrapped, or at the next dawn, it is Dying again.
 - Myrrh (Passive): You know at a glance how long a body has been dead and whether it was ever bound.
 
-**Escalation.** Anyone wrapped a second time comes back a little less. They forget one thing they loved, and the GM chooses what.
+**Escalation.** Any creature wrapped a second time comes back a little less. It forgets one thing it loved, and the GM chooses what.
 
 ### The Rusted Spear
 `rusted_spear` · found, Minor
@@ -905,9 +908,9 @@ Class arcana first, then found arcana. Each class arcanum belongs to the class n
 
 **Powers.**
 - Spare (Free): When you would drop a creature to 0 HP with the spear, it falls stable instead, and its wound will not close until you choose to mend it.
-- Scrape (Action, spend 1 Rust): Scrape rust into a wound to heal 1 Wound, or to close a wound the spear made.
+- Scrape (Action, spend 1 Rust): Scrape rust into a wound to heal 1 Wound on a creature you touch, yourself included, or to close a wound the spear made.
 
-**Escalation.** At 0 Rust the blade is clean and bright. The next wound it gives never closes: a hero loses 1 max Wound for good, and a creature bleeds out by the end of the scene.
+**Escalation.** At 0 Rust the blade is clean and bright. The next creature it hits takes a wound that never closes: a hero gains a Wound that cannot heal and loses 1 max Wound for good, and a creature bleeds out by the end of the scene.
 
 ### The Derelict Harpoon
 `derelict_harpoon` · found, Minor
@@ -919,13 +922,13 @@ Class arcana first, then found arcana. Each class arcanum belongs to the class n
 - Make one throw that hauls you across a gap you could not have jumped
 - Risk: Whatever lived aboard the hulk feels the line cut. Roll a d6: on a 1-2 it follows the line through the arch within a session.
 
-**Resource: Slack (d6 vs. accumulation).** Slack (d6 vs. accumulation). Each time you Haul, roll a d6 against your current Slack, then add 1 Slack. If you roll equal to or below your Slack before adding, the line snarls (see Escalation). Slack clears when you carry a length of the line back to a derelict hull in Drendaan and splice it into the strand.
+**Resource: Slack (d6 vs. accumulation).** Slack (d6 vs. accumulation). Each time you Haul, roll a d6 against your current Slack, then add 1 Slack. If you roll equal to or below your Slack before adding, the line snarls (see Escalation). Slack has no maximum, so at 6 or more every Haul snarls. Slack clears when you carry a length of the line back to a derelict hull in Drendaan and splice it into the strand.
 
 **Powers.**
 - Haul (Action, Range 12, +1 Slack): Make a ranged attack with the harpoon. On a hit, choose one: pull yourself to the target, or pull a Medium or smaller target up to 6 spaces toward you. A pulled creature falls Prone and can make a STR save, DC 13, to resist.
 - Anchor (Free, 1/round, after a Haul that hits): Plant the line. The target cannot move more than 6 spaces from you until your next turn or until you let go (Free).
 
-**Escalation.** When the d6 triggers, the line snarls around you or your target, the GM's choice. Both of you are Restrained until someone spends an action to cut it. The cut length keeps glowing, and whatever lived aboard the hulk follows it through the arch.
+**Escalation.** When the d6 triggers, the line snarls around you or your target, the GM's choice. Both of you are Restrained until either of you, or anyone adjacent, spends an action to cut it. The cut length keeps glowing, and whatever lived aboard the hulk follows it through the arch.
 
 ### The Seekers' Provenance Ledger
 `provenance_ledger` · found, Minor
@@ -959,7 +962,7 @@ Class arcana first, then found arcana. Each class arcanum belongs to the class n
 **Resource: Truce (toggle).** Truce (toggle, on/off). Strike the stick on a table to call a Truce, which turns it on. It turns off when the parley ends, when you end it, or when anyone attempts violence under it. Once off, it cannot be turned on again until you have brokered a meeting between two enemies who would not otherwise have met, and settled the tab for it at the Black Goat's Tavern.
 
 **Powers.**
-- Call a Truce (Action, turn Truce on): Name a place and up to six people in it. For an hour, or until the parley ends, a named creature that tries to attack another named creature makes a WIL save, DC 14. On a failure the attack does not happen and the Truce ends.
+- Call a Truce (Action, turn Truce on): Name a place and up to six people in it. For an hour, or until the parley ends, a named creature that tries to attack another named creature makes a WIL save, DC 14. On a failure the attack does not happen. Either way, the Truce ends.
 - Read the Notches (Passive): When you hold the stick at a table, you know who in the room owes whom, and whether the debt is money, a favor, or blood.
 
 **Escalation.** If the Truce breaks, the stick burns your palm for 1 Wound, and the Black Goat's wardens come for whoever broke it within a session. Vynan Halfhorn will want to know why the peace failed under his stick.

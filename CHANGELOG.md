@@ -81,6 +81,14 @@ See `analysis/reassessment.md` (design traps, double-dipping, your table) and `a
 - **New audit check:** `name_clash`, no power may share its name with a class ability.
 - **Recommended, not changed:** cut filler passives; vary the seven identical d6 risks; give open-ended escalations a d6 list; re-tier the Forgotten Key (campaign-shaping in Sejr) and rule on Hexing Needles' "attack rolls"; add an off-screen refill rule for in-city refills; re-price Wound-only costs for a table where nobody dies.
 
+### Blind audit pass
+A second model audited the deck from `analysis/blind_audit_prompt.md`. Triage in `analysis/blind_audit_triage.md`.
+- **Fixed (20 cards):** Mage Chaos mages now gain Overcharge (the lens had no risk for them); Hellhide's Command has a save, range, duration and scope; Kettle Plate's crossbow has stats; Binding Linens states the wrapped target's condition; Tally-Stick, Songweaver, Commander and Pitch-Sap Harness contradictions removed; Hourglass and Axe reactions have triggers; Rune Fragment relabelled and its ninth rune bounded; accumulation trackers state their stopping rules; Sown Teeth warriors use the GM guide's minion rules; Berserker, Shepherd, Stormshifter, Rusted Spear, Unpaid Favor and Shadowmancer wording tightened.
+- **Found while checking:** a level 1-3 Oathsworn knows no Sacred Decree, so a temple priest can now perform the one the Broken Verdict needs.
+- **Prompt fixed:** it now quotes Lifebinding Spirit and Sacred Decree, which the auditor flagged as unverified.
+- **Rejected:** six findings, with reasons in the triage. Their power scale was not adopted.
+- **Open:** eight decisions, listed at the end of the triage.
+
 ## Diversity, found pool: before and after
 
 | | Before (25) | After (24) |
