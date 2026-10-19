@@ -101,7 +101,9 @@ for (const c of active.filter(c => c.kind === "class")) {
   const gid = c.reward && c.reward.guild;
   if (!guilds.find(g => g.id === gid && g.arcanum === c.id)) fail(`${c.id}: reward guild "${gid}" missing or does not give this card`);
 }
-ok(`${Object.keys(gdata).length} guilds checked against classes and cards`);
+const SKILLS = ["Arcana", "Examination", "Finesse", "Influence", "Insight", "Lore", "Might", "Naturecraft", "Perception", "Stealth"];
+for (const g of guilds) if (!SKILLS.includes(g.teaches.split(" ")[0])) fail(`guild ${g.name} teaches "${g.teaches}", not a Nimble skill`);
+ok(`${Object.keys(gdata).length} guilds checked against classes, cards and Nimble skills`);
 
 // Roll every card.
 for (const name of Object.keys(data)) {

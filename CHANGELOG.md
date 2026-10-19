@@ -106,6 +106,11 @@ A second model audited the deck from `analysis/blind_audit_prompt.md`. Triage in
 - **Clarified:** Echo Strike dice follow Fury Die rules; Cord Pull's Slowed timing; Reaver's Margin adds one d12; Extend the Beastshift still ends at 0 HP; Last Breath ignores your own summons; Spared causes no Wound or Dying; Tide-Coat (Leather), Pitch-Sap (Mail), Hellhide and Kettle Plate (Plate) name their armor type.
 - `tools/export_audit_cards.py` rebuilds the cards-only audit files.
 
+### Blind audit v3 triage
+- A second session audited with full rules access; result in `analysis/blind_audit_v3_result.md`, triage in `analysis/blind_audit_v3_triage.md`.
+- **Rules fixes on 21 cards and the guilds:** Commander Escalation no longer fires every fight; Mage and Shadowmancer work before level 3; guilds teach Nimble skills; guild and card backstories agree; plus wording (Dazed, Incapacitated, natural 20, Influence check, encounter durations).
+- Nine power calls and three table rules wait on the GM.
+
 ## Diversity, found pool: before and after
 
 | | Before (25) | After (24) |
