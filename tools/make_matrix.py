@@ -1,6 +1,11 @@
 #!/usr/bin/env python3
-"""Generate analysis/matrix.md from data/sejr_arcana.json (matrix blocks)."""
-import json, pathlib, collections
+"""Generate a diversity matrix from data/sejr_arcana.json (matrix blocks).
+
+Usage: make_matrix.py [output path]. analysis/matrix.md is the Step 1 snapshot of the
+rebuilt set before any rework; write later runs to another path (analysis/matrix_after.md).
+The cluster and gap text below describes the Step 1 set.
+"""
+import json, pathlib, collections, sys
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 cards = json.loads((ROOT / "data/sejr_arcana.json").read_text())
@@ -64,5 +69,6 @@ Origin column cites the setting where the card names one. A value of "unspecifie
 - **Looks.** Six worn armors, several jars and cases (Fairy Jar, Hollow Vessel, Black Lotus Case, the Sul Hide tank), three weapons (Axe, Apology Blade, Rusted Spear). No instrument among the found cards, no tool, no vehicle, no animal companion, no book or map.
 """
 (ROOT / "analysis").mkdir(exist_ok=True)
-(ROOT / "analysis/matrix.md").write_text(out)
-print("matrix.md written")
+target = pathlib.Path(sys.argv[1]) if len(sys.argv) > 1 else ROOT / "analysis/matrix.md"
+target.write_text(out)
+print(target, "written")
