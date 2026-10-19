@@ -87,6 +87,22 @@ for (const cls of heroClasses) {
 ok(`${heroClasses.length} generator classes checked: ${heroClasses.join(", ")}`);
 for (const k of Object.keys(classMap)) if (!heroClasses.includes(k)) fail(`class_arcanum_name has "${k}", not in hero_class`);
 
+// Every class has a guild, and its Journeyman reward is that class's arcanum.
+const guilds = JSON.parse(fs.readFileSync(path.join(root, "data/sejr_guilds.json"), "utf8")).guilds;
+const gdata = api.guild_data();
+for (const cls of heroClasses) {
+  const g = gdata[cls];
+  if (!g) { fail(`class ${cls} has no guild`); continue; }
+  if (g.arcanum !== classMap[cls]) fail(`guild ${g.name} gives "${g.arcanum}", not ${cls}'s arcanum "${classMap[cls]}"`);
+  const out = api.guild_option(cls);
+  if (!out.includes(g.name) || !out.includes(g.hall) || bad(out)) fail(`guild_option(${cls}) looks wrong`);
+}
+for (const c of active.filter(c => c.kind === "class")) {
+  const gid = c.reward && c.reward.guild;
+  if (!guilds.find(g => g.id === gid && g.arcanum === c.id)) fail(`${c.id}: reward guild "${gid}" missing or does not give this card`);
+}
+ok(`${Object.keys(gdata).length} guilds checked against classes and cards`);
+
 // Roll every card.
 for (const name of Object.keys(data)) {
   const out = api.arcanum_line(name);

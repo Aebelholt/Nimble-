@@ -25,7 +25,7 @@
     "escalation": "If you drop to 0 HP with Death's Door active, the knucklebone cracks at once and stops working. Your Rage still holds for the encounter. Replace it with another ancestor's relic from the Borderlands, or take one from a worthy enemy. The GM decides where it is and how long the search takes. Whatever hunted the ancestor learns the bone has moved.",
     "design_note": "Echo comes from a story told at a table, so the pool fills outside the fight and never from the Fury Dice the class already rolls. Death's Door is paid at the start of Rage, before the dangerous moment, and gives a first-echelon version of the level 18 Deep Rage.",
     "status": "keep",
-    "notes": "Reworked. Echo now fills by retelling, not by Fury Die matches (double-dipping); Death's Door paid up front (peak-value lethality); risk added; em dash removed; retelling venue: Sevenge and Gam's Public House (3_gazetteer). Unlock pass: risk now has a save and a Wound. Blind audit: 'assistance' defined; the escalation says the bone cracks at once while Rage holds. Pool: no longer rolled at hero creation; a faction reward, by the GM's decision.",
+    "notes": "Reworked. Echo now fills by retelling, not by Fury Die matches (double-dipping); Death's Door paid up front (peak-value lethality); risk added; em dash removed; retelling venue: Sevenge and Gam's Public House (3_gazetteer). Unlock pass: risk now has a save and a Wound. Blind audit: 'assistance' defined; the escalation says the bone cracks at once while Rage holds. Pool: no longer rolled at hero creation; a faction reward, by the GM's decision. Guild: adopted; earned at Journeyman in The Red Sand (data/sejr_guilds.json).",
     "source": "sources/class_arcana_v3.docx",
     "matrix": {
       "tier": "1st",
@@ -41,10 +41,10 @@
     },
     "pool": "faction_reward",
     "reward": {
-      "faction_suggested": "Seekers of the Sun",
-      "form": "the bone itself",
-      "why": "the Seekers return relics to their rightful owners, and a Berserker is the closest heir this one has",
-      "status": "suggested"
+      "guild": "red_sand",
+      "faction": "The Red Sand",
+      "form": "the lead: the Rolls name the fallen Borderlands fighter, and the guild has the collector's address",
+      "status": "adopted"
     }
   },
   {
@@ -72,7 +72,7 @@
     "escalation": "When all 4 Fixes are spent, the die gets you anyway. On your next Vicious Opportunist use after depletion, the GM secretly decides whether the target was actually Distracted, and you do not know until after you have committed. The uncertainty lasts for one use only. Word that a loaded die is back in play reaches the card sharp within a session.",
     "design_note": "Mirrors Vicious Opportunist's loop of manipulating die results, but at a resource cost. Roll twice, pick best, needs no memory. Loaded Odds is social utility that costs nothing in stats. The escalation adds uncertainty for a class that is normally certain about when it cheats, and a pursuer.",
     "status": "keep",
-    "notes": "Risk line and a costly unlock step added; em dashes removed; escalation now brings the card sharp back. Left: Loaded Odds overlaps the Insight skill (detect lies); kept as free social utility per the spec. Audit: clearing rule stated ('Fixes return only this way'). Unlock pass: risk now a contested roll. Pool: no longer rolled at hero creation; a faction reward, by the GM's decision.",
+    "notes": "Risk line and a costly unlock step added; em dashes removed; escalation now brings the card sharp back. Left: Loaded Odds overlaps the Insight skill (detect lies); kept as free social utility per the spec. Audit: clearing rule stated ('Fixes return only this way'). Unlock pass: risk now a contested roll. Pool: no longer rolled at hero creation; a faction reward, by the GM's decision. Guild: adopted; earned at Journeyman in The House (data/sejr_guilds.json).",
     "source": "sources/class_arcana_v3.docx",
     "matrix": {
       "tier": "1st",
@@ -88,10 +88,10 @@
     },
     "pool": "faction_reward",
     "reward": {
-      "faction_suggested": "Black Hand",
-      "form": "the die itself",
-      "why": "it belonged to a Black Hand card sharp; the Golden Knights, whose evidence shelf it left, will be offended",
-      "status": "suggested"
+      "guild": "the_house",
+      "faction": "The House",
+      "form": "the lead: the House knows the card sharp, and which Golden Knights shelf the die left",
+      "status": "adopted"
     }
   },
   {
@@ -120,7 +120,7 @@
     "escalation": "When Authority is at 0 during combat and you plant the standard anyway, the insignia becomes briefly legible to everyone present. The GM reads what it says aloud. It goes dark again immediately. What it says is the GM's tool: a name, a title, a command. Prepare it before the session.",
     "design_note": "Authority triggers on a damage threshold, not on defeats, so no ally gains by stealing last hits. Any solid hit fills the pool, which rewards coordinated pressure. The escalation is pure City of Arches: the Nameless King's name appears once, and only the GM knows what it says.",
     "status": "keep",
-    "notes": "Risk line and a costly unlock step added; aura range stated in the resource line; em dashes removed. Left: Authority fills from allies' damage and clears at encounter end, so it has no world refill. This is the spec's own example of a good Commander item. Unlock pass: risk now a d6. Blind audit: one Authority per attack stated. Pool: no longer rolled at hero creation; a faction reward, by the GM's decision.",
+    "notes": "Risk line and a costly unlock step added; aura range stated in the resource line; em dashes removed. Left: Authority fills from allies' damage and clears at encounter end, so it has no world refill. This is the spec's own example of a good Commander item. Unlock pass: risk now a d6. Blind audit: one Authority per attack stated. Pool: no longer rolled at hero creation; a faction reward, by the GM's decision. Guild: adopted; earned at Journeyman in The Muster (data/sejr_guilds.json).",
     "source": "sources/class_arcana_v3.docx",
     "matrix": {
       "tier": "1st",
@@ -136,10 +136,10 @@
     },
     "pool": "faction_reward",
     "reward": {
-      "faction_suggested": "Seekers of the Sun",
-      "form": "a lead to the Museum vault",
-      "why": "it sits in the Museum of Worlds Beyond, the Seekers' headquarters; they fear Nameless King lore, so they may prefer it in a hero's keeping",
-      "status": "suggested"
+      "guild": "the_muster",
+      "faction": "The Muster",
+      "form": "a writ to take the Battle Standard from the Museum of Worlds Beyond's vault",
+      "status": "adopted"
     }
   },
   {
@@ -167,7 +167,7 @@
     "escalation": "When the d6 roll triggers, the quarry, or something near it, begins tracking you in return. The GM introduces this threat within 1 to 2 sessions. The threat is proportional to what you marked: a city rat sends a rat, a Borderlands warlord sends soldiers.",
     "design_note": "The d6 tracker suits the Hunter's quarry identity. Several Marks make each use riskier, so tracking three creatures at once invites trouble. The cord works beyond sight, which Hunter's Mark does not. Being tracked back is the most Hunter-specific consequence available.",
     "status": "keep",
-    "notes": "Marks now one count with one clearing rule (confront or Cut); Safe Rest wipe removed; risk line added; em dashes removed; Slowed uses the rules wording. Unlock pass: risk now a per-session d6. Blind audit: Marks had no cap; the cord's own six tokens are now the cap, and Cut the Mark burning a token shrinks it. Pool: no longer rolled at hero creation; a faction reward, by the GM's decision.",
+    "notes": "Marks now one count with one clearing rule (confront or Cut); Safe Rest wipe removed; risk line added; em dashes removed; Slowed uses the rules wording. Unlock pass: risk now a per-session d6. Blind audit: Marks had no cap; the cord's own six tokens are now the cap, and Cut the Mark burning a token shrinks it. Pool: no longer rolled at hero creation; a faction reward, by the GM's decision. Guild: adopted; earned at Journeyman in The Wardens' Lodge (data/sejr_guilds.json).",
     "source": "sources/class_arcana_v3.docx",
     "matrix": {
       "tier": "1st",
@@ -183,10 +183,10 @@
     },
     "pool": "faction_reward",
     "reward": {
-      "faction_suggested": "Golden Knights",
-      "form": "the cord itself",
-      "why": "the Knights patrol the Doorish Hills roads with local wardens, where the tracker came from",
-      "status": "suggested"
+      "guild": "wardens_lodge",
+      "faction": "The Wardens' Lodge",
+      "form": "the Borderlands Tracking Cord itself; it was a warden's",
+      "status": "adopted"
     }
   },
   {
@@ -216,7 +216,7 @@
     "escalation": "When the d6 triggers, the glass heats to burning. Control Mage: you Lose Control, doing every option on the Control Table, with the GM choosing each time. Chaos Mage: you Invoke Chaos with disadvantage. Either way you take 1 Wound and cannot remove the lens until the encounter ends, because it has fused to your face. After the encounter, the Mages of Kartan sense the discharge and know its rough location. They send someone within 1 to 3 sessions. The fusing is now, the visitors are later.",
     "design_note": "Differentiated by subclass. The Control Mage gets a free Upcast on safe rolls, a reward for precision, and Lose Control as the failure. The Chaos Mage gets Overcharge relief on safe rolls and a worse Chaos roll on failure. Neither subclass wins both ways. The Mages of Kartan escalation is the City of Arches hook.",
     "status": "keep",
-    "notes": "Failure now matches the Mage rules (Control mages Lose Control, Chaos mages Invoke Chaos); the 'Control roll' unlock replaced; refill changed from abstention plus rest to a night at the Observatory; costly step and risk added. [NEEDS CANON: whether the Observatory of Infinite Skies lets a visitor leave a lens at its glass overnight.] Unlock pass: added a week of study with an Arcana check, and a d6 on the first cast that can fail the way the item fails. The old unlock was a price and one spell with no real hazard. Blind audit: Chaos mages never gained Overcharge (their safe rolls reduced it), so the lens had no risk for them. Now every safe roll adds 1 Overcharge for both subclasses; the Chaos reward is advantage on Invoke Chaos (a real Mage feature, Master of Chaos). Pool: no longer rolled at hero creation; a faction reward, by the GM's decision.",
+    "notes": "Failure now matches the Mage rules (Control mages Lose Control, Chaos mages Invoke Chaos); the 'Control roll' unlock replaced; refill changed from abstention plus rest to a night at the Observatory; costly step and risk added. [NEEDS CANON: whether the Observatory of Infinite Skies lets a visitor leave a lens at its glass overnight.] Unlock pass: added a week of study with an Arcana check, and a d6 on the first cast that can fail the way the item fails. The old unlock was a price and one spell with no real hazard. Blind audit: Chaos mages never gained Overcharge (their safe rolls reduced it), so the lens had no risk for them. Now every safe roll adds 1 Overcharge for both subclasses; the Chaos reward is advantage on Invoke Chaos (a real Mage feature, Master of Chaos). Pool: no longer rolled at hero creation; a faction reward, by the GM's decision. Guild: adopted; earned at Journeyman in The University (data/sejr_guilds.json).",
     "source": "sources/class_arcana_v3.docx",
     "matrix": {
       "tier": "1st",
@@ -232,10 +232,10 @@
     },
     "pool": "faction_reward",
     "reward": {
-      "faction_suggested": "University (Mages of Kartan)",
-      "form": "a lead to the pawn shop, or a loan to an enrolled student",
-      "why": "the lens bears Kartan's maker's mark and Kartan reports it stolen",
-      "status": "suggested"
+      "guild": "university",
+      "faction": "The University",
+      "form": "the Cracked Lens of Kartan, lent to a Reader-rank student",
+      "status": "adopted"
     }
   },
   {
@@ -263,7 +263,7 @@
     "escalation": "If the scales hold dice through a full Safe Rest, they fuse with your Lay on Hands pool. You cannot spend from the pool until a Sacred Decree is performed at the Temple of the Three Sisters, by you or, if you know none yet, by a priest there. The temple will want to know why.",
     "design_note": "Every time Judgment Dice would roll, the player chooses between spending them on the next attack and holding them for an armor-ignoring release. Holding is paid before the dangerous moment, and the lie-detection stays one-sided, so social scenes become dramatic irony.",
     "status": "keep",
-    "notes": "Rewritten to fit the Oathsworn rules: Judgment Dice are not spent on reactions (the 'That All You Got?!' line was a Berserker ability) and expire at the end of the encounter, so the card now states that held dice persist. Origin reworded from 'Magistrate's Court in the Sunken Revvia district'. [NEEDS CANON: a court in the ruins of Sunken Revvia; setting/7_sunken_revvia.md names none.] Risk added. Audit: second parenthetical removed so the resource is declared once. Unlock pass: risk now a clock (campaign overview, faction clocks). Triage: the first Sacred Decree comes at about level 4, so a level 1-3 Oathsworn could not clear the escalation; a temple priest can now perform it. Pool: no longer rolled at hero creation; a faction reward, by the GM's decision.",
+    "notes": "Rewritten to fit the Oathsworn rules: Judgment Dice are not spent on reactions (the 'That All You Got?!' line was a Berserker ability) and expire at the end of the encounter, so the card now states that held dice persist. Origin reworded from 'Magistrate's Court in the Sunken Revvia district'. [NEEDS CANON: a court in the ruins of Sunken Revvia; setting/7_sunken_revvia.md names none.] Risk added. Audit: second parenthetical removed so the resource is declared once. Unlock pass: risk now a clock (campaign overview, faction clocks). Triage: the first Sacred Decree comes at about level 4, so a level 1-3 Oathsworn could not clear the escalation; a temple priest can now perform it. Pool: no longer rolled at hero creation; a faction reward, by the GM's decision. Guild: adopted; earned at Journeyman in The Sworn Chapter (data/sejr_guilds.json).",
     "source": "sources/class_arcana_v3.docx",
     "matrix": {
       "tier": "1st",
@@ -279,10 +279,10 @@
     },
     "pool": "faction_reward",
     "reward": {
-      "faction_suggested": "Golden Council",
-      "form": "the scales themselves",
-      "why": "a court's scales suit the Council's courts and writs",
-      "status": "suggested"
+      "guild": "sworn_chapter",
+      "faction": "The Sworn Chapter",
+      "form": "a lead to the old court ruin in Sunken Revvia where the Broken Verdict lies",
+      "status": "adopted"
     }
   },
   {
@@ -311,7 +311,7 @@
     "escalation": "When Debt reaches 4, the patron collects. It does not take power. It adds one sentence about your character to the contract, permanently. The GM decides what it says and reads it aloud. Debt clears. The sentence stays. A Reaver's contract still answers to the patron they left: that patron writes the sentence, and sends an agent to read it to them in person.",
     "design_note": "Debt marks only on the contract's own powers, so it never rides on Pilfered Power, and the Safe Rest commune stays the class's own business. The Reaver path gives patronless Shadowmancers a card of their own. The permanent sentence is the right shape for a relationship with something ancient and dangerous.",
     "status": "keep",
-    "notes": "Debt no longer marks on Pilfered Power use and the Pilfered Power refill is gone (it duplicated the class commune); Reaver path and Reaver's Margin added (Reavers have no patron and cannot cast tiered spells at this echelon); risk added; em dash removed. Unlock pass: Reaver path now takes three nights with saves; patron path states that the counter-demand binds. Blind audit: the Reaver escalation now says the left patron collects through the stolen contract. Pool: no longer rolled at hero creation; a faction reward, by the GM's decision.",
+    "notes": "Debt no longer marks on Pilfered Power use and the Pilfered Power refill is gone (it duplicated the class commune); Reaver path and Reaver's Margin added (Reavers have no patron and cannot cast tiered spells at this echelon); risk added; em dash removed. Unlock pass: Reaver path now takes three nights with saves; patron path states that the counter-demand binds. Blind audit: the Reaver escalation now says the left patron collects through the stolen contract. Pool: no longer rolled at hero creation; a faction reward, by the GM's decision. Guild: adopted; earned at Journeyman in The Hollow Circle (data/sejr_guilds.json).",
     "source": "sources/class_arcana_v3.docx",
     "matrix": {
       "tier": "1st",
@@ -327,10 +327,10 @@
     },
     "pool": "faction_reward",
     "reward": {
-      "faction_suggested": "Black Hand",
-      "form": "the key to the sealed room",
-      "why": "the room is in the Lower Reaches, Black Hand ground",
-      "status": "suggested"
+      "guild": "hollow_circle",
+      "faction": "The Hollow Circle",
+      "form": "the address of the sealed room where the Hollow Contract lies",
+      "status": "adopted"
     }
   },
   {
@@ -359,7 +359,7 @@
     "escalation": "Spending all 4 Resonance in the Toll cracks the bell's handle. It still rings, but you cannot Toll until a clergyperson of the Three Sisters rehandles it. They will want to know what happened before they agree to help.",
     "design_note": "Every power keys off healing, and none of the pool fills from healing, so it adds to the Shepherd's rhythm without rewarding it twice. Chain Heal makes positioning the Spirit a puzzle. The Toll is a first-echelon rescue that costs a Wound and permanently marks the bell. Sacrifice should have weight.",
     "status": "keep",
-    "notes": "Resonance now fills by ringing over a sickbed or grave (it filled from Searing Light, the class's own move, and Searing Light does not heal: it damages a target for HP you heal). Unlock reworded to 'heal'. Ring no longer gives the Spirit an extra action. Resonance persists through rests. Risk added. Unlock pass: healing must come out of an ally's share; risk now an Influence check that can cost you the bell. Reassessment: Ring gave free radiant damage every time you healed, a bonus on the class's signature move (checklist: double-dipping). Replaced with Ring Out, which costs Resonance and does something the class cannot. Blind audit: Ring Out now says the ally stays Dying. Pool: no longer rolled at hero creation; a faction reward, by the GM's decision.",
+    "notes": "Resonance now fills by ringing over a sickbed or grave (it filled from Searing Light, the class's own move, and Searing Light does not heal: it damages a target for HP you heal). Unlock reworded to 'heal'. Ring no longer gives the Spirit an extra action. Resonance persists through rests. Risk added. Unlock pass: healing must come out of an ally's share; risk now an Influence check that can cost you the bell. Reassessment: Ring gave free radiant damage every time you healed, a bonus on the class's signature move (checklist: double-dipping). Replaced with Ring Out, which costs Resonance and does something the class cannot. Blind audit: Ring Out now says the ally stays Dying. Pool: no longer rolled at hero creation; a faction reward, by the GM's decision. Guild: adopted; earned at Journeyman in The Sisters' Vigil (data/sejr_guilds.json).",
     "source": "sources/class_arcana_v3.docx",
     "matrix": {
       "tier": "1st",
@@ -375,10 +375,10 @@
     },
     "pool": "faction_reward",
     "reward": {
-      "faction_suggested": "Temple of the Three Sisters",
-      "form": "a loan of the bell",
-      "why": "the temple wants it back for study, so it lends it to a healer it trusts",
-      "status": "suggested"
+      "guild": "sisters_vigil",
+      "faction": "The Sisters' Vigil",
+      "form": "the Bell of the Three Sisters, lent",
+      "status": "adopted"
     }
   },
   {
@@ -406,7 +406,7 @@
     "escalation": "When Crowd reaches 4, someone in the crowd knows who this setlist belonged to. They approach between encounters, or send someone. The GM decides who and what they want. They may be a fan. They may not.",
     "design_note": "Crowd is soft pressure: accumulating rarely hurts until 4, and a failed roll is a light social tax. Call the Song extends Songweaver's Inspiration with a mid-encounter refill. The escalation connects to the missing Songweaver, a mystery the GM can develop at any pace.",
     "status": "keep",
-    "notes": "'Theatre' corrected to 'Theater' (3_gazetteer); the per-ally, per-session cap (memory tracking) replaced with once per encounter; Songweaver's Inspiration belongs to the Songweaver, so the refill now returns the Songweaver's own uses; Crowd clears by a full hour for a new audience (was a Safe Rest); risk added. Unlock pass: added a quest step (the untitled last song) and a d6. Blind audit: '1/round' and 'once per encounter' conflicted; now one call per round, one refund per encounter. Behavior at 4 Crowd stated. Pool: no longer rolled at hero creation; a faction reward, by the GM's decision.",
+    "notes": "'Theatre' corrected to 'Theater' (3_gazetteer); the per-ally, per-session cap (memory tracking) replaced with once per encounter; Songweaver's Inspiration belongs to the Songweaver, so the refill now returns the Songweaver's own uses; Crowd clears by a full hour for a new audience (was a Safe Rest); risk added. Unlock pass: added a quest step (the untitled last song) and a d6. Blind audit: '1/round' and 'once per encounter' conflicted; now one call per round, one refund per encounter. Behavior at 4 Crowd stated. Pool: no longer rolled at hero creation; a faction reward, by the GM's decision. Guild: adopted; earned at Journeyman in The Whisper Company (data/sejr_guilds.json).",
     "source": "sources/class_arcana_v3.docx",
     "matrix": {
       "tier": "1st",
@@ -422,10 +422,10 @@
     },
     "pool": "faction_reward",
     "reward": {
-      "faction_suggested": "[your call]",
-      "form": "a lead to whoever stole it",
-      "why": "the Theater of Whispers is a place, not a faction; Roselyn Zeshe (the queen's spymaster) is one option",
-      "status": "suggested"
+      "guild": "whisper_company",
+      "faction": "The Whisper Company",
+      "form": "the name of whoever stole the Setlist",
+      "status": "adopted"
     }
   },
   {
@@ -454,7 +454,7 @@
     "escalation": "When the jar is empty, mud already applied does not dry, but no new mud can be applied until the jar is refilled. If the jar breaks, the mud it held dries at once and all its effects end. A skilled craftsperson can repair a broken jar, but the marshes must still refill it. Each time you return to refill it, the marshes have changed, and the GM says how.",
     "design_note": "The geographic refill anchors the item in the setting. Every use is a conscious spend of a resource that costs a journey to replace, and no use refills it. Extend the Beastshift answers the class's own tension of forms ending when you cast. Mire gives battlefield control that fits the nature identity without requiring more spellcasting.",
     "status": "keep",
-    "notes": "Self-sustaining loop removed: Apply used to give Earthpulse, which paid for the other powers; it now costs 1. 'Shift ability' and 'storm form' replaced with Beastshift (rules: it ends when you cast a spell); risk added; the marshes change on each return. Unlock pass: risk now a save with a lasting loss. Blind audit: Extend's scope stated: any number of spells, this encounter. Pool: no longer rolled at hero creation; a faction reward, by the GM's decision.",
+    "notes": "Self-sustaining loop removed: Apply used to give Earthpulse, which paid for the other powers; it now costs 1. 'Shift ability' and 'storm form' replaced with Beastshift (rules: it ends when you cast a spell); risk added; the marshes change on each return. Unlock pass: risk now a save with a lasting loss. Blind audit: Extend's scope stated: any number of spells, this encounter. Pool: no longer rolled at hero creation; a faction reward, by the GM's decision. Guild: adopted; earned at Journeyman in The Grove Circle (data/sejr_guilds.json).",
     "source": "sources/class_arcana_v3.docx",
     "matrix": {
       "tier": "1st",
@@ -470,10 +470,10 @@
     },
     "pool": "faction_reward",
     "reward": {
-      "faction_suggested": "Archkeepers",
-      "form": "the jar itself",
-      "why": "an arch-traveller brought it in, and the Archkeepers register every arrival",
-      "status": "suggested"
+      "guild": "grove_circle",
+      "faction": "The Grove Circle",
+      "form": "the Mud from the Revlend Marshes itself; the arch-traveller left the jar with the Grove",
+      "status": "adopted"
     }
   },
   {
@@ -502,7 +502,7 @@
     "escalation": "If you use either annotation while you have 3 or more Wounds, from any source, the wrappings tighten around your hands: take 1 additional Wound and you cannot use either annotation for 1 round. The annotations become illegible until a skilled martial artist re-inks them. Finding one is the GM's hook.",
     "design_note": "The Wound is paid before the attack, so you choose when the risk comes, not the enemy. Armor-ignore proves most useful against heavily armored foes, and you pay for it in advance. Way of Pain players will recognise the trade immediately.",
     "status": "keep",
-    "notes": "Escalation could not fire (it needed three uses of a 1/Safe Rest power); it now fires on using an annotation at 3 or more Wounds, a value readable now. 'Cannot be healed until Safe Rest' removed (Wounds already heal 1 per Safe Rest). Study relabelled downtime. Risk added. Unlock pass: added a week of study; the chosen hit can now put you down and not count. Correction: the 'cannot be healed until Safe Rest' wording is restored in a stricter form. The homebrew defines Wound-cost as a Wound that cannot be healed until the item is rested, so Strain Wounds now refuse Medical Kits and healing magic. Pool: no longer rolled at hero creation; a faction reward, by the GM's decision.",
+    "notes": "Escalation could not fire (it needed three uses of a 1/Safe Rest power); it now fires on using an annotation at 3 or more Wounds, a value readable now. 'Cannot be healed until Safe Rest' removed (Wounds already heal 1 per Safe Rest). Study relabelled downtime. Risk added. Unlock pass: added a week of study; the chosen hit can now put you down and not count. Correction: the 'cannot be healed until Safe Rest' wording is restored in a stricter form. The homebrew defines Wound-cost as a Wound that cannot be healed until the item is rested, so Strain Wounds now refuse Medical Kits and healing magic. Pool: no longer rolled at hero creation; a faction reward, by the GM's decision. Guild: adopted; earned at Journeyman in The Last Studio (data/sejr_guilds.json).",
     "source": "sources/class_arcana_v3.docx",
     "matrix": {
       "tier": "1st",
@@ -518,10 +518,10 @@
     },
     "pool": "faction_reward",
     "reward": {
-      "faction_suggested": "[your call]",
-      "form": "the key to the locked case",
-      "why": "the studio sits in the Lower Reaches; no faction is named on the card",
-      "status": "suggested"
+      "guild": "last_studio",
+      "faction": "The Last Studio",
+      "form": "the key to the locked case where the Wrappings lie",
+      "status": "adopted"
     }
   },
   {

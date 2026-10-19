@@ -1,6 +1,8 @@
-# Class guilds (draft)
+# Class guilds
 
-A guild is an alternative to a holding at hero creation, and the place a hero earns their class arcanum. Everything here is a proposal. Guild names, masters, wants and splits are new canon; every hall is a canon location from the gazetteer's "Locations by Class" list (`setting/3_gazetteer_of_the_city_of_arches.md`) or from the class card itself. Where a canon NPC is named as master, that role is new.
+**Adopted.** The data lives in `data/sejr_guilds.json`; each class arcanum's `reward` points at its guild, and the Perchance module has `guild_data()` and `guild_option(cls)`. Names, masters, wants and splits are still new canon, open to your edits.
+
+A guild is an alternative to a holding at hero creation, and the place a hero earns their class arcanum. Guild names, masters, wants and splits are new canon; every hall is a canon location from the gazetteer's "Locations by Class" list (`setting/3_gazetteer_of_the_city_of_arches.md`) or from the class card itself. Where a canon NPC is named as master, that role is new.
 
 The design follows your guild notes: each guild gets designs on power, teeth, training, a store of knowledge and an internal split. To stay inside "prep is the trackers", each guild is one index card. It gets a faction clock only when a player's choice makes it matter, the same rule your overview uses for factions.
 

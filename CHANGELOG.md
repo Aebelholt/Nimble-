@@ -88,7 +88,7 @@ A second model audited the deck from `analysis/blind_audit_prompt.md`. Triage in
 - **Prompt fixed:** it now quotes Lifebinding Spirit and Sacred Decree, which the auditor flagged as unverified.
 - **Rejected:** six findings, with reasons in the triage. Their power scale was not adopted.
 - **Open:** eight decisions, listed at the end of the triage.
-- **Draft: class guilds** (`analysis/guilds.md`). Eleven one-card guilds in canon halls, as an alternative to the holding and the source of each class arcanum. Not applied to the data yet.
+- **Adopted: class guilds.** `data/sejr_guilds.json` holds eleven one-card guilds in canon halls (rules, ranks, and each guild's hall, master, wants, teeth, teaching, knowledge, split, ask, gift and rival). Each class arcanum's `reward` points at its guild. The Perchance module adds `guild_data()` and `guild_option(cls)`, and the hero-card comment says where to add it. The test checks that every class has a guild whose reward is that class's arcanum.
 - **Decided: class arcana are faction rewards too.** All 11 move to `faction_reward_arcanum`; new heroes draw from the 23 found cards. Suggested giver for each card, and whether the reward is the item or a lead to it, in `analysis/faction_rewards.md`.
 - **Decided: Forgotten Key is a faction reward.** Removed from the level 1 draw; each card now has a `pool` field (`class`, `draw`, `faction_reward`). The draw pool is 23 cards. The Perchance module gains a `faction_reward_arcanum` list, and the test fails if a faction reward reaches `other_arcanum`.
 

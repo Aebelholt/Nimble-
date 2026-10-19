@@ -15,6 +15,8 @@ found = [c for c in cards if c["kind"] == "found"]
 draw = [c for c in found if c.get("pool", "draw") == "draw"]
 reward = [c for c in cards if c.get("pool") == "faction_reward"]
 klass = [c for c in cards if c["kind"] == "class"]
+guilds = json.loads((ROOT / "data/sejr_guilds.json").read_text())["guilds"]
+by_id = {c["id"]: c for c in cards}
 
 
 def js(s):
@@ -56,6 +58,18 @@ class_arcanum_name() =>
 """ + ",\n".join(f'  {js(c["class"])}: {js(c["name"])}' for c in klass) + """
   };
 
+// Class guilds: the alternative to a holding at hero creation (data/sejr_guilds.json).
+guild_data() =>
+  return {
+""" + ",\n".join("  " + js(g["cls"]) + ": {" + ", ".join(f"{k}:{js(g[k])}" for k in ["name", "hall", "master", "wants", "teeth", "teaches", "keeps", "split", "asks", "gives", "rival"]) + ", arcanum:" + js(by_id[g["arcanum"]]["name"]) + "}" for g in guilds) + """
+  };
+
+guild_option(cls) =>
+  let g = guild_data()[cls];
+  if (!g) return "";
+  let card = "<p><b>Master:</b> " + g.master + "</p><p><b>Wants:</b> " + g.wants + "</p><p><b>Teeth:</b> " + g.teeth + "</p><p><b>Keeps:</b> " + g.keeps + "</p><p><b>Split:</b> " + g.split + "</p><p><b>Journeyman reward:</b> " + g.arcanum + ": " + g.gives + "</p><p><b>Rival:</b> " + g.rival + "</p>";
+  return "<p><b>Or, instead of the holding, a guild:</b> " + g.name + ", at " + g.hall + ". Teaches " + g.teaches + ". Asks " + g.asks + ".</p><details><summary>GM: guild card</summary>" + card + "</details>";
+
 // Player sees the object. GM opens the fold. Ritual boxes are for absent-player ticks.
 arcanum_line(name) =>
   let a = arcana_data()[name];
@@ -80,6 +94,9 @@ tail = tail.replace(
     "// for\n"
     "//   let arc = other_arcanum.evaluateItem;\n"
     "// (class arcana are faction rewards now, not rolled at hero creation)\n"
+    "// then, right after the Holding line, add\n"
+    "//   b += guild_option(cls);\n"
+    "// (a hero takes the holding or joins the class guild)\n"
     "// and swap this line")
 out = ROOT / "data/sejr_arcana_perchance.txt"
 out.write_text(head + tail)
