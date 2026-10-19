@@ -83,7 +83,7 @@
     "escalation": "When all 4 Fixes are spent, the die gets you anyway. On your next Vicious Opportunist use after depletion, the GM secretly rolls a d6. On a 1-3 the die turns on you and Vicious Opportunist does nothing, and you do not know until after you have committed. The uncertainty lasts for one use only. Word that a loaded die is back in play reaches the card sharp within a session.",
     "design_note": "Mirrors Vicious Opportunist's loop of manipulating die results, but at a resource cost. Roll twice, pick best, needs no memory. Loaded Odds is social utility that costs nothing in stats. The escalation adds uncertainty for a class that is normally certain about when it cheats, and a pursuer.",
     "status": "keep",
-    "notes": "Risk line and a costly unlock step added; em dashes removed; escalation now brings the card sharp back. Left: Loaded Odds overlaps the Insight skill (detect lies); kept as free social utility per the spec. Audit: clearing rule stated ('Fixes return only this way'). Unlock pass: risk now a contested roll. Pool: no longer rolled at hero creation; a faction reward, by the GM's decision. Guild: adopted; earned at Journeyman in The House (data/sejr_guilds.json). v3 audit: Distracted is a board state, so the escalation is a secret d6. [NEEDS CANON] the Lower Reaches gambling house is not named in setting/.",
+    "notes": "Risk line and a costly unlock step added; em dashes removed; escalation now brings the card sharp back. Left: Loaded Odds overlaps the Insight skill (detect lies); kept as free social utility per the spec. Audit: clearing rule stated ('Fixes return only this way'). Unlock pass: risk now a contested roll. Pool: no longer rolled at hero creation; a faction reward, by the GM's decision. Guild: adopted; earned at Journeyman in The House (data/sejr_guilds.json). v3 audit: Distracted is a board state, so the escalation is a secret d6. [TABLE ROLL] the Lower Reaches gambling house is not named in setting/.",
     "source": "sources/class_arcana_v3.docx",
     "matrix": {
       "tier": "1st",
@@ -239,7 +239,7 @@
     "escalation": "When the d6 triggers, the glass heats to burning. Control Mage: you Lose Control, doing every option on the Control Table, with the GM choosing each time. Chaos Mage: you Invoke Chaos with disadvantage. No subclass yet: you are Dazed until the end of your next turn. Either way you take 1 Wound and cannot remove the lens until the encounter ends, because it has fused to your face. After the encounter, the Mages of Kartan sense the discharge and know its rough location. They send someone within 1 to 3 sessions. The fusing is now, the visitors are later.",
     "design_note": "Differentiated by subclass. The Control Mage gets a free Upcast on safe rolls, a reward for precision, and Lose Control as the failure. The Chaos Mage gets Overcharge relief on safe rolls and a worse Chaos roll on failure. Neither subclass wins both ways. The Mages of Kartan escalation is the City of Arches hook.",
     "status": "keep",
-    "notes": "Failure now matches the Mage rules (Control mages Lose Control, Chaos mages Invoke Chaos); the 'Control roll' unlock replaced; refill changed from abstention plus rest to a night at the Observatory; costly step and risk added. [NEEDS CANON: whether the Observatory of Infinite Skies lets a visitor leave a lens at its glass overnight.] Unlock pass: added a week of study with an Arcana check, and a d6 on the first cast that can fail the way the item fails. The old unlock was a price and one spell with no real hazard. Blind audit: Chaos mages never gained Overcharge (their safe rolls reduced it), so the lens had no risk for them. Now every safe roll adds 1 Overcharge for both subclasses; the Chaos reward is advantage on Invoke Chaos (a real Mage feature, Master of Chaos). Pool: no longer rolled at hero creation; a faction reward, by the GM's decision. Guild: adopted; earned at Journeyman in The University (data/sejr_guilds.json). Polish: the generic d6 risk became a hazard tied to the object. v3 audit: unlock fuse lasts an hour; no-subclass lines added (subclass comes at level 3). [NEEDS CANON] a Lower Reaches pawn shop is not named in setting/.",
+    "notes": "Failure now matches the Mage rules (Control mages Lose Control, Chaos mages Invoke Chaos); the 'Control roll' unlock replaced; refill changed from abstention plus rest to a night at the Observatory; costly step and risk added. [TABLE ROLL: whether the Observatory of Infinite Skies lets a visitor leave a lens at its glass overnight.] Unlock pass: added a week of study with an Arcana check, and a d6 on the first cast that can fail the way the item fails. The old unlock was a price and one spell with no real hazard. Blind audit: Chaos mages never gained Overcharge (their safe rolls reduced it), so the lens had no risk for them. Now every safe roll adds 1 Overcharge for both subclasses; the Chaos reward is advantage on Invoke Chaos (a real Mage feature, Master of Chaos). Pool: no longer rolled at hero creation; a faction reward, by the GM's decision. Guild: adopted; earned at Journeyman in The University (data/sejr_guilds.json). Polish: the generic d6 risk became a hazard tied to the object. v3 audit: unlock fuse lasts an hour; no-subclass lines added (subclass comes at level 3). [TABLE ROLL] a Lower Reaches pawn shop is not named in setting/.",
     "source": "sources/class_arcana_v3.docx",
     "matrix": {
       "tier": "1st",
@@ -286,7 +286,7 @@
     "escalation": "If the scales hold dice through a full Safe Rest, they fuse with your Lay on Hands pool. You cannot spend from the pool until the scales are cleared at the Temple of the Three Sisters: you perform a Sacred Decree there or, if you know none yet, a priest there absolves you. The temple will want to know why.",
     "design_note": "Every time Judgment Dice would roll, the player chooses between spending them on the next attack and holding them for an armor-ignoring release. Holding is paid before the dangerous moment, and the lie-detection stays one-sided, so social scenes become dramatic irony.",
     "status": "keep",
-    "notes": "Rewritten to fit the Oathsworn rules: Judgment Dice are not spent on reactions (the 'That All You Got?!' line was a Berserker ability) and expire at the end of the encounter, so the card now states that held dice persist. Origin reworded from 'Magistrate's Court in the Sunken Revvia district'. [NEEDS CANON: a court in the ruins of Sunken Revvia; setting/7_sunken_revvia.md names none.] Risk added. Audit: second parenthetical removed so the resource is declared once. Unlock pass: risk now a clock (campaign overview, faction clocks). Triage: the first Sacred Decree comes at about level 4, so a level 1-3 Oathsworn could not clear the escalation; a temple priest can now perform it. Pool: no longer rolled at hero creation; a faction reward, by the GM's decision. Guild: adopted; earned at Journeyman in The Sworn Chapter (data/sejr_guilds.json). v3 audit: held dice are rolled when held; a temple priest absolves rather than performing a Sacred Decree.",
+    "notes": "Rewritten to fit the Oathsworn rules: Judgment Dice are not spent on reactions (the 'That All You Got?!' line was a Berserker ability) and expire at the end of the encounter, so the card now states that held dice persist. Origin reworded from 'Magistrate's Court in the Sunken Revvia district'. [TABLE ROLL: a court in the ruins of Sunken Revvia; setting/7_sunken_revvia.md names none.] Risk added. Audit: second parenthetical removed so the resource is declared once. Unlock pass: risk now a clock (campaign overview, faction clocks). Triage: the first Sacred Decree comes at about level 4, so a level 1-3 Oathsworn could not clear the escalation; a temple priest can now perform it. Pool: no longer rolled at hero creation; a faction reward, by the GM's decision. Guild: adopted; earned at Journeyman in The Sworn Chapter (data/sejr_guilds.json). v3 audit: held dice are rolled when held; a temple priest absolves rather than performing a Sacred Decree.",
     "source": "sources/class_arcana_v3.docx",
     "matrix": {
       "tier": "1st",
@@ -295,7 +295,7 @@
       "refill": "Toggle on when Judgment Dice would roll; Release on an attack or perform a Sacred Decree",
       "power": "offense (armor-piercing) + information",
       "cost": "Lay on Hands locked until a Sacred Decree",
-      "origin": "Sunken Revvia court ruin [NEEDS CANON]; Temple of the Three Sisters",
+      "origin": "Sunken Revvia court ruin [TABLE ROLL]; Temple of the Three Sisters",
       "region": "Sunken Revvia",
       "look": "golden scales, one pan missing",
       "mythology": ""
@@ -696,7 +696,7 @@
     ],
     "escalation": "Named creatures learn your name and heading each dawn. When the ninth eye closes, the axe speaks your True Name and all nine hear it. One engraved eye is scraped blank.",
     "status": "keep",
-    "notes": "Kept. 'Solos' changed to 'Solo creatures' (GM guide term); direction-and-distance split into a passive so the card has a free or passive power; prior owner added from the Sevelet's Throne rumor (11_the_doorish_hills.md). Remove that clause if you want a different axe. Unlock pass: risk now a clock. Reassessment: origin moved from the Sevelet's Throne rumor to Graydust Keep, to flatten the spread. [NEEDS CANON: the Fallen Angels' claim on the axe.] Blind audit: the Reaction had no trigger; now 'when a Named creature you can see starts its turn', and it loses one action. GM decision: finite stays; the spec is the GM's solo design guide, and finite relics fit the source material. v3 audit: Speak the Name uses Dazed (monsters lose their move or 1 attack); advantage is on skill checks.",
+    "notes": "Kept. 'Solos' changed to 'Solo creatures' (GM guide term); direction-and-distance split into a passive so the card has a free or passive power; prior owner added from the Sevelet's Throne rumor (11_the_doorish_hills.md). Remove that clause if you want a different axe. Unlock pass: risk now a clock. Reassessment: origin moved from the Sevelet's Throne rumor to Graydust Keep, to flatten the spread. [TABLE ROLL: the Fallen Angels' claim on the axe.] Blind audit: the Reaction had no trigger; now 'when a Named creature you can see starts its turn', and it loses one action. GM decision: finite stays; the spec is the GM's solo design guide, and finite relics fit the source material. v3 audit: Speak the Name uses Dazed (monsters lose their move or 1 attack); advantage is on skill checks.",
     "source": "sources/sejr_arcana_perchance_original.txt",
     "matrix": {
       "tier": "Major",
@@ -910,7 +910,7 @@
     ],
     "escalation": "A valkyrie arrives within a day to claim the spared life, yours or your ally's. She will hear one argument for it. The GM plays her.",
     "status": "keep",
-    "notes": "Reworked. Source flavor kept (Norse valkyrie). The roll moved into the resource line, a passive added, and the escalation now gives the valkyrie a bargain to make. [NEEDS CANON: which world beyond an arch holds the grave.] Audit: Spared now shows the +1 Tally it spends; refill states the carrying. Blind audit: stated that Tally of 6 or more makes the call certain. v2 audit: Spared states the Wound and Dying result.",
+    "notes": "Reworked. Source flavor kept (Norse valkyrie). The roll moved into the resource line, a passive added, and the escalation now gives the valkyrie a bargain to make. [TABLE ROLL: which world beyond an arch holds the grave.] Audit: Spared now shows the +1 Tally it spends; refill states the carrying. Blind audit: stated that Tally of 6 or more makes the call certain. v2 audit: Spared states the Wound and Dying result.",
     "source": "sources/sejr_arcana_perchance_original.txt",
     "matrix": {
       "tier": "Minor",
@@ -919,7 +919,7 @@
       "refill": "Return the feather to its stone",
       "power": "defense (death-cheat)",
       "cost": "a valkyrie claims the spared life",
-      "origin": "A grave in a world beyond an arch where valkyries still ride [NEEDS CANON: world]",
+      "origin": "A grave in a world beyond an arch where valkyries still ride [TABLE ROLL: world]",
       "region": "Worlds beyond (unnamed)",
       "look": "gold-barbed feather",
       "mythology": "Norse valkyrie"
@@ -1191,7 +1191,7 @@
     ],
     "escalation": "At 0 Steam the servos lock: Speed 2 and disadvantage on DEX until stoked. If you spend the last Steam in combat, the boilers vent: 1d6 fire to you and everyone adjacent.",
     "status": "keep",
-    "notes": "Reworked. Refill was a ten-minute chore with no sourcing; fuel now comes from Vathrex's Forge (3_gazetteer). 'Armor 18' changed to Defense 18 (Full Plate's value). [NEEDS CANON: whether Vathrex's Forge sells coal to outsiders.] Blind audit: the crossbow had no attack or damage and the surge no action cost. Wrist crossbow set below the core Crossbow (4d4+DEX, Range 8, load 1 action). v2 audit: armor type stated.",
+    "notes": "Reworked. Refill was a ten-minute chore with no sourcing; fuel now comes from Vathrex's Forge (3_gazetteer). 'Armor 18' changed to Defense 18 (Full Plate's value). [TABLE ROLL: whether Vathrex's Forge sells coal to outsiders.] Blind audit: the crossbow had no attack or damage and the surge no action cost. Wrist crossbow set below the core Crossbow (4d4+DEX, Range 8, load 1 action). v2 audit: armor type stated.",
     "source": "sources/sejr_arcana_perchance_original.txt",
     "matrix": {
       "tier": "Major",
@@ -1735,7 +1735,7 @@
     "escalation": "If the Truce breaks, the stick burns your palm for 1 Wound, and Vynan Halfhorn sends someone for whoever broke it within a session. Vynan Halfhorn will want to know why the peace failed under his stick.",
     "status": "keep",
     "source": "analysis/proposals.md, replacement R3",
-    "notes": "New card, replaces Hollow Vessel. Fills social play and a toggle resource (Black Goat's Tavern, Vynan Halfhorn, 4_the_lower_reaches.md). [NEEDS CANON: the canon text gives the tavern its peace; the stick carrying that peace elsewhere is new.] Unlock pass: risk now a Wound. Blind audit: the power and the resource disagreed on whether a successful save ends the Truce. Any attempt now ends it. v3 audit: NPCs take no Wounds; 'the Black Goat's wardens' are not canon.",
+    "notes": "New card, replaces Hollow Vessel. Fills social play and a toggle resource (Black Goat's Tavern, Vynan Halfhorn, 4_the_lower_reaches.md). [TABLE ROLL: the canon text gives the tavern its peace; the stick carrying that peace elsewhere is new.] Unlock pass: risk now a Wound. Blind audit: the power and the resource disagreed on whether a successful save ends the Truce. Any attempt now ends it. v3 audit: NPCs take no Wounds; 'the Black Goat's wardens' are not canon.",
     "matrix": {
       "tier": "Minor",
       "resource_type": "toggle",

@@ -14,3 +14,7 @@ Small house rules that sit beside the cards. The cards themselves live in `data/
 
 ## Guild masters
 - Three guilds have no master yet (the Wardens' Lodge, the Sworn Chapter, the Hollow Circle). Name them at the table when a hero first walks in.
+
+## Unknowns are rolls
+- The campaign uses the City of Arches as a base and does its own thing. Nothing is canon until it hits the table.
+- Cards marked `[TABLE ROLL]` in their notes lean on a fact the books don't settle (will the Observatory keep a lens overnight? does Vathrex sell coal?). Don't decide it in prep. The hero asks, and rolls Influence against the GM's sense of how likely it is. On a failure they find another way: sneak the lens in, steal the coal, pay someone who can.
