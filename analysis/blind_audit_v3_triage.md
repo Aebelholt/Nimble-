@@ -52,7 +52,7 @@ Ranked by how much they can break an episode. My recommendation is in the last c
 | 8 | Kettle Plate | A free crossbow attack each turn. | Keep. Four shots per coal load. |
 | 9 | Shadowmancer | Debt clears at 4, so uses never run out. | Keep. Each collection costs a permanent sentence. |
 
-## 3. Table rules worth adding (your call, still open)
+## 3. Table rules (adopted, in `data/sejr_table_rules.md`)
 
 - **Readings.** Six cards read lies, motives or history. Two at one table can solve a mystery gig in its first scene. Suggested rule: a reading is true, and can still point at the wrong person.
 - **Thread board.** An Escalation writes a thread card only if a slot is free; otherwise it ticks an existing clock.
