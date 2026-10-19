@@ -101,6 +101,11 @@ A second model audited the deck from `analysis/blind_audit_prompt.md`. Triage in
 - **Polish applied:** seven identical d6 risks became object-specific hazards; seven open-ended escalations have d6 tables (`escalation_table`, rendered in Perchance and tested); off-screen refill rule in `data/sejr_table_rules.md`. Filler passives were left in.
 - **Blind audit v2:** `analysis/blind_audit_prompt.md` regenerated with the decisions, table rules and guild cards; `analysis/blind_audit_cards.md` and `.json` refreshed.
 
+### Blind audit v2 triage
+- Most of the audit quoted text not on the cards; see `analysis/blind_audit_v2_triage.md`.
+- **Clarified:** Echo Strike dice follow Fury Die rules; Cord Pull's Slowed timing; Reaver's Margin adds one d12; Extend the Beastshift still ends at 0 HP; Last Breath ignores your own summons; Spared causes no Wound or Dying; Tide-Coat (Leather), Pitch-Sap (Mail), Hellhide and Kettle Plate (Plate) name their armor type.
+- `tools/export_audit_cards.py` rebuilds the cards-only audit files.
+
 ## Diversity, found pool: before and after
 
 | | Before (25) | After (24) |
@@ -134,4 +139,5 @@ After the reassessment move: upper city 7, worlds beyond 7, Lower Reaches 3, Doo
 python3 -I tools/audit.py
 python3 -I tools/build_perchance.py && node tools/test_perchance.js
 python3 -I tools/export_review.py
+python3 -I tools/export_blind_audit.py && python3 -I tools/export_audit_cards.py
 ```

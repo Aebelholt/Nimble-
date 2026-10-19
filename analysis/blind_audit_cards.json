@@ -20,7 +20,7 @@
       "text": "Fury Echo (pip tracker, max 3). Gain 1 Fury Echo each time you tell a listener who has not heard it how the ancestor fought and fell, in full, over at least ten minutes. Echo never clears at a rest or when combat ends. Spent Echo returns only by telling it again to a new listener."
     },
     "powers": [
-      "Echo Strike (Free, while Raging, spend 1 Fury Echo): Roll a Fury Die and set it aside with the rest, up to your maximum. This does not use your Rage action.",
+      "Echo Strike (Free, while Raging, spend 1 Fury Echo): Roll a Fury Die and set it aside with the rest, up to your maximum. This does not use your Rage action. The die follows the Fury Die rules and is lost when your Rage ends.",
       "Death's Door (Free, 1/encounter, when you Rage, spend all 3 Fury Echo): For this encounter, your Rage does not end when you drop to 0 HP. Dying applies as normal."
     ],
     "escalation": "If you drop to 0 HP with Death's Door active, the knucklebone cracks at once and stops working. Your Rage still holds for the encounter. Replace it with another ancestor's relic from the Borderlands, or take one from a worthy enemy. The GM decides where it is and how long the search takes. Whatever hunted the ancestor learns the bone has moved. Roll a d6 on the table below, or choose.",
@@ -118,7 +118,7 @@
     },
     "powers": [
       "Mark a Quarry (1 Action): Touch the cord to any physical trace of a creature: a footprint, a drop of blood, shed skin. Add 1 Mark. While that quarry is marked, you know its general direction and distance within 1 mile regardless of cover or concealment. This works on creatures you have not marked with Hunter's Mark, because the cord marks independently of the class ability.",
-      "Cord Pull (Free, 1/encounter): When your marked quarry moves away from you, pull the cord taut. The quarry is Slowed. No roll required. The quarry feels it.",
+      "Cord Pull (Free, 1/encounter): When your marked quarry moves away from you, pull the cord taut. The quarry is Slowed (Speed halved on its next turn). No roll required. The quarry feels it.",
       "Cut the Mark (Free): Remove one Mark from the cord and burn its token. The cord forgets that quarry, your sense of its direction ends, and it is no longer tracked. Use this when the pursuit is no longer worth the rising risk. Nothing alerts the quarry."
     ],
     "escalation": "When the d6 roll triggers, the quarry, or something near it, begins tracking you in return. The GM introduces this threat within 1 to 2 sessions. The threat is proportional to what you marked: a city rat sends a rat, a Borderlands warlord sends soldiers."
@@ -197,7 +197,7 @@
     "powers": [
       "Read the Contract (Free, 1/encounter, mark 1 Debt): Hold the vellum up. You see one true fact about a creature you can see: its most urgent want, its deepest fear, or the name of someone it has wronged.",
       "Patron's Margin (Free, 1/encounter, mark 2 Debt, patron path): Cast one tiered spell you know at +1 tier above your current maximum. The patron extends credit.",
-      "Reaver's Margin (Free, 1/encounter, mark 2 Debt, Reaver path): Your next Bonescythe strike this turn rolls 1 extra damage die."
+      "Reaver's Margin (Free, 1/encounter, mark 2 Debt, Reaver path): Your next Bonescythe strike this turn rolls one extra d12."
     ],
     "escalation": "When Debt reaches 4, the patron collects. It does not take power. It adds one sentence about your character to the contract, permanently. The GM decides what it says and reads it aloud. Debt clears. The sentence stays. A Reaver's contract still answers to the patron they left: that patron writes the sentence, and sends an agent to read it to them in person. Roll a d6 on the table below, or choose.",
     "escalation_table": {
@@ -295,7 +295,7 @@
     },
     "powers": [
       "Apply (1 Action, spend 1 Earthpulse): Smear the mud on yourself or a willing creature. While it is applied, the creature cannot be pushed, thrown, or moved by non-magical forced movement. Mud washes off in rain or after a Field Rest.",
-      "Extend the Beastshift (Free, spend 2 Earthpulse, once per Beastshift): Until the end of this encounter, casting spells does not end your Beastshift.",
+      "Extend the Beastshift (Free, spend 2 Earthpulse, once per Beastshift): Until the end of this encounter, casting spells does not end your Beastshift. It still ends at 0 HP or when you end it.",
       "Mire (1 Action, spend all 4): Create a 3-space radius of difficult terrain centered on you that lasts until the end of the encounter. The ground thickens and pulls. Any creature that starts its turn in the mire is Slowed."
     ],
     "escalation": "When the jar is empty, mud already applied does not dry, but no new mud can be applied until the jar is refilled. If the jar breaks, the mud it held dries at once and all its effects end. A skilled craftsperson can repair a broken jar, but the marshes must still refill it. Each time you return to refill it, the marshes have changed, and the GM says how. Roll a d6 on the table below, or choose.",
@@ -381,7 +381,7 @@
       "text": "Breath (pip tracker, max 4). Gain 1 Breath each time you draw a creature's last breath (see Last Breath). All Breath is lost when you take the pendant off. A rest does not clear it."
     },
     "powers": [
-      "Last Breath (Reaction, 1/round): When a creature within Reach 2 drops to 0 HP, you draw its last breath and gain 1 Breath. Make a WIL save, DC 12, or gain a Condition of the GM's choice from Frightened, Dazed or Slowed until the end of your next turn.",
+      "Last Breath (Reaction, 1/round): When a creature within Reach 2 drops to 0 HP, other than one you created or summoned, you draw its last breath and gain 1 Breath. Make a WIL save, DC 12, or gain a Condition of the GM's choice from Frightened, Dazed or Slowed until the end of your next turn.",
       "Cold Skin (Passive): While you hold any Breath, you are immune to cold damage and to the dangers of extreme cold.",
       "Hold the Breath (Free, spend 1 Breath): You go without air for up to one hour.",
       "Choke (1 Action, spend 2 Breath): A creature within Reach 2 gasps. It makes a STR save, DC 13, or is Incapacitated as it chokes, until the end of its next turn. The whispers tell you its name."
@@ -543,7 +543,7 @@
       "text": "Tally (d6 vs. accumulation). Add 1 Tally each time you use Spared, then roll a d6. If it rolls equal to or under your Tally, a valkyrie comes for the spared life (see Escalation). Tally has no maximum, so at 6 or more every Spared calls her. Tally clears only when you carry the feather back to its stone in the grave it came from."
     },
     "powers": [
-      "Spared (Reaction, 1/encounter, +1 Tally): You or an ally within 6 spaces stays at 1 HP instead of dropping to 0.",
+      "Spared (Reaction, 1/encounter, +1 Tally): You or an ally within 6 spaces stays at 1 HP instead of dropping to 0. It takes no Wound and is not Dying.",
       "Gold Barbs (Passive): The barbs glow when a creature within 12 spaces drops to 0 HP."
     ],
     "escalation": "A valkyrie arrives within a day to claim the spared life, yours or your ally's. She will hear one argument for it. The GM plays her."
@@ -567,7 +567,7 @@
       "text": "Growth (pip tracker, max 4). Gain 1 Growth for each hour you spend underwater in a drowned place (the Lost Cisterns, Sunken Revvia, a flooded vault), beyond what the gig needs. That hour costs a scene. A rest never adds Growth. Lose 1 Growth when you take a Wound, and 1 each day after a week spent dry. Using Eel Slip spends 1 Growth."
     },
     "powers": [
-      "Tide Skin (Passive): Defense 3+DEX, plus 1 per Growth. Each Growth also gives -1 to Stealth.",
+      "Tide Skin (Passive): Leather armor, Defense 3+DEX, plus 1 per Growth. Each Growth also gives -1 to Stealth.",
       "Eel Slip (Reaction, spend 1 Growth): When you are Grappled or Restrained, you slip free and move 1 space."
     ],
     "escalation": "At 4 Growth the coat is a landmark, and things in the deep start coming to see it."
@@ -591,7 +591,7 @@
       "text": "Burden (pip tracker, max 3), one per weapon stuck in the sap. Burden clears when you pry the stuck weapons loose, which takes tools and an hour, and then re-glue the harness with fresh sap from the tree that gave it. A Safe Rest does not clear Burden."
     },
     "powers": [
-      "Thorned Bark (Passive): Defense 6+DEX (max 2) and advantage on Stealth in forests and jungles. Each Burden gives -1 Speed.",
+      "Thorned Bark (Passive): Mail armor, Defense 6+DEX (max 2) and advantage on Stealth in forests and jungles. Each Burden gives -1 Speed.",
       "Snare (Reaction, +1 Burden): When a melee weapon hits you, the attacker makes a STR save, DC 13, or the weapon sticks. The attacker must let go of it or stay adjacent to you; anyone can pry a stuck weapon free with an action and a Might check, DC 13. A creature using natural weapons is Grappled to you until it passes the save, and adds no Burden."
     ],
     "escalation": "When a fourth weapon would stick, the sap seals you in: you are Restrained until someone spends an action and passes a Might check, DC 14, to cut you out. Then the harness gives half its Defense until it is glued again with fresh sap."
@@ -616,7 +616,7 @@
       "text": "Thirst (pip tracker, max 3). Gain 1 Thirst each time you use Command. Thirst clears only when you offer blood to the hide outside combat, from a creature that was not trying to harm you. Blood shed in a fight does not count."
     },
     "powers": [
-      "Demon Plate (Passive): Defense 14, with no STR requirement.",
+      "Demon Plate (Passive): Plate armor, Defense 14, with no STR requirement.",
       "Terror (Passive): The first time a creature sees you in an encounter, it makes a WIL save, DC 14, or has -1 to all its rolls near you for the encounter.",
       "Command (Action, +1 Thirst, 1/encounter): One undead or demon within 6 spaces that can hear you makes a WIL save, DC 14. On a failure, on its next turn it obeys one command of five words or fewer. It will not harm itself. Solo creatures save with advantage."
     ],
@@ -642,7 +642,7 @@
       "text": "Steam (pip tracker, max 4). Spend 1 Steam per use. Regain all by stoking the boilers with a load of forge coal drawn from Vathrex's Forge, which means a trip to the ziggurat and whatever price Erna Ironhorn names. A load fills the boilers once and takes an inventory slot. Steam returns only this way."
     },
     "powers": [
-      "Iron Joints (Passive): Defense 18, with no STR requirement.",
+      "Iron Joints (Passive): Plate armor, Defense 18, with no STR requirement.",
       "Boiler Fire (spend 1 Steam): Choose one. Wrist crossbow (Free, 1/turn): a ranged attack, Range 8, 1d8+DEX piercing, no loading. Hidden blade (Action): a melee attack, 1d8+STR slashing. Boiler surge (Free): advantage on one Might check."
     ],
     "escalation": "At 0 Steam the servos lock: Speed 2 and disadvantage on DEX until stoked. If you spend the last Steam in combat, the boilers vent: 1d6 fire to you and everyone adjacent."
