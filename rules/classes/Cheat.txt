@@ -1,0 +1,489 @@
+THE CHEAT
+Game Design and Art Direction: Evan Diaz.
+Subclass Design Contributors: Daniel Ferrer,
+Jack Weighill, J Fork.
+Artist Credits: Florian Frey, Vladimir Iftimescu,
+Vladimir Matyukhin, Evan Diaz.
+
+Cover Art: Joseph Qiu
+Nimble Heroes: The Cheat
+Designed in the USA, Printed in China.
+Copyright © 2026 Nimble Co. All rights reserved.
+www.nimbleRPG.com
+
+Nimble 3rd Party Creator License v2.0
+This license is perpetual and irrevocable except upon violation.
+
+Terms. You may use and reference ANY published Nimble text (current
+or future) in your own original products based on or compatible with
+Nimble (e.g., adventures, classes, subclasses, monsters, supplements)
+without Nimble Co.’s prior approval and retain all profits.
+
+• Copying, restating, or summarizing large portions of text with little
+added content does not qualify as an original product.
+• You may NOT use the Nimble art or logo—but may use a Nimble
+compatibility logo (nimbleRPG.com/creators). Your product must not
+appear to be an official Nimble product or endorsed by Nimble Co.
+
+Required Attribution. Include in your product:
+[Product Name] is an independent product published under the
+Nimble 3rd Party Creator License. Nimble TTRPG © Nimble Co.
+
+Online Apps and VTTs. For free online tools/wikis/apps/VTT implementations (app), you may use any and all published Nimble text, provided the app is completely free to use (optional donations to defray
+development/hosting costs permitted) and you include this notice
+prominently (a banner, sidebar, welcome message, etc.):
+
+This [app/tool/etc.] is free to use for anyone who already owns the
+content, is trying the system out, or cannot afford to buy it right now.
+If you enjoy Nimble and are able, please support the game by purchasing the official content at nimbleRPG.com.
+Restrictions and Rights Reserved. We are not liable for claims
+related to your product, and you will not bring legal claims against us.
+Unless explicitly stated, this license does not grant copyright, moral,
+publicity, privacy, patent, or trademark rights. All other rights are
+reserved by Nimble Co. Nimble is provided AS-IS without warranties.
+
+Legal Terms. You agree to indemnify Nimble Co. and its affiliates
+from any claims or liabilities arising from your use of this license, mutually where applicable, as permitted by law. This license may be terminated if you violate its terms; upon termination, cease distribution until
+resolved. Governed by Florida law. Disputes resolved in U.S. District
+Court for the Middle District of Florida or state courts in Orange County,
+Florida. Unenforceable provisions reformed or severed without affecting the rest. Does not waive Nimble Co.’s legal privileges.
+
+This work includes material taken from the System Reference Document 5.1 (“SRD 5.1”) by Wizards of the Coast LLC and available at https://
+dnd.wizards.com/resources/systems-reference-document. The SRD 5.1 is licensed under the Creative Commons Attribution 4.0 International
+License available at https://creativecommons.org/licenses/by/4.0/legalcode.
+
+1
+
+THE CHEAT
+
+CLOAK &
+
+DAGGER
+(AND DAGGER…)
+
+The Cheat doesn’t call herself a Cheat, of course—rather, a streetsmart rogue, a survivalist, or a liberator of unused goods. They are masters of stealth, pickpocketing, and
+smooth talking. Some of the more vicious ilk are masters of death-dealing as well.
+Cheats can be found in every city and byway under countless different names, but
+they all believe something similar: It’s a cruel, merciless world, and those who aim
+to survive don’t have time for silly things like “morals” or “honor.” Those are luxuries of the rich and powerful. Honor gets you killed—survival is about taking what
+you want, when you can.
+
+Break the rules! You can
+change the dice you roll
+to whatever numbers suit
+you best!
+
+Sneakily backstab enemies
+with devastating crits. Take
+down even heavily armored
+foes with a single blow!
+
+Fight dirty with pocket sand
+and low blows. When things
+turn ugly, disappear and live
+to cheat another day!
+
+High burst damage class that can get in and get out!
+Class complexity:
+
+[f][e][e][e]
+
+2
+
+ARTIST: EARL LAN
+
+3
+
+THE CHEAT
+Key Stats: DEX, INT Hit Die: 1d6 Starting HP: 10
+Saves: DEX+, WIL– Armor: Leather Armor Weapons: DEX Weapons
+Starting Gear: 2 Daggers, Sling, Cheap Hides, Chalk
+LEVEL 1
+
+Sneak Attack. (1/turn) When you crit, deal +1d6 damage.
+Vicious Opportunist. (1/turn) When you HIT a Distracted target with a melee attack, you
+may change the Primary Die roll to whatever you like (changing it to the max value counts as
+a crit).
+
+Distracted. A target is Distracted if it is adjacent to (or Taunted by) an ally, or if it cannot see you. Yes! If you can
+figure out how to attack on someone else’s turn, you can use this again in the same round!
+LEVEL 2
+
+Cheat. You’re a well-rounded cheater. Gain the following abilities:
+• (1/round) You may either Move or Hide for free.
+• (1/Safe Rest) You may change any of your skill checks to 10+INT.
+• If you roll less than 10 on Initiative, you may change it to 10 instead.
+• You may gain advantage on skill checks while playing any games, competitions, or
+placing wagers. If you’re caught though…
+
+Magic? The Cheat has some abilities that look magical—they might be, but don’t have to be. You have your ways,
+okay? No need to explain how you did that, not even to the GM!
+LEVEL 3
+
+LEVEL 4
+
+4
+
+LEVEL 5
+
+Twist the Blade. Action: Change a Sneak Attack die to whatever you like.
+Quick Read. (1/encounter) Gain advantage on an Assess check.
+Secondary Stat Increase. +1 WIL or STR.
+
+LEVEL 6
+
+Underhanded Ability (2). Choose a 2nd Underhanded Ability.
+THAT’S Not What Happened! (1/Safe Rest) Reaction (when a Distracted
+enemy attacks you): You may change the Primary Die roll to whatever you like
+(changing the die to the minimum value counts as a miss).
+
+LEVEL 7
+
+Subclass. Gain your Cheat subclass feature.
+Sneak Attack (3). Your Sneak Attack becomes 2d8.
+
+LEVEL 8
+
+Underhanded Ability (3). Choose a 3rd Underhanded Ability.
+Key Stat Increase. +1 DEX or INT.
+
+LEVEL 9
+
+Sneak Attack (4). Your Sneak Attack becomes 2d10.
+Secondary Stat Increase. +1 WIL or STR.
+
+LEVEL 10 Underhanded Ability (4). Choose a 4th Underhanded Ability.
+LEVEL 11
+
+Subclass. Gain your Cheat subclass feature.
+Sneak Attack (5). Your Sneak Attack becomes 2d12.
+
+LEVEL 12 Underhanded Ability (5). Choose a 5th Underhanded Ability.
+
+Key Stat Increase. +1 DEX or INT.
+
+LEVEL 13 Twist the Blade (2). (1/turn) You can Twist the Blade for free.
+
+Secondary Stat Increase. +1 WIL or STR.
+
+LEVEL 14 Underhanded Ability (6). Choose a 6th Underhanded Ability.
+LEVEL 15 Subclass. Gain your Cheat subclass feature.
+
+Sneak Attack (6). Your Sneak Attack becomes 2d20.
+
+LEVEL 16 Underhanded Ability (7). Choose a 7th Underhanded Ability.
+
+Key Stat Increase. +1 DEX or INT.
+
+LEVEL 17 Sneak Attack (7). Your Sneak Attack becomes 3d20.
+
+Secondary Stat Increase. +1 WIL or STR.
+
+Subclass. Choose a Cheat subclass.
+Sneak Attack (2). Your Sneak Attack becomes 1d8.
+Thieves’ Cant. You learn the secret language of rogues and scoundrels.
+
+LEVEL 18 Underhanded Ability (8). Choose an 8th Underhanded Ability.
+
+Key Stat Increase. +1 DEX or INT.
+Underhanded Ability. Choose an Underhanded Ability.
+
+LEVEL 20 Supreme Execution. +1 to any 2 of your stats. When you attack with a blade,
+
+LEVEL 19 Epic Boon. Choose an Epic Boon (see pg. 75 of the GM’s Guide).
+
+you do not require targets to be Distracted to trigger Vicious Opportunist.
+
+5
+
+How’d YOU get here?!
+
+2 Actions
+
+(Reach 12) “Teleport” adjacent to a Distracted target, and make a
+melee attack against them. If you crit, you may “teleport” again.
+
+I’m Outta Here!
+
+Passive
+
+When an ally within Reach 4 is crit, you may turn Invisible
+until the end of your next turn and then move up to half your
+Speed for free.
+
+MisdirectionPassive
+Gain INT Defense. Whenever you Defend, you may halve the
+damage instead.
+
+UNDERHANDED
+ABILITIES
+Trade Secrets. Whenever you spend a night talking shop with other roguish types during a Safe
+Rest, you may choose different Cheat options available to you.
+
+“Creative” Accounting
+
+Passive
+
+Steal up to INT actions from your next turn (Gain up to INT actions
+now. The next time you would gain actions, subtract the number
+stolen). You cannot use this 2 turns in a row.
+
+Exploit Weakness 
+
+Passive
+
+Whenever you successfully Assess: Create an Opening against
+a creature, you can use Vicious Opportunist against them, even
+if they are not Distracted. This lasts for 1 minute or until you use
+it against another target.
+
+Feinting Attack
+
+Passive
+
+If you miss for the 2nd time in a single round, you may change
+the Primary Die roll to any result instead.
+
+6
+
+Steal Tempo
+
+Passive
+
+Sunder Armor
+
+1 Action
+
+Tangling Wire
+
+Passive
+
+The Setup
+
+1 Action
+
+Trickshot 
+
+Passive
+
+When you crit for the second time in a round, your target is
+Dazed and you give an ally 1 action.
+
+After you crit an armored creature, sunder their armor: give the
+next non-crit Primary Die rolled against them +2.
+
+Whenever you Grapple, you may Restrain instead.
+
+Reaction (when an ally misses a creature adjacent to you): You
+can make an Opportunity Attack against them, treating them
+as Distracted.
+
+You can use Vicious Opportunist on thrown weapon attacks (but
+you can’t use Twist the Blade on them). Whenever you throw
+a weapon, you may spend an additional action to have it hit
+another creature within Reach 2 of it, dealing half as much
+damage to them.
+
+7
+
+SUBCLASSES
+
+– TOOLS OF THE –
+
+SILENT BLADE
+Kill, kill, kill. Subclass Complexity:
+
+[f][e][e][e]
+
+LEVEL 3
+
+Amidst All This Commotion… If a creature dies while
+you Sneak Attack them, you may turn Invisible until you
+attack again or until the beginning of your next turn.
+Leave No Trace. Advantage on Stealth checks when you
+are at full health.
+
+LEVEL 7
+
+Cunning Strike. Deal +2×INT damage whenever you
+crit.
+
+LEVEL 11
+
+Professional Skulker. Gain a climbing Speed and advantage on Stealth checks (replaces Leave No Trace).
+
+LEVEL 15 KILL. When you Sneak Attack an enemy with fewer max
+
+HP than you, it dies.
+
+8
+
+ARTIST: EARL LAN
+
+9
+
+SUBCLASSES
+
+– TOOLS OF THE –
+
+SCOUNDREL
+Stay alive, fight dirty. Subclass Complexity:
+
+[f][f][e][e]
+
+LEVEL 3
+
+Low Blow. When you Sneak Attack a creature not already Taunted by you, you may
+spend 1 additional action to roll 1d4. They are:
+1. Taunted by you for the rest of this encounter.
+2. Knocked Prone, then Taunted by you for the rest of this encounter.
+3. Dazed, then Taunted by you for the rest of this encounter.
+4. Incapacitated until the end of the next hero’s turn.
+Sweet Talk. You may gain advantage on all Influence checks with NPCs you’ve just
+met for the first time. This lasts until you fail an Influence check with them or until
+you meet a 2nd time. You have disadvantage on Influence checks with them after
+you use this ability (until you get back on their good side).
+
+LEVEL 7
+
+Pocket Sand. (2/encounter—you’ve got to collect more sand!) When you Defend
+against an adjacent creature, Blind the attacker until the start of their next turn and
+force them to reroll the attack (Blind creatures attack with disadvantage).
+
+LEVEL 11
+
+Escape Plan. (1/Safe Rest) When you would drop to 0 HP or gain a Wound, you
+don’t. Instead, you turn Invisible for 1 minute or until you attack.
+
+LEVEL 15 Heads I Win, Tails You Lose. (1/encounter) Attacks you make this round don’t
+
+miss, you crit on 1 less than normally needed, and you gain LVL temp HP.
+
+10
+
+ARTIST: JOSEPH QIU
+
+11
+
+THE CHEAT
+
+QUICK BUILDS
+Stabs!
+
+Kobold, The Cheat
+
+-1
+
++2
+
++2
+
++0
+
++2
+
++2
+
++3
+
++1
+
+1
+
+5
++0
+
++2
+
+Kobold, The Cheat
+
+-1
+
++2
+
++2
+
++0
+
++1
+
++2
+
++4
+
++1
+
+-1
+
++2
+
+d6
+
+6
+
++0
+
++0
+
++4
+
+Daggers (2). (1d4+2) Thrown 4, Dual Wield
+Sling (4). (1d4+2) Range 12, Vicious
+Cheap Hides. 3+DEX Defense
+Chalk.
+
+2
+
+6
+
+Small
+
+14
+5
++0
+
++2
+
+Sneak Attack. (1/turn) Crit: +1d6 damage.
+Vicious Opportunist. (1/turn) When you HIT a Distracted target
+in melee, change Primary Die to whatever you like.
+Wily (Kobold). (1/encounter) Force enemy to reroll a non-critical
+attack against you.
+Cheat. Change Initiative to 10; (1/round) Move/Hide for free; (1/
+Safe Rest) Change skill check to 12.
+16
+
+Small
+
+10
+
+Sneak Attack. (1/turn) Crit: +1d6 damage.
+Vicious Opportunist. (1/turn) When you HIT a Distracted target
+in melee, change Primary Die to whatever you like.
+Wily (Kobold). (1/encounter) Force enemy to reroll a non-critical
+attack against you.
+
+Stabs!
+
+6
+
+-1
+
++2
+
+d6
+
+6
+
++0
+
++0
+
++5
+
+Daggers (2). (1d4+2) Thrown 4, Dual Wield
+Sling. (1d4+2) Range 12, Vicious
+Cheap Hides. 3+DEX Defense
+Chalk.
+
+

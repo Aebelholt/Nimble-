@@ -1,0 +1,539 @@
+SONGWEAVER
+Game Design and Art Direction: Evan Diaz.
+Subclass Design Contributors: Jack Weighill,
+Christian Bertrand, Jonathan Meek, Frank Hudson,
+Tyler Overland, Matt Shiffler.
+Artist Credits: Chen Guixin, Wilson Nugura, Shen
+Fei, Vlad Iftimescu, Evan Diaz.
+
+Cover Art: Chen Guixin
+Nimble Heroes: Songweaver
+Designed in the USA, Printed in China.
+Copyright © 2026 Nimble Co. All rights reserved.
+www.nimbleRPG.com
+
+Nimble 3rd Party Creator License v2.0
+This license is perpetual and irrevocable except upon violation.
+
+Terms. You may use and reference ANY published Nimble text (current
+or future) in your own original products based on or compatible with
+Nimble (e.g., adventures, classes, subclasses, monsters, supplements)
+without Nimble Co.’s prior approval and retain all profits.
+
+• Copying, restating, or summarizing large portions of text with little
+added content does not qualify as an original product.
+• You may NOT use the Nimble art or logo—but may use a Nimble
+compatibility logo (nimbleRPG.com/creators). Your product must not
+appear to be an official Nimble product or endorsed by Nimble Co.
+
+Required Attribution. Include in your product:
+[Product Name] is an independent product published under the
+Nimble 3rd Party Creator License. Nimble TTRPG © Nimble Co.
+
+Online Apps and VTTs. For free online tools/wikis/apps/VTT implementations (app), you may use any and all published Nimble text, provided the app is completely free to use (optional donations to defray
+development/hosting costs permitted) and you include this notice
+prominently (a banner, sidebar, welcome message, etc.):
+
+This [app/tool/etc.] is free to use for anyone who already owns the
+content, is trying the system out, or cannot afford to buy it right now.
+If you enjoy Nimble and are able, please support the game by purchasing the official content at nimbleRPG.com.
+Restrictions and Rights Reserved. We are not liable for claims
+related to your product, and you will not bring legal claims against us.
+Unless explicitly stated, this license does not grant copyright, moral,
+publicity, privacy, patent, or trademark rights. All other rights are
+reserved by Nimble Co. Nimble is provided AS-IS without warranties.
+
+Legal Terms. You agree to indemnify Nimble Co. and its affiliates
+from any claims or liabilities arising from your use of this license, mutually where applicable, as permitted by law. This license may be terminated if you violate its terms; upon termination, cease distribution until
+resolved. Governed by Florida law. Disputes resolved in U.S. District
+Court for the Middle District of Florida or state courts in Orange County,
+Florida. Unenforceable provisions reformed or severed without affecting the rest. Does not waive Nimble Co.’s legal privileges.
+
+This work includes material taken from the System Reference Document 5.1 (“SRD 5.1”) by Wizards of the Coast LLC and available at https://
+dnd.wizards.com/resources/systems-reference-document. The SRD 5.1 is licensed under the Creative Commons Attribution 4.0 International
+License available at https://creativecommons.org/licenses/by/4.0/legalcode.
+
+1
+
+SONGWEAVER
+
+Just TRY and resist
+my charm!
+(wait…NO, DON’T!)
+
+E
+
+ach Songweaver holds a spark granted to them by a muse at birth;
+a spark which fuels their creative energy and flows forth in the
+form of a sharp wit, relentless humor, or moving art.
+
+The power of a Songweaver’s spark is also evident in their powerful sway
+over others. Songweavers can bolster and infuse courage in their allies, or…
+make their enemies’ brains leak out through their ears. The Songweaver
+can bring a whole new meaning to verbal abuse! They can even redirect
+the (often justified) attacks of others, in order to protect their own moneymakers. As a Songweaver, you can:
+
+Charm the hapless people
+you meet and inspire your
+allies to reach fantastic new
+heights of heroism!
+
+Use your Lyrical Weaponry and powerful charisma to dominate enemies—
+even redirecting attacks, making
+enemies attack their own allies!
+
+Control the Battlefield with a
+chord of chaos, a rad heroic
+ballad, or a debilitating
+rhapsody.
+
+A high utility class that can harm, harass, and heal with equal mastery!
+Class complexity:
+
+[f][f][f][e]
+
+2
+
+ARTIST: CHEN GUIXIN
+
+3
+
+Perform! Whenever you perform in a place that inspires you, or exchange barbs with another competent wordsmith during a Safe Rest, you may choose different Songweaver options available to you.
+
+SONGWEAVER
+Key Stats: WIL, INT Hit Die: 1d8 Starting HP: 13
+Saves: WIL+, STR– Armor: Cloth, Leather Weapons: DEX, Wands
+Starting Gear: Adventurer’s Garb, Instrument, Dagger, Mirror
+LEVEL 1
+
+LEVEL 2
+
+LEVEL 3
+
+LEVEL 4
+
+4
+
+Windbag. You know Wind cantrips and the Vicious Mockery spell.
+Songweaver’s Inspiration. (2×WIL times/Safe Rest) Free Reaction: Allow an ally
+to reroll any single die or increase the result rolled by 1.
+Wind Spellcasting and… Choose 1 additional spell school to learn.
+Mana and Unlock Tier 1 Spells. You unlock tier 1 spells and gain a mana pool to
+cast them. The mana pool’s max is always equal to (INT×3)+LVL and recharges on a
+Safe Rest.
+Jack of All Trades. Whenever you Safe Rest, you may move a skill point as if you just
+Leveled up.
+Song of Rest. Whenever you Field Rest, friendly creatures gain +1 healing for each
+Hit Die spent.
+Subclass. Choose a Songweaver subclass.
+Quick Wit. When you roll Initiative, regain 2 spent uses of your Songweaver’s Inspiration (these expire when combat ends if unspent).
+I Know Just the Song. Choose 1 Utility Spell from each spell school you know.
+Tier 2 Spells. You may now cast spells up to tier 2.
+Key Stat Increase. +1 WIL or INT.
+Lyrical Weaponry. Choose 1 ability from the Lyrical Weaponry list.
+
+LEVEL 5
+
+A “People“ Person. You’ve met many people in your travels; some have
+even agreed to come to your aid should you need it. Choose 2 friends you
+know: you can temporarily summon them via song (1/Safe Rest each).
+Upgraded Cantrips. Your cantrips grow stronger.
+Secondary Stat Increase. +1 STR or DEX.
+
+LEVEL 6
+
+Tier 3 Spells. You may now cast spells up to tier 3.
+I Know Just the Song (2). Choose a 2nd Utility Spell from each spell
+school you know.
+
+LEVEL 7
+
+Subclass. Gain your Songweaver subclass feature.
+
+LEVEL 8
+
+Tier 4 Spells. You may now cast spells up to tier 4.
+Key Stat Increase. +1 WIL or INT.
+
+LEVEL 9
+
+Lyrical Weaponry (2). Choose a 2nd ability from the Lyrical Weaponry
+list.
+Secondary Stat Increase. +1 STR or DEX.
+
+LEVEL 10 Tier 5 Spells. You may now cast spells up to tier 5.
+
+Upgraded Cantrips. Your cantrips grow stronger.
+
+LEVEL 11
+
+Subclass. Gain your Songweaver subclass feature.
+
+LEVEL 12 Tier 6 Spells. You may now cast spells up to tier 6.
+
+Key Stat Increase. +1 WIL or INT.
+
+LEVEL 13 Lyrical Weaponry (3). Choose a 3rd ability from the Lyrical Weaponry list.
+
+Secondary Stat Increase. +1 STR or DEX.
+
+LEVEL 14 Tier 7 Spells. You may now cast spells up to tier 7.
+
+I Know Just the Song (3). You know all Utility Spells from the spell schools
+you know.
+
+LEVEL 15 Subclass. Gain your Songweaver subclass feature.
+
+Upgraded Cantrips. Your cantrips grow stronger.
+
+LEVEL 16 Tier 8 Spells. You may now cast spells up to tier 8.
+
+Key Stat Increase. +1 WIL or INT.
+
+LEVEL 17 Lyrical Weaponry (4). Choose a 4th ability from the Lyrical Weaponry list.
+
+Secondary Stat Increase. +1 STR or DEX.
+
+LEVEL 18 Tier 9 Spells. You may now cast spells up to tier 9.
+LEVEL 19 Epic Boon. Choose an Epic Boon (see pg. 75 of the GM’s Guide).
+LEVEL 20 I’m So Famous! +1 to any 2 of your stats. Your Songweaver’s Inspiration
+
+also grants that ally advantage on all subsequent rolls this round.
+Upgraded Cantrips. Your cantrips grow stronger.
+
+5
+
+SONGWEAVER ONLY, CANTRIP
+
+Vicious Mockery
+
+1 Action
+
+Range: 12. Damage: 1d6+INT psychic (ignoring Armor). On hit: target is
+Taunted until the end of their next turn.
+High Levels: +3 damage every 5 Levels.
+
+Stompy 
+
+LYRICAL WEAPONRY
+Perform! Whenever you perform in a place that inspires you, or exchange barbs with another competent wordsmith during a Safe Rest, you may choose different Songweaver options available to you.
+
+Heroic Ballad 
+
+1 Action
+
+Inspiring Anthem
+
+1 Action
+
++2 max Songweaver’s Inspiration charges. When used to reroll
+an ally’s attack, your Songweaver’s Inspiration also grants them
++WIL damage.
+
+(1/encounter) Grant all friendly Dying creatures who can hear
+you 1 HP and 1 action.
+
+Not My Beautiful Faaace! Passive
+
+(1/encounter) When you Defend, force the attacker to choose
+another target within range on a failed WIL save (if there is none,
+the attack fails). If they fail by 5 or more, they attack themselves!
+On save, reroll the attack and choose either result.
+
+Rhapsody of the Normal
+
+2 Actions
+
+(Reach 6, 1/encounter) Move all enemies who can hear you
+6 spaces on a failed WIL save, half as far on save. They cannot
+move on their next turn.
+
+6
+
+2 Actions
+
+Summon a huge hill giant for 1 round. As he enters the battlefield adjacent
+to you, use Stompy’s Stomp: Make a DC 10 Influence check. On a success,
+he moves 6 spaces in a direction you choose; on a failure, he moves toward
+YOU instead (“YOU NOT FRIEND!”). He deals LVL+Influence check damage
+to everything in his path. ANY other creature within Reach 6 of Stompy can
+use this ability once instead of an attack.
+
+Mal, the Malevolent Imp
+
+Summon a tiny fiend for 1 night. He can find out dangerous information you
+have no right to know! Or “take care” of a problem with only the slightest
+chance of things going wrong. Make an Influence check to convince him to
+help you (advantage if you ask him to do something he would find mischievous
+or fun; with disadvantage if it is something he would find good or menial).
+
+Gran Gran (NOT a hag)
+
+When resting, you may summon her for 1 hour to soothe your wounds (and
+hassle you for not eating enough). She bakes and hands out WIL+INT pastries.
+Eating one recovers one mana, Hit Die, or Wound. Eat them while they’re
+warm! They expire in 10 minutes.
+
+Linos, the Everfriendly
+
+Summon a legendary flying (but friendly) creature to take you and your
+party wherever you need to go. He may request a very large amount of
+food as payment.
+
+1 Action
+
+When you roll 4+ on Vicious Mockery, you may spend a
+Songweaver’s Inspiration charge to temporarily suppress any
+special abilities they have until the end of their next turn. They
+can do only what an untrained average villager can do, attack once
+for 1d4 damage and move up to 6 spaces (no Armor, spellcasting,
+flying, regeneration, other inherent or trained features).
+
+Song of Domination 
+
+A “PEOPLE” PERSON
+
+Flavor is Free. If you’d rather have a more traditional bard type—a keeper of ancient legends—instead
+of people you know, the characters above can be reflavored as famous legends from history that
+you can magically summon via song. Feel free to work with your GM to make it happen. As long as
+the mechanics stay roughly the same, have fun!
+Making Your Own People. You can work with your GM to swap out Stompy, Gran Gran, Mal, and
+Linos for your own creations if you like. 1 in-combat person whose damage scales with your Level
+(see other spells and abilities for appropriate amounts of damage or other effects), 1 out-of-combat
+support person, 1 who can help in narrative situations, and 1 who can give sporadic utility. Follow
+that broad pattern and you’ll be fine!
+Balance Note. If you find yourself never wanting to use one, make it slightly stronger; if you’re using
+it too frequently, consider bringing the power Level down slightly or adding some other drawback.
+
+7
+
+SUBCLASSES
+
+SUBCLASSES
+
+— HERALD OF —
+
+— HERALD OF —
+
+SNARK
+
+COURAGE
+
+Nothing wrong with a little lighthearted jest now and again!
+Distract and discourage your enemies with tricks of the mind.
+Subclass Complexity:
+
+“Brave heroes! Lend your ears to my epic tale…”
+Be heartened, and your friends will never falter.
+Subclass Complexity:
+
+[f][f][e][e]
+
+LEVEL 3
+
+Opportunistic Snark. Reaction (Range 12, when an enemy misses an attack): You may cast
+Vicious Mockery at them; it deals double damage when cast this way and can’t miss.
+
+LEVEL 3
+
+Inspiring Presence. Whichever ally is nearest to you has advantage
+(if multiple are equally close, choose your favorite).
+
+LEVEL 7
+
+Fight Picker. (1/turn) When an enemy is damaged by your Vicious Mockery, you may have
+one of your allies Taunt them until the end of the enemy’s turn instead.
+
+LEVEL 7
+
+Fire in My Bones. Your Songweaver’s Inspiration also grants your
+target 1 additional action.
+
+LEVEL 11
+
+Chord of Chaos. (1/encounter) Action: You may move ALL creatures within hearing of your
+song up to 3 spaces as long as they do not move into an obviously dangerous place.
+
+LEVEL 11
+
+Unfailing Resolve. Your Songweaver’s Inspiration allows your target
+to reroll with advantage or increases a die face by +2.
+
+LEVEL 15 Words Like Swords. Your Vicious Mockery damage die becomes 1d12.
+
+8
+
+[f][f][e][e]
+
+LEVEL 15 Chorus of Champions. (1/encounter) Free Reaction: Give all party
+
+members 1 action.
+
+9
+
+“Every city, a stage!
+Every stranger, a fan in the waiting!”
+—Songweaver Proverb
+
+FAQ
+
+Can I Inspire myself? No. You are your own biggest fan, but you are
+not your own ally.
+When do I decide to use Songweaver’s Inspiration? After a roll,
+before the effect takes place.
+Does a rerolled Primary Die remain the Primary Die? Yes.
+Can increasing a die by 1 change a miss into a hit, or a hit into
+a crit? Yes.
+How do Legends work? They are incorporeal beings, immune to harm,
+and take up no space.
+
+SONGWEAVER NAMES
+Male Names
+• Maximilian
+• Auracio
+• Dorian
+• Valentino
+• Strings
+• Orin
+• Caspian
+
+14
+
+Female Names
+• Seraphina
+• Nyx
+• Arabella
+• Saffron
+• Marveletta
+• Isadora
+• Fantasia
+
+ARTIST: SHEN FEI
+
+15
+
+SONGWEAVER
+
+QUICK BUILDS
+Orin
+
+Orc, Songweaver
+
+-1
+
++0
+
++2
+
++2
+
++2
+
++2
+
++0
+
++4
+
+1
+
+-1
+
+2
++4
+
++2
+
++2
+
+Orc, Songweaver
+
++0
+
++2
+
++2
+
++0
+
+d8
+
+6
+
++2
+
++2
+
++0
+
+Lute. Ol’ trusty.
+Dagger. (1d4+DEX).
+Adventurer’s Garb. 2+DEX Defense.
+Mirror.
+
+6
+
+Medium
+
+18
+2
++4
+
++2
+
+Fire & Wind Magic. Tier 1 spells & cantrips.
+Vicious Mockery. 1 Action (Range: 12) 1d6+2 psychic (ignoring
+Armor). On hit: target is Taunted until the end of their next turn.
+Relentless (Orc). (1/Safe Rest) When you would drop to 0 HP, set
+your HP to 2 instead.
+
+16
+
++0
+
++0
+
+2
+
++2
+
++6
+
+Medium
+
+13
+
+Wind Cantrips. Razor Wind, Breath of Life.
+Vicious Mockery. 1 Action (Range: 12) 1d6+2 psychic (ignoring
+Armor). On hit: target is Taunted until the end of their next turn.
+Relentless (Orc). (1/Safe Rest) When you would drop to 0 HP, set
+your HP to 1 instead.
+
+Orin
+
+6
+
+8
+
++0
+
+d8
+
+6
+
++0
+
++1
+
++2
+
++0
+
+Mana
+
+Lute. Ol’ trusty.
+Dagger. (1d4+DEX).
+Adventurer’s Garb. 2+DEX Defense.
+Mirror.
+
+

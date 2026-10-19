@@ -1,0 +1,609 @@
+HUNTER
+Game Design and Art Direction: Evan Diaz.
+Subclass Design Contributors: Emil Andersen,
+Nathan Warkentin.
+Artist Credits: Justine Florentino, Joseph Qiu,
+Vlad Iftimescu, Evan Diaz.
+
+Cover Art: Justine Florentino
+Nimble Heroes: Hunter
+Designed in the USA, Printed in China.
+Copyright © 2026 Nimble Co. All rights reserved.
+www.nimbleRPG.com
+
+Nimble 3rd Party Creator License v2.0
+This license is perpetual and irrevocable except upon violation.
+
+Terms. You may use and reference ANY published Nimble text (current
+or future) in your own original products based on or compatible with
+Nimble (e.g., adventures, classes, subclasses, monsters, supplements)
+without Nimble Co.’s prior approval and retain all profits.
+
+• Copying, restating, or summarizing large portions of text with little
+added content does not qualify as an original product.
+• You may NOT use the Nimble art or logo—but may use a Nimble
+compatibility logo (nimbleRPG.com/creators). Your product must not
+appear to be an official Nimble product or endorsed by Nimble Co.
+
+Required Attribution. Include in your product:
+[Product Name] is an independent product published under the
+Nimble 3rd Party Creator License. Nimble TTRPG © Nimble Co.
+
+Online Apps and VTTs. For free online tools/wikis/apps/VTT implementations (app), you may use any and all published Nimble text, provided the app is completely free to use (optional donations to defray
+development/hosting costs permitted) and you include this notice
+prominently (a banner, sidebar, welcome message, etc.):
+
+This [app/tool/etc.] is free to use for anyone who already owns the
+content, is trying the system out, or cannot afford to buy it right now.
+If you enjoy Nimble and are able, please support the game by purchasing the official content at nimbleRPG.com.
+Restrictions and Rights Reserved. We are not liable for claims
+related to your product, and you will not bring legal claims against us.
+Unless explicitly stated, this license does not grant copyright, moral,
+publicity, privacy, patent, or trademark rights. All other rights are
+reserved by Nimble Co. Nimble is provided AS-IS without warranties.
+
+Legal Terms. You agree to indemnify Nimble Co. and its affiliates
+from any claims or liabilities arising from your use of this license, mutually where applicable, as permitted by law. This license may be terminated if you violate its terms; upon termination, cease distribution until
+resolved. Governed by Florida law. Disputes resolved in U.S. District
+Court for the Middle District of Florida or state courts in Orange County,
+Florida. Unenforceable provisions reformed or severed without affecting the rest. Does not waive Nimble Co.’s legal privileges.
+
+This work includes material taken from the System Reference Document 5.1 (“SRD 5.1”) by Wizards of the Coast LLC and available at https://
+dnd.wizards.com/resources/systems-reference-document. The SRD 5.1 is licensed under the Creative Commons Attribution 4.0 International
+License available at https://creativecommons.org/licenses/by/4.0/legalcode.
+
+1
+
+HUNTER
+
+KEEPER OF
+
+THE WILD
+ong before the first stones of the grand kingdoms had been laid, there
+was The Wild. We Hunters called groves and fields home, just as the
+elk and boar still do. We have trained our minds and hearts as much as
+we have trained with bows. For there is great danger in becoming a Hunter: the
+intoxicating Thrill of the Hunt that washes over your body when stalking prey.
+
+L
+
+Be warned—do not let it settle into your heart. For no true Hunter takes without
+recognizing what they have first been given: a soul, a meal, warmth, all at a cost—a
+life. And that should not be taken lightly. Wherever you roam, be it city or glade,
+mountain or valley, as long as The Wild is tenderly tucked into the depths of your
+heart, you will always be a Hunter.
+May your arrows strike true and your bowstrings never break!
+
+As an expert survivalist, you mark your prey,
+becoming a relentless
+tracker in pursuit.
+
+Whether you’re raining
+arrows from a distance or
+closing in for a personal
+takedown, your prey won’t
+escape.
+
+Harness the Thrill of the Hunt to
+outwit your targets—set decoys,
+spring traps, and strike with
+lethal efficiency.
+
+A master of the wild, adept at ranged attacks and high burst
+damage up close. Class complexity:
+
+[f][f][e][e]
+
+2
+
+ARTIST: JUSTINE FLORENTINO
+
+3
+
+HUNTER
+Key Stats: DEX, WIL Hit Die: 1d8 Starting HP: 13
+Saves: DEX+, INT– Armor: Leather Armor Weapons: DEX Weapons
+Starting Gear: Shortbow, Cheap Hides, Dagger, Hunting Trap
+LEVEL 1
+
+LEVEL 2
+
+Hunter’s Mark. Action: A creature you can see is marked as your Quarry for 1 day (or until
+you mark another creature). It can’t be hidden from you, and your attacks against it gain
+your choice of advantage OR +LVL damage (choose before each attack).
+Forager. Gain advantage on skill checks to find food and water in the wild.
+Thrill of the Hunt. Choose 2 Thrill of the Hunt (TotH) abilities. Gain a charge to use these
+abilities during that encounter whenever:
+• You HIT your Quarry in melee.
+• You CRIT your Quarry at Range.
+• Your Quarry dies.
+Roll & Strike. Action: If you have no Thrill of the Hunt charges, move up to your Speed
+toward your Quarry. If you end adjacent to them, make a melee attack against them for
+free.
+
+Remember the Wild. Whenever you spend a day in the wilderness during a Safe Rest, you may choose different
+Hunter options available to you.
+
+LEVEL 3
+
+4
+
+Subclass. Choose a Hunter subclass.
+Tracker’s Intuition. You can discern the events of a past encounter by studying tracks
+and other subtle environmental clues, accurately determining the kind and amount of
+creatures, their direction, key actions, and passage of time.
+
+LEVEL 4
+
+Thrill of the Hunt (2). Choose a 3rd Thrill of the Hunt ability.
+Key Stat Increase. +1 DEX or WIL.
+Explorer of the Wilds. +2 Speed; gain a climbing Speed.
+
+LEVEL 5
+
+Hunter’s Resolve. Whenever you have no Thrill of the Hunt charges, gain Hunter’s
+Resolve until the end of your turn: treat all creatures as your Quarry for the purposes of
+movement and melee attacks.
+Final Takedown. (1 Action, 1 TotH charge) Crit your Bloodied Quarry in melee and
+double the damage of your Hunter’s Mark. If they survive, they crit you back.
+Secondary Stat Increase. +1 STR or INT.
+
+LEVEL 6
+
+Versatile Bowmaster. Whenever you attack with a Longbow, you may roll 2d4 instead
+of 1d8; or with a Crossbow, 2d8 instead of 4d4.
+Thrill of the Hunt (3). Choose a 4th Thrill of the Hunt ability.
+
+LEVEL 7
+
+Subclass. Gain your Hunter subclass feature.
+
+LEVEL 8
+
+Thrill of the Hunt (4). Choose a 5th Thrill of the Hunt ability.
+Key Stat Increase. +1 DEX or WIL.
+
+LEVEL 9
+
+No Escape. Whenever you see one or more allies make an Opportunity Attack, you may
+also make a Ranged Opportunity Attack against the same target.
+Secondary Stat Increase. +1 STR or INT.
+
+LEVEL 10 Veteran Stalker. Gain a Thrill of the Hunt charge whenever you are first Bloodied in
+
+an encounter and for every Wound you gain.
+Keen Eye, Steady Hand. Add WIL to your Ranged weapon damage.
+
+LEVEL 11
+
+Subclass. Gain your Hunter subclass feature.
+
+LEVEL 12 Thrill of the Hunt (5). Choose a 6th Thrill of the Hunt ability.
+
+Key Stat Increase. +1 DEX or WIL.
+
+LEVEL 13 Keen Sight. Advantage on Perception checks.
+
+Secondary Stat Increase. +1 STR or INT.
+
+LEVEL 14 Thrill of the Hunt (6). Choose a 7th Thrill of the Hunt ability.
+LEVEL 15 Subclass. Gain your Hunter subclass feature.
+LEVEL 16 Key Stat Increase. +1 DEX or WIL.
+LEVEL 17 Peerless Hunter. You can Defend against your Quarry for free.
+
+Secondary Stat Increase. +1 STR or INT.
+
+LEVEL 18 Wild Endurance. Gain 1 Thrill of the Hunt charge at the start of your turns.
+LEVEL 19 Epic Boon. Choose an Epic Boon (see pg. 75 of the GM’s Guide).
+LEVEL 20 Nemesis. +1 to any 2 of your stats. Your Hunter’s Mark can target any number of
+
+creatures simultaneously.
+
+5
+
+Heavy Shot
+
+1 Action
+
+Incendiary Shot
+
+1 Action
+
+Multishot	
+
+1 Action
+
+Pinning Shot
+
+3 Actions
+
+Snare Trap
+
+1 Action
+
+(Half Range) Shoot a creature and knock them back 2 spaces.
+
+(Half Range) Attack with a Ranged weapon, add WIL d8
+fire damage.
+
+THRILL OF THE HUNT
+Note: Unless otherwise noted, each Thrill of the Hunt ability costs 1 charge to use and cannot miss. Abilities
+that spend charges cannot generate new ones. Unused charges are lost when combat ends.
+
+Addling Arrow
+
+1 Action
+
+Shoot a target, the next attack they make must be against the
+closest other creature, chosen at random.
+
+Come Get Some!	
+
+1 Action
+
+Attack a target. It is Taunted by you until the end of their next turn.
+
+Shoot your Quarry, rolling 3 times the normal amount of
+dice. They are Restrained until they can escape (DC 10+WIL).
+
+(1/encounter) Reaction (when an enemy moves adjacent
+to you or an ally within Reach 6): Move them back 1 space
+and Restrain them (escape DC 10+WIL).
+
+When you Defend: The attack misses instead, and you can move
+up to half your Speed away (where you really were all along!).
+
+Decoy 	
+
+0 Actions
+
+If you have not moved this turn and your Quarry is beyond
+Reach 3, attack them for double damage.
+
+Sharpshooter
+
+1 Action
+
+Fleet Feet	
+
+0 Actions
+
+Vital Shot
+
+1 Action
+
+Grease Trap
+
+1 Action
+Wild Instinct
+
+0 Actions
+
+(1/round) Move up to your Speed for free, ignoring Difficult Terrain.
+
+(1/encounter) Reaction (when an enemy moves adjacent to you
+or an ally within Reach 6): Target falls Prone, is vulnerable to the
+next fire damage it takes, and is treated as if it is Smoldering.
+
+Hail of Arrows
+
+2 Actions
+
+(Half Range) Shoot and Slow all creatures within a 3×3 area.
+
+6
+
+(Half Range) Shoot your Quarry and select a 2nd target
+within 2 spaces of them to take the same amount of damage.
+
+(Half Range) Shoot your Hampered Quarry. Ignore their
+Armor or double your Hunter’s Mark damage bonus if
+they have none.
+
+(1/round) (Costs 0 TotH charges if you have none) Assess,
+with advantage.
+
+Remember the Wild. Whenever you spend a day in the wilderness during a
+Safe Rest, you may choose different Hunter options available to you.
+
+7
+
+SUBCLASSES
+
+SUBCLASSES
+
+— KEEPER OF THE —
+
+— KEEPER OF THE —
+
+SHADOWPATH
+
+WILD HEART
+
+Stalk your prey from the shadows, and take down your foes with
+precision and speed. Subclass Complexity:
+
+A resourceful survivalist, you can endure far more adversity than
+most any other adventurer. Subclass Complexity:
+
+[f][f][e][e]
+
+LEVEL 3
+
+Ambusher. Whenever you roll Initiative, use Hunter’s Mark for free.
+Gain advantage on the first attack you make each encounter.
+Skilled Tracker. You have advantage on skill checks to track creatures.
+Skilled Navigator. You cannot become lost by nonmagical means.
+
+LEVEL 7
+
+Primal Predator. (1/encounter) Your weapon attacks ignore Cover
+and Armor this turn.
+
+LEVEL 11
+
+Dread Hunter. Choose both Hunter’s Mark options when attacking
+your Quarry.
+
+LEVEL 15 Apex Predator. You may use your Primal Predator ability twice each
+
+encounter. Gain 1 Thrill of the Hunt charge when you roll Initiative.
+
+[f][f][e][e]
+
+LEVEL 3
+
+Impressive Form. +5 max HP. Upgrade your Hit Dice to d10s.
+I Have the High Ground. Whenever you roll Initiative or gain a Thrill of the Hunt
+charge, move up to half your Speed for free, ignoring Difficult Terrain.
+
+LEVEL 7
+
+Resourceful Herbalist. Add your WIL to your Examination skill. Whenever you
+Safe Rest in a location near where plants or fungi can grow, you may spend a day
+collecting healing herbs to craft WIL Healing Salves.
+Healing Salve. (Reach 1) Action: Heal a creature WIL d8 HP (only an experienced
+Herbalist may administer these, and they expire whenever you Safe Rest).
+
+LEVEL 11
+
+Ha! I’m Over Here! (1/Safe Rest) If an attack would cause you to drop to 0 HP,
+you instead move up to your Speed away and take no damage.
+
+LEVEL 15 Unparalleled Survivalist. Gain +WIL Defense. When you attack, you may first
+
+move half your Speed for free.
+
+8
+
+9
+
+STORY-BASED SUBCLASS
+
+BEASTMASTER
+—— TOGETHER, UNSTOPPABLE ——
+
+Beastmaster. Choose a Small, Medium, or Large animal as your companion. Instead of your first 2 Thrill
+of the Hunt (TotH) abilities, you can select Go for the Throat! and Protect Me! to use with your companion
+(your companion’s attacks count as your own for gaining TotH charges).
+No Stats or Actions to Track! Your companion’s HP and movement are abstracted; it knows where it is most
+needed without being told—whether defending you or attacking your Quarry. It is smart enough, and you are
+caring enough, to make sure it is never put in mortal danger.
+Extra Abilities? At the GM’s discretion, your companion can also do anything the base animal can do: fly, sniff
+out scents, be used as a mount, etc. Even more complex actions like Grapple or Help may be doable if it makes
+sense (you’ll need to spend 1 action to command it though—it won’t do it on its own).
+
+Small Companion (Cat, Bat, Hawk, Raccoon, Rooster, Ferret, etc.)
+Keen Eyes. Mark a target for free. (1/encounter; Lvl 7: 2/encounter; Lvl 11: 3/encounter)
+
+Protect Me!
+
+1/encounter
+When you Defend, the attack misses. Move half your Speed. Level 7: 2/encounter.
+
+Go for the Throat!
+
+0 Actions, 1 TotH charge (1/encounter)
+Attack your Quarry for 1d4+LVL damage (ignoring armor). Lvl 11: 2/encounter. Lvl 15: 3/encounter.
+
+Medium Companion (Wolf, Boar, Panther, Vulture, Giant Spider, etc.) Req. Lvl 3.
+Ferocious. Whenever you crit your Quarry, deal +LVL damage (ignoring armor)
+and move up to 2 spaces for free. (Lvl 7: 4 spaces; Lvl 15: 6 spaces)
+
+Protect Me!
+
+When you Defend, first attack that creature for 1d8+LVL damage.
+
+1/encounter
+
+Go for the Throat!
+
+1 Action, 1 TotH charge (1/encounter)
+Attack your Quarry for 1d8+(3×LVL) damage (ignoring Armor). Lvl 11: 2/encounter.
+
+Large Companion (Lion, Owlbear, Elk, Giant Scorpion, Drake, etc.) Req. Lvl 3.
+Alpha Protector. Damage from the first attack against you each round is halved.
+
+Protect Me!
+1/encounter
+After you gain a Wound, your companion can whisk you away to safety up to 12 spaces. Level
+7: You are whisked away before gaining the Wound. Level 15: 2/encounter.
+Go for the Throat!
+
+2 Actions, 1 TotH charge (1/encounter)
+Attack your Quarry for 1d12+(4×LVL) damage (ignoring Armor). If that creature dies, you may
+deal half as much to another creature within Reach 4. Level 11: 2/encounter.
+
+12
+
+ARTIST: EARL LAN
+
+13
+
+FAQ
+
+How many TotH charges can I hold? No limit, but they do expire at
+the end of combat, so use them up!
+Does a melee crit give me a charge? Yes. A crit is also a hit.
+Do I get a TotH charge when anyone kills my Quarry? Yes. But
+if you kill it, you may get an additional charge for hitting/critting them.
+Do abilities such as Hail of Arrows and Pinning Shot also deal
+damage? Yes, they deal damage as normal.
+What is Half Range? Half of your weapon’s Range (e.g., a Longbow’s
+normal Range is 16, Half Range would be 8).
+Final Takedown: they crit you back. Can it be Defended or Interposed against? Yes. Treat it as a normal attack but change their Primary
+Die to its max.
+Pinning Shot, do I roll three times or get three Primary Dice?
+No. Roll once with 3 times the amount of dice you’d normally roll (e.g.,
+Longbow 1d8 » 3d8).
+Nemesis makes everything my Quarry. Does every melee hit
+now give a charge? Yes.
+
+HUNTER NAMES
+Male Names
+• Rook
+• Tavish
+• Quill
+• Bear
+• Trots
+• Bellow
+• Rune
+14
+
+Female Names
+• Sable
+• Lark
+• Clover
+• Mira
+• Vy
+• Tindra
+• Cricket
+ARTIST: JOSEPH QIU
+
+15
+
+HUNTER
+
+QUICK BUILDS
+Lyra
+-1
+
++0
+
+Elf, Hunter
+
++2
+
++0
+
++0
+
++2
+
+1
+
+5
++2
+
++0
+
+Hunter’s Mark. Action: Mark a creature. Your attacks against it
+gain: advantage OR +1 damage (choose before each attack).
+Lithe (Elf). Advantage on Initiative, +1 Speed.
+
+Lyra
+-1
+
++0
+
+Elf, Hunter
+
++2
+
++0
+
++0
+
++2
+
+d8
+
+6
+
+-1
+
++4
+
++4
+
++2
+
+Shortbow. (1d6+2) Range 12
+Dagger. (1d4+2)
+Cheap Hides. 3+DEX Defense
+Hunting Trap.
+
+7
+
+Medium
+
+18
+5
++2
+
++0
+
+Hunter’s Mark. Action: Mark a creature. Your attacks against it gain: advantage OR +2 damage (choose before each attack).
+Thrill of the Hunt. Gain a TotH charge whenever: You HIT your Quarry in
+melee, You CRIT your Quarry at Range, or Your Quarry dies.
+Decoy. (1 TotH charge) 0 Actions, when you Defend: The attack misses,
+move up 4 spaces away.
+Multishot. (1 TotH charge) 1 Action (Half Range) Shoot your Quarry
+and select a 2nd target within 2 spaces of them to take the same amount.
+Roll & Strike. Action: If you have no Thrill of the Hunt charges, move up to
+your Speed toward your Quarry. If you end adjacent to them, make a melee
+attack against them for free.
+16
+
++2
+
+Advantage
+
+1
+
++2
+
++1
+
+Medium
+
+13
+
++2
+
++2
+
+7
+
++2
+
+d8
+
+6
+
++5
+
++4
+
++3
+
+Advantage
+
+-1
+
+Shortbow. (1d6+2) Range 12
+Short Sword (2×). (1d6+2, Dual Wield)
+Cheap Hides. 3+DEX Defense
+Hunting Trap.
+
+

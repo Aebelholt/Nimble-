@@ -1,0 +1,45 @@
+<link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root { --dusk:#1e2230; --stone:#2b2f3d; --sand:#d2b07a; --paper:#ece3d1; --verd:#6fa596; --rust:#b25a35; --faint:#9a917f; }
+  body { background:var(--dusk); color:var(--paper); font-family:Alegreya, Georgia, serif; font-size:17px; line-height:1.55; margin:0; }
+  .wrap { max-width:680px; margin:0 auto; padding:18px 16px 40px; }
+  h1 { font-size:1.9em; font-weight:700; color:var(--sand); margin:0 0 4px; }
+  .sub { color:var(--faint); margin:0 0 18px; }
+  .controls { display:flex; flex-wrap:wrap; gap:12px; align-items:flex-end; padding:12px; background:var(--stone); border-radius:10px 10px 2px 2px; border-top:3px solid var(--verd); }
+  .controls label { display:flex; flex-direction:column; gap:4px; font-size:.9em; color:var(--faint); }
+  input, select, button { font:inherit; font-size:1em; padding:6px 10px; background:var(--dusk); color:var(--paper); border:1px solid #4a4f60; border-radius:4px; }
+  input { width:4.5em; }
+  button { background:var(--rust); border-color:var(--rust); color:#fff; font-weight:700; cursor:pointer; }
+  button:focus-visible, input:focus-visible, select:focus-visible { outline:2px solid var(--sand); outline-offset:2px; }
+  .sec { margin:22px 0 0; }
+  .sec h2 { font-size:1.1em; color:var(--sand); margin:0 0 6px; padding-bottom:4px; border-bottom:1px solid #3a3f50; }
+  .sec p { margin:6px 0; }
+  .hook { font-size:1.2em; }
+  ol { padding-left:24px; margin:6px 0; }
+  li { margin:8px 0; }
+  .roll { display:inline-block; min-width:1.6em; text-align:center; color:var(--dusk); background:var(--sand); border-radius:3px; font-weight:700; margin-right:4px; }
+  .box { margin-top:6px; padding:8px 10px; background:rgba(0,0,0,.25); border-left:3px solid var(--verd); font-size:.95em; }
+  .box.trap { border-color:var(--rust); }
+  .box.haz { border-color:#c98a3a; }
+  .box.major { border-color:#e0682c; }
+  .box.rival { border-color:#a07cc5; }
+  button.alt { background:var(--stone); border-color:var(--verd); color:var(--paper); }
+  .hero { margin-top:18px; padding:2px 14px 10px; background:var(--stone); border-left:3px solid var(--verd); }
+  .rel { color:var(--verd); font-size:.92em; }
+  .close { margin-top:26px; color:var(--faint); font-size:.92em; }
+</style>
+<div class="wrap">
+  <h1>Sejr</h1>
+  <p class="sub">One gig, one mat, three hours.</p>
+  <div class="controls">
+    <label>Renown <input id="renownInput" type="number" value="0" min="0"></label>
+    <label>Average level <input id="levelInput" type="number" value="1" min="1" max="20"></label>
+    <label>Direction
+      <select id="dirInput"><option>Roll</option><option>City</option><option>Arch</option></select>
+    </label>
+    <button onclick="update(episodeOut)">Roll episode</button>
+    <button class="alt" onclick="update(heroOut)">Roll a hero</button>
+  </div>
+  <div id="heroOut" class="hero">[hero()]</div>
+  <div id="episodeOut">[episode()]</div>
+</div>

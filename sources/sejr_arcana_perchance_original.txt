@@ -1,0 +1,309 @@
+// ==========================================
+// SEJR ARCANA MODULE (for the Sejr fork of the Shadowdark generator)
+// LISTS PANEL: replace your old other_arcanum list with everything below.
+// It uses d(n) and sec(title, body), which the fork already defines.
+// ==========================================
+
+other_arcanum
+  The Forgotten Key
+  The Drowning Scale
+  The Axe of Nine Eyes
+  The Hourglass of Borrowed Time
+  The Black Lotus Case
+  The Oath-Band
+  The Unpaid Favor
+  The Valkyrie's Feather
+  The Hollow Vessel
+  The Tide-Coat
+  The Sul Hide
+  The Pitch-Sap Harness
+  The Ossuary Mail
+  The Hellhide
+  The Kettle Plate
+  The Fairy Jar
+  The Seven-Leaf Bracelet
+  The Hexing Needles
+  The Bonded Relic
+  The Sown Teeth
+  The Arch-Watch Mirror
+  The Apology Blade
+  The Rune Fragment
+  The Binding Linens
+  The Rusted Spear
+
+// ---------- CURATED CARDS ----------
+
+arcana_data() =>
+  return {
+  "The Forgotten Key": {tier:"Minor", obj:"A tarnished iron key, not sized for any human lock. Its bow is etched with a spiral that matches no arch in the city's records.", unlock:["Present it to each of the city's seven major arches while the Archkeepers watch","Find the one arch that hums","Spend a full night at its threshold"], risk:"The arch opens briefly, and something may come through before you close it.", res:"Resonance (3). Mark when you open an arch, clear on a Safe Rest.", power:"Open the Way (Action, 1 Resonance): a dormant arch opens for up to a minute. Lore DC 12, or you can't control where it leads. A crit lets you sense the destination first.", esc:"Spending the last Resonance, roll d6. On 1-2 the key splinters, and every arch it opens leads somewhere wrong until an Archkeeper repairs it. On 3+, take 1 Wound."},
+  "The Drowning Scale": {tier:"Minor", obj:"A cold, clammy pendant, a single shimmering scale of unknown origin. Everyone nearby shivers when it is first worn.", unlock:["See the homebrew document"], risk:"", res:"", power:"", esc:""},
+  "The Axe of Nine Eyes": {tier:"Major", obj:"A silvery greataxe with nine open eyes engraved down the blade. They follow whoever speaks.", unlock:["Learn what the axe was called before it was named, from Archkeeper records or something older than the Golden Order","Let it name a creature in a room you thought was empty","Hold the line against that creature until it flees or dies"], risk:"The creature's side now knows your name.", res:"Eyes (9). A closed eye never reopens.", power:"Name It (Action, 1 Eye): one creature you can see. You learn its True Name, have advantage on checks against it, and always know its direction and distance. Once per encounter, Speak the Name (Reaction): it loses its next action. WIL DC 14 negates, Solos save with advantage.", esc:"Named creatures learn your name and heading each dawn. When the ninth eye closes, the axe speaks your True Name and all nine hear it. One engraved eye is scraped blank."},
+  "The Hourglass of Borrowed Time": {tier:"Major", obj:"A brass hourglass whose sand climbs upward.", unlock:["Watch one full night without sleeping","Tell an NPC, truthfully, the moment you would undo"], risk:"The sand climbs for a stranger first. They relive their last hour, and they remember you.", res:"Sand (3). Regain 1 by returning to where you last turned time back and letting the glass run for an hour.", power:"Turn Back (Reaction, 1 Sand): any die roll you can see is rerolled. The new result stands.", esc:"When the last Sand falls, the original result happened somewhere. Within a session an Echo of you arrives carrying its consequences, and it wants the glass."},
+  "The Black Lotus Case": {tier:"Minor", obj:"A black bloom pressed in a lead-lined case, three petals left, still damp.", unlock:["Find someone who survived the preparation","Fast three days","Eat the first petal under watch"], risk:"WIL DC 14 or take 2 Wounds, and the Stain advances now.", res:"Petals (3). Regain 1 by seeding the bloom where someone you knew died and tending the soil for a week.", power:"Eat a petal (Action, lasts an encounter), choose one. Smoke Step: free, 1/round, teleport to a spot you can see within 6 spaces. Wallwalker: climb sheer surfaces, walk on water. Drowsing Pollen: one creature of LV 5 or less within 2 spaces, WIL DC 13 or asleep 1d4 rounds.", esc:"Each time the case empties, the Stain advances for good. 1: fingertips blacken, advantage on Finesse, and you can no longer feel heat or cold through them. 2: veins darken, +1 Initiative, your pulse is audible. 3: eyes black, you see in the dark, strangers flinch (disadvantage on Influence). After 3, the bloom no longer needs the case."},
+  "The Oath-Band": {tier:"Minor", obj:"A plain iron ring, every oath ever sworn over it scratched inside.", unlock:["Swear aloud before a living witness","The oath must be something you would not otherwise do; the GM may refuse one that matches your plans"], risk:"The Band holds your words, not your meaning, and the GM may close loopholes.", res:"Oath (1). Set when sworn. Cleared when fulfilled, or failed if you reach your next level first. One oath per level.", power:"While the oath stands, advantage on checks that directly advance it. The GM grades it Worthy, Mighty or Legendary.", esc:"Fulfilled: heal all Wounds and gain +1, +2 or +3 max HP for good, by grade. Failed: lose that much max HP for good, and the Band stays shut until you do a penance."},
+  "The Unpaid Favor": {tier:"Minor", obj:"A tin holy symbol, its face rubbed smooth, always warm.", unlock:["Learn which patron it belongs to","Make a true offering at midnight"], risk:"The patron takes a small price first, a memory or a name.", res:"Debt (3). Clears only by doing the patron a favor the GM presents.", power:"Call In (Action, +1 Debt): one small, specific impossibility. A door opens, a lie is believed, or a creature within 6 spaces loses its next action (WIL DC 13 negates).", esc:"Past 3 Debt the patron collects, d6. 1 Newt: tiny and actionless for 3 rounds. 2 Imps: lose 2 random items. 3 Salt ring: you can't cross it until it breaks. 4 Cobwebs: no arcanum use until you atone. 5 Nemesis: someone is born who will hunt you. 6 Wither: take 1 Wound."},
+  "The Valkyrie's Feather": {tier:"Minor", obj:"A gold-barbed feather from a warrior's grave.", unlock:["Dig it from the grave","Learn the warrior's story"], risk:"1 in 20 the valkyrie comes for the grave-robber before you finish.", res:"Tally (counts uses). Clears only when the feather goes back to its stone.", power:"Spared (Reaction, 1/encounter): you or an ally within 6 spaces stays at 1 HP instead of dropping to 0.", esc:"After each use roll d6. If it rolls equal to or under your Tally, a valkyrie arrives within a day to claim the spared life."},
+  "The Hollow Vessel": {tier:"Minor", obj:"A sealed clay jar, cold and faintly heavy.", unlock:["Learn its maker's rite","Store a Wound in it willingly"], risk:"It asks for a Wound from someone you love before it will hold yours.", res:"Pain (3), one per stored Wound. Clears only by pouring it into a willing or bound person you hold for an hour; they take the Wounds.", power:"Offload (Reaction): when you would take a Wound, store it instead.", esc:"If the jar fills or breaks, every stored Wound lands on you at once, plus one roll on Enduring Wounds."},
+  "The Tide-Coat": {tier:"Minor", obj:"An eel-skin suit that covers you head to heel, crusted with barnacles. Underwater it hums.", unlock:["Win it from the people of a drowned place, or earn it in their service","Wear it for a full night underwater"], risk:"Something in the deep hears the hum and follows you up.", res:"Growth (4). Gain 1 for each hour spent underwater in a drowned place (the Lost Cisterns, Sunken Revvia, a flooded vault), beyond what the gig needs. That hour costs a scene. Rest never adds Growth.", power:"Armor 3+DEX, plus 1 per Growth. Each Growth also gives -1 to Stealth.", esc:"When you take a Wound, lose 1 Growth. After a week dry, lose 1 Growth each day. At 4 Growth the coat is a landmark, and things in the deep start coming to see it."},
+  "The Sul Hide": {tier:"Minor", obj:"A tank of soft-shelled beetles that climb onto you and take your shape, and a tuning fork that sends them back.", unlock:["Find who bred them and learn the fork's note","Feed the tank by hand for a week","Step into the tank"], risk:"The fork is out of tune. The beetles won't let go until it is fixed.", res:"Hunger (3). Clears only when you feed them meat from a creature you hunted for them, on its own trip, never one from a gig.", power:"Armor 5+DEX with no Stealth penalty, and advantage on Stealth while you stay still. Mend (Reaction, +1 Hunger): ignore the Wound from one hit.", esc:"After each Mend, roll d6. If it rolls under Hunger, the beetles feed on you: 1 Wound at the start of each of your turns until the fork sounds. Losing the fork is the real danger."},
+  "The Pitch-Sap Harness": {tier:"Minor", obj:"Three layers of wood glued with sap that never dries, its outer layer bristling with thorns.", unlock:["Find an old tree willing to give its sap","Wear it through one fight without taking it off"], risk:"The sap takes. It won't come off until the next full moon.", res:"Burden (3), one per weapon stuck in the sap. Clears at a Safe Rest with tools and an hour of prying.", power:"Armor 6+DEX (max 2), advantage on Stealth in forests. Snare (Reaction): when a melee weapon hits you, the attacker makes a STR save, DC 13, or the weapon sticks (+1 Burden). A creature using natural weapons is stuck to you instead, Grappled until it passes the save, and adds no Burden. Each Burden gives -1 Speed.", esc:"When Burden would pass 3, the sap seals you in: you are Restrained until someone spends an action and passes a Might check, DC 14, to cut you out. Then the harness gives half Armor until it is glued again with fresh sap."},
+  "The Ossuary Mail": {tier:"Minor", obj:"A dark coat with a resin-fixed skeleton laid over yours, and a skull for a helm.", unlock:["Have it made by a smith who serves a death cult, or take it from the one who wore it","Let the bones choose: spend a night in a grave"], risk:"A faction that hates the dead marks you.", res:"Rot (3). Gain 1 after each episode in which you took a Wound while wearing it and did not clean it. Clears with a day's work and clean water.", power:"Dread: the first time a creature sees you in an encounter, it makes a WIL save, DC 13, or has disadvantage on attacks against you that encounter. Mindless undead treat you as one of them.", esc:"At 3 Rot the coat is infested: disadvantage on STR saves until it is cleaned. Wearing it openly in the city ticks the clock of any faction that hunts the dead."},
+  "The Hellhide": {tier:"Major", obj:"Plate made over with a demon's skin, its horns on the helm and its claws on the gauntlets.", unlock:["Hunt the demon and bring back the skin","Find a smith who will work it, and pay their price","Put it on"], risk:"Roll d10. On 1-3 the hide drinks magic: no spell can affect you, including your own, while you wear it.", res:"Thirst (3). Gain 1 each dawn. Clears only when blood is offered to it outside combat, from a creature that was not trying to harm you. Blood shed in a fight does not count.", power:"Terror: the first time a creature sees you, WIL DC 14 or -1 to all its rolls near you, for good. Command (Action, 1/encounter): order undead or a demon to obey one command.", esc:"You can't willingly part with it, and you will hunt anyone who takes it. At 3 Thirst at dawn it drinks from you: take 1 Wound that can't heal while you wear it. If you die in it, you rise as a spectre."},
+  "The Kettle Plate": {tier:"Major", obj:"Full plate with two boilers on the back and a servo at every joint. One of a kind, built to someone's measure, and not to yours.", unlock:["Find the workshop that built it","Have it refitted to you, which costs a favor the makers name","Stoke it yourself, the first time"], risk:"The refit fails on a test fire. 1d6 fire damage and a week of repairs.", res:"Steam (4). Regain all by stoking it: an inventory slot of fuel and 10 minutes.", power:"Armor 18, with no STR requirement. Spend 1 Steam for: a wrist crossbow shot (free), a hidden blade strike (Action), or advantage on one Might check.", esc:"At 0 Steam the servos lock: Speed 2 and disadvantage on DEX until stoked. If you spend the last Steam in combat, the boilers vent: 1d6 fire to you and everyone adjacent."},
+  "The Fairy Jar": {tier:"Minor", obj:"A thumb-high jar of purple glass. Inside, a small furious face swims in mist.", unlock:["Learn the fairy's name, which it will not tell you","Promise it freedom, aloud, before a witness"], risk:"Speak to it before you know its name, and it slips out and hexes you.", res:"Bargains (3). Regain 1 when you answer the question it asks about its home. It asks one each time it runs dry, and the answer is never on the way to a gig.", power:"Ask (Action, 1 Bargain): make a WIL save, DC 12. On a success it works one small fairy charm: a glamour, a lock undone, a minute of floating. On a failure it sulks and stays silent for 2d6 days.", esc:"On a natural 1 it escapes and curses you. You may smash the jar at any time: it grants +1 to one stat for good and is gone. At 0 Bargains it only bargains for its freedom."},
+  "The Seven-Leaf Bracelet": {tier:"Minor", obj:"A silver bracelet of seven linked leaves, cool as morning dew.", unlock:["Wear it through a night in old woods","Answer the first question the trees ask you, truthfully"], risk:"The trees ask about something you would rather they never knew.", res:"Leaves (7). A wilted leaf never comes back.", power:"Listen (Action, 1 Leaf): speak with the plants around you for 10 minutes, or speak Sylvan for a day. Plants tell you who passed and may move aside or tangle.", esc:"When the last leaf wilts the bracelet buds. Plant it beside a door to elsewhere within a month, and in a year a new bracelet grows there. If you don't plant it, your fingertips start to leaf."},
+  "The Hexing Needles": {tier:"Minor", obj:"Three black needles in a felt roll, and a spool of red thread.", unlock:["Learn the stitch from a witch, at her price","Embroider your own likeness first"], risk:"Your first stitch slips. You carry a small hex of your own making until you unpick it.", res:"Thread (3). Regain 1 by unpicking a finished hex, which frees its victim.", power:"Stitch (an hour of work, 1 Thread): embroider a likeness of someone, using their hair, blood or cloth. They have disadvantage on one kind of roll you name until the cloth is unpicked or burned. They feel every stitch.", esc:"Every victim knows the shape of your hands. At 0 Thread, each new hex also lands on your own likeness."},
+  "The Bonded Relic": {tier:"Major", obj:"A legendary thing that is not yours. When you call it, it is in your hand. When you let go, it is gone.", unlock:["None. It chose you","To keep it for good, learn whether you are meant to wield it or destroy it"], risk:"Its true owner, or its true hunter, learns your face.", res:"No pool. Each call costs 1 Hit Die.", power:"Call (free): it appears for one encounter. The GM gives it one power, rolled on the forge. Ignore the power's cost; it works once per call.", esc:"Each call, roll d6. On a 1, whoever hunts it learns where you are. If you call it with no Hit Dice left, take 1 Wound instead."},
+  "The Sown Teeth": {tier:"Major", obj:"A hide satchel holding a handful of long teeth that click together like dice.", unlock:["Read the command words etched inside the flap, in a dead language","Sow the first tooth on ground you mean to hold"], risk:"The first warrior asks whom it must guard. Your answer binds every warrior after it.", res:"Teeth (1d4+1, rolled at unlock). A sown tooth never comes back.", power:"Sow (Action, 1 Tooth): an armored warrior rises from the ground beside you and obeys you for an hour. The GM uses a soldier stat block of your level.", esc:"If two or more warriors stand and one is struck by surprise, they turn on each other, then on whoever is closest. When the last tooth is gone, the satchel is just a bag."},
+  "The Arch-Watch Mirror": {tier:"Major", obj:"A mirror taller than a man in a frame of blackened ash. Its surface moves like still water.", unlock:["Install it in your holding","For each arch it should watch, carry a sliver of its glass through that arch and back, unbroken"], risk:"Something on the other side sees the mirror before it sees them.", res:"Clarity (3). Regain all after someone keeps a full night's vigil before it without sleeping.", power:"It shimmers whenever a watched arch is used. Watch (10 minutes, 1 Clarity): see a watched arch and the area around it for 10 minutes. Foresee (1 Clarity, once per episode): before you go through, ask the GM one question about where the arch leads.", esc:"At 0 Clarity the glass stays clear both ways. Anything beyond a watched arch can look into your holding until the mirror is refilled."},
+  "The Apology Blade": {tier:"Major", obj:"A sword cut from the belly of a sea serpent. It still smells of brine, and its edge is clouded like the sky before a storm.", unlock:["Give it as an apology to someone you wronged","If they freely give it back, it wakes","Later: make peace between two who are at war, and its storm wakes"], risk:"They keep it.", res:"Sky (3). Regain 1 when someone accepts your apology for a real wrong.", power:"Gust (Action, 1 Sky): a wind throws every creature in a line of 6 spaces back 3 spaces, STR DC 13 negates. Once the storm wakes: Storm (Action, 2 Sky): for the encounter, enemies have disadvantage on ranged attacks and you can't be pushed.", esc:"If you wrong the one who gave it back, it is in their hands the next morning, wherever they are."},
+  "The Rune Fragment": {tier:"Major", obj:"A shard of storm-dark stone veined with silver. One rune on it glows faintly.", unlock:["Find a second fragment","Hold them together for 10 minutes and they fuse"], risk:"Whoever carries another fragment feels yours wake.", res:"Runes (one per fused fragment, up to 9). Each fragment carries one rune, rolled d8. Each rune works once per episode.", power:"1 Fehu: an item you touch gives +1 to its user for an hour. 2 Algiz: advantage on saves against fear and charm for the scene. 3 Raido: +2 Speed for the scene. 4 Uruz: +2 to a STR check after the roll. 5 Tiwaz (Action): allies who hear you get advantage on their next attack. 6 Ansuz: speak and read any language for a scene. 7 Eihwaz (Reaction): reduce one hit's damage by your level plus STR. 8 Sowilo (Action): sunlight blinds every enemy within 6 spaces until your next turn, DEX DC 13 negates.", esc:"Fragments call to each other, and other holders follow the call. When the ninth fuses, its rune wakes once: change one result, even a past one. Then the stone falls to dust."},
+  "The Binding Linens": {tier:"Minor", obj:"Strips of old linen that smell of myrrh, with gold-thread hieroglyphs at the ends.", unlock:["Learn the binding words from a priest of the dead","Wrap and bury a stranger who had no one to bury them"], risk:"The stranger belonged to someone, and they come asking.", res:"Strips (3). Regain 1 by preparing and burying someone who has no one to do it for them.", power:"Hold Back (Action, 1 Strip): wrap a dying creature. It stops dying and can't die from Wounds until it is unwrapped or the next dawn, but it can't act.", esc:"Anyone wrapped a second time comes back a little less. They forget one thing they loved, and the GM chooses what."},
+  "The Rusted Spear": {tier:"Minor", obj:"A leaf-bladed spear whose rust never flakes off, however hard you scrub.", unlock:["Learn whom it last wounded, and find them","Heal that old wound with the spear's own rust"], risk:"They remember you, and they remember the spear.", res:"Rust (3). Regain 1 by leaving the spear a night in seawater.", power:"Spare: when you would drop a creature to 0 with the spear, it falls stable instead, and its wound won't close until you choose to mend it. Mend (Action, 1 Rust): scrape rust into a wound to heal 1 Wound, or close a wound the spear made.", esc:"At 0 Rust the blade is clean and bright. The next wound it gives never closes: a hero loses 1 max Wound for good, and a creature bleeds out by the end of the scene."}
+  };
+
+// Player sees the object. GM opens the fold. Ritual boxes are for absent-player ticks.
+arcanum_line(name) =>
+  let a = arcana_data()[name];
+  if (!a) return "<p><b>Arcanum:</b> " + name + ", unexamined.</p>";
+  let boxes = a.unlock.map(u => "<li>&#9744; " + u + "</li>").join("");
+  let g = "<ul>" + boxes + "</ul>";
+  if (a.risk) g += "<p><b>Risk:</b> " + a.risk + "</p>";
+  if (a.res) g += "<p><b>Resource:</b> " + a.res + "</p>";
+  if (a.power) g += "<p><b>Power:</b> " + a.power + "</p>";
+  if (a.esc) g += "<p><b>Escalation:</b> " + a.esc + "</p>";
+  g += "<p><b>Examine:</b> " + forge_clue.evaluateItem + "</p>";
+  return "<p><b>Arcanum:</b> " + name + " (" + a.tier + "), unexamined. " + a.obj + "</p><details><summary>GM: ritual and powers</summary>" + g + "</details>";
+
+// ---------- FORGED ARCANA (random, from the mined tables) ----------
+
+forge_object
+  a carved bone that catches fire once a day
+  a wolf idol that floats wherever it is set down
+  a dried rose that turns toward the nearest arch
+  a cold iron spike that smells of poison near poison
+  a warped skull that drips blood near the dead
+  a cracked mirror that sings a lullaby when rattled
+  a severed finger whose owner wants it back
+  a black candle that fey cannot stand
+  a ring of daisies that never wilts
+  a faded locket that is warm when someone lies
+  a shard of blue glass that shows brief portents
+  a bronze oil lamp with a faded inscription
+  a jade comb that once pardoned a crime
+  a torn half of a map, the other half somewhere in the city
+  a silver lion on a braided chain, taken in a raid
+  a gold rose dotted with rubies, from a sacked chapel
+  a coffer of coins stamped with a dead king's face
+  a rusted compass whose needle draws blood
+  a stick of damp chalk
+  a pair of glass eyes in a velvet case
+  a lantern shield with a cracked lens
+  a skin-stretched shield, light as a basket
+  a chain-scythe wrapped in prayer cloth
+  a sun-and-moon blade with one edge dulled
+  a fighting fan with names painted on the ribs
+  a jitte that catches more than blades
+  a speargun built for a hand that wasn't human
+  a chakram that never quite stops spinning
+  a war rake from a peasant army that won
+  a coat of overlapping coins, half of them forged
+
+forge_material
+  bone, light and brittle, and the dead notice it
+  bronze, old and green, and older than the city
+  coral, still growing
+  obsidian, sharp enough to cut shadows
+  red steel, light and hot to the touch
+  petrified wood that remembers being a tree
+  silver, soft but feared
+  dragon, and the dragon's kin can smell it
+  gold, too heavy to be practical, and everyone wants it
+  crystal that rings when danger is near
+
+forge_amulet_material
+  bone
+  copper
+  crystal
+  obsidian
+  cloudy gemstone
+  tarnished silver
+  ice that never melts
+  cold iron
+  platinum
+  solid shadow
+  black wood
+
+forge_amulet_shape
+  bar
+  diamond
+  disc
+  hand
+  hexagon
+  jagged shard
+  octagon
+  ring
+  saint's effigy
+  teardrop
+  twisted knot
+
+forge_amulet_engraving
+  star signs
+  a coiled wyrm
+  an open eye
+  a leaf-faced man
+  a griffon
+  a leering face
+  sigils no one can read
+  a magic square
+  sun and moon
+  runes
+  a skull wound with roses
+
+forge_element
+  void
+  death and darkness
+  fire, metal and smoke
+  earth, stone and root
+  water, ice and mist
+  air, wind and storm
+  life and light
+  stars
+
+forge_magic
+  necromancy
+  destruction
+  summoning
+  glamour
+  artifice
+  transformation
+  warding and binding
+  healing
+  divination
+
+forge_quirk
+  Fires within a few steps of you gutter and die.
+  Animals bristle at you and won't come close.
+  You have no sense of smell while it is on you.
+  People near you sleep badly.
+  Holy water goes flat in your presence.
+  Gems you touch cloud over.
+  Cut flowers wilt in your hands.
+  You smell faintly of something wrong.
+  You can't see well when it is more than a few steps away.
+  Spells find you easily: disadvantage on saves against magic.
+
+forge_clue
+  Roll d6 when someone examines it. 1 where it was last seen. 2 when it was last seen. 3 a story about someone who used it. 4 a book or sage who knows of it. 5 who made it, or how it came to be. 6 one of its powers.
+
+forge_source
+  a book in a dead language
+  an Archkeeper who wants something in return
+  the ghost of its last owner
+  a riddle carved on its own surface
+  a hermit who claims to have made it
+  a song nobody sings anymore
+  a rival who already knows, and is ahead of you
+  the command word, lost; only a sage or divination will find it
+
+forge_resource
+  Breath
+  Debt
+  Hunger
+  Heat
+  Strain
+  Sand
+  Tally
+  Silence
+  Ash
+  Blood
+
+forge_refill
+  regain all at a Safe Rest spent where the object was made
+  regain 1 when you give something you love to a stranger
+  regain 1 when you tell someone a true secret about yourself
+  regain all after a whole night spent in a grave, a tomb or a cistern, not passing through
+  regain 1 when you keep a promise that costs you
+  regain 1 when someone else freely bleeds on it
+  it never refills, and it is spent for good
+
+forge_power
+  Reaction, 1 RES: when an ally within 6 spaces is hit, take the hit instead and halve it
+  Action, 1 RES: one creature you can see is Frightened until the end of its next turn, WIL DC 13 negates
+  Action, 1 RES: ask the GM one question about the place you stand; the answer is true
+  Free, 1 RES, 1/round: teleport to a spot you can see within 4 spaces
+  Action, 1 RES: an object you touch is unbreakable for an hour
+  Reaction, 1 RES: reroll one of your own dice; keep the new result
+  Action, 1 RES: for one minute you see in total darkness and spot the invisible
+  Action, 1 RES: speak with the dead body you touch, three questions
+
+forge_escalation
+  The object chooses a champion. It starts to change your body to keep itself safe; the GM names one change each time it empties.
+  Something has been following the object for a long time. When it empties, it arrives, and it can look like anyone.
+  Your fingertips blacken. Each time it empties, the black climbs higher, and it grants one boon and one oddity.
+  It stores your pain. When it empties, take every Wound you avoided since you last emptied it.
+  You stop aging. When it empties, a year catches up with you all at once.
+  It goes silent for a season. What it knows is locked away until a ritual wakes it.
+  It shatters, and the shards go into your flesh. You keep the power, and it keeps you.
+  You are branded. Those who carry arcana of their own can see the mark.
+  You can't bring yourself to put it down. If it is taken, you will hunt for it.
+  It must be fed each week. Miss a week, and it feeds on whoever is closest.
+  It gets heavier after every fight, until you shed what it has caught.
+  Water undoes it. A soaking costs it 1 RES, and it can't be used while wet.
+  An order that hates its kind attacks you on sight.
+
+forge_unlock
+  return it to the place it was made
+  learn its maker's name from someone who would rather not say
+  spend a full night with it at an arch
+  carry it through the Lower Reaches without light
+  get an Archkeeper to write it in the records
+  bury it for three days and dig it up yourself
+  let a stranger hold it and tell you what they see
+
+forge_risk
+  something comes through before you can close the way
+  STR DC 14 or take 1 Wound from the backlash
+  it marks you instead, and you have a week before it comes calling
+  it cracks, and only a skilled artisan can mend it before it wakes
+  a faction notices, and its clock ticks
+
+forged_arcanum() =>
+  let res = forge_resource.evaluateItem;
+  let max = [3, 3, 4, 5][d(4) - 1];
+  let u1 = forge_unlock.evaluateItem;
+  let u2 = forge_unlock.evaluateItem;
+  while (u2 === u1) { u2 = forge_unlock.evaluateItem; }
+  let obj = forge_object.evaluateItem;
+  let r = d(4);
+  if (r === 1) obj = obj + ", made of " + forge_material.evaluateItem;
+  if (r === 2) obj = "an amulet of " + forge_amulet_material.evaluateItem + ", shaped like a " + forge_amulet_shape.evaluateItem + ", engraved with " + forge_amulet_engraving.evaluateItem;
+  let b = "<p class='hook'>" + obj + "</p>";
+  b += "<p><b>Nature:</b> " + forge_magic.evaluateItem + ", of " + forge_element.evaluateItem + ".</p>";
+  b += "<p><b>Lore lives in:</b> " + forge_source.evaluateItem + ".</p>";
+  b += "<p><b>Ritual:</b></p><ul><li>&#9744; " + u1 + "</li><li>&#9744; " + u2 + "</li></ul>";
+  b += "<p><b>Risk:</b> " + forge_risk.evaluateItem + ".</p>";
+  b += "<p><b>Resource:</b> " + res + " (" + max + "), " + forge_refill.evaluateItem + ".</p>";
+  b += "<p><b>Power:</b> " + forge_power.evaluateItem.replace("RES", res) + ".</p>";
+  b += "<p><b>Quirk (always on):</b> " + forge_quirk.evaluateItem + "</p>";
+  b += "<p><b>Escalation:</b> " + forge_escalation.evaluateItem.replace("RES", res) + "</p>";
+  b += "<p><b>Examine:</b> " + forge_clue.evaluateItem + "</p>";
+  b += "<p class='close'>Name it in play. Check it against the design rules before it reaches the table.</p>";
+  return sec("Forged arcanum", b);
+
+curated_arcanum() =>
+  return sec("Arcanum", arcanum_line(other_arcanum.evaluateItem));
+
+// ==========================================
+// HERO CARD EDIT: in your hero function, swap this line
+//   b += "<p><b>Arcanum:</b> " + arc + ", unexamined.</p>";
+// for
+//   b += arcanum_line(arc);
+// ==========================================
+
+// ==========================================
+// HTML PANEL: add next to your other buttons
+// <button onclick="arcOut.innerHTML = curated_arcanum()">Roll an arcanum</button>
+// <button onclick="arcOut.innerHTML = forged_arcanum()">Forge an arcanum</button>
+// <div id="arcOut"></div>
+// ==========================================

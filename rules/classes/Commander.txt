@@ -1,0 +1,567 @@
+COMMANDER
+Game Design and Art Direction: Evan Diaz.
+Subclass Design Contributors: Damian Mainka,
+Christian Bertrand, Frank Hudson.
+Artist Credits: Jason Kiantoro, Earl Lan, Florian
+Frey, Vlad Iftimescu, Vladimir Matyukhin, Evan Diaz.
+
+Cover Art: Jason Kiantoro
+Nimble Heroes: Commander
+Designed in the USA, Printed in China.
+Copyright © 2026 Nimble Co. All rights reserved.
+www.nimbleRPG.com
+
+Nimble 3rd Party Creator License v2.0
+This license is perpetual and irrevocable except upon violation.
+
+Terms. You may use and reference ANY published Nimble text (current
+or future) in your own original products based on or compatible with
+Nimble (e.g., adventures, classes, subclasses, monsters, supplements)
+without Nimble Co.’s prior approval and retain all profits.
+
+• Copying, restating, or summarizing large portions of text with little
+added content does not qualify as an original product.
+• You may NOT use the Nimble art or logo—but may use a Nimble
+compatibility logo (nimbleRPG.com/creators). Your product must not
+appear to be an official Nimble product or endorsed by Nimble Co.
+
+Required Attribution. Include in your product:
+[Product Name] is an independent product published under the
+Nimble 3rd Party Creator License. Nimble TTRPG © Nimble Co.
+
+Online Apps and VTTs. For free online tools/wikis/apps/VTT implementations (app), you may use any and all published Nimble text, provided the app is completely free to use (optional donations to defray
+development/hosting costs permitted) and you include this notice
+prominently (a banner, sidebar, welcome message, etc.):
+
+This [app/tool/etc.] is free to use for anyone who already owns the
+content, is trying the system out, or cannot afford to buy it right now.
+If you enjoy Nimble and are able, please support the game by purchasing the official content at nimbleRPG.com.
+Restrictions and Rights Reserved. We are not liable for claims
+related to your product, and you will not bring legal claims against us.
+Unless explicitly stated, this license does not grant copyright, moral,
+publicity, privacy, patent, or trademark rights. All other rights are
+reserved by Nimble Co. Nimble is provided AS-IS without warranties.
+
+Legal Terms. You agree to indemnify Nimble Co. and its affiliates
+from any claims or liabilities arising from your use of this license, mutually where applicable, as permitted by law. This license may be terminated if you violate its terms; upon termination, cease distribution until
+resolved. Governed by Florida law. Disputes resolved in U.S. District
+Court for the Middle District of Florida or state courts in Orange County,
+Florida. Unenforceable provisions reformed or severed without affecting the rest. Does not waive Nimble Co.’s legal privileges.
+
+This work includes material taken from the System Reference Document 5.1 (“SRD 5.1”) by Wizards of the Coast LLC and available at https://
+dnd.wizards.com/resources/systems-reference-document. The SRD 5.1 is licensed under the Creative Commons Attribution 4.0 International
+License available at https://creativecommons.org/licenses/by/4.0/legalcode.
+
+1
+
+WORK IN PROGRESS
+
+COMMANDER
+
+SOLDIER. WARRIOR.
+
+FEARLESS
+
+LEADER
+An “empire” isn’t an EMPIRE until they have their own academy of command: Famed
+schools where these supremely capable soldiers are trained in battlefield tactics
+and leadership.
+Among the most skilled soldiers in the world, Commanders are masters of every
+weapon and form of close combat. A small cohort of soldiers led by a trained Commander is more feared than innumerable legions without one.
+
+Issue powerful tactical orders to
+your allies, bolster their abilities, and coordinate devastating strikes.
+
+Exert mastery over all weapon
+types, wielding them with
+deadly efficiency—ensuring
+victory against any foe.
+
+Lead your party to triumph
+through cunning strategy,
+tactical prowess, and decisive action.
+
+Highly tactical, teamwork-focused melee class. A party’s force multiplier.
+Class complexity:
+
+[f][f][e][e]
+
+2
+
+ARTIST: JASON KIANTORO
+
+3
+
+LEVEL 5
+
+Master Commander. Your Combat Dice are now d8s. You gain an additional pool of INT
+uses of Coordinated Strike to use per Safe Rest (you may use Coordinated Strike only 1/
+round). Attacks made from your Coordinated Strikes also now ignore disadvantage.
+Secondary Stat Increase. +1 DEX or WIL.
+
+LEVEL 6
+
+Fit for Any Battlefield (2). Choose another Combat Ability or gain +1 max Combat Dice.
+Weapon Mastery. You may sheathe a weapon and draw a different one 2×/round for
+free. Choose a Weapon Mastery.
+
+LEVEL 7
+
+Subclass. Gain your Commander subclass feature.
+
+LEVEL 8
+
+Fit for Any Battlefield (3). Choose another Combat Ability or gain +1 max Combat Dice.
+Key Stat Increase. +1 STR or INT.
+
+LEVEL 9
+
+Master Commander (2). Your Combat Dice are now d10s. +1 use of Coordinated Strike.
+Secondary Stat Increase. +1 DEX or WIL.
+
+LEVEL 10 Fit for Any Battlefield (4). Choose another Combat Ability or gain +1 max Combat Dice.
+
+COMMANDER
+Key Stats: STR, INT Hit Die: 1d10 Starting HP: 17
+Saves: STR+, DEX– Armor: Mail Armor, Shields Weapons: All Martial Weapons
+Starting Gear: Short Sword, Javelins (4), Rusty Mail
+LEVEL 1
+
+Coordinated Strike! (1/encounter) You and an ally within Reach 6 both immediately
+make a weapon/Unarmed Strike or cast a cantrip for free.
+
+LEVEL 2
+
+Fit for Any Battlefield. Choose a Combat Tactic. When you roll Initiative, gain STR Combat
+Dice (each a d6), they are lost when combat ends if unspent.
+Field Medic. Roll 1 additional die for any Healing Potion you administer. Whenever you
+or an ally spends any number of Hit Dice to recover HP, if you spent at least ten minutes
+examining their wounds, they can add your Examination bonus to the HP recovered.
+
+LEVEL 3
+
+Subclass. Choose a Commander subclass.
+
+LEVEL 4
+
+Commander’s Orders. Choose 2 Commander’s Orders.
+Key Stat Increase. +1 STR or INT.
+
+Rigorous Training. Whenever you train with your party or other soldiers during a Safe Rest, you may choose
+different Commander options available to you.
+
+4
+
+Weapon Mastery (2). Choose a 2nd Weapon Mastery.
+
+LEVEL 11
+
+Subclass. Gain your Commander subclass feature.
+
+LEVEL 12 Fit for Any Battlefield (5). Choose another Combat Ability or gain +1 max Combat Dice.
+
+Key Stat Increase. +1 STR or INT.
+
+LEVEL 13 Master Commander (3). Your Combat Dice are now d12s. +1 use of Coordinated Strike.
+
+Secondary Stat Increase. +1 DEX or WIL.
+
+LEVEL 14 Weapon Mastery (3). You have complete mastery of all weapon types.
+LEVEL 15 Subclass. Gain your Commander subclass feature.
+LEVEL 16 Fit for Any Battlefield (6). Choose another Combat Ability or gain +1 max Combat Dice.
+
+Key Stat Increase. +1 STR or INT.
+
+LEVEL 17 Master Commander (4). Your Combat Dice are now d20s. +1 use of Coordinated Strike.
+
+Secondary Stat Increase. +1 DEX or WIL.
+
+LEVEL 18 Unparalleled Tactics. The first time each encounter you use Coordinated Strike, an ally
+
+who can hear you also gains 1 action to use on their next turn.
+
+LEVEL 19 Epic Boon. Choose an Epic Boon (see pg. 75 of the GM’s Guide).
+LEVEL 20 Captain of Legions. +1 to any 2 of your stats. The 1st time each encounter you use
+
+Coordinated Strike, INT allies gain +1 action (replaces Unparalleled Tactics).
+
+5
+
+COMBAT TACTICS
+
+COMBAT ABILITIES
+
+Whenever you attack, you may roll and expend a Combat Die
+to use a Combat Tactic (max 1/attack).
+
+Rigorous Training. Whenever you train with your party or other soldiers during a Safe Rest, you
+may choose different Commander options available to you.
+
+Heavy Strike
+
+Passive
+
+Inerrant Strike
+
+Passive
+
+Lunging Strike
+
+Passive
+
+Sweeping Strike
+
+Passive
+
+Whenever you hit, deal +Combat Die damage and knockback
+your target STR spaces.
+
+COMMANDER’S ORDERS
+Commanding Presence
+
+Whenever you miss, add 1 to the Primary Die and deal +Combat
+Die damage.
+
+1 Action
+
+(1/encounter) Make an Influence check, and Command an
+enemy to perform a single simple action and they spend their
+entire next turn obeying it:
+•1–9: Move! The creature moves to a place you choose.
+•10–19: Kneel! Move them, then they are considered Prone.
+• 20+: Strike! They move and attack a target of your choice.
+
+Face Me!
+
+0 Actions
+
+Hold the Line!
+
+1 Action
+
+I Can Do This ALL DAY!
+
+1 Action
+
+Move it! Move it!
+
+Passive
+
+Reposition!
+
+1 Action
+
+Whenever you attack, gain +1 Reach and +2× Combat Die
+damage.
+
+Whenever you attack, spend 1 additional action to select any
+contiguous area within your weapon’s Reach, deal +Combat
+Die damage to ALL targets there (AoE attacks do not miss on a
+1, nor crit on the max).
+
+After an enemy crits or attacks a Dying ally, you may Taunt them.
+Lasts until you drop to 0 HP.
+
+(1/encounter) Reaction (when an ally drops to 0 HP): Command
+them to continue the fight! Set their HP to 3× your LVL.
+
+WEAPON MASTERY
+Choose a weapon mastery at Levels 6, 10, and 14.
+
+(1/encounter) Reaction (when you would drop to 0 HP): Expend
+any number of Hit Dice and set your HP to the sum rolled instead
+(do not add your STR).
+
+When you roll Initiative, give yourself and an ally advantage on
+the roll and +3 Speed for 1 round.
+
+Command 1 ally to move up to their Speed (or 2 allies up to half
+their Speed) for free. You may use this as a reaction on an ally’s turn.
+
+6
+
+Slashing
+
+(1/turn) Your attacks with
+slashing weapons can strike
+1 additional creature adjacent to you and your target.
+
+Bludgeoning
+
+(1/turn) Your attacks with
+bludgeoning weapons deal
++10 damage vs armored
+foes.
+
+Piercing
+
+(1/turn) Your attacks with
+piercing weapons can strike
+another creature behind
+your target within Reach.
+7
+
+SUBCLASSES
+
+– CHAMPION OF THE –
+
+BULWARK
+
+Become an iron-clad juggernaut and boost your party with your defensive prowess.
+Subclass Complexity:
+
+[f][f][e][e]
+
+LEVEL 3
+
+Armor Master. You are proficient with plate armor.
+Shield Expert. While equipped with a shield you can Defend for free; when you
+do, you may deal damage to an adjacent enemy equal to your shield’s Defense.
+
+LEVEL 7
+
+Juggernaut. When you use Coordinated Strike, you can spend an additional
+action to add 1 to your Primary Die and deal extra damage equal to your Defense.
+
+LEVEL 11
+
+Taunting Strike. (1/turn) You may Taunt a creature you attack until the end of
+their next turn.
+
+LEVEL 15 Shield Wall. (Reach 2) Your shields gain +2 Defense. Your allies can also use
+
+your shield’s Defense when they Defend.
+
+8
+
+ARTIST: EARL LAN
+
+9
+
+COMMANDER
+
+SPELLBLADE
+—— STEEL MEETS SPELL ——
+
+Arcane Command. Your focus on the arcane causes you to lose access to Weapon Mastery and
+Combat Tactics, but you now gain INT mana when you roll Initiative (this mana is lost if unspent when
+combat ends). Whenever you could choose a Combat Tactic or Weapon Mastery, instead choose another
+Commander’s Order or a tier 1 (or lower) spell from any spell school. Your Commander’s Orders are
+also empowered with magical power:
+• Face Me! (Glimmering Decree). Free Reaction (whenever an enemy crits or attacks a Dying ally):
+That enemy takes STR d8 radiant damage (ignoring armor), is pulled up to 4 spaces toward you,
+and is Taunted by you until you drop to 0 HP.
+• Move it! Move it! (Borne upon the Wind). When you roll Initiative, you may give yourself
+and an ally advantage on the roll, +3 Speed, and the ability to fly for 1 round. Then, you both can
+also move for free.
+
+• Hold the Line! (Crystalline Armor). (1/encounter) Reaction (when an ally drops to 0 HP):
+Command them to continue the fight! Set their HP to 3× your LVL. Additionally, they gain that
+many temp HP. Enemies who reduce this temp HP in melee have their Speed halved until the
+end of their next turn.
+• Reposition! (Flashstep). Action: Command 1 ally to move up to their Speed (or 2 allies up to
+half their Speed) for free; you may exchange places with one of them. You may use this as a reaction
+on an ally’s turn.
+
+• I Can Do This ALL DAY! (Rising Phoenix). (1/encounter) Reaction (when you would drop to
+0 HP): You may expend any number of Hit Dice, set your HP to the sum rolled instead, and deal
+that much fire damage to each enemy within Reach 2 of you. They gain the Smoldering condition.
+• Commanding Presence (Withering Presence). Creatures you Command suffer necrotic
+damage equal to the max value of your Combat Die (ignoring armor) and are considered undead
+for 1 round.
+
+Spellforge. When you roll Initiative you may cast Enchant Weapon for free (can be upcast
+as normal by spending additional mana).
+Deep Knowledge (1). Choose any tier 1 (or lower) spell and any Utility Spell.
+LEVEL 7 Deep Knowledge (2). Choose any tier 2 (or lower) spell and any Utility Spell.
+LEVEL 11 Deep Knowledge (3). Choose any tier 3 (or lower) spell and any Utility Spell.
+LEVEL 15 Deep Knowledge (4). Choose any tier 4 (or lower) spell and any Utility Spell.
+LEVEL 3
+
+10
+
+ARTIST: EDWARD YORKE
+
+ARTIST: FLORIAN FREY
+
+11
+
+FAQ
+
+How do AoE melee attacks work? The selected area
+must make sense: if an ally is between two enemies you
+can’t strike both enemies and avoid the ally!
+
+SUBCLASSES
+
+– CHAMPION OF THE –
+
+VANGUARD
+
+Can Sweeping Strike and Slashing Mastery stack?
+No.
+Bulwark: Shield Expert. Can I Defend more than
+once per round if it’s free? No. Free simply means it
+does not cost an action, reactions are still limited to 1/round.
+
+A forward-charging general who leads from the front! Subclass Complexity:
+
+[f][f][e][e]
+
+LEVEL 3
+
+Advance! (Reach 12) Whenever you use your Coordinated Strike, you and all allies
+can first move up to half their Speed for free. Gain advantage on the first melee attack
+you make against enemies you moved toward this turn.
+
+LEVEL 7
+
+Experienced Commander. Your Coordinated Strike may target 1 additional ally.
+
+LEVEL 11
+
+Survey the Battlefield. When you roll Initiative, regain 1 use of Coordinated Strike.
++1 max Combat Dice.
+
+LEVEL 15 As One! All attacks made with your Coordinated Strike are made with advantage.
+
+12
+
+COMMANDER NAMES
+Male Names
+• Florian
+• Nails
+• Magnus
+• Thaddeus
+• Halvar
+• Orin
+• Caspian
+
+Female Names
+• Tessa
+• Petra
+• Sera
+• Ryn
+• Thalia
+• Rowan
+• Gwynn
+
+13
+
+COMMANDER
+
+QUICK BUILDS
+Florian
+
+Human, Commander
+
++2
+
++0
+
++2
+
+-1
+
++3
+
++3
+
++1
+
++0
+
+1
+
+6
++1
+
++3
+
++0
+
++2
+
+-1
+
++2
+
++4
+
++1
+
++0
+
+d10
+
+6
+
++0
+
++2
+
++1
+
+2
+
+6
+
+Medium
+
+24
+8
++1
+
++3
+
+Coordinated Strike. (1/encounter)
+Tenacious (Human). +1 to all skills and Initiative
+Inerrant Strike. (Expend 1 Combat Die) Reroll a missed attack, add
+1 to the Primary Die, and deal +1d6 damage.
+Combat Dice. Initiative: gain 2 Combat Dice (each a d6).
+Field Medic. +1 die on healing potions. +4 to Hit Die rolls.
+14
+
++4
+
++1
+
+Short Sword. (1d6+2)
+Javelins (4). (1d6+2) Range 8
+Rusty Mail. 6+DEX Defense
+
+Human, Commander
+
++2
+
+Medium
+
+17
+
+Coordinated Strike. (1/encounter)
+Tenacious (Human). +1 to all skills and Initiative
+
+Florian
+
+6
+
++4
+
++1
+
+d10
+
+6
+
++0
+
++3
+
++1
+
+Short Sword. (1d6+2)
+Javelins (4). (1d6+2) Range 8
+Rusty Mail. 6+DEX Defense
+Wooden Buckler. +2 Defense
+
+

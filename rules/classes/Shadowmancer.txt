@@ -1,0 +1,665 @@
+SHADOWMANCER
+Game Design and Art Direction: Evan Diaz.
+Subclass Design Contributors: Luka, Alex Matthews, Jan Rýznar, Christian Bertrand.
+Artist Credits: Vladimir Matyukhin, Evan Diaz.
+Cover Art: Vladimir Matyukhin.
+
+Nimble Heroes: Shadowmancer
+Designed in the USA, Printed in China.
+Copyright © 2026 Nimble Co. All rights reserved.
+www.nimbleRPG.com
+
+Nimble 3rd Party Creator License v2.0
+This license is perpetual and irrevocable except upon violation.
+
+Terms. You may use and reference ANY published Nimble text (current
+or future) in your own original products based on or compatible with
+Nimble (e.g., adventures, classes, subclasses, monsters, supplements)
+without Nimble Co.’s prior approval and retain all profits.
+
+• Copying, restating, or summarizing large portions of text with little
+added content does not qualify as an original product.
+• You may NOT use the Nimble art or logo—but may use a Nimble
+compatibility logo (nimbleRPG.com/creators). Your product must not
+appear to be an official Nimble product or endorsed by Nimble Co.
+
+Required Attribution. Include in your product:
+[Product Name] is an independent product published under the
+Nimble 3rd Party Creator License. Nimble TTRPG © Nimble Co.
+
+Online Apps and VTTs. For free online tools/wikis/apps/VTT implementations (app), you may use any and all published Nimble text, provided the app is completely free to use (optional donations to defray
+development/hosting costs permitted) and you include this notice
+prominently (a banner, sidebar, welcome message, etc.):
+
+This [app/tool/etc.] is free to use for anyone who already owns the
+content, is trying the system out, or cannot afford to buy it right now.
+If you enjoy Nimble and are able, please support the game by purchasing the official content at nimbleRPG.com.
+Restrictions and Rights Reserved. We are not liable for claims
+related to your product, and you will not bring legal claims against us.
+Unless explicitly stated, this license does not grant copyright, moral,
+publicity, privacy, patent, or trademark rights. All other rights are
+reserved by Nimble Co. Nimble is provided AS-IS without warranties.
+
+Legal Terms. You agree to indemnify Nimble Co. and its affiliates
+from any claims or liabilities arising from your use of this license, mutually where applicable, as permitted by law. This license may be terminated if you violate its terms; upon termination, cease distribution until
+resolved. Governed by Florida law. Disputes resolved in U.S. District
+Court for the Middle District of Florida or state courts in Orange County,
+Florida. Unenforceable provisions reformed or severed without affecting the rest. Does not waive Nimble Co.’s legal privileges.
+
+This work includes material taken from the System Reference Document 5.1 (“SRD 5.1”) by Wizards of the Coast LLC and available at https://
+dnd.wizards.com/resources/systems-reference-document. The SRD 5.1 is licensed under the Creative Commons Attribution 4.0 International
+License available at https://creativecommons.org/licenses/by/4.0/legalcode.
+
+1
+
+TOTALLY
+
+NOT EVIL
+(Why would you even say that?)
+
+reat power sometimes comes from… horrible places. But what’s the alternative,
+spend our entire lives… STUDYING?! Now that’s horrible. Who’d want to
+waste their lives reading books—learning magic the hard way? Work SMART,
+not hard. Just scheme up a way to take what you need from someone who won’t miss
+it—Ancient Horrors don’t guard their power nearly as well as you’d think! And if there’s
+power just lying around, it’d be dumb of me to not use it, really.
+
+G
+
+So what if I wear black and have to occasionally sacrifice an animal here and there while
+chanting? Does that automatically mean I’m evil? *Pfft,* hardly! Not every ANCIENT
+HORROR is the same; that’s like saying crow black and spider black are the same. Okay,
+bad examples, but the point stands. If you’re tired of swinging swords around and getting sweaty like a peasant, just summon a horde of Shadow minions to do your bidding.
+They’re always eager to serve!
+
+Use your cunning to forge pacts
+with ancient, unfathomable
+entities, and draw upon their
+incomprehensible power.
+
+Bend living Shadows to your
+will, summon them to swarm
+your foes, serving as both
+sword and fodder.
+
+Empower your shadowy
+abilities with lesser and
+greater invocations from
+your master.
+
+A shadowy master of expendable hordes. Flexible minion-based class with
+powerful spellcasting options. Class complexity:
+
+[f][f][f][e]
+
+2
+
+ARTIST: VLADIMIR MATYUKHIN
+
+3
+
+LEVEL 7
+
+Subclass. Gain your Shadowmancer subclass feature.
+Tier 3 Spells. You may now cast tier 3 spells; all of your spells are cast at this tier.
+
+LEVEL 8
+
+Key Stat Increase. +1 INT or DEX.
+Lesser Invocation. Choose a 2nd Lesser Shadow Invocation.
+Shadowmastery (2). Choose a 2nd Necrotic Utility Spell.
+
+LEVEL 9
+
+A Gift from the Master (3). Choose a 3rd Greater Shadow Invocation.
+Secondary Stat Increase. +1 STR or WIL.
+
+LEVEL 10 Tier 4 Spells. You may now cast tier 4 spells; all of your spells are cast at this tier.
+
+Upgraded Cantrips. Your cantrips grow stronger.
+
+LEVEL 11
+
+SHADOWMANCER
+Key Stats: INT, DEX Hit Die: 1d8 Starting HP: 13
+Saves: INT+, WIL– Armor: Cloth Armor Weapons: Blades, Wands
+Starting Gear: Adventurer’s Garb, Sickle, Shovel
+LEVEL 1
+
+Conduit of Shadow. Learn the Shadowmancer cantrips.
+
+LEVEL 2
+
+Master of Darkness. Learn all Necrotic cantrips and tier 1 Necrotic spells.
+Pilfered Power. You can steal power from your Patron to cast tiered spells (DEX times
+before they notice). If you exceed this limit, your Patron damages you for half your max
+HP as recompense. This resets as you commune with your Patron during a Safe Rest.
+
+LEVEL 3
+
+THE PACT IS SEALED. Choose a Shadowmancer subclass and 1 Lesser Shadow Invocation.
+
+Supplicate. Whenever you commune with your Patron on a Safe Rest, you may beg them to allow you to
+choose different Shadowmancer options (they may ask for something in return).
+LEVEL 4
+
+Key Stat Increase. +1 INT or DEX.
+A Gift from the Master. Choose 1 Greater Shadow Invocation.
+
+LEVEL 5
+
+Tier 2 Spells. You may now cast tier 2 spells; all of your spells are cast at this tier.
+Upgraded Cantrips. Your cantrips grow stronger.
+Secondary Stat Increase. +1 STR or WIL.
+
+LEVEL 6
+
+4
+
+A Gift from the Master (2). Choose a 2nd Greater Shadow Invocation.
+Shadowmastery. Choose 1 Necrotic Utility Spell.
+
+Subclass. Gain your Shadowmancer subclass feature.
+Lesser Invocation (2). Choose a 3rd Lesser Shadow Invocation.
+
+LEVEL 12 Greedy Pact. When you would take damage from Pilfered Power, make a STR
+
+save:
+• 1–9: Suffer damage as normal.
+• 10–19: Suffer only 10 HP of damage.
+• 20+: Suffer no damage and cast the spell as if it were 1 tier higher.
+Key Stat Increase. +1 INT or DEX.
+
+LEVEL 13 Tier 5 Spells. You may now cast tier 5 spells; all of your spells are cast at this tier.
+
+Secondary Stat Increase. +1 STR or WIL.
+
+LEVEL 14 A Gift from the Master (4). Choose a 4th Greater Shadow Invocation.
+
+Shadowmastery (3). You know all Necrotic Utility Spells.
+
+LEVEL 15 Subclass. Gain your Shadowmancer subclass feature.
+
+Upgraded Cantrips. Your cantrips grow stronger.
+
+LEVEL 16 Tier 6 Spells. You may now cast tier 6 spells; all of your spells are cast at this tier.
+
+Key Stat Increase. +1 INT or DEX.
+
+LEVEL 17 Dire Shadows. Attacks against your Shadows are made with disadvantage. They
+
+take no damage from successful saves.
+Secondary Stat Increase. +1 STR or WIL.
+
+LEVEL 18 A Gift from the Master (5). Choose a 5th Greater Shadow Invocation.
+LEVEL 19 Epic Boon. Choose an Epic Boon (see pg. 75 of the GM’s Guide).
+
+Tier 7 Spells. You may now cast tier 7 spells; all of your spells are cast at this tier.
+
+LEVEL 20 Eldritch Usurper. +1 to any 2 of your stats. (1/encounter) When you cast Summon
+
+Shadow you may summon a Greater Shadow instead.
+Greater Shadow. A 5d12 minion. When it dies, it explodes into 5 Shadows
+(ignoring your Shadow Limit). Place them anywhere within Reach 6.
+Upgraded Cantrips. Your cantrips grow stronger.
+
+5
+
+Devoted Acolyte
+
+Passive
+
+Eldritch Sense
+
+Passive
+
+Gaze of Two Minds
+
+1 Action
+
+Learn 2 of the following languages: Celestial, Draconic,
+Deep Speak, Infernal, or Primordial. Advantage on Lore
+checks related to those 2 languages.
+
+SHADOWMANCER
+CANTRIPS
+SHADOWMANCER ONLY, CANTRIP
+
+SHADOWMANCER ONLY, CANTRIP
+
+Summon Shadow 
+
+You can sense any shapechanger or creature concealed
+by magic within Reach 6.
+
+1 Action
+
+Summon 1 adjacent Shadow (a d12 minion).
+High Levels: +1 Shadow every 5 Levels.
+
+Minions. They follow the minion rules and abandon you immediately outside of combat.
+Shadow Limit. You can have up to INT Shadows.
+
+Command Shadows
+
+1 Action
+
+ALL your Shadows move 6 then attack (1/round).
+SHADOWMANCER ONLY, CANTRIP
+
+Shadow Blast 
+
+1 Action
+
+Range: 8. Damage: 1d12+DEX (1/round).
+High Levels: +1d12 every 5 Levels.
+
+LESSER
+INVOCATIONS
+
+Knowledge from Beyond0 Actions
+
+If you fail an Insight or Arcana check, you may suffer 1
+Wound to succeed instead.
+
+My Favored Pet
+
+Passive
+
+One Shadow can begrudgingly tolerate you outside
+of combat. It can (very creepily) do any menial task a
+below-average commoner could.
+
+Abhorrent Speech	
+
+Passive
+
+Voice of the Dark
+
+Passive
+
+Beguiling Influence
+
+1 Action
+
+Whispers of the Grave
+
+1 Action
+
+Blood Sight 
+
+1 Action
+
+You can communicate with horrible creatures (aberrations,
+undead, etc.).
+
+(1/Safe Rest) You may reroll an Influence check.
+
+(1/Safe Rest) You may reroll an Examination check. Additionally,
+you can detect traces of blood on a surface, even after it has
+been cleaned.
+6
+
+Touch a willing creature and perceive through its senses
+instead of your own for as long as you hold concentration.
+
+You can communicate telepathically with a humanoid
+within 6 spaces.
+
+(1/Safe Rest) Ask a dead creature 3 yes/no questions.
+You can never question it this way again.
+
+Supplicate. Whenever you commune with your Patron on a Safe Rest, you
+may beg them to allow you to choose different Shadowmancer options (they
+may ask for something in return).
+
+7
+
+Repelling Blast
+
+Passive
+
+Shadow Magus
+
+Passive
+
+Shadow Spear
+
+Passive
+
+Shadow Rush
+
+Passive
+
+Shadow Warp 
+
+1 Action
+
+Your Shadow Blast gains: On hit: Knockback 2.
+
+Your Shadows gain +4 Reach and deal d10
+damage instead.
+
+GREATER
+INVOCATIONS
+Armor of Shadows
+
+Your Shadow Blast gains +8 Range, ignores
+cover, advantage vs Prone targets (instead of
+disadvantage), and crits on a 1.
+
+Passive
+
+Reduce all damage you receive by an amount equal to the
+number of Shadows you have.
+
+Fiendish Boon
+
+Passive
+
+Increase your DEX or INT by 1. You have 1 fewer max Hit Dice.
+
+Hungering Shadows
+
+Swarming Shadows Passive
+
+Whenever a Shadow rolls the max, summon
+another Shadow adjacent to the target
+(ignoring your Shadow Limit).
+
+1 Action
+
+While adjacent to a Shadow or in an area of dim light or darkness,
+you may become Invisible until you move or attack (summoning
+and commanding minions does not count as an attack).
+
+8
+
+(Reach 12) Switch places with a creature that
+has been dealt necrotic damage this turn.
+
+Passive
+
+Whenever one of your Shadows rolls the max, the next tiered
+spell you cast this encounter does not cost a use of Pilfered Power.
+
+One with Shadows
+
+Whenever your Shadows attack, instead of
+rolling damage, you may have any of them
+deal the max amount, then die.
+
+Supplicate. Whenever you commune with your Patron on a
+Safe Rest, you may beg them to allow you to choose different
+Shadowmancer options (they may ask for something in return).
+
+9
+
+SUBCLASSES
+
+SUBCLASSES
+
+— PACT OF THE —
+
+— PACT OF THE —
+
+RED DRAGON
+
+ABYSSAL DEPTHS
+
+The Great Dragon’s flames are yours. Its wrath is yours.
+Soon, even its flesh will be too.
+Subclass Complexity:
+
+Icy tendrils reach out from the abyss, and drag your foes into absolute cold and darkness.
+Subclass Complexity:
+
+[f][f][f][e]
+
+[f][f][e][e]
+
+LEVEL 3
+
+Draconic Crimson Rite. Your Patron grants you knowledge of Fire
+spells. Your Shadows become flaming dragon wyrmling Shadows. Your
+Shadow Blast and Shadows can deal fire or necrotic damage and inflict
+Smoldering whenever they roll the max.
+
+LEVEL 7
+
+We’ll ALL Burn! You may cast Pyroclasm without Pilfering Power by
+including yourself in the damage. You have advantage on the save.
+Choose 1 Fire Utility Spell.
+
+LEVEL 11
+
+Heart of Burning Fire. Regain 1 use of Pilfered Power each time you
+roll Initiative. This expires at the end of combat if unused.
+
+LEVEL 15 Enveloped by the Master. Gain 1d4 Wounds to cast Dragonform.
+
+10
+
+LEVEL 3
+
+Master of Nightfrost. Your Patron grants you knowledge of Ice spells. Gain the ability
+to breathe underwater. Your Shadows become beings of nightfrost. Your Shadow Blast
+and Shadows can deal cold or necrotic damage, and whenever they roll the max, you gain
+INT+LVL temp HP.
+
+LEVEL 7
+
+Shadowrime. Your Shadow Blast also Slows. You can cast Omenrime or Rimeblades
+without Pilfering Power by expending 10 temp HP. Choose 1 Ice Utility Spell.
+
+LEVEL 11
+
+Glacial Resilience. (1/Safe Rest) Reaction (whenever you are attacked or would gain a
+condition): Gain 10×LVL temp HP and end ALL negative conditions on yourself. At the end
+of your next turn, any remaining temp HP are lost.
+
+LEVEL 15 Cryomancer’s Reprisal. Pay half your max HP to cast ANY Ice spell. After casting an Ice
+
+spell in this way, you gain an invisible aura: the next creature that hits you with a melee
+attack this encounter takes cold damage equal to half the HP you spent on this casting.
+
+11
+
+SHADOWMANCER
+
+REAVER
+—— CAST ASIDE, BORN ANEW ——
+
+Hollow One. Cut off from your Patron, you can no longer cast Shadow Blast, nor can you cast tiered
+spells using Pilfered Power. However, as a parting token, you have stolen a secret from your Patron:
+the magical Bonescythe, a weapon of sinew and bone, infused with shadowy magic.
+
+Summon Bonescythe	
+
+1 Action
+
+Summon a magical Bonescythe, a melee weapon. (Reach 2) 2d12 slashing+DEX necrotic
+damage to EACH die (add 1 extra damage die every 5 Levels). On hit (or when combat
+ends): it shatters and must be resummoned to use again. Invocations affecting Shadow
+Blast affect your Bonescythe instead.
+
+REAVER
+
+LEVEL 3
+
+Shadow Exploit. Whenever you Defend, you can sacrifice a Shadow to take no damage.
+Or you may sacrifice a Shadow to cast a spell at the highest tier you have unlocked. Each
+subsequent time you use this ability in an encounter, increase the cost by 1 Shadow.
+
+LEVEL 7
+
+Grim Harrow. When you strike with your Bonescythe, treat each die as Primary. You may
+divide the dice as you choose amongst any number of adjacent targets within Reach.
+Reap. When your Bonescythe crits or kills a creature, summon a Shadow for free (ignoring
+your Shadow Limit).
+
+LEVEL 11
+
+My Blood, My Power. You may take 1 Wound to cast a tiered spell you know at the
+highest tier you have unlocked.
+Otherworldly Might. Advantage on Concentration saves if you have any Shadows.
+
+LEVEL 15 Sovereign One. Summon 2 Shadows and your Bonescythe for free when you roll Initiative.
+
+16
+
+ARTIST: CHEN GUIXIN
+
+17
+
+FAQ
+
+Does Hungering Shadows or Swarming Shadows
+combo with Shadow Rush? No. Hungering Shadows
+and Swarming Shadows require you to roll the max amount;
+Shadow Rush forgoes rolling dice.
+Can I go over my Shadow Limit? Some spells and abilities may permit this, but while at or above your Shadow
+Limit, casting Summon Shadow has no effect.
+How do minions and swarms interact with Armor?
+Add up all the minions’/swarms’ dice and treat them as a
+single attack.
+
+SHADOWMANCER NAMES
+Male Names
+• Callow
+• Edris
+• Vex
+• Allard
+• Dusk
+• Crick
+• Morrow
+
+18
+
+Female Names
+• Sway
+• Nettle
+• Tish
+• Quinn
+• Mara
+• Sable
+• Tinsel
+
+19
+
+SHADOWMANCER
+
+QUICK BUILDS
+Morrow Human, Shadowmancer
+-1
+
++2
+
++2
+
++0
+
++3
+
++3
+
++3
+
++1
+
+1
+
+4
++3
+
++5
+
+Morrow Human, Shadowmancer
++2
+
++2
+
++0
+
++3
+
++3
+
++3
+
++1
+
++0
+
++3
+
+d8
+
+6
+
++1
+
++1
+
++3
+
+Sickle. (1d6+2) Vicious.
+Adventurer’s Garb. 2+DEX Defense.
+Shovel.
+
+2
+
+6
+
+Medium
+
+18
+
++4
+
+4
+
+2
+
++3
+
+d8
+
+6
+
++5
+
++0
+
++0
+
++2
+
++3
+
+Summon Shadow. 1 Action (1d12 minion, max INT minions).
+Command Shadows. 1 Action (1/round) ALL minions move & attack.
+Shadow Blast. 1 Action, Range: 8. Damage: 1d12+DEX (1/round).
+Master of Darkness. Necrotic cantrips and tier 1 spells.
+Pilfered Power. 2/Safe Rest. Cast a Tiered spell for 0 mana.
+Tenacious (Human). +1 to all skills and Initiative.
+20
+
+Medium
+
+13
+
+Summon Shadow. 1 Action (1d12 minion, max INT minions).
+Command Shadows. 1 Action (1/round) ALL minions move & attack.
+Shadow Blast. 1 Action, Range: 8. Damage: 1d12+DEX (1/round).
+Tenacious (Human). +1 to all skills and Initiative.
+
+-1
+
+6
+
+Sickle. (1d4+2) Vicious.
+Adventurer’s Garb. 2+DEX Defense.
+Shovel.
+
+

@@ -1,0 +1,496 @@
+BERSERKER
+Game Design and Art Direction: Evan Diaz.
+Subclass Design Contributors: Mike Gorman,
+Jonathan Meek, Ari Jackson, Emil Andersen.
+Artist Credits: Vladimir Iftimescu, Florian Frey,
+Ashot Avetisyan, Evan Diaz.
+
+Cover Art: Sean Simmons.
+Nimble Heroes: Berserker
+Designed in the USA, Printed in China.
+Copyright © 2026 Nimble Co. All rights reserved.
+www.nimbleRPG.com
+
+Nimble 3rd Party Creator License v2.0
+This license is perpetual and irrevocable except upon violation.
+
+Terms. You may use and reference ANY published Nimble text (current
+or future) in your own original products based on or compatible with
+Nimble (e.g., adventures, classes, subclasses, monsters, supplements)
+without Nimble Co.’s prior approval and retain all profits.
+
+• Copying, restating, or summarizing large portions of text with little
+added content does not qualify as an original product.
+• You may NOT use the Nimble art or logo—but may use a Nimble
+compatibility logo (nimbleRPG.com/creators). Your product must not
+appear to be an official Nimble product or endorsed by Nimble Co.
+
+Required Attribution. Include in your product:
+[Product Name] is an independent product published under the
+Nimble 3rd Party Creator License. Nimble TTRPG © Nimble Co.
+
+Online Apps and VTTs. For free online tools/wikis/apps/VTT implementations (app), you may use any and all published Nimble text, provided the app is completely free to use (optional donations to defray
+development/hosting costs permitted) and you include this notice
+prominently (a banner, sidebar, welcome message, etc.):
+
+This [app/tool/etc.] is free to use for anyone who already owns the
+content, is trying the system out, or cannot afford to buy it right now.
+If you enjoy Nimble and are able, please support the game by purchasing the official content at nimbleRPG.com.
+Restrictions and Rights Reserved. We are not liable for claims
+related to your product, and you will not bring legal claims against us.
+Unless explicitly stated, this license does not grant copyright, moral,
+publicity, privacy, patent, or trademark rights. All other rights are
+reserved by Nimble Co. Nimble is provided AS-IS without warranties.
+
+Legal Terms. You agree to indemnify Nimble Co. and its affiliates
+from any claims or liabilities arising from your use of this license, mutually where applicable, as permitted by law. This license may be terminated if you violate its terms; upon termination, cease distribution until
+resolved. Governed by Florida law. Disputes resolved in U.S. District
+Court for the Middle District of Florida or state courts in Orange County,
+Florida. Unenforceable provisions reformed or severed without affecting the rest. Does not waive Nimble Co.’s legal privileges.
+
+This work includes material taken from the System Reference Document 5.1 (“SRD 5.1”) by Wizards of the Coast LLC and available at https://
+dnd.wizards.com/resources/systems-reference-document. The SRD 5.1 is licensed under the Creative Commons Attribution 4.0 International
+License available at https://creativecommons.org/licenses/by/4.0/legalcode.
+
+1
+
+BERSERKER
+
+WRATH
+
+& RUIN
+The Berserker is destruction. He knows not fatigue nor caution—both driven
+away in a relentless fury. Even death fears to take a Berserker before his
+battle Rage is satiated. Once a Berserker has begun to fight, he only grows
+stronger, fueled by battle-lust and unending Rage.
+The deadliest among them is not the well-rested, but those who are
+pushed to the brink through combat. It matters not what a Berserker
+wields, be it axe or sword; flesh will be hewn from bone and heads from
+shoulders. Many have caved under the Berserker’s primal might—sword
+and spell are but straw in the wake of unbridled RAGE.
+
+Become a raging, damage-dealing machine. Greet
+death as an old friend and
+keep on fighting!
+
+Deal out incredible amounts
+of brutality: the longer a fight
+goes on, the more your Rage
+intensifies.
+
+Use your Savage Arsenal.
+Choose abilities to crush
+your foes and laugh in the
+face of death!
+
+High-damage, high-survivability, melee-focused class.
+Class complexity:
+
+[f][f][e][e]
+
+2
+
+ARTIST: EARL LAN
+
+3
+
+Wrath & Ruin. Whenever you perform a notable act of destruction or feat of strength during
+a Safe Rest, you may choose different Berserker options available to you.
+
+BERSERKER
+Key Stats: STR, DEX Hit Die: 1d12 Starting HP: 20
+Saves: STR+, INT– Armor: None Weapons: all STR weapons
+Starting Gear: Battleaxe, Rations (meat), Rope (50 ft.)
+LEVEL 1
+
+Rage. (1/turn) Action: Roll a Fury Die (1d4) and set it aside. Add it to every STR attack
+you make. You can have a max of KEY Fury Dice; they are lost when your Rage ends.
+That all you got?! When you are attacked, you may expend 1 or more Fury Dice to
+reduce the damage taken by STR+DEX for each die spent.
+
+Your Rage Ends... If you leave combat, drop to 0 HP, or go 1 round without attacking or Raging.
+Yes! You can Rage and gain another Fury Die even if you are already Raging. If you are already at your max,
+roll as normal and decide which ones to keep.
+LEVEL 2
+
+LEVEL 3
+
+LEVEL 4
+
+4
+
+Intensifying Fury. If you are Raging at the start of your turn, roll 1 Fury Die for free.
+One with the Ancients. (1/Safe Rest) When faced with a decision about which direction
+or course of action to take, you can call upon your ancestors to guide you toward the
+most dangerous or challenging path.
+Subclass. Choose a Berserker subclass.
+Bloodlust. Expend 1 or more Fury Dice on your turn, move DEX spaces per die spent
+for free.
+Enduring Rage. While Dying, you Rage automatically for free at the beginning of your
+turn, have a max of 2 actions instead of 1, and ignore the STR saves to make attacks.
+Key Stat Increase. +1 STR or DEX.
+Savage Arsenal. Choose 1 ability from the Savage Arsenal.
+
+LEVEL 5
+
+Rage (2). Whenever you Rage, gain 2 Fury Dice instead.
+Secondary Stat Increase. +1 INT or WIL.
+
+LEVEL 6
+
+Savage Arsenal (2). Choose a 2nd Savage Arsenal ability.
+Intensifying Fury (2). Your Fury Dice are now d6s.
+
+LEVEL 7
+
+Subclass. Gain your Berserker subclass feature.
+
+LEVEL 8
+
+Savage Arsenal (3). Choose a 3rd Savage Arsenal ability.
+Key Stat Increase. +1 STR or DEX.
+
+LEVEL 9
+
+Intensifying Fury (3). Your Fury Dice are now d8s.
+Secondary Stat Increase. +1 INT or WIL.
+
+LEVEL 10 Savage Arsenal (4). Choose a 4th Savage Arsenal ability.
+		
+LEVEL 11 Subclass. Gain your Berserker subclass feature.
+LEVEL 12 Savage Arsenal (5). Choose a 5th Savage Arsenal ability.
+
+Key Stat Increase. +1 STR or DEX.
+
+LEVEL 13 Intensifying Fury (4). Your Fury Dice are now d10s.
+
+Secondary Stat Increase. +1 INT or WIL.
+
+LEVEL 14 Savage Arsenal (6). Choose a 6th Savage Arsenal ability.
+LEVEL 15 Subclass. Gain your Berserker subclass feature.
+LEVEL 16 Savage Arsenal (7). Choose a 7th Savage Arsenal ability.
+
+Key Stat Increase. +1 STR or DEX.
+
+LEVEL 17 Intensifying Fury (5). Your Fury Dice are now d12s.
+
+Secondary Stat Increase. +1 INT or WIL.
+
+LEVEL 18 DEEP RAGE. Dropping to 0 HP does not cause your Rage to end.
+LEVEL 19 Epic Boon. Choose an Epic Boon (see pg. 75 of the GM’s Guide).
+LEVEL 20 BOUNDLESS RAGE. +1 to any 2 of your stats. Anytime you roll less
+
+than 5 on a Fury Die, change it to 5 instead.
+
+5
+
+Mighty Endurance
+
+Passive
+
+MORE BLOOD!
+
+Passive
+
+You can now survive an additional 4 Wounds before death.
+
+SAVAGE ARSENAL
+Wrath & Ruin. Whenever you perform a notable act of destruction or feat of strength during a
+Safe Rest, you may choose different Berserker options available to you.
+
+Death Blow
+
+Passive
+
+Whenever you crit, you may double the damage from your Fury
+Dice (instead of rolling any additional dice).
+
+Deathless Rage
+
+Passive
+
+(1/turn) While Dying, you may suffer 1 Wound to gain 1 action
+and 1 Fury Die.
+
+DismantlePassive
+After you roll an attack, expend any number of Fury Dice, increase
+your Primary Die by 1 for each.
+
+Eager for Battle
+
+Passive
+
+RampagePassive
+
+(1/turn) After you land a hit, you may treat your next attack this
+turn as if you rolled that same amount instead of rolling again.
+
+Swift Fury
+
+Passive
+
+Thunderous Steps
+
+Passive
+
+Unstoppable Force
+
+Passive
+
+Whenever you gain a Fury Die, move up to DEX spaces for free,
+ignoring Difficult Terrain.
+
+After moving at least 4 spaces while Raging, you may deal STR
+bludgeoning damage to all adjacent creatures where you stop.
+
+While Dying, taking damage causes 1 Wound (instead of 2)
+and crits inflict 2 Wounds (instead of 3).
+
+Gain advantage on Initiative. Move 2×DEX spaces for free on
+your first turn each encounter.
+
+Whirlwind
+
+2 Actions
+
+Into the Fray
+
+You’re Next! 
+
+1 Action
+
+1 Action
+
+Leap up to 2×DEX spaces toward an enemy. If you land within
+your weapon’s Reach of at least 2 enemies, make an attack
+against 1 of them for free.
+
+6
+
+Whenever an enemy crits you, gain 1 Fury Die. Whenever you
+drop to 0 HP, Rage for free.
+
+AoE. Attack ALL targets within your melee weapon’s Reach.
+
+While Raging, you can make a Might skill check to demoralize
+an enemy within Reach 12 (DC: their current HP). On a success,
+they immediately flee the battle.
+
+7
+
+SUBCLASSES
+
+SUBCLASSES
+
+— PATH OF THE —
+
+— PATH OF THE —
+
+MOUNTAINHEART
+
+RED MIST
+
+Withstand terrible blows and overwhelming damage.
+Shrug off death and disease that would crumple the mightiest armies.
+Subclass Complexity:
+
+Lean into your offensive fury and leave nothing remaining of your enemies but a lingering crimson mist. Subclass Complexity:
+
+[f][f][e][e]
+
+[f][f][e][e]
+
+LEVEL 3
+
+Unbreakable. (1/encounter) While Raging, if you would suffer your
+last Wound or other negative condition of your choice, you don’t.
+
+Blood Frenzy. (1/turn) While Raging, whenever you crit or
+kill an enemy, gain 1 Fury Die or change 1 Fury Die to the max.
+Savage Awareness. Advantage on Perception checks to
+notice or track down blood. Blindsight 2 while Raging: you
+ignore the Blind condition and can see through darkness and
+Invisibility within that Range.
+
+LEVEL 7
+
+Titan’s Fury. After you miss an attack or are crit by an enemy, Rage
+for free.
+
+Unstoppable Brutality. While Raging, you may gain 1
+Wound to reroll any attack or save, ignoring disadvantage.
+
+LEVEL 11
+
+Opportunistic Frenzy. While Raging, you can make Opportunity Attacks without disadvantage, and you may make them
+whenever an enemy enters your melee weapon’s Reach.
+
+LEVEL 3
+
+Stone’s Resilience. Whenever you expend Fury Dice to reduce
+incoming damage, add the value of the die to the amount reduced.
+Mountainous Tenacity. Whenever you expend Hit Dice to recover
+HP, for every 10 HP you would recover, you may heal 1 Wound instead.
+
+LEVEL 7
+
+LEVEL 11
+
+LEVEL 15 Mountain’s Endurance. While Dying, if an attack against you
+
+would be a crit, the attack is rerolled instead (when-crit abilities, such
+as Titan’s Fury, still trigger).
+
+8
+
+LEVEL 15 Onslaught. While Raging, gain +2 Speed. (1/round) You
+
+may move for free.
+
+9
+
+FAQ
+
+Fury Dice. These are NOT expended when making an attack. You keep
+accumulating them as your fury grows, they are only lost when your
+Rage ends (at the end of combat or when you gain the Dying condition)
+or when you expend them to use an ability like “That all you got?!”
+Intensifying Fury. You can still Rage 1/turn with this feature. That
+is: you can still spend an action to Rage and roll an additional Fury Die.
+Enduring Rage. You cannot Rage again on a turn you’ve triggered this
+ability since Rage is limited to 1/turn. “Free” means only that you don’t
+have to use an action or other resources to do it.
+This ability does stack with Intensifying Fury since both happen “at the
+beginning of your turn” (example: when you first gain the Dying condition your Rage ends and you lose all your Fury Dice; then at the beginning of your turn, you Rage for free from Enduring Rage; then roll an
+additional Fury Die for free from Intensifying Fury).
+Path of the Mountainheart: Unbreakable. This applies to ANY condition listed in the Core Rules or any other special condition applied by
+monsters or environmental effects. If you negate the Dying condition
+you drop to 1 HP instead.
+
+14
+
+ARTIST: ASHOT AVETISYAN
+
+15
+
+BERSERKER
+
+QUICK BUILDS
+Crush
+
+1
+
+Dragonborn, Berserker
+
++2
+
++2
+
+-1
+
++0
+
+-1
+
+-1
+
++2
+
++0
+
+3
++0
+
+-1
+
++2
+
+-1
+
++0
+
+-1
+
+-1
+
++2
+
++0
+
+d12
+
+6
+
++0
+
++0
+
++2
+
+Battleaxe. (1d10+2)
+Rations. (meat)
+Rope. (50 ft.)
+
+6
+
+Medium
+
+28
+3
++0
+
+-1
+
+Rage. (1/turn) Action: Roll a Fury Die (1d4) and set it aside. Add it to
+every STR attack you make. (Max 2 Fury Dice, lost when Rage ends).
+Intensifying Fury. (Start of turn) If Raging, roll 1 Fury Die for free.
+That all you got?! When attacked, expend any Fury Dice to reduce
+the damage taken by 4 for each die spent.
+Draconic Heritage. (1/Safe Rest) Deal +4 damage on an attack
+(recharges whenever you gain a Wound).
+16
+
++6
+
++2
+
+2
+
+Dragonborn, Berserker
+
++2
+
+Medium
+
+20
+
+Rage. (1/turn) Action: Roll a Fury Die (1d4) and set it aside. Add it to
+every STR attack you make. (Max 2 Fury Dice, lost when Rage ends).
+That all you got?! When attacked, expend any Fury Dice to reduce
+the damage taken by 4 for each die spent.
+Draconic Heritage. (1/Safe Rest) Deal +3 damage on an attack
+(recharges whenever you gain a Wound).
+
+Crush
+
+6
+
++6
+
++2
+
+d12
+
+6
+
++0
+
++0
+
++2
+
+Battleaxe. (1d10+2)
+Rations. (meat)
+Rope. (50 ft.)
+
+

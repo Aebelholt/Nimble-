@@ -1,0 +1,592 @@
+ZEPHYR
+Game Design and Art Direction: Evan Diaz.
+Subclass Design Contributors: Frank Hudson,
+Jack Weighill, Ross H. Brubaker, Matt Shiffler.
+Artist Credits: Earl Lan, Justine Florentino, Vlad
+Iftimescu, Kerem Beyit, Evan Diaz.
+
+Cover Art: Earl Lan
+Nimble Heroes: Zephyr
+Designed in the USA, Printed in China.
+Copyright © 2026 Nimble Co. All rights reserved.
+www.nimbleRPG.com
+
+Nimble 3rd Party Creator License v2.0
+This license is perpetual and irrevocable except upon violation.
+
+Terms. You may use and reference ANY published Nimble text (current
+or future) in your own original products based on or compatible with
+Nimble (e.g., adventures, classes, subclasses, monsters, supplements)
+without Nimble Co.’s prior approval and retain all profits.
+
+• Copying, restating, or summarizing large portions of text with little
+added content does not qualify as an original product.
+• You may NOT use the Nimble art or logo—but may use a Nimble
+compatibility logo (nimbleRPG.com/creators). Your product must not
+appear to be an official Nimble product or endorsed by Nimble Co.
+
+Required Attribution. Include in your product:
+[Product Name] is an independent product published under the
+Nimble 3rd Party Creator License. Nimble TTRPG © Nimble Co.
+
+Online Apps and VTTs. For free online tools/wikis/apps/VTT implementations (app), you may use any and all published Nimble text, provided the app is completely free to use (optional donations to defray
+development/hosting costs permitted) and you include this notice
+prominently (a banner, sidebar, welcome message, etc.):
+
+This [app/tool/etc.] is free to use for anyone who already owns the
+content, is trying the system out, or cannot afford to buy it right now.
+If you enjoy Nimble and are able, please support the game by purchasing the official content at nimbleRPG.com.
+Restrictions and Rights Reserved. We are not liable for claims
+related to your product, and you will not bring legal claims against us.
+Unless explicitly stated, this license does not grant copyright, moral,
+publicity, privacy, patent, or trademark rights. All other rights are
+reserved by Nimble Co. Nimble is provided AS-IS without warranties.
+
+Legal Terms. You agree to indemnify Nimble Co. and its affiliates
+from any claims or liabilities arising from your use of this license, mutually where applicable, as permitted by law. This license may be terminated if you violate its terms; upon termination, cease distribution until
+resolved. Governed by Florida law. Disputes resolved in U.S. District
+Court for the Middle District of Florida or state courts in Orange County,
+Florida. Unenforceable provisions reformed or severed without affecting the rest. Does not waive Nimble Co.’s legal privileges.
+
+This work includes material taken from the System Reference Document 5.1 (“SRD 5.1”) by Wizards of the Coast LLC and available at https://
+dnd.wizards.com/resources/systems-reference-document. The SRD 5.1 is licensed under the Creative Commons Attribution 4.0 International
+License available at https://creativecommons.org/licenses/by/4.0/legalcode.
+
+1
+
+ZEPHYR
+
+RELENTLESS
+
+KINETIC
+
+PERFECTION
+Zephyr dedicates their life to the relentless pursuit of kinetic
+prowess. They hone their bodies into blurs of motion, training
+from a young age in remote wilds or mountain monasteries,
+wielding speed to unleash blows that echo through their foes and slip past
+attacks like a whispering wind. Speed is both their weapon and shield.
+
+A
+
+Through ceaseless training, they harness their inner momentum to achieve
+feats of supernatural agility, executing every motion with flowing precision.
+
+You’re a relentless force on the
+battlefield. Absorb blows and
+deliver devastating strikes.
+
+Move with unparalleled speed
+and determination, outpacing
+your allies and foes alike.
+
+Retaliate with precision and turn
+enemy strikes into opportunities
+for devastating counterattacks.
+
+A furiously fast melee class that can deliver and avoid terrible blows.
+Class Complexity:
+
+[f][f][f][e]
+
+2
+
+ARTIST: EARL LAN
+
+3
+
+ZEPHYR
+Key Stats: DEX, STR Hit Die: 1d8 Starting HP: 13
+Saves: DEX+, INT– Armor: None Weapons: Melee, Unarmed Strikes
+Starting Gear: Staff, Traveling Robes & Sandals
+LEVEL 1
+
+LEVEL 2
+
+LEVEL 3
+
+Iron Defense. Your Defense is DEX+STR as long as you are unarmored.
+Momentum. Gain 1 Momentum for every space you move. You may expend 1
+Momentum to add 1 damage to any melee attack. All Momentum is lost if you take
+damage, or at the end of combat.
+Burst of Speed. When you roll Initiative, gain DEX Bursts of Speed for this encounter.
+You may spend 1 Burst of Speed to use one of the following maneuvers:
+• Slipstream. Whenever you Defend: Apply your Defense to every attack against
+you this round OR you may first move 1 space.
+• Galeforce Strike. Roll 1d12 for an unarmed attack instead of 1d4.
+• Windstep. Move for free, ignoring enemy spaces this turn.
+Subclass. Choose a Zephyr subclass.
+Piercing Blows. You may spend Momentum before you make an Unarmed Strike
+to gain advantage for every 2 spent.
+
+		
+LEVEL 4 Reactive Force. Whenever you gain a Wound, gain a Burst of Speed.
+
+Martial Master. Choose a Martial Arts Ability.
+Key Stat Increase. +1 DEX or STR.
+
+Focus. Whenever you spend time meditating alone in a windy place during a Safe Rest, you may choose
+different Zephyr options available to you.
+
+LEVEL 5
+
+Supernatural Speed. While unarmored, you may use Momentum to treat a Primary
+Die rolled against you as if it rolled 1 lower for every 2 Momentum spent.
+Iron Defense (2). Your Defense is (3×STR)+DEX as long as you are unarmored.
+Secondary Stat Increase. +1 INT or WIL.
+
+LEVEL 6
+
+Martial Master (2). Choose a 2nd Martial Arts Ability.
+Swift Fists. If you have no actions and haven’t attacked this turn, your Galeforce
+Strike costs 0 actions.
+Infuse Strength. Whenever you make an Unarmed Strike, you may expend 1 or
+more Hit Dice and add them to the strike’s total. Instead of dealing damage, heal
+the target for that amount (you can use Momentum or other abilities as normal).
+
+LEVEL 7
+
+Subclass. Gain your Zephyr subclass feature.
+Galeforce Strike (2). Your Galeforce Strike increases to 1d20.
+
+LEVEL 8
+
+Martial Master (3). Choose a 3rd Martial Arts Ability.
+Key Stat Increase. +1 DEX or STR.
+
+LEVEL 9
+
+Swift Feet. Gain +2 to your Speed and Initiative as long as you are unarmored.
+Secondary Stat Increase. +1 INT or WIL.
+
+LEVEL 10 Martial Master (4). Choose a 4th Martial Arts Ability.
+
+Unyielding Resolve. Ignore the first Wound you would suffer each encounter
+(when-Wounded abilities, such as Reactive Force, still trigger).
+
+LEVEL 11
+
+Subclass. Gain your Zephyr subclass feature.
+
+LEVEL 12 Kinetic Marvel. Double the damage granted by Momentum.
+
+Key Stat Increase. +1 DEX or STR.
+
+LEVEL 13 Unyielding Resolve (2). Ignore the first 2 Wounds you would suffer each encounter.
+
+Secondary Stat Increase. +1 INT or WIL.
+
+LEVEL 14 Blur. Gain 10 Momentum when you roll Initiative.
+LEVEL 15 Subclass. Gain your Zephyr subclass feature.
+LEVEL 16 Swift Feet (2). Gain another +2 to your Speed and Initiative as long as you are
+
+unarmored.
+Key Stat Increase. +1 DEX or STR.
+
+LEVEL 17 Unyielding Resolve (3). Ignore the first 3 Wounds you would suffer each encounter.
+
+You have advantage on STR saves while Dying.
+Secondary Stat Increase. +1 INT or WIL.
+
+LEVEL 18 Martial Master (5). Choose a 5th Martial Arts Ability.
+LEVEL 19 Epic Boon. Choose an Epic Boon (see pg. 75 of the GM’s Guide).
+LEVEL 20 Windborne. +1 to any 2 of your stats. +1 additional Burst of Speed when you roll
+
+Initiative. Permanently gain 1 action (while Dying, you have a max of 2 actions).
+
+4
+
+5
+
+I Jump on His Back!
+
+Passive
+
+Kinetic Barrage
+
+Passive
+
+Mighty Soul
+
+Passive
+
+Quickstrike
+
+Passive
+
+Twisting Deflection
+
+1 Action
+
+Skystrider
+
+Passive
+
+You can Ride creatures your size. While Riding, gain advantage vs
+your Ride, ANY damage you avoid is dealt to them. If you move
+into the space of a creature your size or larger with Windstep
+or Skystrider, gain Riding for free.
+
+MARTIAL ARTS
+ABILITIES
+Airshift
+
+1 Action
+
+End any single condition on yourself (ending Dying grants 1 HP,
+ending Dazed grants 1 action, etc.).
+
+Cyclonic Pull
+
+Passive
+
+Whenever you roll Initiative, gain Hit Dice equal to the actions you
+get on your first turn (they expire at the end of combat if unused).
+
+6
+
+Whenever you Interpose, you may first make an Unarmed
+Strike against the enemy for free.
+
+Reaction (when you avoid all of the damage of a melee attack—
+whether it misses or you Defend): Force another logical target
+within Reach to be hit instead.
+
+Passive
+
+Whenever you avoid all of the damage of a melee attack (whether
+it misses or you Defend), you may swap places with the attacker.
+
+Enduring Soul
+
+You cannot be moved against your will. Whenever you would
+fail a roll, you may gain a Wound in order to add STR to the
+result you rolled. Repeat this any number of times.
+
+Passive
+
+If you move through the space of a willing creature while using
+Windstep, they can move with you and choose any space adjacent
+to or along your path of movement to end in.
+
+Bodily Discipline
+
+(1/turn) Whenever you make a melee attack and spend no
+Momentum, gain DEX Momentum.
+
+You cannot be Grappled or Restrained while conscious. While
+moving, you may travel across ANY terrain ignoring all ill effects
+(e.g., Prone, enemies, ceilings, treetops, lava, spikes, clouds).
+Focus. Whenever you spend time meditating alone in a windy place during a Safe
+Rest, you may choose different Zephyr options available to you.
+
+7
+
+SUBCLASSES
+
+SUBCLASSES
+
+— WAY OF —
+
+— WAY OF —
+
+PAIN
+
+IRON
+
+Welcome the strikes of your enemies, and let them shape you.
+Your capacity for suffering is bottomless.
+Subclass Complexity:
+
+Train your body to be hard as iron. Concentrate to strengthen your defenses,
+then release the energy for devastating blows.
+Subclass Complexity:
+
+[f][f][e][e]
+
+LEVEL 3
+
+Bring the Pain. Damage no longer causes you to
+lose Momentum. (1/round) You may take 1 Wound
+to gain 10 Momentum for free.
+
+LEVEL 3
+
+Steel Yourself. When you roll Initiative gain Tempered: (1/round)
+reduce an attack’s damage by 10 for free. When you hit, you may
+end Tempered to add 1d20 damage.
+
+LEVEL 7
+
+Share My Pain. (1/round) Whenever you take
+damage, you can take half as much, and deal that
+much to another creature within Reach.
+
+LEVEL 7
+
+LEVEL 11
+
+Pain Sharpens the Mind. While you are Bloodied,
+gain advantage.
+
+Iron Fists. When you end Tempered, roll its d20 with advantage.
+Iron Body. You can double the Tempered damage reduction each
+round or use it 2/round. Gain Tempered the first time you would
+gain a Wound each encounter.
+
+LEVEL 11
+
+Infuse with Iron. When you use Infuse Strength, your target gains
+Tempered.
+
+LEVEL 15 Echoed Agony. Your Share My Pain can also target
+
+a 2nd creature within Reach 4.
+
+8
+
+[f][f][e][e]
+
+LEVEL 15 Perfect Alloy. Gain Tempered whenever you use a Burst of Speed.
+
+9
+
+SUBCLASSES
+
+— WAY OF —
+
+HURRICANES
+Your fist is as the howling wind, unceasing and everflowing. Those who face
+you are battered and bruised by a whirlwind of deadly strikes.
+Subclass Complexity:
+
+[f][f][f][e]
+
+LEVEL 3
+
+Cyclone. (Reach 4) You may spend 1 Momentum to move a creature
+1 space.
+Cleaving Gale. Whenever you crit, you may deal that much damage
+to a 2nd creature within Reach 1 of your target. (1/turn) When you
+HIT, you may gain a Wound to change it into a crit.
+
+LEVEL 7
+
+Hurricane Strike. Your Galeforce Strike may gain: AoE, Reach 1.
+Sidestep. After you are attacked, you may move 2 spaces (after
+damage resolves).
+
+LEVEL 11
+
+Forceful Gust. Your Unarmed Strikes can Knockback STR spaces;
+you may suffer 1 Wound to double the distance.
+
+LEVEL 15 Tempest’s Fury. Whenever you would roll any extra dice for a crit,
+
+instead roll 1d20.
+
+10
+
+ARTIST: JUSTINE FLORENTINO
+
+11
+
+SUBCLASSES
+
+— WAY OF —
+
+FLAME
+Burn fiercely with the heat of battle, fight fast and reckless,
+and counter enemies with burning strikes.
+Subclass Complexity:
+
+[f][f][f][e]
+
+LEVEL 3
+
+Exploding Soul. Whenever you gain one or more Wounds, make
+an Unarmed Strike, dealing the damage to ALL others within Reach 1.
+(1/round) On your turn, you may suffer a Wound.
+
+LEVEL 7
+
+Burning Palm. Your Unarmed Strikes gain: On crit: Smoldering.
+You may double the effects of Momentum vs Smoldering creatures
+(ending the condition).
+
+LEVEL 11
+
+Chain Reaction. (1/turn) When you crit with an Unarmed Strike, deal
+fire damage equal to your STR+Momentum spent to creatures of your
+choice adjacent to your target. Repeat any number of times, targeting
+creatures not yet damaged by this effect this turn.
+
+LEVEL 15 Encompassing Flames. You may double the Reach of Chain Reaction
+
+and Exploding Soul.
+
+12
+
+ARTIST: KEREM BEYIT
+
+13
+
+FAQ
+
+Does movement while Riding or forced movement count
+toward my Momentum? Yes.
+What does Slipstream’s move 1 space do? If the movement
+takes you beyond the Reach/Range of the attack or gives you Full
+Cover, the attack misses. If it gives you Cover, disadvantage applies
+as normal, the Primary Die is rolled again and the lower one taken.
+Can I Infuse Strength as an Opportunity Attack or Coordinated Strike? Yes.
+Can I Defend or otherwise reduce the damage from Share My
+Pain? Yes, but that will likewise reduce the damage you deal in return.
+Could I take additional Wounds from Exploding Soul triggering while Dying? Yes, if you fail the STR save on attacks while Dying.
+
+ZEPHYR NAMES
+Male Names
+• Araset
+• Nicanor
+• Leif
+• Sorrel
+• Bastian
+• Haze
+• Dash
+
+14
+
+Female Names
+• Whisper
+• Aria
+• Syntyche
+• Trill
+• Sway
+• Glenda
+• Bliss
+
+ARTIST: JUSTINE FLORENTINO
+
+15
+
+ZEPHYR
+
+QUICK BUILDS
+Nicanor
+
+Dragonborn, Zephyr
+
++2
+
++2
+
+-1
+
++0
+
+-1
+
+-1
+
++3
+
++0
+
+1
+
+5
++1
+
+-1
+
+Dragonborn, Zephyr
+
++2
+
++2
+
+-1
+
++0
+
+-1
+
+-1
+
++4
+
++0
+
++2
+
++2
+
+d8
+
+6
+
++0
+
++2
+
++2
+
+Unarmed Strike. (1d4+2).
+Staff. (1d8+2).
+
+2
+
+6
+
+Medium
+
+18
+5
++1
+
+-1
+
+Iron Defense. DEX+STR Defense while unarmored.
+Momentum. +1 Momentum for every space you move. Expend 1
+to add +1 damage to a melee attack. Lost if damaged.
+Draconic Heritage (Dragonborn). +1 Defense. (1/Safe Rest)
+Deal +4 damage on an attack (recharges when you gain a Wound).
+Burst of Speed. Initiative, gain DEX Bursts of Speed to:
+• Slipstream. When you Defend: Apply Defense to every attack
+this round OR move 1 space.
+• Galeforce Strike. Roll 1d12 for an unarmed attack.
+• Windstep. Move for free, ignoring enemy spaces this turn.
+16
+
+Medium
+
+13
+
+Iron Defense. DEX+STR Defense while unarmored.
+Momentum. +1 Momentum for every space you move. Expend 1
+to add +1 damage to a melee attack. Lost if damaged.
+Draconic Heritage (Dragonborn). +1 Defense. (1/Safe Rest)
+Deal +3 damage on an attack (recharges when you gain a Wound).
+
+Nicanor
+
+6
+
++2
+
++2
+
+d8
+
+6
+
++0
+
++2
+
++2
+
+Unarmed Strike. (1d4+2).
+Staff. (1d8+2).
+
+

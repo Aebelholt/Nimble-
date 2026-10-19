@@ -1,0 +1,1406 @@
+[
+  {
+    "id": "class_berserker",
+    "name": "The Ancestor's Knucklebone",
+    "kind": "class",
+    "class": "Berserker",
+    "tier": "1st echelon",
+    "object": "A knucklebone worn smooth by a hundred years of handling, threaded on gut string. Taken from the body of a Berserker who died fighting in the Borderlands and was never retrieved. It arrived in a collector's satchel through one of the Market Square arches — nobody knows which world it came from, or who carried it through.",
+    "unlock": [
+      "Kill an enemy in single combat without any ally's assistance.",
+      "Keep one of the body's hand bones.",
+      "Spend a night alone with it before you sleep."
+    ],
+    "risk": "",
+    "resource": {
+      "name": "Fury Echo",
+      "type": "pip tracker",
+      "max": 3,
+      "text": "Gain 1 Fury Echo whenever you roll a Fury Die that matches a pip already stored (values 1–3). Clears at the end of combat. Does not stack with itself — you cannot gain more than 1 Echo from a single roll."
+    },
+    "powers": [
+      "Echo Strike (Free, while Raging): Spend 1 Fury Echo to immediately roll and add a Fury Die — without spending your Rage action. This does not count as your Rage for the turn.",
+      "Death's Door (Free, once): Spend all 3 Fury Echo pips. Your Rage does not end when you drop to 0 HP this round. You act before the Dying condition takes hold. When your turn ends, Dying applies normally."
+    ],
+    "escalation": "If you spend all 3 pips and die anyway, the knucklebone cracks. It must be replaced — another ancestor's relic found in the Borderlands, or taken from a worthy enemy. The GM decides where to find one, and how long it takes.",
+    "design_note": "Built to extend Rage without replacing it. The matching-die resonance gives Fury Die results below 4 a second purpose — a small extra layer of attention during Rage that doesn't slow the game. Death's Door delays death by one round. That is all a Berserker ever wants.",
+    "status": "review",
+    "notes": "Rebuilt from uploaded sources; original status and notes were not available.",
+    "source": "sources/class_arcana_v3.docx",
+    "matrix": {
+      "tier": "1st",
+      "resource_type": "pip tracker",
+      "max": 3,
+      "refill": "Gained by rolling a Fury Die that matches a stored pip (passive, in combat); clears at end of combat",
+      "power": "offense",
+      "cost": "death risk; relic cracks",
+      "origin": "Borderlands Berserker relic, arrived via a Market Square arch (world unnamed)",
+      "region": "Borderlands (unspecified)",
+      "look": "knucklebone on gut string",
+      "mythology": ""
+    }
+  },
+  {
+    "id": "class_cheat",
+    "name": "The Loaded Die",
+    "kind": "class",
+    "class": "Cheat",
+    "tier": "1st echelon",
+    "object": "An ivory gambling die with a tiny lead insert that makes it land on 6 roughly two-thirds of the time. Confiscated from a Black Hand card sharp at the Lower Reaches gambling house, then stolen from the evidence shelf at the Golden Knights' outpost. No paperwork exists for it. The card sharp has not stopped looking.",
+    "unlock": [
+      "Win a wager against someone who genuinely believed they had the advantage — not a mark, not a fool, but someone who should have won."
+    ],
+    "risk": "",
+    "resource": {
+      "name": "Fixes",
+      "type": "pip tracker",
+      "max": 4,
+      "text": "Fixes do not refill automatically. To refill: run a game of chance during a Safe Rest and earn at least 1 silver in genuine winnings against an opponent who had a real chance of winning. Gain all 4 Fixes back. Safe Rests where you do not gamble leave the tracker as-is."
+    },
+    "powers": [
+      "Fix (Free, before you roll): Declare you're using the die. Spend 1 Fix. Roll your Primary Die twice and take whichever result you prefer. No memory required — both rolls happen now, in front of everyone.",
+      "Passive — Loaded Odds: Once per session, you may ask the GM whether a creature you can see is bluffing. The die rolls and the GM answers truthfully, but only yes or no."
+    ],
+    "escalation": "When all 4 Fixes are spent, the die gets you anyway. On your next Vicious Opportunist use after depletion, the GM secretly decides whether the target was actually Distracted — you don't know until after you've committed. The uncertainty lasts for one use only.",
+    "design_note": "Mirrors Vicious Opportunist's core loop — manipulating die results — but at a resource cost. Roll-twice-pick-best requires no memory tracking and resolves cleanly at the table. The Loaded Odds passive is social utility that costs nothing in stats. The escalation introduces genuine uncertainty for a class that is normally certain about when it cheats.",
+    "status": "review",
+    "notes": "Rebuilt from uploaded sources; original status and notes were not available.",
+    "source": "sources/class_arcana_v3.docx",
+    "matrix": {
+      "tier": "1st",
+      "resource_type": "pip tracker",
+      "max": 4,
+      "refill": "Run a game of chance during a Safe Rest and win 1 sp from a real opponent",
+      "power": "utility (luck) + information",
+      "cost": "uncertainty on next Vicious Opportunist",
+      "origin": "Black Hand card sharp, Lower Reaches gambling house; Golden Knights evidence shelf",
+      "region": "Lower Reaches",
+      "look": "ivory die, lead insert",
+      "mythology": ""
+    }
+  },
+  {
+    "id": "class_commander",
+    "name": "The Battle Standard of the Nameless King",
+    "kind": "class",
+    "class": "Commander",
+    "tier": "1st echelon",
+    "object": "A black iron battle standard, the insignia ground off but the pole still bearing ghost-traces of a name no one can read. Found stacked with other confiscated relics in the Museum of Worlds Beyond storage vault. The curator is looking for it. Three scholars have separately attempted to identify the insignia's origin and stopped work without explanation.",
+    "unlock": [
+      "Lead a group of at least five non-party combatants to victory — soldiers, militia, hired swords, anyone you commanded in the field.",
+      "The victory must be real: a fight that could have been lost."
+    ],
+    "risk": "",
+    "resource": {
+      "name": "Authority",
+      "type": "pip tracker",
+      "max": 3,
+      "text": "Gain 1 Authority whenever an ally within the standard's aura deals damage in a single attack equal to or greater than your level. Authority is strictly encounter-bound: all unspent pips are lost when combat ends, regardless of how many are held. It cannot be saved or stockpiled between encounters."
+    },
+    "powers": [
+      "Plant it (1 Action): Drive the standard into the ground within Reach 1. While it stands, allies within 4 spaces who can see it have advantage on their first attack each round. Spend 1 Authority to extend the aura by 2 spaces until your next turn.",
+      "Pull it (Free): Standard returns to hand and the aura ends immediately.",
+      "Hold Ground (Reaction, spend 2 Authority): When the standard would be knocked over, stolen, or destroyed, it refuses. It cannot be moved by any force until the start of your next turn."
+    ],
+    "escalation": "When Authority hits 0 during combat and you plant the standard anyway, the insignia becomes briefly legible — to everyone present. The GM reads what it says aloud. It goes dark again immediately. What it says is the GM's tool: a name, a title, a command. Prepare it before the session.",
+    "design_note": "Authority triggering on a damage threshold (not kills) removes the kill-steal incentive — any ally landing a solid hit fills the pool, rewarding coordinated pressure rather than last hits. The escalation is pure City of Arches: the Nameless King's name appears once, and only the GM knows what it said to begin with.",
+    "status": "review",
+    "notes": "Rebuilt from uploaded sources; original status and notes were not available.",
+    "source": "sources/class_arcana_v3.docx",
+    "matrix": {
+      "tier": "1st",
+      "resource_type": "pip tracker",
+      "max": 3,
+      "refill": "Gained when an ally in the aura deals damage of at least your level; lost at encounter end",
+      "power": "defense (ally buff)",
+      "cost": "GM-read insignia",
+      "origin": "Nameless King relic from the Museum of Worlds Beyond vault",
+      "region": "Upper city (Nameless King)",
+      "look": "black iron standard, ground-off insignia",
+      "mythology": ""
+    }
+  },
+  {
+    "id": "class_hunter",
+    "name": "The Borderlands Tracking Cord",
+    "kind": "class",
+    "class": "Hunter",
+    "tier": "1st echelon",
+    "object": "A length of braided sinew hung with small carved tokens — a boot print, a feather, a fang, and three others worn unrecognisable by handling. Carried by a tracker from the Doorish Hills who traded it to a Lower Reaches merchant for safe passage through the Cliffs of the Dead. The merchant did not survive the arrangement.",
+    "unlock": [
+      "Track a single creature across at least two sessions without losing the trail — through city, ruin, or wilderness.",
+      "The creature must be aware it is being hunted, and must have tried to lose you at least once."
+    ],
+    "risk": "",
+    "resource": {
+      "name": "Marks",
+      "type": "d6 vs. accumulation",
+      "max": null,
+      "text": "Roll 1d6 each time you use a cord ability (Mark a Quarry or Cord Pull). If you roll equal to or below your current Mark count, something near the quarry noticed you. Marks clear when you confront the marked quarry directly. Safe Rest wipes all Marks without reward — the cord goes cold until you touch new quarry sign."
+    },
+    "powers": [
+      "Mark a Quarry (1 Action): Touch the cord to any physical trace of a creature — a footprint, a drop of blood, shed skin. Add 1 Mark. While a quarry is marked, you know its general direction and distance within 1 mile regardless of cover or concealment. This works on creatures you have not yet used Hunter's Mark on — the cord marks independently of the class ability.",
+      "Cord Pull (Free, 1/encounter): When your marked quarry moves away from you, you may pull the cord taut — the quarry is Slowed until the end of their next turn. No roll required. The quarry feels it.",
+      "Cut the Mark (Free): Remove one Mark from the cord and burn the token. The cord forgets that quarry — your direction-sense for them vanishes, the Disturbance roll resets for them, and they are no longer tracked. Use this when pursuit is no longer worth the escalating risk. Nothing alerts the quarry."
+    ],
+    "escalation": "When the d6 roll triggers — you rolled equal to or below your Mark count — the quarry, or something near it, begins tracking you in return. The GM introduces this threat within 1 to 2 sessions. The threat is proportional to what you marked: a city rat sends a rat, a Borderlands warlord sends soldiers.",
+    "design_note": "The Disturbance-style tracker is perfectly suited for the Hunter's quarry identity. Multiple Marks create escalating risk — tracking three creatures at once is asking for trouble. The bidirectional escalation (you become the tracked) is the most Hunter-specific consequence possible.",
+    "status": "review",
+    "notes": "Rebuilt from uploaded sources; original status and notes were not available.",
+    "source": "sources/class_arcana_v3.docx",
+    "matrix": {
+      "tier": "1st",
+      "resource_type": "d6 vs. accumulation",
+      "max": null,
+      "refill": "Marks clear when you confront the quarry; Safe Rest wipes them",
+      "power": "information + mobility (control)",
+      "cost": "being tracked back",
+      "origin": "Doorish Hills tracker, traded to a Lower Reaches merchant, via the Cliffs of the Dead",
+      "region": "Doorish Hills",
+      "look": "braided sinew with carved tokens",
+      "mythology": ""
+    }
+  },
+  {
+    "id": "class_mage",
+    "name": "The Cracked Lens of Kartan",
+    "kind": "class",
+    "class": "Mage",
+    "tier": "1st echelon",
+    "object": "A monocle lens of blue glass, cracked through the centre but held in a copper frame that prevents the crack from spreading. Stamped with the Mages of Kartan's maker's mark on the inner rim. The Mages report it stolen. It has been in a Lower Reaches pawn shop for six months, priced too high for anyone who recognised it, too strange for anyone who didn't.",
+    "unlock": [
+      "Cast a tiered spell at maximum tier and survive the Control roll — then hold the lens against your eye for the full cast without flinching or removing it."
+    ],
+    "risk": "",
+    "resource": {
+      "name": "Overcharge",
+      "type": "d6 vs. accumulation",
+      "max": null,
+      "text": "Roll 1d6 each time you cast a tiered spell while wearing the lens. If you roll equal to or below your Overcharge count, the Control Table triggers — treat it as Lose Control rather than rolling. Overcharge clears by removing the lens and casting no tiered spells for one full session, then refreshing on the next Safe Rest."
+    },
+    "powers": [
+      "Controlled Upcast (while worn, on a safe roll — Control subclass only): When you cast a tiered spell and the d6 roll does not trigger, the spell is cast at +1 tier above its normal cost — upcasted for free. Add 1 Overcharge. Chaos subclass: no upcast; instead, on a safe roll, reduce Overcharge by 1 (minimum 0).",
+      "Chaos Sight (Passive, while worn): You see magical auras on creatures and objects within 4 spaces without casting a spell. Illusions appear slightly wrong. Invisible creatures are visible as a faint shimmer."
+    ],
+    "escalation": "When Lose Control triggers through the lens, the glass heats to burning. You take 1 Wound and cannot remove the lens until the encounter ends — it has fused to your face for the duration. After the encounter resolves, the Mages of Kartan sense the discharge and know its rough location. They will send someone within 1 to 3 sessions. The immediate and the delayed consequence are separate: the fusing is now, the visitors are later.",
+    "design_note": "Differentiated by subclass: the Control Mage gets a free upcast on safe rolls, making the lens a reward for precision. The Chaos Mage gets Overcharge reduction on safe rolls — the lens helps them stay stable, which may or may not be what they want. Neither subclass has a pure win-win. The Mages of Kartan escalation is the City of Arches hook.",
+    "status": "review",
+    "notes": "Rebuilt from uploaded sources; original status and notes were not available.",
+    "source": "sources/class_arcana_v3.docx",
+    "matrix": {
+      "tier": "1st",
+      "resource_type": "d6 vs. accumulation",
+      "max": null,
+      "refill": "Remove the lens and cast no tiered spells for a session, then Safe Rest",
+      "power": "offense (upcast) + information",
+      "cost": "Wound; Kartan sends someone",
+      "origin": "Mages of Kartan maker's mark; pawn shop in the Lower Reaches",
+      "region": "Kartan / Lower Reaches",
+      "look": "blue glass lens, copper frame",
+      "mythology": ""
+    }
+  },
+  {
+    "id": "class_oathsworn",
+    "name": "The Broken Verdict",
+    "kind": "class",
+    "class": "Oathsworn",
+    "tier": "1st echelon",
+    "object": "A set of golden scales, one pan snapped off and missing. Recovered from the rubble of the old Magistrate's Court in the Sunken Revvia district beneath the city. The remaining pan still tilts when a lie is spoken nearby — or so the merchant who sold it claimed. She may have been lying. The tilt is subtle enough that you cannot always be certain.",
+    "unlock": [
+      "Refuse to deliver a verdict you believe is just — because doing so would protect someone you love.",
+      "The refusal must be genuine.",
+      "The Verdict will know if you were simply afraid."
+    ],
+    "risk": "",
+    "resource": {
+      "name": "Judgment Held",
+      "type": "toggle",
+      "max": null,
+      "text": "When your Radiant Judgment dice are rolled, you may choose not to spend them immediately — instead, hold them on the scales. This is a free choice made at the moment of rolling. Held dice cannot be spent on reactions. Release them on any attack as a Free action."
+    },
+    "powers": [
+      "Hold Judgment (Free, at roll): Keep the Judgment Dice on the scales rather than spending them. While held: you cannot use the Judgment Dice on reactions (including That All You Got?!). When a creature within your aura lies to you, you see the remaining pan tilt — visible only to you, not to them. You know. They do not know you know. You must decide what to do with that.",
+      "Release — Armor-Piercing (Free, on attack): Spend held Judgment Dice as normal — but this attack's radiant damage bypasses all armor. Once per encounter."
+    ],
+    "escalation": "If you hold Judgment Dice across a full Safe Rest without releasing them, the scales fuse with your Lay on Hands pool. You cannot spend from the Lay on Hands pool until you perform a Sacred Decree at the Temple of the Three Sisters. The temple will want to know why.",
+    "design_note": "Creates a strategic question every time Judgment Dice appear: spend now for reliable damage, or hold for armor-piercing at the cost of reaction flexibility. The lie-detection passive is now one-sided — the Oathsworn sees the tilt, the liar does not. This turns social scenes into dramatic irony rather than instant confrontation: the player knows something and must choose when and whether to act on it. The escalation connects to the Temple of the Three Sisters.",
+    "status": "review",
+    "notes": "Rebuilt from uploaded sources; original status and notes were not available.",
+    "source": "sources/class_arcana_v3.docx",
+    "matrix": {
+      "tier": "1st",
+      "resource_type": "toggle",
+      "max": null,
+      "refill": "Toggle on at the moment Judgment Dice are rolled; no refill",
+      "power": "offense (armor-piercing) + information",
+      "cost": "Lay on Hands locked until a Sacred Decree",
+      "origin": "Sunken Revvia (old Magistrate's Court)",
+      "region": "Sunken Revvia",
+      "look": "golden scales, one pan missing",
+      "mythology": ""
+    }
+  },
+  {
+    "id": "class_shadowmancer",
+    "name": "The Hollow Contract",
+    "kind": "class",
+    "class": "Shadowmancer",
+    "tier": "1st echelon",
+    "object": "A slip of black vellum the size of a playing card, written in a language that changes every time you look away. No ink is visible — the text appears to be burned into the material from within. Found pressed between the floorboards of a sealed room in the Lower Reaches, below a building that has been empty for eleven years. The landlord will not say why.",
+    "unlock": [
+      "Note: This arcanum is for Shadowmancers who still hold a patron (not the Reaver subclass).",
+      "Unlock: commune with your patron during a Safe Rest and ask it for something you know it does not want to give.",
+      "Accept its counter-demand before you know what it is."
+    ],
+    "risk": "",
+    "resource": {
+      "name": "Debt",
+      "type": "pip tracker",
+      "max": 4,
+      "text": "Mark 1 Debt whenever you spend a Pilfered Power use. Refill Pilfered Power uses: during a Safe Rest, spend 1 hour writing on the contract in your own blood — one sentence describing something you will do for the patron. The patron reads it. If it accepts, you regain all Pilfered Power uses. If it does not accept, you regain half (round down). You must write something real. You must mean it."
+    },
+    "powers": [
+      "Read the Contract (Free, 1/encounter): Hold the vellum up. You see one true fact about any creature you can see — their most urgent want, their deepest fear, or the name of someone they have wronged. Mark 1 Debt.",
+      "Patron's Margin (Free, spend 2 Debt): Cast one tiered spell at +1 tier above your current maximum. The patron extends credit. Mark 2 additional Debt."
+    ],
+    "escalation": "When Debt reaches 4, the patron calls in what is owed. It does not take Pilfered Power — it takes one sentence written in the contract. A sentence about the character, not an action. The patron adds it to the contract permanently. The GM decides what it says and reads it aloud. Debt clears. The sentence stays.",
+    "design_note": "Replaces the Patron's Ear, which had narrative friction with the Reaver subclass and used shadow minion sacrifice as a cost (minions are not a tracked resource — they only exist in combat). This item keeps the patron-debt theme but grounds the cost in the character's actual resources: Pilfered Power uses and blood-written promises. The escalation (the patron writing something permanent about you) is the correct shape for a relationship with something ancient and dangerous.",
+    "status": "review",
+    "notes": "Rebuilt from uploaded sources; original status and notes were not available.",
+    "source": "sources/class_arcana_v3.docx",
+    "matrix": {
+      "tier": "1st",
+      "resource_type": "pip tracker",
+      "max": 4,
+      "refill": "Writes a sentence in blood to the patron during a Safe Rest (restores Pilfered Power uses)",
+      "power": "information + offense (upcast)",
+      "cost": "narrative: patron writes a sentence on you",
+      "origin": "Lower Reaches, sealed room under an empty building",
+      "region": "Lower Reaches",
+      "look": "black vellum slip",
+      "mythology": ""
+    }
+  },
+  {
+    "id": "class_shepherd",
+    "name": "The Bell of the Three Sisters",
+    "kind": "class",
+    "class": "Shepherd",
+    "tier": "1st echelon",
+    "object": "A small iron handbell, tarnished green at the rim, engraved with three interlinked rings. Identical to the bells carried by the clergy of the Temple of the Three Sisters — except that this one rings slightly differently, a half-note flat or sharp depending on who you ask. The temple says it was never consecrated. They are interested in recovering it for study. They have not offered to pay.",
+    "unlock": [
+      "Use Searing Light to heal a creature you expected — and had good reason — to be your enemy.",
+      "The expectation must be genuine.",
+      "The bell listens."
+    ],
+    "risk": "",
+    "resource": {
+      "name": "Resonance",
+      "type": "pip tracker",
+      "max": 4,
+      "text": "Gain 1 Resonance whenever you use Searing Light to heal. Clears at Safe Rest. Does not clear if the bell is destroyed — see Escalation."
+    },
+    "powers": [
+      "Ring (Free, when using Searing Light): The bell tones as you heal. Undead within 4 spaces take 1 radiant damage. Your Lifebinding Spirit may act immediately as a Free action this round, even if it has already acted.",
+      "Chain Heal (Reaction, spend 2 Resonance): When your Lifebinding Spirit heals a creature to maximum HP, the excess healing carries to the nearest damaged ally within 4 spaces. The chain triggers once per Reaction.",
+      "Toll (1 Action, spend all 4): Ring the bell loudly. All Dying allies within 6 spaces gain 1 HP and are no longer Dying. You take 1 Wound."
+    ],
+    "escalation": "Spending all 4 Resonance in the Toll crumbles the bell's handle. It still rings, but you can no longer Toll — the 4-Resonance ability is permanently lost until a clergy member of the Three Sisters rehandles it. They will want to know what happened before they agree to help.",
+    "design_note": "Every ability keys off Searing Light and the Lifebinding Spirit — purely additive to the Shepherd's existing rhythm. Chain Heal creates a spatial puzzle: position the Spirit where the overflow reaches a second wounded ally. The Toll is a 1st echelon small resurrection that costs a Wound and permanently downgrades the item. Sacrifice should have weight.",
+    "status": "review",
+    "notes": "Rebuilt from uploaded sources; original status and notes were not available.",
+    "source": "sources/class_arcana_v3.docx",
+    "matrix": {
+      "tier": "1st",
+      "resource_type": "pip tracker",
+      "max": 4,
+      "refill": "Gained each time Searing Light heals; clears at Safe Rest",
+      "power": "healing",
+      "cost": "Wound; the bell breaks",
+      "origin": "Temple of the Three Sisters",
+      "region": "Upper city (Temple)",
+      "look": "iron handbell, green rim, three rings",
+      "mythology": ""
+    }
+  },
+  {
+    "id": "class_songweaver",
+    "name": "The Theatre of Whispers Setlist",
+    "kind": "class",
+    "class": "Songweaver",
+    "tier": "1st echelon",
+    "object": "A folded sheet of vellum with a handwritten set of songs — titles, keys, and performance notes in the margins in an elegant hand. It belonged to a Songweaver who performed at the Theatre of Whispers for fifteen years before disappearing mid-run. The theatre kept the setlist. Someone stole it last month. The manager has posted a reward, but is vaguer than expected about what they want to do with whoever took it.",
+    "unlock": [
+      "Perform at the Theatre of Whispers — or any venue with an audience of 20 or more — and hold the crowd's full attention for an uninterrupted hour.",
+      "No skill check.",
+      "Just perform."
+    ],
+    "risk": "",
+    "resource": {
+      "name": "Crowd",
+      "type": "d6 vs. accumulation",
+      "max": null,
+      "text": "Roll 1d6 each time you call on the setlist in combat. If you roll equal to or below your Crowd count, someone recognises the song and has feelings about it — you have disadvantage on your next social roll with a stranger this session. Crowd clears at Safe Rest."
+    },
+    "powers": [
+      "Call the Song (Free, in combat): Announce the name of the song you're playing. Roll 1d6, add 1 Crowd pip. On a safe roll: allies within 6 spaces who can hear you regain 1 use of Songweaver's Inspiration if they have spent it this encounter. Max 1 per ally per session.",
+      "Protective Verse (Free, spend 2 Crowd, 1/encounter): A specific song from the setlist grants immunity to the Taunted or Frightened condition to all allies within 6 spaces until the end of the round."
+    ],
+    "escalation": "At 4 Crowd pips, someone in the crowd knows who this setlist belonged to. They approach between encounters — or send someone. The GM decides who and what they want. They may be a fan. They may not.",
+    "design_note": "The Crowd tracker is soft pressure — accumulating rarely hurts until 4, but the social disadvantage on a failed roll is a light ongoing tax. Directly extends Songweaver's Inspiration by creating a mid-encounter refill. The escalation connects to the missing Songweaver — a mystery the GM can develop at any pace.",
+    "status": "review",
+    "notes": "Rebuilt from uploaded sources; original status and notes were not available.",
+    "source": "sources/class_arcana_v3.docx",
+    "matrix": {
+      "tier": "1st",
+      "resource_type": "d6 vs. accumulation",
+      "max": null,
+      "refill": "Crowd pips added on each use; clears at Safe Rest",
+      "power": "social (ally support)",
+      "cost": "social disadvantage; a pursuer",
+      "origin": "Theater of Whispers",
+      "region": "Upper city (Theater)",
+      "look": "folded vellum setlist",
+      "mythology": ""
+    }
+  },
+  {
+    "id": "class_stormshifter",
+    "name": "Mud from the Revlend Marshes",
+    "kind": "class",
+    "class": "Stormshifter",
+    "tier": "1st echelon",
+    "object": "A sealed clay jar of dark grey mud from the Revlend Marshes north of the city, marked with protective runes no one recognises as any known system. The mud is warm to the touch and smells of rain before a storm. It never dries out. An arch-traveller carried it into the city claiming the marshes spoke to her. She didn't explain further. She is not currently available to explain anything.",
+    "unlock": [
+      "Spend a full night alone in the Revlend Marshes, or in the Deadlands adjacent to them, without shelter or fire.",
+      "Something in the marshes must acknowledge you before dawn.",
+      "You will know if it did."
+    ],
+    "risk": "",
+    "resource": {
+      "name": "Earthpulse",
+      "type": "pip tracker",
+      "max": 4,
+      "text": "Gain 1 Earthpulse when you apply the mud (see Powers). The jar only refills when returned to the Revlend Marshes and left overnight. Until then, spent pips are gone. The marshes will be different when you return."
+    },
+    "powers": [
+      "Apply (1 Action): Smear the mud on yourself or a willing creature. Gain 1 Earthpulse. While mud is applied: the creature cannot be pushed, thrown, or moved by any non-magical forced movement. Mud washes off in rain or after a Field Rest.",
+      "Extend the Shift (Free, while shifted, spend 2 Earthpulse): Your current beast or storm form (Stormshifter shift ability) lasts 1 additional round beyond its normal duration. Can be used once per shift.",
+      "Mire (1 Action, spend all 4): Create a 3-space radius of difficult terrain centred on you that lasts until the end of the encounter. The ground thickens and pulls. Any creature that starts its turn in the mire must spend 1 additional space of movement to leave, or become Slowed."
+    ],
+    "escalation": "When the jar is empty, the mud on currently-applied creatures does not dry — but no new mud can be applied until the jar is refilled. If the jar is broken, the mud it contained dries immediately, removing all effects. A broken jar can be repaired by a skilled craftsperson, but the marshes must still refill it.",
+    "design_note": "The geographic refill condition anchors the item in the setting permanently. Every use is a conscious spend of a resource that costs a journey to replace. Extend the Shift feeds into the Stormshifter's existing tension — forms ending mid-combat. Mire gives battlefield control that fits the nature identity without requiring spellcasting.",
+    "status": "review",
+    "notes": "Rebuilt from uploaded sources; original status and notes were not available.",
+    "source": "sources/class_arcana_v3.docx",
+    "matrix": {
+      "tier": "1st",
+      "resource_type": "pip tracker",
+      "max": 4,
+      "refill": "Return the jar to the Revlend Marshes and leave it overnight",
+      "power": "defense + utility (control)",
+      "cost": "a journey; jar can break",
+      "origin": "Revlend Marshes",
+      "region": "Revlend Marshes",
+      "look": "sealed clay jar of grey mud",
+      "mythology": ""
+    }
+  },
+  {
+    "id": "class_zephyr",
+    "name": "The Pain Teacher's Wrappings",
+    "kind": "class",
+    "class": "Zephyr",
+    "tier": "1st echelon",
+    "object": "Linen hand wrappings, yellowed and stained, covered in faded ink annotations — technique notes in a script that predates the city. Found in a locked case in the Lower Reaches beneath a martial arts studio that has been occupied by different teachers for four centuries. Each teacher added their own notes in the margins. The last teacher's annotations stop mid-sentence, mid-technique.",
+    "unlock": [
+      "Take a hit in combat that you could have Defended but deliberately chose not to — in order to observe how the attack was made.",
+      "The choice must be your own.",
+      "The wrappings can tell the difference between courage and negligence."
+    ],
+    "risk": "",
+    "resource": {
+      "name": "Strain",
+      "type": "Wound-cost",
+      "max": null,
+      "text": "The Strain ability costs 1 Wound each time it is used, and that Wound cannot be healed until Safe Rest. There is no tracker — only the permanent cost of tuition."
+    },
+    "powers": [
+      "Study the Form (Free, spend 1 Wound, 1/encounter): Before making an attack against any creature, spend 1 Wound to activate the wrappings' oldest annotations. For the rest of the encounter, your attacks against that creature ignore their armor tier — treat them as unarmored. You are choosing to hurt yourself to learn faster. The Wound cannot be healed until Safe Rest.",
+      "Deepest Annotation (Free, spend 1 Wound, 1/Safe Rest): Activate the oldest note in the wrappings. Your unarmed and martial weapon attacks deal your level in bonus damage for 1 minute. The Wound cannot be healed until Safe Rest.",
+      "Study (Passive, 1 hour per Safe Rest): Spend an hour reading the annotations during rest. Roll Lore DC 8 to learn something about a martial tradition relevant to the current adventure arc. The GM provides one true detail."
+    ],
+    "escalation": "If you activate the Deepest Annotation three times without a Safe Rest between uses, the fourth attempt causes the wrappings to tighten around your hands involuntarily — take 1 additional Wound and lose use of the Free action for 1 round. The annotations become illegible until a skilled martial artist re-inks them. Finding one is the GM's hook.",
+    "design_note": "The original Read a Strike made the armor-ignore reactive — most valuable against heavy-armor enemies, who are also most likely to kill you with an undefended hit. Study the Form is proactive: pay a Wound now, ignore their armor for the rest of the fight. The cost is still real (the Wound cannot be healed until Safe Rest), but the risk is controlled — you choose when, not the enemy. Way of Pain players will recognise the trade immediately.",
+    "status": "review",
+    "notes": "Rebuilt from uploaded sources; original status and notes were not available.",
+    "source": "sources/class_arcana_v3.docx",
+    "matrix": {
+      "tier": "1st",
+      "resource_type": "Wound-cost",
+      "max": null,
+      "refill": "None; Wounds from Strain heal on Safe Rest",
+      "power": "offense",
+      "cost": "Wounds",
+      "origin": "Lower Reaches martial arts studio",
+      "region": "Lower Reaches",
+      "look": "yellowed linen hand wrappings",
+      "mythology": ""
+    }
+  },
+  {
+    "id": "forgotten_key",
+    "name": "The Forgotten Key",
+    "kind": "found",
+    "class": null,
+    "tier": "Minor",
+    "object": "A tarnished iron key, not sized for any human lock. Its bow is etched with a spiral that matches no arch in the city's records.",
+    "unlock": [
+      "Present it to each of the city's seven major arches while the Archkeepers watch",
+      "Find the one arch that hums",
+      "Spend a full night at its threshold"
+    ],
+    "risk": "The arch opens briefly, and something may come through before you close it.",
+    "resource": {
+      "name": "Resonance",
+      "type": "pip tracker",
+      "max": 3,
+      "text": "Resonance (3). Mark when you open an arch, clear on a Safe Rest."
+    },
+    "powers": [
+      "Open the Way (Action, 1 Resonance): a dormant arch opens for up to a minute. Lore DC 12, or you can't control where it leads. A crit lets you sense the destination first."
+    ],
+    "escalation": "Spending the last Resonance, roll d6. On 1-2 the key splinters, and every arch it opens leads somewhere wrong until an Archkeeper repairs it. On 3+, take 1 Wound.",
+    "status": "review",
+    "notes": "Rebuilt from uploaded sources; original status and notes were not available.",
+    "source": "sources/sejr_arcana_perchance_original.txt",
+    "matrix": {
+      "tier": "Minor",
+      "resource_type": "pip tracker",
+      "max": 3,
+      "refill": "Safe Rest only (passive)",
+      "power": "mobility",
+      "cost": "Wound; arch opens wrong",
+      "origin": "City arches, Archkeepers' records",
+      "region": "Upper city (arches)",
+      "look": "tarnished iron key, spiral bow",
+      "mythology": ""
+    }
+  },
+  {
+    "id": "drowning_scale",
+    "name": "The Drowning Scale",
+    "kind": "found",
+    "class": null,
+    "tier": "Minor",
+    "object": "A cold, clammy pendant, a single shimmering scale of unknown origin. Everyone nearby shivers when it is first worn.",
+    "unlock": [
+      "See the homebrew document"
+    ],
+    "risk": "",
+    "resource": {
+      "name": "",
+      "type": "pip tracker",
+      "max": 4,
+      "text": ""
+    },
+    "powers": [],
+    "escalation": "",
+    "status": "review",
+    "notes": "Rebuilt from uploaded sources; original status and notes were not available.",
+    "source": "sources/sejr_arcana_perchance_original.txt",
+    "matrix": {
+      "tier": "Minor",
+      "resource_type": "pip tracker",
+      "max": 4,
+      "refill": "Harvest last breaths from dying creatures (per spec; card text missing)",
+      "power": "unknown (stub)",
+      "cost": "a Condition on a failed roll",
+      "origin": "unspecified",
+      "region": "Unspecified",
+      "look": "clammy pendant, single scale",
+      "mythology": ""
+    }
+  },
+  {
+    "id": "axe_of_nine_eyes",
+    "name": "The Axe of Nine Eyes",
+    "kind": "found",
+    "class": null,
+    "tier": "Major",
+    "object": "A silvery greataxe with nine open eyes engraved down the blade. They follow whoever speaks.",
+    "unlock": [
+      "Learn what the axe was called before it was named, from Archkeeper records or something older than the Golden Order",
+      "Let it name a creature in a room you thought was empty",
+      "Hold the line against that creature until it flees or dies"
+    ],
+    "risk": "The creature's side now knows your name.",
+    "resource": {
+      "name": "Eyes",
+      "type": "finite never-refill",
+      "max": 9,
+      "text": "Eyes (9). A closed eye never reopens."
+    },
+    "powers": [
+      "Name It (Action, 1 Eye): one creature you can see. You learn its True Name, have advantage on checks against it, and always know its direction and distance. Once per encounter, Speak the Name (Reaction): it loses its next action. WIL DC 14 negates, Solos save with advantage."
+    ],
+    "escalation": "Named creatures learn your name and heading each dawn. When the ninth eye closes, the axe speaks your True Name and all nine hear it. One engraved eye is scraped blank.",
+    "status": "review",
+    "notes": "Rebuilt from uploaded sources; original status and notes were not available.",
+    "source": "sources/sejr_arcana_perchance_original.txt",
+    "matrix": {
+      "tier": "Major",
+      "resource_type": "finite never-refill",
+      "max": 9,
+      "refill": "None; a closed eye never reopens",
+      "power": "offense + information",
+      "cost": "permanent; named creatures learn your name",
+      "origin": "Golden Order / Archkeeper records, older than the Order",
+      "region": "Upper city (records)",
+      "look": "silvery greataxe, nine engraved eyes",
+      "mythology": "Odin / Argus Panoptes echo"
+    }
+  },
+  {
+    "id": "hourglass_of_borrowed_time",
+    "name": "The Hourglass of Borrowed Time",
+    "kind": "found",
+    "class": null,
+    "tier": "Major",
+    "object": "A brass hourglass whose sand climbs upward.",
+    "unlock": [
+      "Watch one full night without sleeping",
+      "Tell an NPC, truthfully, the moment you would undo"
+    ],
+    "risk": "The sand climbs for a stranger first. They relive their last hour, and they remember you.",
+    "resource": {
+      "name": "Sand",
+      "type": "pip tracker",
+      "max": 3,
+      "text": "Sand (3). Regain 1 by returning to where you last turned time back and letting the glass run for an hour."
+    },
+    "powers": [
+      "Turn Back (Reaction, 1 Sand): any die roll you can see is rerolled. The new result stands."
+    ],
+    "escalation": "When the last Sand falls, the original result happened somewhere. Within a session an Echo of you arrives carrying its consequences, and it wants the glass.",
+    "status": "review",
+    "notes": "Rebuilt from uploaded sources; original status and notes were not available.",
+    "source": "sources/sejr_arcana_perchance_original.txt",
+    "matrix": {
+      "tier": "Major",
+      "resource_type": "pip tracker",
+      "max": 3,
+      "refill": "Return to where you last turned time back and let the glass run an hour",
+      "power": "utility (reroll)",
+      "cost": "an Echo of you arrives",
+      "origin": "unspecified",
+      "region": "Unspecified",
+      "look": "brass hourglass, sand climbs up",
+      "mythology": ""
+    }
+  },
+  {
+    "id": "black_lotus_case",
+    "name": "The Black Lotus Case",
+    "kind": "found",
+    "class": null,
+    "tier": "Minor",
+    "object": "A black bloom pressed in a lead-lined case, three petals left, still damp.",
+    "unlock": [
+      "Find someone who survived the preparation",
+      "Fast three days",
+      "Eat the first petal under watch"
+    ],
+    "risk": "WIL DC 14 or take 2 Wounds, and the Stain advances now.",
+    "resource": {
+      "name": "Petals",
+      "type": "pip tracker",
+      "max": 3,
+      "text": "Petals (3). Regain 1 by seeding the bloom where someone you knew died and tending the soil for a week."
+    },
+    "powers": [
+      "Eat a petal (Action, lasts an encounter), choose one. Smoke Step: free, 1/round, teleport to a spot you can see within 6 spaces. Wallwalker: climb sheer surfaces, walk on water. Drowsing Pollen: one creature of LV 5 or less within 2 spaces, WIL DC 13 or asleep 1d4 rounds."
+    ],
+    "escalation": "Each time the case empties, the Stain advances for good. 1: fingertips blacken, advantage on Finesse, and you can no longer feel heat or cold through them. 2: veins darken, +1 Initiative, your pulse is audible. 3: eyes black, you see in the dark, strangers flinch (disadvantage on Influence). After 3, the bloom no longer needs the case.",
+    "status": "review",
+    "notes": "Rebuilt from uploaded sources; original status and notes were not available.",
+    "source": "sources/sejr_arcana_perchance_original.txt",
+    "matrix": {
+      "tier": "Minor",
+      "resource_type": "pip tracker",
+      "max": 3,
+      "refill": "Seed the bloom where someone you knew died; tend the soil for a week",
+      "power": "mobility + utility",
+      "cost": "Wounds; permanent bodily Stain",
+      "origin": "unspecified",
+      "region": "Unspecified",
+      "look": "lead-lined case, black bloom",
+      "mythology": ""
+    }
+  },
+  {
+    "id": "oath_band",
+    "name": "The Oath-Band",
+    "kind": "found",
+    "class": null,
+    "tier": "Minor",
+    "object": "A plain iron ring, every oath ever sworn over it scratched inside.",
+    "unlock": [
+      "Swear aloud before a living witness",
+      "The oath must be something you would not otherwise do; the GM may refuse one that matches your plans"
+    ],
+    "risk": "The Band holds your words, not your meaning, and the GM may close loopholes.",
+    "resource": {
+      "name": "Oath",
+      "type": "toggle",
+      "max": 1,
+      "text": "Oath (1). Set when sworn. Cleared when fulfilled, or failed if you reach your next level first. One oath per level."
+    },
+    "powers": [
+      "While the oath stands, advantage on checks that directly advance it. The GM grades it Worthy, Mighty or Legendary."
+    ],
+    "escalation": "Fulfilled: heal all Wounds and gain +1, +2 or +3 max HP for good, by grade. Failed: lose that much max HP for good, and the Band stays shut until you do a penance.",
+    "status": "review",
+    "notes": "Rebuilt from uploaded sources; original status and notes were not available.",
+    "source": "sources/sejr_arcana_perchance_original.txt",
+    "matrix": {
+      "tier": "Minor",
+      "resource_type": "toggle",
+      "max": 1,
+      "refill": "Swear an oath you would not otherwise keep; one per level",
+      "power": "social + utility",
+      "cost": "permanent max HP",
+      "origin": "unspecified",
+      "region": "Unspecified",
+      "look": "plain iron ring, oaths scratched inside",
+      "mythology": ""
+    }
+  },
+  {
+    "id": "unpaid_favor",
+    "name": "The Unpaid Favor",
+    "kind": "found",
+    "class": null,
+    "tier": "Minor",
+    "object": "A tin holy symbol, its face rubbed smooth, always warm.",
+    "unlock": [
+      "Learn which patron it belongs to",
+      "Make a true offering at midnight"
+    ],
+    "risk": "The patron takes a small price first, a memory or a name.",
+    "resource": {
+      "name": "Debt",
+      "type": "pip tracker",
+      "max": 3,
+      "text": "Debt (3). Clears only by doing the patron a favor the GM presents."
+    },
+    "powers": [
+      "Call In (Action, +1 Debt): one small, specific impossibility. A door opens, a lie is believed, or a creature within 6 spaces loses its next action (WIL DC 13 negates)."
+    ],
+    "escalation": "Past 3 Debt the patron collects, d6. 1 Newt: tiny and actionless for 3 rounds. 2 Imps: lose 2 random items. 3 Salt ring: you can't cross it until it breaks. 4 Cobwebs: no arcanum use until you atone. 5 Nemesis: someone is born who will hunt you. 6 Wither: take 1 Wound.",
+    "status": "review",
+    "notes": "Rebuilt from uploaded sources; original status and notes were not available.",
+    "source": "sources/sejr_arcana_perchance_original.txt",
+    "matrix": {
+      "tier": "Minor",
+      "resource_type": "pip tracker",
+      "max": 3,
+      "refill": "Do a favor the GM presents for the patron",
+      "power": "utility + social",
+      "cost": "patron's d6 collection",
+      "origin": "an unnamed patron",
+      "region": "Unspecified",
+      "look": "tin holy symbol, warm",
+      "mythology": ""
+    }
+  },
+  {
+    "id": "valkyries_feather",
+    "name": "The Valkyrie's Feather",
+    "kind": "found",
+    "class": null,
+    "tier": "Minor",
+    "object": "A gold-barbed feather from a warrior's grave.",
+    "unlock": [
+      "Dig it from the grave",
+      "Learn the warrior's story"
+    ],
+    "risk": "1 in 20 the valkyrie comes for the grave-robber before you finish.",
+    "resource": {
+      "name": "Tally",
+      "type": "d6 vs. accumulation",
+      "max": null,
+      "text": "Tally (counts uses). Clears only when the feather goes back to its stone."
+    },
+    "powers": [
+      "Spared (Reaction, 1/encounter): you or an ally within 6 spaces stays at 1 HP instead of dropping to 0."
+    ],
+    "escalation": "After each use roll d6. If it rolls equal to or under your Tally, a valkyrie arrives within a day to claim the spared life.",
+    "status": "review",
+    "notes": "Rebuilt from uploaded sources; original status and notes were not available.",
+    "source": "sources/sejr_arcana_perchance_original.txt",
+    "matrix": {
+      "tier": "Minor",
+      "resource_type": "d6 vs. accumulation",
+      "max": null,
+      "refill": "Return the feather to its stone",
+      "power": "defense (death-cheat)",
+      "cost": "a valkyrie claims the spared life",
+      "origin": "warrior's grave (unplaced)",
+      "region": "Unspecified",
+      "look": "gold-barbed feather",
+      "mythology": "Norse valkyrie"
+    }
+  },
+  {
+    "id": "hollow_vessel",
+    "name": "The Hollow Vessel",
+    "kind": "found",
+    "class": null,
+    "tier": "Minor",
+    "object": "A sealed clay jar, cold and faintly heavy.",
+    "unlock": [
+      "Learn its maker's rite",
+      "Store a Wound in it willingly"
+    ],
+    "risk": "It asks for a Wound from someone you love before it will hold yours.",
+    "resource": {
+      "name": "Pain",
+      "type": "pip tracker",
+      "max": 3,
+      "text": "Pain (3), one per stored Wound. Clears only by pouring it into a willing or bound person you hold for an hour; they take the Wounds."
+    },
+    "powers": [
+      "Offload (Reaction): when you would take a Wound, store it instead."
+    ],
+    "escalation": "If the jar fills or breaks, every stored Wound lands on you at once, plus one roll on Enduring Wounds.",
+    "status": "review",
+    "notes": "Rebuilt from uploaded sources; original status and notes were not available.",
+    "source": "sources/sejr_arcana_perchance_original.txt",
+    "matrix": {
+      "tier": "Minor",
+      "resource_type": "pip tracker",
+      "max": 3,
+      "refill": "Pour stored Wounds into a willing or bound person over an hour",
+      "power": "defense (Wound-shift)",
+      "cost": "Wounds all at once",
+      "origin": "unnamed maker's rite",
+      "region": "Unspecified",
+      "look": "sealed clay jar",
+      "mythology": ""
+    }
+  },
+  {
+    "id": "tide_coat",
+    "name": "The Tide-Coat",
+    "kind": "found",
+    "class": null,
+    "tier": "Minor",
+    "object": "An eel-skin suit that covers you head to heel, crusted with barnacles. Underwater it hums.",
+    "unlock": [
+      "Win it from the people of a drowned place, or earn it in their service",
+      "Wear it for a full night underwater"
+    ],
+    "risk": "Something in the deep hears the hum and follows you up.",
+    "resource": {
+      "name": "Growth",
+      "type": "pip tracker",
+      "max": 4,
+      "text": "Growth (4). Gain 1 for each hour spent underwater in a drowned place (the Lost Cisterns, Sunken Revvia, a flooded vault), beyond what the gig needs. That hour costs a scene. Rest never adds Growth."
+    },
+    "powers": [
+      "Armor 3+DEX, plus 1 per Growth. Each Growth also gives -1 to Stealth."
+    ],
+    "escalation": "When you take a Wound, lose 1 Growth. After a week dry, lose 1 Growth each day. At 4 Growth the coat is a landmark, and things in the deep start coming to see it.",
+    "status": "review",
+    "notes": "Rebuilt from uploaded sources; original status and notes were not available.",
+    "source": "sources/sejr_arcana_perchance_original.txt",
+    "matrix": {
+      "tier": "Minor",
+      "resource_type": "pip tracker",
+      "max": 4,
+      "refill": "Spend hours underwater in a drowned place",
+      "power": "defense (armor)",
+      "cost": "Stealth penalty; deep things follow",
+      "origin": "Lost Cisterns, Sunken Revvia, flooded vaults",
+      "region": "Sunken Revvia / Lost Cisterns",
+      "look": "eel-skin suit, barnacles",
+      "mythology": ""
+    }
+  },
+  {
+    "id": "sul_hide",
+    "name": "The Sul Hide",
+    "kind": "found",
+    "class": null,
+    "tier": "Minor",
+    "object": "A tank of soft-shelled beetles that climb onto you and take your shape, and a tuning fork that sends them back.",
+    "unlock": [
+      "Find who bred them and learn the fork's note",
+      "Feed the tank by hand for a week",
+      "Step into the tank"
+    ],
+    "risk": "The fork is out of tune. The beetles won't let go until it is fixed.",
+    "resource": {
+      "name": "Hunger",
+      "type": "pip tracker",
+      "max": 3,
+      "text": "Hunger (3). Clears only when you feed them meat from a creature you hunted for them, on its own trip, never one from a gig."
+    },
+    "powers": [
+      "Armor 5+DEX with no Stealth penalty, and advantage on Stealth while you stay still. Mend (Reaction, +1 Hunger): ignore the Wound from one hit."
+    ],
+    "escalation": "After each Mend, roll d6. If it rolls under Hunger, the beetles feed on you: 1 Wound at the start of each of your turns until the fork sounds. Losing the fork is the real danger.",
+    "status": "review",
+    "notes": "Rebuilt from uploaded sources; original status and notes were not available.",
+    "source": "sources/sejr_arcana_perchance_original.txt",
+    "matrix": {
+      "tier": "Minor",
+      "resource_type": "pip tracker",
+      "max": 3,
+      "refill": "Feed the beetles meat you hunted for them",
+      "power": "defense (armor)",
+      "cost": "Wounds each turn if fork lost",
+      "origin": "unnamed breeder",
+      "region": "Unspecified",
+      "look": "beetle tank, tuning fork",
+      "mythology": ""
+    }
+  },
+  {
+    "id": "pitch_sap_harness",
+    "name": "The Pitch-Sap Harness",
+    "kind": "found",
+    "class": null,
+    "tier": "Minor",
+    "object": "Three layers of wood glued with sap that never dries, its outer layer bristling with thorns.",
+    "unlock": [
+      "Find an old tree willing to give its sap",
+      "Wear it through one fight without taking it off"
+    ],
+    "risk": "The sap takes. It won't come off until the next full moon.",
+    "resource": {
+      "name": "Burden",
+      "type": "pip tracker",
+      "max": 3,
+      "text": "Burden (3), one per weapon stuck in the sap. Clears at a Safe Rest with tools and an hour of prying."
+    },
+    "powers": [
+      "Armor 6+DEX (max 2), advantage on Stealth in forests. Snare (Reaction): when a melee weapon hits you, the attacker makes a STR save, DC 13, or the weapon sticks (+1 Burden). A creature using natural weapons is stuck to you instead, Grappled until it passes the save, and adds no Burden. Each Burden gives -1 Speed."
+    ],
+    "escalation": "When Burden would pass 3, the sap seals you in: you are Restrained until someone spends an action and passes a Might check, DC 14, to cut you out. Then the harness gives half Armor until it is glued again with fresh sap.",
+    "status": "review",
+    "notes": "Rebuilt from uploaded sources; original status and notes were not available.",
+    "source": "sources/sejr_arcana_perchance_original.txt",
+    "matrix": {
+      "tier": "Minor",
+      "resource_type": "pip tracker",
+      "max": 3,
+      "refill": "Pry stuck weapons loose with tools for an hour",
+      "power": "defense (armor)",
+      "cost": "Restrained; half Defense",
+      "origin": "an old tree (unplaced)",
+      "region": "Unspecified",
+      "look": "layered wood, never-dry sap, thorns",
+      "mythology": ""
+    }
+  },
+  {
+    "id": "ossuary_mail",
+    "name": "The Ossuary Mail",
+    "kind": "found",
+    "class": null,
+    "tier": "Minor",
+    "object": "A dark coat with a resin-fixed skeleton laid over yours, and a skull for a helm.",
+    "unlock": [
+      "Have it made by a smith who serves a death cult, or take it from the one who wore it",
+      "Let the bones choose: spend a night in a grave"
+    ],
+    "risk": "A faction that hates the dead marks you.",
+    "resource": {
+      "name": "Rot",
+      "type": "pip tracker",
+      "max": 3,
+      "text": "Rot (3). Gain 1 after each episode in which you took a Wound while wearing it and did not clean it. Clears with a day's work and clean water."
+    },
+    "powers": [
+      "Dread: the first time a creature sees you in an encounter, it makes a WIL save, DC 13, or has disadvantage on attacks against you that encounter. Mindless undead treat you as one of them."
+    ],
+    "escalation": "At 3 Rot the coat is infested: disadvantage on STR saves until it is cleaned. Wearing it openly in the city ticks the clock of any faction that hunts the dead.",
+    "status": "review",
+    "notes": "Rebuilt from uploaded sources; original status and notes were not available.",
+    "source": "sources/sejr_arcana_perchance_original.txt",
+    "matrix": {
+      "tier": "Minor",
+      "resource_type": "pip tracker",
+      "max": 3,
+      "refill": "Clean the coat with a day's work and clean water",
+      "power": "defense (armor) + social (fear)",
+      "cost": "faction hunts you",
+      "origin": "unnamed death-cult smith",
+      "region": "Unspecified",
+      "look": "resin-fixed skeleton coat, skull helm",
+      "mythology": ""
+    }
+  },
+  {
+    "id": "hellhide",
+    "name": "The Hellhide",
+    "kind": "found",
+    "class": null,
+    "tier": "Major",
+    "object": "Plate made over with a demon's skin, its horns on the helm and its claws on the gauntlets.",
+    "unlock": [
+      "Hunt the demon and bring back the skin",
+      "Find a smith who will work it, and pay their price",
+      "Put it on"
+    ],
+    "risk": "Roll d10. On 1-3 the hide drinks magic: no spell can affect you, including your own, while you wear it.",
+    "resource": {
+      "name": "Thirst",
+      "type": "pip tracker",
+      "max": 3,
+      "text": "Thirst (3). Gain 1 each dawn. Clears only when blood is offered to it outside combat, from a creature that was not trying to harm you. Blood shed in a fight does not count."
+    },
+    "powers": [
+      "Terror: the first time a creature sees you, WIL DC 14 or -1 to all its rolls near you, for good. Command (Action, 1/encounter): order undead or a demon to obey one command."
+    ],
+    "escalation": "You can't willingly part with it, and you will hunt anyone who takes it. At 3 Thirst at dawn it drinks from you: take 1 Wound that can't heal while you wear it. If you die in it, you rise as a spectre.",
+    "status": "review",
+    "notes": "Rebuilt from uploaded sources; original status and notes were not available.",
+    "source": "sources/sejr_arcana_perchance_original.txt",
+    "matrix": {
+      "tier": "Major",
+      "resource_type": "pip tracker",
+      "max": 3,
+      "refill": "Offer non-combat blood from someone not trying to harm you",
+      "power": "defense (armor) + social (fear)",
+      "cost": "Wound that cannot heal; spectre on death",
+      "origin": "unnamed demon",
+      "region": "Unspecified",
+      "look": "plate in demon skin, horns, claws",
+      "mythology": ""
+    }
+  },
+  {
+    "id": "kettle_plate",
+    "name": "The Kettle Plate",
+    "kind": "found",
+    "class": null,
+    "tier": "Major",
+    "object": "Full plate with two boilers on the back and a servo at every joint. One of a kind, built to someone's measure, and not to yours.",
+    "unlock": [
+      "Find the workshop that built it",
+      "Have it refitted to you, which costs a favor the makers name",
+      "Stoke it yourself, the first time"
+    ],
+    "risk": "The refit fails on a test fire. 1d6 fire damage and a week of repairs.",
+    "resource": {
+      "name": "Steam",
+      "type": "pip tracker",
+      "max": 4,
+      "text": "Steam (4). Regain all by stoking it: an inventory slot of fuel and 10 minutes."
+    },
+    "powers": [
+      "Armor 18, with no STR requirement. Spend 1 Steam for: a wrist crossbow shot (free), a hidden blade strike (Action), or advantage on one Might check."
+    ],
+    "escalation": "At 0 Steam the servos lock: Speed 2 and disadvantage on DEX until stoked. If you spend the last Steam in combat, the boilers vent: 1d6 fire to you and everyone adjacent.",
+    "status": "review",
+    "notes": "Rebuilt from uploaded sources; original status and notes were not available.",
+    "source": "sources/sejr_arcana_perchance_original.txt",
+    "matrix": {
+      "tier": "Major",
+      "resource_type": "pip tracker",
+      "max": 4,
+      "refill": "Stoke with fuel and ten minutes",
+      "power": "defense (armor) + offense",
+      "cost": "fire damage; locked servos",
+      "origin": "unnamed workshop",
+      "region": "Unspecified",
+      "look": "full plate, boilers, servos",
+      "mythology": ""
+    }
+  },
+  {
+    "id": "fairy_jar",
+    "name": "The Fairy Jar",
+    "kind": "found",
+    "class": null,
+    "tier": "Minor",
+    "object": "A thumb-high jar of purple glass. Inside, a small furious face swims in mist.",
+    "unlock": [
+      "Learn the fairy's name, which it will not tell you",
+      "Promise it freedom, aloud, before a witness"
+    ],
+    "risk": "Speak to it before you know its name, and it slips out and hexes you.",
+    "resource": {
+      "name": "Bargains",
+      "type": "pip tracker",
+      "max": 3,
+      "text": "Bargains (3). Regain 1 when you answer the question it asks about its home. It asks one each time it runs dry, and the answer is never on the way to a gig."
+    },
+    "powers": [
+      "Ask (Action, 1 Bargain): make a WIL save, DC 12. On a success it works one small fairy charm: a glamour, a lock undone, a minute of floating. On a failure it sulks and stays silent for 2d6 days."
+    ],
+    "escalation": "On a natural 1 it escapes and curses you. You may smash the jar at any time: it grants +1 to one stat for good and is gone. At 0 Bargains it only bargains for its freedom.",
+    "status": "review",
+    "notes": "Rebuilt from uploaded sources; original status and notes were not available.",
+    "source": "sources/sejr_arcana_perchance_original.txt",
+    "matrix": {
+      "tier": "Minor",
+      "resource_type": "pip tracker",
+      "max": 3,
+      "refill": "Answer the question the fairy asks about its home",
+      "power": "utility + social",
+      "cost": "a curse; stat bonus if smashed",
+      "origin": "unnamed fairy",
+      "region": "Unspecified",
+      "look": "purple glass jar, small furious face",
+      "mythology": "European folk fairy"
+    }
+  },
+  {
+    "id": "seven_leaf_bracelet",
+    "name": "The Seven-Leaf Bracelet",
+    "kind": "found",
+    "class": null,
+    "tier": "Minor",
+    "object": "A silver bracelet of seven linked leaves, cool as morning dew.",
+    "unlock": [
+      "Wear it through a night in old woods",
+      "Answer the first question the trees ask you, truthfully"
+    ],
+    "risk": "The trees ask about something you would rather they never knew.",
+    "resource": {
+      "name": "Leaves",
+      "type": "finite never-refill",
+      "max": 7,
+      "text": "Leaves (7). A wilted leaf never comes back."
+    },
+    "powers": [
+      "Listen (Action, 1 Leaf): speak with the plants around you for 10 minutes, or speak Sylvan for a day. Plants tell you who passed and may move aside or tangle."
+    ],
+    "escalation": "When the last leaf wilts the bracelet buds. Plant it beside a door to elsewhere within a month, and in a year a new bracelet grows there. If you don't plant it, your fingertips start to leaf.",
+    "status": "review",
+    "notes": "Rebuilt from uploaded sources; original status and notes were not available.",
+    "source": "sources/sejr_arcana_perchance_original.txt",
+    "matrix": {
+      "tier": "Minor",
+      "resource_type": "finite never-refill",
+      "max": 7,
+      "refill": "None; a wilted leaf never returns",
+      "power": "information + utility",
+      "cost": "fingertips leaf",
+      "origin": "old woods (unplaced)",
+      "region": "Unspecified",
+      "look": "silver bracelet of seven leaves",
+      "mythology": ""
+    }
+  },
+  {
+    "id": "hexing_needles",
+    "name": "The Hexing Needles",
+    "kind": "found",
+    "class": null,
+    "tier": "Minor",
+    "object": "Three black needles in a felt roll, and a spool of red thread.",
+    "unlock": [
+      "Learn the stitch from a witch, at her price",
+      "Embroider your own likeness first"
+    ],
+    "risk": "Your first stitch slips. You carry a small hex of your own making until you unpick it.",
+    "resource": {
+      "name": "Thread",
+      "type": "pip tracker",
+      "max": 3,
+      "text": "Thread (3). Regain 1 by unpicking a finished hex, which frees its victim."
+    },
+    "powers": [
+      "Stitch (an hour of work, 1 Thread): embroider a likeness of someone, using their hair, blood or cloth. They have disadvantage on one kind of roll you name until the cloth is unpicked or burned. They feel every stitch."
+    ],
+    "escalation": "Every victim knows the shape of your hands. At 0 Thread, each new hex also lands on your own likeness.",
+    "status": "review",
+    "notes": "Rebuilt from uploaded sources; original status and notes were not available.",
+    "source": "sources/sejr_arcana_perchance_original.txt",
+    "matrix": {
+      "tier": "Minor",
+      "resource_type": "pip tracker",
+      "max": 3,
+      "refill": "Unpick a finished hex (frees the victim)",
+      "power": "offense (curse) + social",
+      "cost": "each victim knows your hands",
+      "origin": "unnamed witch",
+      "region": "Unspecified",
+      "look": "three black needles, red thread",
+      "mythology": "Witch poppet / voodoo"
+    }
+  },
+  {
+    "id": "bonded_relic",
+    "name": "The Bonded Relic",
+    "kind": "found",
+    "class": null,
+    "tier": "Major",
+    "object": "A legendary thing that is not yours. When you call it, it is in your hand. When you let go, it is gone.",
+    "unlock": [
+      "None. It chose you",
+      "To keep it for good, learn whether you are meant to wield it or destroy it"
+    ],
+    "risk": "Its true owner, or its true hunter, learns your face.",
+    "resource": {
+      "name": "",
+      "type": "Wound-cost",
+      "max": null,
+      "text": "No pool. Each call costs 1 Hit Die."
+    },
+    "powers": [
+      "Call (free): it appears for one encounter. The GM gives it one power, rolled on the forge. Ignore the power's cost; it works once per call."
+    ],
+    "escalation": "Each call, roll d6. On a 1, whoever hunts it learns where you are. If you call it with no Hit Dice left, take 1 Wound instead.",
+    "status": "review",
+    "notes": "Rebuilt from uploaded sources; original status and notes were not available.",
+    "source": "sources/sejr_arcana_perchance_original.txt",
+    "matrix": {
+      "tier": "Major",
+      "resource_type": "Wound-cost",
+      "max": null,
+      "refill": "Hit Dice; recovered on Safe Rest",
+      "power": "utility (random power)",
+      "cost": "Wound with no Hit Dice; hunter learns where you are",
+      "origin": "none (it chose you)",
+      "region": "Unspecified",
+      "look": "unknown",
+      "mythology": ""
+    }
+  },
+  {
+    "id": "sown_teeth",
+    "name": "The Sown Teeth",
+    "kind": "found",
+    "class": null,
+    "tier": "Major",
+    "object": "A hide satchel holding a handful of long teeth that click together like dice.",
+    "unlock": [
+      "Read the command words etched inside the flap, in a dead language",
+      "Sow the first tooth on ground you mean to hold"
+    ],
+    "risk": "The first warrior asks whom it must guard. Your answer binds every warrior after it.",
+    "resource": {
+      "name": "Teeth",
+      "type": "finite never-refill",
+      "max": null,
+      "text": "Teeth (1d4+1, rolled at unlock). A sown tooth never comes back."
+    },
+    "powers": [
+      "Sow (Action, 1 Tooth): an armored warrior rises from the ground beside you and obeys you for an hour. The GM uses a soldier stat block of your level."
+    ],
+    "escalation": "If two or more warriors stand and one is struck by surprise, they turn on each other, then on whoever is closest. When the last tooth is gone, the satchel is just a bag.",
+    "status": "review",
+    "notes": "Rebuilt from uploaded sources; original status and notes were not available.",
+    "source": "sources/sejr_arcana_perchance_original.txt",
+    "matrix": {
+      "tier": "Major",
+      "resource_type": "finite never-refill",
+      "max": null,
+      "refill": "None; a sown tooth never returns",
+      "power": "offense (summon)",
+      "cost": "warriors turn on each other",
+      "origin": "dead-language command words (unplaced)",
+      "region": "Unspecified",
+      "look": "hide satchel of long teeth",
+      "mythology": "Greek Spartoi (Cadmus)"
+    }
+  },
+  {
+    "id": "arch_watch_mirror",
+    "name": "The Arch-Watch Mirror",
+    "kind": "found",
+    "class": null,
+    "tier": "Major",
+    "object": "A mirror taller than a man in a frame of blackened ash. Its surface moves like still water.",
+    "unlock": [
+      "Install it in your holding",
+      "For each arch it should watch, carry a sliver of its glass through that arch and back, unbroken"
+    ],
+    "risk": "Something on the other side sees the mirror before it sees them.",
+    "resource": {
+      "name": "Clarity",
+      "type": "pip tracker",
+      "max": 3,
+      "text": "Clarity (3). Regain all after someone keeps a full night's vigil before it without sleeping."
+    },
+    "powers": [
+      "It shimmers whenever a watched arch is used. Watch (10 minutes, 1 Clarity): see a watched arch and the area around it for 10 minutes. Foresee (1 Clarity, once per episode): before you go through, ask the GM one question about where the arch leads."
+    ],
+    "escalation": "At 0 Clarity the glass stays clear both ways. Anything beyond a watched arch can look into your holding until the mirror is refilled.",
+    "status": "review",
+    "notes": "Rebuilt from uploaded sources; original status and notes were not available.",
+    "source": "sources/sejr_arcana_perchance_original.txt",
+    "matrix": {
+      "tier": "Major",
+      "resource_type": "pip tracker",
+      "max": 3,
+      "refill": "Someone keeps a full night's vigil before it",
+      "power": "information",
+      "cost": "holding exposed to the far side",
+      "origin": "installed in your holding; arch glass slivers",
+      "region": "Upper city (arches)",
+      "look": "tall mirror, blackened ash frame",
+      "mythology": ""
+    }
+  },
+  {
+    "id": "apology_blade",
+    "name": "The Apology Blade",
+    "kind": "found",
+    "class": null,
+    "tier": "Major",
+    "object": "A sword cut from the belly of a sea serpent. It still smells of brine, and its edge is clouded like the sky before a storm.",
+    "unlock": [
+      "Give it as an apology to someone you wronged",
+      "If they freely give it back, it wakes",
+      "Later: make peace between two who are at war, and its storm wakes"
+    ],
+    "risk": "They keep it.",
+    "resource": {
+      "name": "Sky",
+      "type": "pip tracker",
+      "max": 3,
+      "text": "Sky (3). Regain 1 when someone accepts your apology for a real wrong."
+    },
+    "powers": [
+      "Gust (Action, 1 Sky): a wind throws every creature in a line of 6 spaces back 3 spaces, STR DC 13 negates. Once the storm wakes: Storm (Action, 2 Sky): for the encounter, enemies have disadvantage on ranged attacks and you can't be pushed."
+    ],
+    "escalation": "If you wrong the one who gave it back, it is in their hands the next morning, wherever they are.",
+    "status": "review",
+    "notes": "Rebuilt from uploaded sources; original status and notes were not available.",
+    "source": "sources/sejr_arcana_perchance_original.txt",
+    "matrix": {
+      "tier": "Major",
+      "resource_type": "pip tracker",
+      "max": 3,
+      "refill": "Someone accepts your apology for a real wrong",
+      "power": "offense (control)",
+      "cost": "returns to the one you wronged",
+      "origin": "sea serpent",
+      "region": "Unspecified",
+      "look": "sword from a sea serpent's belly, clouded edge",
+      "mythology": ""
+    }
+  },
+  {
+    "id": "rune_fragment",
+    "name": "The Rune Fragment",
+    "kind": "found",
+    "class": null,
+    "tier": "Major",
+    "object": "A shard of storm-dark stone veined with silver. One rune on it glows faintly.",
+    "unlock": [
+      "Find a second fragment",
+      "Hold them together for 10 minutes and they fuse"
+    ],
+    "risk": "Whoever carries another fragment feels yours wake.",
+    "resource": {
+      "name": "Runes",
+      "type": "session-bound",
+      "max": 9,
+      "text": "Runes (one per fused fragment, up to 9). Each fragment carries one rune, rolled d8. Each rune works once per episode."
+    },
+    "powers": [
+      "1 Fehu: an item you touch gives +1 to its user for an hour. 2 Algiz: advantage on saves against fear and charm for the scene. 3 Raido: +2 Speed for the scene. 4 Uruz: +2 to a STR check after the roll. 5 Tiwaz (Action): allies who hear you get advantage on their next attack. 6 Ansuz: speak and read any language for a scene. 7 Eihwaz (Reaction): reduce one hit's damage by your level plus STR. 8 Sowilo (Action): sunlight blinds every enemy within 6 spaces until your next turn, DEX DC 13 negates."
+    ],
+    "escalation": "Fragments call to each other, and other holders follow the call. When the ninth fuses, its rune wakes once: change one result, even a past one. Then the stone falls to dust.",
+    "status": "review",
+    "notes": "Rebuilt from uploaded sources; original status and notes were not available.",
+    "source": "sources/sejr_arcana_perchance_original.txt",
+    "matrix": {
+      "tier": "Major",
+      "resource_type": "session-bound",
+      "max": 9,
+      "refill": "Each rune works once per episode",
+      "power": "utility",
+      "cost": "other fragment holders feel it wake",
+      "origin": "storm-dark stone (unplaced)",
+      "region": "Unspecified",
+      "look": "silver-veined shard, one glowing rune",
+      "mythology": "Norse futhark"
+    }
+  },
+  {
+    "id": "binding_linens",
+    "name": "The Binding Linens",
+    "kind": "found",
+    "class": null,
+    "tier": "Minor",
+    "object": "Strips of old linen that smell of myrrh, with gold-thread hieroglyphs at the ends.",
+    "unlock": [
+      "Learn the binding words from a priest of the dead",
+      "Wrap and bury a stranger who had no one to bury them"
+    ],
+    "risk": "The stranger belonged to someone, and they come asking.",
+    "resource": {
+      "name": "Strips",
+      "type": "pip tracker",
+      "max": 3,
+      "text": "Strips (3). Regain 1 by preparing and burying someone who has no one to do it for them."
+    },
+    "powers": [
+      "Hold Back (Action, 1 Strip): wrap a dying creature. It stops dying and can't die from Wounds until it is unwrapped or the next dawn, but it can't act."
+    ],
+    "escalation": "Anyone wrapped a second time comes back a little less. They forget one thing they loved, and the GM chooses what.",
+    "status": "review",
+    "notes": "Rebuilt from uploaded sources; original status and notes were not available.",
+    "source": "sources/sejr_arcana_perchance_original.txt",
+    "matrix": {
+      "tier": "Minor",
+      "resource_type": "pip tracker",
+      "max": 3,
+      "refill": "Prepare and bury someone with no one to bury them",
+      "power": "healing (death-cheat)",
+      "cost": "a loved memory lost on re-wrap",
+      "origin": "priest of the dead (unplaced)",
+      "region": "Unspecified",
+      "look": "myrrh linen, gold hieroglyph ends",
+      "mythology": "Egyptian mummification"
+    }
+  },
+  {
+    "id": "rusted_spear",
+    "name": "The Rusted Spear",
+    "kind": "found",
+    "class": null,
+    "tier": "Minor",
+    "object": "A leaf-bladed spear whose rust never flakes off, however hard you scrub.",
+    "unlock": [
+      "Learn whom it last wounded, and find them",
+      "Heal that old wound with the spear's own rust"
+    ],
+    "risk": "They remember you, and they remember the spear.",
+    "resource": {
+      "name": "Rust",
+      "type": "pip tracker",
+      "max": 3,
+      "text": "Rust (3). Regain 1 by leaving the spear a night in seawater."
+    },
+    "powers": [
+      "Spare: when you would drop a creature to 0 with the spear, it falls stable instead, and its wound won't close until you choose to mend it. Mend (Action, 1 Rust): scrape rust into a wound to heal 1 Wound, or close a wound the spear made."
+    ],
+    "escalation": "At 0 Rust the blade is clean and bright. The next wound it gives never closes: a hero loses 1 max Wound for good, and a creature bleeds out by the end of the scene.",
+    "status": "review",
+    "notes": "Rebuilt from uploaded sources; original status and notes were not available.",
+    "source": "sources/sejr_arcana_perchance_original.txt",
+    "matrix": {
+      "tier": "Minor",
+      "resource_type": "pip tracker",
+      "max": 3,
+      "refill": "Leave the spear a night in seawater",
+      "power": "healing + offense (non-lethal)",
+      "cost": "permanent max Wound loss",
+      "origin": "unnamed old wound",
+      "region": "Unspecified",
+      "look": "leaf-bladed spear, never-flaking rust",
+      "mythology": "Greek Telephus / Achilles' spear"
+    }
+  }
+]

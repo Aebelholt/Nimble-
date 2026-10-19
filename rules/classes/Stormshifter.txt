@@ -1,0 +1,501 @@
+STORMSHIFTER
+Game Design and Art Direction: Evan Diaz.
+Subclass Design Contributors: Marty Martinez,
+Daniel Fernandez, Ross H. Brubaker, Matt Shiffler.
+Artist Credits: Earl Lan, Nguyen Heiu, Vlad Iftimescu, Kerem Beyit, Evan Diaz.
+
+Cover Art: Earl Lan
+Nimble Heroes: Stormshifter
+Designed in the USA, Printed in China.
+Copyright © 2026 Nimble Co. All rights reserved.
+www.nimbleRPG.com
+
+Nimble 3rd Party Creator License v2.0
+This license is perpetual and irrevocable except upon violation.
+
+Terms. You may use and reference ANY published Nimble text (current
+or future) in your own original products based on or compatible with
+Nimble (e.g., adventures, classes, subclasses, monsters, supplements)
+without Nimble Co.’s prior approval and retain all profits.
+
+• Copying, restating, or summarizing large portions of text with little
+added content does not qualify as an original product.
+• You may NOT use the Nimble art or logo—but may use a Nimble
+compatibility logo (nimbleRPG.com/creators). Your product must not
+appear to be an official Nimble product or endorsed by Nimble Co.
+
+Required Attribution. Include in your product:
+[Product Name] is an independent product published under the
+Nimble 3rd Party Creator License. Nimble TTRPG © Nimble Co.
+
+Online Apps and VTTs. For free online tools/wikis/apps/VTT implementations (app), you may use any and all published Nimble text, provided the app is completely free to use (optional donations to defray
+development/hosting costs permitted) and you include this notice
+prominently (a banner, sidebar, welcome message, etc.):
+
+This [app/tool/etc.] is free to use for anyone who already owns the
+content, is trying the system out, or cannot afford to buy it right now.
+If you enjoy Nimble and are able, please support the game by purchasing the official content at nimbleRPG.com.
+Restrictions and Rights Reserved. We are not liable for claims
+related to your product, and you will not bring legal claims against us.
+Unless explicitly stated, this license does not grant copyright, moral,
+publicity, privacy, patent, or trademark rights. All other rights are
+reserved by Nimble Co. Nimble is provided AS-IS without warranties.
+
+Legal Terms. You agree to indemnify Nimble Co. and its affiliates
+from any claims or liabilities arising from your use of this license, mutually where applicable, as permitted by law. This license may be terminated if you violate its terms; upon termination, cease distribution until
+resolved. Governed by Florida law. Disputes resolved in U.S. District
+Court for the Middle District of Florida or state courts in Orange County,
+Florida. Unenforceable provisions reformed or severed without affecting the rest. Does not waive Nimble Co.’s legal privileges.
+
+This work includes material taken from the System Reference Document 5.1 (“SRD 5.1”) by Wizards of the Coast LLC and available at https://
+dnd.wizards.com/resources/systems-reference-document. The SRD 5.1 is licensed under the Creative Commons Attribution 4.0 International
+License available at https://creativecommons.org/licenses/by/4.0/legalcode.
+
+1
+
+STORMSHIFTER
+
+MASTER OF
+
+FANG & STORM
+he trees whisper their excitement, the clouds sing with glee.
+Rejoice! The Master of Storm & Fang arrives. Legend speaks
+of an ancient union between mortal and dryad—beings capable
+of wielding lightning and tempests as others wield blade and shield. This
+is but half the tale.
+
+T
+
+Wanderers recount encounters with beings, some wise and benevolent,
+others fearsome, with claws that sparked with lightning and pelts sharp as
+daggers. They are as one with storm and beast, embodying the serene beauty
+and raw power of nature’s grace.
+
+Aid your allies in whatever
+role is most needed. Damage,
+healing, or control.
+
+Wade into the fray as a shapeshifted
+beast ranging from friendly to vicious,
+indomitable, or HORRIBLE.
+
+Cast powerful spells from a
+distance to strike down, control, mend, and more.
+
+A high utility class that can both harm and heal with equal mastery!
+Class complexity:
+
+[f][f][f][e]
+
+2
+
+ARTIST: EARL LAN
+
+3
+
+STORMSHIFTER
+Key Stats: WIL, DEX Hit Die: 1d8 Starting HP: 13
+Saves: WIL+, STR– Armor: Cloth or Leather Armor Weapons: Staves, Wands
+Starting Gear: Cheap Hides, Staff, Strange Plant
+LEVEL 1
+
+LEVEL 2
+
+Master of Storms. You know the Lightning & Wind schools, and can cast those cantrips.
+Beastshift. Action: Transform into a harmless beast (squirrel, pigeon, etc.). While transformed, you can speak with animals. Beastshift lasts until you drop to 0 HP, cast a spell, or
+if you end it on your turn for free.
+Direbeast Form. You can Beastshift into a Direbeast form DEX times/encounter (for up
+to 1 min). You know the Fearsome Beast form.
+Mana and Unlock Tier 1 Spells. You unlock tier 1 spells and gain a mana pool to cast
+them. This mana pool’s max is always equal to (WIL×3)+LVL and recharges on a Safe Rest.
+Direbeast Form (2). You can Beastshift into a Beast of the Pack.
+
+LEVEL 3
+
+Subclass. Choose a Stormshifter subclass.
+
+LEVEL 4
+
+Tier 2 Spells. You may now cast spells up to tier 2.
+Key Stat Increase. +1 WIL or DEX.
+Stormcaller. Learn a Utility Spell from each spell school you know.
+Be Wild. Whenever you spend a day with wild animals during a Safe Rest, you may choose different
+Stormshifter options available to you.
+
+4
+
+LEVEL 5
+
+Direbeast Form (3). You can Beastshift into a Beast of Nightmares.
+Upgraded Cantrips. Your cantrips grow stronger.
+Secondary Stat Increase. +1 STR or INT.
+
+LEVEL 6
+
+Chimeric Boon. Choose 2 Chimeric Boons. Whenever you Beastshift
+into a Direbeast form, you may modify it with 1 Chimeric Boon you
+know.
+Tier 3 Spells. You may now cast spells up to tier 3.
+
+LEVEL 7
+
+Subclass. Gain your Stormshifter subclass feature.
+Stormcaller (2). Learn a 2nd Utility Spell from each spell school you
+know.
+
+LEVEL 8
+
+Tier 4 Spells. You may now cast spells up to tier 4.
+Key Stat Increase. +1 WIL or DEX.
+Stormborn. Gain Charged whenever you roll Initiative. Advantage
+on Naturecraft checks and Concentration saves.
+
+LEVEL 9
+
+Chimeric Boon (2). Choose a 3rd Chimeric Boon.
+Secondary Stat Increase. +1 STR or INT.
+
+LEVEL 10 Tier 5 Spells. You may now cast spells up to tier 5.
+
+Upgraded Cantrips. Your cantrips grow stronger.
+
+LEVEL 11
+
+Subclass. Gain your Stormshifter subclass feature.
+
+LEVEL 12 Tier 6 Spells. You may now cast spells up to tier 6.
+
+Chimeric Boon (3). Choose a 4th Chimeric Boon.
+Key Stat Increase. +1 WIL or DEX.
+
+LEVEL 13 Secondary Stat Increase. +1 STR or INT.
+
+Stormborn (2). Whenever you end a Direbeast form, you may cast
+a cantrip for free.
+
+LEVEL 14 Tier 7 Spells. You may now cast spells up to tier 7.
+LEVEL 15 Subclass. Gain your Stormshifter subclass feature.
+
+Upgraded Cantrips. Your cantrips grow stronger.
+
+LEVEL 16 Tier 8 Spells. You may now cast spells up to tier 8.
+
+Key Stat Increase. +1 WIL or DEX.
+
+LEVEL 17 Chimeric Boon (4). Choose a 5th Chimeric Boon.
+
+Secondary Stat Increase. +1 STR or INT.
+
+LEVEL 18 Tier 9 Spells. You may now cast spells up to tier 9.
+LEVEL 19 Epic Boon. Choose an Epic Boon (see pg. 75 of the GM’s Guide).
+LEVEL 20 Archdruid. +1 to any 2 of your stats. After you cast a tiered spell,
+
+you may Beastshift for 0 Actions.
+Upgraded Cantrips. Your cantrips grow stronger.
+
+5
+
+CHIMERIC
+BOONS
+Beast of the Sea. Whenever you Defend vs a melee
+attack, you can Blind the attacker until the beginning of
+their next turn. Can move, breathe, and fight underwater
+without penalty.
+
+DIREBEAST FORMS
+Fearsome Beast
+
+1 Action
+
+Transform into a Large beast. Gain WIL Defense, WIL+LVL temp HP, advantage
+on STR saves, and:
+
+Fearsome. Whenever you Interpose or Defend, you may spend 1 mana
+to force the attacker to reroll the attack (you must choose either result).
+Gore. 1 Action: 1d8+LVL damage, on hit: gain LVL temp HP.
+
+Beast of the Pack
+
+1 Action
+
+Transform into a Medium beast. Gain +DEX Speed, you can move DEX
+spaces for free each turn, advantage on DEX saves, and:
+Lightning Step. (1/turn) Spend 1 mana to teleport DEX spaces for free.
+
+Frenzy. 1 Action: 1d6+LVL damage. Your next attack gains increasing
+advantage instead of disadvantage. This bonus resets whenever you crit,
+or after you use a different attack.
+
+Beast of Nightmares
+
+1 Action
+
+Transform into any Tiny beast or insect (provided it is horrible). Gain:
+
+Silent But Deadly. Speed: 2. Attackers cannot target you until you become
+conspicuous (e.g., attacking or being seen transforming). Attacks against
+you have disadvantage. You cannot Defend or Interpose and any damage
+ends this form.
+Sting. 1 Action: (1/round, Reach 0) 1d4+3×LVL acid damage (ignoring
+Armor), on crit: Dazed.
+
+6
+
+Climber. Can walk across walls and ceilings normally;
+ignores Difficult Terrain.
+Fleet Footed. Can move 2 spaces for free each turn.
+Advantage on Stealth checks and vs Grappled.
+Earthwalker. +STR Defense. Can burrow through
+the ground (as long as you do not end your turn underground). Can stand from Prone for free on your turn.
+Keen Senses. Advantage on Perception and Assess
+checks. Unaffected by Blind.
+Leader of the Pack. Advantage against fear and charm
+effects for yourself and allies within Reach 6. Allies can
+move 2 spaces toward you for free on each of their turns.
+Phasebeast. Whenever you shift between this form and
+your normal form (and vice versa), you may teleport up
+to 6 spaces away to a place you can see.
+Prehensile Tail. Your melee attacks gain: On hit: Grappled (max 1).
+Winged. Gain a flying Speed. Forced movement moves
+you twice as far while flying.
+Be Wild. Whenever you spend a day with wild animals during a Safe Rest, you may
+choose different Stormshifter options available to you.
+
+7
+
+SUBCLASSES
+
+— CIRCLE OF —
+
+SKY & STORM
+Attune to the skies above, vast and endless in their reach.
+Wield the oncoming storm, endless in its intensity.
+Subclass Complexity:
+
+[f][f][f][e]
+
+LEVEL 3
+
+Deepening Study. Choose the Ice or Radiant school to learn.
+Creature of the Fey. You may cast spells while Beastshifted.
+
+Attuned to Nature. (WIL/Safe Rest) Add LVL to any skill check related to
+nature or weather.
+
+LEVEL 7
+
+Raging Tempest. Whenever you crit with a spell, you may cast a cantrip
+for free from a school you haven’t cast any spells from this turn.
+
+LEVEL 11
+
+Primordial Force. (1/round) Your tiered spells grant an additional effect:
+• Ice. Gain WIL temp HP.
+• Lightning. Deal additional WIL damage.
+• Radiant. (Reach 6) Heal a creature WIL HP.
+• Wind. Fly up to 6 spaces for free.
+
+LEVEL 15 Master of Storm. You can concentrate on 1 lightning spell and 1 wind
+
+spell at the same time. (1/encounter) When you would cast a tiered spell,
+it costs 1 fewer action and 3 fewer mana.
+
+8
+
+ARTIST: NGUYEN HEIU
+
+9
+
+FAQ
+
+SUBCLASSES
+
+— CIRCLE OF —
+
+FANG & CLAW
+Channel primal forces to transform faster and fiercer than before.
+Embody the ferocity of the wilds, and unleash it on nearby foes.
+Subclass Complexity:
+
+[f][f][f][e]
+
+LEVEL 3
+
+Swiftshift. Whenever you roll Initiative, you may Beastshift for free. (1/turn)
+You can Beastshift between Direbeast forms for 0 actions (this still costs a
+Direbeast form charge).
+Unleash the Beast. Gore also Taunts until the end of the target’s next turn.
+Frenzy increases to 1d8+LVL damage.
+
+LEVEL 7
+
+Windborne Protector. Double the WIL Defense and temp HP bonuses from
+Fearsome Beast form. (1/encounter) You may Interpose from Reach 12.
+Stormstrider. Double the DEX movement and Speed bonuses from Beast of
+the Pack. When you move as a Beast of the Pack, you may teleport instead.
+
+LEVEL 11
+
+Master of Forms. (1/encounter) When you would miss or crit while in a
+Direbeast form, you may increase or decrease the Primary Die by 1 instead.
+
+LEVEL 15 Chimeric Sovereign. You know all Chimeric Boons, your Direbeast forms
+
+can have 2 at a time.
+
+10
+
+Does shifting into a harmless beast have a time limit or take a charge? No.
+Can I cast spells while shifted? Yes. But it ends the form (unless you have a special ability
+that allows you to maintain it).
+When shifting between one Direbeast Form and another, do I keep the temp HP and
+Frenzy bonuses? Yes, though they end when combat does if unspent. The other passive effects
+(e.g., extra Defense or movement) are not maintained.
+Can I build up advantage with Frenzy then cast a spell with it? Yes. Have fun!
+Does the temp HP from Fearsome Beast and Gore stack? No. Temp HP do not stack.
+Can I Beastshift while Dying? Yes. Although dropping to 0 HP ends any currently active
+forms, you can shift again while Dying.
+
+STORMSHIFTER NAMES
+Male Names
+• Ash
+• Silas
+• Merle
+• Elwood
+• Mordecai
+• Wolf
+• Thorne
+
+Female Names
+• Willow
+• Hazel
+• Juniper
+• Cordelia
+• Wren
+• Pipit
+• Starling
+11
+
+STORMSHIFTER
+
+QUICK BUILDS
+Willow
++0
+
+-1
+
+Elf, Stormshifter
+
++2
+
+-1
+
+-1
+
++2
+
+1
+
+5
++2
+
+-1
+
+Master of Storms. You know Lightning & Wind cantrips.
+Beastshift. Action: Transform into a harmless beast, OR Fearsome
+Beast DEX times/encounter (for up to 1 min).
+Lithe (Elf). Advantage on Initiative, +1 Speed.
+
+Willow
++0
+
+-1
+
+Elf, Stormshifter
+
++2
+
+-1
+
+-1
+
++2
+
+d8
+
+6
+
++0
+
++5
+
++2
+
++3
+
+Cheap Hides. (3+DEX) Defense.
+Staff. (1d8+STR) Bludgeoning.
+Strange Plant.
+
+7
+
+Medium
+
+18
+5
++2
+
+-1
+
+Master of Storms. You know Lightning & Wind spells up to tier 1.
+Beastshift. Action: Transform into a harmless beast; OR Fearsome
+Beast/Beast of the Pack DEX times/encounter (for up to 1 min).
+Lithe (Elf). Advantage on Initiative, +1 Speed.
+
+12
+
++2
+
+Advantage
+
+2
+
++2
+
++1
+
+Medium
+
+13
+
++2
+
++2
+
+7
+
+Mana
+
+Advantage
+
++2
+
+d8
+
+6
+
++0
+
++6
+
++2
+
++4
+
+8
+
+Cheap Hides. (3+DEX) Defense.
+Staff. (1d8+STR) Bludgeoning.
+Strange Plant.
+
+

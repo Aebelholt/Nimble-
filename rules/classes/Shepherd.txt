@@ -1,0 +1,512 @@
+SHEPHERD
+Game Design and Art Direction: Evan Diaz.
+Subclass Design Contributors: Victor Öljevy,
+Isaac Hall, Emma Margeson.
+Artist Credits: Jason Kiantoro, Nguyen Heiu,
+Vladimir Matyukhin, Justine Florentino, Anna
+Giovannini, Evan Diaz.
+
+Cover Art: Jason Kiantoro.
+Nimble Heroes: Shepherd
+Designed in the USA, Printed in China.
+Copyright © 2026 Nimble Co. All rights reserved.
+www.nimbleRPG.com
+
+Nimble 3rd Party Creator License v2.0
+This license is perpetual and irrevocable except upon violation.
+
+Terms. You may use and reference ANY published Nimble text (current
+or future) in your own original products based on or compatible with
+Nimble (e.g., adventures, classes, subclasses, monsters, supplements)
+without Nimble Co.’s prior approval and retain all profits.
+
+• Copying, restating, or summarizing large portions of text with little
+added content does not qualify as an original product.
+• You may NOT use the Nimble art or logo—but may use a Nimble
+compatibility logo (nimbleRPG.com/creators). Your product must not
+appear to be an official Nimble product or endorsed by Nimble Co.
+
+Required Attribution. Include in your product:
+[Product Name] is an independent product published under the
+Nimble 3rd Party Creator License. Nimble TTRPG © Nimble Co.
+
+Online Apps and VTTs. For free online tools/wikis/apps/VTT implementations (app), you may use any and all published Nimble text, provided the app is completely free to use (optional donations to defray
+development/hosting costs permitted) and you include this notice
+prominently (a banner, sidebar, welcome message, etc.):
+
+This [app/tool/etc.] is free to use for anyone who already owns the
+content, is trying the system out, or cannot afford to buy it right now.
+If you enjoy Nimble and are able, please support the game by purchasing the official content at nimbleRPG.com.
+Restrictions and Rights Reserved. We are not liable for claims
+related to your product, and you will not bring legal claims against us.
+Unless explicitly stated, this license does not grant copyright, moral,
+publicity, privacy, patent, or trademark rights. All other rights are
+reserved by Nimble Co. Nimble is provided AS-IS without warranties.
+
+Legal Terms. You agree to indemnify Nimble Co. and its affiliates
+from any claims or liabilities arising from your use of this license, mutually where applicable, as permitted by law. This license may be terminated if you violate its terms; upon termination, cease distribution until
+resolved. Governed by Florida law. Disputes resolved in U.S. District
+Court for the Middle District of Florida or state courts in Orange County,
+Florida. Unenforceable provisions reformed or severed without affecting the rest. Does not waive Nimble Co.’s legal privileges.
+
+This work includes material taken from the System Reference Document 5.1 (“SRD 5.1”) by Wizards of the Coast LLC and available at https://
+dnd.wizards.com/resources/systems-reference-document. The SRD 5.1 is licensed under the Creative Commons Attribution 4.0 International
+License available at https://creativecommons.org/licenses/by/4.0/legalcode.
+
+1
+
+SHEPHERD
+
+LET ALL WHO ARE
+AFFLICTED DRAW NEAR
+hou shalt revere the gifts of life and death, neither of which is ever
+given or taken. Rather, we are all merely journeying from this
+realm and that of the beyond. But alas, often do these wandering
+souls find themselves bereft of guidance.
+
+T
+
+Thus falls upon the Shepherd the solemn duty—to be a beacon of light to
+those ensnared in darkness, and darkness to those who, in hubris, deem
+themselves to be the light. For many, the journey of service is a difficult
+path—yet, in this task we are not solitary. Our Lifebinding Spirits, the
+steadfast companions of our faith, are bound beside us, comforting and
+aiding us in the stewardship we’ve been given.
+
+Summon a faithful companion to your side to provide
+invaluable support in battle.
+
+Embrace the balance of life and
+death, bolster allies with healing spells and boons.
+
+Smite foes with radiant fury
+or wither enemies with dark
+necrotic power.
+
+A flexible pet-based support class that can dole out
+healing and harm with equal mastery.
+Class complexity:
+
+[f][f][e][e]
+
+2
+
+ARTIST: JASON KIANTORO
+
+3
+
+LEVEL 6
+
+Tier 3 Spells. You may now cast spells up to tier 3.
+Master of Twilight (2). Choose a 2nd Necrotic and a 2nd Radiant
+Utility Spell.
+
+LEVEL 7
+
+Subclass. Gain your Shepherd subclass feature.
+
+LEVEL 8
+
+Tier 4 Spells. You may now cast spells up to tier 4.
+Key Stat Increase. +1 WIL or STR.
+
+LEVEL 9
+
+Sacred Grace (2). Choose a 2nd Sacred Grace.
+Secondary Stat Increase. +1 INT or DEX.
+
+LEVEL 10 Tier 5 Spells. You may now cast spells up to tier 5.
+
+Upgraded Cantrips. Your cantrips grow stronger.
+
+SHEPHERD
+Key Stats: WIL, STR Hit Die: 1d10 Starting HP: 17
+Saves: WIL+, DEX– Armor: Mail Armor, Shields Weapons: STR Weapons, Wands
+Starting Gear: Rusty Mail, Mace, Wooden Buckler, Bell
+
+LEVEL 11
+
+Subclass. Gain your Shepherd subclass feature.
+Master of Twilight (3). You know all Necrotic and Radiant Utility
+Spells.
+
+LEVEL 12 Tier 6 Spells. You may now cast spells up to tier 6.
+
+Key Stat Increase. +1 WIL or STR.
+
+LEVEL 13 Sacred Grace (3). Choose a 3rd Sacred Grace.
+
+Secondary Stat Increase. +1 INT or DEX.
+
+LEVEL 1
+
+Keeper of Life & Death. You know the Radiant & Necrotic cantrips.
+My Buddy! Learn the Lifebinding Spirit cantrip.
+
+LEVEL 2
+
+Mana and Unlock Tier 1 Spells. You unlock tier 1 Radiant & Necrotic spells and
+gain a mana pool to cast them. This mana pool’s max is always equal to (WIL×3)+LVL
+and recharges on a Safe Rest.
+
+LEVEL 3
+
+Subclass. Choose a Shepherd subclass.
+Master of Twilight. Choose 1 Necrotic and 1 Radiant Utility Spell.
+
+LEVEL 4
+
+Sacred Grace. Choose 1 Sacred Grace.
+Tier 2 Spells. You may now cast spells up to tier 2.
+Key Stat Increase. +1 WIL or STR.
+
+LEVEL 5
+
+Assist Me, My Friend! Instead of your spirit attacking this round, you may add its
+damage to one of your melee weapon attacks.
+Secondary Stat Increase. +1 INT or DEX.
+Upgraded Cantrips. Your cantrips grow stronger.
+
+Serve. After spending a day tending to a sacred place or serving others during a Safe Rest, you may choose
+different Shepherd options available to you.
+
+4
+
+LEVEL 14 Tier 7 Spells. You may now cast spells up to tier 7.
+LEVEL 15 Subclass. Gain your Shepherd subclass feature.
+
+Upgraded Cantrips. Your cantrips grow stronger.
+
+LEVEL 16 Tier 8 Spells. You may now cast spells up to tier 8.
+
+Key Stat Increase. +1 WIL or STR.
+
+LEVEL 17 Revitalizing Blessing. (1/round) Whenever you roll a 6+ on
+
+one or more healing dice, the target may recover one Wound.
+Secondary Stat Increase. +1 INT or DEX.
+
+LEVEL 18 Tier 9 Spells. You may now cast spells up to tier 9.
+LEVEL 19 Epic Boon. Choose an Epic Boon (see pg. 75 of the GM’s Guide).
+LEVEL 20 Twilight Sage. +1 to any 2 of your stats. Your Lifebinding Spirit
+
+rolls twice as many dice.
+Upgraded Cantrips. Your cantrips grow stronger.
+
+5
+
+SACRED GRACES
+Dark Benediction
+
+Passive
+
+Empowered Companion
+
+Passive
+
+Guiding Spirit
+
+Passive
+
+Hasty Companion
+
+Passive
+
+Illuminate Soul 
+
+Passive
+
+Light Bearer
+
+Passive
+
+Your Lifebinding Spirit can now cast Entice and Withering Touch.
+
+LIFEBINDING
+SPIRIT
+
+Your Lifebinding Spirit gains +STR damage vs Undead and +WIL healing.
+
+Whenever your Lifebinding Spirit rolls a 6+ on its damage die, the next attack
+against that target has advantage.
+
++4 Reach for your Lifebinding Spirit. It can also act for free when summoned.
+
+Whenever you Mend a creature, make them glow with radiant light for 1 round.
+Attacks against them are disadvantaged and attacks they make are advantaged.
+
+Your Lifebinding Spirit can cast Heal. Whenever you roll Initiative, regain 1 use
+of Mend (it expires when combat ends if unused).
+
+Not Beyond MY Reach
+
+Passive
+
+You may heal creatures that have been dead for less than 1 round. For every 10
+HP a dead creature is healed this way, you may have them recover 1 Wound
+instead (you must heal at least 1 Wound to revive them).
+
+Vengeful Spirit 
+
+1 Action
+
+(AoE Reach 2) Your Lifebinding Spirit sacrifices itself to deal its Harm damage
+to all enemies within Reach.
+
+6
+
+SHEPHERD ONLY, CANTRIP
+
+Lifebinding Spirit 
+
+1 Action
+
+Summon a spirit companion (max 1) that follows you and is immune to harm. It can act upon
+a target within Reach 4 of you before returning to your side. It can:
+• Harm. 1 Action: It attacks for 1d8+STR radiant damage (ignoring Armor).
+• Mend. 1 Action: (WIL/Safe Rest) It restores WIL d20 HP to a Dying creature.
+High Levels: +STR damage every 5 levels.
+Flavor is Free. Your Lifebinding Spirit can take the form of any Small/Tiny friendly creature (dog,
+lamb, rabbit, sparrow, etc.). Give your little buddy a name, too! Outside of combat, your companion
+is a spirit, so it can pass through walls and dangers harmlessly and briefly move away from you (but
+always prefers to be faithfully at your side). It cannot speak.
+Rushed Attacks and My Companion? You and your companion use the same action pool, but
+count as different creatures. So you can each attack once without the Rushed Attack penalty every
+round. Teamwork!
+
+ARTIST: NGUYEN HEIU
+
+7
+
+SUBCLASSES
+
+— LUMINARY OF —
+
+MALICE
+With death as your companion, you can unleash dark powers on your foes.
+Subclass Complexity:
+
+[f][f][e][e]
+
+LEVEL 3
+
+Soul Reaper. (1/round) Your companion’s attacks can target a 2nd adjacent enemy.
+Harbinger of Decay. Vibrant colors and lovely smells are suppressed near you. Foods
+spoil more rapidly in your presence, and you frequently awaken to flies wherever you
+lodge. You may have your Lifebinding Spirit shift into a deathly version of itself (a zombie
+dog, a devious imp, etc.) and have its damage type become necrotic.
+
+LEVEL 7
+
+Veilwalker’s Blessing. (1/Safe Rest) Reaction (when you would drop to 0 HP): Drop
+to 1 HP instead and your Lifebinding Spirit crits the attacker back.
+
+LEVEL 11
+
+Deathbringer’s Touch. Your Lifebinding Spirit and Withering Touch crit on 1 as well.
+
+LEVEL 15 Conduit of Death. Your Veilwalker’s Blessing ability recharges when you roll Initiative.
+
+8
+
+ARTIST: VLADIMIR MATYUKHIN
+
+9
+
+FAQ
+
+Does my companion have its own HP and actions? No. It has no
+HP of its own HP and acts only when directed by you.
+
+SUBCLASSES
+
+— LUMINARY OF —
+
+MERCY
+Save the dying, wield the light, embody your virtue.
+Your compassion makes you a worthy vessel for radiant energy.
+Subclass Complexity:
+
+Do I have to summon my companion every encounter? No. Once
+summoned, it remains faithfully by your side untill dismissed.
+Can enemies attack my companion? Does it take up space? No.
+Rushed Attacks and My Companion? You and your companion use
+the same action pool, but count as different creatures. So you can each
+attack once without Rushed Attacks every round. Teamwork!
+Can my hero miss on purpose to trigger Deathbringer’s Touch?
+No. A hero does not try to miss on purpose.
+
+[f][f][e][e]
+
+LEVEL 3
+
+Merciful Healing. You can use Mend on non-Dying creatures. While you are Dying, your
+Lifebinding Spirit can act 1/round without spending an action.
+Life is Beautiful. Harmless and lovely creatures such as butterflies and hummingbirds are
+attracted to your presence and often follow you. Flowers bloom more vibrantly in your presence.
+
+LEVEL 7
+
+Searing Light. 1 Action: (Reach 6) Whenever you heal HP, you may expend 1 use of Mend
+to damage another target for the amount of HP recovered.
+
+LEVEL 11
+
+Powerful Healer. (WIL/Safe Rest) Whenever you would heal HP, you may instead give that
+many temp HP, OR heal the max amount you could roll.
+
+LEVEL 15 Lifebinder’s Embrace. Your Mend may heal 1 additional creature. Regain 1 charge of Mend
+
+when you roll Initiative (this expires if unspent at the end of combat).
+
+10
+
+SHEPHERD NAMES
+Male Names
+• Gideon
+• Edmund
+• Rupert
+• Ambrose
+• Orin
+• Bastian
+• Alden
+
+Female Names
+• Hazel
+• Grace
+• Faith
+• Charity
+• Hope
+• Glimmer
+• Twine
+
+ARTIST: ANNA GIOVANNINI
+
+11
+
+SHEPHERD
+
+QUICK BUILDS
+Grace
+
+Human, Shepherd
+
++2
+
++0
+
+-1
+
++2
+
++0
+
++0
+
++1
+
++5
+
+1
+
++2
+
+8
++4
+
++0
+
++0
+
+Human, Shepherd
+
++0
+
++1
+
+-1
+
++1
+
+d10
+
+6
+
++3
+
++4
+
++1
+
+Mace. (1d6+2).
+Rusty Mail. 6+DEX Defense.
+Wooden Buckler. +2 Defense.
+Bell.
+
+6
+
+Medium
+
+24
+8
++5
+
++0
+
+Radiant and Necrotic Cantrips & tier 1 spells. 8 mana.
+Lifebinding Spirit. 1 Action: Summon a buddy!
+• Harm. 1 Action: (Reach 4) attack for 1d8+2 (ignoring Armor).
+• Mend. 1 Action: (2/Safe Rest, Reach 4) restore 2d20 HP to a
+Dying creature.
+Tenacious (Human). +1 to all skills and Initiative.
+12
+
++3
+
++1
+
+2
+
++2
+
++5
+
+Medium
+
+17
+
+Radiant and Necrotic Cantrips.
+Lifebinding Spirit. 1 Action: Summon a buddy!
+• Harm. 1 Action: (Reach 4) attack for 1d8+2 (ignoring Armor).
+• Mend. 1 Action: (2/Safe Rest, Reach 4) restore 2d20 HP to a
+Dying creature.
+Tenacious (Human). +1 to all skills and Initiative.
+
+Grace
+
+6
+
+8
+
++1
+
+d10
+
+6
+
++3
+
++2
+
++4
+
++1
+
+Mana
+
+Mace. (1d6+2).
+Rusty Mail. 6+DEX Defense.
+Wooden Buckler. +2 Defense.
+Bell.
+
+

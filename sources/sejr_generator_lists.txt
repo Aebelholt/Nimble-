@@ -1,0 +1,1191 @@
+// ==========================================
+// SEJR EPISODE GENERATOR (fork of the Shadowdark map generator)
+// Paste into the LEFT (lists) panel on Perchance.
+// ==========================================
+
+output
+  [episode()]
+
+// ---------- HELPERS ----------
+
+d(n) =>
+  return Math.floor(Math.random() * n) + 1;
+
+num(id, fallback) =>
+  let el = document.getElementById(id);
+  let v = el ? parseInt(el.value) : NaN;
+  return isNaN(v) ? fallback : v;
+
+sec(title, body) =>
+  return '<section class="sec"><h2>' + title + '</h2>' + body + '</section>';
+
+// ---------- EPISODE ----------
+
+episode() =>
+  let renown = num("renownInput", 0);
+  let lvl = num("levelInput", 1);
+  let cap = Math.max(0, Math.min(renown, lvl));
+  window.sejrTier = cap <= 3 ? 1 : (cap <= 7 ? 2 : 3);
+  window.sejrRival = false;
+  let sel = document.getElementById("dirInput");
+  let dir = sel ? sel.value : "Roll";
+  let dirNote = "";
+  if (dir === "Roll") { let r = d(6); dir = r <= 3 ? "City" : "Arch"; dirNote = " (rolled " + r + ")"; }
+  let danger = ["unsafe", "risky", "deadly"][window.sejrTier - 1];
+  let head = "";
+  let rooms = 3;
+  if (dir === "City") {
+    let r = d(6);
+    let t = r + cap;
+    head += "<p><b>City.</b> Stage " + r + " + " + cap + " = " + t + ": <b>" + stage_text(t) + "</b></p>";
+    head += "<p><b>Cost:</b> Neglect ticks on " + neglect_place.evaluateItem + ".</p>";
+    rooms = d(2) === 1 ? 3 : 4;
+    if (t >= 13) { head += "<p>The job leads through an arch, to " + far_side.evaluateItem + ".</p>"; }
+  } else {
+    let size = site_size.evaluateItem;
+    let type = site_type.evaluateItem;
+    head += "<p><b>Arch.</b> Patron: " + patron.evaluateItem + ".</p>";
+    head += "<p><b>Debt:</b> " + debt.evaluateItem + ".</p>";
+    head += "<p><b>Far side:</b> " + far_side.evaluateItem + ". " + size + " " + type.toLowerCase() + ", " + danger + ".</p>";
+    rooms = size === "Small" ? 3 : (size === "Medium" ? 4 : 5);
+  }
+  let hook = detail1.evaluateItem + " " + detail2.evaluateItem.toLowerCase();
+  let h = sec("Direction" + dirNote, head);
+  h += sec("Hook", "<p class='hook'>" + hook + ", but " + but_table.evaluateItem + ".</p>");
+  let map = "<ol>";
+  for (let i = 0; i < rooms; i++) { map += "<li>" + room(cap) + "</li>"; }
+  map += "</ol>";
+  h += sec("Map, " + rooms + " areas", map);
+  let sc = "<ol class='scenes'>";
+  for (let s = 1; s <= 4; s++) { let r = d(6) + s; sc += "<li><span class='roll'>" + r + "</span> " + butplus(r) + "</li>"; }
+  sc += "</ol>";
+  h += sec("But+ at each scene change", sc);
+  h += sec("Rumor for the thread board", "<p>" + rumor.evaluateItem + ".</p>");
+  h += sec("Returning hero", "<p>" + beard.evaluateItem + ".</p>");
+  h += "<p class='close'>Close: one thread closes, one opens. Renown +1, capped at average level. Absent players tick an arcana ritual. Neglect advances for skipped places.</p>";
+  return h;
+
+stage_text(t) =>
+  let s = ["", "Market Square festival, comedy and heist", "Villas of the Second Rise, noir and intrigue", "Public Baths and the Falls of the Three Gods, rumor and romance", "Cliffs of the Dead, ghost story", "Theater of Whispers, masks and secrets", "Arch of Kings, arrivals and the weird"];
+  if (t <= 6) return s[t];
+  if (t <= 8) return "the Lower Reaches, crime and the Black Hand";
+  if (t <= 10) return "the Lost Cisterns, flood horror";
+  if (t <= 12) return "Sunken Revvia, dread";
+  return "through an arch, genre set by the key";
+
+room(cap) =>
+  let r = Math.min(10, d(10) + Math.floor(cap / 3));
+  let lists = [room_1, room_2, room_3, room_4, room_5, room_6, room_7, room_8, room_9, room_10];
+  return lists[r - 1].evaluateItem;
+
+butplus(r) =>
+  if (r <= 2) return "<b>Foreshadow:</b> " + foreshadow.evaluateItem + ".";
+  if (r === 3) return "<b>Faction:</b> " + faction_encounter();
+  if (r === 4) return "<b>Monster:</b> " + (d(2) === 1 ? solo_adj.evaluateItem + " " + solo_noun.evaluateItem.toLowerCase() : mob_adj.evaluateItem + " " + mob_noun.evaluateItem.toLowerCase()) + ", native to the Stage.";
+  if (r === 5) return "<b>Twist:</b> " + but_table.evaluateItem + ".";
+  if (r === 6) return "<b>Dusk:</b> light, clock and exits all tighten.";
+  return "<b>Dark:</b> the scenario turns, and whatever was coming arrives.";
+
+faction_encounter() =>
+  let f = faction.evaluateItem;
+  if (f === "Local band") { f = "a local band of " + mob_adj.evaluateItem.toLowerCase() + " " + band_kind.evaluateItem; }
+  return f + ", who want " + faction_want.evaluateItem + ". Add to the tracker.";
+
+hero() =>
+  let cls = hero_class.evaluateItem;
+  let keys = ["Human", "Elf", "Dwarf", "Halfling", "Half-orc", "Goblin"];
+  let nm = npc_name[keys[d(6) - 1]].evaluateItem + ' "' + npc_nickname.evaluateItem + '"';
+  let ev = (label, list) => "<p><b>" + label + ":</b> " + list.evaluateItem + " <span class='rel'>Tie: " + relationship.evaluateItem + ", " + npc_name[keys[d(6) - 1]].evaluateItem + ".</span></p>";
+  let arc = d(6) <= 4 ? "the " + cls + " class arcanum" : other_arcanum.evaluateItem;
+  let b = "<p class='hook'>" + nm + ", " + hero_ancestry.evaluateItem + " " + cls + "</p>";
+  let key = { Berserker:["STR","DEX"], Cheat:["DEX","INT"], Commander:["STR","INT"], Hunter:["DEX","WIL"], Mage:["INT","WIL"], Oathsworn:["STR","WIL"], Shadowmancer:["INT","DEX"], Shepherd:["WIL","STR"], Songweaver:["WIL","INT"], Stormshifter:["WIL","DEX"], Zephyr:["DEX","STR"] }[cls];
+  let t1 = trait.evaluateItem;
+  let t2 = t1;
+  let g = 0;
+  while (t2 === t1 && g < 30) { t2 = trait.evaluateItem; g++; }
+  b += "<p><b>Stats:</b> " + stat_array.evaluateItem + ", highest in " + key[0] + " and " + key[1] + ".</p>";
+  b += "<p><b>Gifted:</b> " + key[0] + ", " + stat_word[key[0]].evaluateItem + "; " + key[1] + ", " + stat_word[key[1]].evaluateItem + ". <b>Traits:</b> " + t1 + ", " + t2.toLowerCase() + ".</p>";
+  b += ev("Origin", life_origin);
+  b += ev("Youth", life_youth);
+  b += ev("Recent", life_recent);
+  b += "<p><b>Arcanum:</b> " + arc + ", unexamined.</p>";
+  b += "<p><b>Holding:</b> " + holding_place.evaluateItem + ", " + holding_quirk.evaluateItem + ".</p>";
+  b += "<p><b>Look:</b> " + npc_appearance.evaluateItem.toLowerCase() + ". <b>Habit:</b> " + npc_does.evaluateItem.toLowerCase() + ".</p>";
+  b += "<p><b>Mark:</b> " + faction_mark.evaluateItem + ".</p>";
+  b += "<p><b>Secret:</b> " + npc_secret.evaluateItem.toLowerCase() + ".</p>";
+  b += "<p class='close'>Invoke a gift or trait in a dramatic moment for advantage, once per episode, your GM's call. Take disadvantage from a trait instead and tick your arcana ritual. Pick one skill from each life event. Take a specialty in two of them, plus INT extra. Ties are optional: keep the ones you want as threads. Level 1, or average group level. Then roll the first gig.</p>";
+  return sec("New hero", b);
+
+trap_damage() =>
+  let t = window.sejrTier || 1;
+  return [trap_damage_low, trap_damage_mid, trap_damage_high][t - 1].evaluateItem;
+
+rival_check() =>
+  if (!window.sejrRival) { window.sejrRival = true; return "<b>Rival crew:</b> " + rival_party_box.evaluateItem; }
+  return standard_npc_fallback.evaluateItem;
+
+// ---------- DIRECTION TABLES ----------
+
+patron
+  Garland Willowmane, High Archkeeper
+  Roselyn Zeshe, the Queen's Spymaster
+  a Black Hand fixer from the Lower Reaches
+  a Golden Council member with a private key
+  a mage of Kartan, Tower of the Arcane
+  a priest from the Temple of the Three Sisters
+
+debt
+  a favor, called in mid-episode
+  bring something back, unopened
+  leave the far door unlocked
+  half the loot
+  forget a name you hear on the other side
+  the key returns by dark, or the patron comes for it
+
+far_side
+  a village feud over a cursed well
+  a caravan stop where water costs more than gold
+  a shrine nobody tends anymore
+  a mining camp that dug too deep
+  a hermit's valley with too many hermits
+  a drowned chapel at low tide
+  a market that only opens at dusk
+  a hill fort waiting for a siege that never came
+  a salt flat with a single standing door
+  an orchard where the fruit whispers
+
+neglect_place
+  the Revlend Marshes
+  the Doorish Hills
+  the Deadlands
+  the Borderlands
+  the Lower Reaches
+  a district nobody has visited this month
+
+danger_level
+  Unsafe ^3
+  Risky ^2
+  Deadly ^1
+
+site_size
+  Small ^2
+  Medium ^3
+  Large ^1
+
+site_type
+  Cave ^2
+  Tomb ^1
+  Deep tunnels ^1
+  Ruins ^2
+
+// ---------- HOOK TABLES ----------
+
+but_table
+  wrong target
+  the goal flips to its opposite
+  the patron is the threat
+  the place shifts genre
+  an arch or key intervenes
+  the clock hits early
+
+detail1
+  Rescue the
+  Find the
+  Destroy the
+  Infiltrate the
+  Bypass the
+  Return the
+  Defeat the
+  Spy on the
+  Bribe the
+  Deliver the
+  Escape the
+  Imprison the
+  Stop the
+  Befriend the
+  Pacify the
+  Persuade the
+  Steal the
+  Escort the
+  Banish the
+  Free the
+
+detail2
+  Goblet
+  Prisoner
+  Sword
+  Vault
+  Cult
+  Spirit
+  Killer
+  Demon
+  Noble
+  Hunter
+  Hostage
+  Thief
+  Spy
+  Werewolf
+  Relic
+  High priest
+  Merchant
+  Witch
+  Ritual
+  Vampire
+
+// ---------- BUT+ TABLES ----------
+
+foreshadow
+  tracks that match no beast
+  a smell, sweet and wrong
+  a sound from where nothing should be
+  a warning scrawled on a wall
+  a fresh body, already looted
+  a frightened local who won't say why
+
+faction
+  the Black Hand
+  the Children of Ibraxus
+  the Golden Knights
+  the Archkeepers
+  the Mages of Kartan
+  Local band
+
+band_kind
+  goblins
+  kobolds
+  cultists
+  ratfolk
+  smugglers
+  ghouls
+
+faction_want
+  food and safe passage
+  a lost relic back
+  revenge for an old wrong
+  a way home through an arch
+  a god's favor, at any price
+  the heroes on their side
+
+// ---------- RUMORS (thread board, beard result 4) ----------
+
+rumor
+  A dormant arch in Sunset Grove hums at the same hour every night
+  Bathers at the Public Baths swear something moves under the water
+  A Golden Knight patrol went into the Lower Reaches and came back one short
+  Fishers from the Revlend Marshes are selling fish with eyes on both sides
+  The Theater of Whispers is staging a play nobody remembers writing
+  Someone leaves fresh flowers at a sealed crypt on the Cliffs of the Dead
+  A child in Market Square sells maps that are always right, once
+  Water in the Lost Cisterns runs uphill near the old pump
+  A village in the Doorish Hills stopped sending grain to the trade festival
+  Caravans from the Deadlands arrive with one more traveler than they left with
+  A new arrival through the Arch of Kings speaks only in questions
+  Tenants at Korvela's Edge Apartments hear knocking from inside the walls
+  Sevenge and Gam's Public House took coins nobody can identify
+  A Borderlands warlord is hiring guides who know the old tunnels
+  The Falls of the Three Gods ran red for an hour, then stopped
+  Goblin spelunkers found stairs going down under the Lower Reaches
+
+beard
+  A new scar, and the story behind it
+  A debt to a patron who now wants something
+  A contact met on a solo gig
+  A rumor from a place no one visited, so reveal one Neglect clock
+  The holding changed while they were gone
+  The arcana stirred, so reveal one unexamined trait
+
+// ---------- CHARGEN ----------
+
+hero_class
+  Berserker
+  Cheat
+  Commander
+  Hunter
+  Mage
+  Oathsworn
+  Shadowmancer
+  Shepherd
+  Songweaver
+  Stormshifter
+  Zephyr
+
+hero_ancestry
+  Human ^3
+  Dwarf ^3
+  Elf ^3
+  Halfling ^3
+  Gnome ^3
+  Bunbun
+  Dragonborn
+  Fiendkin
+  Goblin
+  Kobold
+  Orc
+  Birdfolk
+  Celestial
+  Changeling
+  Crystalborn
+  Dryad
+  Shroomling
+  Half-Giant
+  Minotaur
+  Beastfolk
+  Oozeling
+  Construct
+  Planarbeing
+  Ratfolk
+  Stoatling
+  Turtlefolk
+  Wyrdling
+
+stat_word
+  STR
+    Strong
+    Big
+    Brutish
+    Powerful
+    Muscled
+    Tough
+    Hardy
+    Enduring
+    Weathered
+    Rugged
+  DEX
+    Fast
+    Nimble
+    Quick
+    Dexterous
+    Agile
+  INT
+    Smart
+    Studied
+    Well-read
+    Astute
+    Cunning
+  WIL
+    Wise
+    Perceptive
+    Discerning
+    Prudent
+    Steady
+    Charismatic
+    Magnetic
+    Alluring
+    Affable
+    Natural leader
+
+trait
+  Generous
+  Cold
+  Calm
+  Wary
+  Dutiful
+  Sly
+  Curious
+  Proud
+  Stubborn
+  Loyal
+  Reckless
+  Superstitious
+  Vain
+  Gentle
+  Bitter
+  Greedy
+  Devout
+  Restless
+  Honest
+  Jealous
+
+stat_array
+  Standard (+2, +2, +0, -1)
+  Balanced (+2, +1, +1, +0)
+  Min-Max (+3, +1, -1, -1)
+
+// Extend with your own arcana; class arcana are rolled 4 in 6.
+other_arcanum
+  The Forgotten Key (minor arcanum)
+  The Drowning Scale (minor arcanum)
+
+holding_place
+  a rented room at Korvela's Edge Apartments
+  a stall in Market Square
+  a back room at Sevenge and Gam's Public House
+  a boathouse below the Falls of the Three Gods
+  a keeper's lodge on the Cliffs of the Dead
+  a cellar with a door into the Lower Reaches
+  a shed in Sunset Grove
+  a loft near Vathrex's Forge
+
+holding_quirk
+  it leaks when it rains
+  the neighbor owes you a favor
+  there's a dormant arch in the cellar
+  the landlord answers to the Black Hand
+  it belonged to someone else last week
+  a ghost pays half the rent
+
+faction_mark
+  [faction_mark_single]
+  [faction_mark_single]
+  [faction_mark_single]
+  [faction_mark_single]
+  [faction_mark_single]
+  [faction_mark_single]
+  [faction_mark_single]
+  [faction_mark_single]
+  [faction_mark_single]
+  [faction_mark_single], and also [faction_mark_single.lowerCase]
+
+faction_mark_single
+  Golden Order brand, a sun burned on the forearm
+  Children of Ibraxus glyph, a spiral rune, faintly warm
+  Archkeeper token, a broken arch-shaped coin on a cord
+  Nameless King mark, an old symbol no one agrees on
+  Black Hand brand, an ink-black handprint on the neck
+  Mages of Kartan seal, wax pressed into the skin, still active
+  Revvian relic, jewelry from Sunken Revvia worn as a trophy
+  Deadlands dust, white ash rubbed in ritual patterns
+  Unknown, a symbol no one at the table recognizes
+
+a5e_skill
+  Acrobatics
+  AnimalHandling
+  Arcana
+  Athletics
+  Culture
+  Deception
+  Engineering
+  History
+  Insight
+  Intimidation
+  Investigation
+  Medicine
+  Nature
+  Perception
+  Performance
+  Persuasion
+  Religion
+  SleightOfHand
+  Stealth
+  Survival
+
+a5e_spec
+  Acrobatics
+    balancing
+    escape artistry
+    swinging
+    tumbling
+  AnimalHandling
+    calming
+    driving
+    farming
+    riding
+    training
+  Arcana
+    aberrations
+    constructs
+    detection
+    dragons
+    elementals
+    fey
+    forbidden knowledge
+    monstrosities
+    oozes
+    the planes
+  Athletics
+    climbing
+    jumping
+    lifting
+    running
+    swimming
+    throwing
+  Culture
+    etiquette
+    laws
+    linguistics
+    regional goods
+    streetwise
+    courtly manners
+    trade
+  Deception
+    boasting
+    ciphers
+    concealing emotions
+    mimicry
+  Engineering
+    architecture
+    chemistry
+    explosives
+    gadgetry
+    mathematics
+    mechanical traps
+    siegecraft
+  History
+    arts
+    empires
+    genealogy
+    legends
+    wars
+  Insight
+    detecting lies
+    reading emotions
+    sensing motives
+  Intimidation
+    authority
+    ferocity
+    interrogation
+    subtle threats
+    weapon displays
+  Investigation
+    appraisal
+    deciphering
+    forensics
+    gathering rumors
+    research
+    trapfinding
+  Medicine
+    animals
+    autopsy
+    diseases
+    herbalism
+    poisons
+  Nature
+    astronomy
+    beast lore
+    farming
+    fey
+    plant lore
+    weather
+  Perception
+    farsight
+    invisible objects
+    listening
+    scent
+  Performance
+    acting
+    composing
+    dancing
+    fine art
+    singing
+    speaking
+    writing
+  Persuasion
+    bribery
+    flattery
+    leadership
+    negotiation
+    peacemaking
+  Religion
+    alignment
+    celestials
+    cults
+    fiends
+    holy symbols
+    gods
+    morality
+    prophecy
+    undead
+  SleightOfHand
+    distraction
+    pickpocketing
+    legerdemain
+  Stealth
+    anonymity
+    camouflage
+    casing
+  Survival
+    dungeoneering
+    foraging
+    hunting
+    tracking
+    wayfinding
+
+// ---------- LIFE EVENTS (TBE-style: tag, questions, skill choice) ----------
+
+relationship
+  friend
+  patron
+  rival
+  adversary
+
+life_origin
+  <b>Arch-born.</b> You stepped through an arch with no memory of before. What were you clutching? What did the one who met you write down? <i>Arcana or Culture.</i>
+  <b>Second Rise cast-off.</b> Your family held a villa on the Second Rise until something cost them it. What was lost? Who lives there now? <i>Persuasion or History.</i>
+  <b>Raised in the Reaches.</b> You grew up below, in the Lower Reaches. Who kept you fed, and at what price? Which door down there do you still avoid? <i>Stealth or Deception.</i>
+  <b>Crypt kin.</b> Your people tended the crypts on the Cliffs of the Dead. What did the dead teach you? Which tomb is your family forbidden to open? <i>Religion or Medicine.</i>
+  <b>Marsh folk.</b> You came from a fishing village in the Revlend Marshes. What did the water take from you? Why did you leave for the city? <i>Survival or Nature.</i>
+  <b>Hill farm.</b> Your family farmed the Doorish Hills and sold at the trade festivals. What did you see in the old forest that no one believed? <i>Animal Handling or Nature.</i>
+  <b>Deadlands crossing.</b> Your caravan crossed the Deadlands, and not everyone arrived. Who did you leave behind? What of theirs do you still carry? <i>Survival or Perception.</i>
+  <b>Forge child.</b> You grew up beside a forge or workshop. What did you make that you're still proud of? Who stole the design? <i>Engineering or Athletics.</i>
+  <b>Backstage brat.</b> You were raised behind the curtain at the Theater of Whispers. Which role did you play too well? Whose secret did you overhear? <i>Performance or Insight.</i>
+  <b>Knight's child.</b> A parent served the Golden Knights. Did they come home? What oath did they make you swear? <i>Athletics or Intimidation.</i>
+  <b>Tower foundling.</b> You were left at the foot of Kartan, Tower of the Arcane. Who raised you there, and why did they let you go? <i>Arcana or Investigation.</i>
+  <b>Festival born.</b> You were born to traders during a trade festival. What goods did your family carry? Where do your relatives roam now? <i>Culture or Persuasion.</i>
+
+life_youth
+  <b>Key finder.</b> You found an arch key as a child. Where did it open? Who took it from you? <i>Investigation or Arcana.</i>
+  <b>Black Hand runner.</b> You carried messages for the Black Hand. What did you read that you shouldn't have? Do they think you still owe them? <i>Sleight of Hand or Deception.</i>
+  <b>Pulled from the cisterns.</b> You nearly drowned in the Lost Cisterns. Who or what pulled you out? What did you see under the water? <i>Athletics or Perception.</i>
+  <b>The friend who joined.</b> A friend joined the Children of Ibraxus. Did you follow, report them, or walk away? What did they give you at parting? <i>Religion or Insight.</i>
+  <b>Thrown-out apprentice.</b> You apprenticed to a trade in Market Square. Why did your master throw you out? Which tool did you keep? <i>Engineering or Culture.</i>
+  <b>Rooftop gang.</b> You ran the rooftops with a gang. Who fell? Who leads them now? <i>Acrobatics or Stealth.</i>
+  <b>Rumor seller.</b> You sold gossip at the Public Baths. Which rumor came true? Who paid you to start it? <i>Investigation or Persuasion.</i>
+  <b>Archkeepers' ward.</b> The Archkeepers took you in. Which arrival scared you most? Why did you leave their care? <i>Culture or Insight.</i>
+  <b>Grave digger.</b> You dug things up on the Cliffs of the Dead. What did you find that you couldn't sell? What still follows you? <i>Medicine or Stealth.</i>
+  <b>Pit fighter.</b> You fought for coin. Who did you beat that you shouldn't have? Who taught you to lose on purpose? <i>Athletics or Intimidation.</i>
+  <b>Back-alley healer.</b> You patched up people no one else would. Who died in your hands? Who owes you their life? <i>Medicine or Persuasion.</i>
+  <b>Stargazer.</b> You snuck into the Observatory of Infinite Skies. What did you see through the glass? Who caught you? <i>Nature or History.</i>
+
+life_recent
+  <b>The last gig.</b> Your last job went wrong. Who didn't make it out? Who blames you? <i>Perception or Insight.</i>
+  <b>Won at cards.</b> You won your holding in a game at Sevenge and Gam's Public House. Who lost it? Do they want it back? <i>Sleight of Hand or Deception.</i>
+  <b>Patron's favor.</b> A patron set you up in your holding. What did you promise in return? When will they collect? <i>Persuasion or Culture.</i>
+  <b>Inheritance.</b> A relative left you the holding. Why you? What was locked inside? <i>History or Investigation.</i>
+  <b>Lying low.</b> You took the holding to disappear. From whom? Who knows where you are? <i>Stealth or Deception.</i>
+  <b>Beaten to the prize.</b> A rival crew beat you to a prize. Which crew? What did they take that was yours? <i>Survival or Intimidation.</i>
+  <b>Wrong arch.</b> An arch opened where it shouldn't, and you went through. Where did you end up? What came back with you? <i>Arcana or Survival.</i>
+  <b>Saved a stranger.</b> You pulled someone out of trouble. Who were they really? What did they leave you? <i>Medicine or Athletics.</i>
+  <b>Testimony.</b> You spoke against someone before the Golden Council or the Knights. Who? Who hasn't forgiven you? <i>Culture or Persuasion.</i>
+  <b>Debt paid.</b> Someone paid off your debts. Who? What do they want instead? <i>Persuasion or Deception.</i>
+  <b>Saw too much.</b> You witnessed something in the Lower Reaches. What was it? Who saw you see it? <i>Perception or Stealth.</i>
+  <b>How the arcanum came.</b> This is how your arcanum found you. Who had it before? Why didn't they want it? <i>Arcana or History.</i>
+
+// ---------- ROOMS (d10 + renown/3, max 10) ----------
+
+room_1
+  <b>Empty:</b> [empty_feature]
+room_2
+  <b>Empty:</b> [empty_feature]
+room_3
+  <b>Trap:</b> [trap_box]
+room_4
+  <b>Minor hazard</b>[minor_hazard_box]
+room_5
+  <b>Solo monster:</b> [solo_adj] [solo_noun.lowerCase]
+room_6
+  [npc_encounter]
+room_7
+  <b>Monster mob:</b> [mob_adj] [mob_noun.lowerCase]
+room_8
+  <b>Major hazard</b>[major_hazard_box]
+room_9
+  <b>Treasure:</b> [treasure_detail]
+room_10
+  <b>Boss monster:</b> [boss_detail]
+
+empty_feature
+  furniture worth stealing
+  signs of a recent camp
+  a dormant arch fragment set in the wall
+  graffiti in a dead language
+  a locked chest, already empty
+  an echo that answers back
+
+trap_box
+  [trap_adj], [trap_noun.lowerCase]<div class\="box trap"><b>Type:</b> [trap_type]<br><b>Trigger:</b> [trap_trigger]<br><b>Damage and effect:</b> [trap_damage()]</div>
+
+minor_hazard_box
+  <div class\="box haz">[minor_hazard]</div>
+
+major_hazard_box
+  <div class\="box major">[major_hazard]</div>
+
+minor_hazard
+  <b>Type:</b> Movement restriction<br><b>Effect:</b> [hazard_movement]
+  <b>Type:</b> Ongoing damage<br><b>Effect:</b> [hazard_damage]
+  <b>Type:</b> Weakening<br><b>Effect:</b> [hazard_weakening]
+
+major_hazard
+  <b>Type:</b> Combined threat<br><b>Effects:</b> [hazard_movement] and [hazard_damage]
+  <b>Type:</b> Combined threat<br><b>Effects:</b> [hazard_movement] and [hazard_weakening]
+  <b>Type:</b> Combined threat<br><b>Effects:</b> [hazard_damage] and [hazard_weakening]
+  <b>Type:</b> Insidious threat<br><b>Effects:</b> [hazard_movement], [hazard_damage] and [hazard_weakening]
+
+hazard_movement
+  Quicksand
+  Caltrops
+  Loose debris
+  Tar field
+  Grasping vines
+  Steep incline
+  Slippery ice
+  Rushing water
+  Sticky webs
+  Gale force wind
+  Greased floor
+  Illusory terrain
+
+hazard_damage
+  Acid pools
+  Exploding rocks
+  Icy water
+  Lava
+  Pummeling hail
+  Steam vents
+  Toxic mold
+  Falling debris
+  Acid rain
+  Curtain of fire
+  Electrified field
+  Gravity flux
+
+hazard_weakening
+  Blinding smoke
+  Magnetic field
+  Exhausting runes
+  Antimagic zone
+  Snuffs light sources
+  Disorienting sound
+  Magical silence
+  Numbing cold
+  Sickening smell
+  Sleep-inducing spores
+  Confusing reflections
+  Memory-stealing
+
+trap_adj
+  Crude
+  Ranged
+  Sturdy
+  Ancient
+  Large
+
+trap_noun
+  Ensnaring
+  Toxic
+  Mechanical
+  Magical
+  Deadly
+
+trap_type
+  Crossbow
+  Hail of needles
+  Toxic gas
+  Barbed net
+  Rolling boulder
+  Slicing blade
+  Spiked pit
+  Javelin
+  Magical glyph
+  Blast of fire
+  Falling block
+  Cursed statue
+
+trap_trigger
+  Tripwire
+  Pressure plate
+  Opening a door
+  Switch or button
+  False step on stairs
+  Closing a door
+  Breaking a light beam
+  Pulling a lever
+  A word is spoken
+  Hook on a thread
+  Removing an object
+  Casting a spell
+
+trap_damage_low
+  1d6
+  1d6, Sleep
+  1d6, Paralyze
+  1d6, Blind
+
+trap_damage_mid
+  2d8
+  2d8, Sleep
+  2d8, Paralyze
+  2d8, Confuse
+
+trap_damage_high
+  3d10
+  3d10, Paralyze
+  3d10, Unconscious
+  3d10, Petrify
+
+solo_adj
+  Sneaky
+  Mighty
+  Clever
+  Mutated
+
+solo_noun
+  Ambusher
+  Brute
+  Spellcaster
+  Pariah
+
+mob_adj
+  Stealthy
+  Reckless
+  Magical
+  Primitive
+  Organized
+
+mob_noun
+  Outcasts
+  Minions
+  Tricksters
+  Vermin
+  Warriors
+
+treasure_detail
+  Hidden
+  Guarded by a monster<br><b>Monster:</b> [solo_adj] [solo_noun.lowerCase]
+  Protected by a trap<br><b>Trap:</b> [trap_box]
+  Protected by a hazard[minor_hazard_box]
+
+boss_detail
+  Physically strongest
+  Religious leader
+  Guarded by minions<br><b>Minions:</b> [mob_adj] [mob_noun.lowerCase]
+  Supreme sorcerer
+
+// ---------- NPCS AND RIVAL CREWS (one rival per episode) ----------
+
+npc_encounter
+  <b>NPC:</b> Hiding [standard_npc_box]
+  <b>NPC:</b> Captive [standard_npc_box]
+  <b>NPC:</b> Wounded [standard_npc_box]
+  [rival_check()]
+
+standard_npc_fallback
+  <b>NPC:</b> Hiding [standard_npc_box]
+  <b>NPC:</b> Captive [standard_npc_box]
+  <b>NPC:</b> Wounded [standard_npc_box]
+
+standard_npc_box
+  [a = npc_ancestry.selectOne, ""]<div class\="box npc"><b>Identity:</b> [npc_name[a]] "[npc_nickname]", [npc_age.lowerCase] [a] [npc_occupation.lowerCase]<br><b>Status:</b> [npc_alignment], [npc_wealth.lowerCase] wealth<br><b>Traits:</b> [npc_appearance], [npc_does.lowerCase]<br><b>Secret:</b> [npc_secret]</div>
+
+rival_party_box
+  [al = rival_alignment.selectOne, ""]<div class\="box rival"><b>Crew:</b> [rival_party_name]<br><b>Reputation:</b> [al], [rival_wealth.lowerCase] wealth, [rival_renown.lowerCase]<br><b>Secret:</b> [rival_secret]<br><b>Signature tactic:</b> [rival_tactics[al]]<br><b>Members:</b><br>&bull; [rival_member]<br>&bull; [rival_member]<br>&bull; [rival_member]<br>&bull; [rival_member]<br><b>Doing:</b> [rival_status]<br><b>Seen twice?</b> Put them on the threat tracker.</div>
+
+rival_alignment
+  Lawful
+  Neutral
+  Chaotic
+
+rival_renown
+  Unknown
+  Locally known ^2
+  Widely recognized ^2
+  Extremely famous
+
+rival_secret
+  Betrayed an oath ^1
+  False or stolen identities ^5
+  In debt to the Black Hand ^9
+  Map to a major treasure ^11
+  Suffering a curse ^9
+  Has a powerful patron ^1
+
+rival_wealth
+  Poor
+  Standard ^3
+  Wealthy
+  Extravagant
+
+rival_tactics
+  Lawful
+    Always negotiate
+    Fight honorably
+    Never use stealth
+    Loyal followers
+  Neutral
+    Scout and sneak
+    Follow rivals
+    Cache resources
+    Buy information
+  Chaotic
+    Ambush rivals
+    Sacrifice NPCs
+    Kill everything
+    Target the helpless
+
+rival_party_name
+  The Iron Hawks
+  The Silver Vipers
+  The Crimson Skulls
+  The Silent Blades
+  The Gilded Hands
+  The Shattered Shields
+  The Shadow Seekers
+  The Bloodhound Company
+  The Ebon Vanguard
+  The Gloom Walkers
+
+rival_member
+  [b = npc_ancestry.selectOne, ""][npc_name[b]] (level [d(6)] [b] [rival_class.lowerCase])
+
+rival_class
+  Fighter
+  Thief
+  Priest
+  Wizard
+  Ranger
+  Bard
+
+rival_status
+  resting after a fight
+  looting a fresh corpse
+  searching for secret doors
+  setting an ambush
+  arguing over treasure
+  lost and consulting a map
+
+npc_ancestry
+  Human
+  Elf
+  Dwarf
+  Halfling
+  Half-orc
+  Goblin
+
+npc_name
+  Human
+    Hesta
+    Matteo
+    Rosalin
+    Endric
+    Kiara
+    Yao
+    Corina
+    Rowan
+    Hariko
+    Ikam
+    Mariel
+    Jin
+    Hana
+    Lios
+    Indra
+    Remy
+    Nura
+    Vakesh
+    Una
+    Nabilo
+  Elf
+    Sarenia
+    Ravos
+    Imeria
+    Farond
+    Isolden
+    Kieren
+    Mirenel
+    Riarden
+    Allindra
+    Arlomas
+    Sylara
+    Tyr
+    Rinariel
+    Saramir
+    Vedana
+    Elindos
+    Ophelia
+    Cydaros
+    Tiramel
+    Varond
+  Dwarf
+    Hera
+    Torin
+    Ginny
+    Gant
+    Olga
+    Dendor
+    Ygrid
+    Pike
+    Sarda
+    Brigg
+    Zorli
+    Yorin
+    Jorgena
+    Trogin
+    Riga
+    Barton
+    Katrina
+    Egrim
+    Elsa
+    Orgo
+  Halfling
+    Myrtle
+    Robby
+    Nora
+    Percy
+    Daisy
+    Jolly
+    Evelyn
+    Horace
+    Willie
+    Gertie
+    Peri
+    Carlsby
+    Nyx
+    Kellan
+    Fern
+    Harlow
+    Moira
+    Sage
+    Reenie
+    Wendry
+  Half-orc
+    Troga
+    Boraal
+    Urgana
+    Zoraal
+    Scalga
+    Krell
+    Voraga
+    Morak
+    Draga
+    Sorak
+    Varga
+    Ulgar
+    Jala
+    Kresh
+    Zana
+    Torvash
+    Rokara
+    Gartak
+    Iskana
+    Ziraak
+  Goblin
+    Kog
+    Dibbs
+    Fronk
+    Irv
+    Squag
+    Mort
+    Vig
+    Sticks
+    Gorb
+    Yogg
+    Plok
+    Zrak
+    Dent
+    Krik
+    Mizzo
+    Bort
+    Nabo
+    Hink
+    Bree
+    Kreeb
+
+npc_nickname
+  The Gray
+  One-Eye
+  The Lesser
+  The Cunning
+  Silvertongue
+  The Outcast
+  Fasthands
+  The Bold
+  The Elder
+  The Charmer
+  The Exiled
+  The Wise
+  Tree-Speaker
+  The Craven
+  The Red
+  Six-Finger
+
+npc_age
+  Child
+  Adolescent
+  Adult
+  Middle-aged
+  Elderly
+  Ancient
+
+npc_alignment
+  Lawful
+  Neutral
+  Chaotic
+
+npc_wealth
+  Poor
+  Standard
+  Wealthy
+  Extravagant
+
+npc_appearance
+  Balding
+  Stocky build
+  Very tall
+  Beauty mark
+  One eye
+  Braided hair
+  Muscular
+  White hair
+  Scar on face
+  Willowy build
+  Sweaty
+  Cleft chin
+  Frail
+  Big eyebrows
+  Tattooed
+  Floppy hat
+  Gold tooth
+  Six fingers
+  Very short
+  Large nose
+
+npc_does
+  Spits
+  Always eating
+  Moves quickly
+  Card tricks
+  Prays aloud
+  Writes in diary
+  Apologetic
+  Slaps backs
+  Drops things
+  Swears oaths
+  Makes puns
+  Rare accent
+  Easily spooked
+  Forgetful
+  Speaks quietly
+  Twitches
+  Moves slowly
+  Speaks loudly
+  Swaggers
+  Smokes pipe
+
+npc_secret
+  Hiding a fugitive
+  Adores baby animals
+  Obsessed with fire
+  In a religious cult
+  Is a half-demon
+  Was a wizard's apprentice
+  Needlessly picks pockets
+  Has a false identity
+  Afraid of storms
+  Has functional gills
+  In deep gambling debt
+  Works as a smuggler
+  Is a werewolf
+  Can actually smell lies
+  Cast out of a wealthy family
+  In love with a bartender
+  Left the Black Hand
+  Best friends with a noble
+  Retired crawler
+  Has a pet basilisk
+
+npc_occupation
+  Gravedigger
+  Carpenter
+  Scholar
+  Blacksmith
+  Tax collector
+  Farmer
+  Bartender
+  Beggar
+  Baker
+  Cook
+  Sailor
+  Butcher
+  Locksmith
+  Cobbler
+  Friar
+  Merchant

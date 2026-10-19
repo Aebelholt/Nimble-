@@ -1,0 +1,475 @@
+MAGE
+Game Design and Art Direction: Evan Diaz.
+Subclass Design Contributors: London Dolbbear, Christian Bertrand, Tobias Brockmeyer.
+Artist Credits: Earl Lan, Justine Florentino, Shen
+Fei, Vlad Iftimescu, Evan Diaz.
+
+Cover Art: Earl Lan.
+Nimble Heroes: Mage
+Designed in the USA, Printed in China.
+Copyright © 2026 Nimble Co. All rights reserved.
+www.nimbleRPG.com
+
+Nimble 3rd Party Creator License v2.0
+This license is perpetual and irrevocable except upon violation.
+
+Terms. You may use and reference ANY published Nimble text (current
+or future) in your own original products based on or compatible with
+Nimble (e.g., adventures, classes, subclasses, monsters, supplements)
+without Nimble Co.’s prior approval and retain all profits.
+
+• Copying, restating, or summarizing large portions of text with little
+added content does not qualify as an original product.
+• You may NOT use the Nimble art or logo—but may use a Nimble
+compatibility logo (nimbleRPG.com/creators). Your product must not
+appear to be an official Nimble product or endorsed by Nimble Co.
+
+Required Attribution. Include in your product:
+[Product Name] is an independent product published under the
+Nimble 3rd Party Creator License. Nimble TTRPG © Nimble Co.
+
+Online Apps and VTTs. For free online tools/wikis/apps/VTT implementations (app), you may use any and all published Nimble text, provided the app is completely free to use (optional donations to defray
+development/hosting costs permitted) and you include this notice
+prominently (a banner, sidebar, welcome message, etc.):
+
+This [app/tool/etc.] is free to use for anyone who already owns the
+content, is trying the system out, or cannot afford to buy it right now.
+If you enjoy Nimble and are able, please support the game by purchasing the official content at nimbleRPG.com.
+Restrictions and Rights Reserved. We are not liable for claims
+related to your product, and you will not bring legal claims against us.
+Unless explicitly stated, this license does not grant copyright, moral,
+publicity, privacy, patent, or trademark rights. All other rights are
+reserved by Nimble Co. Nimble is provided AS-IS without warranties.
+
+Legal Terms. You agree to indemnify Nimble Co. and its affiliates
+from any claims or liabilities arising from your use of this license, mutually where applicable, as permitted by law. This license may be terminated if you violate its terms; upon termination, cease distribution until
+resolved. Governed by Florida law. Disputes resolved in U.S. District
+Court for the Middle District of Florida or state courts in Orange County,
+Florida. Unenforceable provisions reformed or severed without affecting the rest. Does not waive Nimble Co.’s legal privileges.
+
+This work includes material taken from the System Reference Document 5.1 (“SRD 5.1”) by Wizards of the Coast LLC and available at https://
+dnd.wizards.com/resources/systems-reference-document. The SRD 5.1 is licensed under the Creative Commons Attribution 4.0 International
+License available at https://creativecommons.org/licenses/by/4.0/legalcode.
+
+1
+
+MAGE
+
+POWER OVER
+
+MAGICAL
+ELEMENTS
+omprehending the Tapestry of Mana is no trivial endeavor—it will
+yield its arcane secrets only to the earnest seeker of knowledge. A
+mage refines their natural gifts through scholarly pursuit, with
+tomes and parchments as their companions, alongside the sage counsel of
+a seasoned mentor or three!
+
+C
+
+Yet, once the adept learns to discern the subtleties of its intricate patterns
+as it unfurls and meanders into the ethereal expanse—it is in that moment
+the apprentice truly ascends to the mantle of mage. This is the chosen path
+of those who would wield authority over the elements. Elemental power
+flows through all things… find it, study it, and harness it!
+
+Customize your spells: stretch
+time, gain extra-dimensional
+vision, or echo cast multiple
+spells!
+
+Rain fire from the heavens,
+freeze enemies in their tracks,
+and strike with thunderous
+bolts of lightning.
+
+Demand Control or lean into the
+Chaos! What awaits you? Diamond Skin? Elemental Entanglement? Liquefied Legs?!
+
+Brilliant spellcasters with a wide arsenal of spells at their disposal.
+Class complexity:
+
+[f][f][f][f]
+
+2
+
+ARTIST: EARL LAN
+
+3
+
+LEVEL 5
+
+Elemental Surge. A surge of adrenaline and your attunement with the elements grants
+you additional power as combat begins. When you roll Initiative, regain WIL mana (this
+expires at the end of combat if unused).
+Secondary Stat Increase. +1 STR or DEX.
+Upgraded Cantrips. Your cantrips grow stronger.
+
+LEVEL 6
+
+Tier 3 Spells. You may now cast spells up to tier 3.
+Elemental Mastery (2). Learn the Utility Spells from a 2nd spell school you know.
+
+LEVEL 7
+
+Subclass. Gain your Mage subclass feature.
+
+LEVEL 8
+
+Tier 4 Spells. You may now cast spells up to tier 4.
+Key Stat Increase. +1 INT or WIL.
+
+LEVEL 9
+
+Spellshaper (2). Choose 1 additional Spellshaper ability.
+Secondary Stat Increase. +1 STR or DEX.
+
+LEVEL 10 Elemental Surge (2). Your Elemental Surge ability now regains WIL+1d4 mana.
+
+MAGE
+Key Stats: INT, WIL Hit Die: 1d6 Starting HP: 10
+Saves: INT+, STR– Armor: Cloth Armor Weapons: Blades, Staves, Wands
+Starting Gear: Adventurer’s Garb, Staff, Soap
+LEVEL 1
+
+LEVEL 2
+
+LEVEL 3
+
+Elemental Spellcasting. You know the Fire, Ice, and Lightning spell schools and can
+cast cantrips from them.
+Mana and Unlock Tier 1 Spells. You may now cast tier 1 spells and gain a mana pool to
+cast them. This mana pool’s max is always equal to (INT×3)+LVL and recharges on a Safe
+Rest.
+Talented Researcher. Gain advantage on Arcana or Lore checks when you have access
+to a large amount of books and time to study them.
+Subclass. Choose a Mage subclass.
+Elemental Mastery. Learn the Utility Spells from 1 spell school you know.
+
+Study! Whenever you study arcane books or are tutored by a higher-level Mage during a Safe Rest, you may
+choose different Mage options available to you.
+LEVEL 4
+
+4
+
+Spellshaper. You gain the ability to enhance your spells with powerful effects by spending
+additional mana. Choose 2 Spellshaper abilities.
+Tier 2 Spells. You may now cast spells up to tier 2.
+Key Stat Increase. +1 INT or WIL.
+
+Tier 5 Spells. You may now cast spells up to tier 5.
+Upgraded Cantrips. Your cantrips grow stronger.
+
+LEVEL 11
+
+Subclass. Gain your Mage subclass feature.
+
+LEVEL 12 Tier 6 Spells. You may now cast spells up to tier 6.
+
+Key Stat Increase. +1 INT or WIL.
+
+LEVEL 13 Spellshaper (3). Choose 1 additional Spellshaper ability.
+
+Secondary Stat Increase. +1 STR or DEX.
+
+LEVEL 14 Tier 7 Spells. You may now cast spells up to tier 7.
+
+Elemental Mastery (3). Learn the Utility Spells from a 3rd spell school you know.
+
+LEVEL 15 Subclass. Gain your Mage subclass feature.
+
+Upgraded Cantrips. Your cantrips grow stronger.
+
+LEVEL 16 Tier 8 Spells. You may now cast spells up to tier 8.
+
+Key Stat Increase. +1 INT or WIL.
+
+LEVEL 17 Elemental Surge (3). Your Elemental Surge ability now regains WIL+2d4 mana.
+
+Secondary Stat Increase. +1 STR or DEX.
+
+LEVEL 18 Tier 9 Spells. You may now cast spells up to tier 9.
+LEVEL 19 Epic Boon. Choose an Epic Boon (see pg. 75 of the GM’s Guide).
+LEVEL 20 Archmage. +1 to any 2 of your stats. The first tiered spell you cast each encounter costs
+
+1 action less and 5 fewer mana.
+Upgraded Cantrips. Your cantrips grow stronger.
+
+5
+
+SPELLSHAPER
+ABILITIES
+Gain Spellshaper abilities as you Level up. You may use 1/turn.
+Study! Whenever you study arcane books or are tutored by a higher-level Mage during a Safe Rest, you may
+choose different Mage options available to you.
+
+Dimensional Compression
+
++4 Range to a spell for each additional mana spent.
+
+Echo Casting
+
+SUBCLASSES
+
+— INVOKER OF —
+
+CONTROL
+
+1+ Mana
+
+2×Mana (min. 1)
+
+When you cast a tiered, single-target spell, cast a copy of it on a 2nd target.
+
+The heart of magical achievement is rigorous training and discipline. A powerful mage should
+accept nothing less than total domination. Subclass Complexity:
+
+[f][f][f][f]
+
+LEVEL 3
+
+Force of Will. (1/round) On your turn, you may Demand Control for free: Choose
+1 option from the Control Table which you haven’t chosen yet; resets when you roll
+Initiative, or when you have chosen all options once.
+Deny Fate. Whenever you miss with a spell (or if one or more creatures save vs a
+spell you cast), you MUST Demand Control.
+
+Change the damage type of a spell to: fire, cold, lightning, necrotic, or
+radiant.
+
+LEVEL 7
+
+At Any Cost. Learn 1 cantrip and 1 tiered spell from the Necrotic school.
+Nullify. (1/encounter) Ignore all disadvantage and other negative effects on your
+next action this turn, then Demand Control.
+
+Extra-Dimensional Vision
+
+LEVEL 11
+
+Steel Will. Whenever you roll a 1 on an Elemental Surge die, you may reroll it once.
+(1/Safe Rest) If you would fail a save, you succeed instead.
+
+Elemental Destruction
+
+1+ Mana
+
+Elemental Transmutation
+
+1 Mana
+
+2 Mana
+
+After you hit with a spell, reroll 1 die per mana spent (up to WIL mana).
+
+Ignore the line of sight requirement of a spell. Your spell will phase
+through barriers and obstacles to reach a target you know of within Range.
+
+LEVEL 15 Supreme Control. Whenever you use Force of Will, you may choose to trigger the
+
+selected option twice. You may now use Force of Will as a Reaction.
+
+Methodical Spellweaver
+
+–2 Mana
+
+Spend 1 additional action to reduce the mana cost of a spell by 2 (min. 1).
+
+CONTROL TABLE
+
+Magic is Dangerous. You can stitch its fraying edges together to your own benefit… for a time.
+
+Precise Casting
+
+1+ Mana
+
+Choose 1 creature per mana spent to be unaffected by a spell you cast.
+
+Stretch Time
+
+Reduce the action cost of a spell by 1 (min 1).
+
+6
+
+2 Mana
+
+I INSIST. Cast a cantrip for free, ignoring all disadvantage; it cannot miss.
+ELEMENTAL AFFLICTION. A creature of your choice within 12 spaces gains the
+Charged, Smoldering, or Slowed condition.
+NO. Choose a creature; it cannot harm a creature of your choice during its next turn.
+LOSE CONTROL. Do ALL of the above, but the GM chooses each time.
+7
+
+SUBCLASSES
+
+— INVOKER OF —
+
+CHAOS
+
+How many spells can I choose? You know every spell in the spell
+schools you know, up to the tier you have unlocked.
+
+[f][f][f][f]
+
+How does Echo Casting interact with conditional spells (e.g.,
+Ignite, Shatter)? You can only target a creature with the duplicate
+spell if they also meet any required conditions.
+
+Embrace power beyond your understanding or control. Let the universe flow through you,
+give in to the wild forces of magic, let randomness and CHAOS reign!
+Subclass Complexity:
+
+LEVEL 3
+
+LEVEL 7
+
+FAQ
+
+Force of Chaos. Whenever you cast a spell, you can choose to spend 1 less
+mana by Invoking Chaos: Roll on the Chaos Table. Whenever you crit you may
+also Invoke Chaos.
+Tempest Mage. Learn 1 cantrip and 1 tiered spell from the Wind school.
+Chaos Lash. (1/encounter) Reaction (when an enemy moves adjacent to you):
+They are pushed back 2 spaces, and on a failed WIL save, knocked Prone as well.
+Invoke Chaos.
+
+LEVEL 11 Thrive in Chaos. Whenever you Invoke Chaos, you may roll twice and cause
+
+both effects. (1/Safe Rest) You may choose which roll to use instead.
+
+Can I cast more than 1 defensive spell at a time? No.
+Invoker of Surges: Does taking damage from Power Surge
+Charge me? Yes, any lightning damage gives you the Charged condition.
+How does Lose Control work? You’ll likely never want to pick that
+option but the 4th time in an encounter you Demand Control, you
+must pick it. The GM uses I INSIST, ELEMENTAL AFFLICTION, and NO;
+choosing the targets, spells, and other effects.
+
+LEVEL 15 Master of Chaos. Whenever you Invoke Chaos, roll with advantage.
+
+Where’s the Chaos Table? It’s a secret for the GM only! Suffice it to say, rolling a 1 is really bad, but
+rolling a 20 is AWESOME—but if you’re sure you want to spoil it, you can find it on the back inside cover
+of the GM’s Guide. Let chaos reign!
+8
+
+9
+
+MAGE
+
+QUICK BUILDS
+Rowan
+
+Human, Mage
+
+-1
+
++0
+
++2
+
++2
+
++5
+
++3
+
++1
+
++3
+
+1
+
+-1
+
+2
++3
+
++5
+
++5
+
+Human, Mage
+
++0
+
++3
+
++2
+
++1
+
+d6
+
+6
+
++3
+
++3
+
++1
+
+Adventurer’s Garb. 2 Defense.
+Staff. (1d8).
+Soap.
+
+6
+
+Medium
+
+14
+2
++3
+
++5
+
+Elemental Spellcasting. You know the Fire, Ice, and Lightning
+spell schools and can cast cantrips and Tier 1 spells from them.
+Tenacious (Human). +1 to all skills and Initiative.
+
+10
+
++0
+
++1
+
+1
+
++2
+
++3
+
+Medium
+
+10
+
+Elemental Spellcasting. You know the Fire, Ice, and Lightning
+spell schools and can cast cantrips from them.
+Tenacious (Human). +1 to all skills and Initiative.
+
+Rowan
+
+6
+
+8
+
++1
+
+d6
+
+6
+
++0
+
++3
+
++3
+
++1
+
+Mana
+
+Adventurer’s Garb. 2 Defense.
+Staff. (1d8).
+Soap.
+
+

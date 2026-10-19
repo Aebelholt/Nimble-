@@ -1,0 +1,543 @@
+OATHSWORN
+Game Design and Art Direction: Evan Diaz.
+Subclass Design Contributors: Charles and
+Jeannine Archibald, Jonathan Troi, Matt Shiffler.
+Artist Credits: Jason Kiantoro, Edward Yorke,
+Marin Iurii, Vlad Iftimescu, Evan Diaz.
+
+Cover Art: Jason Kiantoro.
+Nimble Heroes: Oathsworn
+Designed in the USA, Printed in China.
+Copyright © 2026 Nimble Co. All rights reserved.
+www.nimbleRPG.com
+
+Nimble 3rd Party Creator License v2.0
+This license is perpetual and irrevocable except upon violation.
+
+Terms. You may use and reference ANY published Nimble text (current
+or future) in your own original products based on or compatible with
+Nimble (e.g., adventures, classes, subclasses, monsters, supplements)
+without Nimble Co.’s prior approval and retain all profits.
+
+• Copying, restating, or summarizing large portions of text with little
+added content does not qualify as an original product.
+• You may NOT use the Nimble art or logo—but may use a Nimble
+compatibility logo (nimbleRPG.com/creators). Your product must not
+appear to be an official Nimble product or endorsed by Nimble Co.
+
+Required Attribution. Include in your product:
+[Product Name] is an independent product published under the
+Nimble 3rd Party Creator License. Nimble TTRPG © Nimble Co.
+
+Online Apps and VTTs. For free online tools/wikis/apps/VTT implementations (app), you may use any and all published Nimble text, provided the app is completely free to use (optional donations to defray
+development/hosting costs permitted) and you include this notice
+prominently (a banner, sidebar, welcome message, etc.):
+
+This [app/tool/etc.] is free to use for anyone who already owns the
+content, is trying the system out, or cannot afford to buy it right now.
+If you enjoy Nimble and are able, please support the game by purchasing the official content at nimbleRPG.com.
+Restrictions and Rights Reserved. We are not liable for claims
+related to your product, and you will not bring legal claims against us.
+Unless explicitly stated, this license does not grant copyright, moral,
+publicity, privacy, patent, or trademark rights. All other rights are
+reserved by Nimble Co. Nimble is provided AS-IS without warranties.
+
+Legal Terms. You agree to indemnify Nimble Co. and its affiliates
+from any claims or liabilities arising from your use of this license, mutually where applicable, as permitted by law. This license may be terminated if you violate its terms; upon termination, cease distribution until
+resolved. Governed by Florida law. Disputes resolved in U.S. District
+Court for the Middle District of Florida or state courts in Orange County,
+Florida. Unenforceable provisions reformed or severed without affecting the rest. Does not waive Nimble Co.’s legal privileges.
+
+This work includes material taken from the System Reference Document 5.1 (“SRD 5.1”) by Wizards of the Coast LLC and available at https://
+dnd.wizards.com/resources/systems-reference-document. The SRD 5.1 is licensed under the Creative Commons Attribution 4.0 International
+License available at https://creativecommons.org/licenses/by/4.0/legalcode.
+
+1
+
+OATHSWORN
+
+MY
+LIFE
+FOR MY FRIENDS
+will protect my companions and vanquish evil at all costs. Various
+orders of these zealous, holy warriors have attained great physical
+and radiant strength through absolute devotion to a higher power
+in the form of oaths.
+
+I
+
+Through their strength, both physical and radiant, nothing can sway them
+from their hunger for justice and their fervent pursuit and hatred of evil.
+The mark of a true Oathsworn, however, is their willingness to lay down
+their life for their friends.
+
+Smite with righteous judgment. The more you face
+evil, the more potent your
+strikes become.
+
+Stand as a bastion of defense,
+safeguarding allies even from
+afar. Bringing justice to every
+corner of the realm.
+
+Mend wounds, and inspire
+others to embrace your
+noble cause with unwavering conviction.
+
+A righteous defender of the weak, and obliterator of evil. High Defense and
+high burst damage class. Class complexity:
+
+[f][f][e][e]
+
+2
+
+ARTIST: JASON KIANTORO
+
+3
+
+LEVEL 5
+
+Radiant Judgment (3). Your Judgment Dice are d10s.
+Upgraded Cantrips. Your cantrips grow stronger.
+Secondary Stat Increase. +1 DEX or INT.
+
+LEVEL 6
+
+Tier 3 Spells. You may now cast spells up to tier 3.
+Sacred Decree (2). Learn a 2nd Sacred Decree.
+
+LEVEL 7
+
+Subclass. Gain your Oathsworn subclass feature.
+Master of Radiance. Choose 1 Radiant Utility Spell.
+
+LEVEL 8
+
+Tier 4 Spells. You may now cast spells up to tier 4.
+Radiant Judgment (4). Your Judgment Dice are d12s.
+Key Stat Increase. +1 STR or WIL.
+
+LEVEL 9
+
+Sacred Decree (3). Learn a 3rd Sacred Decree.
+Secondary Stat Increase. +1 DEX or INT.
+
+LEVEL 10 Tier 5 Spells. You may now cast spells up to tier 5.
+
+OATHSWORN
+Key Stats: STR, WIL Hit Die: 1d10 Starting HP: 17
+Saves: STR+, DEX– Armor: All Armor Weapons: Melee STR Weapons
+Starting Gear: Mace, Rusty Mail, Wooden Buckler, Manacles
+LEVEL 1
+
+LEVEL 2
+
+LEVEL 3
+
+LEVEL 4
+
+4
+
+Radiant Judgment. Whenever an enemy attacks you, roll and set aside 2d6 Judgment Dice
+(if you currently have none). They are expended on your next Reach attack this encounter,
+dealing their total as extra radiant damage (they are lost on a miss).
+Lay on Hands. Gain a magical pool of healing power. This pool’s maximum is always equal
+to 5×LVL and recharges on a Safe Rest. Action: Touch a target and spend any amount of
+remaining healing power to restore that many HP.
+Mana and Radiant Spellcasting. You know Radiant cantrips and tier 1 spells, and gain
+a mana pool. Your mana pool is equal to WIL+LVL and recharges on a Safe Rest.
+Zealot. Whenever you hit with a melee weapon, you may spend mana to deal +5 damage
+for each mana spent (up to the spell tier you’ve unlocked).
+Paragon of Virtue. Advantage on Influence checks to convince someone when you are
+forthrightly telling the truth, disadvantage when misleading.
+Subclass. Commit yourself to an Oath and gain its benefits.
+Radiant Judgment (2). Your Judgment Dice are d8s.
+Sacred Decree. Learn 1 Sacred Decree.
+My Life, for My Friends. You can Interpose for free.
+Tier 2 Spells. You may now cast spells up to tier 2.
+Key Stat Increase. +1 STR or WIL.
+
+Upgraded Cantrips. Your cantrips grow stronger.
+Radiant Judgment (5). Your Judgment Dice are d20s.
+
+LEVEL 11
+
+Subclass. Gain your Oathsworn subclass feature.
+Master of Radiance (2). Choose a 2nd Radiant Utility Spell.
+
+LEVEL 12 Sacred Decree (4). Learn a 4th Sacred Decree.
+
+Key Stat Increase. +1 STR or WIL.
+
+LEVEL 13 Tier 6 Spells. You may now cast spells up to tier 6.
+
+Secondary Stat Increase. +1 DEX or INT.
+
+LEVEL 14 Sacred Decree (5). Learn a 5th Sacred Decree.
+
+Radiant Judgment (6). Whenever you roll Judgment Dice, roll 1 more.
+
+LEVEL 15 Subclass. Gain your Oathsworn subclass feature.
+
+Upgraded Cantrips. Your cantrips grow stronger.
+
+LEVEL 16 Sacred Decree (6). Learn a 6th Sacred Decree.
+
+Key Stat Increase. +1 STR or WIL.
+
+LEVEL 17 Tier 7 Spells. You may now cast spells up to tier 7.
+
+Secondary Stat Increase. +1 DEX or INT.
+
+LEVEL 18 Unending Judgment. +5 damage to melee attacks while you have
+
+no Judgment Dice.
+
+LEVEL 19 Epic Boon. Choose an Epic Boon (see pg. 75 of the GM’s Guide).
+LEVEL 20 Glorious Paragon. +1 to any 2 of your stats. Defend for free whenever
+
+you Interpose.
+Upgraded Cantrips. Your cantrips grow stronger.
+
+5
+
+Radiant Aura
+
+1 Action
+
+(WIL/Safe Rest) End any single harmful condition or effect on
+yourself or another willing creature within your aura (ending
+“Dying” grants 1 HP, ending “Dazed” grants 1 action, etc.).
+
+Reliable JusticePassive
+
+SACRED DECREES
+Serve Selflessly. Whenever you perform a notable selfless act during a Safe Rest, you may
+choose different Oathsworn options available to you.
+
+Blinding Aura
+
+1 Action
+
+(1/Safe Rest) Enemies in your aura are Blind until the end of
+their next turn.
+
+Whenever you roll Judgment Dice, roll with advantage (roll
+one extra and drop the lowest).
+
+Shining MandatePassive
+
+(1/round) When you are attacked while you already have
+Judgment Dice, an ally within your aura gains a Judgment Die
+(roll a new one, they add it to their next attack). Gain advantage
+on checks to see through illusions.
+
+Stand Fast, Friends! Passive
+
+Whenever you roll Initiative, grant allies temp HP equal to
+your STR+WIL. You and allies within your aura have advantage
+against fear and effects that would move or knock Prone.
+
+Courage!
+
+0 Actions
+
+Explosive Judgment
+
+2 Actions
+
+Gain +2 Speed. Nothing can stop you from Interposing for an
+ally within your aura. If you Interpose for a noncombatant NPC,
+you may Interpose again this round.
+
+Improved AuraPassive
+
+Well ArmoredPassive
+
+(1/encounter) When you or an ally in your aura would drop to
+0 HP, set their HP to 1 instead.
+
+Unstoppable ProtectorPassive
+
+(1/encounter) Expend your Judgment Dice, deal that much
+radiant damage to all enemies within Reach 2.
+
++2 aura Reach.
+
+6
+
+Whenever you Interpose, gain STR temp HP.
+
+7
+
+SUBCLASSES
+
+SUBCLASSES
+
+— OATH OF —
+
+— OATH OF —
+
+VENGEANCE
+
+REFUGE
+
+Empower your Judgement Dice and strike
+down your enemies with explosive retribution.
+Subclass Complexity:
+
+Raise your shield to protect your allies, and
+interpose with greater strength and purpose.
+Subclass Complexity:
+
+[f][f][e][e]
+
+LEVEL 3
+
+Aura of Zeal. Whenever you roll Judgment Dice, roll 1 more. Gain
+an aura with a Reach of 4. Your Radiant Judgment also triggers when
+an ally within your aura is attacked while you have no Judgment Dice.
+
+LEVEL 3
+
+Aura of Refuge. Your shields gain +WIL Defense and count as your
+spellcasting focus. Gain an aura with a Reach of 4; you can Interpose
+for an ally anywhere within your aura.
+
+LEVEL 7
+
+Avenger. Whenever you or an ally within your aura gain any Wounds,
+change up to that many Judgment Dice to their max. Then, move up
+to half your Speed for free.
+
+LEVEL 7
+
+Face Me, Foul Creature! When you Interpose, the attacking enemy
+is also Taunted by you until the end of their next turn.
+
+Unerring Judgment. Increase your Primary Die rolls on melee attacks
+by 1 whenever you have Judgment Dice.
+
+LEVEL 11
+
+LEVEL 11
+
+Glorious Reprieve. You and allies in your aura do not lose actions
+from Dying. (1/round) You or an ally in your aura can ignore 1 Wound
+gained while Dying.
+
+LEVEL 15 Maximum Judgment. Whenever you are attacked, set a Judgment
+
+Die to its max.
+
+8
+
+[f][f][e][e]
+
+LEVEL 15 Divine Grace. You are resistant to all damage while Interposing.
+
+9
+
+STORY-BASED SUBCLASS
+
+OATHBREAKER
+—— FALLEN, SEEKING REDEMPTION ——
+Subclass Complexity:
+
+[f][f][f][e]
+
+Dark Benediction. You lose access to the following Radiant spells: True Strike, Heal, and Warding Bond;
+and gain access to the following Necrotic spells: Entice, Shadow Trap, and Dread Visage. Whenever you
+can choose a Utility Spell, you may choose a Radiant or Necrotic one.
+Paragon of Power. (Replaces Paragon of Virtue) Advantage on Might checks when intimidating others.
+Aura of Suffering. You gain an aura with a Reach of 4 and can Interpose for an ally anywhere within
+your aura; however, your Radiant Judgment ability no longer triggers when attacked. Instead, it triggers
+whenever you could Interpose but don’t.
+LEVEL 3
+
+We All Suffer. Gain +2 max Wounds. When an ally within your aura would gain any Wounds
+or fail a save, you may suffer the effect instead and trigger your Radiant Judgment ability.
+Bring Me Your Pain. Reaction (when a willing ally within your aura would drop to 0 HP):
+Switch HP with them (if your current HP is higher than their max HP, they gain temp HP equal
+to the difference), dropping to 0 HP and gaining the Wound instead.
+Blood Magic. You can use Entice on yourself.
+
+LEVEL 7
+
+Torment. Your Lay on Hands heals you for twice as much, and others for half as much. When
+you deal damage, you can expend healing power from your Lay on Hands pool to increase
+the damage dealt by an amount equal to the points spent (ignoring Armor).
+
+LEVEL 11
+
+Exploit. Reaction (whenever an ally within your aura Defends): You may expend your
+Judgment Dice to force an enemy within your aura to Interpose (a creature cannot Interpose
+against its own attack).
+
+LEVEL 15 Bloody Terror. Attacks against you gain disadvantage for each Wound you have (max 3).
+12
+
+ARTIST: EDWARD YORKE
+
+13
+
+FAQ
+
+Are Judgment Dice used up on a miss? Yes, they are
+expended on your next attack, hit or miss (they also expire
+at the end of combat if unused).
+Can I used Judgment Dice on spells? On Reach spells,
+yes.
+Do I gain Judgment Dice when I Interpose? Yes, Interposing makes you the new target of the attack. You gain
+Judgment Dice even if a monster’s attack misses or all the
+damage is mitigated.
+Can Judgment Dice crit or explode? No. They are additional damage on an attack you make (but the underlying
+attack can crit as normal).
+Can I Interpose more than once if it’s free? No. Each
+reaction is still limited to 1/round even if free.
+
+OATHSWORN NAMES
+Male Names
+• Justice
+• Cassian
+• Sledge
+• Warren
+• Sir Allard
+• Baral
+• Turrek
+14
+
+Female Names
+• Lady Aris
+• Constance
+• Esmee
+• Maeve
+• Liris
+• Tess
+• Yuni
+ARTIST: MARIN IURII
+
+15
+
+OATHSWORN
+
+QUICK BUILDS
+Justice
+
+Human, Oathsworn
+
++2
+
+-1
+
++0
+
++2
+
++1
+
++1
+
++0
+
++5
+
+1
+
++2
+
+7
++5
+
++1
+
++1
+
++1
+
++0
+
++0
+
+6
+
++3
+
++3
+
++0
+
+6
+
+Medium
+
+24
+12
++5
+
+Radiant Judgment. When attacked, +2d6 to next attack.
+Lay on Hands. Action: Heal a target (max pool of 10 HP).
+Radiant Spellcasting. Cantrips & Tier 1 spells (3 mana).
+Zealot. (1 mana) +5 damage.
+Tenacious (Human). +1 to all skills and Initiative.
+16
+
+d10
+
+2
+
++2
+
++6
+
++3
+
++0
+
+Mace. (1d6+2).
+Rusty Mail. 6+DEX Defense.
+Wooden Buckler. +2 Defense.
+Manacles.
+
+Human, Oathsworn
+
+-1
+
+Medium
+
+17
+
+Radiant Judgment. When attacked, +2d6 to next attack.
+Lay on Hands. Action: Heal a target (max pool of 5 HP).
+Tenacious (Human). +1 to all skills and Initiative.
+
+Justice
+
+6
+
++2
+
+3
+
++0
+
+d10
+
+6
+
++3
+
++2
+
++3
+
++0
+
+Mana
+
+Mace. (1d6+2).
+Rusty Plate. 10 Defense.
+Wooden Buckler. +2 Defense.
+Manacles.
+
+
