@@ -42,7 +42,7 @@ FIELDS = ["object", "risk", "escalation", "design_note"]
 
 def text_of(c):
     parts = [c["object"], *c["unlock"], c["risk"], c["resource"]["text"], *c["powers"], c["escalation"],
-             c.get("design_note", "")]
+             c.get("design_note", "")] + (c.get("escalation_table") or {}).get("rows", [])
     return [p for p in parts if p]
 
 

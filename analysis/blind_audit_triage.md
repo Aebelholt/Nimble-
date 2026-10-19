@@ -49,13 +49,13 @@ The second model audited the deck from `analysis/blind_audit_prompt.md` alone. E
 | Their filler-passive examples (Kettle venting, the Songweaver's social penalty) | Neither is a passive; those are escalation and resource text. My filler list in `reassessment.md` stands. |
 | Power ratings | They rated no card below Rare and used weak baselines (Grim Coronet and Button of Protection stand in for a dozen unrelated cards). I would not adopt their scale; `power_levels.md` keeps its bands. |
 
-## 4. Decisions for you
+## 4. Decisions (all resolved)
 
 1. ~~**Forgotten Key.**~~ **Decided:** removed from the level 1 draw pool; a faction reward only. Done: `pool: faction_reward` in the JSON, `faction_reward_arcanum` in the Perchance module.
-2. **Drowning Scale.** Breath comes from any creature dropping to 0 HP within Reach 2, which includes Dying allies. Keep it as the spec's best-in-class example, limit it to enemies, or change the trigger?
-3. **Black Lotus Case.** What does "After 3, the bloom no longer needs the case" mean in play? Is stage 3 the end of the Stain?
-4. **Hexing Needles.** Limit "one kind of roll" to a skill or a save (not attacks), and give the victim a WIL save at each Safe Rest?
-5. **Oath-Band.** Grades have no criteria. Proposal: Worthy, a session and a risk to you; Mighty, an arc and a risk to someone or something you love; Legendary, it changes the city.
-6. **Finite resources.** Axe, Seven-Leaf Bracelet and Sown Teeth never refill, which the spec's resource list does not allow. Add "finite, never refills" to the spec?
-7. **Cheat, Fix.** I kept it (see section 3). Change it anyway?
-8. **Sown Teeth.** Minion warriors make it far weaker. Keep minions, or give each warrior a GM-guide monster build of your level and accept the prep?
+2. **Decided: keep as written, Dying allies included.** ~~Drowning Scale.~~ Breath comes from any creature dropping to 0 HP within Reach 2, which includes Dying allies. Keep it as the spec's best-in-class example, limit it to enemies, or change the trigger?
+3. **Decided: stage 3 is the last Stain; the bloom roots in your palm.** ~~Black Lotus Case.~~ What does "After 3, the bloom no longer needs the case" mean in play? Is stage 3 the end of the Stain?
+4. **Decided: keep it open, attacks included, no save.** ~~Hexing Needles.~~ Limit "one kind of roll" to a skill or a save (not attacks), and give the victim a WIL save at each Safe Rest?
+5. **Decided: criteria added as proposed.** ~~Oath-Band.~~ Grades have no criteria. Proposal: Worthy, a session and a risk to you; Mighty, an arc and a risk to someone or something you love; Legendary, it changes the city.
+6. **Decided: finite stays; the spec is the GM's solo design guide, not binding for group play.** ~~Finite resources.~~ Axe, Seven-Leaf Bracelet and Sown Teeth never refill, which the spec's resource list does not allow. Add "finite, never refills" to the spec?
+7. **Kept as is.** ~~Cheat, Fix.~~ I kept it (see section 3). Change it anyway?
+8. **Decided: minions, one damage die step up (d10, d12 from level 5, d20 from level 9).** ~~Sown Teeth.~~ Minion warriors make it far weaker. Keep minions, or give each warrior a GM-guide monster build of your level and accept the prep?

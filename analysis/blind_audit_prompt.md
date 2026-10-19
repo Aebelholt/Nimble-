@@ -25,7 +25,7 @@ Use exactly these sections.
 
 **B. Findings.** Grouped by lens. Each finding names the card id, quotes the text, and says what goes wrong in play, in one or two sentences. Add a suggested fix where it is short.
 
-**C. Exploits and combinations.** Cross-card or card-plus-class interactions that break something. Say whether each one breaks a fight (acceptable here) or breaks an episode or the campaign (not acceptable).
+**C. Exploits and combinations.** (Include the guilds in section 7 where they interact with cards.) Cross-card or card-plus-class interactions that break something. Say whether each one breaks a fight (acceptable here) or breaks an episode or the campaign (not acceptable).
 
 **D. Deck level.** Diversity of resource types, costs, origins and looks; repetition; the ten fixes you would make first, ranked.
 
@@ -42,11 +42,12 @@ Sejr is an episodic, drop-in Nimble 2 campaign in the City of Arches, a setting 
 - **Trackers carry memory.** A thread board of six index cards (one thread closes and one opens each episode), hidden Neglect clocks for the outer regions, six-step faction clocks. GM prep is the trackers and nothing else.
 - **Tiers.** Found arcana are Minor or Major. Class arcana are 1st echelon (levels 1-4). The found pool is meant to be about 24 cards, diverse in look and mechanics.
 - **The GM, in their words:** these items are meant to be stronger than standard magic items, because they exist to drive player engagement. "Broken is not bad, because I will supercharge my combats and situations too." They are a very lenient GM: no player death across 4 systems and 7 groups.
+- **Since the first audit, the GM decided:** Major cards stay in the level 1 draw on purpose ("random players, huge powers; I'd be surprised if nothing cataclysmic came from this, and in that lies the fun"). Class arcana and the Forgotten Key are rewards, never drawn; each class arcanum comes from its class guild (section 7). Finite, never-refilling relics are intended. Three guild masters are left blank on purpose. The Drowning Scale's trigger (allies included) and the Hexing Needles' open "kind of roll" (attacks included, no save) are kept by choice.
 - **Sources.** Many items are deliberate ports from other systems and real-world myth (Norse, Greek, Egyptian, fairy lore), justified because the arches lead to other realms. Stonetop's arcana are the main inspiration.
 
 ## 2. Design standard
 
-The spec below is binding. Where its vocabulary table disagrees with the rules reference in section 3, the rules reference wins.
+The spec below is the GM's own design guide, written for solo design work. Use its checklist as a lens, but it does not bind group play: the GM has accepted finite resources and very strong powers. Where its vocabulary table disagrees with the rules reference in section 3, the rules reference wins.
 
 
 Binding format and audit spec for all arcana. Source: pasted by the campaign owner; reproduced here unchanged in substance.
@@ -303,6 +304,23 @@ These names appear on the cards and exist in the setting books. Treat them as ca
 - Worlds beyond the arches: Drendaan (endless sea, derelict ships hung in miles-high glowing vines), Drakeholm (land of dragons), Terrache (vast cavern with a great sea), Arkus (world of dead temples, undead priests), Eruwynd, Io, Korax, Maphotar, Threska, Vynan, Deathreach.
 - History: the Nameless King built the city of arches and was cursed out of history by the Army of the Blue Star; Delenith, City of Towers, vanished; Ovelek the Gray Worm was a primordial titan.
 
+## 5b. Table rules for arcana
+
+Small house rules that sit beside the cards. The cards themselves live in `data/sejr_arcana.json`.
+
+### Hero creation
+- Draw one found arcanum from the 23 cards in `other_arcanum`. Major cards are in the draw on purpose: the unlock is the gate, and a starting hero holding a campaign-changing relic is part of the fun.
+- Take a holding, or join your class guild (`data/sejr_guilds.json`).
+- Class arcana are never drawn. A hero earns their class arcanum at Journeyman rank in their class guild. The Forgotten Key is a faction reward only.
+
+### Off-screen refills
+- Between episodes, each hero may make one refill off-screen, if it can be done inside the city: a vigil, a game of chance, a retelling to a new listener, an Archkeeper's record, a burial on the Cliffs of the Dead, hair, blood or cloth freely given (Hexing Needles). Absent players may use it too, alongside their arcana-ritual tick.
+- Say it in one sentence in the next episode's "last time" line.
+- A refill that needs a place beyond the city needs a gig: the Revlend Marshes, Bloodrust Depths, the Lost Cavern of the Sundering Saurians, a world beyond an arch. That gig is a ready-made hero stake, and it takes the party to a region your Neglect clocks track.
+
+### Guild masters
+- Three guilds have no master yet (the Wardens' Lodge, the Sworn Chapter, the Hollow Circle). Name them at the table when a hero first walks in.
+
 ## 6. The cards
 
 Class arcana first, then found arcana. Each class arcanum belongs to the class named.
@@ -324,7 +342,9 @@ Class arcana first, then found arcana. Each class arcanum belongs to the class n
 - Echo Strike (Free, while Raging, spend 1 Fury Echo): Roll a Fury Die and set it aside with the rest, up to your maximum. This does not use your Rage action.
 - Death's Door (Free, 1/encounter, when you Rage, spend all 3 Fury Echo): For this encounter, your Rage does not end when you drop to 0 HP. Dying applies as normal.
 
-**Escalation.** If you drop to 0 HP with Death's Door active, the knucklebone cracks at once and stops working. Your Rage still holds for the encounter. Replace it with another ancestor's relic from the Borderlands, or take one from a worthy enemy. The GM decides where it is and how long the search takes. Whatever hunted the ancestor learns the bone has moved.
+**Escalation.** If you drop to 0 HP with Death's Door active, the knucklebone cracks at once and stops working. Your Rage still holds for the encounter. Replace it with another ancestor's relic from the Borderlands, or take one from a worthy enemy. The GM decides where it is and how long the search takes. Whatever hunted the ancestor learns the bone has moved. Roll a d6 on the table below, or choose.
+
+*Where the replacement relic is (d6):* 1 Sevelet's Throne, among the warring souls (Doorish Hills); 2 the Watchtower of Averost, on a Blood Spear's skeletal veteran (Doorish Hills); 3 under the offerings at the Cairn of the Last Titan (Doorish Hills); 4 the Red Sand's Bout Rolls name a fighter buried with one; 5 Mirewraith's Barrow, with the Eternal Blades (Revlend Marshes); 6 on the next enemy who nearly beats you.
 
 ### The Loaded Die
 `class_cheat` · class arcanum, Cheat
@@ -361,7 +381,9 @@ Class arcana first, then found arcana. Each class arcanum belongs to the class n
 - Pull it (Free): The standard returns to your hand and the aura ends immediately.
 - Hold Ground (Reaction, spend 2 Authority): When the standard would be knocked over, stolen, or destroyed, it refuses. It cannot be moved by any force until the start of your next turn.
 
-**Escalation.** When Authority is at 0 during combat and you plant the standard anyway, the insignia becomes briefly legible to everyone present. The GM reads what it says aloud. It goes dark again immediately. What it says is the GM's tool: a name, a title, a command. Prepare it before the session.
+**Escalation.** When Authority is at 0 during combat and you plant the standard anyway, the insignia becomes briefly legible to everyone present. The GM reads what it says aloud. It goes dark again immediately. What it says is the GM's tool: a name, a title, a command. Prepare it before the session. Roll a d6 on the table below, or choose.
+
+*What the insignia says (d6):* 1 a name, and a Knight of the Nameless King in the crowd answers to it; 2 a title: the captain of a company that died here; 3 a command: "Hold until I return"; 4 a place: Sevelet's Throne; 5 a date: the next Final Rest of the Nameless King; 6 your own name.
 
 ### The Borderlands Tracking Cord
 `class_hunter` · class arcanum, Hunter
@@ -390,7 +412,7 @@ Class arcana first, then found arcana. Each class arcanum belongs to the class n
 - Pay the pawn shop's price, which is more than the lens is worth.
 - Spend a week of downtime studying the crack through the lens, and make an Arcana check, DC 12, to read the maker's mark. On a failure the week is spent and you start over.
 - Then cast a spell of the highest tier you can cast, with the lens held to your eye for the whole cast.
-- Risk: Roll a d6 when the cast ends. On a 1-2 the lens fails as its Escalation describes: take 1 Wound, the lens fuses to your face until the encounter ends, and Kartan is told. On a 3 or higher it bonds. If you flinch or remove the lens, the crack spreads and it is ruined.
+- Risk: When the cast ends, the crack pulls at your eye. Make an INT save, DC 13. On a failure the lens fails as its Escalation describes: take 1 Wound, the lens fuses to your face until the encounter ends, and Kartan is told. If you flinch or remove the lens, the crack spreads and it is ruined.
 
 **Resource: Overcharge (d6 vs. accumulation).** Overcharge (d6 vs. accumulation). Roll 1d6 each time you cast a tiered spell while wearing the lens. If you roll equal to or below your current Overcharge, the lens fails (see Escalation). On a safe roll, add 1 Overcharge. Overcharge clears when you hold the lens to the glass of the Observatory of Infinite Skies through one night.
 
@@ -436,7 +458,9 @@ Class arcana first, then found arcana. Each class arcanum belongs to the class n
 - Patron's Margin (Free, 1/encounter, mark 2 Debt, patron path): Cast one tiered spell you know at +1 tier above your current maximum. The patron extends credit.
 - Reaver's Margin (Free, 1/encounter, mark 2 Debt, Reaver path): Your next Bonescythe strike this turn rolls 1 extra damage die.
 
-**Escalation.** When Debt reaches 4, the patron collects. It does not take power. It adds one sentence about your character to the contract, permanently. The GM decides what it says and reads it aloud. Debt clears. The sentence stays. A Reaver's contract still answers to the patron they left: that patron writes the sentence, and sends an agent to read it to them in person.
+**Escalation.** When Debt reaches 4, the patron collects. It does not take power. It adds one sentence about your character to the contract, permanently. The GM decides what it says and reads it aloud. Debt clears. The sentence stays. A Reaver's contract still answers to the patron they left: that patron writes the sentence, and sends an agent to read it to them in person. Roll a d6 on the table below, or choose.
+
+*The sentence the patron writes (d6):* 1 They will refuse help once, when it matters most.; 2 They owe me the name of someone they love.; 3 They will open a door they were told to leave shut.; 4 Their shadow answers to me first.; 5 They will come back to the sealed room.; 6 They will keep one promise I choose, whatever it costs..
 
 ### The Bell of the Three Sisters
 `class_shepherd` · class arcanum, Shepherd
@@ -465,7 +489,7 @@ Class arcana first, then found arcana. Each class arcanum belongs to the class n
 **Unlock.**
 - Perform at the Theater of Whispers, or any venue with an audience of 20 or more, and hold the crowd's full attention for an uninterrupted hour. No skill check. Just perform.
 - Find someone who heard the setlist's owner perform, and learn the last song, which has no title.
-- Risk: Roll a d6 when the hour ends. On a 1-2, someone in that crowd knows the hand that wrote the setlist, and they find you within a session.
+- Risk: Someone in that crowd knows the hand that wrote the setlist. Make a Perception check, DC 13, to spot them before they leave. On a failure they find you first, within a session.
 
 **Resource: Crowd (d6 vs. accumulation).** Crowd (d6 vs. accumulation, max 4). Each time you Call the Song in combat, roll 1d6 against your current Crowd, then add 1 Crowd. If you roll equal to or below your Crowd before adding, someone recognises the song and has feelings about it: you have disadvantage on your next social roll with a stranger this session. Crowd cannot pass 4; at 4 you cannot Call the Song until it clears. Crowd clears when you play a full uninterrupted hour for a new audience of 20 or more.
 
@@ -473,7 +497,9 @@ Class arcana first, then found arcana. Each class arcanum belongs to the class n
 - Call the Song (Free, in combat, 1/round): Name the song you are playing and roll against your Crowd. The first safe roll each encounter returns 1 spent use of Songweaver's Inspiration.
 - Protective Verse (Free, 1/encounter, remove 2 Crowd): A specific song from the setlist grants immunity to the Taunted or Frightened condition to all allies within 6 spaces until the end of the round.
 
-**Escalation.** When Crowd reaches 4, someone in the crowd knows who this setlist belonged to. They approach between encounters, or send someone. The GM decides who and what they want. They may be a fan. They may not.
+**Escalation.** When Crowd reaches 4, someone in the crowd knows who this setlist belonged to. They approach between encounters, or send someone. The GM decides who and what they want. They may be a fan. They may not. Roll a d6 on the table below, or choose.
+
+*Who knows the setlist (d6):* 1 the missing Songweaver's apprentice, who wants it back; 2 a creditor the missing Songweaver owed; 3 a Whisperer, selling the story to Roselyn Zeshe; 4 a devoted fan who wants you to finish the set; 5 the thief who stole it last month; 6 the missing Songweaver, in disguise.
 
 ### Mud from the Revlend Marshes
 `class_stormshifter` · class arcanum, Stormshifter
@@ -492,7 +518,9 @@ Class arcana first, then found arcana. Each class arcanum belongs to the class n
 - Extend the Beastshift (Free, spend 2 Earthpulse, once per Beastshift): Until the end of this encounter, casting spells does not end your Beastshift.
 - Mire (1 Action, spend all 4): Create a 3-space radius of difficult terrain centered on you that lasts until the end of the encounter. The ground thickens and pulls. Any creature that starts its turn in the mire is Slowed.
 
-**Escalation.** When the jar is empty, mud already applied does not dry, but no new mud can be applied until the jar is refilled. If the jar breaks, the mud it held dries at once and all its effects end. A skilled craftsperson can repair a broken jar, but the marshes must still refill it. Each time you return to refill it, the marshes have changed, and the GM says how.
+**Escalation.** When the jar is empty, mud already applied does not dry, but no new mud can be applied until the jar is refilled. If the jar breaks, the mud it held dries at once and all its effects end. A skilled craftsperson can repair a broken jar, but the marshes must still refill it. Each time you return to refill it, the marshes have changed, and the GM says how. Roll a d6 on the table below, or choose.
+
+*How the marshes have changed (d6):* 1 the water has risen, and Heron's Stride stands on its last stilts; 2 a path of stones now leads to where you slept; 3 the GM reveals one step of the Revlend Marshes' Neglect clock; 4 something has left a gift where you leave the jar; 5 the mud smells of a different storm: the next refill takes two nights; 6 Revlenders ask you to carry a message back to the city.
 
 ### The Pain Teacher's Wrappings
 `class_zephyr` · class arcanum, Zephyr
@@ -522,7 +550,7 @@ Class arcana first, then found arcana. Each class arcanum belongs to the class n
 - Present it to each of the city's seven major arches while the Archkeepers watch
 - Find the one arch that hums
 - Spend a full night at its threshold
-- Risk: The arch opens briefly. Roll a d6: on a 1-2, something comes through before you close the way. Closing it takes a Lore check, DC 12.
+- Risk: The arch opens briefly. Hold it with a Might check, DC 13, or something comes through before you close the way. Closing it then takes a Lore check, DC 12.
 
 **Resource: Hum (pip tracker).** Hum (pip tracker, max 3). Spend 1 Hum each time you Open the Way. Regain 1 when you carry the key to an arch you have not yet tried it on and an Archkeeper records what the arch did. Hum never returns at a rest.
 
@@ -588,7 +616,9 @@ Class arcana first, then found arcana. Each class arcanum belongs to the class n
 - Turn Back (Reaction, spend 1 Sand, after a die you can see is rolled and before its result is applied): The die is rerolled. The new result stands.
 - Sand Sense (Passive): You always know the exact time, and you can tell when a clock, a calendar, or a witness near you has it wrong.
 
-**Escalation.** When the last Sand falls, the original result happened somewhere. Within a session an Echo of you arrives carrying its consequences, and it wants the glass.
+**Escalation.** When the last Sand falls, the original result happened somewhere. Within a session an Echo of you arrives carrying its consequences, and it wants the glass. Roll a d6 on the table below, or choose.
+
+*What the Echo carries (d6):* 1 a debt to the Black Hand you never took on; 2 a fresh Wound, which it hands to you at the next encounter; 3 a friend who remembers the original result, and is angry; 4 a key to an arch that should not exist; 5 news of a death that did not happen here; 6 an offer to trade places with you for one day.
 
 ### The Black Lotus Case
 `black_lotus_case` · found, Minor
@@ -609,7 +639,7 @@ Class arcana first, then found arcana. Each class arcanum belongs to the class n
 - Wallwalker (Passive, while chosen): Climb sheer surfaces and walk on water.
 - Drowsing Pollen (once, when chosen): One creature of level 5 or lower within 2 spaces makes a WIL save, DC 13, or falls asleep for 1d4 rounds.
 
-**Escalation.** Each time the case empties, the Stain advances for good. 1: fingertips blacken, advantage on Finesse, and you can no longer feel heat or cold through them. 2: veins darken, +1 Initiative, your pulse is audible. 3: eyes black, you see in the dark, strangers flinch (disadvantage on Influence). After 3, the bloom no longer needs the case.
+**Escalation.** Each time the case empties, the Stain advances for good. 1: fingertips blacken, advantage on Finesse, and you can no longer feel heat or cold through them. 2: veins darken, +1 Initiative, your pulse is audible. 3: eyes black, you see in the dark, strangers flinch (disadvantage on Influence). Stage 3 is the last Stain. After it, the bloom roots in your palm: you no longer need the case to carry the petals, and no one can take them from you.
 
 ### The Oath-Band
 `oath_band` · found, Minor
@@ -624,7 +654,7 @@ Class arcana first, then found arcana. Each class arcanum belongs to the class n
 **Resource: Oath (toggle).** Oath (toggle, max 1). Set when you swear. Clears when you fulfil the oath, or when the GM rules it broken or abandoned. One oath at a time, and a new one only after the last has cleared.
 
 **Powers.**
-- Sworn (Passive): While the oath stands, you have advantage on checks that directly advance it. The GM grades it Worthy, Mighty or Legendary when you swear.
+- Sworn (Passive): While the oath stands, you have advantage on checks that directly advance it. The GM grades it when you swear. Worthy: a session's work, at risk to you. Mighty: an arc's work, at risk to someone or something you love. Legendary: it changes the city.
 - Hold Fast (Reaction, once per oath): When you fail a check or save that directly advances the oath, reroll it with advantage. The oath drops one grade.
 
 **Escalation.** Fulfilled: heal 1 Wound and gain +1, +2 or +3 max HP for good, by grade. Failed: lose that much max HP for good, the Golden Council writes the broken oath on the record under your name, and the Band stays shut until you do a penance.
@@ -673,7 +703,7 @@ Class arcana first, then found arcana. Each class arcanum belongs to the class n
 **Unlock.**
 - Win it from the Revlenders of Heron's Stride or the people of a drowned place, or earn it in their service
 - Wear it for a full night underwater
-- Risk: Something in the deep hears the hum. Roll a d6 at dawn: on a 1-2 it follows you up and arrives within a session.
+- Risk: Something in the deep hears the hum. Make a Stealth check, DC 12, on the way up, with the coat's usual Stealth penalty. On a failure it follows you up and arrives within a session.
 
 **Resource: Growth (pip tracker).** Growth (pip tracker, max 4). Gain 1 Growth for each hour you spend underwater in a drowned place (the Lost Cisterns, Sunken Revvia, a flooded vault), beyond what the gig needs. That hour costs a scene. A rest never adds Growth. Lose 1 Growth when you take a Wound, and 1 each day after a week spent dry. Using Eel Slip spends 1 Growth.
 
@@ -807,7 +837,7 @@ Class arcana first, then found arcana. Each class arcanum belongs to the class n
 **Resource: Teeth (finite never-refill).** Teeth (finite, 1d4+1, rolled at unlock). Each Sow uses up one tooth. A sown tooth never comes back, and nothing refills the satchel.
 
 **Powers.**
-- Sow (Action, spend 1 Tooth): An armored warrior rises from the ground beside you and obeys you for an hour. It fights as a minion (GM guide): it attacks with a d8 (d10 from level 5, d12 from level 9), any damage destroys it, and all your warriors move and attack together on your turn.
+- Sow (Action, spend 1 Tooth): An armored warrior rises from the ground beside you and obeys you for an hour. It fights as a minion (GM guide): it attacks with a d10 (d12 from level 5, d20 from level 9), any damage destroys it, and all your warriors move and attack together on your turn.
 - Dragon's Click (Passive): The teeth click louder within 6 spaces of a dragon or dragonkin.
 
 **Escalation.** If two or more warriors stand and one is struck by surprise, they turn on each other, then on whoever is closest. Dragons and their kin can smell the satchel. When the last tooth is gone, the satchel is just a bag.
@@ -820,7 +850,7 @@ Class arcana first, then found arcana. Each class arcanum belongs to the class n
 **Unlock.**
 - Install it in your holding
 - For each arch it should watch, carry a sliver of its glass through that arch and back, unbroken
-- Risk: Something on the other side sees the mirror before it sees them. Roll a d6 when the last sliver returns: on a 1-2, whatever sees the mirror can look back through it until a night's vigil clears it.
+- Risk: Each sliver must come back unbroken. Carrying one through an arch and back takes a Finesse check, DC 12. A broken sliver lets whatever is on that side look back through the mirror until a night's vigil clears it.
 
 **Resource: Clarity (pip tracker).** Clarity (pip tracker, max 3). Spend 1 Clarity for Watch or Foresee. Regain all after someone keeps a full night's vigil before the mirror without sleeping. Clarity returns only this way.
 
@@ -860,7 +890,7 @@ Class arcana first, then found arcana. Each class arcanum belongs to the class n
 - Find a second fragment
 - Carve the first rune's name into a gravestone or standing stone, and speak aloud the name of someone who died for something
 - Hold the fragments together for 10 minutes and they fuse
-- Risk: Whoever carries another fragment feels yours wake. Roll a d6 when they fuse: on a 1-2 the fragments grind against each other and you take 1 Wound.
+- Risk: Whoever carries another fragment feels yours wake. Holding the shards together while they grind takes a STR save, DC 13. On a failure you take 1 Wound and must hold them for another 10 minutes.
 
 **Resource: Runes (pip tracker).** Runes (pip tracker, up to 9, one per fused fragment). Each fragment carries one rune, rolled on a d8 when it fuses. Each rune works once, then goes dark. A dark rune relights when you carve it into a gravestone or a standing stone and speak aloud the name of someone who died for something.
 
@@ -920,7 +950,7 @@ Class arcana first, then found arcana. Each class arcanum belongs to the class n
 **Unlock.**
 - Cut a length of strand-line from a derelict hull in Drendaan with the harpoon's own blade
 - Make one throw that hauls you across a gap you could not have jumped
-- Risk: Whatever lived aboard the hulk feels the line cut. Roll a d6: on a 1-2 it follows the line through the arch within a session.
+- Risk: Whatever lived aboard the hulk feels the line cut. Make a Stealth check, DC 13, to get clear of the hulk unseen. On a failure it follows the line through the arch within a session.
 
 **Resource: Slack (d6 vs. accumulation).** Slack (d6 vs. accumulation). Each time you Haul, roll a d6 against your current Slack, then add 1 Slack. If you roll equal to or below your Slack before adding, the line snarls (see Escalation). Slack has no maximum, so at 6 or more every Haul snarls. Slack clears when you carry a length of the line back to a derelict hull in Drendaan and splice it into the strand.
 
@@ -947,7 +977,9 @@ Class arcana first, then found arcana. Each class arcanum belongs to the class n
 - Vouch (Reaction, spend 1 Provenance): When an ally within 6 spaces makes an Influence check about an object or its owner, they have advantage.
 - Margins (Passive): The ledger shows a blot when you hold it within 6 spaces of a stolen or cursed object.
 
-**Escalation.** When the last Provenance is spent, the ledger writes one relic's name and its rightful owner on a blank page without being asked. The GM chooses the relic, and the owner is someone you know. The Seekers of the Sun and the Black Hand both learn it has been written.
+**Escalation.** When the last Provenance is spent, the ledger writes one relic's name and its rightful owner on a blank page without being asked. The GM chooses the relic, and the owner is someone you know. The Seekers of the Sun and the Black Hand both learn it has been written. Roll a d6 on the table below, or choose.
+
+*The relic the ledger writes (d6):* 1 something from the Vaults of the Nameless King; 2 an arcanum another hero carries; 3 a piece on display in the Museum of Worlds Beyond; 4 an heirloom of your own family; 5 a key to one of the city's arches; 6 a relic still lying in Sunken Revvia.
 
 ### The Black Goat's Tally-Stick
 `tally_stick` · found, Minor
@@ -966,3 +998,49 @@ Class arcana first, then found arcana. Each class arcanum belongs to the class n
 - Read the Notches (Passive): When you hold the stick at a table, you know who in the room owes whom, and whether the debt is money, a favor, or blood.
 
 **Escalation.** If the Truce breaks, the stick burns your palm for 1 Wound, and the Black Goat's wardens come for whoever broke it within a session. Vynan Halfhorn will want to know why the peace failed under his stick.
+
+
+## 7. Class guilds
+
+An alternative to the holding at hero creation, and where each class arcanum is earned. Names, wants, splits and masters' roles are new canon; halls are canon places.
+
+- **choice:** At hero creation, take a holding or join your class's guild.
+- **guild_gives:** A shared hall to Safe Rest in, one contact in the guild, one specialty from the guild's skill, and the guild as a door that sends you jobs.
+- **cost:** The guild's ask, every arc. Skip it for a whole arc and drop a rank; an Apprentice who skips it is out.
+- **ranks:** Apprentice: you join here. Journeyman: meet the ask once and finish one gig for the guild; receive your class arcanum or the lead to it. Master: take a side in the guild's split and win the vote; you hold the guild's seat.
+- **class_lock:** A guild gives its arcanum only to its own class. Another class gets the contact, the specialty and the jobs.
+- **prep:** Each guild is one index card. It gets a faction clock only when a player's choice makes it matter.
+- **pressures:** The Golden Council charters guilds; the University wants them as trade chapters; the Black Hand sells counterfeit charters to gray guilds (campaign overview).
+
+### The Red Sand (Berserker)
+Hall: Arena of Blood, Lower Reaches. Master: Sytheria Redsong, the arena's master of ceremonies. Wants: to rule on trial by mortal combat for the Black Hand's condemned as a guild verdict, not as the Black Hand's mercy. Teeth: hunts fighters who fix bouts. Teaches: Athletics. Keeps: the Bout Rolls, every fighter's record and how they lost. Split: the Blood (to the death, for the crowd's money) against the Sand (first blood, for the fighters). Asks: one bout per arc; the guild takes a cut. Gives: the lead: the Rolls name the fallen Borderlands fighter, and the guild has the collector's address. Rival: the Black Hand.
+
+### The House (Cheat)
+Hall: Guildred's Grotto, Lower Reaches. Master: Gleaming Guildred, the dwarf priest of luck, coin and merriment. Wants: the Council's license for every game of chance in the city. Teeth: blacklists sharps who cheat members. Teaches: Sleight of Hand. Keeps: the Marks Book, who is rich and who is desperate. Split: the House (honest odds, steady coin) against the Sharps (the guild's best are cheats). Asks: a tithe of winnings. Gives: the lead: the House knows the card sharp, and which Golden Knights shelf the die left. Rival: the Black Hand, which taxes every table.
+
+### The Muster (Commander)
+Hall: Citadel of the Golden Knights. Master: Joslyn Halfcloak, the Knights' contact for hired help. Wants: a standing commission for free companies, since the Knights are about two hundred strong and already hire outsiders. Teeth: strips the commission of captains who abandon their troops. Teaches: Persuasion (leadership). Keeps: the Muster Roll, every sellsword company and its debts. Split: Knights-first (serve the Order) against the Free Captains (serve the highest bidder). Asks: answer one muster per arc. Gives: a writ to take the Battle Standard from the Museum of Worlds Beyond's vault. Rival: the Seekers of the Sun, who hold it.
+
+### The Wardens' Lodge (Hunter)
+Hall: the City Walls' gatehouse. Master: [your call], a Doorish Hills warden. Wants: bounty rights on the Suntouched Highway and Predalion's Belt. Teeth: hunts poachers and guides who sell out caravans. Teaches: Survival (tracking). Keeps: the Track Book, the sign of every beast and band on the roads. Split: the Wardens (keep the roads) against the Bounty-takers (paid per head). Asks: one road patrol per arc. Gives: the Borderlands Tracking Cord itself; it was a warden's. Rival: smugglers on the Hills roads.
+
+### The University (Mage)
+Hall: Kartan, Tower of the Arcane. Master: Savandra Thricecursed, Kartan's overseer. Wants: a monopoly: open lectures, then licensing, then the only key-readers in the city (campaign overview). Teeth: an enforcement wing of ex-adventurers (campaign overview). Teaches: Arcana. Keeps: the Laboratories of Kartan. Split: Traditionalists, Royalists and a New School (campaign overview). Asks: your findings, published as its own. Gives: the Cracked Lens of Kartan, lent to a Reader-rank student. Rival: the Archkeepers.
+
+### The Sworn Chapter (Oathsworn)
+Hall: the Queen's Palace chapel. Master: [your call]. Wants: sworn knights recognized as judges in their own right. Teeth: tries oathbreakers. Teaches: Insight (detecting lies). Keeps: the Book of Oaths, every oath sworn before the Golden Throne. Split: Throne-sworn (the queen) against Law-sworn (the Council's law); canon's plot by the queen's sister Atretha gives it a live edge. Asks: judge one dispute per arc. Gives: a lead to the old court ruin in Sunken Revvia where the Broken Verdict lies. Rival: the Golden Council.
+
+### The Hollow Circle (Shadowmancer)
+Hall: the Hole in the World. Master: [your call]. Wants: pacts made lawful, so a pact-bound caster is not a criminal by default. Teeth: hunts members whose patrons come through. Teaches: Arcana (forbidden knowledge). Keeps: the Margin Book, every patron's known terms. Split: the Bound (keep their patrons) against the Reavers (cut free). Asks: report any patron contact. Gives: the address of the sealed room where the Hollow Contract lies. Rival: the Children of Ibraxus, who recruit the same people.
+
+### The Sisters' Vigil (Shepherd)
+Hall: Temple of the Three Sisters. Master: Grace Ebonlight, who directs the temple. Wants: the right to tend every dying body in the city, the Lower Reaches included. Teeth: hunts body-sellers and false healers. Teaches: Medicine. Keeps: the Roll of the Dead, who is buried where on the Cliffs. Split: the Temple (heal for faith) against the Market (heal for coin). Asks: one vigil per arc at a sickbed or grave (also the Bell's refill). Gives: the Bell of the Three Sisters, lent. Rival: the Black Hand's back-alley healers.
+
+### The Whisper Company (Songweaver)
+Hall: Theater of Whispers. Master: Kaylex Thren, the dragonborn minstrel who runs it. Wants: a place at the queen's court. Teeth: blacklists performers who sell what they hear backstage without the Company's leave. Teaches: Performance. Keeps: the Prompt Books, every play and who sat in the audience. Split: the Players (perform) against the Whisperers (sell what they hear to Roselyn Zeshe). Asks: one performance per arc, and anything you overhear. Gives: the name of whoever stole the Setlist. Rival: the queen's spymaster.
+
+### The Grove Circle (Stormshifter)
+Hall: Sunset Grove. Master: Graysen One-Eye, the druid who oversees it. Wants: a voice for the outer lands while the city's arches leave them to rot. Teeth: hunts poachers and anyone who brings beasts through the arches. Teaches: Nature (weather). Keeps: the Weather Book. Split: the Grove (keep the city's wild corner) against the Marsh (Revlender-born, and angry at the city). Asks: tend the Grove one night per arc. Gives: the Mud from the Revlend Marshes itself; the arch-traveller left the jar with the Grove. Rival: the Golden Council, which ignores the outer lands.
+
+### The Last Studio (Zephyr)
+Hall: the studio in the Lower Reaches from the Wrappings card. Master: none: the last teacher stopped mid-sentence. Wants: a master. Teeth: hunts whoever silenced the last teacher. Teaches: Acrobatics. Keeps: four centuries of annotations. Split: two senior students, each claiming the last teacher's line. Asks: train one novice per arc. Gives: the key to the locked case where the Wrappings lie. Rival: the Red Sand, which poaches students.

@@ -92,6 +92,15 @@ A second model audited the deck from `analysis/blind_audit_prompt.md`. Triage in
 - **Decided: class arcana are faction rewards too.** All 11 move to `faction_reward_arcanum`; new heroes draw from the 23 found cards. Suggested giver for each card, and whether the reward is the item or a lead to it, in `analysis/faction_rewards.md`.
 - **Decided: Forgotten Key is a faction reward.** Removed from the level 1 draw; each card now has a `pool` field (`class`, `draw`, `faction_reward`). The draw pool is 23 cards. The Perchance module gains a `faction_reward_arcanum` list, and the test fails if a faction reward reaches `other_arcanum`.
 
+### Decisions before the second blind audit
+- **Majors stay in the level 1 draw.** Random players, huge powers.
+- **Kept as written:** Drowning Scale (allies count), Hexing Needles (any roll, no save), Cheat's Fix.
+- **Changed:** Sown Teeth minions hit one die step harder; Black Lotus ends at stage 3 with the bloom rooted in your palm; Oath-Band grades have criteria.
+- **Finite relics stay.** The spec is the GM's solo design guide, not a rule for group play; the blind prompt now says so.
+- **Guild masters** for the Wardens' Lodge, Sworn Chapter and Hollow Circle stay blank, named at the table.
+- **Polish applied:** seven identical d6 risks became object-specific hazards; seven open-ended escalations have d6 tables (`escalation_table`, rendered in Perchance and tested); off-screen refill rule in `data/sejr_table_rules.md`. Filler passives were left in.
+- **Blind audit v2:** `analysis/blind_audit_prompt.md` regenerated with the decisions, table rules and guild cards; `analysis/blind_audit_cards.md` and `.json` refreshed.
+
 ## Diversity, found pool: before and after
 
 | | Before (25) | After (24) |

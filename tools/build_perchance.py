@@ -27,7 +27,7 @@ def entry(c):
     tier = c["tier"] if c["kind"] == "found" else "Class"
     return (f'  {js(c["name"])}: {{tier:{js(tier)}, obj:{js(c["object"])}, unlock:{js(c["unlock"])}, '
             f'risk:{js(c["risk"])}, res:{js(c["resource"]["text"])}, power:{js("<br>".join(c["powers"]))}, '
-            f'esc:{js(c["escalation"])}}}')
+            f'esc:{js(c["escalation"])}, table:{js(c.get("escalation_table"))}}}')
 
 
 head = """// ==========================================
@@ -80,6 +80,7 @@ arcanum_line(name) =>
   if (a.res) g += "<p><b>Resource:</b> " + a.res + "</p>";
   if (a.power) g += "<p><b>Power:</b> " + a.power + "</p>";
   if (a.esc) g += "<p><b>Escalation:</b> " + a.esc + "</p>";
+  if (a.table) g += "<p><b>" + a.table.title + " (d6):</b> " + a.table.rows.map((r, i) => (i + 1) + " " + r).join("; ") + ".</p>";
   g += "<p><b>Examine:</b> " + forge_clue.evaluateItem + "</p>";
   return "<p><b>Arcanum:</b> " + name + " (" + a.tier + "), unexamined. " + a.obj + "</p><details><summary>GM: ritual and powers</summary>" + g + "</details>";
 

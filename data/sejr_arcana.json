@@ -22,10 +22,10 @@
       "Echo Strike (Free, while Raging, spend 1 Fury Echo): Roll a Fury Die and set it aside with the rest, up to your maximum. This does not use your Rage action.",
       "Death's Door (Free, 1/encounter, when you Rage, spend all 3 Fury Echo): For this encounter, your Rage does not end when you drop to 0 HP. Dying applies as normal."
     ],
-    "escalation": "If you drop to 0 HP with Death's Door active, the knucklebone cracks at once and stops working. Your Rage still holds for the encounter. Replace it with another ancestor's relic from the Borderlands, or take one from a worthy enemy. The GM decides where it is and how long the search takes. Whatever hunted the ancestor learns the bone has moved.",
+    "escalation": "If you drop to 0 HP with Death's Door active, the knucklebone cracks at once and stops working. Your Rage still holds for the encounter. Replace it with another ancestor's relic from the Borderlands, or take one from a worthy enemy. The GM decides where it is and how long the search takes. Whatever hunted the ancestor learns the bone has moved. Roll a d6 on the table below, or choose.",
     "design_note": "Echo comes from a story told at a table, so the pool fills outside the fight and never from the Fury Dice the class already rolls. Death's Door is paid at the start of Rage, before the dangerous moment, and gives a first-echelon version of the level 18 Deep Rage.",
     "status": "keep",
-    "notes": "Reworked. Echo now fills by retelling, not by Fury Die matches (double-dipping); Death's Door paid up front (peak-value lethality); risk added; em dash removed; retelling venue: Sevenge and Gam's Public House (3_gazetteer). Unlock pass: risk now has a save and a Wound. Blind audit: 'assistance' defined; the escalation says the bone cracks at once while Rage holds. Pool: no longer rolled at hero creation; a faction reward, by the GM's decision. Guild: adopted; earned at Journeyman in The Red Sand (data/sejr_guilds.json).",
+    "notes": "Reworked. Echo now fills by retelling, not by Fury Die matches (double-dipping); Death's Door paid up front (peak-value lethality); risk added; em dash removed; retelling venue: Sevenge and Gam's Public House (3_gazetteer). Unlock pass: risk now has a save and a Wound. Blind audit: 'assistance' defined; the escalation says the bone cracks at once while Rage holds. Pool: no longer rolled at hero creation; a faction reward, by the GM's decision. Guild: adopted; earned at Journeyman in The Red Sand (data/sejr_guilds.json). Polish: escalation d6 table added, so the GM does not have to invent it at the table.",
     "source": "sources/class_arcana_v3.docx",
     "matrix": {
       "tier": "1st",
@@ -45,6 +45,17 @@
       "faction": "The Red Sand",
       "form": "the lead: the Rolls name the fallen Borderlands fighter, and the guild has the collector's address",
       "status": "adopted"
+    },
+    "escalation_table": {
+      "title": "Where the replacement relic is",
+      "rows": [
+        "Sevelet's Throne, among the warring souls (Doorish Hills)",
+        "the Watchtower of Averost, on a Blood Spear's skeletal veteran (Doorish Hills)",
+        "under the offerings at the Cairn of the Last Titan (Doorish Hills)",
+        "the Red Sand's Bout Rolls name a fighter buried with one",
+        "Mirewraith's Barrow, with the Eternal Blades (Revlend Marshes)",
+        "on the next enemy who nearly beats you"
+      ]
     }
   },
   {
@@ -117,10 +128,10 @@
       "Pull it (Free): The standard returns to your hand and the aura ends immediately.",
       "Hold Ground (Reaction, spend 2 Authority): When the standard would be knocked over, stolen, or destroyed, it refuses. It cannot be moved by any force until the start of your next turn."
     ],
-    "escalation": "When Authority is at 0 during combat and you plant the standard anyway, the insignia becomes briefly legible to everyone present. The GM reads what it says aloud. It goes dark again immediately. What it says is the GM's tool: a name, a title, a command. Prepare it before the session.",
+    "escalation": "When Authority is at 0 during combat and you plant the standard anyway, the insignia becomes briefly legible to everyone present. The GM reads what it says aloud. It goes dark again immediately. What it says is the GM's tool: a name, a title, a command. Prepare it before the session. Roll a d6 on the table below, or choose.",
     "design_note": "Authority triggers on a damage threshold, not on defeats, so no ally gains by stealing last hits. Any solid hit fills the pool, which rewards coordinated pressure. The escalation is pure City of Arches: the Nameless King's name appears once, and only the GM knows what it says.",
     "status": "keep",
-    "notes": "Risk line and a costly unlock step added; aura range stated in the resource line; em dashes removed. Left: Authority fills from allies' damage and clears at encounter end, so it has no world refill. This is the spec's own example of a good Commander item. Unlock pass: risk now a d6. Blind audit: one Authority per attack stated. Pool: no longer rolled at hero creation; a faction reward, by the GM's decision. Guild: adopted; earned at Journeyman in The Muster (data/sejr_guilds.json).",
+    "notes": "Risk line and a costly unlock step added; aura range stated in the resource line; em dashes removed. Left: Authority fills from allies' damage and clears at encounter end, so it has no world refill. This is the spec's own example of a good Commander item. Unlock pass: risk now a d6. Blind audit: one Authority per attack stated. Pool: no longer rolled at hero creation; a faction reward, by the GM's decision. Guild: adopted; earned at Journeyman in The Muster (data/sejr_guilds.json). Polish: escalation d6 table added, so the GM does not have to invent it at the table.",
     "source": "sources/class_arcana_v3.docx",
     "matrix": {
       "tier": "1st",
@@ -140,6 +151,17 @@
       "faction": "The Muster",
       "form": "a writ to take the Battle Standard from the Museum of Worlds Beyond's vault",
       "status": "adopted"
+    },
+    "escalation_table": {
+      "title": "What the insignia says",
+      "rows": [
+        "a name, and a Knight of the Nameless King in the crowd answers to it",
+        "a title: the captain of a company that died here",
+        "a command: \"Hold until I return\"",
+        "a place: Sevelet's Throne",
+        "a date: the next Final Rest of the Nameless King",
+        "your own name"
+      ]
     }
   },
   {
@@ -201,7 +223,7 @@
       "Spend a week of downtime studying the crack through the lens, and make an Arcana check, DC 12, to read the maker's mark. On a failure the week is spent and you start over.",
       "Then cast a spell of the highest tier you can cast, with the lens held to your eye for the whole cast."
     ],
-    "risk": "Roll a d6 when the cast ends. On a 1-2 the lens fails as its Escalation describes: take 1 Wound, the lens fuses to your face until the encounter ends, and Kartan is told. On a 3 or higher it bonds. If you flinch or remove the lens, the crack spreads and it is ruined.",
+    "risk": "When the cast ends, the crack pulls at your eye. Make an INT save, DC 13. On a failure the lens fails as its Escalation describes: take 1 Wound, the lens fuses to your face until the encounter ends, and Kartan is told. If you flinch or remove the lens, the crack spreads and it is ruined.",
     "resource": {
       "name": "Overcharge",
       "type": "d6 vs. accumulation",
@@ -216,7 +238,7 @@
     "escalation": "When the d6 triggers, the glass heats to burning. Control Mage: you Lose Control, doing every option on the Control Table, with the GM choosing each time. Chaos Mage: you Invoke Chaos with disadvantage. Either way you take 1 Wound and cannot remove the lens until the encounter ends, because it has fused to your face. After the encounter, the Mages of Kartan sense the discharge and know its rough location. They send someone within 1 to 3 sessions. The fusing is now, the visitors are later.",
     "design_note": "Differentiated by subclass. The Control Mage gets a free Upcast on safe rolls, a reward for precision, and Lose Control as the failure. The Chaos Mage gets Overcharge relief on safe rolls and a worse Chaos roll on failure. Neither subclass wins both ways. The Mages of Kartan escalation is the City of Arches hook.",
     "status": "keep",
-    "notes": "Failure now matches the Mage rules (Control mages Lose Control, Chaos mages Invoke Chaos); the 'Control roll' unlock replaced; refill changed from abstention plus rest to a night at the Observatory; costly step and risk added. [NEEDS CANON: whether the Observatory of Infinite Skies lets a visitor leave a lens at its glass overnight.] Unlock pass: added a week of study with an Arcana check, and a d6 on the first cast that can fail the way the item fails. The old unlock was a price and one spell with no real hazard. Blind audit: Chaos mages never gained Overcharge (their safe rolls reduced it), so the lens had no risk for them. Now every safe roll adds 1 Overcharge for both subclasses; the Chaos reward is advantage on Invoke Chaos (a real Mage feature, Master of Chaos). Pool: no longer rolled at hero creation; a faction reward, by the GM's decision. Guild: adopted; earned at Journeyman in The University (data/sejr_guilds.json).",
+    "notes": "Failure now matches the Mage rules (Control mages Lose Control, Chaos mages Invoke Chaos); the 'Control roll' unlock replaced; refill changed from abstention plus rest to a night at the Observatory; costly step and risk added. [NEEDS CANON: whether the Observatory of Infinite Skies lets a visitor leave a lens at its glass overnight.] Unlock pass: added a week of study with an Arcana check, and a d6 on the first cast that can fail the way the item fails. The old unlock was a price and one spell with no real hazard. Blind audit: Chaos mages never gained Overcharge (their safe rolls reduced it), so the lens had no risk for them. Now every safe roll adds 1 Overcharge for both subclasses; the Chaos reward is advantage on Invoke Chaos (a real Mage feature, Master of Chaos). Pool: no longer rolled at hero creation; a faction reward, by the GM's decision. Guild: adopted; earned at Journeyman in The University (data/sejr_guilds.json). Polish: the generic d6 risk became a hazard tied to the object.",
     "source": "sources/class_arcana_v3.docx",
     "matrix": {
       "tier": "1st",
@@ -308,10 +330,10 @@
       "Patron's Margin (Free, 1/encounter, mark 2 Debt, patron path): Cast one tiered spell you know at +1 tier above your current maximum. The patron extends credit.",
       "Reaver's Margin (Free, 1/encounter, mark 2 Debt, Reaver path): Your next Bonescythe strike this turn rolls 1 extra damage die."
     ],
-    "escalation": "When Debt reaches 4, the patron collects. It does not take power. It adds one sentence about your character to the contract, permanently. The GM decides what it says and reads it aloud. Debt clears. The sentence stays. A Reaver's contract still answers to the patron they left: that patron writes the sentence, and sends an agent to read it to them in person.",
+    "escalation": "When Debt reaches 4, the patron collects. It does not take power. It adds one sentence about your character to the contract, permanently. The GM decides what it says and reads it aloud. Debt clears. The sentence stays. A Reaver's contract still answers to the patron they left: that patron writes the sentence, and sends an agent to read it to them in person. Roll a d6 on the table below, or choose.",
     "design_note": "Debt marks only on the contract's own powers, so it never rides on Pilfered Power, and the Safe Rest commune stays the class's own business. The Reaver path gives patronless Shadowmancers a card of their own. The permanent sentence is the right shape for a relationship with something ancient and dangerous.",
     "status": "keep",
-    "notes": "Debt no longer marks on Pilfered Power use and the Pilfered Power refill is gone (it duplicated the class commune); Reaver path and Reaver's Margin added (Reavers have no patron and cannot cast tiered spells at this echelon); risk added; em dash removed. Unlock pass: Reaver path now takes three nights with saves; patron path states that the counter-demand binds. Blind audit: the Reaver escalation now says the left patron collects through the stolen contract. Pool: no longer rolled at hero creation; a faction reward, by the GM's decision. Guild: adopted; earned at Journeyman in The Hollow Circle (data/sejr_guilds.json).",
+    "notes": "Debt no longer marks on Pilfered Power use and the Pilfered Power refill is gone (it duplicated the class commune); Reaver path and Reaver's Margin added (Reavers have no patron and cannot cast tiered spells at this echelon); risk added; em dash removed. Unlock pass: Reaver path now takes three nights with saves; patron path states that the counter-demand binds. Blind audit: the Reaver escalation now says the left patron collects through the stolen contract. Pool: no longer rolled at hero creation; a faction reward, by the GM's decision. Guild: adopted; earned at Journeyman in The Hollow Circle (data/sejr_guilds.json). Polish: escalation d6 table added, so the GM does not have to invent it at the table.",
     "source": "sources/class_arcana_v3.docx",
     "matrix": {
       "tier": "1st",
@@ -331,6 +353,17 @@
       "faction": "The Hollow Circle",
       "form": "the address of the sealed room where the Hollow Contract lies",
       "status": "adopted"
+    },
+    "escalation_table": {
+      "title": "The sentence the patron writes",
+      "rows": [
+        "They will refuse help once, when it matters most.",
+        "They owe me the name of someone they love.",
+        "They will open a door they were told to leave shut.",
+        "Their shadow answers to me first.",
+        "They will come back to the sealed room.",
+        "They will keep one promise I choose, whatever it costs."
+      ]
     }
   },
   {
@@ -392,7 +425,7 @@
       "Perform at the Theater of Whispers, or any venue with an audience of 20 or more, and hold the crowd's full attention for an uninterrupted hour. No skill check. Just perform.",
       "Find someone who heard the setlist's owner perform, and learn the last song, which has no title."
     ],
-    "risk": "Roll a d6 when the hour ends. On a 1-2, someone in that crowd knows the hand that wrote the setlist, and they find you within a session.",
+    "risk": "Someone in that crowd knows the hand that wrote the setlist. Make a Perception check, DC 13, to spot them before they leave. On a failure they find you first, within a session.",
     "resource": {
       "name": "Crowd",
       "type": "d6 vs. accumulation",
@@ -403,10 +436,10 @@
       "Call the Song (Free, in combat, 1/round): Name the song you are playing and roll against your Crowd. The first safe roll each encounter returns 1 spent use of Songweaver's Inspiration.",
       "Protective Verse (Free, 1/encounter, remove 2 Crowd): A specific song from the setlist grants immunity to the Taunted or Frightened condition to all allies within 6 spaces until the end of the round."
     ],
-    "escalation": "When Crowd reaches 4, someone in the crowd knows who this setlist belonged to. They approach between encounters, or send someone. The GM decides who and what they want. They may be a fan. They may not.",
+    "escalation": "When Crowd reaches 4, someone in the crowd knows who this setlist belonged to. They approach between encounters, or send someone. The GM decides who and what they want. They may be a fan. They may not. Roll a d6 on the table below, or choose.",
     "design_note": "Crowd is soft pressure: accumulating rarely hurts until 4, and a failed roll is a light social tax. Call the Song extends Songweaver's Inspiration with a mid-encounter refill. The escalation connects to the missing Songweaver, a mystery the GM can develop at any pace.",
     "status": "keep",
-    "notes": "'Theatre' corrected to 'Theater' (3_gazetteer); the per-ally, per-session cap (memory tracking) replaced with once per encounter; Songweaver's Inspiration belongs to the Songweaver, so the refill now returns the Songweaver's own uses; Crowd clears by a full hour for a new audience (was a Safe Rest); risk added. Unlock pass: added a quest step (the untitled last song) and a d6. Blind audit: '1/round' and 'once per encounter' conflicted; now one call per round, one refund per encounter. Behavior at 4 Crowd stated. Pool: no longer rolled at hero creation; a faction reward, by the GM's decision. Guild: adopted; earned at Journeyman in The Whisper Company (data/sejr_guilds.json).",
+    "notes": "'Theatre' corrected to 'Theater' (3_gazetteer); the per-ally, per-session cap (memory tracking) replaced with once per encounter; Songweaver's Inspiration belongs to the Songweaver, so the refill now returns the Songweaver's own uses; Crowd clears by a full hour for a new audience (was a Safe Rest); risk added. Unlock pass: added a quest step (the untitled last song) and a d6. Blind audit: '1/round' and 'once per encounter' conflicted; now one call per round, one refund per encounter. Behavior at 4 Crowd stated. Pool: no longer rolled at hero creation; a faction reward, by the GM's decision. Guild: adopted; earned at Journeyman in The Whisper Company (data/sejr_guilds.json). Polish: the generic d6 risk became a hazard tied to the object. Polish: escalation d6 table added, so the GM does not have to invent it at the table.",
     "source": "sources/class_arcana_v3.docx",
     "matrix": {
       "tier": "1st",
@@ -426,6 +459,17 @@
       "faction": "The Whisper Company",
       "form": "the name of whoever stole the Setlist",
       "status": "adopted"
+    },
+    "escalation_table": {
+      "title": "Who knows the setlist",
+      "rows": [
+        "the missing Songweaver's apprentice, who wants it back",
+        "a creditor the missing Songweaver owed",
+        "a Whisperer, selling the story to Roselyn Zeshe",
+        "a devoted fan who wants you to finish the set",
+        "the thief who stole it last month",
+        "the missing Songweaver, in disguise"
+      ]
     }
   },
   {
@@ -451,10 +495,10 @@
       "Extend the Beastshift (Free, spend 2 Earthpulse, once per Beastshift): Until the end of this encounter, casting spells does not end your Beastshift.",
       "Mire (1 Action, spend all 4): Create a 3-space radius of difficult terrain centered on you that lasts until the end of the encounter. The ground thickens and pulls. Any creature that starts its turn in the mire is Slowed."
     ],
-    "escalation": "When the jar is empty, mud already applied does not dry, but no new mud can be applied until the jar is refilled. If the jar breaks, the mud it held dries at once and all its effects end. A skilled craftsperson can repair a broken jar, but the marshes must still refill it. Each time you return to refill it, the marshes have changed, and the GM says how.",
+    "escalation": "When the jar is empty, mud already applied does not dry, but no new mud can be applied until the jar is refilled. If the jar breaks, the mud it held dries at once and all its effects end. A skilled craftsperson can repair a broken jar, but the marshes must still refill it. Each time you return to refill it, the marshes have changed, and the GM says how. Roll a d6 on the table below, or choose.",
     "design_note": "The geographic refill anchors the item in the setting. Every use is a conscious spend of a resource that costs a journey to replace, and no use refills it. Extend the Beastshift answers the class's own tension of forms ending when you cast. Mire gives battlefield control that fits the nature identity without requiring more spellcasting.",
     "status": "keep",
-    "notes": "Self-sustaining loop removed: Apply used to give Earthpulse, which paid for the other powers; it now costs 1. 'Shift ability' and 'storm form' replaced with Beastshift (rules: it ends when you cast a spell); risk added; the marshes change on each return. Unlock pass: risk now a save with a lasting loss. Blind audit: Extend's scope stated: any number of spells, this encounter. Pool: no longer rolled at hero creation; a faction reward, by the GM's decision. Guild: adopted; earned at Journeyman in The Grove Circle (data/sejr_guilds.json).",
+    "notes": "Self-sustaining loop removed: Apply used to give Earthpulse, which paid for the other powers; it now costs 1. 'Shift ability' and 'storm form' replaced with Beastshift (rules: it ends when you cast a spell); risk added; the marshes change on each return. Unlock pass: risk now a save with a lasting loss. Blind audit: Extend's scope stated: any number of spells, this encounter. Pool: no longer rolled at hero creation; a faction reward, by the GM's decision. Guild: adopted; earned at Journeyman in The Grove Circle (data/sejr_guilds.json). Polish: escalation d6 table added, so the GM does not have to invent it at the table.",
     "source": "sources/class_arcana_v3.docx",
     "matrix": {
       "tier": "1st",
@@ -474,6 +518,17 @@
       "faction": "The Grove Circle",
       "form": "the Mud from the Revlend Marshes itself; the arch-traveller left the jar with the Grove",
       "status": "adopted"
+    },
+    "escalation_table": {
+      "title": "How the marshes have changed",
+      "rows": [
+        "the water has risen, and Heron's Stride stands on its last stilts",
+        "a path of stones now leads to where you slept",
+        "the GM reveals one step of the Revlend Marshes' Neglect clock",
+        "something has left a gift where you leave the jar",
+        "the mud smells of a different storm: the next refill takes two nights",
+        "Revlenders ask you to carry a message back to the city"
+      ]
     }
   },
   {
@@ -536,7 +591,7 @@
       "Find the one arch that hums",
       "Spend a full night at its threshold"
     ],
-    "risk": "The arch opens briefly. Roll a d6: on a 1-2, something comes through before you close the way. Closing it takes a Lore check, DC 12.",
+    "risk": "The arch opens briefly. Hold it with a Might check, DC 13, or something comes through before you close the way. Closing it then takes a Lore check, DC 12.",
     "resource": {
       "name": "Hum",
       "type": "pip tracker",
@@ -549,7 +604,7 @@
     ],
     "escalation": "Spending the last Hum, roll a d6. On 1-2 the key splinters, and every arch it opens leads somewhere wrong until an Archkeeper repairs it. On 3+, take 1 Wound.",
     "status": "keep",
-    "notes": "Reworked. Refill was a Safe Rest; Hum (renamed from Resonance, which the Shepherd's Bell uses) now returns when an Archkeeper records a new arch's behavior (Archkeepers watch the arches, 3_gazetteer). Passive added. Lore is a rules skill. Unlock pass: risk now a d6 and a check. Object now names its find-place from arches_homebrew.docx (rubble beneath the Theater of Whispers). Note: the homebrew card clears Resonance on a Safe Rest; this version does not (the spec bans rest refills). Revert the resource line if you prefer yours. Pool: removed from the level 1 draw (other_arcanum); now a faction reward only, by the GM's decision. Keys are patron power in Sejr, so whichever faction grants it should offend another, as the campaign overview intends for a party-owned key.",
+    "notes": "Reworked. Refill was a Safe Rest; Hum (renamed from Resonance, which the Shepherd's Bell uses) now returns when an Archkeeper records a new arch's behavior (Archkeepers watch the arches, 3_gazetteer). Passive added. Lore is a rules skill. Unlock pass: risk now a d6 and a check. Object now names its find-place from arches_homebrew.docx (rubble beneath the Theater of Whispers). Note: the homebrew card clears Resonance on a Safe Rest; this version does not (the spec bans rest refills). Revert the resource line if you prefer yours. Pool: removed from the level 1 draw (other_arcanum); now a faction reward only, by the GM's decision. Keys are patron power in Sejr, so whichever faction grants it should offend another, as the campaign overview intends for a party-owned key. Polish: the generic d6 risk became a hazard tied to the object.",
     "source": "sources/sejr_arcana_perchance_original.txt",
     "matrix": {
       "tier": "Minor",
@@ -597,7 +652,7 @@
     ],
     "escalation": "If you try to use the pendant with no Breath, make a WIL save, DC 12, or you inhale your own breath: take 1 Wound and become Dying at once.",
     "status": "keep",
-    "notes": "Written from arches_homebrew.docx (The Drowning Scale). Kept as written: lunar-cycle unlock with a DC 14 STR save to survive the dive; Breath max 4 lost when the pendant comes off; cold immunity, 1 hour without air, and Choke (STR DC 13); the DC 12 WIL escalation. Nimble fixes: Breath is gained with a Reaction on any creature that drops to 0 HP within Reach 2, not on the killing blow, which answers the kill-steal check; the failed-roll Condition (Frightened, Dazed or Slowed) follows the spec's note on this card; Choke's duration (end of its next turn) is mine. Origin Drowned Elvenya (10_the_revlend_marshes.md) is my suggestion, since the homebrew says 'unknown origin'.",
+    "notes": "Written from arches_homebrew.docx (The Drowning Scale). Kept as written: lunar-cycle unlock with a DC 14 STR save to survive the dive; Breath max 4 lost when the pendant comes off; cold immunity, 1 hour without air, and Choke (STR DC 13); the DC 12 WIL escalation. Nimble fixes: Breath is gained with a Reaction on any creature that drops to 0 HP within Reach 2, not on the killing blow, which answers the kill-steal check; the failed-roll Condition (Frightened, Dazed or Slowed) follows the spec's note on this card; Choke's duration (end of its next turn) is mine. Origin Drowned Elvenya (10_the_revlend_marshes.md) is my suggestion, since the homebrew says 'unknown origin'. GM decision: keep the trigger as written, Dying allies included.",
     "source": "sources/sejr_arcana_perchance_original.txt",
     "matrix": {
       "tier": "Minor",
@@ -640,7 +695,7 @@
     ],
     "escalation": "Named creatures learn your name and heading each dawn. When the ninth eye closes, the axe speaks your True Name and all nine hear it. One engraved eye is scraped blank.",
     "status": "keep",
-    "notes": "Kept. 'Solos' changed to 'Solo creatures' (GM guide term); direction-and-distance split into a passive so the card has a free or passive power; prior owner added from the Sevelet's Throne rumor (11_the_doorish_hills.md). Remove that clause if you want a different axe. Unlock pass: risk now a clock. Reassessment: origin moved from the Sevelet's Throne rumor to Graydust Keep, to flatten the spread. [NEEDS CANON: the Fallen Angels' claim on the axe.] Blind audit: the Reaction had no trigger; now 'when a Named creature you can see starts its turn', and it loses one action.",
+    "notes": "Kept. 'Solos' changed to 'Solo creatures' (GM guide term); direction-and-distance split into a passive so the card has a free or passive power; prior owner added from the Sevelet's Throne rumor (11_the_doorish_hills.md). Remove that clause if you want a different axe. Unlock pass: risk now a clock. Reassessment: origin moved from the Sevelet's Throne rumor to Graydust Keep, to flatten the spread. [NEEDS CANON: the Fallen Angels' claim on the axe.] Blind audit: the Reaction had no trigger; now 'when a Named creature you can see starts its turn', and it loses one action. GM decision: finite stays; the spec is the GM's solo design guide, and finite relics fit the source material.",
     "source": "sources/sejr_arcana_perchance_original.txt",
     "matrix": {
       "tier": "Major",
@@ -678,9 +733,9 @@
       "Turn Back (Reaction, spend 1 Sand, after a die you can see is rolled and before its result is applied): The die is rerolled. The new result stands.",
       "Sand Sense (Passive): You always know the exact time, and you can tell when a clock, a calendar, or a witness near you has it wrong."
     ],
-    "escalation": "When the last Sand falls, the original result happened somewhere. Within a session an Echo of you arrives carrying its consequences, and it wants the glass.",
+    "escalation": "When the last Sand falls, the original result happened somewhere. Within a session an Echo of you arrives carrying its consequences, and it wants the glass. Roll a d6 on the table below, or choose.",
     "status": "keep",
-    "notes": "Kept. Origin added (Library of Vrassa, 3_gazetteer); a passive added; clearing rule stated. Unlock pass: risk now a save that costs a Hit Die. Blind audit: Turn Back had no timing window; it now fires after the roll and before the result is applied, so it cannot rewrite a resolved scene.",
+    "notes": "Kept. Origin added (Library of Vrassa, 3_gazetteer); a passive added; clearing rule stated. Unlock pass: risk now a save that costs a Hit Die. Blind audit: Turn Back had no timing window; it now fires after the roll and before the result is applied, so it cannot rewrite a resolved scene. Polish: escalation d6 table added, so the GM does not have to invent it at the table.",
     "source": "sources/sejr_arcana_perchance_original.txt",
     "matrix": {
       "tier": "Major",
@@ -694,7 +749,18 @@
       "look": "brass hourglass, sand climbs up",
       "mythology": ""
     },
-    "pool": "draw"
+    "pool": "draw",
+    "escalation_table": {
+      "title": "What the Echo carries",
+      "rows": [
+        "a debt to the Black Hand you never took on",
+        "a fresh Wound, which it hands to you at the next encounter",
+        "a friend who remembers the original result, and is angry",
+        "a key to an arch that should not exist",
+        "news of a death that did not happen here",
+        "an offer to trade places with you for one day"
+      ]
+    }
   },
   {
     "id": "black_lotus_case",
@@ -721,9 +787,9 @@
       "Wallwalker (Passive, while chosen): Climb sheer surfaces and walk on water.",
       "Drowsing Pollen (once, when chosen): One creature of level 5 or lower within 2 spaces makes a WIL save, DC 13, or falls asleep for 1d4 rounds."
     ],
-    "escalation": "Each time the case empties, the Stain advances for good. 1: fingertips blacken, advantage on Finesse, and you can no longer feel heat or cold through them. 2: veins darken, +1 Initiative, your pulse is audible. 3: eyes black, you see in the dark, strangers flinch (disadvantage on Influence). After 3, the bloom no longer needs the case.",
+    "escalation": "Each time the case empties, the Stain advances for good. 1: fingertips blacken, advantage on Finesse, and you can no longer feel heat or cold through them. 2: veins darken, +1 Initiative, your pulse is audible. 3: eyes black, you see in the dark, strangers flinch (disadvantage on Influence). Stage 3 is the last Stain. After it, the bloom roots in your palm: you no longer need the case to carry the petals, and no one can take them from you.",
     "status": "keep",
-    "notes": "Kept. 'LV 5' changed to 'level 5 or lower'; origin added (Oasis of Mother's Tears, 12_the_deadlands.md); clearing rule stated. Audit: effects split into separate powers so the free and passive ones are visible.",
+    "notes": "Kept. 'LV 5' changed to 'level 5 or lower'; origin added (Oasis of Mother's Tears, 12_the_deadlands.md); clearing rule stated. Audit: effects split into separate powers so the free and passive ones are visible. GM decision: stage 3 is the last Stain; the bloom then roots in the hero's palm.",
     "source": "sources/sejr_arcana_perchance_original.txt",
     "matrix": {
       "tier": "Minor",
@@ -758,12 +824,12 @@
       "text": "Oath (toggle, max 1). Set when you swear. Clears when you fulfil the oath, or when the GM rules it broken or abandoned. One oath at a time, and a new one only after the last has cleared."
     },
     "powers": [
-      "Sworn (Passive): While the oath stands, you have advantage on checks that directly advance it. The GM grades it Worthy, Mighty or Legendary when you swear.",
+      "Sworn (Passive): While the oath stands, you have advantage on checks that directly advance it. The GM grades it when you swear. Worthy: a session's work, at risk to you. Mighty: an arc's work, at risk to someone or something you love. Legendary: it changes the city.",
       "Hold Fast (Reaction, once per oath): When you fail a check or save that directly advances the oath, reroll it with advantage. The oath drops one grade."
     ],
     "escalation": "Fulfilled: heal 1 Wound and gain +1, +2 or +3 max HP for good, by grade. Failed: lose that much max HP for good, the Golden Council writes the broken oath on the record under your name, and the Band stays shut until you do a penance.",
     "status": "keep",
-    "notes": "Reworked. 'Heal all Wounds' replaced with 1 Wound (Wounds heal 1 per Safe Rest); the 'failed if you reach your next level' clock removed; a spend power added; failure now reaches the Golden Council's record (campaign overview, patrons). Origin: Citadel of the Golden Knights (3_gazetteer). Unlock pass: oath must span a session; loophole-closing now has a mechanical result. Risk reworded so the loophole rule has a result.",
+    "notes": "Reworked. 'Heal all Wounds' replaced with 1 Wound (Wounds heal 1 per Safe Rest); the 'failed if you reach your next level' clock removed; a spend power added; failure now reaches the Golden Council's record (campaign overview, patrons). Origin: Citadel of the Golden Knights (3_gazetteer). Unlock pass: oath must span a session; loophole-closing now has a mechanical result. Risk reworded so the loophole rule has a result. GM decision: grade criteria added (Worthy, Mighty, Legendary).",
     "source": "sources/sejr_arcana_perchance_original.txt",
     "matrix": {
       "tier": "Minor",
@@ -909,7 +975,7 @@
       "Win it from the Revlenders of Heron's Stride or the people of a drowned place, or earn it in their service",
       "Wear it for a full night underwater"
     ],
-    "risk": "Something in the deep hears the hum. Roll a d6 at dawn: on a 1-2 it follows you up and arrives within a session.",
+    "risk": "Something in the deep hears the hum. Make a Stealth check, DC 12, on the way up, with the coat's usual Stealth penalty. On a failure it follows you up and arrives within a session.",
     "resource": {
       "name": "Growth",
       "type": "pip tracker",
@@ -922,7 +988,7 @@
     ],
     "escalation": "At 4 Growth the coat is a landmark, and things in the deep start coming to see it.",
     "status": "keep",
-    "notes": "Kept. 'Armor 3+DEX' changed to Defense (heroes have Defense; armor as a damage filter belongs to monsters); Eel Slip added so a power spends Growth; makers added (Revlenders of Heron's Stride, 10_the_revlend_marshes.md); Growth loss moved into the resource line. Unlock pass: risk now a d6.",
+    "notes": "Kept. 'Armor 3+DEX' changed to Defense (heroes have Defense; armor as a damage filter belongs to monsters); Eel Slip added so a power spends Growth; makers added (Revlenders of Heron's Stride, 10_the_revlend_marshes.md); Growth loss moved into the resource line. Unlock pass: risk now a d6. Polish: the generic d6 risk became a hazard tied to the object.",
     "source": "sources/sejr_arcana_perchance_original.txt",
     "matrix": {
       "tier": "Minor",
@@ -1204,7 +1270,7 @@
     ],
     "escalation": "When the last leaf wilts the bracelet buds. Plant it beside a door to elsewhere within a month, and in a year a new bracelet grows there. If you don't plant it, your fingertips start to leaf.",
     "status": "keep",
-    "notes": "Kept. 'Sylvan' changed to Elvish (core rules: Elvish covers Elves, Fey and Sylvan); a passive added; origin added (Sunset Grove, Graysen One-Eye, 3_gazetteer). Unlock pass: risk states what a lie costs.",
+    "notes": "Kept. 'Sylvan' changed to Elvish (core rules: Elvish covers Elves, Fey and Sylvan); a passive added; origin added (Sunset Grove, Graysen One-Eye, 3_gazetteer). Unlock pass: risk states what a lie costs. GM decision: finite stays; the spec is the GM's solo design guide, and finite relics fit the source material.",
     "source": "sources/sejr_arcana_perchance_original.txt",
     "matrix": {
       "tier": "Minor",
@@ -1244,7 +1310,7 @@
     ],
     "escalation": "Every victim knows the shape of your hands, and the Sisters of Dusk hear who is stitching in their style. At 0 Thread you can still Stitch, but the hex also lands on your own likeness.",
     "status": "keep",
-    "notes": "Reworked. Closed loop removed: unpicking a hex used to refill the Thread that paid for it; Thread now returns when someone freely gives hair, blood or cloth. Passive added; origin Sisters of Dusk, Elgrym (11_the_doorish_hills.md). Unlock pass: risk now a named penalty.",
+    "notes": "Reworked. Closed loop removed: unpicking a hex used to refill the Thread that paid for it; Thread now returns when someone freely gives hair, blood or cloth. Passive added; origin Sisters of Dusk, Elgrym (11_the_doorish_hills.md). Unlock pass: risk now a named penalty. GM decision: keep 'one kind of roll' open, attack rolls included, no save.",
     "source": "sources/sejr_arcana_perchance_original.txt",
     "matrix": {
       "tier": "Minor",
@@ -1318,12 +1384,12 @@
       "text": "Teeth (finite, 1d4+1, rolled at unlock). Each Sow uses up one tooth. A sown tooth never comes back, and nothing refills the satchel."
     },
     "powers": [
-      "Sow (Action, spend 1 Tooth): An armored warrior rises from the ground beside you and obeys you for an hour. It fights as a minion (GM guide): it attacks with a d8 (d10 from level 5, d12 from level 9), any damage destroys it, and all your warriors move and attack together on your turn.",
+      "Sow (Action, spend 1 Tooth): An armored warrior rises from the ground beside you and obeys you for an hour. It fights as a minion (GM guide): it attacks with a d10 (d12 from level 5, d20 from level 9), any damage destroys it, and all your warriors move and attack together on your turn.",
       "Dragon's Click (Passive): The teeth click louder within 6 spaces of a dragon or dragonkin."
     ],
     "escalation": "If two or more warriors stand and one is struck by surprise, they turn on each other, then on whoever is closest. Dragons and their kin can smell the satchel. When the last tooth is gone, the satchel is just a bag.",
     "status": "keep",
-    "notes": "Reworked. Source flavor kept (Cadmus and the Spartoi); the teeth are now dragon teeth from Drakeholm (13_worlds_beyond_the_arches.md); a passive added. The 'soldier stat block' still needs a GM guide match. Unlock pass: risk states that the answer binds. Blind audit: 'a soldier stat block of your level' does not exist in the rules; the warriors now use the GM guide's minion rules. This lowers the card's power (it was the strongest combat item).",
+    "notes": "Reworked. Source flavor kept (Cadmus and the Spartoi); the teeth are now dragon teeth from Drakeholm (13_worlds_beyond_the_arches.md); a passive added. The 'soldier stat block' still needs a GM guide match. Unlock pass: risk states that the answer binds. Blind audit: 'a soldier stat block of your level' does not exist in the rules; the warriors now use the GM guide's minion rules. This lowers the card's power (it was the strongest combat item). GM decision: keep minion warriors, but one damage die step up (d10, d12 from level 5, d20 from level 9) to make up for the simpler stat block. GM decision: finite stays; the spec is the GM's solo design guide, and finite relics fit the source material.",
     "source": "sources/sejr_arcana_perchance_original.txt",
     "matrix": {
       "tier": "Major",
@@ -1350,7 +1416,7 @@
       "Install it in your holding",
       "For each arch it should watch, carry a sliver of its glass through that arch and back, unbroken"
     ],
-    "risk": "Something on the other side sees the mirror before it sees them. Roll a d6 when the last sliver returns: on a 1-2, whatever sees the mirror can look back through it until a night's vigil clears it.",
+    "risk": "Each sliver must come back unbroken. Carrying one through an arch and back takes a Finesse check, DC 12. A broken sliver lets whatever is on that side look back through the mirror until a night's vigil clears it.",
     "resource": {
       "name": "Clarity",
       "type": "pip tracker",
@@ -1364,7 +1430,7 @@
     ],
     "escalation": "At 0 Clarity the glass stays clear both ways. Anything beyond a watched arch can look into your holding until the mirror is refilled.",
     "status": "keep",
-    "notes": "Kept. Maker added (Observatory of Infinite Skies, 3_gazetteer); the shimmer is now a labeled passive; clearing rule stated. Unlock pass: risk now a d6.",
+    "notes": "Kept. Maker added (Observatory of Infinite Skies, 3_gazetteer); the shimmer is now a labeled passive; clearing rule stated. Unlock pass: risk now a d6. Polish: the generic d6 risk became a hazard tied to the object.",
     "source": "sources/sejr_arcana_perchance_original.txt",
     "matrix": {
       "tier": "Major",
@@ -1434,7 +1500,7 @@
       "Carve the first rune's name into a gravestone or standing stone, and speak aloud the name of someone who died for something",
       "Hold the fragments together for 10 minutes and they fuse"
     ],
-    "risk": "Whoever carries another fragment feels yours wake. Roll a d6 when they fuse: on a 1-2 the fragments grind against each other and you take 1 Wound.",
+    "risk": "Whoever carries another fragment feels yours wake. Holding the shards together while they grind takes a STR save, DC 13. On a failure you take 1 Wound and must hold them for another 10 minutes.",
     "resource": {
       "name": "Runes",
       "type": "pip tracker",
@@ -1453,7 +1519,7 @@
     ],
     "escalation": "Fragments call to each other, and other holders follow the call. When the ninth fuses, its rune wakes once: change the result of one roll made this session, even one already applied, and play on from there. Then the stone falls to dust.",
     "status": "keep",
-    "notes": "Reworked. Source flavor kept (Elder Futhark). The refill was 'once per episode' (passive); a dark rune now relights by carving it at a grave or standing stone and speaking the name of someone who died for something. Origin: an arrival the Archkeepers met (arrivals have no memory, 3_gazetteer). Unlock pass: added the carving step (the same act that relights a dark rune) and a d6 at the fusing. Reassessment: Algiz was labelled Passive to satisfy the audit, but every rune is spent once. Each rune now carries its true action cost. Blind audit: type relabelled pip tracker (it refills by a world ritual, not by session); the ninth rune now changes one roll from this session, not any past event.",
+    "notes": "Reworked. Source flavor kept (Elder Futhark). The refill was 'once per episode' (passive); a dark rune now relights by carving it at a grave or standing stone and speaking the name of someone who died for something. Origin: an arrival the Archkeepers met (arrivals have no memory, 3_gazetteer). Unlock pass: added the carving step (the same act that relights a dark rune) and a d6 at the fusing. Reassessment: Algiz was labelled Passive to satisfy the audit, but every rune is spent once. Each rune now carries its true action cost. Blind audit: type relabelled pip tracker (it refills by a world ritual, not by session); the ninth rune now changes one roll from this session, not any past event. Polish: the generic d6 risk became a hazard tied to the object.",
     "source": "sources/sejr_arcana_perchance_original.txt",
     "matrix": {
       "tier": "Major",
@@ -1560,7 +1626,7 @@
       "Cut a length of strand-line from a derelict hull in Drendaan with the harpoon's own blade",
       "Make one throw that hauls you across a gap you could not have jumped"
     ],
-    "risk": "Whatever lived aboard the hulk feels the line cut. Roll a d6: on a 1-2 it follows the line through the arch within a session.",
+    "risk": "Whatever lived aboard the hulk feels the line cut. Make a Stealth check, DC 13, to get clear of the hulk unseen. On a failure it follows the line through the arch within a session.",
     "resource": {
       "name": "Slack",
       "type": "d6 vs. accumulation",
@@ -1574,7 +1640,7 @@
     "escalation": "When the d6 triggers, the line snarls around you or your target, the GM's choice. Both of you are Restrained until either of you, or anyone adjacent, spends an action to cut it. The cut length keeps glowing, and whatever lived aboard the hulk follows it through the arch.",
     "status": "keep",
     "source": "analysis/proposals.md, replacement R1",
-    "notes": "New card, replaces Sul Hide. Fills ranged offense, mobility and a world beyond the arches (Drendaan: derelict hulls hung in bioluminescent vine, 13_worlds_beyond_the_arches.md). Damage left to the weapon table. Audit: Haul shows the +1 Slack it adds. Unlock pass: risk now a d6. Blind audit: stated the certain trigger at 6 Slack and who can cut the line.",
+    "notes": "New card, replaces Sul Hide. Fills ranged offense, mobility and a world beyond the arches (Drendaan: derelict hulls hung in bioluminescent vine, 13_worlds_beyond_the_arches.md). Damage left to the weapon table. Audit: Haul shows the +1 Slack it adds. Unlock pass: risk now a d6. Blind audit: stated the certain trigger at 6 Slack and who can cut the line. Polish: the generic d6 risk became a hazard tied to the object.",
     "matrix": {
       "tier": "Minor",
       "resource_type": "d6 vs. accumulation",
@@ -1613,10 +1679,10 @@
       "Vouch (Reaction, spend 1 Provenance): When an ally within 6 spaces makes an Influence check about an object or its owner, they have advantage.",
       "Margins (Passive): The ledger shows a blot when you hold it within 6 spaces of a stolen or cursed object."
     ],
-    "escalation": "When the last Provenance is spent, the ledger writes one relic's name and its rightful owner on a blank page without being asked. The GM chooses the relic, and the owner is someone you know. The Seekers of the Sun and the Black Hand both learn it has been written.",
+    "escalation": "When the last Provenance is spent, the ledger writes one relic's name and its rightful owner on a blank page without being asked. The GM chooses the relic, and the owner is someone you know. The Seekers of the Sun and the Black Hand both learn it has been written. Roll a d6 on the table below, or choose.",
     "status": "keep",
     "source": "analysis/proposals.md, replacement R2",
-    "notes": "New card, replaces Ossuary Mail. Fills information, ally support and a faction slot no other card uses (Seekers of the Sun, Museum of Worlds Beyond, 3_gazetteer). Unlock pass: risk now a clock.",
+    "notes": "New card, replaces Ossuary Mail. Fills information, ally support and a faction slot no other card uses (Seekers of the Sun, Museum of Worlds Beyond, 3_gazetteer). Unlock pass: risk now a clock. Polish: escalation d6 table added, so the GM does not have to invent it at the table.",
     "matrix": {
       "tier": "Minor",
       "resource_type": "pip tracker",
@@ -1630,7 +1696,18 @@
       "mythology": ""
     },
     "design_note": "",
-    "pool": "draw"
+    "pool": "draw",
+    "escalation_table": {
+      "title": "The relic the ledger writes",
+      "rows": [
+        "something from the Vaults of the Nameless King",
+        "an arcanum another hero carries",
+        "a piece on display in the Museum of Worlds Beyond",
+        "an heirloom of your own family",
+        "a key to one of the city's arches",
+        "a relic still lying in Sunken Revvia"
+      ]
+    }
   },
   {
     "id": "tally_stick",

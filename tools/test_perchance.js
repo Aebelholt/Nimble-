@@ -114,7 +114,12 @@ for (const name of Object.keys(data)) {
     }
   }
 }
-ok(`arcanum_line rolled for all ${Object.keys(data).length} cards`);
+for (const c of active.filter(c => c.escalation_table)) {
+  const out = api.arcanum_line(c.name);
+  if (c.escalation_table.rows.length !== 6) fail(`${c.id}: escalation table needs 6 rows`);
+  if (!out.includes(c.escalation_table.title) || !out.includes("6 " + c.escalation_table.rows[5])) fail(`${c.id}: escalation table not rendered`);
+}
+ok(`arcanum_line rolled for all ${Object.keys(data).length} cards, ${active.filter(c => c.escalation_table).length} escalation tables rendered`);
 
 // Curated and forge, 300 rolls each.
 const N = 300;

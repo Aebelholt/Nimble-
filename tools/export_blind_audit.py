@@ -68,6 +68,7 @@ CAMPAIGN = """Sejr is an episodic, drop-in Nimble 2 campaign in the City of Arch
 - **Trackers carry memory.** A thread board of six index cards (one thread closes and one opens each episode), hidden Neglect clocks for the outer regions, six-step faction clocks. GM prep is the trackers and nothing else.
 - **Tiers.** Found arcana are Minor or Major. Class arcana are 1st echelon (levels 1-4). The found pool is meant to be about 24 cards, diverse in look and mechanics.
 - **The GM, in their words:** these items are meant to be stronger than standard magic items, because they exist to drive player engagement. "Broken is not bad, because I will supercharge my combats and situations too." They are a very lenient GM: no player death across 4 systems and 7 groups.
+- **Since the first audit, the GM decided:** Major cards stay in the level 1 draw on purpose ("random players, huge powers; I'd be surprised if nothing cataclysmic came from this, and in that lies the fun"). Class arcana and the Forgotten Key are rewards, never drawn; each class arcanum comes from its class guild (section 7). Finite, never-refilling relics are intended. Three guild masters are left blank on purpose. The Drowning Scale's trigger (allies included) and the Hexing Needles' open "kind of roll" (attacks included, no save) are kept by choice.
 - **Sources.** Many items are deliberate ports from other systems and real-world myth (Norse, Greek, Egyptian, fairy lore), justified because the arches lead to other realms. Stonetop's arcana are the main inspiration."""
 
 CANON = """These names appear on the cards and exist in the setting books. Treat them as canon. Treat any claim about them that goes beyond this list (who wants what, what a place sells or allows) as possibly new canon and say so.
@@ -107,7 +108,7 @@ Use exactly these sections.
 
 **B. Findings.** Grouped by lens. Each finding names the card id, quotes the text, and says what goes wrong in play, in one or two sentences. Add a suggested fix where it is short.
 
-**C. Exploits and combinations.** Cross-card or card-plus-class interactions that break something. Say whether each one breaks a fight (acceptable here) or breaks an episode or the campaign (not acceptable).
+**C. Exploits and combinations.** (Include the guilds in section 7 where they interact with cards.) Cross-card or card-plus-class interactions that break something. Say whether each one breaks a fight (acceptable here) or breaks an episode or the campaign (not acceptable).
 
 **D. Deck level.** Diversity of resource types, costs, origins and looks; repetition; the ten fixes you would make first, ranked.
 
@@ -122,13 +123,20 @@ def spec_body():
     return body.replace("\n## ", "\n### ")
 
 
+def table_md(c):
+    t = c.get("escalation_table")
+    if not t:
+        return ""
+    return f"\n*{t['title']} (d6):* " + "; ".join(f"{i} {r}" for i, r in enumerate(t["rows"], 1)) + ".\n"
+
+
 def card_md(c):
     r = c["resource"]
     head = f"### {c['name']}\n`{c['id']}` · " + (f"class arcanum, {c['class']}" if c["kind"] == "class" else f"found, {c['tier']}")
     unlock = "\n".join(f"- {u}" for u in c["unlock"])
     powers = "\n".join(f"- {p}" for p in c["powers"])
     return (f"{head}\n\n**Object.** {c['object']}\n\n**Unlock.**\n{unlock}\n- Risk: {c['risk']}\n\n"
-            f"**Resource: {r['name']} ({r['type']}).** {r['text']}\n\n**Powers.**\n{powers}\n\n**Escalation.** {c['escalation']}\n")
+            f"**Resource: {r['name']} ({r['type']}).** {r['text']}\n\n**Powers.**\n{powers}\n\n**Escalation.** {c['escalation']}\n" + table_md(c))
 
 
 feats = "\n".join(f"- **{cls}:** {quote(cls, s, n)}" for cls, s, n in FEATURES)
@@ -136,7 +144,7 @@ hb = homebrew_arcana()
 parts = [
     INSTRUCTIONS,
     "## 1. Campaign context\n\n" + CAMPAIGN,
-    "## 2. Design standard\n\nThe spec below is binding. Where its vocabulary table disagrees with the rules reference in section 3, the rules reference wins.\n\n" + spec_body(),
+    "## 2. Design standard\n\nThe spec below is the GM's own design guide, written for solo design work. Use its checklist as a lens, but it does not bind group play: the GM has accepted finite resources and very strong powers. Where its vocabulary table disagrees with the rules reference in section 3, the rules reference wins.\n\n" + spec_body(),
 ]
 if hb:
     parts.append("## 2b. The GM's own arcana rules (from their homebrew companion)\n\n" + hb)
@@ -145,10 +153,16 @@ parts += [
     "## 4. Class features the cards refer to (quoted from the class rules)\n\n" + feats +
     "\n- **Mage, Control Table:** " + mage_control_table(),
     "## 5. Setting names used on the cards\n\n" + CANON,
+    "## 5b. Table rules for arcana\n\n" + (ROOT / "data/sejr_table_rules.md").read_text().split("\n", 2)[2].strip().replace("\n## ", "\n### "),
     "## 6. The cards\n\nClass arcana first, then found arcana. Each class arcanum belongs to the class named.\n\n" +
     "\n".join(card_md(c) for c in cards if c["kind"] == "class") + "\n" +
     "\n".join(card_md(c) for c in cards if c["kind"] == "found"),
 ]
+G = json.loads((ROOT / "data/sejr_guilds.json").read_text())
+gr = G["rules"]
+guild_md = "## 7. Class guilds\n\nAn alternative to the holding at hero creation, and where each class arcanum is earned. Names, wants, splits and masters' roles are new canon; halls are canon places.\n\n" + "\n".join(f"- **{k}:** {v if isinstance(v, str) else ' '.join(v)}" for k, v in gr.items()) + "\n\n" + "\n".join(
+    f"### {g['name']} ({g['cls']})\nHall: {g['hall']}. Master: {g['master']}. Wants: {g['wants']}. Teeth: {g['teeth']}. Teaches: {g['teaches']}. Keeps: {g['keeps']}. Split: {g['split']}. Asks: {g['asks']}. Gives: {g['gives']}. Rival: {g['rival']}.\n" for g in G["guilds"])
+parts.append(guild_md)
 out = ROOT / "analysis/blind_audit_prompt.md"
 out.write_text("\n\n".join(parts).rstrip() + "\n")
 txt = out.read_text()

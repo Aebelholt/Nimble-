@@ -5,6 +5,7 @@
     "kind": "class",
     "class": "Berserker",
     "tier": "1st echelon",
+    "pool": "faction_reward",
     "object": "A knucklebone worn smooth by a hundred years of handling, threaded on gut string. Taken from the body of a Berserker who died fighting in the Borderlands and was never retrieved. It arrived in a collector's satchel through one of the Market Square arches, and nobody knows which world it came from, or who carried it through.",
     "unlock": [
       "Defeat an enemy in single combat without any ally's assistance: no ally attacks it, heals you, or gives either of you a condition or advantage.",
@@ -22,7 +23,18 @@
       "Echo Strike (Free, while Raging, spend 1 Fury Echo): Roll a Fury Die and set it aside with the rest, up to your maximum. This does not use your Rage action.",
       "Death's Door (Free, 1/encounter, when you Rage, spend all 3 Fury Echo): For this encounter, your Rage does not end when you drop to 0 HP. Dying applies as normal."
     ],
-    "escalation": "If you drop to 0 HP with Death's Door active, the knucklebone cracks at once and stops working. Your Rage still holds for the encounter. Replace it with another ancestor's relic from the Borderlands, or take one from a worthy enemy. The GM decides where it is and how long the search takes. Whatever hunted the ancestor learns the bone has moved."
+    "escalation": "If you drop to 0 HP with Death's Door active, the knucklebone cracks at once and stops working. Your Rage still holds for the encounter. Replace it with another ancestor's relic from the Borderlands, or take one from a worthy enemy. The GM decides where it is and how long the search takes. Whatever hunted the ancestor learns the bone has moved. Roll a d6 on the table below, or choose.",
+    "escalation_table": {
+      "title": "Where the replacement relic is",
+      "rows": [
+        "Sevelet's Throne, among the warring souls (Doorish Hills)",
+        "the Watchtower of Averost, on a Blood Spear's skeletal veteran (Doorish Hills)",
+        "under the offerings at the Cairn of the Last Titan (Doorish Hills)",
+        "the Red Sand's Bout Rolls name a fighter buried with one",
+        "Mirewraith's Barrow, with the Eternal Blades (Revlend Marshes)",
+        "on the next enemy who nearly beats you"
+      ]
+    }
   },
   {
     "id": "class_cheat",
@@ -30,6 +42,7 @@
     "kind": "class",
     "class": "Cheat",
     "tier": "1st echelon",
+    "pool": "faction_reward",
     "object": "An ivory gambling die with a tiny lead insert that makes it land on 6 roughly two-thirds of the time. Confiscated from a Black Hand card sharp at the Lower Reaches gambling house, then stolen from the evidence shelf at the Golden Knights' outpost. No paperwork exists for it. The card sharp has not stopped looking.",
     "unlock": [
       "Win a wager against someone who genuinely believed they had the advantage: not a mark, not a fool, but someone who should have won.",
@@ -54,6 +67,7 @@
     "kind": "class",
     "class": "Commander",
     "tier": "1st echelon",
+    "pool": "faction_reward",
     "object": "A black iron battle standard, the insignia ground off but the pole still bearing ghost-traces of a name no one can read. Found stacked with other confiscated relics in the Museum of Worlds Beyond storage vault. The curator is looking for it. Three scholars have separately attempted to identify the insignia's origin and stopped work without explanation.",
     "unlock": [
       "Lead a group of at least five non-party combatants to victory: soldiers, militia, hired swords, anyone you commanded in the field. The victory must be real, a fight that could have been lost.",
@@ -71,7 +85,18 @@
       "Pull it (Free): The standard returns to your hand and the aura ends immediately.",
       "Hold Ground (Reaction, spend 2 Authority): When the standard would be knocked over, stolen, or destroyed, it refuses. It cannot be moved by any force until the start of your next turn."
     ],
-    "escalation": "When Authority is at 0 during combat and you plant the standard anyway, the insignia becomes briefly legible to everyone present. The GM reads what it says aloud. It goes dark again immediately. What it says is the GM's tool: a name, a title, a command. Prepare it before the session."
+    "escalation": "When Authority is at 0 during combat and you plant the standard anyway, the insignia becomes briefly legible to everyone present. The GM reads what it says aloud. It goes dark again immediately. What it says is the GM's tool: a name, a title, a command. Prepare it before the session. Roll a d6 on the table below, or choose.",
+    "escalation_table": {
+      "title": "What the insignia says",
+      "rows": [
+        "a name, and a Knight of the Nameless King in the crowd answers to it",
+        "a title: the captain of a company that died here",
+        "a command: \"Hold until I return\"",
+        "a place: Sevelet's Throne",
+        "a date: the next Final Rest of the Nameless King",
+        "your own name"
+      ]
+    }
   },
   {
     "id": "class_hunter",
@@ -79,6 +104,7 @@
     "kind": "class",
     "class": "Hunter",
     "tier": "1st echelon",
+    "pool": "faction_reward",
     "object": "A length of braided sinew hung with small carved tokens: a boot print, a feather, a fang, and three others worn unrecognisable by handling. Carried by a tracker from the Doorish Hills who traded it to a Lower Reaches merchant for safe passage through the Cliffs of the Dead. The merchant did not survive the arrangement.",
     "unlock": [
       "Track a single creature across at least two sessions without losing the trail, through city, ruin, or wilderness. The creature must be aware it is being hunted, and must have tried to lose you at least once."
@@ -103,13 +129,14 @@
     "kind": "class",
     "class": "Mage",
     "tier": "1st echelon",
+    "pool": "faction_reward",
     "object": "A monocle lens of blue glass, cracked through the centre but held in a copper frame that prevents the crack from spreading. Stamped with the Mages of Kartan's maker's mark on the inner rim. The Mages report it stolen. It has been in a Lower Reaches pawn shop for six months, priced too high for anyone who recognised it, too strange for anyone who didn't.",
     "unlock": [
       "Pay the pawn shop's price, which is more than the lens is worth.",
       "Spend a week of downtime studying the crack through the lens, and make an Arcana check, DC 12, to read the maker's mark. On a failure the week is spent and you start over.",
       "Then cast a spell of the highest tier you can cast, with the lens held to your eye for the whole cast."
     ],
-    "risk": "Roll a d6 when the cast ends. On a 1-2 the lens fails as its Escalation describes: take 1 Wound, the lens fuses to your face until the encounter ends, and Kartan is told. On a 3 or higher it bonds. If you flinch or remove the lens, the crack spreads and it is ruined.",
+    "risk": "When the cast ends, the crack pulls at your eye. Make an INT save, DC 13. On a failure the lens fails as its Escalation describes: take 1 Wound, the lens fuses to your face until the encounter ends, and Kartan is told. If you flinch or remove the lens, the crack spreads and it is ruined.",
     "resource": {
       "name": "Overcharge",
       "type": "d6 vs. accumulation",
@@ -129,6 +156,7 @@
     "kind": "class",
     "class": "Oathsworn",
     "tier": "1st echelon",
+    "pool": "faction_reward",
     "object": "A set of golden scales, one pan snapped off and missing. Recovered from the rubble of an old court in the ruins of Sunken Revvia. The remaining pan still tilts when a lie is spoken nearby, or so the merchant who sold it claimed. She may have been lying. The tilt is subtle enough that you cannot always be certain.",
     "unlock": [
       "Refuse to deliver a verdict you believe is just, because doing so would protect someone you love.",
@@ -153,6 +181,7 @@
     "kind": "class",
     "class": "Shadowmancer",
     "tier": "1st echelon",
+    "pool": "faction_reward",
     "object": "A slip of black vellum the size of a playing card, written in a language that changes every time you look away. No ink is visible: the text appears to be burned into the material from within. Found pressed between the floorboards of a sealed room in the Lower Reaches, below a building that has been empty for eleven years. The landlord will not say why.",
     "unlock": [
       "Patron path: commune with your patron during a Safe Rest and ask it for something you know it does not want to give. Accept its counter-demand before you know what it is.",
@@ -170,7 +199,18 @@
       "Patron's Margin (Free, 1/encounter, mark 2 Debt, patron path): Cast one tiered spell you know at +1 tier above your current maximum. The patron extends credit.",
       "Reaver's Margin (Free, 1/encounter, mark 2 Debt, Reaver path): Your next Bonescythe strike this turn rolls 1 extra damage die."
     ],
-    "escalation": "When Debt reaches 4, the patron collects. It does not take power. It adds one sentence about your character to the contract, permanently. The GM decides what it says and reads it aloud. Debt clears. The sentence stays. A Reaver's contract still answers to the patron they left: that patron writes the sentence, and sends an agent to read it to them in person."
+    "escalation": "When Debt reaches 4, the patron collects. It does not take power. It adds one sentence about your character to the contract, permanently. The GM decides what it says and reads it aloud. Debt clears. The sentence stays. A Reaver's contract still answers to the patron they left: that patron writes the sentence, and sends an agent to read it to them in person. Roll a d6 on the table below, or choose.",
+    "escalation_table": {
+      "title": "The sentence the patron writes",
+      "rows": [
+        "They will refuse help once, when it matters most.",
+        "They owe me the name of someone they love.",
+        "They will open a door they were told to leave shut.",
+        "Their shadow answers to me first.",
+        "They will come back to the sealed room.",
+        "They will keep one promise I choose, whatever it costs."
+      ]
+    }
   },
   {
     "id": "class_shepherd",
@@ -178,6 +218,7 @@
     "kind": "class",
     "class": "Shepherd",
     "tier": "1st echelon",
+    "pool": "faction_reward",
     "object": "A small iron handbell, tarnished green at the rim, engraved with three interlinked rings. Identical to the bells carried by the clergy of the Temple of the Three Sisters, except that this one rings slightly differently, a half-note flat or sharp depending on who you ask. The temple says it was never consecrated. They are interested in recovering it for study. They have not offered to pay.",
     "unlock": [
       "Heal a creature you expected, and had good reason, to be your enemy, spending healing that an ally needed.",
@@ -203,12 +244,13 @@
     "kind": "class",
     "class": "Songweaver",
     "tier": "1st echelon",
+    "pool": "faction_reward",
     "object": "A folded sheet of vellum with a handwritten set of songs: titles, keys, and performance notes in the margins in an elegant hand. It belonged to a Songweaver who performed at the Theater of Whispers for fifteen years before disappearing mid-run. The theater kept the setlist. Someone stole it last month. The manager has posted a reward, but is vaguer than expected about what they want to do with whoever took it.",
     "unlock": [
       "Perform at the Theater of Whispers, or any venue with an audience of 20 or more, and hold the crowd's full attention for an uninterrupted hour. No skill check. Just perform.",
       "Find someone who heard the setlist's owner perform, and learn the last song, which has no title."
     ],
-    "risk": "Roll a d6 when the hour ends. On a 1-2, someone in that crowd knows the hand that wrote the setlist, and they find you within a session.",
+    "risk": "Someone in that crowd knows the hand that wrote the setlist. Make a Perception check, DC 13, to spot them before they leave. On a failure they find you first, within a session.",
     "resource": {
       "name": "Crowd",
       "type": "d6 vs. accumulation",
@@ -219,7 +261,18 @@
       "Call the Song (Free, in combat, 1/round): Name the song you are playing and roll against your Crowd. The first safe roll each encounter returns 1 spent use of Songweaver's Inspiration.",
       "Protective Verse (Free, 1/encounter, remove 2 Crowd): A specific song from the setlist grants immunity to the Taunted or Frightened condition to all allies within 6 spaces until the end of the round."
     ],
-    "escalation": "When Crowd reaches 4, someone in the crowd knows who this setlist belonged to. They approach between encounters, or send someone. The GM decides who and what they want. They may be a fan. They may not."
+    "escalation": "When Crowd reaches 4, someone in the crowd knows who this setlist belonged to. They approach between encounters, or send someone. The GM decides who and what they want. They may be a fan. They may not. Roll a d6 on the table below, or choose.",
+    "escalation_table": {
+      "title": "Who knows the setlist",
+      "rows": [
+        "the missing Songweaver's apprentice, who wants it back",
+        "a creditor the missing Songweaver owed",
+        "a Whisperer, selling the story to Roselyn Zeshe",
+        "a devoted fan who wants you to finish the set",
+        "the thief who stole it last month",
+        "the missing Songweaver, in disguise"
+      ]
+    }
   },
   {
     "id": "class_stormshifter",
@@ -227,6 +280,7 @@
     "kind": "class",
     "class": "Stormshifter",
     "tier": "1st echelon",
+    "pool": "faction_reward",
     "object": "A sealed clay jar of dark grey mud from the Revlend Marshes north of the city, marked with protective runes no one recognises as any known system. The mud is warm to the touch and smells of rain before a storm. It never dries out. An arch-traveller carried it into the city claiming the marshes spoke to her. She didn't explain further. She is not currently available to explain anything.",
     "unlock": [
       "Spend a full night alone in the Revlend Marshes, or in the Deadlands adjacent to them, without shelter or fire.",
@@ -244,7 +298,18 @@
       "Extend the Beastshift (Free, spend 2 Earthpulse, once per Beastshift): Until the end of this encounter, casting spells does not end your Beastshift.",
       "Mire (1 Action, spend all 4): Create a 3-space radius of difficult terrain centered on you that lasts until the end of the encounter. The ground thickens and pulls. Any creature that starts its turn in the mire is Slowed."
     ],
-    "escalation": "When the jar is empty, mud already applied does not dry, but no new mud can be applied until the jar is refilled. If the jar breaks, the mud it held dries at once and all its effects end. A skilled craftsperson can repair a broken jar, but the marshes must still refill it. Each time you return to refill it, the marshes have changed, and the GM says how."
+    "escalation": "When the jar is empty, mud already applied does not dry, but no new mud can be applied until the jar is refilled. If the jar breaks, the mud it held dries at once and all its effects end. A skilled craftsperson can repair a broken jar, but the marshes must still refill it. Each time you return to refill it, the marshes have changed, and the GM says how. Roll a d6 on the table below, or choose.",
+    "escalation_table": {
+      "title": "How the marshes have changed",
+      "rows": [
+        "the water has risen, and Heron's Stride stands on its last stilts",
+        "a path of stones now leads to where you slept",
+        "the GM reveals one step of the Revlend Marshes' Neglect clock",
+        "something has left a gift where you leave the jar",
+        "the mud smells of a different storm: the next refill takes two nights",
+        "Revlenders ask you to carry a message back to the city"
+      ]
+    }
   },
   {
     "id": "class_zephyr",
@@ -252,6 +317,7 @@
     "kind": "class",
     "class": "Zephyr",
     "tier": "1st echelon",
+    "pool": "faction_reward",
     "object": "Linen hand wrappings, yellowed and stained, covered in faded ink annotations, technique notes in a script that predates the city. Found in a locked case in the Lower Reaches beneath a martial arts studio that has been occupied by different teachers for four centuries. Each teacher added their own notes in the margins. The last teacher's annotations stop mid-sentence, mid-technique.",
     "unlock": [
       "Study the wrappings' first annotation for a week of downtime.",
@@ -275,15 +341,15 @@
     "id": "forgotten_key",
     "name": "The Forgotten Key",
     "kind": "found",
-    "class": null,
     "tier": "Minor",
+    "pool": "faction_reward",
     "object": "A tarnished iron key, not sized for any human lock. Found in rubble beneath the Theater of Whispers, its bow etched with a spiral that matches no arch in the city's records.",
     "unlock": [
       "Present it to each of the city's seven major arches while the Archkeepers watch",
       "Find the one arch that hums",
       "Spend a full night at its threshold"
     ],
-    "risk": "The arch opens briefly. Roll a d6: on a 1-2, something comes through before you close the way. Closing it takes a Lore check, DC 12.",
+    "risk": "The arch opens briefly. Hold it with a Might check, DC 13, or something comes through before you close the way. Closing it then takes a Lore check, DC 12.",
     "resource": {
       "name": "Hum",
       "type": "pip tracker",
@@ -300,8 +366,8 @@
     "id": "drowning_scale",
     "name": "The Drowning Scale",
     "kind": "found",
-    "class": null,
     "tier": "Minor",
+    "pool": "draw",
     "object": "A cold, clammy pendant on a leather cord, a single shimmering scale of unknown origin. When first worn, everyone nearby shivers. It was pulled from the water at Drowned Elvenya in the Revlend Marshes, and nobody knows what it came off.",
     "unlock": [
       "Wear the pendant ceaselessly for a full lunar cycle, answering its whispered questions honestly each night",
@@ -326,8 +392,8 @@
     "id": "axe_of_nine_eyes",
     "name": "The Axe of Nine Eyes",
     "kind": "found",
-    "class": null,
     "tier": "Major",
+    "pool": "draw",
     "object": "A silvery greataxe with nine open eyes engraved down the blade. They follow whoever speaks. It came out of Graydust Keep, which has changed hands hundreds of times since the fall of the Nameless King, and the Fallen Angels who hold the keep now want it back.",
     "unlock": [
       "Learn what the axe was called before it was named, from Archkeeper records or something older than the Golden Order",
@@ -352,8 +418,8 @@
     "id": "hourglass_of_borrowed_time",
     "name": "The Hourglass of Borrowed Time",
     "kind": "found",
-    "class": null,
     "tier": "Major",
+    "pool": "draw",
     "object": "A brass hourglass whose sand climbs upward. The Library of Vrassa has no record of lending it, and no record of getting it back.",
     "unlock": [
       "Watch one full night without sleeping",
@@ -370,14 +436,25 @@
       "Turn Back (Reaction, spend 1 Sand, after a die you can see is rolled and before its result is applied): The die is rerolled. The new result stands.",
       "Sand Sense (Passive): You always know the exact time, and you can tell when a clock, a calendar, or a witness near you has it wrong."
     ],
-    "escalation": "When the last Sand falls, the original result happened somewhere. Within a session an Echo of you arrives carrying its consequences, and it wants the glass."
+    "escalation": "When the last Sand falls, the original result happened somewhere. Within a session an Echo of you arrives carrying its consequences, and it wants the glass. Roll a d6 on the table below, or choose.",
+    "escalation_table": {
+      "title": "What the Echo carries",
+      "rows": [
+        "a debt to the Black Hand you never took on",
+        "a fresh Wound, which it hands to you at the next encounter",
+        "a friend who remembers the original result, and is angry",
+        "a key to an arch that should not exist",
+        "news of a death that did not happen here",
+        "an offer to trade places with you for one day"
+      ]
+    }
   },
   {
     "id": "black_lotus_case",
     "name": "The Black Lotus Case",
     "kind": "found",
-    "class": null,
     "tier": "Minor",
+    "pool": "draw",
     "object": "A black bloom pressed in a lead-lined case, three petals left, still damp. According to the trader who sold it, it was cut at the Oasis of Mother's Tears in the Deadlands.",
     "unlock": [
       "Find someone who survived the preparation",
@@ -397,14 +474,14 @@
       "Wallwalker (Passive, while chosen): Climb sheer surfaces and walk on water.",
       "Drowsing Pollen (once, when chosen): One creature of level 5 or lower within 2 spaces makes a WIL save, DC 13, or falls asleep for 1d4 rounds."
     ],
-    "escalation": "Each time the case empties, the Stain advances for good. 1: fingertips blacken, advantage on Finesse, and you can no longer feel heat or cold through them. 2: veins darken, +1 Initiative, your pulse is audible. 3: eyes black, you see in the dark, strangers flinch (disadvantage on Influence). After 3, the bloom no longer needs the case."
+    "escalation": "Each time the case empties, the Stain advances for good. 1: fingertips blacken, advantage on Finesse, and you can no longer feel heat or cold through them. 2: veins darken, +1 Initiative, your pulse is audible. 3: eyes black, you see in the dark, strangers flinch (disadvantage on Influence). Stage 3 is the last Stain. After it, the bloom roots in your palm: you no longer need the case to carry the petals, and no one can take them from you."
   },
   {
     "id": "oath_band",
     "name": "The Oath-Band",
     "kind": "found",
-    "class": null,
     "tier": "Minor",
+    "pool": "draw",
     "object": "A plain iron ring, every oath ever sworn over it scratched inside. The first is in the hand of a Golden Knights recruit, and the Citadel has no record of the ring.",
     "unlock": [
       "Swear aloud before a living witness",
@@ -418,7 +495,7 @@
       "text": "Oath (toggle, max 1). Set when you swear. Clears when you fulfil the oath, or when the GM rules it broken or abandoned. One oath at a time, and a new one only after the last has cleared."
     },
     "powers": [
-      "Sworn (Passive): While the oath stands, you have advantage on checks that directly advance it. The GM grades it Worthy, Mighty or Legendary when you swear.",
+      "Sworn (Passive): While the oath stands, you have advantage on checks that directly advance it. The GM grades it when you swear. Worthy: a session's work, at risk to you. Mighty: an arc's work, at risk to someone or something you love. Legendary: it changes the city.",
       "Hold Fast (Reaction, once per oath): When you fail a check or save that directly advances the oath, reroll it with advantage. The oath drops one grade."
     ],
     "escalation": "Fulfilled: heal 1 Wound and gain +1, +2 or +3 max HP for good, by grade. Failed: lose that much max HP for good, the Golden Council writes the broken oath on the record under your name, and the Band stays shut until you do a penance."
@@ -427,8 +504,8 @@
     "id": "unpaid_favor",
     "name": "The Unpaid Favor",
     "kind": "found",
-    "class": null,
     "tier": "Minor",
+    "pool": "draw",
     "object": "A tin holy symbol, its face rubbed smooth, always warm. It belongs to one of the twelve profane gods of the Temple of the Lower Twelve, and the face has been rubbed past telling which.",
     "unlock": [
       "Learn which of the Lower Twelve it belongs to",
@@ -451,8 +528,8 @@
     "id": "valkyries_feather",
     "name": "The Valkyrie's Feather",
     "kind": "found",
-    "class": null,
     "tier": "Minor",
+    "pool": "draw",
     "object": "A gold-barbed feather from a warrior's grave on the far side of an arch, in a world where valkyries still collect the dead.",
     "unlock": [
       "Dig it from the grave",
@@ -475,14 +552,14 @@
     "id": "tide_coat",
     "name": "The Tide-Coat",
     "kind": "found",
-    "class": null,
     "tier": "Minor",
+    "pool": "draw",
     "object": "An eel-skin suit that covers you head to heel, crusted with barnacles. Underwater it hums.",
     "unlock": [
       "Win it from the Revlenders of Heron's Stride or the people of a drowned place, or earn it in their service",
       "Wear it for a full night underwater"
     ],
-    "risk": "Something in the deep hears the hum. Roll a d6 at dawn: on a 1-2 it follows you up and arrives within a session.",
+    "risk": "Something in the deep hears the hum. Make a Stealth check, DC 12, on the way up, with the coat's usual Stealth penalty. On a failure it follows you up and arrives within a session.",
     "resource": {
       "name": "Growth",
       "type": "pip tracker",
@@ -499,8 +576,8 @@
     "id": "pitch_sap_harness",
     "name": "The Pitch-Sap Harness",
     "kind": "found",
-    "class": null,
     "tier": "Minor",
+    "pool": "draw",
     "object": "Three layers of wood glued with sap that never dries, its outer layer bristling with thorns. The wood was cut in the Lost Cavern of the Sundering Saurians, from a jungle tree that offered it, and it still smells of the mist.",
     "unlock": [
       "Find an old tree in the Lost Cavern of the Sundering Saurians willing to give its sap",
@@ -523,8 +600,8 @@
     "id": "hellhide",
     "name": "The Hellhide",
     "kind": "found",
-    "class": null,
     "tier": "Major",
+    "pool": "draw",
     "object": "Plate made over with a demon's skin, its horns on the helm and its claws on the gauntlets. The skin came out of Irax, the wind-torn hell beyond the hidden archway of the Blood Spears' Watchtower of Averost.",
     "unlock": [
       "Hunt the demon and bring back the skin",
@@ -549,8 +626,8 @@
     "id": "kettle_plate",
     "name": "The Kettle Plate",
     "kind": "found",
-    "class": null,
     "tier": "Major",
+    "pool": "draw",
     "object": "Full plate with two boilers on the back and a servo at every joint. One of a kind, built to someone's measure, and not to yours. The boiler plate is stamped with the mark of Vathrex's Forge.",
     "unlock": [
       "Find the workshop that built it",
@@ -574,8 +651,8 @@
     "id": "fairy_jar",
     "name": "The Fairy Jar",
     "kind": "found",
-    "class": null,
     "tier": "Minor",
+    "pool": "draw",
     "object": "A thumb-high jar of purple glass. Inside, a small furious face swims in mist. The fairy was netted at the Arch of Flowers in Briarheart Forest.",
     "unlock": [
       "Learn the fairy's name, which it will not tell you",
@@ -598,8 +675,8 @@
     "id": "seven_leaf_bracelet",
     "name": "The Seven-Leaf Bracelet",
     "kind": "found",
-    "class": null,
     "tier": "Minor",
+    "pool": "draw",
     "object": "A silver bracelet of seven linked leaves, cool as morning dew. It was found at the root of the oldest tree in Sunset Grove, and Graysen One-Eye would like to know who took it.",
     "unlock": [
       "Wear it through a night in old woods",
@@ -622,8 +699,8 @@
     "id": "hexing_needles",
     "name": "The Hexing Needles",
     "kind": "found",
-    "class": null,
     "tier": "Minor",
+    "pool": "draw",
     "object": "Three black needles in a felt roll, and a spool of red thread. The roll is stitched in the style of the Sisters of Dusk, the coven that rules Elgrym in Lady Straythe's name.",
     "unlock": [
       "Learn the stitch from a witch, at her price",
@@ -646,8 +723,8 @@
     "id": "sown_teeth",
     "name": "The Sown Teeth",
     "kind": "found",
-    "class": null,
     "tier": "Major",
+    "pool": "draw",
     "object": "A hide satchel holding a handful of long dragon teeth from Drakeholm that click together like dice.",
     "unlock": [
       "Read the command words etched inside the flap, in a dead language",
@@ -661,7 +738,7 @@
       "text": "Teeth (finite, 1d4+1, rolled at unlock). Each Sow uses up one tooth. A sown tooth never comes back, and nothing refills the satchel."
     },
     "powers": [
-      "Sow (Action, spend 1 Tooth): An armored warrior rises from the ground beside you and obeys you for an hour. It fights as a minion (GM guide): it attacks with a d8 (d10 from level 5, d12 from level 9), any damage destroys it, and all your warriors move and attack together on your turn.",
+      "Sow (Action, spend 1 Tooth): An armored warrior rises from the ground beside you and obeys you for an hour. It fights as a minion (GM guide): it attacks with a d10 (d12 from level 5, d20 from level 9), any damage destroys it, and all your warriors move and attack together on your turn.",
       "Dragon's Click (Passive): The teeth click louder within 6 spaces of a dragon or dragonkin."
     ],
     "escalation": "If two or more warriors stand and one is struck by surprise, they turn on each other, then on whoever is closest. Dragons and their kin can smell the satchel. When the last tooth is gone, the satchel is just a bag."
@@ -670,14 +747,14 @@
     "id": "arch_watch_mirror",
     "name": "The Arch-Watch Mirror",
     "kind": "found",
-    "class": null,
     "tier": "Major",
+    "pool": "draw",
     "object": "A mirror taller than a man in a frame of blackened ash. Its surface moves like still water. The glass was ground at the Observatory of Infinite Skies.",
     "unlock": [
       "Install it in your holding",
       "For each arch it should watch, carry a sliver of its glass through that arch and back, unbroken"
     ],
-    "risk": "Something on the other side sees the mirror before it sees them. Roll a d6 when the last sliver returns: on a 1-2, whatever sees the mirror can look back through it until a night's vigil clears it.",
+    "risk": "Each sliver must come back unbroken. Carrying one through an arch and back takes a Finesse check, DC 12. A broken sliver lets whatever is on that side look back through the mirror until a night's vigil clears it.",
     "resource": {
       "name": "Clarity",
       "type": "pip tracker",
@@ -695,8 +772,8 @@
     "id": "apology_blade",
     "name": "The Apology Blade",
     "kind": "found",
-    "class": null,
     "tier": "Major",
+    "pool": "draw",
     "object": "A sword cut from the belly of a sea serpent out of Terrache's cavern sea. It still smells of brine, and its edge is clouded like the sky before a storm.",
     "unlock": [
       "Give it as an apology to someone you wronged",
@@ -721,15 +798,15 @@
     "id": "rune_fragment",
     "name": "The Rune Fragment",
     "kind": "found",
-    "class": null,
     "tier": "Major",
+    "pool": "draw",
     "object": "A shard of storm-dark stone veined with silver. One rune on it glows faintly. It was in the hand of an arrival the Archkeepers met, who remembered nothing but its name.",
     "unlock": [
       "Find a second fragment",
       "Carve the first rune's name into a gravestone or standing stone, and speak aloud the name of someone who died for something",
       "Hold the fragments together for 10 minutes and they fuse"
     ],
-    "risk": "Whoever carries another fragment feels yours wake. Roll a d6 when they fuse: on a 1-2 the fragments grind against each other and you take 1 Wound.",
+    "risk": "Whoever carries another fragment feels yours wake. Holding the shards together while they grind takes a STR save, DC 13. On a failure you take 1 Wound and must hold them for another 10 minutes.",
     "resource": {
       "name": "Runes",
       "type": "pip tracker",
@@ -752,8 +829,8 @@
     "id": "binding_linens",
     "name": "The Binding Linens",
     "kind": "found",
-    "class": null,
     "tier": "Minor",
+    "pool": "draw",
     "object": "Strips of old linen that smell of myrrh, with gold-thread hieroglyphs at the ends. They were taken from the temple dead of Arkus.",
     "unlock": [
       "Learn the binding words from a priest of the dead",
@@ -776,8 +853,8 @@
     "id": "rusted_spear",
     "name": "The Rusted Spear",
     "kind": "found",
-    "class": null,
     "tier": "Minor",
+    "pool": "draw",
     "object": "A leaf-bladed spear whose rust never flakes off, however hard you scrub. The Blood Spears of Averost took it from a world they raided, and the watchtower still lists it as unreturned.",
     "unlock": [
       "Learn whom it last wounded, and find them",
@@ -800,14 +877,14 @@
     "id": "derelict_harpoon",
     "name": "The Derelict Harpoon",
     "kind": "found",
-    "class": null,
     "tier": "Minor",
+    "pool": "draw",
     "object": "A ship's harpoon with a coil of glowing strand-line, cut from a derelict hull hung in the vines of Drendaan. The line is warm, and it is still wet.",
     "unlock": [
       "Cut a length of strand-line from a derelict hull in Drendaan with the harpoon's own blade",
       "Make one throw that hauls you across a gap you could not have jumped"
     ],
-    "risk": "Whatever lived aboard the hulk feels the line cut. Roll a d6: on a 1-2 it follows the line through the arch within a session.",
+    "risk": "Whatever lived aboard the hulk feels the line cut. Make a Stealth check, DC 13, to get clear of the hulk unseen. On a failure it follows the line through the arch within a session.",
     "resource": {
       "name": "Slack",
       "type": "d6 vs. accumulation",
@@ -824,8 +901,8 @@
     "id": "provenance_ledger",
     "name": "The Seekers' Provenance Ledger",
     "kind": "found",
-    "class": null,
     "tier": "Minor",
+    "pool": "draw",
     "object": "A cloth-bound ledger listing a hundred relics by name, maker and rightful owner, in four hands. The last twelve pages are blank and slightly warm. The Museum of Worlds Beyond reports it missing from its archive.",
     "unlock": [
       "Return a relic to its rightful owner or their heirs, and have the owner sign it into the ledger",
@@ -843,14 +920,25 @@
       "Vouch (Reaction, spend 1 Provenance): When an ally within 6 spaces makes an Influence check about an object or its owner, they have advantage.",
       "Margins (Passive): The ledger shows a blot when you hold it within 6 spaces of a stolen or cursed object."
     ],
-    "escalation": "When the last Provenance is spent, the ledger writes one relic's name and its rightful owner on a blank page without being asked. The GM chooses the relic, and the owner is someone you know. The Seekers of the Sun and the Black Hand both learn it has been written."
+    "escalation": "When the last Provenance is spent, the ledger writes one relic's name and its rightful owner on a blank page without being asked. The GM chooses the relic, and the owner is someone you know. The Seekers of the Sun and the Black Hand both learn it has been written. Roll a d6 on the table below, or choose.",
+    "escalation_table": {
+      "title": "The relic the ledger writes",
+      "rows": [
+        "something from the Vaults of the Nameless King",
+        "an arcanum another hero carries",
+        "a piece on display in the Museum of Worlds Beyond",
+        "an heirloom of your own family",
+        "a key to one of the city's arches",
+        "a relic still lying in Sunken Revvia"
+      ]
+    }
   },
   {
     "id": "tally_stick",
     "name": "The Black Goat's Tally-Stick",
     "kind": "found",
-    "class": null,
     "tier": "Minor",
+    "pool": "draw",
     "object": "A notched black-wood stick as long as a hand, each notch a tab paid or unpaid at the Black Goat's Tavern. A horned goat's single yellow eye is burned into one end.",
     "unlock": [
       "Drink at the Black Goat's Tavern through a full night, and settle your tab in full",
