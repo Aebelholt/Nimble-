@@ -109,7 +109,8 @@ A second model audited the deck from `analysis/blind_audit_prompt.md`. Triage in
 ### Blind audit v3 triage
 - A second session audited with full rules access; result in `analysis/blind_audit_v3_result.md`, triage in `analysis/blind_audit_v3_triage.md`.
 - **Rules fixes on 21 cards and the guilds:** Commander Escalation no longer fires every fight; Mage and Shadowmancer work before level 3; guilds teach Nimble skills; guild and card backstories agree; plus wording (Dazed, Incapacitated, natural 20, Influence check, encounter durations).
-- Nine power calls and three table rules wait on the GM.
+- **Power calls, decided:** Rusted Spear takes a third of a Legendary monster's max HP instead of a kill; Hellhide's spell block feeds Thirst and needs a willing donor; Fairy Jar smashes only once unlocked, marks an eye and owes the fey a favour; Hexing Needles refill from outside the party; Oath-Band HP capped at your level; Forgotten Key refills only on a gig. Verdict, Kettle Plate and Contract kept.
+- Canon gaps are table rolls (`data/sejr_table_rules.md`).
 
 ## Diversity, found pool: before and after
 

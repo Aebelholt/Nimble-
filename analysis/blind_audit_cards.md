@@ -230,7 +230,7 @@ Class arcana first, then found arcana. No notes or prior review included.
 - Spend a full night at its threshold
 - Risk: The arch opens briefly. Hold it with a Might check, DC 13, or something comes through before you close the way. Closing it then takes a Lore check, DC 12.
 
-**Resource: Hum (pip tracker).** Hum (pip tracker, max 3). Spend 1 Hum each time you Open the Way. Regain 1 when you carry the key to an arch you have not yet tried it on and an Archkeeper records what the arch did. Hum never returns at a rest.
+**Resource: Hum (pip tracker).** Hum (pip tracker, max 3). Spend 1 Hum each time you Open the Way. Regain 1 when you carry the key, during a gig, to an arch you have not yet tried it on and an Archkeeper records what the arch did. This is never an off-screen refill. Hum never returns at a rest.
 
 **Powers.**
 - Open the Way (Action, spend 1 Hum): A dormant arch opens for up to a minute. Make a Lore check, DC 12, or you cannot control where it leads. A natural 20 lets you sense the destination first.
@@ -335,7 +335,7 @@ Class arcana first, then found arcana. No notes or prior review included.
 - Sworn (Passive): While the oath stands, you have advantage on checks that directly advance it. The GM grades it when you swear. Worthy: a session's work, at risk to you. Mighty: an arc's work, at risk to someone or something you love. Legendary: it changes the city.
 - Hold Fast (Reaction, once per oath): When you fail a check or save that directly advances the oath, reroll it with advantage. The oath drops one grade.
 
-**Escalation.** Fulfilled: heal 1 Wound and gain +1, +2 or +3 max HP for good, by grade. Failed: lose that much max HP for good, the Golden Council writes the broken oath on the record under your name, and the Band stays shut until you do a penance.
+**Escalation.** Fulfilled: heal 1 Wound and gain +1, +2 or +3 max HP for good, by grade. Max HP from the Band never exceeds your level. Failed: lose that much max HP for good, the Golden Council writes the broken oath on the record under your name, and the Band stays shut until you do a penance.
 
 ### The Unpaid Favor
 `unpaid_favor` · found, Minor
@@ -418,9 +418,9 @@ Class arcana first, then found arcana. No notes or prior review included.
 - Hunt the demon and bring back the skin
 - Find a smith who will work it, and pay their price
 - Put it on
-- Risk: Roll d10. On 1-3 the hide drinks magic: no spell can affect you, including your own, while you wear it.
+- Risk: Roll d10. On 1-3 the hide drinks magic: no spell can affect you, including your own and your allies' healing, while you wear it, and each spell cast on you gives the hide 1 Thirst.
 
-**Resource: Thirst (pip tracker).** Thirst (pip tracker, max 3). Gain 1 Thirst each time you use Command. Thirst clears only when you offer blood to the hide outside combat, from a creature that was not trying to harm you. Blood shed in a fight does not count.
+**Resource: Thirst (pip tracker).** Thirst (pip tracker, max 3). Gain 1 Thirst each time you use Command. Thirst clears only when you offer blood to the hide outside combat, from a willing person. Blood shed in a fight does not count.
 
 **Powers.**
 - Demon Plate (Passive): Plate armor, Defense 14, with no STR requirement.
@@ -464,7 +464,7 @@ Class arcana first, then found arcana. No notes or prior review included.
 - Ask (Action, spend 1 Bargain): Make an Influence check, DC 12. On a success the fairy works one small charm: a glamour, a lock undone, a minute of floating. On a failure it sulks and stays silent for 2d6 days.
 - Fairy Light (Passive): The jar glows when fey are within 6 spaces.
 
-**Escalation.** On a natural 1 the fairy escapes and curses you. You may smash the jar at any time: it grants +1 to one stat for good and is gone. At 0 Bargains it only bargains for its freedom.
+**Escalation.** On a natural 1 the fairy escapes and curses you. Once you know its name, you may smash the jar: it grants +1 to one stat for good and is gone. The fairy leaves its mark, one of your eyes turns its colour for good, and it tells its court: you owe the fey one favour, and they will collect. At 0 Bargains it only bargains for its freedom.
 
 ### The Seven-Leaf Bracelet
 `seven_leaf_bracelet` · found, Minor
@@ -494,7 +494,7 @@ Class arcana first, then found arcana. No notes or prior review included.
 - Embroider your own likeness first
 - Risk: Your first stitch slips. You carry a small hex of your own making, and have disadvantage on one kind of roll, the GM's choice, until you unpick it.
 
-**Resource: Thread (pip tracker).** Thread (pip tracker, max 3). Spend 1 Thread per Stitch. Regain 1 when someone gives you their hair, blood, or cloth freely, knowing what it is for. Thread returns only this way. Unpicking a hex frees its victim but gives back no Thread.
+**Resource: Thread (pip tracker).** Thread (pip tracker, max 3). Spend 1 Thread per Stitch. Regain 1 when someone outside your party gives you their hair, blood, or cloth freely, knowing what it is for. Thread returns only this way. Unpicking a hex frees its victim but gives back no Thread.
 
 **Powers.**
 - Stitch (an hour of work, spend 1 Thread): Embroider a likeness of someone, using their hair, blood, or cloth. They have disadvantage on one kind of roll you name until the cloth is unpicked or burned. They feel every stitch.
@@ -618,7 +618,7 @@ Class arcana first, then found arcana. No notes or prior review included.
 - Spare (Free): When you would drop a creature to 0 HP with the spear, it is left alive and Incapacitated at 0 HP instead (a hero falls Dying as normal), and its wound will not close until you choose to mend it.
 - Scrape (Action, spend 1 Rust): Scrape rust into a wound to heal 1 Wound on a creature you touch, yourself included, or to close a wound the spear made.
 
-**Escalation.** At 0 Rust the blade is clean and bright. The next creature it hits takes a wound that never closes: a hero gains a Wound that cannot heal and loses 1 max Wound for good, and a creature bleeds out by the end of the scene.
+**Escalation.** At 0 Rust the blade is clean and bright. The next creature it hits takes a wound that never closes: a hero gains a Wound that cannot heal and loses 1 max Wound for good, and a creature bleeds out by the end of the scene. A Legendary monster does not bleed out: it loses a third of its max HP at once (not from its Last Stand).
 
 ### The Derelict Harpoon
 `derelict_harpoon` · found, Minor

@@ -36,6 +36,8 @@ This audit is the strongest of the three: it quotes the real text and found real
 
 ## 2. Your calls (power, not rules)
 
+**Decided:** all nine as recommended. Rusted Spear: Legendary monsters lose a third of max HP (GM guide HP is per hero, so a flat number does not scale). Fairy Jar: smash only once unlocked, plus the eye mark and a fey favour. Oathsworn, Kettle Plate and Shadowmancer kept as written.
+
 Ranked by how much they can break an episode. My recommendation is in the last column.
 
 | # | Card | Finding | Recommendation |
@@ -50,7 +52,7 @@ Ranked by how much they can break an episode. My recommendation is in the last c
 | 8 | Kettle Plate | A free crossbow attack each turn. | Keep. Four shots per coal load. |
 | 9 | Shadowmancer | Debt clears at 4, so uses never run out. | Keep. Each collection costs a permanent sentence. |
 
-## 3. Table rules worth adding (your call)
+## 3. Table rules worth adding (your call, still open)
 
 - **Readings.** Six cards read lies, motives or history. Two at one table can solve a mystery gig in its first scene. Suggested rule: a reading is true, and can still point at the wrong person.
 - **Thread board.** An Escalation writes a thread card only if a slot is free; otherwise it ticks an existing clock.

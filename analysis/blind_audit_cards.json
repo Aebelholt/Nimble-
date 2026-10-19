@@ -355,7 +355,7 @@
       "name": "Hum",
       "type": "pip tracker",
       "max": 3,
-      "text": "Hum (pip tracker, max 3). Spend 1 Hum each time you Open the Way. Regain 1 when you carry the key to an arch you have not yet tried it on and an Archkeeper records what the arch did. Hum never returns at a rest."
+      "text": "Hum (pip tracker, max 3). Spend 1 Hum each time you Open the Way. Regain 1 when you carry the key, during a gig, to an arch you have not yet tried it on and an Archkeeper records what the arch did. This is never an off-screen refill. Hum never returns at a rest."
     },
     "powers": [
       "Open the Way (Action, spend 1 Hum): A dormant arch opens for up to a minute. Make a Lore check, DC 12, or you cannot control where it leads. A natural 20 lets you sense the destination first.",
@@ -499,7 +499,7 @@
       "Sworn (Passive): While the oath stands, you have advantage on checks that directly advance it. The GM grades it when you swear. Worthy: a session's work, at risk to you. Mighty: an arc's work, at risk to someone or something you love. Legendary: it changes the city.",
       "Hold Fast (Reaction, once per oath): When you fail a check or save that directly advances the oath, reroll it with advantage. The oath drops one grade."
     ],
-    "escalation": "Fulfilled: heal 1 Wound and gain +1, +2 or +3 max HP for good, by grade. Failed: lose that much max HP for good, the Golden Council writes the broken oath on the record under your name, and the Band stays shut until you do a penance."
+    "escalation": "Fulfilled: heal 1 Wound and gain +1, +2 or +3 max HP for good, by grade. Max HP from the Band never exceeds your level. Failed: lose that much max HP for good, the Golden Council writes the broken oath on the record under your name, and the Band stays shut until you do a penance."
   },
   {
     "id": "unpaid_favor",
@@ -609,12 +609,12 @@
       "Find a smith who will work it, and pay their price",
       "Put it on"
     ],
-    "risk": "Roll d10. On 1-3 the hide drinks magic: no spell can affect you, including your own, while you wear it.",
+    "risk": "Roll d10. On 1-3 the hide drinks magic: no spell can affect you, including your own and your allies' healing, while you wear it, and each spell cast on you gives the hide 1 Thirst.",
     "resource": {
       "name": "Thirst",
       "type": "pip tracker",
       "max": 3,
-      "text": "Thirst (pip tracker, max 3). Gain 1 Thirst each time you use Command. Thirst clears only when you offer blood to the hide outside combat, from a creature that was not trying to harm you. Blood shed in a fight does not count."
+      "text": "Thirst (pip tracker, max 3). Gain 1 Thirst each time you use Command. Thirst clears only when you offer blood to the hide outside combat, from a willing person. Blood shed in a fight does not count."
     },
     "powers": [
       "Demon Plate (Passive): Plate armor, Defense 14, with no STR requirement.",
@@ -670,7 +670,7 @@
       "Ask (Action, spend 1 Bargain): Make an Influence check, DC 12. On a success the fairy works one small charm: a glamour, a lock undone, a minute of floating. On a failure it sulks and stays silent for 2d6 days.",
       "Fairy Light (Passive): The jar glows when fey are within 6 spaces."
     ],
-    "escalation": "On a natural 1 the fairy escapes and curses you. You may smash the jar at any time: it grants +1 to one stat for good and is gone. At 0 Bargains it only bargains for its freedom."
+    "escalation": "On a natural 1 the fairy escapes and curses you. Once you know its name, you may smash the jar: it grants +1 to one stat for good and is gone. The fairy leaves its mark, one of your eyes turns its colour for good, and it tells its court: you owe the fey one favour, and they will collect. At 0 Bargains it only bargains for its freedom."
   },
   {
     "id": "seven_leaf_bracelet",
@@ -712,7 +712,7 @@
       "name": "Thread",
       "type": "pip tracker",
       "max": 3,
-      "text": "Thread (pip tracker, max 3). Spend 1 Thread per Stitch. Regain 1 when someone gives you their hair, blood, or cloth freely, knowing what it is for. Thread returns only this way. Unpicking a hex frees its victim but gives back no Thread."
+      "text": "Thread (pip tracker, max 3). Spend 1 Thread per Stitch. Regain 1 when someone outside your party gives you their hair, blood, or cloth freely, knowing what it is for. Thread returns only this way. Unpicking a hex frees its victim but gives back no Thread."
     },
     "powers": [
       "Stitch (an hour of work, spend 1 Thread): Embroider a likeness of someone, using their hair, blood, or cloth. They have disadvantage on one kind of roll you name until the cloth is unpicked or burned. They feel every stitch.",
@@ -872,7 +872,7 @@
       "Spare (Free): When you would drop a creature to 0 HP with the spear, it is left alive and Incapacitated at 0 HP instead (a hero falls Dying as normal), and its wound will not close until you choose to mend it.",
       "Scrape (Action, spend 1 Rust): Scrape rust into a wound to heal 1 Wound on a creature you touch, yourself included, or to close a wound the spear made."
     ],
-    "escalation": "At 0 Rust the blade is clean and bright. The next creature it hits takes a wound that never closes: a hero gains a Wound that cannot heal and loses 1 max Wound for good, and a creature bleeds out by the end of the scene."
+    "escalation": "At 0 Rust the blade is clean and bright. The next creature it hits takes a wound that never closes: a hero gains a Wound that cannot heal and loses 1 max Wound for good, and a creature bleeds out by the end of the scene. A Legendary monster does not bleed out: it loses a third of its max HP at once (not from its Last Stand)."
   },
   {
     "id": "derelict_harpoon",
