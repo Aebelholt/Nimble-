@@ -5,35 +5,35 @@
     "kind": "class",
     "class": "Berserker",
     "tier": "1st echelon",
-    "object": "A knucklebone worn smooth by a hundred years of handling, threaded on gut string. Taken from the body of a Berserker who died fighting in the Borderlands and was never retrieved. It arrived in a collector's satchel through one of the Market Square arches — nobody knows which world it came from, or who carried it through.",
+    "object": "A knucklebone worn smooth by a hundred years of handling, threaded on gut string. Taken from the body of a Berserker who died fighting in the Borderlands and was never retrieved. It arrived in a collector's satchel through one of the Market Square arches, and nobody knows which world it came from, or who carried it through.",
     "unlock": [
-      "Kill an enemy in single combat without any ally's assistance.",
+      "Defeat an enemy in single combat without any ally's assistance.",
       "Keep one of the body's hand bones.",
-      "Spend a night alone with it before you sleep."
+      "Spend a night alone with it before you sleep, and see how the ancestor fought."
     ],
-    "risk": "",
+    "risk": "Whatever hunted the ancestor still wants the bone, and the night alone is when it finds you.",
     "resource": {
       "name": "Fury Echo",
       "type": "pip tracker",
       "max": 3,
-      "text": "Gain 1 Fury Echo whenever you roll a Fury Die that matches a pip already stored (values 1–3). Clears at the end of combat. Does not stack with itself — you cannot gain more than 1 Echo from a single roll."
+      "text": "Fury Echo (pip tracker, max 3). Gain 1 Fury Echo each time you tell a listener who has not heard it how the ancestor fought and fell, in full, over at least ten minutes. Echo never clears at a rest or when combat ends. Spent Echo returns only by telling it again to a new listener."
     },
     "powers": [
-      "Echo Strike (Free, while Raging): Spend 1 Fury Echo to immediately roll and add a Fury Die — without spending your Rage action. This does not count as your Rage for the turn.",
-      "Death's Door (Free, once): Spend all 3 Fury Echo pips. Your Rage does not end when you drop to 0 HP this round. You act before the Dying condition takes hold. When your turn ends, Dying applies normally."
+      "Echo Strike (Free, while Raging, spend 1 Fury Echo): Roll a Fury Die and set it aside with the rest, up to your maximum. This does not use your Rage action.",
+      "Death's Door (Free, 1/encounter, when you Rage, spend all 3 Fury Echo): For this encounter, your Rage does not end when you drop to 0 HP. Dying applies as normal."
     ],
-    "escalation": "If you spend all 3 pips and die anyway, the knucklebone cracks. It must be replaced — another ancestor's relic found in the Borderlands, or taken from a worthy enemy. The GM decides where to find one, and how long it takes.",
-    "design_note": "Built to extend Rage without replacing it. The matching-die resonance gives Fury Die results below 4 a second purpose — a small extra layer of attention during Rage that doesn't slow the game. Death's Door delays death by one round. That is all a Berserker ever wants.",
-    "status": "review",
-    "notes": "Rebuilt from uploaded sources; original status and notes were not available.",
+    "escalation": "If you drop to 0 HP with Death's Door active, the knucklebone cracks and stops working. Replace it with another ancestor's relic from the Borderlands, or take one from a worthy enemy. The GM decides where it is and how long the search takes. Whatever hunted the ancestor learns the bone has moved.",
+    "design_note": "Echo comes from a story told at a table, so the pool fills outside the fight and never from the Fury Dice the class already rolls. Death's Door is paid at the start of Rage, before the dangerous moment, and gives a first-echelon version of the level 18 Deep Rage.",
+    "status": "keep",
+    "notes": "Reworked. Echo now fills by retelling, not by Fury Die matches (double-dipping); Death's Door paid up front (peak-value lethality); risk added; em dash removed; retelling venue: Sevenge and Gam's Public House (3_gazetteer).",
     "source": "sources/class_arcana_v3.docx",
     "matrix": {
       "tier": "1st",
       "resource_type": "pip tracker",
       "max": 3,
-      "refill": "Gained by rolling a Fury Die that matches a stored pip (passive, in combat); clears at end of combat",
+      "refill": "Tell the ancestor's last fight to a listener who has not heard it; persists until spent",
       "power": "offense",
-      "cost": "death risk; relic cracks",
+      "cost": "Echo spent; relic cracks at 0 HP with Death's Door",
       "origin": "Borderlands Berserker relic, arrived via a Market Square arch (world unnamed)",
       "region": "Borderlands (unspecified)",
       "look": "knucklebone on gut string",
