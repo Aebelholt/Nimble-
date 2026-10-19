@@ -51,7 +51,7 @@ The second model audited the deck from `analysis/blind_audit_prompt.md` alone. E
 
 ## 4. Decisions for you
 
-1. **Forgotten Key.** Re-tier it to Major, or make every opening uncontrolled and noticed by the patron who holds that arch?
+1. ~~**Forgotten Key.**~~ **Decided:** removed from the level 1 draw pool; a faction reward only. Done: `pool: faction_reward` in the JSON, `faction_reward_arcanum` in the Perchance module.
 2. **Drowning Scale.** Breath comes from any creature dropping to 0 HP within Reach 2, which includes Dying allies. Keep it as the spec's best-in-class example, limit it to enemies, or change the trigger?
 3. **Black Lotus Case.** What does "After 3, the bloom no longer needs the case" mean in play? Is stage 3 the end of the Stain?
 4. **Hexing Needles.** Limit "one kind of roll" to a skill or a save (not attacks), and give the victim a WIL save at each Safe Rest?

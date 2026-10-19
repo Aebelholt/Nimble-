@@ -4,7 +4,7 @@
 Keeps the structure of the original module: other_arcanum, arcana_data, arcanum_line,
 the forge lists and functions (copied verbatim from sources/), and adds class_arcanum_name
 so the hero card can look up a class arcanum by class.
-Cut cards are left out.
+Cut cards are left out. Found cards with pool 'faction_reward' go to faction_reward_arcanum, not other_arcanum.
 """
 import json, pathlib, re
 
@@ -12,6 +12,8 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 cards = [c for c in json.loads((ROOT / "data/sejr_arcana.json").read_text()) if c["status"] != "cut"]
 orig = (ROOT / "sources/sejr_arcana_perchance_original.txt").read_text()
 found = [c for c in cards if c["kind"] == "found"]
+draw = [c for c in found if c.get("pool", "draw") == "draw"]
+reward = [c for c in found if c.get("pool") == "faction_reward"]
 klass = [c for c in cards if c["kind"] == "class"]
 
 
@@ -34,7 +36,11 @@ head = """// ==========================================
 // ==========================================
 
 other_arcanum
-""" + "\n".join("  " + c["name"] for c in found) + """
+""" + "\n".join("  " + c["name"] for c in draw) + """
+
+// Faction rewards: never rolled at chargen. The GM hands these out in play.
+faction_reward_arcanum
+""" + "\n".join("  " + c["name"] for c in reward) + """
 
 // ---------- CURATED CARDS ----------
 
@@ -75,4 +81,4 @@ tail = tail.replace(
     "// and swap this line")
 out = ROOT / "data/sejr_arcana_perchance.txt"
 out.write_text(head + tail)
-print(out, len(found), "found +", len(klass), "class cards")
+print(out, len(draw), "drawable found +", len(reward), "faction reward +", len(klass), "class cards")

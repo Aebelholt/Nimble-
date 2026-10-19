@@ -88,6 +88,7 @@ A second model audited the deck from `analysis/blind_audit_prompt.md`. Triage in
 - **Prompt fixed:** it now quotes Lifebinding Spirit and Sacred Decree, which the auditor flagged as unverified.
 - **Rejected:** six findings, with reasons in the triage. Their power scale was not adopted.
 - **Open:** eight decisions, listed at the end of the triage.
+- **Decided: Forgotten Key is a faction reward.** Removed from the level 1 draw; each card now has a `pool` field (`class`, `draw`, `faction_reward`). The draw pool is 23 cards. The Perchance module gains a `faction_reward_arcanum` list, and the test fails if a faction reward reaches `other_arcanum`.
 
 ## Diversity, found pool: before and after
 

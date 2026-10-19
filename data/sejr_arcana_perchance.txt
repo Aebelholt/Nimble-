@@ -6,7 +6,6 @@
 // ==========================================
 
 other_arcanum
-  The Forgotten Key
   The Drowning Scale
   The Axe of Nine Eyes
   The Hourglass of Borrowed Time
@@ -30,6 +29,10 @@ other_arcanum
   The Derelict Harpoon
   The Seekers' Provenance Ledger
   The Black Goat's Tally-Stick
+
+// Faction rewards: never rolled at chargen. The GM hands these out in play.
+faction_reward_arcanum
+  The Forgotten Key
 
 // ---------- CURATED CARDS ----------
 

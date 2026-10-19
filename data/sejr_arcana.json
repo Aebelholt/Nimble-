@@ -38,7 +38,8 @@
       "region": "Borderlands (unspecified)",
       "look": "knucklebone on gut string",
       "mythology": ""
-    }
+    },
+    "pool": "class"
   },
   {
     "id": "class_cheat",
@@ -78,7 +79,8 @@
       "region": "Lower Reaches",
       "look": "ivory die, lead insert",
       "mythology": ""
-    }
+    },
+    "pool": "class"
   },
   {
     "id": "class_commander",
@@ -119,7 +121,8 @@
       "region": "Upper city (Nameless King)",
       "look": "black iron standard, ground-off insignia",
       "mythology": ""
-    }
+    },
+    "pool": "class"
   },
   {
     "id": "class_hunter",
@@ -159,7 +162,8 @@
       "region": "Doorish Hills",
       "look": "braided sinew with carved tokens",
       "mythology": ""
-    }
+    },
+    "pool": "class"
   },
   {
     "id": "class_mage",
@@ -201,7 +205,8 @@
       "region": "Kartan / Lower Reaches",
       "look": "blue glass lens, copper frame",
       "mythology": ""
-    }
+    },
+    "pool": "class"
   },
   {
     "id": "class_oathsworn",
@@ -241,7 +246,8 @@
       "region": "Sunken Revvia",
       "look": "golden scales, one pan missing",
       "mythology": ""
-    }
+    },
+    "pool": "class"
   },
   {
     "id": "class_shadowmancer",
@@ -282,7 +288,8 @@
       "region": "Lower Reaches",
       "look": "black vellum slip",
       "mythology": ""
-    }
+    },
+    "pool": "class"
   },
   {
     "id": "class_shepherd",
@@ -323,7 +330,8 @@
       "region": "Upper city (Temple)",
       "look": "iron handbell, green rim, three rings",
       "mythology": ""
-    }
+    },
+    "pool": "class"
   },
   {
     "id": "class_songweaver",
@@ -363,7 +371,8 @@
       "region": "Upper city (Theater)",
       "look": "folded vellum setlist",
       "mythology": ""
-    }
+    },
+    "pool": "class"
   },
   {
     "id": "class_stormshifter",
@@ -404,7 +413,8 @@
       "region": "Revlend Marshes",
       "look": "sealed clay jar of grey mud",
       "mythology": ""
-    }
+    },
+    "pool": "class"
   },
   {
     "id": "class_zephyr",
@@ -445,7 +455,8 @@
       "region": "Lower Reaches",
       "look": "yellowed linen hand wrappings",
       "mythology": ""
-    }
+    },
+    "pool": "class"
   },
   {
     "id": "forgotten_key",
@@ -472,7 +483,7 @@
     ],
     "escalation": "Spending the last Hum, roll a d6. On 1-2 the key splinters, and every arch it opens leads somewhere wrong until an Archkeeper repairs it. On 3+, take 1 Wound.",
     "status": "keep",
-    "notes": "Reworked. Refill was a Safe Rest; Hum (renamed from Resonance, which the Shepherd's Bell uses) now returns when an Archkeeper records a new arch's behavior (Archkeepers watch the arches, 3_gazetteer). Passive added. Lore is a rules skill. Unlock pass: risk now a d6 and a check. Object now names its find-place from arches_homebrew.docx (rubble beneath the Theater of Whispers). Note: the homebrew card clears Resonance on a Safe Rest; this version does not (the spec bans rest refills). Revert the resource line if you prefer yours.",
+    "notes": "Reworked. Refill was a Safe Rest; Hum (renamed from Resonance, which the Shepherd's Bell uses) now returns when an Archkeeper records a new arch's behavior (Archkeepers watch the arches, 3_gazetteer). Passive added. Lore is a rules skill. Unlock pass: risk now a d6 and a check. Object now names its find-place from arches_homebrew.docx (rubble beneath the Theater of Whispers). Note: the homebrew card clears Resonance on a Safe Rest; this version does not (the spec bans rest refills). Revert the resource line if you prefer yours. Pool: removed from the level 1 draw (other_arcanum); now a faction reward only, by the GM's decision. Keys are patron power in Sejr, so whichever faction grants it should offend another, as the campaign overview intends for a party-owned key.",
     "source": "sources/sejr_arcana_perchance_original.txt",
     "matrix": {
       "tier": "Minor",
@@ -485,7 +496,8 @@
       "region": "Upper city (arches)",
       "look": "tarnished iron key, spiral bow",
       "mythology": ""
-    }
+    },
+    "pool": "faction_reward"
   },
   {
     "id": "drowning_scale",
@@ -527,7 +539,8 @@
       "look": "clammy scale pendant on a leather cord",
       "mythology": ""
     },
-    "design_note": "Breath is earned in the fight by an action anyone could take, so no hero gains by landing the last blow. The empty-pendant escalation turns greed into a Wound."
+    "design_note": "Breath is earned in the fight by an action anyone could take, so no hero gains by landing the last blow. The empty-pendant escalation turns greed into a Wound.",
+    "pool": "draw"
   },
   {
     "id": "axe_of_nine_eyes",
@@ -568,7 +581,8 @@
       "region": "Deadlands",
       "look": "silvery greataxe, nine engraved eyes",
       "mythology": "Odin / Argus Panoptes echo"
-    }
+    },
+    "pool": "draw"
   },
   {
     "id": "hourglass_of_borrowed_time",
@@ -607,7 +621,8 @@
       "region": "Upper city (Library of Vrassa)",
       "look": "brass hourglass, sand climbs up",
       "mythology": ""
-    }
+    },
+    "pool": "draw"
   },
   {
     "id": "black_lotus_case",
@@ -649,7 +664,8 @@
       "region": "Deadlands",
       "look": "lead-lined case, black bloom",
       "mythology": ""
-    }
+    },
+    "pool": "draw"
   },
   {
     "id": "oath_band",
@@ -688,7 +704,8 @@
       "region": "Upper city (Citadel)",
       "look": "plain iron ring, oaths scratched inside",
       "mythology": ""
-    }
+    },
+    "pool": "draw"
   },
   {
     "id": "unpaid_favor",
@@ -727,7 +744,8 @@
       "region": "Lower Reaches",
       "look": "tin holy symbol, warm",
       "mythology": ""
-    }
+    },
+    "pool": "draw"
   },
   {
     "id": "valkyries_feather",
@@ -766,7 +784,8 @@
       "region": "Worlds beyond (unnamed)",
       "look": "gold-barbed feather",
       "mythology": "Norse valkyrie"
-    }
+    },
+    "pool": "draw"
   },
   {
     "id": "hollow_vessel",
@@ -804,7 +823,8 @@
       "region": "Unspecified",
       "look": "sealed clay jar",
       "mythology": ""
-    }
+    },
+    "pool": "draw"
   },
   {
     "id": "tide_coat",
@@ -843,7 +863,8 @@
       "region": "Revlend Marshes / Sunken Revvia",
       "look": "eel-skin suit, barnacles",
       "mythology": ""
-    }
+    },
+    "pool": "draw"
   },
   {
     "id": "sul_hide",
@@ -882,7 +903,8 @@
       "region": "Unspecified",
       "look": "beetle tank, tuning fork",
       "mythology": ""
-    }
+    },
+    "pool": "draw"
   },
   {
     "id": "pitch_sap_harness",
@@ -921,7 +943,8 @@
       "region": "Lower Reaches",
       "look": "layered wood, never-dry sap, thorns",
       "mythology": ""
-    }
+    },
+    "pool": "draw"
   },
   {
     "id": "ossuary_mail",
@@ -959,7 +982,8 @@
       "region": "Unspecified",
       "look": "resin-fixed skeleton coat, skull helm",
       "mythology": ""
-    }
+    },
+    "pool": "draw"
   },
   {
     "id": "hellhide",
@@ -1000,7 +1024,8 @@
       "region": "Worlds beyond (Irax)",
       "look": "plate in demon skin, horns, claws",
       "mythology": ""
-    }
+    },
+    "pool": "draw"
   },
   {
     "id": "kettle_plate",
@@ -1040,7 +1065,8 @@
       "region": "Upper city (Vathrex's Forge)",
       "look": "full plate, boilers, servos",
       "mythology": ""
-    }
+    },
+    "pool": "draw"
   },
   {
     "id": "fairy_jar",
@@ -1079,7 +1105,8 @@
       "region": "Doorish Hills",
       "look": "purple glass jar, small furious face",
       "mythology": "European folk fairy"
-    }
+    },
+    "pool": "draw"
   },
   {
     "id": "seven_leaf_bracelet",
@@ -1118,7 +1145,8 @@
       "region": "Upper city (Sunset Grove)",
       "look": "silver bracelet of seven leaves",
       "mythology": ""
-    }
+    },
+    "pool": "draw"
   },
   {
     "id": "hexing_needles",
@@ -1157,7 +1185,8 @@
       "region": "Doorish Hills",
       "look": "three black needles, red thread",
       "mythology": "Witch poppet / voodoo"
-    }
+    },
+    "pool": "draw"
   },
   {
     "id": "bonded_relic",
@@ -1195,7 +1224,8 @@
       "region": "Unspecified",
       "look": "unknown",
       "mythology": ""
-    }
+    },
+    "pool": "draw"
   },
   {
     "id": "sown_teeth",
@@ -1234,7 +1264,8 @@
       "region": "Worlds beyond (Drakeholm)",
       "look": "hide satchel of long teeth",
       "mythology": "Greek Spartoi (Cadmus)"
-    }
+    },
+    "pool": "draw"
   },
   {
     "id": "arch_watch_mirror",
@@ -1274,7 +1305,8 @@
       "region": "Upper city (Observatory)",
       "look": "tall mirror, blackened ash frame",
       "mythology": ""
-    }
+    },
+    "pool": "draw"
   },
   {
     "id": "apology_blade",
@@ -1315,7 +1347,8 @@
       "region": "Worlds beyond (Terrache)",
       "look": "sword from a sea serpent's belly, clouded edge",
       "mythology": ""
-    }
+    },
+    "pool": "draw"
   },
   {
     "id": "rune_fragment",
@@ -1361,7 +1394,8 @@
       "region": "Worlds beyond (unnamed)",
       "look": "silver-veined shard, one glowing rune",
       "mythology": "Norse futhark"
-    }
+    },
+    "pool": "draw"
   },
   {
     "id": "binding_linens",
@@ -1400,7 +1434,8 @@
       "region": "Worlds beyond (Arkus)",
       "look": "myrrh linen, gold hieroglyph ends",
       "mythology": "Egyptian mummification"
-    }
+    },
+    "pool": "draw"
   },
   {
     "id": "rusted_spear",
@@ -1439,7 +1474,8 @@
       "region": "Doorish Hills / Revlend Marshes",
       "look": "leaf-bladed spear, never-flaking rust",
       "mythology": "Greek Telephus / Achilles' spear"
-    }
+    },
+    "pool": "draw"
   },
   {
     "id": "derelict_harpoon",
@@ -1479,7 +1515,8 @@
       "look": "harpoon and glowing strand-line coil",
       "mythology": ""
     },
-    "design_note": ""
+    "design_note": "",
+    "pool": "draw"
   },
   {
     "id": "provenance_ledger",
@@ -1520,7 +1557,8 @@
       "look": "cloth-bound ledger",
       "mythology": ""
     },
-    "design_note": ""
+    "design_note": "",
+    "pool": "draw"
   },
   {
     "id": "tally_stick",
@@ -1560,6 +1598,7 @@
       "look": "notched black-wood stick, burned goat's eye",
       "mythology": ""
     },
-    "design_note": ""
+    "design_note": "",
+    "pool": "draw"
   }
 ]

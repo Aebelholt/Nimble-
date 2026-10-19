@@ -61,8 +61,15 @@ for (const n of lists.other_arcanum) {
   if (!(n in data)) fail(`other_arcanum "${n}" has no arcana_data entry`);
   if (cards.find(c => c.name === n && c.kind !== "found")) fail(`class card "${n}" is in other_arcanum`);
 }
-for (const c of active.filter(c => c.kind === "found")) if (!lists.other_arcanum.includes(c.name)) fail(`${c.id}: not in other_arcanum`);
-ok(`${active.length} active cards, ${lists.other_arcanum.length} in other_arcanum`);
+for (const c of active.filter(c => c.kind === "found")) {
+  const pool = c.pool || "draw";
+  const inDraw = lists.other_arcanum.includes(c.name);
+  const inReward = (lists.faction_reward_arcanum || []).includes(c.name);
+  if (pool === "draw" && !inDraw) fail(`${c.id}: drawable card not in other_arcanum`);
+  if (pool === "faction_reward" && (inDraw || !inReward)) fail(`${c.id}: faction reward must be in faction_reward_arcanum and not in other_arcanum`);
+}
+for (const n of lists.faction_reward_arcanum || []) if (!(n in data)) fail(`faction_reward_arcanum "${n}" has no arcana_data entry`);
+ok(`${active.length} active cards, ${lists.other_arcanum.length} in other_arcanum, ${(lists.faction_reward_arcanum || []).length} faction rewards`);
 
 // Every class in the generator maps to a class card.
 const heroClasses = genLists.split("\nhero_class\n")[1].split("\n\n")[0].split("\n").map(s => s.trim()).filter(Boolean);
