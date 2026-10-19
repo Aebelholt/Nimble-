@@ -10,6 +10,7 @@ Checks, per card (cut cards are skipped):
   style       no em dash, en dash, "it's not", or "charges"
   risk_mech   the unlock risk has a mechanic: a roll, save, check, clock, Wound or stated loss (Stonetop
               unlocks name a hazard, not a mood)
+  name_clash  no power shares its name with a class ability in rules/classes
   rules_terms no capitalized term outside a vocabulary built from rules/, setting/ and the
               cards' own names (resources, powers, items); plus a list of known-wrong terms
 
@@ -59,6 +60,10 @@ def build_vocab():
 
 
 VOCAB, OWN = build_vocab()
+CLASS_ABILITIES = set()
+for _p in (ROOT / "rules/classes").glob("*.txt"):
+    for _m in re.finditer(r"(?m)(?:^|•\s*)([A-Z][A-Za-z'’ ]{2,30})\.\s", _p.read_text(errors="ignore")):
+        CLASS_ABILITIES.add(_m.group(1).strip().replace("’", "'"))
 
 
 def caps_outside_vocab(s):
@@ -126,6 +131,9 @@ def check(c):
     if not free:
         pp.append("no free or passive power")
     out["powers"] = "; ".join(pp) or None
+
+    clash = [h for h in (re.split(r"\s*\(|:", p)[0].strip() for p in c["powers"]) if h in CLASS_ABILITIES]
+    out["name_clash"] = f"power name is a class ability: {clash}" if clash else None
 
     hits = [b for b in BANNED_RES if re.search(b, rt + " " + r["name"], re.I)]
     out["banned_words"] = f"resource line matches {hits}" if hits else None

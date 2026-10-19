@@ -50,7 +50,7 @@ Common fixes: hero "Armor N+DEX" became Defense; "LV 5" became "level 5"; "Sylva
 
 ### Step 4: audit as code
 - `tools/audit.py` checks: five parts present; one resource with a clearing rule; a refill that names a world action; one spend power and one free or passive power; no kill, slay or reduce-to-0 in resource lines; no em dash, en dash, "it's not" or "charges"; a risk with a mechanic; no capitalized term outside a vocabulary built from `rules/`, `setting/` and the cards' own names.
-- Last run: 35 cards, 0 failing checks, 2 left with a reason (`tools/audit_exceptions.json`).
+- Last run: 35 cards, 0 failing checks, 2 left with a reason (Commander refill, Black Lotus 'Stain') (`tools/audit_exceptions.json`).
 - **Left, with reasons:**
   - Commander, refill: Authority fills from allies' damage and clears at encounter end. The spec uses this card as its Commander example.
   - Black Lotus, "Stain": the card's own escalation track, not a rules term.
@@ -74,6 +74,13 @@ Common fixes: hero "Armor N+DEX" became Defense; "LV 5" became "level 5"; "Sylva
 - **Zephyr correction.** The homebrew defines Wound-cost as a Wound that cannot be healed until the item is rested. I had removed that wording as redundant, which was wrong. Strain Wounds now refuse Medical Kits and healing magic and heal only by Safe Rest, 1 per rest.
 - The homebrew's unlock rule (2 to 4 requirements, at least one a risk, at least one session) matches what the cards use. Its own risk examples include story-only lines, so the audit's "risk has a mechanic" check is stricter than the homebrew.
 
+### Reassessment pass
+See `analysis/reassessment.md` (design traps, double-dipping, your table) and `analysis/power_levels.md` (every card against Nimble's rarity bands and printed items).
+- **Origins flattened.** Axe of Nine Eyes moved to Graydust Keep (Deadlands); Pitch-Sap Harness moved to the Lost Cavern of the Sundering Saurians (Lower Reaches). Found-card origins: upper city 7, worlds beyond 7, Lower Reaches 3, Doorish Hills 3, Revlend Marshes 2, Deadlands 2.
+- **Fixed:** Shepherd's Ring was a free bonus on the class's healing (double-dipping), now Ring Out. Hellhide's Terror lasted for good (memory tracking), now the encounter. Rusted Spear's Mend clashed with a Shepherd ability, now Scrape. Apology Blade could be refilled by wronging someone on purpose, now closed. Rune Fragment's Algiz carried a false Passive label I added to pass the audit; every rune now shows its true cost.
+- **New audit check:** `name_clash`, no power may share its name with a class ability.
+- **Recommended, not changed:** cut filler passives; vary the seven identical d6 risks; give open-ended escalations a d6 list; re-tier the Forgotten Key (campaign-shaping in Sejr) and rule on Hexing Needles' "attack rolls"; add an off-screen refill rule for in-city refills; re-price Wound-only costs for a table where nobody dies.
+
 ## Diversity, found pool: before and after
 
 | | Before (25) | After (24) |
@@ -88,7 +95,7 @@ Common fixes: hero "Armor N+DEX" became Defense; "LV 5" became "level 5"; "Sylva
 | Cards with no place of origin | 21 | 0 |
 | From worlds beyond the arches | 0 | 7 |
 
-Honest read: origins are now placed, but they lean on the Doorish Hills (5 cards) and the upper city (7). The Revlend Marshes (Tide-Coat, Drowning Scale) and the Deadlands (Black Lotus) have the fewest. I can move the Axe and the Pitch-Sap Harness if you want a flatter spread.
+After the reassessment move: upper city 7, worlds beyond 7, Lower Reaches 3, Doorish Hills 3, Revlend Marshes 2, Deadlands 2. The city and the arches lead, which fits a campaign set in the City of Arches.
 
 ## Open items for you
 

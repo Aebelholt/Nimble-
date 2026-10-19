@@ -302,14 +302,14 @@
       "text": "Resonance (pip tracker, max 4). Gain 1 Resonance by ringing the bell for an hour over a sickbed or a grave, at the Temple of the Three Sisters or among the tombs of the Cliffs of the Dead, and staying with whoever it is for until the hour ends. Resonance does not clear at a rest. Spent Resonance returns only this way."
     },
     "powers": [
-      "Ring (Free, when you heal HP): The bell tones as you heal. Undead within 4 spaces take 1 radiant damage.",
+      "Ring Out (Free, spend 1 Resonance): One Dying ally within 6 spaces hears the bell. On its next turn it acts as if it were not Dying: no 1-action limit, and no STR save to attack.",
       "Chain Heal (Reaction, spend 2 Resonance): When your Lifebinding Spirit heals a creature to maximum HP, the excess healing carries to the nearest damaged ally within 4 spaces. The chain triggers once per Reaction.",
       "Toll (1 Action, spend all 4): Ring the bell loudly. All Dying allies within 6 spaces gain 1 HP and are no longer Dying. You take 1 Wound."
     ],
     "escalation": "Spending all 4 Resonance in the Toll cracks the bell's handle. It still rings, but you cannot Toll until a clergyperson of the Three Sisters rehandles it. They will want to know what happened before they agree to help.",
     "design_note": "Every power keys off healing, and none of the pool fills from healing, so it adds to the Shepherd's rhythm without rewarding it twice. Chain Heal makes positioning the Spirit a puzzle. The Toll is a first-echelon rescue that costs a Wound and permanently marks the bell. Sacrifice should have weight.",
     "status": "keep",
-    "notes": "Resonance now fills by ringing over a sickbed or grave (it filled from Searing Light, the class's own move, and Searing Light does not heal: it damages a target for HP you heal). Unlock reworded to 'heal'. Ring no longer gives the Spirit an extra action. Resonance persists through rests. Risk added. Unlock pass: healing must come out of an ally's share; risk now an Influence check that can cost you the bell.",
+    "notes": "Resonance now fills by ringing over a sickbed or grave (it filled from Searing Light, the class's own move, and Searing Light does not heal: it damages a target for HP you heal). Unlock reworded to 'heal'. Ring no longer gives the Spirit an extra action. Resonance persists through rests. Risk added. Unlock pass: healing must come out of an ally's share; risk now an Influence check that can cost you the bell. Reassessment: Ring gave free radiant damage every time you healed, a bonus on the class's signature move (checklist: double-dipping). Replaced with Ring Out, which costs Resonance and does something the class cannot.",
     "source": "sources/class_arcana_v3.docx",
     "matrix": {
       "tier": "1st",
@@ -534,7 +534,7 @@
     "kind": "found",
     "class": null,
     "tier": "Major",
-    "object": "A silvery greataxe with nine open eyes engraved down the blade. They follow whoever speaks. Doorish farmers say it is the axe that Sevelet's Throne is rumored to hide, and that the eyes are the souls fighting over it.",
+    "object": "A silvery greataxe with nine open eyes engraved down the blade. They follow whoever speaks. It came out of Graydust Keep, which has changed hands hundreds of times since the fall of the Nameless King, and the Fallen Angels who hold the keep now want it back.",
     "unlock": [
       "Learn what the axe was called before it was named, from Archkeeper records or something older than the Golden Order",
       "Let it name a creature in a room you thought was empty",
@@ -554,7 +554,7 @@
     ],
     "escalation": "Named creatures learn your name and heading each dawn. When the ninth eye closes, the axe speaks your True Name and all nine hear it. One engraved eye is scraped blank.",
     "status": "keep",
-    "notes": "Kept. 'Solos' changed to 'Solo creatures' (GM guide term); direction-and-distance split into a passive so the card has a free or passive power; prior owner added from the Sevelet's Throne rumor (11_the_doorish_hills.md). Remove that clause if you want a different axe. Unlock pass: risk now a clock.",
+    "notes": "Kept. 'Solos' changed to 'Solo creatures' (GM guide term); direction-and-distance split into a passive so the card has a free or passive power; prior owner added from the Sevelet's Throne rumor (11_the_doorish_hills.md). Remove that clause if you want a different axe. Unlock pass: risk now a clock. Reassessment: origin moved from the Sevelet's Throne rumor to Graydust Keep, to flatten the spread. [NEEDS CANON: the Fallen Angels' claim on the axe.]",
     "source": "sources/sejr_arcana_perchance_original.txt",
     "matrix": {
       "tier": "Major",
@@ -563,8 +563,8 @@
       "refill": "None; a closed eye never reopens",
       "power": "offense + information",
       "cost": "permanent; named creatures learn your name",
-      "origin": "Rumored axe of Sevelet's Throne (11_the_doorish_hills); Archkeeper records",
-      "region": "Doorish Hills",
+      "origin": "Graydust Keep, the Fallen Angels (12_the_deadlands)",
+      "region": "Deadlands",
       "look": "silvery greataxe, nine engraved eyes",
       "mythology": "Odin / Argus Panoptes echo"
     }
@@ -889,9 +889,9 @@
     "kind": "found",
     "class": null,
     "tier": "Minor",
-    "object": "Three layers of wood glued with sap that never dries, its outer layer bristling with thorns. The wood was cut in Briarheart Forest, from a tree that offered it.",
+    "object": "Three layers of wood glued with sap that never dries, its outer layer bristling with thorns. The wood was cut in the Lost Cavern of the Sundering Saurians, from a jungle tree that offered it, and it still smells of the mist.",
     "unlock": [
-      "Find an old tree in Briarheart Forest willing to give its sap",
+      "Find an old tree in the Lost Cavern of the Sundering Saurians willing to give its sap",
       "Wear it through one fight without taking it off"
     ],
     "risk": "The sap takes. It won't come off until the next full moon.",
@@ -902,12 +902,12 @@
       "text": "Burden (pip tracker, max 3), one per weapon stuck in the sap. Burden clears when you pry the stuck weapons loose, which takes tools and an hour, and then re-glue the harness with fresh sap from the tree that gave it. A Safe Rest does not clear Burden."
     },
     "powers": [
-      "Thorned Bark (Passive): Defense 6+DEX (max 2) and advantage on Stealth in forests. Each Burden gives -1 Speed.",
+      "Thorned Bark (Passive): Defense 6+DEX (max 2) and advantage on Stealth in forests and jungles. Each Burden gives -1 Speed.",
       "Snare (Reaction, +1 Burden): When a melee weapon hits you, the attacker makes a STR save, DC 13, or the weapon sticks. A creature using natural weapons is Grappled to you until it passes the save, and adds no Burden."
     ],
     "escalation": "When Burden would pass 3, the sap seals you in: you are Restrained until someone spends an action and passes a Might check, DC 14, to cut you out. Then the harness gives half its Defense until it is glued again with fresh sap.",
     "status": "keep",
-    "notes": "Reworked. 'Armor 6+DEX (max 2)' (Rusty Mail's value) changed to Defense; Burden cleared with a Safe Rest, now by prying and re-gluing with sap from the tree; origin Briarheart Forest (11_the_doorish_hills.md).",
+    "notes": "Reworked. 'Armor 6+DEX (max 2)' (Rusty Mail's value) changed to Defense; Burden cleared with a Safe Rest, now by prying and re-gluing with sap from the tree; origin Briarheart Forest (11_the_doorish_hills.md). Reassessment: origin moved from Briarheart Forest to the underground jungle of the Lost Cavern of the Sundering Saurians, so the sap refill is now a trip past the cavern's war-bred dinosaurs.",
     "source": "sources/sejr_arcana_perchance_original.txt",
     "matrix": {
       "tier": "Minor",
@@ -916,8 +916,8 @@
       "refill": "Pry the stuck weapons loose, then re-glue with fresh sap from the tree",
       "power": "defense (armor)",
       "cost": "Restrained; half Defense",
-      "origin": "Briarheart Forest (11_the_doorish_hills)",
-      "region": "Doorish Hills",
+      "origin": "Lost Cavern of the Sundering Saurians (4_the_lower_reaches)",
+      "region": "Lower Reaches",
       "look": "layered wood, never-dry sap, thorns",
       "mythology": ""
     }
@@ -981,12 +981,12 @@
     },
     "powers": [
       "Demon Plate (Passive): Defense 14, with no STR requirement.",
-      "Terror (Passive): The first time a creature sees you, it makes a WIL save, DC 14, or has -1 to all its rolls near you, for good.",
+      "Terror (Passive): The first time a creature sees you in an encounter, it makes a WIL save, DC 14, or has -1 to all its rolls near you for the encounter.",
       "Command (Action, +1 Thirst, 1/encounter): Order undead or a demon to obey one command."
     ],
     "escalation": "You cannot willingly part with the hide, and you will hunt anyone who takes it. If you end a day with 3 Thirst, it drinks from you at dawn: take 1 Wound that cannot heal while you wear it. If you die in it, you rise as a spectre.",
     "status": "keep",
-    "notes": "Reworked. It had no Defense value (set to Half Plate's 14, no STR requirement) and no power spent Thirst, which also rose by itself each dawn (passive); Command now adds Thirst and the dawn gain is gone. Origin Irax and the Watchtower of Averost (11_the_doorish_hills.md).",
+    "notes": "Reworked. It had no Defense value (set to Half Plate's 14, no STR requirement) and no power spent Thirst, which also rose by itself each dawn (passive); Command now adds Thirst and the dawn gain is gone. Origin Irax and the Watchtower of Averost (11_the_doorish_hills.md). Reassessment: Terror lasted 'for good', which means tracking every creature that ever failed the save (memory tracking). Now lasts the encounter.",
     "source": "sources/sejr_arcana_perchance_original.txt",
     "matrix": {
       "tier": "Major",
@@ -1292,7 +1292,7 @@
       "name": "Sky",
       "type": "pip tracker",
       "max": 3,
-      "text": "Sky (pip tracker, max 3). Spend Sky on Gust and Storm. Regain 1 when someone accepts your apology for a real wrong. Sky returns only this way."
+      "text": "Sky (pip tracker, max 3). Spend Sky on Gust and Storm. Regain 1 when someone accepts your apology for a real wrong you did before you took up the blade, or one you did not mean to do. Sky returns only this way."
     },
     "powers": [
       "Overcast (Passive): The clouded edge darkens when a creature within 6 spaces is angry at you over a wrong you have not apologised for.",
@@ -1301,7 +1301,7 @@
     ],
     "escalation": "If you wrong the one who gave it back, it is in their hands the next morning, wherever they are.",
     "status": "keep",
-    "notes": "Kept. Knockback and Line used as rules terms; origin added (Terrache, 13_worlds_beyond_the_arches.md); a passive added that points at the refill. Risk now an Influence check.",
+    "notes": "Kept. Knockback and Line used as rules terms; origin added (Terrache, 13_worlds_beyond_the_arches.md); a passive added that points at the refill. Risk now an Influence check. Reassessment: loop closed: a player could wrong someone on purpose to apologise for a refill. Wrongs done on purpose after taking up the blade no longer count.",
     "source": "sources/sejr_arcana_perchance_original.txt",
     "matrix": {
       "tier": "Major",
@@ -1336,18 +1336,18 @@
       "text": "Runes (session-bound, up to 9, one per fused fragment). Each fragment carries one rune, rolled on a d8 when it fuses. Each rune works once, then goes dark. A dark rune relights when you carve it into a gravestone or a standing stone and speak aloud the name of someone who died for something."
     },
     "powers": [
-      "Fehu: An item you touch gives +1 to its user for an hour.",
-      "Algiz (Passive): Advantage on saves against fear and charm for the scene.",
-      "Raido: +2 Speed for the scene.",
-      "Uruz: +2 to a STR check after the roll.",
+      "Fehu (Action): An item you touch gives +1 to its user for an hour.",
+      "Algiz (Free): Advantage on saves against fear and charm for the scene.",
+      "Raido (Free): +2 Speed for the scene.",
+      "Uruz (Free, after the roll): +2 to a STR check.",
       "Tiwaz (Action): Allies who hear you have advantage on their next attack.",
-      "Ansuz: Speak and read any language for a scene.",
+      "Ansuz (Free): Speak and read any language for a scene.",
       "Eihwaz (Reaction): Reduce one hit's damage by your level plus STR.",
       "Sowilo (Action): Sunlight blinds every enemy within 6 spaces until your next turn. DEX save, DC 13, negates."
     ],
     "escalation": "Fragments call to each other, and other holders follow the call. When the ninth fuses, its rune wakes once: change one result, even a past one. Then the stone falls to dust.",
     "status": "keep",
-    "notes": "Reworked. Source flavor kept (Elder Futhark). The refill was 'once per episode' (passive); a dark rune now relights by carving it at a grave or standing stone and speaking the name of someone who died for something. Origin: an arrival the Archkeepers met (arrivals have no memory, 3_gazetteer). Unlock pass: added the carving step (the same act that relights a dark rune) and a d6 at the fusing.",
+    "notes": "Reworked. Source flavor kept (Elder Futhark). The refill was 'once per episode' (passive); a dark rune now relights by carving it at a grave or standing stone and speaking the name of someone who died for something. Origin: an arrival the Archkeepers met (arrivals have no memory, 3_gazetteer). Unlock pass: added the carving step (the same act that relights a dark rune) and a d6 at the fusing. Reassessment: Algiz was labelled Passive to satisfy the audit, but every rune is spent once. Each rune now carries its true action cost.",
     "source": "sources/sejr_arcana_perchance_original.txt",
     "matrix": {
       "tier": "Major",
@@ -1417,15 +1417,15 @@
       "name": "Rust",
       "type": "pip tracker",
       "max": 3,
-      "text": "Rust (pip tracker, max 3). Spend 1 Rust per Mend. Regain 1 by leaving the spear a night in the red water of Bloodrust Depths. Rust returns only this way."
+      "text": "Rust (pip tracker, max 3). Spend 1 Rust per Scrape. Regain 1 by leaving the spear a night in the red water of Bloodrust Depths. Rust returns only this way."
     },
     "powers": [
       "Spare (Free): When you would drop a creature to 0 HP with the spear, it falls stable instead, and its wound will not close until you choose to mend it.",
-      "Mend (Action, spend 1 Rust): Scrape rust into a wound to heal 1 Wound, or to close a wound the spear made."
+      "Scrape (Action, spend 1 Rust): Scrape rust into a wound to heal 1 Wound, or to close a wound the spear made."
     ],
     "escalation": "At 0 Rust the blade is clean and bright. The next wound it gives never closes: a hero loses 1 max Wound for good, and a creature bleeds out by the end of the scene.",
     "status": "keep",
-    "notes": "Reworked. Source flavor kept (Telephus and Achilles' spear). Seawater is not named in the city, so the refill is the red water of Bloodrust Depths (10_the_revlend_marshes.md); origin the Blood Spears of Averost (11_the_doorish_hills.md). Spare is now a free choice. Unlock pass: risk now an Influence check.",
+    "notes": "Reworked. Source flavor kept (Telephus and Achilles' spear). Seawater is not named in the city, so the refill is the red water of Bloodrust Depths (10_the_revlend_marshes.md); origin the Blood Spears of Averost (11_the_doorish_hills.md). Spare is now a free choice. Unlock pass: risk now an Influence check. Reassessment: power renamed from Mend to Scrape; Mend is a Shepherd class ability.",
     "source": "sources/sejr_arcana_perchance_original.txt",
     "matrix": {
       "tier": "Minor",
