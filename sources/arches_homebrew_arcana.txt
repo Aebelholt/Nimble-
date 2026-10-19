@@ -1,0 +1,61 @@
+Arcana are magical objects found in the City of Arches and its surrounding regions. They are not simply items with charges, they are relationships between a character and a piece of the world's history.
+
+Standard magic items in most games are inert: find the item, use the item. Arcana work differently. Finding the object and unlocking it are two separate events, often sessions apart. The power is interesting because the cost is interesting. The item has a history. It wants something.
+
+The Five-Part Anatomy of an Arcanum
+Every arcanum has five components:
+
+Part
+Purpose
+Object
+What the item physically is and where it was found. One or two sentences of physical description that imply a history without explaining it.
+Unlock
+A ritual, quest, or ordeal required to awaken the item's power. 2–4 bullet requirements. At least one must be a risk, something that can go wrong.
+Resource
+The named tracker that makes the power live. One resource per arcanum, with a thematic name. Examples: Strain, Breath, Heat, Vitality, Disturbance, Daylight.
+Power
+What spending the resource does. Written in Nimble's action language: Action / Reaction / Free / 1/round / 1/encounter.
+Escalation
+What happens when the resource empties or overflows. Should create drama, not just inconvenience. The item bites back.
+
+Design Rule: One Resource Per Arcanum
+Don't stack multiple trackers on a single item. The item's entire identity lives in how its one resource is earned, spent, and exhausted. Complexity should come from the fictional situation, not from the card.
+
+Resource Types
+Use these resource templates or create your own. The name of the resource should reflect the item's fiction.
+
+Resource type
+Best used for
+Pip tracker (max 3–5)
+Best for resources earned in the world, last breaths drawn, victims marked, promises extracted. Spending is fast; refilling requires action between sessions.
+d6 vs. accumulation
+Roll 1d6 after each use. If you roll below your current count, a consequence arrives. Clears on specific in-world action. Creates escalating risk.
+Wound-cost HP
+Spending the resource costs a Wound in addition to normal use. The HP cannot be healed until the item is rested or a condition is met.
+Toggle (on/off)
+The item is either active or dormant. Activating it starts a clock or a risk. Deactivating requires a specific action.
+Session-bound uses
+Clears at each Safe Rest, but only if a ritual or condition is met. Skipping the ritual means the resource stays spent.
+
+The Unlock
+The unlock is a session, not a roll. Requirements should take at least one full session to complete, often more. They should involve NPCs, locations, or factions the party already knows.
+
+Structure every unlock with:
+1–2 requirements that are clear and actionable (study the runes, find the spirit, return to the mound)
+1 requirement that is costly but not impossible (spend a full night at the threshold, eat the raw heart)
+1 risk, something that can go wrong and create a different kind of problem
+
+Risk Examples
+"The arch opens briefly, something may come through before you can close it."
+"Roll STR DC 14 or take 1 Wound from the backlash."
+"The spirit finds you unworthy and marks you instead, you have a week before it comes calling."
+"You succeed, but the item is damaged. It will need a skilled artisan to repair before it can be unlocked fully."
+
+Escalation
+When the resource empties or overflows, something interesting happens, not just "item stops working." The escalation is the most important design element. It creates drama and gives the item a personality.
+
+The wolf pelt fills with Hunger → the pelt takes over, demands a hunt before it will obey again
+The bog vial empties → the spirit comes calling, and it knows your name now
+The key drains all Resonance → the next arch it opens is always wrong until an Archkeeper repairs it
+The codex reaches max Strain → it goes silent for a season; the knowledge inside is locked away
+
