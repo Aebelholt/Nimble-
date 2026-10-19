@@ -48,23 +48,24 @@
     "tier": "1st echelon",
     "object": "An ivory gambling die with a tiny lead insert that makes it land on 6 roughly two-thirds of the time. Confiscated from a Black Hand card sharp at the Lower Reaches gambling house, then stolen from the evidence shelf at the Golden Knights' outpost. No paperwork exists for it. The card sharp has not stopped looking.",
     "unlock": [
-      "Win a wager against someone who genuinely believed they had the advantage — not a mark, not a fool, but someone who should have won."
+      "Win a wager against someone who genuinely believed they had the advantage: not a mark, not a fool, but someone who should have won.",
+      "Stake something you cannot afford to lose."
     ],
-    "risk": "",
+    "risk": "The Black Hand card sharp hears whose hands the die is in.",
     "resource": {
       "name": "Fixes",
       "type": "pip tracker",
       "max": 4,
-      "text": "Fixes do not refill automatically. To refill: run a game of chance during a Safe Rest and earn at least 1 silver in genuine winnings against an opponent who had a real chance of winning. Gain all 4 Fixes back. Safe Rests where you do not gamble leave the tracker as-is."
+      "text": "Fixes (pip tracker, max 4). Fixes do not refill automatically. To refill: run a game of chance during a Safe Rest and earn at least 1 silver in genuine winnings against an opponent who had a real chance of winning. Gain all 4 Fixes back. Safe Rests where you do not gamble leave the tracker as it is."
     },
     "powers": [
-      "Fix (Free, before you roll): Declare you're using the die. Spend 1 Fix. Roll your Primary Die twice and take whichever result you prefer. No memory required — both rolls happen now, in front of everyone.",
-      "Passive — Loaded Odds: Once per session, you may ask the GM whether a creature you can see is bluffing. The die rolls and the GM answers truthfully, but only yes or no."
+      "Fix (Free, before you roll, spend 1 Fix): Declare you are using the die. Roll your Primary Die twice and take whichever result you prefer. No memory required, both rolls happen now, in front of everyone.",
+      "Loaded Odds (Passive): Once per session, you may ask the GM whether a creature you can see is bluffing. The die rolls and the GM answers truthfully, but only yes or no."
     ],
-    "escalation": "When all 4 Fixes are spent, the die gets you anyway. On your next Vicious Opportunist use after depletion, the GM secretly decides whether the target was actually Distracted — you don't know until after you've committed. The uncertainty lasts for one use only.",
-    "design_note": "Mirrors Vicious Opportunist's core loop — manipulating die results — but at a resource cost. Roll-twice-pick-best requires no memory tracking and resolves cleanly at the table. The Loaded Odds passive is social utility that costs nothing in stats. The escalation introduces genuine uncertainty for a class that is normally certain about when it cheats.",
-    "status": "review",
-    "notes": "Rebuilt from uploaded sources; original status and notes were not available.",
+    "escalation": "When all 4 Fixes are spent, the die gets you anyway. On your next Vicious Opportunist use after depletion, the GM secretly decides whether the target was actually Distracted, and you do not know until after you have committed. The uncertainty lasts for one use only. Word that a loaded die is back in play reaches the card sharp within a session.",
+    "design_note": "Mirrors Vicious Opportunist's loop of manipulating die results, but at a resource cost. Roll twice, pick best, needs no memory. Loaded Odds is social utility that costs nothing in stats. The escalation adds uncertainty for a class that is normally certain about when it cheats, and a pursuer.",
+    "status": "keep",
+    "notes": "Risk line and a costly unlock step added; em dashes removed; escalation now brings the card sharp back. Left: Loaded Odds overlaps the Insight skill (detect lies); kept as free social utility per the spec.",
     "source": "sources/class_arcana_v3.docx",
     "matrix": {
       "tier": "1st",
@@ -87,25 +88,25 @@
     "tier": "1st echelon",
     "object": "A black iron battle standard, the insignia ground off but the pole still bearing ghost-traces of a name no one can read. Found stacked with other confiscated relics in the Museum of Worlds Beyond storage vault. The curator is looking for it. Three scholars have separately attempted to identify the insignia's origin and stopped work without explanation.",
     "unlock": [
-      "Lead a group of at least five non-party combatants to victory — soldiers, militia, hired swords, anyone you commanded in the field.",
-      "The victory must be real: a fight that could have been lost."
+      "Lead a group of at least five non-party combatants to victory: soldiers, militia, hired swords, anyone you commanded in the field. The victory must be real, a fight that could have been lost.",
+      "Plant the standard yourself, in plain sight of the enemy."
     ],
-    "risk": "",
+    "risk": "The Knights of the Nameless King learn that this standard flies again.",
     "resource": {
       "name": "Authority",
       "type": "pip tracker",
       "max": 3,
-      "text": "Gain 1 Authority whenever an ally within the standard's aura deals damage in a single attack equal to or greater than your level. Authority is strictly encounter-bound: all unspent pips are lost when combat ends, regardless of how many are held. It cannot be saved or stockpiled between encounters."
+      "text": "Authority (pip tracker, max 3). Gain 1 Authority whenever an ally within 4 spaces of the planted standard deals damage in a single attack equal to or greater than your level. Authority is strictly encounter-bound: all unspent pips are lost when combat ends, regardless of how many are held. It cannot be saved or stockpiled between encounters."
     },
     "powers": [
       "Plant it (1 Action): Drive the standard into the ground within Reach 1. While it stands, allies within 4 spaces who can see it have advantage on their first attack each round. Spend 1 Authority to extend the aura by 2 spaces until your next turn.",
-      "Pull it (Free): Standard returns to hand and the aura ends immediately.",
+      "Pull it (Free): The standard returns to your hand and the aura ends immediately.",
       "Hold Ground (Reaction, spend 2 Authority): When the standard would be knocked over, stolen, or destroyed, it refuses. It cannot be moved by any force until the start of your next turn."
     ],
-    "escalation": "When Authority hits 0 during combat and you plant the standard anyway, the insignia becomes briefly legible — to everyone present. The GM reads what it says aloud. It goes dark again immediately. What it says is the GM's tool: a name, a title, a command. Prepare it before the session.",
-    "design_note": "Authority triggering on a damage threshold (not kills) removes the kill-steal incentive — any ally landing a solid hit fills the pool, rewarding coordinated pressure rather than last hits. The escalation is pure City of Arches: the Nameless King's name appears once, and only the GM knows what it said to begin with.",
-    "status": "review",
-    "notes": "Rebuilt from uploaded sources; original status and notes were not available.",
+    "escalation": "When Authority is at 0 during combat and you plant the standard anyway, the insignia becomes briefly legible to everyone present. The GM reads what it says aloud. It goes dark again immediately. What it says is the GM's tool: a name, a title, a command. Prepare it before the session.",
+    "design_note": "Authority triggers on a damage threshold, not on defeats, so no ally gains by stealing last hits. Any solid hit fills the pool, which rewards coordinated pressure. The escalation is pure City of Arches: the Nameless King's name appears once, and only the GM knows what it says.",
+    "status": "keep",
+    "notes": "Risk line and a costly unlock step added; aura range stated in the resource line; em dashes removed. Left: Authority fills from allies' damage and clears at encounter end, so it has no world refill. This is the spec's own example of a good Commander item.",
     "source": "sources/class_arcana_v3.docx",
     "matrix": {
       "tier": "1st",
@@ -126,33 +127,32 @@
     "kind": "class",
     "class": "Hunter",
     "tier": "1st echelon",
-    "object": "A length of braided sinew hung with small carved tokens — a boot print, a feather, a fang, and three others worn unrecognisable by handling. Carried by a tracker from the Doorish Hills who traded it to a Lower Reaches merchant for safe passage through the Cliffs of the Dead. The merchant did not survive the arrangement.",
+    "object": "A length of braided sinew hung with small carved tokens: a boot print, a feather, a fang, and three others worn unrecognisable by handling. Carried by a tracker from the Doorish Hills who traded it to a Lower Reaches merchant for safe passage through the Cliffs of the Dead. The merchant did not survive the arrangement.",
     "unlock": [
-      "Track a single creature across at least two sessions without losing the trail — through city, ruin, or wilderness.",
-      "The creature must be aware it is being hunted, and must have tried to lose you at least once."
+      "Track a single creature across at least two sessions without losing the trail, through city, ruin, or wilderness. The creature must be aware it is being hunted, and must have tried to lose you at least once."
     ],
-    "risk": "",
+    "risk": "The creature you tracked now knows your trail as well as you know theirs.",
     "resource": {
       "name": "Marks",
       "type": "d6 vs. accumulation",
       "max": null,
-      "text": "Roll 1d6 each time you use a cord ability (Mark a Quarry or Cord Pull). If you roll equal to or below your current Mark count, something near the quarry noticed you. Marks clear when you confront the marked quarry directly. Safe Rest wipes all Marks without reward — the cord goes cold until you touch new quarry sign."
+      "text": "Marks (d6 vs. accumulation). Your Mark count is the number of quarries the cord currently tracks. Roll 1d6 each time you use a cord ability (Mark a Quarry or Cord Pull). If you roll equal to or below your current Mark count, something near the quarry noticed you. A Mark clears when you confront that quarry directly or when you Cut its Mark. Resting does not clear Marks."
     },
     "powers": [
-      "Mark a Quarry (1 Action): Touch the cord to any physical trace of a creature — a footprint, a drop of blood, shed skin. Add 1 Mark. While a quarry is marked, you know its general direction and distance within 1 mile regardless of cover or concealment. This works on creatures you have not yet used Hunter's Mark on — the cord marks independently of the class ability.",
-      "Cord Pull (Free, 1/encounter): When your marked quarry moves away from you, you may pull the cord taut — the quarry is Slowed until the end of their next turn. No roll required. The quarry feels it.",
-      "Cut the Mark (Free): Remove one Mark from the cord and burn the token. The cord forgets that quarry — your direction-sense for them vanishes, the Disturbance roll resets for them, and they are no longer tracked. Use this when pursuit is no longer worth the escalating risk. Nothing alerts the quarry."
+      "Mark a Quarry (1 Action): Touch the cord to any physical trace of a creature: a footprint, a drop of blood, shed skin. Add 1 Mark. While that quarry is marked, you know its general direction and distance within 1 mile regardless of cover or concealment. This works on creatures you have not marked with Hunter's Mark, because the cord marks independently of the class ability.",
+      "Cord Pull (Free, 1/encounter): When your marked quarry moves away from you, pull the cord taut. The quarry is Slowed. No roll required. The quarry feels it.",
+      "Cut the Mark (Free): Remove one Mark from the cord and burn its token. The cord forgets that quarry, your sense of its direction ends, and it is no longer tracked. Use this when the pursuit is no longer worth the rising risk. Nothing alerts the quarry."
     ],
-    "escalation": "When the d6 roll triggers — you rolled equal to or below your Mark count — the quarry, or something near it, begins tracking you in return. The GM introduces this threat within 1 to 2 sessions. The threat is proportional to what you marked: a city rat sends a rat, a Borderlands warlord sends soldiers.",
-    "design_note": "The Disturbance-style tracker is perfectly suited for the Hunter's quarry identity. Multiple Marks create escalating risk — tracking three creatures at once is asking for trouble. The bidirectional escalation (you become the tracked) is the most Hunter-specific consequence possible.",
-    "status": "review",
-    "notes": "Rebuilt from uploaded sources; original status and notes were not available.",
+    "escalation": "When the d6 roll triggers, the quarry, or something near it, begins tracking you in return. The GM introduces this threat within 1 to 2 sessions. The threat is proportional to what you marked: a city rat sends a rat, a Borderlands warlord sends soldiers.",
+    "design_note": "The d6 tracker suits the Hunter's quarry identity. Several Marks make each use riskier, so tracking three creatures at once invites trouble. The cord works beyond sight, which Hunter's Mark does not. Being tracked back is the most Hunter-specific consequence available.",
+    "status": "keep",
+    "notes": "Marks now one count with one clearing rule (confront or Cut); Safe Rest wipe removed; risk line added; em dashes removed; Slowed uses the rules wording.",
     "source": "sources/class_arcana_v3.docx",
     "matrix": {
       "tier": "1st",
       "resource_type": "d6 vs. accumulation",
       "max": null,
-      "refill": "Marks clear when you confront the quarry; Safe Rest wipes them",
+      "refill": "Marks clear when you confront the quarry or Cut its Mark",
       "power": "information + mobility (control)",
       "cost": "being tracked back",
       "origin": "Doorish Hills tracker, traded to a Lower Reaches merchant, via the Cliffs of the Dead",
@@ -169,32 +169,33 @@
     "tier": "1st echelon",
     "object": "A monocle lens of blue glass, cracked through the centre but held in a copper frame that prevents the crack from spreading. Stamped with the Mages of Kartan's maker's mark on the inner rim. The Mages report it stolen. It has been in a Lower Reaches pawn shop for six months, priced too high for anyone who recognised it, too strange for anyone who didn't.",
     "unlock": [
-      "Cast a tiered spell at maximum tier and survive the Control roll — then hold the lens against your eye for the full cast without flinching or removing it."
+      "Pay the pawn shop's price, which is more than the lens is worth.",
+      "Cast a spell of the highest tier you can cast, and hold the lens against your eye through the whole cast without flinching or removing it."
     ],
-    "risk": "",
+    "risk": "If you flinch, the crack spreads and the lens is ruined.",
     "resource": {
       "name": "Overcharge",
       "type": "d6 vs. accumulation",
       "max": null,
-      "text": "Roll 1d6 each time you cast a tiered spell while wearing the lens. If you roll equal to or below your Overcharge count, the Control Table triggers — treat it as Lose Control rather than rolling. Overcharge clears by removing the lens and casting no tiered spells for one full session, then refreshing on the next Safe Rest."
+      "text": "Overcharge (d6 vs. accumulation). Roll 1d6 each time you cast a tiered spell while wearing the lens. If you roll equal to or below your current Overcharge, the lens fails (see Escalation). Overcharge clears when you hold the lens to the glass of the Observatory of Infinite Skies through one night."
     },
     "powers": [
-      "Controlled Upcast (while worn, on a safe roll — Control subclass only): When you cast a tiered spell and the d6 roll does not trigger, the spell is cast at +1 tier above its normal cost — upcasted for free. Add 1 Overcharge. Chaos subclass: no upcast; instead, on a safe roll, reduce Overcharge by 1 (minimum 0).",
-      "Chaos Sight (Passive, while worn): You see magical auras on creatures and objects within 4 spaces without casting a spell. Illusions appear slightly wrong. Invisible creatures are visible as a faint shimmer."
+      "Controlled Upcast (while worn, on a safe roll, Control subclass only): When you cast a tiered spell and the d6 does not trigger, the spell gains one Upcast for free. Add 1 Overcharge. Chaos subclass: no upcast. On a safe roll, reduce Overcharge by 1 (minimum 0).",
+      "Chaos Sight (Passive, while worn): You see magical auras on creatures and objects within 4 spaces without casting a spell. Illusions appear slightly wrong. Invisible creatures show as a faint shimmer."
     ],
-    "escalation": "When Lose Control triggers through the lens, the glass heats to burning. You take 1 Wound and cannot remove the lens until the encounter ends — it has fused to your face for the duration. After the encounter resolves, the Mages of Kartan sense the discharge and know its rough location. They will send someone within 1 to 3 sessions. The immediate and the delayed consequence are separate: the fusing is now, the visitors are later.",
-    "design_note": "Differentiated by subclass: the Control Mage gets a free upcast on safe rolls, making the lens a reward for precision. The Chaos Mage gets Overcharge reduction on safe rolls — the lens helps them stay stable, which may or may not be what they want. Neither subclass has a pure win-win. The Mages of Kartan escalation is the City of Arches hook.",
-    "status": "review",
-    "notes": "Rebuilt from uploaded sources; original status and notes were not available.",
+    "escalation": "When the d6 triggers, the glass heats to burning. Control Mage: you Lose Control, doing every option on the Control Table, with the GM choosing each time. Chaos Mage: you Invoke Chaos with disadvantage. Either way you take 1 Wound and cannot remove the lens until the encounter ends, because it has fused to your face. After the encounter, the Mages of Kartan sense the discharge and know its rough location. They send someone within 1 to 3 sessions. The fusing is now, the visitors are later.",
+    "design_note": "Differentiated by subclass. The Control Mage gets a free Upcast on safe rolls, a reward for precision, and Lose Control as the failure. The Chaos Mage gets Overcharge relief on safe rolls and a worse Chaos roll on failure. Neither subclass wins both ways. The Mages of Kartan escalation is the City of Arches hook.",
+    "status": "keep",
+    "notes": "Failure now matches the Mage rules (Control mages Lose Control, Chaos mages Invoke Chaos); the 'Control roll' unlock replaced; refill changed from abstention plus rest to a night at the Observatory; costly step and risk added. [NEEDS CANON: whether the Observatory of Infinite Skies lets a visitor leave a lens at its glass overnight.]",
     "source": "sources/class_arcana_v3.docx",
     "matrix": {
       "tier": "1st",
       "resource_type": "d6 vs. accumulation",
       "max": null,
-      "refill": "Remove the lens and cast no tiered spells for a session, then Safe Rest",
+      "refill": "Hold the lens to the Observatory of Infinite Skies glass for a night",
       "power": "offense (upcast) + information",
       "cost": "Wound; Kartan sends someone",
-      "origin": "Mages of Kartan maker's mark; pawn shop in the Lower Reaches",
+      "origin": "Mages of Kartan maker's mark; Lower Reaches pawn shop; Observatory of Infinite Skies",
       "region": "Kartan / Lower Reaches",
       "look": "blue glass lens, copper frame",
       "mythology": ""
@@ -206,36 +207,35 @@
     "kind": "class",
     "class": "Oathsworn",
     "tier": "1st echelon",
-    "object": "A set of golden scales, one pan snapped off and missing. Recovered from the rubble of the old Magistrate's Court in the Sunken Revvia district beneath the city. The remaining pan still tilts when a lie is spoken nearby — or so the merchant who sold it claimed. She may have been lying. The tilt is subtle enough that you cannot always be certain.",
+    "object": "A set of golden scales, one pan snapped off and missing. Recovered from the rubble of an old court in the ruins of Sunken Revvia. The remaining pan still tilts when a lie is spoken nearby, or so the merchant who sold it claimed. She may have been lying. The tilt is subtle enough that you cannot always be certain.",
     "unlock": [
-      "Refuse to deliver a verdict you believe is just — because doing so would protect someone you love.",
-      "The refusal must be genuine.",
-      "The Verdict will know if you were simply afraid."
+      "Refuse to deliver a verdict you believe is just, because doing so would protect someone you love.",
+      "The refusal must be genuine. The Verdict will know if you were simply afraid."
     ],
-    "risk": "",
+    "risk": "Whoever was owed the verdict now knows you withheld it.",
     "resource": {
-      "name": "Judgment Held",
+      "name": "Held Judgment",
       "type": "toggle",
       "max": null,
-      "text": "When your Radiant Judgment dice are rolled, you may choose not to spend them immediately — instead, hold them on the scales. This is a free choice made at the moment of rolling. Held dice cannot be spent on reactions. Release them on any attack as a Free action."
+      "text": "Held Judgment (toggle, on/off). When your Radiant Judgment would roll Judgment Dice, you may put them on the scales instead (toggle on). While the scales hold dice, you roll no new Judgment Dice. Held dice stay on the scales past the end of the encounter. The toggle clears when you Release the dice on an attack, or when you perform a Sacred Decree (see Escalation)."
     },
     "powers": [
-      "Hold Judgment (Free, at roll): Keep the Judgment Dice on the scales rather than spending them. While held: you cannot use the Judgment Dice on reactions (including That All You Got?!). When a creature within your aura lies to you, you see the remaining pan tilt — visible only to you, not to them. You know. They do not know you know. You must decide what to do with that.",
-      "Release — Armor-Piercing (Free, on attack): Spend held Judgment Dice as normal — but this attack's radiant damage bypasses all armor. Once per encounter."
+      "Hold Judgment (Free, when Judgment Dice would be rolled): Keep the dice on the scales. While they are held, you see the remaining pan tilt when a creature within 6 spaces lies to you, visible only to you. You know. They do not know you know. You must decide what to do with that.",
+      "Release (Free, 1/encounter, on a Reach attack): Expend the held dice as Radiant Judgment normally does. This attack's radiant damage ignores armor."
     ],
-    "escalation": "If you hold Judgment Dice across a full Safe Rest without releasing them, the scales fuse with your Lay on Hands pool. You cannot spend from the Lay on Hands pool until you perform a Sacred Decree at the Temple of the Three Sisters. The temple will want to know why.",
-    "design_note": "Creates a strategic question every time Judgment Dice appear: spend now for reliable damage, or hold for armor-piercing at the cost of reaction flexibility. The lie-detection passive is now one-sided — the Oathsworn sees the tilt, the liar does not. This turns social scenes into dramatic irony rather than instant confrontation: the player knows something and must choose when and whether to act on it. The escalation connects to the Temple of the Three Sisters.",
-    "status": "review",
-    "notes": "Rebuilt from uploaded sources; original status and notes were not available.",
+    "escalation": "If the scales hold dice through a full Safe Rest, they fuse with your Lay on Hands pool. You cannot spend from the pool until you perform a Sacred Decree at the Temple of the Three Sisters. The temple will want to know why.",
+    "design_note": "Every time Judgment Dice would roll, the player chooses between spending them on the next attack and holding them for an armor-ignoring release. Holding is paid before the dangerous moment, and the lie-detection stays one-sided, so social scenes become dramatic irony.",
+    "status": "keep",
+    "notes": "Rewritten to fit the Oathsworn rules: Judgment Dice are not spent on reactions (the 'That All You Got?!' line was a Berserker ability) and expire at the end of the encounter, so the card now states that held dice persist. Origin reworded from 'Magistrate's Court in the Sunken Revvia district'. [NEEDS CANON: a court in the ruins of Sunken Revvia; setting/7_sunken_revvia.md names none.] Risk added.",
     "source": "sources/class_arcana_v3.docx",
     "matrix": {
       "tier": "1st",
       "resource_type": "toggle",
       "max": null,
-      "refill": "Toggle on at the moment Judgment Dice are rolled; no refill",
+      "refill": "Toggle on when Judgment Dice would roll; Release on an attack or perform a Sacred Decree",
       "power": "offense (armor-piercing) + information",
       "cost": "Lay on Hands locked until a Sacred Decree",
-      "origin": "Sunken Revvia (old Magistrate's Court)",
+      "origin": "Sunken Revvia court ruin [NEEDS CANON]; Temple of the Three Sisters",
       "region": "Sunken Revvia",
       "look": "golden scales, one pan missing",
       "mythology": ""
@@ -247,33 +247,33 @@
     "kind": "class",
     "class": "Shadowmancer",
     "tier": "1st echelon",
-    "object": "A slip of black vellum the size of a playing card, written in a language that changes every time you look away. No ink is visible — the text appears to be burned into the material from within. Found pressed between the floorboards of a sealed room in the Lower Reaches, below a building that has been empty for eleven years. The landlord will not say why.",
+    "object": "A slip of black vellum the size of a playing card, written in a language that changes every time you look away. No ink is visible: the text appears to be burned into the material from within. Found pressed between the floorboards of a sealed room in the Lower Reaches, below a building that has been empty for eleven years. The landlord will not say why.",
     "unlock": [
-      "Note: This arcanum is for Shadowmancers who still hold a patron (not the Reaver subclass).",
-      "Unlock: commune with your patron during a Safe Rest and ask it for something you know it does not want to give.",
-      "Accept its counter-demand before you know what it is."
+      "Patron path: commune with your patron during a Safe Rest and ask it for something you know it does not want to give. Accept its counter-demand before you know what it is.",
+      "Reaver path: you have no patron to ask. Read the vellum by your own shadow, in the room where it was found, until the language stops changing."
     ],
-    "risk": "",
+    "risk": "Your patron, or the patron you left, learns the contract has a new reader.",
     "resource": {
       "name": "Debt",
       "type": "pip tracker",
       "max": 4,
-      "text": "Mark 1 Debt whenever you spend a Pilfered Power use. Refill Pilfered Power uses: during a Safe Rest, spend 1 hour writing on the contract in your own blood — one sentence describing something you will do for the patron. The patron reads it. If it accepts, you regain all Pilfered Power uses. If it does not accept, you regain half (round down). You must write something real. You must mean it."
+      "text": "Debt (pip tracker, max 4). Mark 1 Debt each time you use one of the contract's powers. Debt clears when the patron collects (see Escalation), or when you carry out a sentence you wrote in the contract: write one sentence in your own blood describing something you will do for the patron, then do it. You must write something real, and you must mean it."
     },
     "powers": [
-      "Read the Contract (Free, 1/encounter): Hold the vellum up. You see one true fact about any creature you can see — their most urgent want, their deepest fear, or the name of someone they have wronged. Mark 1 Debt.",
-      "Patron's Margin (Free, spend 2 Debt): Cast one tiered spell at +1 tier above your current maximum. The patron extends credit. Mark 2 additional Debt."
+      "Read the Contract (Free, 1/encounter, mark 1 Debt): Hold the vellum up. You see one true fact about a creature you can see: its most urgent want, its deepest fear, or the name of someone it has wronged.",
+      "Patron's Margin (Free, 1/encounter, mark 2 Debt, patron path): Cast one tiered spell you know at +1 tier above your current maximum. The patron extends credit.",
+      "Reaver's Margin (Free, 1/encounter, mark 2 Debt, Reaver path): Your next Bonescythe strike this turn rolls 1 extra damage die."
     ],
-    "escalation": "When Debt reaches 4, the patron calls in what is owed. It does not take Pilfered Power — it takes one sentence written in the contract. A sentence about the character, not an action. The patron adds it to the contract permanently. The GM decides what it says and reads it aloud. Debt clears. The sentence stays.",
-    "design_note": "Replaces the Patron's Ear, which had narrative friction with the Reaver subclass and used shadow minion sacrifice as a cost (minions are not a tracked resource — they only exist in combat). This item keeps the patron-debt theme but grounds the cost in the character's actual resources: Pilfered Power uses and blood-written promises. The escalation (the patron writing something permanent about you) is the correct shape for a relationship with something ancient and dangerous.",
-    "status": "review",
-    "notes": "Rebuilt from uploaded sources; original status and notes were not available.",
+    "escalation": "When Debt reaches 4, the patron collects. It does not take power. It adds one sentence about your character to the contract, permanently. The GM decides what it says and reads it aloud. Debt clears. The sentence stays. A Reaver's former patron sends an agent to read the sentence to them in person.",
+    "design_note": "Debt marks only on the contract's own powers, so it never rides on Pilfered Power, and the Safe Rest commune stays the class's own business. The Reaver path gives patronless Shadowmancers a card of their own. The permanent sentence is the right shape for a relationship with something ancient and dangerous.",
+    "status": "keep",
+    "notes": "Debt no longer marks on Pilfered Power use and the Pilfered Power refill is gone (it duplicated the class commune); Reaver path and Reaver's Margin added (Reavers have no patron and cannot cast tiered spells at this echelon); risk added; em dash removed.",
     "source": "sources/class_arcana_v3.docx",
     "matrix": {
       "tier": "1st",
       "resource_type": "pip tracker",
       "max": 4,
-      "refill": "Writes a sentence in blood to the patron during a Safe Rest (restores Pilfered Power uses)",
+      "refill": "Carry out a sentence written in blood for the patron (or the patron left)",
       "power": "information + offense (upcast)",
       "cost": "narrative: patron writes a sentence on you",
       "origin": "Lower Reaches, sealed room under an empty building",
@@ -288,36 +288,34 @@
     "kind": "class",
     "class": "Shepherd",
     "tier": "1st echelon",
-    "object": "A small iron handbell, tarnished green at the rim, engraved with three interlinked rings. Identical to the bells carried by the clergy of the Temple of the Three Sisters — except that this one rings slightly differently, a half-note flat or sharp depending on who you ask. The temple says it was never consecrated. They are interested in recovering it for study. They have not offered to pay.",
+    "object": "A small iron handbell, tarnished green at the rim, engraved with three interlinked rings. Identical to the bells carried by the clergy of the Temple of the Three Sisters, except that this one rings slightly differently, a half-note flat or sharp depending on who you ask. The temple says it was never consecrated. They are interested in recovering it for study. They have not offered to pay.",
     "unlock": [
-      "Use Searing Light to heal a creature you expected — and had good reason — to be your enemy.",
-      "The expectation must be genuine.",
-      "The bell listens."
+      "Heal a creature you expected, and had good reason, to be your enemy. The expectation must be genuine. The bell listens."
     ],
-    "risk": "",
+    "risk": "The temple learns that a stranger carries a bell it never consecrated.",
     "resource": {
       "name": "Resonance",
       "type": "pip tracker",
       "max": 4,
-      "text": "Gain 1 Resonance whenever you use Searing Light to heal. Clears at Safe Rest. Does not clear if the bell is destroyed — see Escalation."
+      "text": "Resonance (pip tracker, max 4). Gain 1 Resonance by ringing the bell for an hour over a sickbed or a grave, at the Temple of the Three Sisters or among the tombs of the Cliffs of the Dead, and staying with whoever it is for until the hour ends. Resonance does not clear at a rest. Spent Resonance returns only this way."
     },
     "powers": [
-      "Ring (Free, when using Searing Light): The bell tones as you heal. Undead within 4 spaces take 1 radiant damage. Your Lifebinding Spirit may act immediately as a Free action this round, even if it has already acted.",
+      "Ring (Free, when you heal HP): The bell tones as you heal. Undead within 4 spaces take 1 radiant damage.",
       "Chain Heal (Reaction, spend 2 Resonance): When your Lifebinding Spirit heals a creature to maximum HP, the excess healing carries to the nearest damaged ally within 4 spaces. The chain triggers once per Reaction.",
       "Toll (1 Action, spend all 4): Ring the bell loudly. All Dying allies within 6 spaces gain 1 HP and are no longer Dying. You take 1 Wound."
     ],
-    "escalation": "Spending all 4 Resonance in the Toll crumbles the bell's handle. It still rings, but you can no longer Toll — the 4-Resonance ability is permanently lost until a clergy member of the Three Sisters rehandles it. They will want to know what happened before they agree to help.",
-    "design_note": "Every ability keys off Searing Light and the Lifebinding Spirit — purely additive to the Shepherd's existing rhythm. Chain Heal creates a spatial puzzle: position the Spirit where the overflow reaches a second wounded ally. The Toll is a 1st echelon small resurrection that costs a Wound and permanently downgrades the item. Sacrifice should have weight.",
-    "status": "review",
-    "notes": "Rebuilt from uploaded sources; original status and notes were not available.",
+    "escalation": "Spending all 4 Resonance in the Toll cracks the bell's handle. It still rings, but you cannot Toll until a clergyperson of the Three Sisters rehandles it. They will want to know what happened before they agree to help.",
+    "design_note": "Every power keys off healing, and none of the pool fills from healing, so it adds to the Shepherd's rhythm without rewarding it twice. Chain Heal makes positioning the Spirit a puzzle. The Toll is a first-echelon rescue that costs a Wound and permanently marks the bell. Sacrifice should have weight.",
+    "status": "keep",
+    "notes": "Resonance now fills by ringing over a sickbed or grave (it filled from Searing Light, the class's own move, and Searing Light does not heal: it damages a target for HP you heal). Unlock reworded to 'heal'. Ring no longer gives the Spirit an extra action. Resonance persists through rests. Risk added.",
     "source": "sources/class_arcana_v3.docx",
     "matrix": {
       "tier": "1st",
       "resource_type": "pip tracker",
       "max": 4,
-      "refill": "Gained each time Searing Light heals; clears at Safe Rest",
+      "refill": "Ring the bell for an hour over a sickbed or grave, staying with them",
       "power": "healing",
-      "cost": "Wound; the bell breaks",
+      "cost": "Wound; handle cracks",
       "origin": "Temple of the Three Sisters",
       "region": "Upper city (Temple)",
       "look": "iron handbell, green rim, three rings",
@@ -326,37 +324,35 @@
   },
   {
     "id": "class_songweaver",
-    "name": "The Theatre of Whispers Setlist",
+    "name": "The Theater of Whispers Setlist",
     "kind": "class",
     "class": "Songweaver",
     "tier": "1st echelon",
-    "object": "A folded sheet of vellum with a handwritten set of songs — titles, keys, and performance notes in the margins in an elegant hand. It belonged to a Songweaver who performed at the Theatre of Whispers for fifteen years before disappearing mid-run. The theatre kept the setlist. Someone stole it last month. The manager has posted a reward, but is vaguer than expected about what they want to do with whoever took it.",
+    "object": "A folded sheet of vellum with a handwritten set of songs: titles, keys, and performance notes in the margins in an elegant hand. It belonged to a Songweaver who performed at the Theater of Whispers for fifteen years before disappearing mid-run. The theater kept the setlist. Someone stole it last month. The manager has posted a reward, but is vaguer than expected about what they want to do with whoever took it.",
     "unlock": [
-      "Perform at the Theatre of Whispers — or any venue with an audience of 20 or more — and hold the crowd's full attention for an uninterrupted hour.",
-      "No skill check.",
-      "Just perform."
+      "Perform at the Theater of Whispers, or any venue with an audience of 20 or more, and hold the crowd's full attention for an uninterrupted hour. No skill check. Just perform."
     ],
-    "risk": "",
+    "risk": "Someone in that crowd knows the hand that wrote the setlist.",
     "resource": {
       "name": "Crowd",
       "type": "d6 vs. accumulation",
-      "max": null,
-      "text": "Roll 1d6 each time you call on the setlist in combat. If you roll equal to or below your Crowd count, someone recognises the song and has feelings about it — you have disadvantage on your next social roll with a stranger this session. Crowd clears at Safe Rest."
+      "max": 4,
+      "text": "Crowd (d6 vs. accumulation, max 4). Each time you Call the Song in combat, roll 1d6 against your current Crowd, then add 1 Crowd. If you roll equal to or below your Crowd before adding, someone recognises the song and has feelings about it: you have disadvantage on your next social roll with a stranger this session. Crowd clears when you play a full uninterrupted hour for a new audience of 20 or more."
     },
     "powers": [
-      "Call the Song (Free, in combat): Announce the name of the song you're playing. Roll 1d6, add 1 Crowd pip. On a safe roll: allies within 6 spaces who can hear you regain 1 use of Songweaver's Inspiration if they have spent it this encounter. Max 1 per ally per session.",
-      "Protective Verse (Free, spend 2 Crowd, 1/encounter): A specific song from the setlist grants immunity to the Taunted or Frightened condition to all allies within 6 spaces until the end of the round."
+      "Call the Song (Free, in combat, 1/round): Name the song you are playing and roll against your Crowd. On a safe roll, you regain 1 spent use of Songweaver's Inspiration. This works once per encounter.",
+      "Protective Verse (Free, 1/encounter, remove 2 Crowd): A specific song from the setlist grants immunity to the Taunted or Frightened condition to all allies within 6 spaces until the end of the round."
     ],
-    "escalation": "At 4 Crowd pips, someone in the crowd knows who this setlist belonged to. They approach between encounters — or send someone. The GM decides who and what they want. They may be a fan. They may not.",
-    "design_note": "The Crowd tracker is soft pressure — accumulating rarely hurts until 4, but the social disadvantage on a failed roll is a light ongoing tax. Directly extends Songweaver's Inspiration by creating a mid-encounter refill. The escalation connects to the missing Songweaver — a mystery the GM can develop at any pace.",
-    "status": "review",
-    "notes": "Rebuilt from uploaded sources; original status and notes were not available.",
+    "escalation": "When Crowd reaches 4, someone in the crowd knows who this setlist belonged to. They approach between encounters, or send someone. The GM decides who and what they want. They may be a fan. They may not.",
+    "design_note": "Crowd is soft pressure: accumulating rarely hurts until 4, and a failed roll is a light social tax. Call the Song extends Songweaver's Inspiration with a mid-encounter refill. The escalation connects to the missing Songweaver, a mystery the GM can develop at any pace.",
+    "status": "keep",
+    "notes": "'Theatre' corrected to 'Theater' (3_gazetteer); the per-ally, per-session cap (memory tracking) replaced with once per encounter; Songweaver's Inspiration belongs to the Songweaver, so the refill now returns the Songweaver's own uses; Crowd clears by a full hour for a new audience (was a Safe Rest); risk added.",
     "source": "sources/class_arcana_v3.docx",
     "matrix": {
       "tier": "1st",
       "resource_type": "d6 vs. accumulation",
       "max": null,
-      "refill": "Crowd pips added on each use; clears at Safe Rest",
+      "refill": "Play a full uninterrupted hour for a new audience of 20 or more",
       "power": "social (ally support)",
       "cost": "social disadvantage; a pursuer",
       "origin": "Theater of Whispers",
@@ -374,31 +370,30 @@
     "object": "A sealed clay jar of dark grey mud from the Revlend Marshes north of the city, marked with protective runes no one recognises as any known system. The mud is warm to the touch and smells of rain before a storm. It never dries out. An arch-traveller carried it into the city claiming the marshes spoke to her. She didn't explain further. She is not currently available to explain anything.",
     "unlock": [
       "Spend a full night alone in the Revlend Marshes, or in the Deadlands adjacent to them, without shelter or fire.",
-      "Something in the marshes must acknowledge you before dawn.",
-      "You will know if it did."
+      "Something in the marshes must acknowledge you before dawn. You will know if it did."
     ],
-    "risk": "",
+    "risk": "Whatever acknowledges you now knows your name.",
     "resource": {
       "name": "Earthpulse",
       "type": "pip tracker",
       "max": 4,
-      "text": "Gain 1 Earthpulse when you apply the mud (see Powers). The jar only refills when returned to the Revlend Marshes and left overnight. Until then, spent pips are gone. The marshes will be different when you return."
+      "text": "Earthpulse (pip tracker, max 4). The jar holds 4 Earthpulse when it is full. Using the mud spends Earthpulse (see Powers). Spent Earthpulse returns only when you carry the jar back to the Revlend Marshes and leave it there overnight. A rest does not refill it."
     },
     "powers": [
-      "Apply (1 Action): Smear the mud on yourself or a willing creature. Gain 1 Earthpulse. While mud is applied: the creature cannot be pushed, thrown, or moved by any non-magical forced movement. Mud washes off in rain or after a Field Rest.",
-      "Extend the Shift (Free, while shifted, spend 2 Earthpulse): Your current beast or storm form (Stormshifter shift ability) lasts 1 additional round beyond its normal duration. Can be used once per shift.",
-      "Mire (1 Action, spend all 4): Create a 3-space radius of difficult terrain centred on you that lasts until the end of the encounter. The ground thickens and pulls. Any creature that starts its turn in the mire must spend 1 additional space of movement to leave, or become Slowed."
+      "Apply (1 Action, spend 1 Earthpulse): Smear the mud on yourself or a willing creature. While it is applied, the creature cannot be pushed, thrown, or moved by non-magical forced movement. Mud washes off in rain or after a Field Rest.",
+      "Extend the Beastshift (Free, spend 2 Earthpulse, once per Beastshift): Your Beastshift does not end when you cast a spell this encounter.",
+      "Mire (1 Action, spend all 4): Create a 3-space radius of difficult terrain centered on you that lasts until the end of the encounter. The ground thickens and pulls. Any creature that starts its turn in the mire is Slowed."
     ],
-    "escalation": "When the jar is empty, the mud on currently-applied creatures does not dry — but no new mud can be applied until the jar is refilled. If the jar is broken, the mud it contained dries immediately, removing all effects. A broken jar can be repaired by a skilled craftsperson, but the marshes must still refill it.",
-    "design_note": "The geographic refill condition anchors the item in the setting permanently. Every use is a conscious spend of a resource that costs a journey to replace. Extend the Shift feeds into the Stormshifter's existing tension — forms ending mid-combat. Mire gives battlefield control that fits the nature identity without requiring spellcasting.",
-    "status": "review",
-    "notes": "Rebuilt from uploaded sources; original status and notes were not available.",
+    "escalation": "When the jar is empty, mud already applied does not dry, but no new mud can be applied until the jar is refilled. If the jar breaks, the mud it held dries at once and all its effects end. A skilled craftsperson can repair a broken jar, but the marshes must still refill it. Each time you return to refill it, the marshes have changed, and the GM says how.",
+    "design_note": "The geographic refill anchors the item in the setting. Every use is a conscious spend of a resource that costs a journey to replace, and no use refills it. Extend the Beastshift answers the class's own tension of forms ending when you cast. Mire gives battlefield control that fits the nature identity without requiring more spellcasting.",
+    "status": "keep",
+    "notes": "Self-sustaining loop removed: Apply used to give Earthpulse, which paid for the other powers; it now costs 1. 'Shift ability' and 'storm form' replaced with Beastshift (rules: it ends when you cast a spell); risk added; the marshes change on each return.",
     "source": "sources/class_arcana_v3.docx",
     "matrix": {
       "tier": "1st",
       "resource_type": "pip tracker",
       "max": 4,
-      "refill": "Return the jar to the Revlend Marshes and leave it overnight",
+      "refill": "Carry the jar back to the Revlend Marshes and leave it overnight",
       "power": "defense + utility (control)",
       "cost": "a journey; jar can break",
       "origin": "Revlend Marshes",
@@ -413,28 +408,26 @@
     "kind": "class",
     "class": "Zephyr",
     "tier": "1st echelon",
-    "object": "Linen hand wrappings, yellowed and stained, covered in faded ink annotations — technique notes in a script that predates the city. Found in a locked case in the Lower Reaches beneath a martial arts studio that has been occupied by different teachers for four centuries. Each teacher added their own notes in the margins. The last teacher's annotations stop mid-sentence, mid-technique.",
+    "object": "Linen hand wrappings, yellowed and stained, covered in faded ink annotations, technique notes in a script that predates the city. Found in a locked case in the Lower Reaches beneath a martial arts studio that has been occupied by different teachers for four centuries. Each teacher added their own notes in the margins. The last teacher's annotations stop mid-sentence, mid-technique.",
     "unlock": [
-      "Take a hit in combat that you could have Defended but deliberately chose not to — in order to observe how the attack was made.",
-      "The choice must be your own.",
-      "The wrappings can tell the difference between courage and negligence."
+      "Take a hit in combat that you could have Defended but deliberately chose not to, in order to observe how the attack was made. The choice must be your own. The wrappings can tell the difference between courage and negligence."
     ],
-    "risk": "",
+    "risk": "The last teacher's notes stop mid-technique, and whoever silenced them hears the wrappings are in use.",
     "resource": {
       "name": "Strain",
       "type": "Wound-cost",
       "max": null,
-      "text": "The Strain ability costs 1 Wound each time it is used, and that Wound cannot be healed until Safe Rest. There is no tracker — only the permanent cost of tuition."
+      "text": "Strain (Wound-cost). Each annotation you use costs 1 Wound. There is no tracker, only the Wounds. They heal as Wounds normally do, 1 per Safe Rest."
     },
     "powers": [
-      "Study the Form (Free, spend 1 Wound, 1/encounter): Before making an attack against any creature, spend 1 Wound to activate the wrappings' oldest annotations. For the rest of the encounter, your attacks against that creature ignore their armor tier — treat them as unarmored. You are choosing to hurt yourself to learn faster. The Wound cannot be healed until Safe Rest.",
-      "Deepest Annotation (Free, spend 1 Wound, 1/Safe Rest): Activate the oldest note in the wrappings. Your unarmed and martial weapon attacks deal your level in bonus damage for 1 minute. The Wound cannot be healed until Safe Rest.",
-      "Study (Passive, 1 hour per Safe Rest): Spend an hour reading the annotations during rest. Roll Lore DC 8 to learn something about a martial tradition relevant to the current adventure arc. The GM provides one true detail."
+      "Study the Form (Free, spend 1 Wound, 1/encounter): Before you attack a creature, spend 1 Wound to activate the wrappings' oldest annotations. For the rest of the encounter, your attacks against that creature ignore its armor. You are choosing to hurt yourself to learn faster.",
+      "Deepest Annotation (Free, spend 1 Wound, 1/Safe Rest): Your unarmed and martial weapon attacks deal bonus damage equal to your level for 1 minute.",
+      "Study (downtime, 1 hour per Safe Rest): Spend an hour reading the annotations during rest. Roll Lore DC 8 to learn something about a martial tradition relevant to the current adventure arc. The GM provides one true detail."
     ],
-    "escalation": "If you activate the Deepest Annotation three times without a Safe Rest between uses, the fourth attempt causes the wrappings to tighten around your hands involuntarily — take 1 additional Wound and lose use of the Free action for 1 round. The annotations become illegible until a skilled martial artist re-inks them. Finding one is the GM's hook.",
-    "design_note": "The original Read a Strike made the armor-ignore reactive — most valuable against heavy-armor enemies, who are also most likely to kill you with an undefended hit. Study the Form is proactive: pay a Wound now, ignore their armor for the rest of the fight. The cost is still real (the Wound cannot be healed until Safe Rest), but the risk is controlled — you choose when, not the enemy. Way of Pain players will recognise the trade immediately.",
-    "status": "review",
-    "notes": "Rebuilt from uploaded sources; original status and notes were not available.",
+    "escalation": "If you use either annotation while you have 3 or more Wounds, from any source, the wrappings tighten around your hands: take 1 additional Wound and you cannot use either annotation for 1 round. The annotations become illegible until a skilled martial artist re-inks them. Finding one is the GM's hook.",
+    "design_note": "The Wound is paid before the attack, so you choose when the risk comes, not the enemy. Armor-ignore proves most useful against heavily armored foes, and you pay for it in advance. Way of Pain players will recognise the trade immediately.",
+    "status": "keep",
+    "notes": "Escalation could not fire (it needed three uses of a 1/Safe Rest power); it now fires on using an annotation at 3 or more Wounds, a value readable now. 'Cannot be healed until Safe Rest' removed (Wounds already heal 1 per Safe Rest). Study relabelled downtime. Risk added.",
     "source": "sources/class_arcana_v3.docx",
     "matrix": {
       "tier": "1st",
