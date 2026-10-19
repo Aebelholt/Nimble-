@@ -325,6 +325,15 @@ Small house rules that sit beside the cards. The cards themselves live in `data/
 - The campaign uses the City of Arches as a base and does its own thing. Nothing is canon until it hits the table.
 - Cards marked `[TABLE ROLL]` in their notes lean on a fact the books don't settle (will the Observatory keep a lens overnight? does Vathrex sell coal?). Don't decide it in prep. The hero asks, and rolls Influence against the GM's sense of how likely it is. On a failure they find another way: sneak the lens in, steal the coal, pay someone who can.
 
+### Readings
+- Cards that read lies, motives, names or history give true answers. A true answer can still point at the wrong person: the liar was covering for someone, the owner sold it twice, the fear is about something else. Use it when two readers at one table would solve the gig in its first scene.
+
+### Escalations and the thread board
+- An Escalation that brings a new threat writes a thread card only if the board has a free slot. If the board is full, it ticks the closest existing clock instead, and the threat arrives through that thread.
+
+### Long durations
+- A week, a lunar cycle, a full moon or a month on a card passes off-screen between episodes. Say it in the "last time" line. Absent players count it the same way.
+
 ## 6. The cards
 
 Class arcana first, then found arcana. Each class arcanum belongs to the class named.
