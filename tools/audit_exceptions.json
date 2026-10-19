@@ -2,13 +2,6 @@
   "class_commander": {
     "refill": "Authority fills from allies' damage during the fight and clears at encounter end, by design. The spec cites this card as its Commander example: an encounter-bound resource that triggers on a damage threshold, not on kills."
   },
-  "drowning_scale": {
-    "parts": "Stub. The card text lives in a homebrew document that is not in the repo. Status stays review until it arrives.",
-    "one_res": "Same stub. The spec describes Breath (pip, max 4) but does not give the card text.",
-    "refill": "Same stub. The spec's refill (harvest last breaths from dying creatures) also needs a ruling on the kill-steal check.",
-    "powers": "Same stub.",
-    "risk_mech": "Same stub; no risk text exists yet."
-  },
   "black_lotus_case": {
     "rules_terms": "'Stain' is the card's own named escalation track (fingertips, veins, eyes), not a rules term."
   }

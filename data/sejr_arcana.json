@@ -421,7 +421,7 @@
       "name": "Strain",
       "type": "Wound-cost",
       "max": null,
-      "text": "Strain (Wound-cost). Each annotation you use costs 1 Wound. There is no tracker, only the Wounds. They heal as Wounds normally do, 1 per Safe Rest."
+      "text": "Strain (Wound-cost). Each annotation you use costs 1 Wound. There is no tracker, only the Wounds. A Medical Kit, healing magic and other effects cannot remove these Wounds; they heal only by Safe Rest, 1 per rest."
     },
     "powers": [
       "Study the Form (Free, spend 1 Wound, 1/encounter): Before you attack a creature, spend 1 Wound to activate the wrappings' oldest annotations. For the rest of the encounter, your attacks against that creature ignore its armor. You are choosing to hurt yourself to learn faster.",
@@ -431,7 +431,7 @@
     "escalation": "If you use either annotation while you have 3 or more Wounds, from any source, the wrappings tighten around your hands: take 1 additional Wound and you cannot use either annotation for 1 round. The annotations become illegible until a skilled martial artist re-inks them. Finding one is the GM's hook.",
     "design_note": "The Wound is paid before the attack, so you choose when the risk comes, not the enemy. Armor-ignore proves most useful against heavily armored foes, and you pay for it in advance. Way of Pain players will recognise the trade immediately.",
     "status": "keep",
-    "notes": "Escalation could not fire (it needed three uses of a 1/Safe Rest power); it now fires on using an annotation at 3 or more Wounds, a value readable now. 'Cannot be healed until Safe Rest' removed (Wounds already heal 1 per Safe Rest). Study relabelled downtime. Risk added. Unlock pass: added a week of study; the chosen hit can now put you down and not count.",
+    "notes": "Escalation could not fire (it needed three uses of a 1/Safe Rest power); it now fires on using an annotation at 3 or more Wounds, a value readable now. 'Cannot be healed until Safe Rest' removed (Wounds already heal 1 per Safe Rest). Study relabelled downtime. Risk added. Unlock pass: added a week of study; the chosen hit can now put you down and not count. Correction: the 'cannot be healed until Safe Rest' wording is restored in a stricter form. The homebrew defines Wound-cost as a Wound that cannot be healed until the item is rested, so Strain Wounds now refuse Medical Kits and healing magic.",
     "source": "sources/class_arcana_v3.docx",
     "matrix": {
       "tier": "1st",
@@ -452,7 +452,7 @@
     "kind": "found",
     "class": null,
     "tier": "Minor",
-    "object": "A tarnished iron key, not sized for any human lock. Its bow is etched with a spiral that matches no arch in the city's records.",
+    "object": "A tarnished iron key, not sized for any human lock. Found in rubble beneath the Theater of Whispers, its bow etched with a spiral that matches no arch in the city's records.",
     "unlock": [
       "Present it to each of the city's seven major arches while the Archkeepers watch",
       "Find the one arch that hums",
@@ -471,7 +471,7 @@
     ],
     "escalation": "Spending the last Hum, roll a d6. On 1-2 the key splinters, and every arch it opens leads somewhere wrong until an Archkeeper repairs it. On 3+, take 1 Wound.",
     "status": "keep",
-    "notes": "Reworked. Refill was a Safe Rest; Hum (renamed from Resonance, which the Shepherd's Bell uses) now returns when an Archkeeper records a new arch's behavior (Archkeepers watch the arches, 3_gazetteer). Passive added. Lore is a rules skill. Unlock pass: risk now a d6 and a check.",
+    "notes": "Reworked. Refill was a Safe Rest; Hum (renamed from Resonance, which the Shepherd's Bell uses) now returns when an Archkeeper records a new arch's behavior (Archkeepers watch the arches, 3_gazetteer). Passive added. Lore is a rules skill. Unlock pass: risk now a d6 and a check. Object now names its find-place from arches_homebrew.docx (rubble beneath the Theater of Whispers). Note: the homebrew card clears Resonance on a Safe Rest; this version does not (the spec bans rest refills). Revert the resource line if you prefer yours.",
     "source": "sources/sejr_arcana_perchance_original.txt",
     "matrix": {
       "tier": "Minor",
@@ -480,7 +480,7 @@
       "refill": "Carry the key to an untried arch while an Archkeeper records the result",
       "power": "mobility",
       "cost": "Wound; arch opens wrong",
-      "origin": "Archkeepers and the city's arches (3_gazetteer)",
+      "origin": "Rubble beneath the Theater of Whispers; Archkeepers' records (3_gazetteer)",
       "region": "Upper city (arches)",
       "look": "tarnished iron key, spiral bow",
       "mythology": ""
@@ -492,34 +492,41 @@
     "kind": "found",
     "class": null,
     "tier": "Minor",
-    "object": "A cold, clammy pendant, a single shimmering scale of unknown origin. Everyone nearby shivers when it is first worn.",
+    "object": "A cold, clammy pendant on a leather cord, a single shimmering scale of unknown origin. When first worn, everyone nearby shivers. It was pulled from the water at Drowned Elvenya in the Revlend Marshes, and nobody knows what it came off.",
     "unlock": [
-      "See the homebrew document"
+      "Wear the pendant ceaselessly for a full lunar cycle, answering its whispered questions honestly each night",
+      "Hold yourself underwater until you genuinely risk drowning"
     ],
-    "risk": "",
+    "risk": "Make a STR save, DC 14, or take 1 Wound. Each night's honest answer is a secret the GM may make true in the fiction.",
     "resource": {
-      "name": "",
+      "name": "Breath",
       "type": "pip tracker",
       "max": 4,
-      "text": ""
+      "text": "Breath (pip tracker, max 4). Gain 1 Breath each time you draw a creature's last breath (see Last Breath). All Breath is lost when you take the pendant off. A rest does not clear it."
     },
-    "powers": [],
-    "escalation": "",
-    "status": "review",
-    "notes": "Not reworked. Card is a stub ('See the homebrew document'); waiting on the document and a ruling on the death trigger (kill-steal check).",
+    "powers": [
+      "Last Breath (Reaction, 1/round): When a creature within Reach 2 drops to 0 HP, you draw its last breath and gain 1 Breath. Make a WIL save, DC 12, or gain a Condition of the GM's choice from Frightened, Dazed or Slowed until the end of your next turn.",
+      "Cold Skin (Passive): While you hold any Breath, you are immune to cold damage and to the dangers of extreme cold.",
+      "Hold the Breath (Free, spend 1 Breath): You go without air for up to one hour.",
+      "Choke (1 Action, spend 2 Breath): A creature within Reach 2 gasps. It makes a STR save, DC 13, or is Incapacitated as it chokes, until the end of its next turn. The whispers tell you its name."
+    ],
+    "escalation": "If you try to use the pendant with no Breath, make a WIL save, DC 12, or you inhale your own breath: take 1 Wound and become Dying at once.",
+    "status": "keep",
+    "notes": "Written from arches_homebrew.docx (The Drowning Scale). Kept as written: lunar-cycle unlock with a DC 14 STR save to survive the dive; Breath max 4 lost when the pendant comes off; cold immunity, 1 hour without air, and Choke (STR DC 13); the DC 12 WIL escalation. Nimble fixes: Breath is gained with a Reaction on any creature that drops to 0 HP within Reach 2, not on the killing blow, which answers the kill-steal check; the failed-roll Condition (Frightened, Dazed or Slowed) follows the spec's note on this card; Choke's duration (end of its next turn) is mine. Origin Drowned Elvenya (10_the_revlend_marshes.md) is my suggestion, since the homebrew says 'unknown origin'.",
     "source": "sources/sejr_arcana_perchance_original.txt",
     "matrix": {
       "tier": "Minor",
       "resource_type": "pip tracker",
       "max": 4,
-      "refill": "Harvest last breaths from dying creatures (per spec; card text missing)",
-      "power": "unknown (stub)",
-      "cost": "a Condition on a failed roll",
-      "origin": "unspecified",
-      "region": "Unspecified",
-      "look": "clammy pendant, single scale",
+      "refill": "Draw the last breath of a creature that drops to 0 HP within Reach 2",
+      "power": "offense (control) + utility",
+      "cost": "Wound and Dying on an empty draw; secrets told to the pendant",
+      "origin": "Drowned Elvenya (10_the_revlend_marshes), suggested",
+      "region": "Revlend Marshes",
+      "look": "clammy scale pendant on a leather cord",
       "mythology": ""
-    }
+    },
+    "design_note": "Breath is earned in the fight by an action anyone could take, so no hero gains by landing the last blow. The empty-pendant escalation turns greed into a Wound."
   },
   {
     "id": "axe_of_nine_eyes",

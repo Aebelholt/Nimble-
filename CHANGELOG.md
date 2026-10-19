@@ -5,8 +5,8 @@ Arcana rework for Sejr (Nimble 2, City of Arches). Branch `ccr-cae13937-ajbjcv`.
 ## Read this first
 
 - **The working set is a rebuild.** The original `data/sejr_arcana.json` (44 cards, with statuses and notes) was never in the repo. `data/sejr_arcana.json` is rebuilt from `sources/class_arcana_v3.docx` (11 class cards) and `sources/sejr_arcana_perchance_original.txt` (25 found cards). The 7 other found cards, the one-per-arc card, and the original keep/review/cut notes are not here. If you send the original JSON I will merge it and re-run the audit.
-- **Status:** 34 cards `keep`, 1 `review` (Drowning Scale), 4 `cut`, 39 cards total. Cut cards keep their ids.
-- **The Drowning Scale is still a stub.** The card text lives in a homebrew document that was not provided. It sits in the Perchance output as it did in the original (object and one unlock line only).
+- **Status:** 35 cards `keep`, 4 `cut`, 39 cards total. Cut cards keep their ids.
+- **Drowning Scale is written.** `arches_homebrew.docx` arrived after the first pass and holds its full text; the card follows it (see below).
 
 ## What changed
 
@@ -40,7 +40,7 @@ Found cards (24 in the pool):
 | Reworked | Forgotten Key, Oath-Band, Unpaid Favor, Valkyrie's Feather, Pitch-Sap Harness, Hellhide, Kettle Plate, Fairy Jar, Hexing Needles, Sown Teeth, Rune Fragment, Binding Linens, Rusted Spear |
 | New | The Derelict Harpoon (Drendaan), The Seekers' Provenance Ledger, The Black Goat's Tally-Stick |
 | Cut | Sul Hide, Ossuary Mail, Hollow Vessel (replaced by the three new cards), Bonded Relic |
-| Waiting | Drowning Scale |
+| Written from the homebrew | Drowning Scale |
 
 Common fixes: hero "Armor N+DEX" became Defense; "LV 5" became "level 5"; "Sylvan" became Elvish; em dashes removed everywhere; every active card has a risk; a free or passive power was added where a card had none.
 
@@ -50,10 +50,9 @@ Common fixes: hero "Armor N+DEX" became Defense; "LV 5" became "level 5"; "Sylva
 
 ### Step 4: audit as code
 - `tools/audit.py` checks: five parts present; one resource with a clearing rule; a refill that names a world action; one spend power and one free or passive power; no kill, slay or reduce-to-0 in resource lines; no em dash, en dash, "it's not" or "charges"; a risk with a mechanic; no capitalized term outside a vocabulary built from `rules/`, `setting/` and the cards' own names.
-- Last run: 35 cards, 0 failing checks, 7 left with a reason (`tools/audit_exceptions.json`).
+- Last run: 35 cards, 0 failing checks, 2 left with a reason (`tools/audit_exceptions.json`).
 - **Left, with reasons:**
   - Commander, refill: Authority fills from allies' damage and clears at encounter end. The spec uses this card as its Commander example.
-  - Drowning Scale (five checks): stub, no card text.
   - Black Lotus, "Stain": the card's own escalation track, not a rules term.
 - **Limit:** the term check catches words absent from the rules. An invented term made only of words that appear in the rules would pass. Read the rules-term list by eye.
 
@@ -69,6 +68,12 @@ Common fixes: hero "Armor N+DEX" became Defense; "LV 5" became "level 5"; "Sylva
 - `analysis/cards_review.md`: every reworked card in five-part form (regenerate with `tools/export_review.py`).
 - `tools/`: `bootstrap_from_sources.py` (one-time rebuild), `patch_cards.py`, `show_card.py`, `make_matrix.py`.
 
+### After the homebrew arrived
+- **The Drowning Scale** follows `arches_homebrew.docx`: lunar-cycle unlock with a DC 14 STR save, Breath (pip, max 4) lost when the pendant comes off, cold immunity, an hour without air, Choke (STR DC 13), and the DC 12 WIL escalation. Kill-steal answer: Breath is drawn with a Reaction when any creature within Reach 2 drops to 0 HP, so nobody gains by landing the last blow. Mine: Choke's duration, and the Drowned Elvenya origin (the homebrew says "unknown origin").
+- **The Forgotten Key** now names where it was found, from the homebrew (rubble beneath the Theater of Whispers). The homebrew clears Resonance on a Safe Rest; this version uses Hum and a world-action refill because the spec bans rest refills. Revert the resource line if you prefer yours.
+- **Zephyr correction.** The homebrew defines Wound-cost as a Wound that cannot be healed until the item is rested. I had removed that wording as redundant, which was wrong. Strain Wounds now refuse Medical Kits and healing magic and heal only by Safe Rest, 1 per rest.
+- The homebrew's unlock rule (2 to 4 requirements, at least one a risk, at least one session) matches what the cards use. Its own risk examples include story-only lines, so the audit's "risk has a mechanic" check is stricter than the homebrew.
+
 ## Diversity, found pool: before and after
 
 | | Before (25) | After (24) |
@@ -80,14 +85,13 @@ Common fixes: hero "Armor N+DEX" became Defense; "LV 5" became "level 5"; "Sylva
 | Session-bound | 1 | 1 |
 | Wound-cost | 1 | 0 |
 | Armors | 6 | 4 |
-| Cards with no place of origin | 21 | 1 (Drowning Scale) |
+| Cards with no place of origin | 21 | 0 |
 | From worlds beyond the arches | 0 | 7 |
 
-Honest read: origins are now placed, but they lean on the Doorish Hills (5 cards) and the upper city (7). The Revlend Marshes and the Deadlands have one card each as their primary origin. I can move the Axe and the Pitch-Sap Harness if you want a flatter spread.
+Honest read: origins are now placed, but they lean on the Doorish Hills (5 cards) and the upper city (7). The Revlend Marshes (Tide-Coat, Drowning Scale) and the Deadlands (Black Lotus) have the fewest. I can move the Axe and the Pitch-Sap Harness if you want a flatter spread.
 
 ## Open items for you
 
-- Drowning Scale: the homebrew document, and a ruling on its death trigger (the audit checklist calls refilling on deaths a kill-steal incentive; the spec calls the card best-in-class).
 - The original 44-card JSON, if it still exists.
 - `[NEEDS CANON]` flags, each in a card's `notes`:
   - Mage: whether the Observatory of Infinite Skies lets a visitor leave a lens at its glass overnight.
@@ -95,7 +99,7 @@ Honest read: origins are now placed, but they lean on the Doorish Hills (5 cards
   - Valkyrie's Feather: which world holds the grave.
   - Kettle Plate: whether Vathrex's Forge sells coal to outsiders.
   - Black Goat's Tally-Stick: the stick carrying the tavern's peace elsewhere is new.
-- Not in the repo and not reviewed: `Strongholds__Followers_v1.12.html`.
+- Not in the repo and not reviewed: `Strongholds__Followers_v1.12.html`, and `wonders_of_the_arches.docx` (a catalog of standard magic items, not five-part arcana; nothing was converted). Its Table B of story-attunement deeds is a good source if you want more unlock ideas.
 
 ## Commands
 

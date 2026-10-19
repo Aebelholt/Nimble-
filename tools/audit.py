@@ -28,7 +28,7 @@ WORLD_ACTIONS = (
     r"pry|glue|stoke|carve|broker|write|written|hold the lens|hold the glass|vigil|game of chance|"
     r"confront|answer|record|signed|sign it|fulfil|brought|bring|draw|drawn|settle|given|gives you|"
     r"collect|spend an hour|spend hours|hours you spend|each hour|hour you spend|re-hang|coil|pour|feed|hunt|"
-    r"forge coal|apologi|accepts your apology|keeps a full night|carry out|a favor|back to its stone"
+    r"forge coal|draw a creature|apologi|accepts your apology|keeps a full night|carry out|a favor|back to its stone"
 )
 BANNED_RES = [r"\bkill(s|ed|ing)?\b", r"\bslay\b|\bslain\b", r"reduc\w+ to 0\b"]
 STYLE = [(r"—", "em dash"), (r"–", "en dash"), (r"\bit'?s not\b|\bit is not\b", "\"it's not\" pattern"),
@@ -86,7 +86,7 @@ def check(c):
     out["risk_mech"] = None if re.search(r"\d*d\d+\b|\bDC \d+|\bsave\b|\bcheck\b|\broll|\bclock\b|\bWound|\blose\b|\bacts first\b|\d in \d+|will not wake|won't|cannot|can't|binds|until you|ruined|disadvantage", rk, re.I) else "risk is story only: add a roll, save, clock or stated loss"
 
     n_types = len(re.findall(r"\((pip tracker|d6 vs\. accumulation|toggle|finite|Wound-cost|session-bound)", r["text"]))
-    has_clear = re.search(r"\bclears?\b|never (comes back|returns|refills)|returns? only|nothing refills|heal as|"
+    has_clear = re.search(r"\bclears?\b|never (comes back|returns|refills)|returns? only|nothing refills|heal(s)? (as|only|by)|"
                           r"lost when|goes dark|relights|expire|turns off|lose \d|never adds", r["text"], re.I)
     probs = []
     if not r["name"]:

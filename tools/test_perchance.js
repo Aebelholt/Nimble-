@@ -83,7 +83,6 @@ for (const name of Object.keys(data)) {
   const a = data[name];
   for (const f of ["tier", "obj", "unlock", "risk", "res", "power", "esc"]) {
     if (!a[f] || (Array.isArray(a[f]) && !a[f].length)) {
-      if (name === "The Drowning Scale") continue; // stub, waiting on its source document
       fail(`${name}: empty ${f}`);
     }
   }
