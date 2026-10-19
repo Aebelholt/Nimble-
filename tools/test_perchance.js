@@ -69,6 +69,10 @@ for (const c of active.filter(c => c.kind === "found")) {
   if (pool === "faction_reward" && (inDraw || !inReward)) fail(`${c.id}: faction reward must be in faction_reward_arcanum and not in other_arcanum`);
 }
 for (const n of lists.faction_reward_arcanum || []) if (!(n in data)) fail(`faction_reward_arcanum "${n}" has no arcana_data entry`);
+for (const c of active.filter(c => c.kind === "class")) {
+  if (lists.other_arcanum.includes(c.name)) fail(`${c.id}: class card in the hero-creation draw`);
+  if ((c.pool || "class") === "faction_reward" && !(lists.faction_reward_arcanum || []).includes(c.name)) fail(`${c.id}: class card missing from faction_reward_arcanum`);
+}
 ok(`${active.length} active cards, ${lists.other_arcanum.length} in other_arcanum, ${(lists.faction_reward_arcanum || []).length} faction rewards`);
 
 // Every class in the generator maps to a class card.

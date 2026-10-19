@@ -30,8 +30,20 @@ other_arcanum
   The Seekers' Provenance Ledger
   The Black Goat's Tally-Stick
 
-// Faction rewards: never rolled at chargen. The GM hands these out in play.
+// Faction rewards: never rolled at hero creation. The GM hands these out in play.
+// Class arcana are here too; class_arcanum_name()[cls] finds a hero's own.
 faction_reward_arcanum
+  The Ancestor's Knucklebone
+  The Loaded Die
+  The Battle Standard of the Nameless King
+  The Borderlands Tracking Cord
+  The Cracked Lens of Kartan
+  The Broken Verdict
+  The Hollow Contract
+  The Bell of the Three Sisters
+  The Theater of Whispers Setlist
+  Mud from the Revlend Marshes
+  The Pain Teacher's Wrappings
   The Forgotten Key
 
 // ---------- CURATED CARDS ----------
@@ -327,7 +339,8 @@ curated_arcanum() =>
 // HERO CARD EDIT: in your hero function, swap this line
 //   let arc = d(6) <= 4 ? "the " + cls + " class arcanum" : other_arcanum.evaluateItem;
 // for
-//   let arc = d(6) <= 4 ? class_arcanum_name()[cls] : other_arcanum.evaluateItem;
+//   let arc = other_arcanum.evaluateItem;
+// (class arcana are faction rewards now, not rolled at hero creation)
 // and swap this line
 //   b += "<p><b>Arcanum:</b> " + arc + ", unexamined.</p>";
 // for

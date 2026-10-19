@@ -13,7 +13,7 @@ cards = [c for c in json.loads((ROOT / "data/sejr_arcana.json").read_text()) if 
 orig = (ROOT / "sources/sejr_arcana_perchance_original.txt").read_text()
 found = [c for c in cards if c["kind"] == "found"]
 draw = [c for c in found if c.get("pool", "draw") == "draw"]
-reward = [c for c in found if c.get("pool") == "faction_reward"]
+reward = [c for c in cards if c.get("pool") == "faction_reward"]
 klass = [c for c in cards if c["kind"] == "class"]
 
 
@@ -38,7 +38,8 @@ head = """// ==========================================
 other_arcanum
 """ + "\n".join("  " + c["name"] for c in draw) + """
 
-// Faction rewards: never rolled at chargen. The GM hands these out in play.
+// Faction rewards: never rolled at hero creation. The GM hands these out in play.
+// Class arcana are here too; class_arcanum_name()[cls] finds a hero's own.
 faction_reward_arcanum
 """ + "\n".join("  " + c["name"] for c in reward) + """
 
@@ -77,8 +78,9 @@ tail = tail.replace(
     "// ==========================================\n// HERO CARD EDIT: in your hero function, swap this line\n"
     '//   let arc = d(6) <= 4 ? "the " + cls + " class arcanum" : other_arcanum.evaluateItem;\n'
     "// for\n"
-    "//   let arc = d(6) <= 4 ? class_arcanum_name()[cls] : other_arcanum.evaluateItem;\n"
+    "//   let arc = other_arcanum.evaluateItem;\n"
+    "// (class arcana are faction rewards now, not rolled at hero creation)\n"
     "// and swap this line")
 out = ROOT / "data/sejr_arcana_perchance.txt"
 out.write_text(head + tail)
-print(out, len(draw), "drawable found +", len(reward), "faction reward +", len(klass), "class cards")
+print(out, len(draw), "drawable,", len(reward), "faction rewards (incl.", len(klass), "class)")
