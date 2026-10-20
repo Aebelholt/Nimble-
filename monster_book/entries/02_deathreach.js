@@ -54,6 +54,9 @@ module.exports = [
       }
     ],
 
+    tactics: "Wants to keep the food it has already found; the heroes are rivals, not prey. Lashes at reach first and only closes to bite a held target. Fights hard and breaks off only when Bloodied, withdrawing through its bottleneck with whatever it holds.",
+    sources: "Proof of concept; 4e MM Carrion Crawler (slowed-to-stunned ratchet, stopped at Slowed and Grappled); Ammann (carrion crawlers).",
+
     designNote:
       "The carrion crawler is a moray eel, not a paralysis trap. " +
       "Its threat is geometric: it controls a crack, extends to " +
@@ -206,6 +209,9 @@ module.exports = [
       }
     ],
 
+    tactics: "Wants to finish its survey. Targets whoever blocks its route or touches its cords. Breaks off the moment it is Bloodied; it has somewhere else to be.",
+    sources: "Original to this book; no source text on hand.",
+
     designNote:
       "Distance is the far wanderer's weapon. It splits the party with teleports and " +
       "taxes their approach with stretched corridors, and the gaze converts the source " +
@@ -291,7 +297,7 @@ module.exports = [
     actions: [
       {
         name: "Filament",
-        cost: "1 Action, Range 12",
+        cost: "1 Action, Range 8",
         damage: "—",
         effect: "DEX save DC 12 or the target is Restrained by the filament. A Restrained " +
           "target can still act. Escaping takes an action and a STR save DC 12. Any ally " +
@@ -303,7 +309,8 @@ module.exports = [
         cost: "Free, start of each turn",
         damage: "—",
         effect: "Each creature Restrained by its filament is pulled 3 spaces toward the " +
-          "angler, straight up if needed. A creature cut free while off the ground falls."
+          "angler, straight up if needed. A creature cut free while off the ground falls. " +
+          "The line also breaks if its target teleports."
       },
       {
         name: "Claws",
@@ -313,13 +320,24 @@ module.exports = [
           "reeled in."
       },
       {
-        name: "Bait",
+        name: "Sniper",
         cost: "Passive",
         damage: "—",
-        effect: "Its filament drops glitter like spilled coin or drip like water. A hero " +
-          "who approaches to look is targeted with advantage."
+        effect: "While hidden, a missed Filament does not give away where it is. Its " +
+          "beaded line glitters like coin, and a hero who stops to look is targeted with " +
+          "advantage."
+      },
+      {
+        name: "Appeased",
+        cost: "Passive",
+        damage: "—",
+        effect: "Fresh meat thrown within 3 spaces of it: it lines and reels the meat " +
+          "instead, for one round per hunk."
       }
     ],
+
+    tactics: "Wants to eat without leaving its ceiling. Lines the isolated hero at the back, reels, and keeps lining. A hunk of fresh meat thrown under it buys passage. Breaks off when its line is cut twice or it is Bloodied, and it climbs out of reach.",
+    sources: "4e MM3 Cave Fisher Angler (Sniper, filament ends on a hit or teleport, baited with meat).",
 
     designNote:
       "The crawler owns corridors. The angler owns height. Its filament is a Restrain " +
@@ -405,8 +423,8 @@ module.exports = [
         name: "Tentacles",
         cost: "1 Action, Reach 2",
         damage: "2d6+6",
-        effect: "On hit: DEX save DC 13 or Grappled. It holds one creature at a time and " +
-          "can lift a Medium or smaller one."
+        effect: "On hit: the target is Slowed, and makes a DEX save DC 13 or is Grappled. " +
+          "It holds one creature at a time and can lift a Medium or smaller one."
       },
       {
         name: "Beak",
@@ -429,6 +447,9 @@ module.exports = [
         effect: "It moves up to 4 spaces without provoking Opportunity Attacks."
       }
     ],
+
+    tactics: "Wants a meal carried off to eat in peace. Targets the smallest hero it can lift, grabs, and rises. Can be bargained with by anyone who proves they are great hunters. Breaks off when Bloodied, dropping its catch from height.",
+    sources: "4e MM Grell (Elite Soldier, slowing rake); Ammann (grells).",
 
     designNote:
       "The 5e grell's tentacles paralyse. Here the beak Dazes for one turn, per the GM " +
@@ -501,51 +522,55 @@ module.exports = [
     world: "Deathreach",
     tier: "Elite",
     role: "Brute",
-    level: 4,
+    level: 3,
     name: "Ochre Jelly",
     description: "A yellow-brown slick of living acid that can pour itself flat as a " +
       "spill or heap up as tall as a man. The stone under it is polished clean. Bones are " +
       "not, and it leaves them in its wake, bleached and pitted.",
 
-    stats: { hp: 75, armor: "None", speed: "4 (climb 4)", stage: "9-10, 13+" },
+    stats: { hp: 62, armor: "None", speed: "4 (climb 4)", stage: "9-10, 13+" },
 
     actions: [
       {
         name: "Pseudopod",
         cost: "1 Action, ×2",
-        damage: "1d10+4",
+        damage: "1d8+3",
         effect: "Acid. On hit: the target is Slowed as the acid sticks to their boots."
       },
       {
         name: "Split",
-        cost: "Reaction, when hit by slashing or lightning for 6+ damage",
+        cost: "Reaction, 1/encounter, when first Bloodied",
         damage: "—",
-        effect: "If it has 10 or more HP, the jelly splits into two jellies, each with " +
-          "half its current HP, in adjacent spaces. Each new jelly acts on its own and " +
-          "can split again."
+        effect: "Unless the hit that Bloodied it also killed it, the jelly splits into two, " +
+          "each with half its current HP, in adjacent spaces. Each acts on its own turn. " +
+          "Left alone after the fight, the halves crawl back together."
       },
       {
         name: "Seep",
-        cost: "Passive",
+        cost: "Free, 1/round",
         damage: "—",
-        effect: "It moves through any gap an inch wide, under doors, through grates and " +
-          "up drains."
+        effect: "It flows 4 spaces without provoking, through any gap an inch wide: under " +
+          "doors, through grates and up drains."
       },
       {
         name: "Engulf the fallen",
         cost: "1 Action",
-        damage: "2d6+6",
+        damage: "2d6+4",
         effect: "Only against a Prone or Dying creature in or adjacent to its space. " +
           "Can't miss."
       }
     ],
 
+    tactics: "Wants to eat whatever stops moving. Flows toward the nearest warm body and stays on it. Never breaks off; once split, the halves crawl back together if left alone.",
+    sources: "4e MM Ochre Jelly (split once when first Bloodied, halves rejoin, flowing form); Ammann (oozes).",
+
     designNote:
-      "A brute that multiplies. Split turns the fighter's best swing into a second enemy, " +
-      "so the party learns fast to switch to fire, cold, blunt weapons or retreat. The " +
-      "jelly is slow and stupid and every fight against it is a lesson in damage types " +
-      "and doors. Elite HP lets it split twice into a room-filling mess. Deploy where " +
-      "it can seep in from below: drains, grates, the Lost Cisterns.",
+      "A brute that doubles at the halfway mark. The first draft split on every " +
+      "slashing hit, which buried the GM in jellies; 4e's version splits once, when " +
+      "first Bloodied, and that is the one used here. The fight has two acts: one slow " +
+      "jelly, then two that flank. The halves rejoining after the fight makes leaving " +
+      "one alive a real choice. Deploy where it can seep in from below: drains, " +
+      "grates, the Lost Cisterns.",
 
     traits: [
       "A sword hilt floats in it, the blade long dissolved.",
@@ -579,12 +604,13 @@ module.exports = [
 
     rumours: [
       { true: true,
-        text: "Don't cut it. Every cut makes two. Burn it, freeze it, or club it." },
+        text: "It only splits once, when you've hurt it bad. Be ready for two, and " +
+          "don't leave either half alive, or they'll find each other." },
       { true: true,
         text: "It can't eat stone or clay. Seal yourself in behind a mud-packed door and " +
           "it will give up." },
       { true: false,
-        text: "Salt kills jellies. Throw a sack of it and they shrivel." },
+        text: "Every cut makes two. Use clubs and fire, never a blade." },
       { true: false,
         text: "They're blind and deaf. Stand still and they flow right past you." }
     ],

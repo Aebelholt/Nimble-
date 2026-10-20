@@ -21,18 +21,20 @@ module.exports = [
           "already Dazed this round is Slowed instead."
       },
       {
-        name: "Whisper of dread",
-        cost: "Passive, Reach 2",
+        name: "Horrid link",
+        cost: "Free, 1/round, Range 10",
         damage: "—",
-        effect: "A hero who starts their turn within 2 spaces makes a WIL save DC 12 or " +
-          "is Frightened of the meenlock until the end of that turn."
+        effect: "It links its mind to one creature until the start of its next turn. The " +
+          "linked hero is Frightened of it and lives a waking nightmare of suffocation. " +
+          "Whenever the meenlock takes damage, the linked hero takes 1d6+2 psychic."
       },
       {
         name: "Shadow step",
         cost: "1 Action",
         damage: "—",
         effect: "It teleports up to 8 spaces from one patch of darkness to another. It " +
-          "cannot end in bright light."
+          "cannot end in bright light. After using this, it cannot again until it is hit " +
+          "or a round passes."
       },
       {
         name: "Drag to the burrow",
@@ -43,10 +45,17 @@ module.exports = [
       }
     ],
 
+    tactics: "Wants a victim to take back to the burrow and remake. Links to one hero, Dazes them and drags them toward the dark, while the others whisper from shadow. Breaks off when the light is too bright to step through, and trails the party for days after.",
+    sources: "4e MM3 Meenlock Stalker (Dimension Step, Horrid Link, meenlock corruption).",
+
     designNote:
       "In 5e meenlock claws paralyse and their victims are carried off to be remade. " +
-      "Here the claws Daze for one turn, the fear makes heroes slower toward the source, " +
-      "and pairs of meenlocks drag Dazed or Frightened targets toward the dark. Light " +
+      "Here the claws Daze for one turn, and pairs of meenlocks drag Dazed or " +
+      "Frightened targets toward the dark. Horrid link comes from 4e's meenlock " +
+      "stalker: hurting the meenlock hurts your friend, so the party has to decide " +
+      "whether to swing anyway. Nobody loses a turn; everyone loses a little nerve. " +
+      "Its victims return to the burrow on their own and turn; burning the meenlock " +
+      "that marked them breaks it. Light " +
       "is the counterplay: in bright light a meenlock cannot shadow step, and a party " +
       "that tends its torches turns a horror hunt into a fair fight. Korax's twilight " +
       "under the red star gives them plenty of shadow.",
@@ -89,7 +98,8 @@ module.exports = [
         text: "They hunt in twos and threes. One alone will whisper but will not drag " +
           "you off." },
       { true: false,
-        text: "If one touches you, you are already turning. Nothing can be done." },
+        text: "If one touches you, you are already turning. Nothing can be done, and " +
+          "nothing will bring you back." },
       { true: false,
         text: "Meenlocks are scared of iron. Wear a horseshoe and they keep away." }
     ],
@@ -136,6 +146,13 @@ module.exports = [
           "are Blind until they relight one (1 Action each)."
       },
       {
+        name: "Dark step",
+        cost: "Free, 1/round",
+        damage: "—",
+        effect: "It moves 4 spaces without provoking. If it ends adjacent to an enemy, " +
+          "its next Stolen blade against them has advantage."
+      },
+      {
         name: "Lift",
         cost: "1 Action, adjacent",
         damage: "—",
@@ -152,10 +169,13 @@ module.exports = [
       }
     ],
 
+    tactics: "Wants loot, not blood. Snuffs the light, darts in, steals, darts out. Targets whoever carries the most pouches. Breaks off as soon as it has something worth fencing, or when Bloodied.",
+    sources: "4e MM Dark Creeper (Dark Step, Killing Dark).",
+
     designNote:
       "A thief, not a killer. Dark creepers turn a fight into a scramble for light and " +
-      "loot, and the party measures success by what they still have when it ends. Snuff " +
-      "and Flare inflict Blind for a turn at most. Use them in groups of three to five, " +
+      "loot, and the party measures success by what they still have when it ends. Dark step, from 4e, keeps it " +
+      "moving: in, cut, out. Snuff and Flare inflict Blind for a turn at most. Use them in groups of three to five, " +
       "fast and annoying, with one big creeper leading. They are the Black Hand of the " +
       "Red Deeps, and they sell what they take.",
 
@@ -238,12 +258,25 @@ module.exports = [
           "swarm is Bloodied."
       },
       {
-        name: "Mind leash",
-        cost: "1 Action, 1/round",
+        name: "Gnawing tide",
+        cost: "Passive",
         damage: "—",
-        effect: "One creature in the swarm's space makes a WIL save DC 12. Failure: on " +
-          "their next turn the swarm chooses where they spend their movement. They " +
-          "choose their own actions."
+        effect: "A creature that starts its turn in or adjacent to the swarm takes 1d6 " +
+          "poison."
+      },
+      {
+        name: "Mind leash",
+        cost: "1 Action, 1/round, only while an adult neogi is within 12 spaces",
+        damage: "—",
+        effect: "The swarm relays the adult's will. One creature in its space makes a WIL " +
+          "save DC 12. Failure: on their next turn the swarm chooses where they spend " +
+          "their movement. They choose their own actions."
+      },
+      {
+        name: "Death scream",
+        cost: "Passive, on death",
+        damage: "—",
+        effect: "Every creature within 2 spaces makes a WIL save DC 12 or is Slowed."
       },
       {
         name: "Swarm",
@@ -254,9 +287,14 @@ module.exports = [
       }
     ],
 
+    tactics: "Wants flesh, any flesh, now. Pours over the nearest creature and stays there. Under an adult neogi's eye it herds prey instead. Never breaks off on its own; it scatters only when its adult falls.",
+    sources: "4e MM2 Neogi Spawn Swarm (swarm aura, psychic scream on death).",
+
     designNote:
-      "Neogi enslave minds. Their hatchlings are too small to dominate, so the leash " +
-      "steers a hero's feet but never their hands: walk into the pit, off the ledge, " +
+      "4e's neogi spawn are hungry slugs with small brains: a poison aura and a " +
+      "psychic scream when they die. That is the base here. The leash only works with " +
+      "an adult neogi nearby, which makes the adult the real target. When it works, " +
+      "it steers a hero's feet but never their hands: walk into the pit, off the ledge, " +
       "toward the adult neogi, while still swinging and casting. That keeps agency " +
       "while making position the battlefield. AoE is the answer, which gives Mages and " +
       "anyone with oil a reason to shine.",

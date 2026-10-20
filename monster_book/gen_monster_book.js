@@ -120,7 +120,9 @@ const actionLine = (a) => {
 function bodyTable(d) {
   const p = pal(d.world);
   const kids = [statTable(d.stats, d.world), sectionTitle("Actions", d.world), ...d.actions.map(actionLine)];
+  kids.push(para([run("In play. ", { bold: true }), run(d.tactics)], { spacing: { before: 120, after: 40 } }));
   kids.push(designNote(d.designNote));
+  if (d.sources) kids.push(para(run("Sources: " + d.sources, { size: 16, color: "707070" }), { spacing: { before: 60, after: 0 } }));
   return new Table({
     width: { size: TEXT_W, type: WidthType.DXA },
     columnWidths: [TEXT_W],
@@ -212,7 +214,7 @@ const BANNED_TEXT = [
 function lint(d) {
   const errs = [];
   const need = (cond, msg) => { if (!cond) errs.push(msg); };
-  ["world", "tier", "role", "name", "level", "description", "stats", "actions", "designNote",
+  ["world", "tier", "role", "name", "level", "description", "stats", "actions", "tactics", "designNote",
     "traits", "encounters", "lairs", "rumours", "gigFit"].forEach((k) => need(d[k] !== undefined, `missing ${k}`));
   if (errs.length) return errs;
   need(WORLDS[d.world], `unknown world ${d.world}`);
@@ -224,7 +226,7 @@ function lint(d) {
   need(d.rumours.filter((r) => r.true).length === 2, "rumours: want 2 true, 2 false");
   d.gigFit.verb.split("/").map((v) => v.trim()).forEach((v) => need(VERBS.includes(v), `verb "${v}" not in gig table`));
   ["hp", "armor", "speed", "stage"].forEach((k) => need(d.stats[k] !== undefined, `stats.${k} missing`));
-  const playerFacing = d.actions.map((a) => `${a.name} ${a.cost} ${a.damage} ${a.effect}`).join("\n");
+  const playerFacing = [...d.actions.map((a) => `${a.name} ${a.cost} ${a.damage} ${a.effect}`), d.tactics].join("\n");
   const m = playerFacing.match(BANNED_CONDITIONS);
   need(!m, `turn-removing condition in actions: ${m && m[0]}`);
   // "—" is the spec's placeholder for an action with no damage roll.

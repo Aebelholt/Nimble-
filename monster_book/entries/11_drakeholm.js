@@ -16,41 +16,50 @@ module.exports = [
         name: "Bite",
         cost: "1 Action",
         damage: "2d8+8",
-        effect: "Cold."
+        effect: "Cold. The target is Restrained, frozen to the ground, until the end of " +
+          "the dragon's next turn. They can still act."
       },
       {
         name: "Claws",
         cost: "1 Action",
         damage: "1d8+6",
-        effect: "On hit: STR save DC 13 or Prone."
+        effect: "On hit: the dragon slides the target 2 spaces."
       },
       {
-        name: "Blizzard breath",
-        cost: "2 Actions, 1/encounter",
-        damage: "4d8",
-        effect: "Cold, cone 6. STR save DC 13 for half. On a failure, the target is also " +
-          "Slowed and pushed 3 spaces."
-      },
-      {
-        name: "Whiteout",
-        cost: "Free, 1/round",
+        name: "Freezing winds",
+        cost: "Passive, aura 1",
         damage: "—",
-        effect: "A sphere of blinding snow, 3-space radius, within 12 spaces. Creatures " +
-          "inside are Blind beyond 1 space. The whiteout moves each round."
+        effect: "The dragon slides any enemy that ends its turn in the aura 1 space."
       },
       {
-        name: "Second wind",
+        name: "Rising winds",
+        cost: "1 Action, when the aura is 1",
+        damage: "4d8",
+        effect: "Telegraphed. The aura grows to 3 now, and to 5 at the start of its next " +
+          "turn. At the start of the turn after that, everyone in the aura makes a STR " +
+          "save DC 13: cold damage, half on a success; on a failure also Slowed and " +
+          "Blind beyond 1 space until the end of their next turn. The aura drops back " +
+          "to 1."
+      },
+      {
+        name: "Take wing",
         cost: "Passive, when first Bloodied",
         damage: "—",
-        effect: "It takes to the air and its breath recharges."
+        effect: "It flies up out of reach, and Rising winds is ready again."
       }
     ],
 
+    tactics: "Wants to stay out of the war and keep its valleys fed. Slides heroes to the cliff edge, then winds up its storm. Breaks off into the sky when Bloodied, then comes back with the storm ready.",
+    sources: "4e MM3 Young Blizzard Dragon (Freezing Winds aura, Rising Winds).",
+
     designNote:
-      "An Elite controller. The whiteout splits the party, the breath Slows and pushes, " +
-      "and the claws knock heroes Prone. None of it takes a turn away. Second wind " +
+      "An Elite controller built on 4e's young blizzard dragon. Its big attack is " +
+      "telegraphed over two turns: the wind visibly builds, and the heroes decide " +
+      "whether to run, hide behind something, or pile on damage before it lands. That " +
+      "is the same idea as MCDM's villain actions, and it keeps every turn the heroes' " +
+      "own. The slides on its claws and aura walk heroes toward cliff edges. Take wing " +
       "gives the fight two acts: on the ground, and then in the air. Fight it in the " +
-      "mountains, where the snow helps it, and on cliff edges, where the breath's push " +
+      "mountains, where the snow helps it, and on cliff edges, where every slide " +
       "is a fall.",
 
     traits: [
@@ -88,7 +97,8 @@ module.exports = [
 
     rumours: [
       { true: true,
-        text: "Its storm moves. Keep moving and you'll find clear air." },
+        text: "When the wind starts rising around it, you've two breaths. Get out or " +
+          "get behind rock." },
       { true: true,
         text: "When it's hurt, it flies. Have bows ready." },
       { true: false,
@@ -118,18 +128,20 @@ module.exports = [
     role: "Controller",
     level: 5,
     name: "Drakkoth Faterager",
-    description: "A dragonborn warrior in battered scale armour, a greataxe in both " +
-      "hands and a bandage over one eye. They follow a fate they read in the bones of " +
-      "the dead and they believe it says they cannot die today.",
+    description: "A dracotaur: the body of a four-legged drake, and a scaled torso " +
+      "rising where a drake's neck would be, a battleaxe in both hands and a bandage " +
+      "over one eye. It reads its fate in dragon bones and believes they say it " +
+      "cannot die today.",
 
-    stats: { hp: 49, armor: "Medium", speed: "6", stage: "13+" },
+    stats: { hp: 49, armor: "Medium", speed: "7", stage: "13+" },
 
     actions: [
       {
-        name: "Greataxe",
+        name: "Battleaxe",
         cost: "1 Action, ×2",
         damage: "1d10+5",
-        effect: "Slashing."
+        effect: "Slashing. While Bloodied, it may instead swing at every adjacent enemy " +
+          "with one roll (Raging cleave)."
       },
       {
         name: "Name the doomed",
@@ -146,24 +158,30 @@ module.exports = [
           "lower result."
       },
       {
-        name: "Lightning breath",
-        cost: "2 Actions, 1/encounter",
+        name: "Venomous hiss",
+        cost: "1 Action, recharges when first Bloodied",
         damage: "3d6+4",
-        effect: "Lightning, 6-space line. DEX save DC 13 for half."
+        effect: "Poison, cone 2. DEX save DC 13 for half. On a failure, the target is " +
+          "also Poisoned until the end of its next turn."
       },
       {
         name: "Fate rage",
         cost: "Passive",
         damage: "—",
-        effect: "While Bloodied, it gains +2 Speed and its Greataxe deals +4 damage."
+        effect: "While Bloodied, its Battleaxe deals +4 damage, and once per round it " +
+          "heals 5 HP when it hits."
       }
     ],
 
+    tactics: "Wants to prove its bones right. Names one hero and fights only them until one of them falls. Never breaks off from its named foe.",
+    sources: "4e MM2 drakkoth (dracotaur form, Raging Cleave, Venomous Hiss, Drakkoth Rage).",
+
     designNote:
-      "A controller in a berserker's body. The faterager picks one hero at the start " +
+      "Drakkoths are 4e's dracotaurs, not dragonborn; the first draft got the body " +
+      "wrong. A controller in a berserker's body. The faterager picks one hero at the start " +
       "of the fight and pins them as its opponent with Taunt. Twist fate makes every " +
       "save near it a gamble. Its rage turns it into a brute when Bloodied. Use it to " +
-      "lead a squad of dragonborn soldiers or as a duellist.",
+      "lead a drakkoth warband or as a lone duellist.",
 
     traits: [
       "Its armour is painted with a rune for every foe it named and killed. There " +
@@ -177,9 +195,9 @@ module.exports = [
     ],
 
     encounters: [
-      "A faterager walks into the Black Goat, casts its bones on a hero's table, " +
+      "A faterager shoulders into the Black Goat, hooves on the floorboards, casts its bones on a hero's table, " +
         "speaks their name, and goes outside to wait.",
-      "A faterager and six dragonborn hold the only bridge across a chasm. It will let " +
+      "A faterager and six drakkoth outriders hold the only bridge across a chasm. It will let " +
         "the party pass if one of them fights it alone.",
       "Two fateragers from opposite armies duel over the body of a young dragon. " +
         "Each one's bones said the other would lose.",
@@ -194,7 +212,7 @@ module.exports = [
         "mat, an axe stone, and a wall of tokens from the named.",
       "A battlefield of the endless war where the dead were never buried. The " +
         "faterager reads them, walking slowly, one each morning.",
-      "A rented room above the Rusty Cutlass, paid a month ahead, with a hero's name " +
+      "A stable behind the Rusty Cutlass, rented as lodging and paid a month ahead, with a hero's name " +
         "cut into the doorframe."
     ],
 

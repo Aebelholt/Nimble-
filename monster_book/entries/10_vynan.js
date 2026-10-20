@@ -35,6 +35,9 @@ module.exports = [
       }
     ],
 
+    tactics: "Wants to frighten its dreamer's fears into the world. Targets whoever moves toward the dreamer. Ends the moment the dreamer wakes.",
+    sources: "Original to this book; no source text on hand.",
+
     designNote:
       "A nightmare with a plug. The feyr is a straightforward fear controller until " +
       "the party realises it has a dreamer, and then the fight becomes a race to find " +
@@ -142,6 +145,9 @@ module.exports = [
           "against the alchemist have disadvantage."
       }
     ],
+
+    tactics: "Wants the Yondoth to fly. Splits the party with mud and glass and fights only to save its notes. Breaks off when Bloodied and will trade instead.",
+    sources: "Original to this book, reskinned from the drow deepmage; no source text on hand.",
 
     designNote:
       "A reskin of the drow deepmage as a Vynan survivor. Its tools are terrain and " +

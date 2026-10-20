@@ -41,6 +41,9 @@ module.exports = [
       }
     ],
 
+    tactics: "Wants to keep watch for a master who left. Frightens first, burns second, and fixes on whoever hurt it last. Never breaks off; it shuts, then opens again.",
+    sources: "Original to this book; no source text on hand.",
+
     designNote:
       "The 5e eye of fear and flame frightens to paralysis. Here fear steps up to " +
       "Dazed on a second ray, never further. Grudge makes it predictable: whoever hit " +
@@ -143,6 +146,9 @@ module.exports = [
       }
     ],
 
+    tactics: "Wants heat and food. Webs the nearest hero from hiding and bites whoever tries to cut them free. Breaks off once it molts.",
+    sources: "Original to this book; no source text on hand.",
+
     designNote:
       "A lurker that hides in heat and binds prey in burning silk. The web is " +
       "Restrained with a ticking fire cost, so the trapped hero still acts and the " +
@@ -227,6 +233,12 @@ module.exports = [
         effect: "Fire, cone 3. DEX save DC 13 for half."
       },
       {
+        name: "Fire shield",
+        cost: "Passive",
+        damage: "—",
+        effect: "A creature that starts its turn adjacent to it takes 1d6 fire."
+      },
+      {
         name: "Pack tactics",
         cost: "Passive",
         damage: "—",
@@ -240,6 +252,9 @@ module.exports = [
           "distance, even through an arch."
       }
     ],
+
+    tactics: "Wants to run its quarry down. Bites the lone hero, breathes when two stand close, and harries anyone who runs. A trained pack retreats only with its handler; a feral one breaks off when half the pack is down.",
+    sources: "4e MM Hell Hound (Fire Shield aura); Ammann (hell hounds).",
 
     designNote:
       "A straight brute with knockback. The bite throws heroes across the field, which " +

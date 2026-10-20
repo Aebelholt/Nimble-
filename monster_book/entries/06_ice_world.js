@@ -34,6 +34,14 @@ module.exports = [
           "ally can dig them out with an action."
       },
       {
+        name: "Carry off",
+        cost: "1 Action",
+        damage: "—",
+        effect: "Against a Frightened, Prone or Dazed creature of Medium size or smaller: " +
+          "STR save DC 13 or the yeti Grapples them and moves its full Speed. It does not " +
+          "come back to finish the fight."
+      },
+      {
         name: "Snow camouflage",
         cost: "Passive",
         damage: "—",
@@ -42,10 +50,15 @@ module.exports = [
       }
     ],
 
+    tactics: "Wants a meal, not a fight. Picks off the small, the slow and the stragglers from hiding, then carries one off. Breaks off as soon as it has a victim in its arms, or when Bloodied.",
+    sources: "4e MM3 Yeti Howler (Chilling Wail aura); Ammann (yetis).",
+
     designNote:
       "The 5e yeti's gaze can freeze a creature in place. Here the howl Frightens and " +
       "Slows: heroes still act, but approaching costs more and the fear is a tax on " +
-      "every roll. The slope is the encounter. On flat ice the yeti is a strong beast. " +
+      "every roll. Carry off follows Ammann's " +
+      "reading of the yeti: a predator that grabs a meal and leaves. The fight's real " +
+      "question is whether the party can catch it in the snow. The slope is the encounter. On flat ice the yeti is a strong beast. " +
       "On a hillside, with the snow above, it is a weather event. Put a trail " +
       "below a ridge and let it howl.",
 
@@ -145,6 +158,9 @@ module.exports = [
           "start of its turn while standing on snow. Fire deals double damage."
       }
     ],
+
+    tactics: "Wants to keep doing what a child once told it to. Targets whatever comes closest to its charge. Never breaks off while it stands on snow.",
+    sources: "Original to this book; no source text on hand.",
 
     designNote:
       "A slow controller that makes the ground work for it. The frost field turns the " +
@@ -251,6 +267,9 @@ module.exports = [
           "through: 2d6+4 cold and pushed 2 spaces."
       }
     ],
+
+    tactics: "Wants to finish walking. Targets only what stands in its path or touches its lantern. Never breaks off and never turns aside.",
+    sources: "Original to this book; no source text on hand.",
 
     designNote:
       "The 5e coldlight walker blinds with its light. Here Blind lasts a turn and the " +

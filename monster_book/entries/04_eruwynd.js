@@ -41,6 +41,9 @@ module.exports = [
       }
     ],
 
+    tactics: "Wants to hold its post for a knight who is not there. Targets whoever moves toward what it guards. Never breaks off while the dream holds.",
+    sources: "Original to this book; no source text on hand.",
+
     designNote:
       "Dream squires are defenders run as controllers. Drowse ratchets: one failed save " +
       "Slows, a second Dazes, never more than one action lost. Stand for the knight " +
@@ -149,6 +152,9 @@ module.exports = [
       }
     ],
 
+    tactics: "Wants blood, and to be paid in it. Claws one hero, then pulls that hero to her through the thorns, again and again. Bargains before she fights. Breaks off when Bloodied with no blood left to call, vanishing into the thicket.",
+    sources: "Original to this book; no source text on hand.",
+
     designNote:
       "The red hag reels heroes in by blood. Once her claws land, she can pull that " +
       "hero toward her across the field, through her brambles, or away from the party. " +
@@ -241,6 +247,13 @@ module.exports = [
           "after reappearing has advantage."
       },
       {
+        name: "Ethereal repulsion",
+        cost: "Reaction, when an enemy moves adjacent to it",
+        damage: "—",
+        effect: "WIL save DC 13 or the spider teleports that enemy 4 spaces to a space it " +
+          "can see."
+      },
+      {
         name: "Pull through",
         cost: "1 Action, 1/encounter, Poisoned target in Reach",
         damage: "—",
@@ -250,11 +263,15 @@ module.exports = [
       }
     ],
 
+    tactics: "Wants an easy kill from behind. Blinks in on the biggest hero, not the weakest, and blinks away. Breaks off when Bloodied; it simply stops coming back.",
+    sources: "4e MM2 Phase Spider (Ethereal Repulsion); Ammann (phase spiders).",
+
     designNote:
       "In 5e the bite can leave a creature paralysed. Here it Poisons, so every roll " +
       "is harder but the hero still acts. The spider's real trick is position: it " +
       "vanishes, reappears behind the backline, and once per fight carries a hero off " +
-      "into the fog for a private duel. Use it in open forest or wide halls where the " +
+      "into the fog for a private duel. Ethereal repulsion, from 4e, punishes the hero " +
+      "who charges it: they arrive and are somewhere else. Use it in open forest or wide halls where the " +
       "8-space hop matters. In a corridor, where it can only appear in front or behind, " +
       "it is predictable.",
 

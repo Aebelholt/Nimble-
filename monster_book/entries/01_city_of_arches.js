@@ -21,18 +21,18 @@ module.exports = [
           "DC 12 to be sure. A wrong accusation in a crowd starts a fight with the crowd."
       },
       {
-        name: "First cut",
-        cost: "1 Action",
-        damage: "2d8+4",
-        effect: "Only against a creature that does not yet know what the sneak is. After " +
-          "this the sneak drops the face and uses Knife."
+        name: "Shapeshifter feint",
+        cost: "Free, 1/round",
+        damage: "—",
+        effect: "Its face slips into someone the target trusts for a heartbeat. The target " +
+          "makes a WIL save DC 12 or the sneak has advantage on its next Knife against them."
       },
       {
         name: "Knife",
         cost: "1 Action, ×2",
         damage: "1d8+2",
-        effect: "Advantage against a target adjacent to someone the sneak was copying " +
-          "this scene: it knows which side they guard."
+        effect: "+1d6 damage when it has advantage. Its first Knife against a creature " +
+          "that does not yet know what it is always has advantage."
       },
       {
         name: "Swap",
@@ -51,10 +51,14 @@ module.exports = [
       }
     ],
 
+    tactics: "Wants to never fight at all. If it must, it strikes first, from a borrowed face, at the hero most suspicious of it, not the most dangerous one. Breaks off when exposed with no crowd within reach, or when Bloodied.",
+    sources: "4e MM Doppelganger Sneak (Shapeshifter Feint); Ammann, The Monsters Know What They're Doing (doppelgangers).",
+
     designNote:
       "The sneak is a social lurker. Its armor is the crowd. It does little in an empty " +
       "alley and is a nightmare at the Market Square festival, where every face is a " +
-      "possible target and every bystander is a shield. Swap makes the party pay for " +
+      "possible target and every bystander is a shield. The feint, lifted from 4e's " +
+      "doppelganger sneak, sets up every knife. Swap makes the party pay for " +
       "swinging wildly, and Vanish turns a lost fight into a manhunt instead of a " +
       "corpse. Give the heroes a tell for this individual (roll on Traits) and let " +
       "Examination find it. Run it once as a duel of attention before it becomes a " +
@@ -175,15 +179,26 @@ module.exports = [
         damage: "—",
         effect: "Destroyed, it re-forms in an hour unless its fragments are doused in holy " +
           "water, sealed in lead, or buried in the tomb it was meant to guard."
+      },
+      {
+        name: "Regeneration",
+        cost: "Passive",
+        damage: "—",
+        effect: "It heals 5 HP at the start of its turn, unless it took radiant damage " +
+          "since its last turn."
       }
     ],
+
+    tactics: "Wants to keep its post; it has no fear for itself and fights until destroyed. Targets Shepherds, Oathsworn and Mages first: the ones who can lay it to rest or outshoot it. Never breaks off, and is back in an hour.",
+    sources: "4e MM Flameskull (Regeneration); Ammann (flameskulls).",
 
     designNote:
       "Artillery that refuses melee. The flameskull's whole game is staying out of reach, " +
       "so the terrain decides the fight: tall tombs and open ruins make it miserable, low " +
       "crypts and narrow stairs make it a skull in a box. Rise is the key ability. Give " +
       "the heroes a ceiling, a net, a bucket or a door, and reward them for using it. " +
-      "Rejuvenation turns the kill into a Bury gig: the fight is over, the job is not.",
+      "Regeneration gives Shepherds and " +
+      "Oathsworn a job: radiant shuts it off. Rejuvenation turns the kill into a Bury gig: the fight is over, the job is not.",
 
     traits: [
       "Its fire burns the green of old copper and smells of hot pennies.",
@@ -252,21 +267,21 @@ module.exports = [
     world: "City of Arches",
     tier: "Standard",
     role: "Lurker",
-    level: 3,
+    level: 4,
     name: "Cavern Choker",
     description: "A knot of grey limbs the size of a child, boneless as a rope, with " +
       "spiny hands on arms twice its body length. It folds itself into drainpipes and " +
       "breathes through its skin, so it never makes a sound.",
 
-    stats: { hp: 27, armor: "Medium", speed: "4 (climb 6)", stage: "7-10" },
+    stats: { hp: 37, armor: "Medium", speed: "4 (climb 6)", stage: "7-10" },
 
     actions: [
       {
         name: "Throat grab",
         cost: "1 Action, Reach 3",
-        damage: "1d8+4",
-        effect: "On hit: the target is Grappled (escape DC 12) and Silenced while the " +
-          "grapple holds. The choker holds one creature at a time."
+        damage: "1d8+5",
+        effect: "On hit: the target is Grappled and Silenced while the grapple holds. " +
+          "Escape saves against it have disadvantage. It holds one creature at a time."
       },
       {
         name: "Hoist",
@@ -279,8 +294,15 @@ module.exports = [
       {
         name: "Squeeze",
         cost: "1 Action, Grappled target only",
-        damage: "1d6+6",
+        damage: "1d6+8",
         effect: "Can't miss. Crits on a max Primary Die as normal."
+      },
+      {
+        name: "Body shield",
+        cost: "Reaction, recharges when Throat grab or Squeeze hits",
+        damage: "—",
+        effect: "When attacked, the choker swings its held victim into the way. The attack " +
+          "targets the victim instead."
       },
       {
         name: "Pipe run",
@@ -291,12 +313,16 @@ module.exports = [
       }
     ],
 
+    tactics: "Wants one meal, taken quietly. Targets whoever is speaking or casting, then whoever comes to help. Breaks off into the pipes when Bloodied, dropping its catch if it must.",
+    sources: "4e MM Cavern Choker (Body Shield).",
+
     designNote:
       "The choker is the crawler's little cousin with a different geometry. Where the " +
       "crawler drags you through a bottleneck, the choker lifts you out of the fight: " +
       "Silenced and hoisted, the hero is still acting, but a Mage can't cast and the " +
-      "party has to climb, throw or shoot to help. It goes for spellcasters and " +
-      "Songweavers first. Deploy it in sewers, cistern walkways, and any room with " +
+      "party has to climb, throw or shoot to help. Body shield, from 4e's cavern " +
+      "choker, makes the rescue awkward: hit the choker and you may hit your friend. " +
+      "It goes for spellcasters and Songweavers first. Deploy it in sewers, cistern walkways, and any room with " +
       "grates in the ceiling. In a room with no openings it has nowhere to run and dies.",
 
     traits: [

@@ -40,6 +40,9 @@ module.exports = [
       }
     ],
 
+    tactics: "Wants to tear apart what its star hates. Leaps on whoever stands on the narrowest footing and throws them. Never breaks off while its star is in the sky.",
+    sources: "4e MM2 star spawn lore (baleful stars); mechanics original.",
+
     designNote:
       "A melee controller. Its push-pull on every hit means a mangler fight is a fight " +
       "over where you stand, and the static shuts off Reactions and weakens " +
@@ -144,6 +147,9 @@ module.exports = [
       }
     ],
 
+    tactics: "Wants the void to stop hurting, and cannot make it stop. Targets whoever is closest, because closest is loudest. Breaks off only by dying, and that hurts everyone.",
+    sources: "Original to this book; no source text on hand.",
+
     designNote:
       "A glass cannon controller. It has the HP of a lower-level monster and the damage " +
       "of a level higher, and it hurts everyone near it, including itself, every time " +
@@ -208,97 +214,107 @@ module.exports = [
 
   {
     world: "Terrache",
-    tier: "Minion",
+    tier: "Standard",
     role: "Lurker",
-    level: 1,
+    level: 5,
     name: "Slaad Tadpole",
-    description: "A slick, finger-long tadpole with a mouth full of needle teeth and " +
-      "bulging eyes that glow faintly red. They swim in shoals in the warm volcanic " +
-      "pools of Terrache, and slaadi lay them in living hosts.",
+    description: "A slick, dog-sized tadpole with a mouth full of needle teeth and " +
+      "bulging eyes that glow faintly red. It came out of someone's skull a few days " +
+      "ago. In a few more it will be a slaad.",
 
-    stats: { hp: "Minion", armor: "None", speed: "4 (swim 6)", stage: "13+" },
+    stats: { hp: 49, armor: "None", speed: "6 (swim 8)", stage: "13+" },
 
     actions: [
       {
         name: "Bite",
         cost: "1 Action",
-        damage: "1d6+1",
-        effect: "Can't crit. Advantage against a Prone or Grappled target."
+        damage: "2d8+6",
+        effect: "After biting it slips half out of the world: until the start of its next " +
+          "turn, attacks against it have disadvantage."
       },
       {
-        name: "Burrow",
-        cost: "Free, after a Bite hits a Prone or Grappled target",
+        name: "Chaos shift",
+        cost: "Reaction, when attacked in melee",
         damage: "—",
-        effect: "The tadpole vanishes into the wound. The host feels nothing yet. Start " +
-          "a 4-segment clock: one tick each rest. At 4, a slaad bursts free. A cure " +
-          "needs a Lore check DC 14 and a priest, an alchemist or a Mage of Kartan."
+        effect: "It moves 2 spaces without provoking before the attack is rolled. If that " +
+          "takes it out of reach, the attack misses."
       },
       {
-        name: "Slither",
+        name: "Grow",
         cost: "Passive",
         damage: "—",
-        effect: "It can move through other creatures' spaces."
+        effect: "It becomes an adult slaad 1d4+3 days after it emerged. Every day it " +
+          "eats well, take one day off."
       }
     ],
 
+    tactics: "Wants to grow up. Fresh from its host, it hides, feeds on anything small, " +
+      "and bites only what corners it. Breaks off at once if it can, every time.",
+    sources: "4e MM Slaad Tadpole (Lurker, Chaos Shift, insubstantial after a bite); " +
+      "Ammann, The Monsters Know What They're Doing (slaadi).",
+
     designNote:
-      "A minion with a long tail. Tadpoles die to any hit, but one that gets into a " +
-      "wound starts a clock instead of an immediate effect. The hero keeps playing; " +
-      "the party gets a new gig. Use shoals of 4 to 6 in warm pools, with something " +
-      "bigger in the water to knock heroes Prone.",
+      "The first draft made tadpoles minions that burrowed into heroes. That was " +
+      "backwards: adult slaadi plant the embryos, and a tadpole is what bursts out of " +
+      "the host's skull. Rebuilt from 4e as a slippery lurker, it is hard to pin down " +
+      "and keeps running. The real job is the clock: find it before it grows. The host " +
+      "story belongs to the encounters, not the stat block.",
 
     traits: [
-      "The shoal moves as one, like a cloud of red sparks.",
-      "This tadpole is twice the size of the others and leads them.",
-      "Their skin shimmers with every colour, like oil on water.",
-      "They chirp like crickets when they swarm.",
-      "Their eyes glow brighter as they get closer to prey.",
-      "One of them has a tiny Violet Eye sigil scratched into its skin."
+      "A strip of its host's scalp still clings to its back, hair and all.",
+      "It chirps like a cricket, faster when it is hungry.",
+      "Its skin shimmers every colour, like oil on water.",
+      "It is already growing claws. Two days, maybe less.",
+      "It drags a silver earring on a thread of skin. The host's.",
+      "One of its eyes is a human eye, brown and frightened."
     ],
 
     encounters: [
-      "A warm volcanic pool, the first clean water in days. Under the steam, the " +
-        "pool is thick with red sparks.",
-      "A shadow elf soldier staggers out of a cave clutching his belly, begging for " +
-        "a priest. He has two days left and knows it.",
-      "A Violet Eye warlock keeps tadpoles in a glass tank and is looking for a " +
-        "volunteer. The pay is very good.",
-      "A Terrache traveller came through an arch with a bandaged wound and has been " +
-        "soaking at the Public Baths for three days. The water in that pool is warm."
+      "A warm volcanic pool, the first clean water in days. Under the steam, " +
+        "something dog-sized turns over and looks at the party.",
+      "A shadow elf soldier staggers out of a cave clutching his head, begging for a " +
+        "priest. He has two days left, and he knows what will come out.",
+      "A Violet Eye warlock keeps tadpoles in a glass tank, each one labelled with " +
+        "its host's name. One label is in a hero's handwriting.",
+      "A Terrache traveller came through an arch complaining of headaches and has " +
+        "not been seen at the Public Baths since Tuesday. The drain in the warm pool " +
+        "is chewed open."
     ],
 
     lairs: [
-      "A steaming volcanic pool with egg-strings along the rim like beaded necklaces.",
-      "A slaad nest in a cave, littered with burst ribcages, all opened from inside.",
-      "A Violet Eye laboratory with tanks of tadpoles, each labelled with a name, and " +
-        "a chalkboard of days remaining.",
-      "A shadow elf barracks where every bed is empty, every blanket torn from " +
-        "underneath, and one cot still warm."
+      "A steaming volcanic pool with a cracked skull on the rim, the crack from " +
+        "the inside.",
+      "A slaad nest in a cave, littered with empty skulls and one tadpole too young " +
+        "to leave.",
+      "A Violet Eye laboratory with a chalkboard of hosts and days remaining, most " +
+        "crossed out.",
+      "A Lost Cisterns overflow chamber, warm from the baths above, with fish bones " +
+        "stacked by size."
     ],
 
     rumours: [
       { true: true,
-        text: "If one gets in a wound, find a cure fast. You have a few days, no more." },
+        text: "It wants to hide and grow, not fight. Corner it or it's gone." },
       { true: true,
-        text: "They're weak. Any blow kills them. The danger is the one you miss." },
+        text: "The slaad that laid it is still around. Tadpoles don't come alone." },
       { true: false,
-        text: "Drink salt water and the tadpole comes out." },
+        text: "Kill the tadpole and the host's madness lifts." },
       { true: false,
-        text: "Slaad tadpoles can't survive outside Terrache. Go through an arch and " +
-          "it dies." }
+        text: "Slaad tadpoles die outside Terrache. Through an arch they're harmless." }
     ],
 
     gigFit: {
       verb: "Find / Stop",
       butPlus:
-        "But+ Monster on any Terrache arch near water. A tadpole in a hero turns the " +
-          "next episode into a Find gig for a cure.",
+        "But+ Monster on any Terrache arch near water, or at Stages 9-10 for one that " +
+          "came through in a host. Run it as a hunt with a clock.",
       patronHook:
-        "A priest from the Temple of the Three Sisters has a patient with a slaad " +
-          "tadpole inside them. The cure is in Terrache.",
+        "A priest from the Temple of the Three Sisters has a patient with the slaad " +
+          "embryo in them and three days left. The cure is in Terrache. So, probably, " +
+          "is the slaad that planted it.",
       cityName:
-        "\"Gut-guests\": Public Baths attendants' name for anything that comes out of " +
-          "a traveller that shouldn't."
+        "\"Headaches\": Public Baths attendants' word for any Terrache arrival who " +
+          "complains of one. They are told to report it."
     }
   },
 ];

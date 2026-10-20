@@ -49,6 +49,9 @@ module.exports = [
       }
     ],
 
+    tactics: "Wants knowledge, and meat second. Targets spellcasters to learn their magic, and talks before it fights. Its ghouls go first. Breaks off when Bloodied, up the wall and out of reach, to bargain later.",
+    sources: "Tales of the Valiant Monster Vault (Necrophage Ghast); Ammann (ghouls and ghasts).",
+
     designNote:
       "Rebuilt from the Tales of the Valiant Monster Vault. A necrophage rises from a " +
       "spellcaster, hungers for magic as much as meat, and cannot pass on ghoul " +
@@ -136,7 +139,8 @@ module.exports = [
         name: "Bite",
         cost: "1 Action",
         damage: "1d10+6",
-        effect: "On hit, it may spend a venom dose (3 per encounter). The target makes a " +
+        effect: "On hit, it may spend a venom dose (3 per encounter, unlimited inside its " +
+          "guarded room). The target makes a " +
           "STR save DC 12 or suffers one of: Poisoned, Slowed, or Dazed on their next " +
           "turn. The cobra picks."
       },
@@ -161,9 +165,13 @@ module.exports = [
       }
     ],
 
+    tactics: "Wants intruders out of its temple. Strikes whoever crossed the threshold last, then slithers back. Inside its guarded room its venom never runs dry. Never breaks off inside the temple; never chases past the door.",
+    sources: "4e MM Iron Cobra (Guard Area, Slithering Shift).",
+
     designNote:
       "A hit-and-run guardian with a small venom budget. Three doses per encounter " +
-      "means the GM picks when to spend them, and the heroes can count. Its paralysing " +
+      "means the GM picks when to spend them, and the heroes can count, until they " +
+      "enter the room it guards, where 4e's guard rule lifts the limit. Its paralysing " +
       "dose from 5e is now Dazed for a turn. The ward-word rewards heroes who read the " +
       "room. Put cobras in Arkus temples, among half-buried statues and long halls where " +
       "it can strike and slither back into the dark.",
@@ -260,6 +268,13 @@ module.exports = [
           "its glare's Range doubles."
       },
       {
+        name: "Maker's eye",
+        cost: "Passive",
+        damage: "—",
+        effect: "Whoever made it sees what it sees and knows the face of anyone it claws. " +
+          "If the maker is dead, it keeps the last order it was given."
+      },
+      {
         name: "Straw",
         cost: "Passive",
         damage: "—",
@@ -267,6 +282,9 @@ module.exports = [
           "creatures at the start of its turn."
       }
     ],
+
+    tactics: "Wants to keep its last order: watch the field. Glares at anyone inside its circle and claws whoever reaches the pole. Never breaks off, and never forgets a face it has struck.",
+    sources: "4e MM3 Scarecrow (bond with its maker, keeps its last command after the maker dies).",
 
     designNote:
       "In 5e the scarecrow's glare frightens and paralyses. Here it Frightens and then " +
