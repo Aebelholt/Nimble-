@@ -1,0 +1,269 @@
+<!doctype html><meta charset='utf-8'><title>Arcana card fronts</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@500;700&family=Alegreya+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap">
+<style>
+:root { --ink: #1c2129; --muted: #5d6673; --rule: #8b8f96; --accent: #8a5a12; }
+@page { size: A4; margin: 0; }
+* { box-sizing: border-box; }
+body { margin: 0; color: var(--ink); font-family: "Alegreya Sans", "Liberation Sans", sans-serif; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+.fit { overflow: hidden; }
+
+.sheet { width: 210mm; height: 297mm; display: grid; grid-template-columns: 105mm 105mm; grid-template-rows: 148.5mm 148.5mm; page-break-after: always; position: relative; }
+.sheet::before, .sheet::after { content: ""; position: absolute; background: none; }
+.sheet::before { left: 105mm; top: 0; bottom: 0; border-left: 0.2mm dashed #c4c7cc; }
+.sheet::after { top: 148.5mm; left: 0; right: 0; border-top: 0.2mm dashed #c4c7cc; }
+.card { padding: 5mm; display: grid; grid-template-rows: 11mm 15mm 28mm 48mm 33.5mm; row-gap: 0.75mm; }
+.head { display: flex; flex-direction: column; justify-content: flex-end; border-bottom: 0.3mm solid var(--ink); padding-bottom: 1mm; }
+.name { font: 700 13pt/1.05 "Alegreya SC", Georgia, serif; }
+.tag { display: flex; justify-content: space-between; font-size: 6.5pt; color: var(--muted); letter-spacing: .04em; text-transform: uppercase; }
+.obj { font-size: 7.5pt; line-height: 1.25; font-style: italic; padding-top: 1mm; }
+.panel { display: grid; grid-template-rows: 3mm 1fr; }
+.panel b { font-size: 6pt; letter-spacing: .14em; color: var(--accent); align-self: end; }
+.box { border: 0.3mm solid var(--rule); border-radius: 1.2mm; }
+.panel.price .box { border-style: dashed; }
+</style>
+<script>
+window.fitAll = function () {
+  const bad = [];
+  document.querySelectorAll('.fit').forEach(el => {
+    let size = parseFloat(getComputedStyle(el).fontSize);
+    while (el.scrollHeight > el.clientHeight + 0.5 && size > 6.4) { size -= 0.2; el.style.fontSize = size + 'px'; }
+    if (el.scrollHeight > el.clientHeight + 0.5) bad.push(el.dataset.id);
+  });
+  return bad;
+};
+</script>
+<section class='sheet'><div class="card">
+  <div class="head"><div class="tag"><span>Minor · d20 face 1</span><span>01</span></div><div class="name">The Drowning Scale</div></div>
+  <div class="obj fit" data-id="01 object">A cold, clammy pendant on a leather cord, a single shimmering scale of unknown origin. When first worn, everyone nearby shivers. It was pulled from the water at Drowned Elvenya in the Revlend Marshes, and nobody knows what it came off.</div>
+  <div class="panel"><b>UNLOCK</b><div class="box"></div></div>
+  <div class="panel"><b>POWER</b><div class="box"></div></div>
+  <div class="panel price"><b>PRICE</b><div class="box"></div></div>
+</div><div class="card">
+  <div class="head"><div class="tag"><span>Major · d20 face 2</span><span>02</span></div><div class="name">The Hourglass of Borrowed Time</div></div>
+  <div class="obj fit" data-id="02 object">A brass hourglass whose sand climbs upward. The Library of Vrassa has no record of lending it, and no record of getting it back.</div>
+  <div class="panel"><b>UNLOCK</b><div class="box"></div></div>
+  <div class="panel"><b>POWER</b><div class="box"></div></div>
+  <div class="panel price"><b>PRICE</b><div class="box"></div></div>
+</div><div class="card">
+  <div class="head"><div class="tag"><span>Minor · d20 face 3</span><span>03</span></div><div class="name">The Black Lotus Case</div></div>
+  <div class="obj fit" data-id="03 object">A black bloom pressed in a lead-lined case, three petals left, still damp. According to the trader who sold it, it was cut at the Oasis of Mother&#x27;s Tears in the Deadlands.</div>
+  <div class="panel"><b>UNLOCK</b><div class="box"></div></div>
+  <div class="panel"><b>POWER</b><div class="box"></div></div>
+  <div class="panel price"><b>PRICE</b><div class="box"></div></div>
+</div><div class="card">
+  <div class="head"><div class="tag"><span>Minor · d20 face 4</span><span>04</span></div><div class="name">The Oath-Band</div></div>
+  <div class="obj fit" data-id="04 object">A plain iron ring, every oath ever sworn over it scratched inside. The first is in the hand of a Golden Knights recruit, and the Citadel has no record of the ring.</div>
+  <div class="panel"><b>UNLOCK</b><div class="box"></div></div>
+  <div class="panel"><b>POWER</b><div class="box"></div></div>
+  <div class="panel price"><b>PRICE</b><div class="box"></div></div>
+</div></section><section class='sheet'><div class="card">
+  <div class="head"><div class="tag"><span>Minor · d20 face 5</span><span>05</span></div><div class="name">The Unpaid Favor</div></div>
+  <div class="obj fit" data-id="05 object">A tin holy symbol, its face rubbed smooth, always warm. It belongs to one of the twelve profane gods of the Temple of the Lower Twelve, and the face has been rubbed past telling which.</div>
+  <div class="panel"><b>UNLOCK</b><div class="box"></div></div>
+  <div class="panel"><b>POWER</b><div class="box"></div></div>
+  <div class="panel price"><b>PRICE</b><div class="box"></div></div>
+</div><div class="card">
+  <div class="head"><div class="tag"><span>Minor · d20 face 6</span><span>06</span></div><div class="name">The Valkyrie&#x27;s Feather</div></div>
+  <div class="obj fit" data-id="06 object">A gold-barbed feather from a warrior&#x27;s grave on the far side of an arch, in a world where valkyries still collect the dead.</div>
+  <div class="panel"><b>UNLOCK</b><div class="box"></div></div>
+  <div class="panel"><b>POWER</b><div class="box"></div></div>
+  <div class="panel price"><b>PRICE</b><div class="box"></div></div>
+</div><div class="card">
+  <div class="head"><div class="tag"><span>Major · d20 face 7</span><span>07</span></div><div class="name">The Hellhide</div></div>
+  <div class="obj fit" data-id="07 object">Plate made over with a demon&#x27;s skin, its horns on the helm and its claws on the gauntlets. The skin came out of Irax, the wind-torn hell beyond the hidden archway of the Blood Spears&#x27; Watchtower of Averost.</div>
+  <div class="panel"><b>UNLOCK</b><div class="box"></div></div>
+  <div class="panel"><b>POWER</b><div class="box"></div></div>
+  <div class="panel price"><b>PRICE</b><div class="box"></div></div>
+</div><div class="card">
+  <div class="head"><div class="tag"><span>Major · d20 face 8</span><span>08</span></div><div class="name">The Kettle Plate</div></div>
+  <div class="obj fit" data-id="08 object">Full plate with two boilers on the back and a servo at every joint. One of a kind, built to someone&#x27;s measure, and not to yours. The boiler plate is stamped with the mark of Vathrex&#x27;s Forge.</div>
+  <div class="panel"><b>UNLOCK</b><div class="box"></div></div>
+  <div class="panel"><b>POWER</b><div class="box"></div></div>
+  <div class="panel price"><b>PRICE</b><div class="box"></div></div>
+</div></section><section class='sheet'><div class="card">
+  <div class="head"><div class="tag"><span>Minor · d20 face 9</span><span>09</span></div><div class="name">The Fairy Jar</div></div>
+  <div class="obj fit" data-id="09 object">A thumb-high jar of purple glass. Inside, a small furious face swims in mist. The fairy was netted at the Arch of Flowers in Briarheart Forest.</div>
+  <div class="panel"><b>UNLOCK</b><div class="box"></div></div>
+  <div class="panel"><b>POWER</b><div class="box"></div></div>
+  <div class="panel price"><b>PRICE</b><div class="box"></div></div>
+</div><div class="card">
+  <div class="head"><div class="tag"><span>Major · d20 face 10</span><span>10</span></div><div class="name">The Apology Blade</div></div>
+  <div class="obj fit" data-id="10 object">A sword cut from the belly of a sea serpent out of Terrache&#x27;s cavern sea. It still smells of brine, and its edge is clouded like the sky before a storm.</div>
+  <div class="panel"><b>UNLOCK</b><div class="box"></div></div>
+  <div class="panel"><b>POWER</b><div class="box"></div></div>
+  <div class="panel price"><b>PRICE</b><div class="box"></div></div>
+</div><div class="card">
+  <div class="head"><div class="tag"><span>Major · d20 face 11</span><span>11</span></div><div class="name">The Rune Fragment</div></div>
+  <div class="obj fit" data-id="11 object">A shard of storm-dark stone veined with silver. One rune on it glows faintly. It was in the hand of an arrival the Archkeepers met, who remembered nothing but its name.</div>
+  <div class="panel"><b>UNLOCK</b><div class="box"></div></div>
+  <div class="panel"><b>POWER</b><div class="box"></div></div>
+  <div class="panel price"><b>PRICE</b><div class="box"></div></div>
+</div><div class="card">
+  <div class="head"><div class="tag"><span>Minor · d20 face 12</span><span>12</span></div><div class="name">The Binding Linens</div></div>
+  <div class="obj fit" data-id="12 object">Strips of old linen that smell of myrrh, with gold-thread hieroglyphs at the ends. They were taken from the temple dead of Arkus.</div>
+  <div class="panel"><b>UNLOCK</b><div class="box"></div></div>
+  <div class="panel"><b>POWER</b><div class="box"></div></div>
+  <div class="panel price"><b>PRICE</b><div class="box"></div></div>
+</div></section><section class='sheet'><div class="card">
+  <div class="head"><div class="tag"><span>Minor · d20 face 13</span><span>13</span></div><div class="name">The Rusted Spear</div></div>
+  <div class="obj fit" data-id="13 object">A leaf-bladed spear whose rust never flakes off, however hard you scrub. The Blood Spears of Averost took it from a world they raided, and the watchtower still lists it as unreturned.</div>
+  <div class="panel"><b>UNLOCK</b><div class="box"></div></div>
+  <div class="panel"><b>POWER</b><div class="box"></div></div>
+  <div class="panel price"><b>PRICE</b><div class="box"></div></div>
+</div><div class="card">
+  <div class="head"><div class="tag"><span>Minor · d20 face 14</span><span>14</span></div><div class="name">The Derelict Harpoon</div></div>
+  <div class="obj fit" data-id="14 object">A ship&#x27;s harpoon with a coil of glowing strand-line, cut from a derelict hull hung in the vines of Drendaan. The line is warm, and it is still wet.</div>
+  <div class="panel"><b>UNLOCK</b><div class="box"></div></div>
+  <div class="panel"><b>POWER</b><div class="box"></div></div>
+  <div class="panel price"><b>PRICE</b><div class="box"></div></div>
+</div><div class="card">
+  <div class="head"><div class="tag"><span>Minor · d20 face 15</span><span>15</span></div><div class="name">The Seekers&#x27; Provenance Ledger</div></div>
+  <div class="obj fit" data-id="15 object">A cloth-bound ledger listing a hundred relics by name, maker and rightful owner, in four hands. The last twelve pages are blank and slightly warm. The Museum of Worlds Beyond reports it missing from its archive.</div>
+  <div class="panel"><b>UNLOCK</b><div class="box"></div></div>
+  <div class="panel"><b>POWER</b><div class="box"></div></div>
+  <div class="panel price"><b>PRICE</b><div class="box"></div></div>
+</div><div class="card">
+  <div class="head"><div class="tag"><span>Minor · d20 face 16</span><span>16</span></div><div class="name">The Black Goat&#x27;s Tally-Stick</div></div>
+  <div class="obj fit" data-id="16 object">A notched black-wood stick as long as a hand, each notch a tab paid or unpaid at the Black Goat&#x27;s Tavern. A horned goat&#x27;s single yellow eye is burned into one end.</div>
+  <div class="panel"><b>UNLOCK</b><div class="box"></div></div>
+  <div class="panel"><b>POWER</b><div class="box"></div></div>
+  <div class="panel price"><b>PRICE</b><div class="box"></div></div>
+</div></section><section class='sheet'><div class="card">
+  <div class="head"><div class="tag"><span>Minor · d20 face 17</span><span>17</span></div><div class="name">The Gate Chain</div></div>
+  <div class="obj fit" data-id="17 object">Six links of black iron as thick as a wrist, sawn from the chain that once barred the old gate in the City Walls. The wardens who held that gate chained themselves to it. One link is worn bright where a hand held on.</div>
+  <div class="panel"><b>UNLOCK</b><div class="box"></div></div>
+  <div class="panel"><b>POWER</b><div class="box"></div></div>
+  <div class="panel price"><b>PRICE</b><div class="box"></div></div>
+</div><div class="card">
+  <div class="head"><div class="tag"><span>Major · d20 face 18</span><span>18</span></div><div class="name">The Sown Teeth</div></div>
+  <div class="obj fit" data-id="18 object">A hide satchel holding a handful of long dragon teeth from Drakeholm that click together like dice.</div>
+  <div class="panel"><b>UNLOCK</b><div class="box"></div></div>
+  <div class="panel"><b>POWER</b><div class="box"></div></div>
+  <div class="panel price"><b>PRICE</b><div class="box"></div></div>
+</div><div class="card">
+  <div class="head"><div class="tag"><span>Major · d20 face 19</span><span>19</span></div><div class="name">The Hut on Hen&#x27;s Legs</div></div>
+  <div class="obj fit" data-id="19 object">A dried hen&#x27;s foot on an iron ring, warm to the touch. It is the latch-key of a hut that stands on two great scaly legs in Briarheart Forest, near the Arch of Flowers. The hut&#x27;s last mistress went through the arch and did not come back. The hut has waited, and it is hungry.</div>
+  <div class="panel"><b>UNLOCK</b><div class="box"></div></div>
+  <div class="panel"><b>POWER</b><div class="box"></div></div>
+  <div class="panel price"><b>PRICE</b><div class="box"></div></div>
+</div><div class="card">
+  <div class="head"><div class="tag"><span>Minor · d20 face 20</span><span>20</span></div><div class="name">The Crafter&#x27;s Codex</div></div>
+  <div class="obj fit" data-id="20 object">A book too thick to close, its margins written in a dozen hands and a dozen scripts. Every owner added to it; none finished it. It came through an arch in a crate of scrap bound for Vathrex&#x27;s Forge, and the Forge&#x27;s smiths want it.</div>
+  <div class="panel"><b>UNLOCK</b><div class="box"></div></div>
+  <div class="panel"><b>POWER</b><div class="box"></div></div>
+  <div class="panel price"><b>PRICE</b><div class="box"></div></div>
+</div></section><section class='sheet'><div class="card">
+  <div class="head"><div class="tag"><span>Minor · legacy face 21</span><span>21</span></div><div class="name">The Hexing Needles</div></div>
+  <div class="obj fit" data-id="21 object">Three black needles in a felt roll, and a spool of red thread. The roll is stitched in the style of the Sisters of Dusk, the coven that rules Elgrym in Lady Straythe&#x27;s name.</div>
+  <div class="panel"><b>UNLOCK</b><div class="box"></div></div>
+  <div class="panel"><b>POWER</b><div class="box"></div></div>
+  <div class="panel price"><b>PRICE</b><div class="box"></div></div>
+</div><div class="card">
+  <div class="head"><div class="tag"><span>Major · legacy face 22</span><span>22</span></div><div class="name">The Bear-Lodge Horn</div></div>
+  <div class="obj fit" data-id="22 object">A hunting horn carved from the jawbone of a great white bear, banded in black iron and scored with a lodge&#x27;s tally of hunts. It came through an arch from a world of ice. The lodge that blew it has not stopped looking.</div>
+  <div class="panel"><b>UNLOCK</b><div class="box"></div></div>
+  <div class="panel"><b>POWER</b><div class="box"></div></div>
+  <div class="panel price"><b>PRICE</b><div class="box"></div></div>
+</div><div class="card">
+  <div class="head"><div class="tag"><span>Major · legacy face 23</span><span>23</span></div><div class="name">The Axe of Nine Eyes</div></div>
+  <div class="obj fit" data-id="23 object">A silvery greataxe with nine open eyes engraved down the blade. They follow whoever speaks. It came out of Graydust Keep, which has changed hands hundreds of times since the fall of the Nameless King, and the Fallen Angels who hold the keep now want it back.</div>
+  <div class="panel"><b>UNLOCK</b><div class="box"></div></div>
+  <div class="panel"><b>POWER</b><div class="box"></div></div>
+  <div class="panel price"><b>PRICE</b><div class="box"></div></div>
+</div><div class="card">
+  <div class="head"><div class="tag"><span>Major · faction reward</span><span>24</span></div><div class="name">The Arch-Watch Mirror</div></div>
+  <div class="obj fit" data-id="24 object">A mirror taller than a man in a frame of blackened ash. Its surface moves like still water. The glass was ground at the Observatory of Infinite Skies.</div>
+  <div class="panel"><b>UNLOCK</b><div class="box"></div></div>
+  <div class="panel"><b>POWER</b><div class="box"></div></div>
+  <div class="panel price"><b>PRICE</b><div class="box"></div></div>
+</div></section><section class='sheet'><div class="card">
+  <div class="head"><div class="tag"><span>Major · faction reward</span><span>25</span></div><div class="name">The Forgotten Key</div></div>
+  <div class="obj fit" data-id="25 object">A tarnished iron key, not sized for any human lock. Found in rubble beneath the Theater of Whispers, its bow etched with a spiral that matches no arch in the city&#x27;s records.</div>
+  <div class="panel"><b>UNLOCK</b><div class="box"></div></div>
+  <div class="panel"><b>POWER</b><div class="box"></div></div>
+  <div class="panel price"><b>PRICE</b><div class="box"></div></div>
+</div><div class="card">
+  <div class="head"><div class="tag"><span>Minor · faction reward</span><span>26</span></div><div class="name">The Pitch-Sap Harness</div></div>
+  <div class="obj fit" data-id="26 object">Three layers of wood glued with sap that never dries, its outer layer bristling with thorns. The wood was cut in the Lost Cavern of the Sundering Saurians, from a jungle tree that offered it, and it still smells of the mist.</div>
+  <div class="panel"><b>UNLOCK</b><div class="box"></div></div>
+  <div class="panel"><b>POWER</b><div class="box"></div></div>
+  <div class="panel price"><b>PRICE</b><div class="box"></div></div>
+</div><div class="card">
+  <div class="head"><div class="tag"><span>Minor · faction reward</span><span>27</span></div><div class="name">The Seven-Leaf Bracelet</div></div>
+  <div class="obj fit" data-id="27 object">A silver bracelet of seven linked leaves, cool as morning dew. It was found at the root of the oldest tree in Sunset Grove, and Graysen One-Eye would like to know who took it.</div>
+  <div class="panel"><b>UNLOCK</b><div class="box"></div></div>
+  <div class="panel"><b>POWER</b><div class="box"></div></div>
+  <div class="panel price"><b>PRICE</b><div class="box"></div></div>
+</div><div class="card">
+  <div class="head"><div class="tag"><span>Minor · faction reward</span><span>28</span></div><div class="name">The Tide-Coat</div></div>
+  <div class="obj fit" data-id="28 object">An eel-skin suit that covers you head to heel, crusted with barnacles. Underwater it hums.</div>
+  <div class="panel"><b>UNLOCK</b><div class="box"></div></div>
+  <div class="panel"><b>POWER</b><div class="box"></div></div>
+  <div class="panel price"><b>PRICE</b><div class="box"></div></div>
+</div></section><section class='sheet'><div class="card">
+  <div class="head"><div class="tag"><span>Stormshifter · class arcanum</span><span>29</span></div><div class="name">Mud from the Revlend Marshes</div></div>
+  <div class="obj fit" data-id="29 object">A sealed clay jar of dark grey mud from the Revlend Marshes north of the city, marked with protective runes no one recognises as any known system. The mud is warm to the touch and smells of rain before a storm. It never dries out. An arch-traveller carried it into the city claiming the marshes spoke to her. She didn&#x27;t explain further. She is not currently available to explain anything.</div>
+  <div class="panel"><b>UNLOCK</b><div class="box"></div></div>
+  <div class="panel"><b>POWER</b><div class="box"></div></div>
+  <div class="panel price"><b>PRICE</b><div class="box"></div></div>
+</div><div class="card">
+  <div class="head"><div class="tag"><span>Berserker · class arcanum</span><span>30</span></div><div class="name">The Ancestor&#x27;s Knucklebone</div></div>
+  <div class="obj fit" data-id="30 object">A knucklebone worn smooth by a hundred years of handling, threaded on gut string. Taken from the body of a Berserker who died fighting in the Borderlands and was never retrieved. It arrived in a collector&#x27;s satchel through one of the Market Square arches, and nobody knows which world it came from, or who carried it through.</div>
+  <div class="panel"><b>UNLOCK</b><div class="box"></div></div>
+  <div class="panel"><b>POWER</b><div class="box"></div></div>
+  <div class="panel price"><b>PRICE</b><div class="box"></div></div>
+</div><div class="card">
+  <div class="head"><div class="tag"><span>Commander · class arcanum</span><span>31</span></div><div class="name">The Battle Standard of the Nameless King</div></div>
+  <div class="obj fit" data-id="31 object">A black iron battle standard, the insignia ground off but the pole still bearing ghost-traces of a name no one can read. Found stacked with other confiscated relics in the Museum of Worlds Beyond storage vault. The curator will not release it without a writ. Three scholars have separately attempted to identify the insignia&#x27;s origin and stopped work without explanation.</div>
+  <div class="panel"><b>UNLOCK</b><div class="box"></div></div>
+  <div class="panel"><b>POWER</b><div class="box"></div></div>
+  <div class="panel price"><b>PRICE</b><div class="box"></div></div>
+</div><div class="card">
+  <div class="head"><div class="tag"><span>Shepherd · class arcanum</span><span>32</span></div><div class="name">The Bell of the Three Sisters</div></div>
+  <div class="obj fit" data-id="32 object">A small iron handbell, tarnished green at the rim, engraved with three interlinked rings. Identical to the bells carried by the clergy of the Temple of the Three Sisters, except that this one rings slightly differently, a half-note flat or sharp depending on who you ask. The temple says it was never consecrated. They are interested in recovering it for study. They have not offered to pay.</div>
+  <div class="panel"><b>UNLOCK</b><div class="box"></div></div>
+  <div class="panel"><b>POWER</b><div class="box"></div></div>
+  <div class="panel price"><b>PRICE</b><div class="box"></div></div>
+</div></section><section class='sheet'><div class="card">
+  <div class="head"><div class="tag"><span>Hunter · class arcanum</span><span>33</span></div><div class="name">The Borderlands Tracking Cord</div></div>
+  <div class="obj fit" data-id="33 object">A length of braided sinew hung with small carved tokens: a boot print, a feather, a fang, and three others worn unrecognisable by handling. Carried by a tracker from the Doorish Hills who traded it to a Lower Reaches merchant for safe passage through the Cliffs of the Dead. The merchant did not survive the arrangement.</div>
+  <div class="panel"><b>UNLOCK</b><div class="box"></div></div>
+  <div class="panel"><b>POWER</b><div class="box"></div></div>
+  <div class="panel price"><b>PRICE</b><div class="box"></div></div>
+</div><div class="card">
+  <div class="head"><div class="tag"><span>Oathsworn · class arcanum</span><span>34</span></div><div class="name">The Broken Verdict</div></div>
+  <div class="obj fit" data-id="34 object">A set of golden scales, one pan snapped off and missing. Recovered from the rubble of an old court in the ruins of Sunken Revvia. The remaining pan still tilts when a lie is spoken nearby, or so the merchant who sold it claimed. She may have been lying. The tilt is subtle enough that you cannot always be certain.</div>
+  <div class="panel"><b>UNLOCK</b><div class="box"></div></div>
+  <div class="panel"><b>POWER</b><div class="box"></div></div>
+  <div class="panel price"><b>PRICE</b><div class="box"></div></div>
+</div><div class="card">
+  <div class="head"><div class="tag"><span>Mage · class arcanum</span><span>35</span></div><div class="name">The Cracked Lens of Kartan</div></div>
+  <div class="obj fit" data-id="35 object">A monocle lens of blue glass, cracked through the centre but held in a copper frame that prevents the crack from spreading. Stamped with the Mages of Kartan&#x27;s maker&#x27;s mark on the inner rim. The Mages report it stolen. It has been in a Lower Reaches pawn shop for six months, priced too high for anyone who recognised it, too strange for anyone who didn&#x27;t.</div>
+  <div class="panel"><b>UNLOCK</b><div class="box"></div></div>
+  <div class="panel"><b>POWER</b><div class="box"></div></div>
+  <div class="panel price"><b>PRICE</b><div class="box"></div></div>
+</div><div class="card">
+  <div class="head"><div class="tag"><span>Shadowmancer · class arcanum</span><span>36</span></div><div class="name">The Hollow Contract</div></div>
+  <div class="obj fit" data-id="36 object">A slip of black vellum the size of a playing card, written in a language that changes every time you look away. No ink is visible: the text appears to be burned into the material from within. Found pressed between the floorboards of a sealed room in the Lower Reaches, below a building that has been empty for eleven years. The landlord will not say why.</div>
+  <div class="panel"><b>UNLOCK</b><div class="box"></div></div>
+  <div class="panel"><b>POWER</b><div class="box"></div></div>
+  <div class="panel price"><b>PRICE</b><div class="box"></div></div>
+</div></section><section class='sheet'><div class="card">
+  <div class="head"><div class="tag"><span>Cheat · class arcanum</span><span>37</span></div><div class="name">The Loaded Die</div></div>
+  <div class="obj fit" data-id="37 object">An ivory gambling die with a tiny lead insert that makes it land on 6 roughly two-thirds of the time. Confiscated from a Black Hand card sharp at the Lower Reaches gambling house, then stolen from the evidence shelf at the Golden Knights&#x27; outpost. No paperwork exists for it. The card sharp has not stopped looking.</div>
+  <div class="panel"><b>UNLOCK</b><div class="box"></div></div>
+  <div class="panel"><b>POWER</b><div class="box"></div></div>
+  <div class="panel price"><b>PRICE</b><div class="box"></div></div>
+</div><div class="card">
+  <div class="head"><div class="tag"><span>Zephyr · class arcanum</span><span>38</span></div><div class="name">The Pain Teacher&#x27;s Wrappings</div></div>
+  <div class="obj fit" data-id="38 object">Linen hand wrappings, yellowed and stained, covered in faded ink annotations, technique notes in a script that predates the city. Found in a locked case in the Lower Reaches beneath a martial arts studio that has been occupied by different teachers for four centuries. Each teacher added their own notes in the margins. The last teacher&#x27;s annotations stop mid-sentence, mid-technique.</div>
+  <div class="panel"><b>UNLOCK</b><div class="box"></div></div>
+  <div class="panel"><b>POWER</b><div class="box"></div></div>
+  <div class="panel price"><b>PRICE</b><div class="box"></div></div>
+</div><div class="card">
+  <div class="head"><div class="tag"><span>Songweaver · class arcanum</span><span>39</span></div><div class="name">The Theater of Whispers Setlist</div></div>
+  <div class="obj fit" data-id="39 object">A folded sheet of vellum with a handwritten set of songs: titles, keys, and performance notes in the margins in an elegant hand. It belonged to a Songweaver who performed at the Theater of Whispers for fifteen years before disappearing mid-run. The theater kept the setlist. Someone stole it last month. The manager has posted a reward, but is vaguer than expected about what they want to do with whoever took it.</div>
+  <div class="panel"><b>UNLOCK</b><div class="box"></div></div>
+  <div class="panel"><b>POWER</b><div class="box"></div></div>
+  <div class="panel price"><b>PRICE</b><div class="box"></div></div>
+</div></section>

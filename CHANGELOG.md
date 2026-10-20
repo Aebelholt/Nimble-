@@ -137,6 +137,10 @@ A second model audited the deck from `analysis/blind_audit_prompt.md`. Triage in
 ### Generator merged
 - `data/sejr_generator_lists.txt` is the GM's lists panel with the arcana module merged in (built by `tools/build_generator.py` from `sources/sejr_generator_lists.txt`, which stays untouched). The hero card rolls `legacy_arcanum(0)`, shows the card with `arcanum_line()`, and offers the class guild after the holding. `tools/test_generator.js` rolls 300 heroes.
 
+### Physical cards
+- `print/arcana_cards.pdf`: 39 A6 card fronts, four per A4 sheet (name, d20 face or pool, object, and empty Unlock, Power and Price panels).
+- `print/arcana_stickers.pdf`: the matching stickers for full-sheet A4 sticker paper, numbered and labelled by card and panel; Power stickers carry a pip track. Built by `tools/build_print.py`, rendered by `tools/render_print.js`, which shrinks text to fit and fails if anything overflows.
+
 ## Diversity, found pool: before and after
 
 | | Before (25) | After (24) |
@@ -170,6 +174,7 @@ After the reassessment move: upper city 7, worlds beyond 7, Lower Reaches 3, Doo
 python3 -I tools/audit.py
 python3 -I tools/build_perchance.py && node tools/test_perchance.js
 python3 -I tools/build_generator.py && node tools/test_generator.js
+python3 -I tools/build_print.py && node tools/render_print.js
 python3 -I tools/export_review.py
 python3 -I tools/export_blind_audit.py && python3 -I tools/export_audit_cards.py
 ```
