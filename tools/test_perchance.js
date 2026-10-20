@@ -34,7 +34,7 @@ function load() {
   let code = "const d = n => Math.floor(Math.random() * n) + 1;\n" +
     "const sec = (t, b) => '<section class=\"sec\"><h2>' + t + '</h2>' + b + '</section>';\n";
   for (const [n, items] of Object.entries(lists)) {
-    code += `const ${n} = { items: ${JSON.stringify(items)}, get evaluateItem() { return this.items[Math.floor(Math.random() * this.items.length)]; } };\n`;
+    code += `const ${n} = { items: ${JSON.stringify(items)}, get evaluateItem() { return this.items[Math.floor(Math.random() * this.items.length)]; }, get selectAll() { return this.items.slice(); } };\n`;
   }
   for (const [n, f] of Object.entries(fns)) code += `function ${n}(${f.args}) {\n${f.body}\n}\n`;
   code += "return { " + [...Object.keys(lists), ...Object.keys(fns)].join(", ") + " };";
@@ -65,7 +65,9 @@ for (const c of active.filter(c => c.kind === "found")) {
   const pool = c.pool || "draw";
   const inDraw = lists.other_arcanum.includes(c.name);
   const inReward = (lists.faction_reward_arcanum || []).includes(c.name);
-  if (pool === "draw" && !inDraw) fail(`${c.id}: drawable card not in other_arcanum`);
+  const inLegacy = (lists.legacy_arcanum_top || []).includes(c.name);
+  if (pool === "draw" && !c.legacy_slot && !inDraw) fail(`${c.id}: drawable card not in other_arcanum`);
+  if (c.legacy_slot && (inDraw || lists.legacy_arcanum_top[c.legacy_slot - 21] !== c.name)) fail(`${c.id}: legacy card must sit at slot ${c.legacy_slot}, outside other_arcanum`);
   if (pool === "faction_reward" && (inDraw || !inReward)) fail(`${c.id}: faction reward must be in faction_reward_arcanum and not in other_arcanum`);
 }
 for (const n of lists.faction_reward_arcanum || []) if (!(n in data)) fail(`faction_reward_arcanum "${n}" has no arcana_data entry`);
@@ -73,7 +75,21 @@ for (const c of active.filter(c => c.kind === "class")) {
   if (lists.other_arcanum.includes(c.name)) fail(`${c.id}: class card in the hero-creation draw`);
   if ((c.pool || "class") === "faction_reward" && !(lists.faction_reward_arcanum || []).includes(c.name)) fail(`${c.id}: class card missing from faction_reward_arcanum`);
 }
-ok(`${active.length} active cards, ${lists.other_arcanum.length} in other_arcanum, ${(lists.faction_reward_arcanum || []).length} faction rewards`);
+ok(`${active.length} active cards, ${lists.other_arcanum.length} in other_arcanum, ${(lists.legacy_arcanum_top || []).length} legacy, ${(lists.faction_reward_arcanum || []).length} faction rewards`);
+if (lists.other_arcanum.length !== 20 || (lists.legacy_arcanum_top || []).length !== 3) fail("legacy draw needs 20 regular faces and 3 legacy faces");
+
+// Legacy draw: bonus 0 never reaches 21-23; bonus 3 reaches all three; every result is a real card.
+const top = new Set(lists.legacy_arcanum_top || []);
+const seen0 = new Set(), seen3 = new Set();
+for (let i = 0; i < 3000; i++) {
+  const a = api.legacy_arcanum(0), b = api.legacy_arcanum(3);
+  if (!(a in data) || !(b in data)) { fail(`legacy_arcanum returned "${a}" / "${b}"`); break; }
+  seen0.add(a); seen3.add(b);
+}
+if ([...seen0].some(n => top.has(n))) fail("legacy_arcanum(0) reached a legacy slot");
+if (![...top].every(n => seen3.has(n))) fail("legacy_arcanum(3) never reached some legacy slot");
+if (seen0.size !== 20) fail(`legacy_arcanum(0) reached ${seen0.size} of 20 regular cards`);
+ok(`legacy_arcanum x3000: bonus 0 stays in 1-20, bonus 3 reaches all of 21-23`);
 
 // Every class in the generator maps to a class card.
 const heroClasses = genLists.split("\nhero_class\n")[1].split("\n\n")[0].split("\n").map(s => s.trim()).filter(Boolean);

@@ -7,7 +7,7 @@ tools/export_blind_audit.py first); analysis/blind_audit_cards.json is the same 
 import json, pathlib
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-KEYS = ["id", "name", "kind", "class", "tier", "pool", "object", "unlock", "risk", "resource", "powers", "escalation", "escalation_table"]
+KEYS = ["id", "name", "kind", "class", "tier", "pool", "object", "unlock", "risk", "resource", "powers", "escalation", "escalation_table", "legacy_slot"]
 cards = [c for c in json.loads((ROOT / "data/sejr_arcana.json").read_text()) if c["status"] != "cut"]
 cards.sort(key=lambda c: c["kind"] != "class")
 prompt = (ROOT / "analysis/blind_audit_prompt.md").read_text()

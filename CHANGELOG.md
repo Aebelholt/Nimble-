@@ -113,6 +113,13 @@ A second model audited the deck from `analysis/blind_audit_prompt.md`. Triage in
 - Canon gaps are table rolls (`data/sejr_table_rules.md`).
 - **Table rules adopted:** readings can point at the wrong person; Escalations write a thread card only into a free slot, else tick a clock; long durations pass off-screen between episodes.
 
+### Role review and legacy draw
+- Sorted every card by role (damage, control, buff, tank, healing, mobility, information, economy). Gluts: information (12), single-target control, armor (4), anti-death (4). Gaps: tank (0), crafting/economy (0), summons (1), mobility (2).
+- **Four new found cards:** The Gate Chain (tank: Taunted, longer Interpose), The Bear-Lodge Horn (summons and party buff; Gods of the Forbidden North), The Hut on Hen's Legs (mobility and a walking holding; Trials and Treasures, Slavic), The Crafter's Codex (crafting and economy; Trials and Treasures).
+- **Moved to faction rewards:** Seven-Leaf Bracelet, Arch-Watch Mirror, Tide-Coat, Pitch-Sap Harness. The draw stays at 23.
+- **Legacy draw:** d20 over 20 regular cards; faces 21-23 (Hexing Needles, Sown Teeth, Axe of Nine Eyes) need a legacy bonus of +1 per lost hero, max +3. `legacy_arcanum(bonus)` in Perchance, tested 3,000 rolls each way. Hero card edit is now `let arc = legacy_arcanum(0);`.
+- Blind audit prompt v4 regenerated: each card is labelled draw, legacy face or faction reward; Interpose and Craft added to the rules reference.
+
 ## Diversity, found pool: before and after
 
 | | Before (25) | After (24) |

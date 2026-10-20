@@ -1,4 +1,4 @@
-# Sejr arcana: 35 cards for blind audit
+# Sejr arcana: 39 cards for blind audit
 
 Class arcana first, then found arcana. No notes or prior review included.
 
@@ -220,7 +220,7 @@ Class arcana first, then found arcana. No notes or prior review included.
 **Escalation.** If you use either annotation while you have 3 or more Wounds, from any source, the wrappings tighten around your hands: take 1 additional Wound and you cannot use either annotation until your next Safe Rest. The annotations become illegible until a skilled martial artist re-inks them. Finding one is the GM's hook.
 
 ### The Forgotten Key
-`forgotten_key` · found, Minor
+`forgotten_key` · found, Minor, faction reward
 
 **Object.** A tarnished iron key, not sized for any human lock. Found in rubble beneath the Theater of Whispers, its bow etched with a spiral that matches no arch in the city's records.
 
@@ -239,7 +239,7 @@ Class arcana first, then found arcana. No notes or prior review included.
 **Escalation.** Spending the last Hum, roll a d6. On 1-2 the key splinters, and every arch it opens leads somewhere wrong until an Archkeeper repairs it. On 3+, take 1 Wound.
 
 ### The Drowning Scale
-`drowning_scale` · found, Minor
+`drowning_scale` · found, Minor, level 1 draw
 
 **Object.** A cold, clammy pendant on a leather cord, a single shimmering scale of unknown origin. When first worn, everyone nearby shivers. It was pulled from the water at Drowned Elvenya in the Revlend Marshes, and nobody knows what it came off.
 
@@ -259,7 +259,7 @@ Class arcana first, then found arcana. No notes or prior review included.
 **Escalation.** If you try to use the pendant with no Breath, make a WIL save, DC 12, or you inhale your own breath: take 1 Wound and become Dying at once.
 
 ### The Axe of Nine Eyes
-`axe_of_nine_eyes` · found, Major
+`axe_of_nine_eyes` · found, Major, draw face 23 (legacy bonus only)
 
 **Object.** A silvery greataxe with nine open eyes engraved down the blade. They follow whoever speaks. It came out of Graydust Keep, which has changed hands hundreds of times since the fall of the Nameless King, and the Fallen Angels who hold the keep now want it back.
 
@@ -279,7 +279,7 @@ Class arcana first, then found arcana. No notes or prior review included.
 **Escalation.** Named creatures learn your name and heading each dawn. When the ninth eye closes, the axe speaks your True Name and all nine hear it. One engraved eye is scraped blank.
 
 ### The Hourglass of Borrowed Time
-`hourglass_of_borrowed_time` · found, Major
+`hourglass_of_borrowed_time` · found, Major, level 1 draw
 
 **Object.** A brass hourglass whose sand climbs upward. The Library of Vrassa has no record of lending it, and no record of getting it back.
 
@@ -299,7 +299,7 @@ Class arcana first, then found arcana. No notes or prior review included.
 *What the Echo carries (d6):* 1 a debt to the Black Hand you never took on; 2 a fresh Wound, which it hands to you at the next encounter; 3 a friend who remembers the original result, and is angry; 4 a key to an arch that should not exist; 5 news of a death that did not happen here; 6 an offer to trade places with you for one day.
 
 ### The Black Lotus Case
-`black_lotus_case` · found, Minor
+`black_lotus_case` · found, Minor, level 1 draw
 
 **Object.** A black bloom pressed in a lead-lined case, three petals left, still damp. According to the trader who sold it, it was cut at the Oasis of Mother's Tears in the Deadlands.
 
@@ -320,7 +320,7 @@ Class arcana first, then found arcana. No notes or prior review included.
 **Escalation.** Each time the case empties, the Stain advances for good. 1: fingertips blacken, advantage on Finesse, and you can no longer feel heat or cold through them. 2: veins darken, +1 Initiative, your pulse is audible. 3: eyes black, you see in the dark, strangers flinch (disadvantage on Influence). Stage 3 is the last Stain. After it, the bloom roots in your palm: you no longer need the case to carry the petals, and no one can take them from you.
 
 ### The Oath-Band
-`oath_band` · found, Minor
+`oath_band` · found, Minor, level 1 draw
 
 **Object.** A plain iron ring, every oath ever sworn over it scratched inside. The first is in the hand of a Golden Knights recruit, and the Citadel has no record of the ring.
 
@@ -338,7 +338,7 @@ Class arcana first, then found arcana. No notes or prior review included.
 **Escalation.** Fulfilled: heal 1 Wound and gain +1, +2 or +3 max HP for good, by grade. Max HP from the Band never exceeds your level. Failed: lose that much max HP for good, the Golden Council writes the broken oath on the record under your name, and the Band stays shut until you do a penance.
 
 ### The Unpaid Favor
-`unpaid_favor` · found, Minor
+`unpaid_favor` · found, Minor, level 1 draw
 
 **Object.** A tin holy symbol, its face rubbed smooth, always warm. It belongs to one of the twelve profane gods of the Temple of the Lower Twelve, and the face has been rubbed past telling which.
 
@@ -356,7 +356,7 @@ Class arcana first, then found arcana. No notes or prior review included.
 **Escalation.** If you Call In with 3 Tithe, the patron collects first. Roll a d6. 1 Newt: you are Tiny and Incapacitated for 3 rounds. 2 Imps: lose 2 random items. 3 Salt ring: you cannot cross it until it breaks. 4 Cobwebs: no arcanum use until you atone. 5 Nemesis: someone is born who will hunt you. 6 Wither: take 1 Wound.
 
 ### The Valkyrie's Feather
-`valkyries_feather` · found, Minor
+`valkyries_feather` · found, Minor, level 1 draw
 
 **Object.** A gold-barbed feather from a warrior's grave on the far side of an arch, in a world where valkyries still collect the dead.
 
@@ -374,7 +374,7 @@ Class arcana first, then found arcana. No notes or prior review included.
 **Escalation.** A valkyrie arrives within a day to claim the spared life, yours or your ally's. She will hear one argument for it. The GM plays her.
 
 ### The Tide-Coat
-`tide_coat` · found, Minor
+`tide_coat` · found, Minor, faction reward
 
 **Object.** An eel-skin suit that covers you head to heel, crusted with barnacles. Underwater it hums.
 
@@ -392,7 +392,7 @@ Class arcana first, then found arcana. No notes or prior review included.
 **Escalation.** At 4 Growth the coat is a landmark, and things in the deep start coming to see it.
 
 ### The Pitch-Sap Harness
-`pitch_sap_harness` · found, Minor
+`pitch_sap_harness` · found, Minor, faction reward
 
 **Object.** Three layers of wood glued with sap that never dries, its outer layer bristling with thorns. The wood was cut in the Lost Cavern of the Sundering Saurians, from a jungle tree that offered it, and it still smells of the mist.
 
@@ -410,7 +410,7 @@ Class arcana first, then found arcana. No notes or prior review included.
 **Escalation.** When a fourth weapon would stick, the sap seals you in: you are Restrained until someone spends an action and passes a Might check, DC 14, to cut you out. Then the harness gives half its Defense until it is glued again with fresh sap.
 
 ### The Hellhide
-`hellhide` · found, Major
+`hellhide` · found, Major, level 1 draw
 
 **Object.** Plate made over with a demon's skin, its horns on the helm and its claws on the gauntlets. The skin came out of Irax, the wind-torn hell beyond the hidden archway of the Blood Spears' Watchtower of Averost.
 
@@ -430,7 +430,7 @@ Class arcana first, then found arcana. No notes or prior review included.
 **Escalation.** You cannot willingly part with the hide, and you will hunt anyone who takes it. If you end a day with 3 Thirst, it drinks from you at dawn: take 1 Wound that cannot heal while you wear it. If you die in it, you rise as a spectre.
 
 ### The Kettle Plate
-`kettle_plate` · found, Major
+`kettle_plate` · found, Major, level 1 draw
 
 **Object.** Full plate with two boilers on the back and a servo at every joint. One of a kind, built to someone's measure, and not to yours. The boiler plate is stamped with the mark of Vathrex's Forge.
 
@@ -449,7 +449,7 @@ Class arcana first, then found arcana. No notes or prior review included.
 **Escalation.** At 0 Steam the servos lock: Speed 2 and disadvantage on DEX until stoked. If you spend the last Steam in combat, the boilers vent: 1d6 fire to you and everyone adjacent.
 
 ### The Fairy Jar
-`fairy_jar` · found, Minor
+`fairy_jar` · found, Minor, level 1 draw
 
 **Object.** A thumb-high jar of purple glass. Inside, a small furious face swims in mist. The fairy was netted at the Arch of Flowers in Briarheart Forest.
 
@@ -467,7 +467,7 @@ Class arcana first, then found arcana. No notes or prior review included.
 **Escalation.** On a natural 1 the fairy escapes and curses you. Once you know its name, you may smash the jar: it grants +1 to one stat for good and is gone. The fairy leaves its mark, one of your eyes turns its colour for good, and it tells its court: you owe the fey one favour, and they will collect. At 0 Bargains it only bargains for its freedom.
 
 ### The Seven-Leaf Bracelet
-`seven_leaf_bracelet` · found, Minor
+`seven_leaf_bracelet` · found, Minor, faction reward
 
 **Object.** A silver bracelet of seven linked leaves, cool as morning dew. It was found at the root of the oldest tree in Sunset Grove, and Graysen One-Eye would like to know who took it.
 
@@ -485,7 +485,7 @@ Class arcana first, then found arcana. No notes or prior review included.
 **Escalation.** When the last leaf wilts the bracelet buds. Plant it beside a door to elsewhere within a month, and in a year a new bracelet grows there. If you don't plant it, your fingertips start to leaf.
 
 ### The Hexing Needles
-`hexing_needles` · found, Minor
+`hexing_needles` · found, Minor, draw face 21 (legacy bonus only)
 
 **Object.** Three black needles in a felt roll, and a spool of red thread. The roll is stitched in the style of the Sisters of Dusk, the coven that rules Elgrym in Lady Straythe's name.
 
@@ -503,7 +503,7 @@ Class arcana first, then found arcana. No notes or prior review included.
 **Escalation.** Every victim knows the shape of your hands, and the Sisters of Dusk hear who is stitching in their style. At 0 Thread you can still Stitch, but the hex also lands on your own likeness.
 
 ### The Sown Teeth
-`sown_teeth` · found, Major
+`sown_teeth` · found, Major, draw face 22 (legacy bonus only)
 
 **Object.** A hide satchel holding a handful of long dragon teeth from Drakeholm that click together like dice.
 
@@ -521,7 +521,7 @@ Class arcana first, then found arcana. No notes or prior review included.
 **Escalation.** If two or more warriors stand and one is hit by an attacker it could not see, they turn on each other, then on whoever is closest. Dragons and their kin can smell the satchel. When the last tooth is gone, the satchel is just a bag.
 
 ### The Arch-Watch Mirror
-`arch_watch_mirror` · found, Major
+`arch_watch_mirror` · found, Major, faction reward
 
 **Object.** A mirror taller than a man in a frame of blackened ash. Its surface moves like still water. The glass was ground at the Observatory of Infinite Skies.
 
@@ -540,7 +540,7 @@ Class arcana first, then found arcana. No notes or prior review included.
 **Escalation.** At 0 Clarity the glass stays clear both ways. Anything beyond a watched arch can look into your holding until the mirror is refilled.
 
 ### The Apology Blade
-`apology_blade` · found, Major
+`apology_blade` · found, Major, level 1 draw
 
 **Object.** A sword cut from the belly of a sea serpent out of Terrache's cavern sea. It still smells of brine, and its edge is clouded like the sky before a storm.
 
@@ -560,7 +560,7 @@ Class arcana first, then found arcana. No notes or prior review included.
 **Escalation.** If you wrong the one who gave it back, it is in their hands the next morning, wherever they are.
 
 ### The Rune Fragment
-`rune_fragment` · found, Major
+`rune_fragment` · found, Major, level 1 draw
 
 **Object.** A shard of storm-dark stone veined with silver. One rune on it glows faintly. It was in the hand of an arrival the Archkeepers met, who remembered nothing but its name.
 
@@ -585,7 +585,7 @@ Class arcana first, then found arcana. No notes or prior review included.
 **Escalation.** Fragments call to each other, and other holders follow the call. When the ninth fuses, its rune wakes once: change the result of one roll made this session, even one already applied, and play on from there. Then the stone falls to dust.
 
 ### The Binding Linens
-`binding_linens` · found, Minor
+`binding_linens` · found, Minor, level 1 draw
 
 **Object.** Strips of old linen that smell of myrrh, with gold-thread hieroglyphs at the ends. They were taken from the temple dead of Arkus.
 
@@ -603,7 +603,7 @@ Class arcana first, then found arcana. No notes or prior review included.
 **Escalation.** Any creature wrapped a second time comes back a little less. It forgets one thing it loved, and the GM chooses what.
 
 ### The Rusted Spear
-`rusted_spear` · found, Minor
+`rusted_spear` · found, Minor, level 1 draw
 
 **Object.** A leaf-bladed spear whose rust never flakes off, however hard you scrub. The Blood Spears of Averost took it from a world they raided, and the watchtower still lists it as unreturned.
 
@@ -621,7 +621,7 @@ Class arcana first, then found arcana. No notes or prior review included.
 **Escalation.** At 0 Rust the blade is clean and bright. The next creature it hits takes a wound that never closes: a hero gains a Wound that cannot heal and loses 1 max Wound for good, and a creature bleeds out by the end of the scene. A Legendary monster does not bleed out: it loses a third of its max HP at once (not from its Last Stand).
 
 ### The Derelict Harpoon
-`derelict_harpoon` · found, Minor
+`derelict_harpoon` · found, Minor, level 1 draw
 
 **Object.** A ship's harpoon with a coil of glowing strand-line, cut from a derelict hull hung in the vines of Drendaan. The line is warm, and it is still wet.
 
@@ -639,7 +639,7 @@ Class arcana first, then found arcana. No notes or prior review included.
 **Escalation.** When the d6 triggers, the line snarls around you or your target, the GM's choice. Both of you are Restrained until either of you, or anyone adjacent, spends an action to cut it. The cut length keeps glowing, and whatever lived aboard the hulk follows it through the arch.
 
 ### The Seekers' Provenance Ledger
-`provenance_ledger` · found, Minor
+`provenance_ledger` · found, Minor, level 1 draw
 
 **Object.** A cloth-bound ledger listing a hundred relics by name, maker and rightful owner, in four hands. The last twelve pages are blank and slightly warm. The Museum of Worlds Beyond reports it missing from its archive.
 
@@ -660,7 +660,7 @@ Class arcana first, then found arcana. No notes or prior review included.
 *The relic the ledger writes (d6):* 1 something from the Vaults of the Nameless King; 2 an arcanum another hero carries; 3 a piece on display in the Museum of Worlds Beyond; 4 an heirloom of your own family; 5 a key to one of the city's arches; 6 a relic still lying in Sunken Revvia.
 
 ### The Black Goat's Tally-Stick
-`tally_stick` · found, Minor
+`tally_stick` · found, Minor, level 1 draw
 
 **Object.** A notched black-wood stick as long as a hand, each notch a tab paid or unpaid at the Black Goat's Tavern. A horned goat's single yellow eye is burned into one end.
 
@@ -676,3 +676,81 @@ Class arcana first, then found arcana. No notes or prior review included.
 - Read the Notches (Passive): When you hold the stick at a table, you know who in the room owes whom, and whether the debt is money, a favor, or blood.
 
 **Escalation.** If the Truce breaks, the stick burns your palm for 1 Wound, and Vynan Halfhorn sends someone for whoever broke it within a session. Vynan Halfhorn will want to know why the peace failed under his stick.
+
+### The Gate Chain
+`gate_chain` · found, Minor, level 1 draw
+
+**Object.** Six links of black iron as thick as a wrist, sawn from the chain that once barred the old gate in the City Walls. The wardens who held that gate chained themselves to it. One link is worn bright where a hand held on.
+
+**Unlock.**
+- Hold a doorway, gate or bridge alone for three rounds while others get away
+- Carry someone who could not get out alone to safety
+- Risk: While you hold the doorway, make a STR save, DC 13, at the end of each round. Each failure is 1 Wound.
+
+**Resource: Ward (pip tracker).** Ward (pip tracker, max 3). Regain 1 when you carry or lead someone who cannot get out alone to safety, out of a place where they would have died. Ward returns only this way.
+
+**Powers.**
+- Draw Fire (Action, spend 1 Ward): Rattle the chain. Each enemy within 6 spaces that can see you makes a WIL save, DC 13, or is Taunted by you until the end of its next turn. Solo creatures save with advantage.
+- Long Links (Passive): Your Interpose reaches allies within 4 spaces, not 2.
+- Hold the Line (Reaction, spend 1 Ward): When you Interpose, you also Defend without spending an action for it.
+
+**Escalation.** When you spend the last Ward, the chain locks: until the encounter ends, you cannot willingly move away from an enemy. The Wardens' Lodge hears the old gate chain rang again. They want it back on the gate, and their gate captain drinks where the wall guards drink.
+
+### The Bear-Lodge Horn
+`bear_lodge_horn` · found, Major, level 1 draw
+
+**Object.** A hunting horn carved from the jawbone of a great white bear, banded in black iron and scored with a lodge's tally of hunts. It came through an arch from a world of ice. The lodge that blew it has not stopped looking.
+
+**Unlock.**
+- Go through the arch and find the lodge it was taken from
+- Bring the lodge a hunt: a beast its hunters could not take
+- Blow it once in their hall, with their leave
+- Risk: The lodge tests you first. Make a Might check, DC 14, in their contest of strength. On a failure they keep the horn until you bring a second hunt.
+
+**Resource: Call (pip tracker).** Call (pip tracker, max 3). Regain all Call when you carry the horn back to the lodge hall and tell them the hunt you used it for. Call returns only this way.
+
+**Powers.**
+- Hunting Call (Action, spend 1 Call): Every ally within 12 spaces who hears it gains +2 Speed and advantage on their next attack, until the end of their next turn.
+- The Horde (Action, spend 2 Call): Three spirit bears rise within 6 spaces and fight as minions (GM guide) until the encounter ends. Each attacks with a d10 (d12 from level 5, d20 from level 9), any damage destroys one, and they move and attack together on your turn. An enemy that starts its turn adjacent to a bear is Slowed.
+- Lodge-Kin (Passive): Beasts of cold lands do not attack you unless you attack first.
+
+**Escalation.** If the horn leaves your hands without the lodge's leave, the bears hunt whoever carries it: each dawn, 1d4 bears find the carrier. If you blow it for a hunt the lodge would be ashamed of, its speaker comes through the arch to take it back. Name the speaker at the table.
+
+### The Hut on Hen's Legs
+`hen_legs_hut` · found, Major, level 1 draw
+
+**Object.** A dried hen's foot on an iron ring, warm to the touch. It is the latch-key of a hut that stands on two great scaly legs in Briarheart Forest, near the Arch of Flowers. The hut's last mistress went through the arch and did not come back. The hut has waited, and it is hungry.
+
+**Unlock.**
+- Find the hut and say: "Hut, hut, turn your back to the forest and your face to me."
+- Feed it a meal it has never eaten, brought from beyond the city
+- Sleep one night inside
+- Risk: Before you sleep, the hut asks a riddle. Make a Lore check, DC 14. On a failure it turns its back and walks off, and you must find it again.
+
+**Resource: Hunger (pip tracker).** Hunger (pip tracker, max 3). Regain 1 each time you feed it a food it has never eaten, brought from a world beyond an arch or a region outside the city. Hunger returns only this way.
+
+**Powers.**
+- Home (Passive): The hut is a holding wherever it stands: a Safe Rest place for you and up to five guests. It will not fit down a street narrower than a wagon.
+- Run (spend 1 Hunger): The hut carries everyone inside at a run: a day's overland travel in an hour.
+- Stamp (Action, spend 1 Hunger, while you are inside or adjacent): Each creature within 2 spaces of the hut makes a DEX save, DC 13, or takes 2d6 bludgeoning and falls Prone.
+
+**Escalation.** If no one sleeps in the hut for a whole episode, it walks off toward the nearest arch, and you must find it again. The Sisters of Dusk know whose hut it was, and they want to know why a stranger holds her key.
+
+### The Crafter's Codex
+`crafters_codex` · found, Minor, level 1 draw
+
+**Object.** A book too thick to close, its margins written in a dozen hands and a dozen scripts. Every owner added to it; none finished it. It came through an arch in a crate of scrap bound for Vathrex's Forge, and the Forge's smiths want it.
+
+**Unlock.**
+- Make something with your own hands from its pages, and give it away
+- Find the last owner's apprentice and let them read what you added
+- Risk: The apprentice judges your work. Make a Finesse check, DC 13. On a failure they tell the Forge where the book is.
+
+**Resource: Patience (pip tracker).** Patience (pip tracker, max 3). Regain 1 when you teach someone a craft from its pages through a full day of downtime. Patience returns only this way.
+
+**Powers.**
+- Consult (downtime, 1 hour): Make a Lore check, DC 13. On a success, your next Craft downtime takes half the time and half the materials. On a failure, spend 1 Patience.
+- Patch (Action, spend 1 Patience): A broken weapon, shield, armor or arcanum object you touch works again until the encounter ends.
+- Maker's Price (Passive): Things you make from the Codex sell for double, and buyers know the hand.
+
+**Escalation.** At 0 Patience the Codex moves on: by morning it is gone, to a copy of itself in another world. Whoever you taught can still find it. The Forge's smiths come to your door asking what you did with it.
