@@ -208,8 +208,6 @@ const BANNED_TEXT = [
   [/–/, "en dash"],
   [/\bit'?s not\b/i, "\"it's not\" framing"],
 ];
-// The proof-of-concept entry is kept as supplied; these are its known exceptions.
-const LEGACY_VERB_OK = new Set(["Carrion Crawler"]);
 
 function lint(d) {
   const errs = [];
@@ -224,9 +222,7 @@ function lint(d) {
   need(d.lairs.length === 4, `lairs: ${d.lairs.length}, want 4`);
   need(d.rumours.length === 4, `rumours: ${d.rumours.length}, want 4`);
   need(d.rumours.filter((r) => r.true).length === 2, "rumours: want 2 true, 2 false");
-  if (!LEGACY_VERB_OK.has(d.name)) {
-    d.gigFit.verb.split("/").map((v) => v.trim()).forEach((v) => need(VERBS.includes(v), `verb "${v}" not in gig table`));
-  }
+  d.gigFit.verb.split("/").map((v) => v.trim()).forEach((v) => need(VERBS.includes(v), `verb "${v}" not in gig table`));
   ["hp", "armor", "speed", "stage"].forEach((k) => need(d.stats[k] !== undefined, `stats.${k} missing`));
   const playerFacing = d.actions.map((a) => `${a.name} ${a.cost} ${a.damage} ${a.effect}`).join("\n");
   const m = playerFacing.match(BANNED_CONDITIONS);

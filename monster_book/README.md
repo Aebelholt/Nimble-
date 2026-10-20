@@ -15,6 +15,7 @@ Nimble bestiary for the City of Arches: 33 entries across 11 worlds, each with a
 
 ## Known exceptions
 
-- **Carrion Crawler** is the proof-of-concept entry, kept as supplied apart from dashes. Its verb line ("Find / Escape / Protect") uses verbs outside the gig table, and its Stage (7-10) and But+ text call 7-10 a "Deathreach stage", where the Sejr table puts 7-10 in the Lower Reaches and Lost Cisterns. The lint skips its verb check.
+- **Carrion Crawler** is the proof-of-concept entry. Its verb, Stage and But+ were aligned with the Sejr tables (they had drifted); the rest is as supplied.
+- **Necrophage Ghast** follows the Tales of the Valiant Monster Vault: a spellcaster ghast that cannot spread ghoul hunger.
 - **Level** is printed in each header line. The spec's header did not include it; it is there for encounter budgeting.
 - **Ice World** has no chapter in the setting book. Its entries lean on the bear lodges from the Bear-Lodge Horn arcanum and invent little else.

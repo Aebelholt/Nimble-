@@ -3,107 +3,119 @@ module.exports = [
     world: "Threska/Arkus",
     tier: "Standard",
     role: "Controller",
-    level: 5,
+    level: 7,
     name: "Necrophage Ghast",
-    description: "A gaunt corpse with grey-green skin pulled tight over its ribs and a jaw " +
-      "unhinged like a snake's. It is swollen in the belly with what it has eaten, and " +
-      "the stench arrives a full room before it does.",
+    description: "A ghast that was a wizard once, and still dresses like one: robes gone " +
+      "stiff with old blood, ink stains under the grave-dirt on its fingers. It crawls " +
+      "the ceiling of a library it has eaten its way into, reading by the light of its " +
+      "own green eyes.",
 
-    stats: { hp: 64, armor: "None", speed: "6", stage: "4, 13+" },
+    stats: { hp: 72, armor: "Medium", speed: "6 (climb 6)", stage: "4, 13+" },
 
     actions: [
       {
         name: "Claws",
         cost: "1 Action, ×2",
-        damage: "1d4+8",
+        damage: "1d4+9",
         effect: "On hit: STR save DC 13 or Dazed on the target's next turn."
       },
       {
-        name: "Stench",
-        cost: "Passive, Reach 2",
-        damage: "—",
-        effect: "A creature that starts its turn within 2 spaces makes a STR save DC 13 " +
-          "or is Poisoned until the start of its next turn. Undead are immune."
+        name: "Arcane blast",
+        cost: "1 Action, ×2, Range 12",
+        damage: "2d6+4",
+        effect: "Force. It uses this from the ceiling while heroes look for a way up."
       },
       {
-        name: "Feast",
-        cost: "1 Action, adjacent corpse",
+        name: "Command",
+        cost: "1 Action, 1/round, Range 8",
         damage: "—",
-        effect: "The ghast heals 2d8 HP. At the end of its turn the corpse rises as a " +
-          "ghoul minion (GM Guide minion rules, Claws 1d4+2) under its command."
+        effect: "WIL save DC 13. Failure: the ghast chooses where the target spends its " +
+          "movement on its next turn. The target chooses its own actions."
       },
       {
-        name: "Drive the pack",
+        name: "Necrophage stench",
+        cost: "Passive, Reach 6",
+        damage: "—",
+        effect: "A hero who starts their turn within 6 spaces makes a STR save DC 13. " +
+          "Failure: disadvantage on saves against Claws and Command until the encounter " +
+          "ends. Success: immune to the stench until the next Safe Rest."
+      },
+      {
+        name: "Ghoul-master",
         cost: "Free, 1/round",
         damage: "—",
-        effect: "One ghoul minion within 12 spaces moves and attacks."
+        effect: "One ghoul within 12 spaces moves and attacks. Ghouls follow a ghast " +
+          "by instinct."
       }
     ],
 
     designNote:
-      "Ghoul and ghast claws paralyse in 5e. Here they Daze for one turn, with undead " +
-      "d4 dice and big flat bonuses as the GM Guide suggests. The necrophage makes the " +
-      "battlefield worse over time: every corpse it reaches is a heal and a new minion. " +
-      "Clearing bodies, burning them, or killing the ghast before it eats is the " +
-      "tactical problem. Fight it among the dead of Threska's bastion walls and the " +
-      "fight snowballs.",
+      "Rebuilt from the Tales of the Valiant Monster Vault. A necrophage rises from a " +
+      "spellcaster, hungers for magic as much as meat, and cannot pass on ghoul " +
+      "hunger, which is why some mages will trade with it. Its claws and its hold " +
+      "spell paralyse in the source; here both Daze for one turn, and its command " +
+      "steers a hero's feet, never their hands. The stench is a set-up: it makes " +
+      "every save after it harder, so the party's first decision is whether to close " +
+      "in or back off and shoot. Use it as a librarian and a broker, not just a " +
+      "monster: it knows things, and it wants to know more.",
 
     traits: [
-      "It wears a priest's stole from a temple that no longer has a god.",
-      "Its tongue is black and too long, and it licks the air like a dog.",
-      "It giggles when it eats.",
-      "One arm is withered and useless. It fights one-handed and leads with its teeth.",
-      "This one remembers being a man and mutters his name between bites.",
-      "Its eyes glow faint green in darkness, the same green as a lich-tower's lamps."
+      "Ink, not blood, under its claws. It has been copying something.",
+      "It still wears its University ring and turns it while it thinks.",
+      "It speaks politely, in a dry lecturer's voice, between bites.",
+      "One hand is wrapped in clean linen. It burned it on a ward and is studying " +
+        "the scar.",
+      "It keeps a bookmark in every book on its shelves, and knows where each one is.",
+      "Two ghouls follow it everywhere, carrying its lamp and its stool."
     ],
 
     encounters: [
-      "A Threskan bastion's dead have been laid in rows for burning. Something is " +
-        "moving between the rows, and the pyre wood is wet.",
-      "The party hears a feast before they see it: three ghouls and a ghast around " +
-        "a fallen titan's carcass in the Red Wastes.",
-      "A ghast leads ghouls up out of a tomb on the Cliffs of the Dead and is heading " +
-        "for the grave diggers' camp.",
-      "A lich of Threska keeps a ghast as a pet and lets it loose in its tower's lower " +
-        "halls to deal with intruders."
+      "A necrophage has made a lich-tower library in Threska its larder. The party " +
+        "needs one book. It will trade the book for a spell they know.",
+      "A Kartan mage is meeting a necrophage in a tomb on the Cliffs of the Dead to buy " +
+        "a page. The mage has brought too few guards and the ghast has brought too " +
+        "many ghouls.",
+      "Ghouls are carrying a living scholar up a Threskan bastion stair. The ghast " +
+        "walking behind them wants what the scholar knows, not the body.",
+      "A necrophage clings to the ceiling of a plundered temple, reading the god's " +
+        "name off the vault. Every word it reads aloud, the floor cracks."
     ],
 
     lairs: [
-      "A charnel pit under an obsidian tower where bones are sorted into neat heaps " +
-        "by size.",
-      "A plundered temple where the god's statue has had its face eaten away.",
-      "A collapsed crypt on the Cliffs of the Dead where every niche is empty and the " +
-        "floor is paved with gnawed bone.",
-      "A dry riverbed in the Red Wastes lined with half-buried skeletons, all facing " +
-        "the same way, all with their legs broken."
+      "A lich-tower library with the books shelved by how good they tasted. The " +
+        "catalogue is in the ghast's own hand.",
+      "A Cliffs of the Dead tomb fitted out as a study: a desk, a chair for a guest, " +
+        "and a ledger of every mage who came to trade.",
+      "An Arkus temple vault where every wall glyph has been scraped off and copied " +
+        "into a stack of skin-bound notebooks.",
+      "A sand-buried scriptorium in the Red Wastes where ghouls sit at the desks, " +
+        "copying, slowly, because it told them to."
     ],
 
     rumours: [
       { true: true,
-        text: "Burn the dead before you fight it. Every corpse it reaches is a new " +
-          "ghoul and a full belly." },
+        text: "It can't give you the hunger. Its bite is all magic, no sickness. That's " +
+          "why the mages deal with it." },
       { true: true,
-        text: "The stink is the worst of it. Hold your breath, step back, step in. It " +
-          "fades fast." },
+        text: "Don't stand in its stink. Back off a dozen paces before you close in, " +
+          "or every spell it throws will land." },
       { true: false,
-        text: "Ghast claws freeze you solid. One scratch and you're stone until " +
-          "morning." },
+        text: "One scratch from a ghast and you're stone-stiff until dawn, while it eats." },
       { true: false,
-        text: "Holy water burns them like acid. A flask will kill one outright." }
+        text: "It's only hungry for books. Throw it a spellbook and it'll let you pass." }
     ],
 
     gigFit: {
-      verb: "Bury / Stop",
+      verb: "Steal / Find",
       butPlus:
         "But+ Monster at Stage 4 (Cliffs of the Dead) and on any Threska or Arkus arch. " +
-          "Pair with a room full of bodies.",
+          "Best in a library, scriptorium or archive, with ghouls as the room's mob.",
       patronHook:
-        "A priest from the Temple of the Three Sisters needs a graveyard on the Cliffs " +
-          "of the Dead cleansed before a funeral. The dead there have stopped staying " +
-          "buried, and the priest suspects a ghast came through an arch.",
+        "The University has been buying pages from a necrophage through a cut-out and " +
+          "wants the party to find out what the ghast has been buying in return.",
       cityName:
-        "\"Gravebellies\": grave diggers' name, from the swollen gut. If a dig crew " +
-          "finds the tombs gnawed open, they say a gravebelly passed through."
+        "\"The Reader\": grave diggers' name for the one on the Cliffs, said the way " +
+          "you would name a landlord. Kartan students say it with a nervous laugh."
     }
   },
 

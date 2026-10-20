@@ -1,6 +1,6 @@
 module.exports = [
-  // Proof-of-concept entry, kept as supplied. Only typography changed: em dashes
-  // became commas and the stage range uses a hyphen, per the book's style rules.
+  // Proof-of-concept entry. Stage, verb and But+ aligned with the Sejr tables;
+  // the stat block and tables are as supplied.
   {
     world: "Deathreach",
     tier: "Standard",
@@ -13,7 +13,7 @@ module.exports = [
       "ring of eight tentacles, each tipped with something the colour " +
       "of old bruise.",
 
-    stats: { hp: 28, armor: "Medium", speed: "6 (climb 8)", stage: "7-10" },
+    stats: { hp: 28, armor: "Medium", speed: "6 (climb 8)", stage: "7-10, 13+" },
 
     actions: [
       {
@@ -139,13 +139,15 @@ module.exports = [
     ],
 
     gigFit: {
-      verb: "Find / Escape / Protect",
+      verb: "Find / Escort",
       butPlus:
-        "Natural But+ Monster result for any Deathreach stage (7-10). " +
-          "Best deployed at a chokepoint in a corridor map, the party " +
+        "Natural But+ Monster result at Stages 7-10, where Warreners " +
+          "have bred up into the tunnels under the Lower Reaches and the " +
+          "Lost Cisterns, and on any Deathreach arch. " +
+          "Best deployed at a chokepoint in a corridor map: the party " +
           "arrives at the junction and the crawler is already there, " +
-          "occupying the only passage forward. Pair with Endless Diggers " +
-          "for a two-faction encounter: the noise of duergar work drew " +
+          "occupying the only passage forward. Pair with a duergar dig " +
+          "crew for a two-faction encounter: the noise of their work drew " +
           "the crawlers here, and now both are the party's problem.",
       patronHook:
         "The Archkeepers sent the party to retrieve something from a " +
