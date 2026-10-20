@@ -17,7 +17,7 @@ Class arcana first, then found arcana. No notes or prior review included.
 
 **Powers.**
 - Echo Strike (Free, while Raging, spend 1 Fury Echo): Roll a Fury Die and set it aside with the rest, up to your maximum. This does not use your Rage action. The die follows the Fury Die rules and is lost when your Rage ends.
-- Death's Door (Free, 1/encounter, when you Rage, spend all 3 Fury Echo): For this encounter, your Rage does not end when you drop to 0 HP. Your Fury Dice stay, and Enduring Rage still applies once you have it. This is the bone's last act (see Escalation).
+- Death's Door (Free, 1/encounter, when you Rage, spend all 3 Fury Echo): For this encounter, your Rage does not end when you drop to 0 HP. Your Fury Dice stay. You are still Dying, with all its rules, and Enduring Rage still applies once you have it. This is the bone's last act (see Escalation).
 
 **Escalation.** If you drop to 0 HP with Death's Door active, the knucklebone cracks at once and stops working. Your Rage still holds for the encounter. Replace it with another ancestor's relic from the Borderlands, or take one from a worthy enemy. The GM decides where it is and how long the search takes. Whatever hunted the ancestor learns the bone has moved. Roll a d6 on the table below, or choose.
 
@@ -36,10 +36,10 @@ Class arcana first, then found arcana. No notes or prior review included.
 **Resource: Fixes (pip tracker).** Fixes (pip tracker, max 4). Fixes do not refill automatically. To refill: run a game of chance during a Safe Rest and earn at least 1 silver in genuine winnings against an opponent who had a real chance of winning. Gain all 4 Fixes back. Safe Rests where you do not gamble leave the tracker as it is. Fixes return only this way.
 
 **Powers.**
-- Fix (Free, before you roll, spend 1 Fix): Declare you are using the die. Roll your Primary Die twice and take whichever result you prefer. No memory required, both rolls happen now, in front of everyone.
+- Fix (Free, before you roll an attack, spend 1 Fix): Declare you are using the die. Roll your Primary Die twice and take whichever result you prefer. No memory required, both rolls happen now, in front of everyone.
 - Loaded Odds (Passive): Once per session, you may ask the GM whether a creature you can see is bluffing. The die rolls and the GM answers truthfully, but only yes or no.
 
-**Escalation.** When all 4 Fixes are spent, the die gets you anyway. On your next Vicious Opportunist use after depletion, the GM secretly rolls a d6. On a 1-3 the die turns on you and Vicious Opportunist does nothing, and you do not know until after you have committed. The uncertainty lasts for one use only. Word that a loaded die is back in play reaches the card sharp within a session.
+**Escalation.** When all 4 Fixes are spent, the die gets you anyway. On your next Vicious Opportunist use after depletion, the GM secretly rolls a d6. On a 1-3 the die turns on you: Vicious Opportunist does nothing, and that use is spent, and you do not know until after you have committed. The uncertainty lasts for one use only. Word that a loaded die is back in play reaches the card sharp within a session.
 
 ### The Battle Standard of the Nameless King
 `class_commander` · class arcanum, Commander
@@ -71,7 +71,7 @@ Class arcana first, then found arcana. No notes or prior review included.
 - Track a single creature across at least two sessions without losing the trail, through city, ruin, or wilderness. The creature must be aware it is being hunted, and must have tried to lose you at least once.
 - Risk: Each session you track the creature, the GM rolls a d6. On a 1, it doubles back and ambushes you, and it acts first in the next encounter.
 
-**Resource: Marks (d6 vs. accumulation).** Marks (d6 vs. accumulation). Your Mark count is the number of quarries the cord currently tracks. Each quarry takes one token, so the cord tracks no more quarries than it has unburned tokens (six to begin with). Roll 1d6 each time you use a cord ability (Mark a Quarry or Cord Pull), before any new Mark is added. If you roll equal to or below your current Mark count, something near the quarry noticed you. A Mark clears when you confront that quarry directly, and its token is free for a new quarry; or when you Cut its Mark, and its token burns. Resting does not clear Marks.
+**Resource: Marks (d6 vs. accumulation).** Marks (d6 vs. accumulation). Your Mark count is the number of quarries the cord currently tracks. Each quarry takes one token, so the cord tracks no more quarries than it has unburned tokens (six to begin with). Roll 1d6 each time you use a cord ability (Mark a Quarry or Cord Pull), before any new Mark is added. If you roll equal to or below your current Mark count, something near the quarry you are marking or pulling noticed you. A Mark clears when you confront that quarry directly, and its token is free for a new quarry; or when you Cut its Mark, and its token burns. Resting does not clear Marks.
 
 **Powers.**
 - Mark a Quarry (1 Action): Touch the cord to any physical trace of a creature: a footprint, a drop of blood, shed skin. Add 1 Mark. While that quarry is marked, you know its general direction and distance within 1 mile regardless of cover or concealment. This works on creatures you have not marked with Hunter's Mark, because the cord marks independently of the class ability.
@@ -111,7 +111,7 @@ Class arcana first, then found arcana. No notes or prior review included.
 - The refusal must be genuine. The Verdict will know if you were simply afraid.
 - Risk: The GM starts a six-step clock for whoever was owed the verdict. It ticks whenever you are seen shielding the person you chose, and when it fills they act against you both.
 
-**Resource: Held Judgment (toggle).** Held Judgment (toggle, on/off). When your Radiant Judgment would roll Judgment Dice, you may roll them and put them on the scales instead, which turns the toggle on. While the scales hold dice, you roll no new Judgment Dice. Held dice stay on the scales past the end of the encounter. The toggle clears when you Release the dice on an attack, or when you bring the scales to the Temple of the Three Sisters to be cleared (see Escalation).
+**Resource: Held Judgment (toggle).** Held Judgment (toggle, on/off). When your Radiant Judgment would roll Judgment Dice, you may roll them and put them on the scales instead, which turns the toggle on. The scales hold one set of dice at a time, and while they hold it you roll no new Judgment Dice. Held dice stay on the scales past the end of the encounter. The toggle clears when you Release the dice on an attack, or when you bring the scales to the Temple of the Three Sisters to be cleared (see Escalation).
 
 **Powers.**
 - Hold Judgment (Free, when Judgment Dice would be rolled): Keep the dice on the scales. While they are held, you see the remaining pan tilt when a creature within 6 spaces lies to you, visible only to you. You know. They do not know you know. You must decide what to do with that.
@@ -133,7 +133,7 @@ Class arcana first, then found arcana. No notes or prior review included.
 
 **Powers.**
 - Read the Contract (Free, 1/encounter, mark 1 Debt): Hold the vellum up. You see one true fact about a creature you can see: its most urgent want, its deepest fear, or the name of someone it has wronged.
-- Patron's Margin (Free, 1/encounter, mark 2 Debt, patron path or before level 3): Spend a use of Pilfered Power to cast a spell from your schools one tier above your current maximum. The patron extends credit.
+- Patron's Margin (Free, 1/encounter, mark 2 Debt, patron path; every Shadowmancer is on it until choosing a subclass at level 3): Spend a use of Pilfered Power to cast a spell from your schools one tier above your current maximum. The patron extends credit.
 - Reaver's Margin (Free, 1/encounter, mark 2 Debt, Reaver path): Your next Bonescythe strike this turn rolls one extra d12.
 
 **Escalation.** When Debt reaches 4 or more, the patron collects. It does not take power. It adds one sentence about your character to the contract, permanently. The GM decides what it says and reads it aloud. Debt clears. The sentence stays. A Reaver's contract still answers to the patron they left: that patron writes the sentence, and sends an agent to read it to them in person. Roll a d6 on the table below, or choose.
@@ -217,7 +217,7 @@ Class arcana first, then found arcana. No notes or prior review included.
 - Deepest Annotation (Free, spend 1 Wound, 1/Safe Rest): Your unarmed and melee weapon attacks deal bonus damage equal to your level for the rest of the encounter.
 - Study (downtime, 1 hour per Safe Rest): Spend an hour reading the annotations during rest. Roll Lore DC 8 to learn something about a martial tradition relevant to the current adventure arc. The GM provides one true detail.
 
-**Escalation.** If you use either annotation while you have 3 or more Wounds, from any source, the wrappings tighten around your hands: take 1 additional Wound (it cannot be your sixth: at 5 Wounds you fall Dying instead) and you cannot use either annotation until your next Safe Rest. The annotations become illegible until a skilled martial artist re-inks them. Finding one is the GM's hook.
+**Escalation.** If you use either annotation while you have 3 or more Wounds, from any source, the wrappings tighten around your hands: the annotation still works, then take 1 additional Wound (it cannot be your sixth: at 5 Wounds you fall Dying instead) and you cannot use either annotation until your next Safe Rest. The annotations become illegible until a skilled martial artist re-inks them. Finding one is the GM's hook.
 
 ### The Forgotten Key
 `forgotten_key` · found, Major, faction reward
@@ -233,7 +233,7 @@ Class arcana first, then found arcana. No notes or prior review included.
 **Resource: Hum (pip tracker).** Hum (pip tracker, max 3). Spend 1 Hum each time you Open the Way. Regain 1 when you carry the key, during a gig, to an arch you have not yet tried it on and an Archkeeper records what the arch did. This is never an off-screen refill. Hum never returns at a rest.
 
 **Powers.**
-- Open the Way (Action, spend 1 Hum): A dormant arch opens for up to a minute. Make a Lore check, DC 12, or you cannot control where it leads. A natural 20 lets you sense the destination first.
+- Open the Way (Action, spend 1 Hum): A dormant arch opens for up to a minute. This key is old and wrong, unlike a true arch key: make a Lore check, DC 12, or you cannot control where it leads. A natural 20 lets you sense the destination first.
 - Tuning (Passive): The key hums faintly within 6 spaces of a dormant arch.
 
 **Escalation.** Spending the last Hum, roll a d6. On 1-2 the key splinters, and every arch it opens leads somewhere wrong until an Archkeeper repairs it. On 3+, take 1 Wound.
@@ -335,7 +335,7 @@ Class arcana first, then found arcana. No notes or prior review included.
 - Sworn (Passive): While the oath stands, you have advantage on checks that directly advance it. The GM grades it when you swear. Worthy: a session's work, at risk to you. Mighty: an arc's work, at risk to someone or something you love. Legendary: it changes the city.
 - Hold Fast (Reaction, once per oath): When you fail a check or save that directly advances the oath, reroll it with advantage. The oath drops one grade.
 
-**Escalation.** Fulfilled: heal 1 Wound and gain +1, +2 or +3 max HP for good, by grade. Max HP from the Band never exceeds your level. Failed: lose that much max HP for good, the Golden Council writes the broken oath on the record under your name, and the Band stays shut until you do a penance.
+**Escalation.** Fulfilled: heal 1 Wound and gain +1, +2 or +3 max HP for good, by grade. The Band's total max HP bonus never exceeds your level. Failed: the oath clears, you lose that much max HP for good, the Golden Council writes the broken oath on the record under your name, and the Band stays shut until you do a penance.
 
 ### The Unpaid Favor
 `unpaid_favor` · found, Minor, level 1 draw
@@ -407,7 +407,7 @@ Class arcana first, then found arcana. No notes or prior review included.
 - Thorned Bark (Passive): Mail armor, Defense 6+DEX (max 2) and advantage on Stealth in forests and jungles. Each Burden gives -1 Speed. Without mail armor proficiency, Defend costs 1 extra action, as normal.
 - Snare (Reaction, +1 Burden): When a melee weapon hits you, the attacker makes a STR save, DC 13, or the weapon sticks. The attacker must let go of it or stay adjacent to you; anyone can pry a stuck weapon free with an action and a Might check, DC 13. A creature using natural weapons is Grappled to you, escaping as from any grapple, and adds no Burden.
 
-**Escalation.** When a fourth weapon would stick, the sap seals you in: you are Restrained until someone spends an action and passes a Might check, DC 14, to cut you out. Then the harness gives half its Defense until it is glued again with fresh sap.
+**Escalation.** When a fourth weapon would stick, it sticks, Burden stays at 3, and the sap seals you in: you are Restrained until someone spends an action and passes a Might check, DC 14, to cut you out. Then the harness gives half its Defense until it is glued again with fresh sap.
 
 ### The Hellhide
 `hellhide` · found, Major, level 1 draw
@@ -420,7 +420,7 @@ Class arcana first, then found arcana. No notes or prior review included.
 - Put it on
 - Risk: Roll d10. On 1-3 the hide drinks magic: no spell can affect you, including your own and your allies' healing, while you wear it, and each spell cast on you gives the hide 1 Thirst.
 
-**Resource: Thirst (pip tracker).** Thirst (pip tracker, max 3). Gain 1 Thirst each time you use Command. Thirst clears only when you offer blood to the hide outside combat, from a willing person outside your party. Blood shed in a fight does not count.
+**Resource: Thirst (pip tracker).** Thirst (pip tracker, max 3). Gain 1 Thirst each time you use Command, and, if the hide drinks magic, each time a spell is cast on you. Thirst cannot pass 3. Thirst clears only when you offer blood to the hide outside combat, from a willing person outside your party. Blood shed in a fight does not count.
 
 **Powers.**
 - Demon Plate (Passive): Plate armor, Defense 14, with no STR requirement. Without plate armor proficiency, Defend costs 1 extra action, as normal.
@@ -520,7 +520,7 @@ Class arcana first, then found arcana. No notes or prior review included.
 - The Horde (Action, spend 2 Call): Three spirit bears rise within 6 spaces and fight as minions (GM guide) until the encounter ends. Each attacks with a d10 (d12 from level 5, d20 from level 9), any damage destroys one, and they move and attack together on your turn. An enemy that starts its turn adjacent to a bear is Slowed.
 - Lodge-Kin (Passive): Beasts of cold lands do not attack you unless you attack first.
 
-**Escalation.** If the horn leaves your hands without the lodge's leave, the bears hunt whoever carries it: each dawn, 1d4 bears find the carrier. If you blow it for a hunt the lodge would be ashamed of, its speaker comes through the arch to take it back. Name the speaker at the table.
+**Escalation.** If the horn leaves your hands without the lodge's leave, the bears hunt whoever carries it: each dawn, 1d4 great bears of the ice world find the carrier. If you blow it for a hunt the lodge would be ashamed of, its speaker comes through the arch to take it back. Name the speaker at the table.
 
 ### The Arch-Watch Mirror
 `arch_watch_mirror` · found, Major, faction reward
@@ -539,7 +539,7 @@ Class arcana first, then found arcana. No notes or prior review included.
 - Watch (10 minutes, spend 1 Clarity): See a watched arch and the area around it for 10 minutes.
 - Foresee (spend 1 Clarity, once per episode): Before you go through, ask the GM one question about where the arch leads.
 
-**Escalation.** At 0 Clarity the glass stays clear both ways. Anything beyond a watched arch can look into your holding until the mirror is refilled.
+**Escalation.** At 0 Clarity the glass stays clear both ways. Anything beyond a watched arch can see and hear the room the mirror stands in until the mirror is refilled. Covering the glass does not stop it.
 
 ### The Apology Blade
 `apology_blade` · found, Major, level 1 draw
@@ -572,7 +572,7 @@ Class arcana first, then found arcana. No notes or prior review included.
 - Hold the fragments together for 10 minutes and they fuse
 - Risk: Whoever carries another fragment feels yours wake. Holding the shards together while they grind takes a STR save, DC 13. On a failure you take 1 Wound and must hold them for another 10 minutes.
 
-**Resource: Runes (pip tracker).** Runes (pip tracker, up to 9, one per fused fragment). Each fragment carries one rune, rolled on a d8 when it fuses (roll again on a rune you already have). There are eight runes; the ninth fragment carries none of its own, and fusing it wakes the stone (see Escalation). Each rune works once, then goes dark. A dark rune relights when you carve it into a gravestone or a standing stone and speak aloud the name of someone who died for something.
+**Resource: Runes (pip tracker).** Runes (pip tracker, up to 9, one per fused fragment). Each fragment carries one rune, rolled on a d8 when it fuses (roll again on a rune you already have). There are eight runes; the ninth fragment carries none of its own, and fusing it wakes the stone (see Escalation). Each rune works once, then goes dark. A dark rune relights when you carve it into a gravestone or a standing stone and speak aloud the name of someone who died for something, a name not yet spoken over that rune.
 
 **Powers.**
 - Fehu (Action): An item you touch gives +1 to rolls made with it for an hour.
@@ -599,7 +599,7 @@ Class arcana first, then found arcana. No notes or prior review included.
 **Resource: Strips (pip tracker).** Strips (pip tracker, max 3). Spend 1 Strip per Hold Back. Regain 1 by preparing and burying someone who has no one to do it for them. Strips return only this way.
 
 **Powers.**
-- Hold Back (Action, spend 1 Strip): Wrap a Dying creature. It stays at 0 HP but is no longer Dying: it takes no Wounds from damage, and it cannot act. When it is unwrapped, or at the next dawn, it is Dying again.
+- Hold Back (Action, spend 1 Strip): Wrap a Dying creature. It stays at 0 HP but is no longer Dying: it takes no Wounds from damage, and it cannot act. When it is unwrapped, or at the next dawn, it is Dying again. If it regains HP while wrapped, the wrap ends and it acts as normal.
 - Myrrh (Passive): You know at a glance how long a body has been dead and whether it was ever bound.
 
 **Escalation.** Any creature wrapped a second time comes back a little less. It forgets one thing it loved, and the GM chooses what.
@@ -635,7 +635,7 @@ Class arcana first, then found arcana. No notes or prior review included.
 **Resource: Slack (d6 vs. accumulation).** Slack (d6 vs. accumulation). Each time you Haul, roll a d6 against your current Slack, then add 1 Slack. If you roll equal to or below your Slack before adding, the line snarls (see Escalation). Slack has no maximum, so at 6 or more every Haul snarls. Slack clears when you carry a length of the line back to a derelict hull in Drendaan and splice it into the strand.
 
 **Powers.**
-- Haul (Action, Range 12, +1 Slack): Make a ranged attack with the harpoon: 1d6+STR piercing, like a thrown spear. On a hit, choose one: pull yourself to the target, or pull a Medium or smaller target up to 6 spaces toward you. A pulled creature falls Prone and can make a STR save, DC 13, to resist.
+- Haul (Action, Range 12, +1 Slack): Make a ranged attack with the harpoon: 1d6+STR piercing, like a thrown spear. On a hit, choose one: pull yourself to the target, or pull a Medium or smaller target up to 6 spaces toward you. A pulled creature can make a STR save, DC 13; on a success it is neither pulled nor Prone, on a failure it is pulled and falls Prone.
 - Anchor (Free, 1/round, after a Haul that hits): Plant the line. The target cannot move more than 6 spaces from you until your next turn or until you let go (Free).
 
 **Escalation.** When the d6 triggers, the line snarls around you or your target, the GM's choice. Both of you are Restrained until either of you, or anyone adjacent, spends an action to cut it. The cut length keeps glowing, and whatever lived aboard the hulk follows it through the arch.
@@ -674,7 +674,7 @@ Class arcana first, then found arcana. No notes or prior review included.
 **Resource: Truce (toggle).** Truce (toggle, on/off). Strike the stick on a table to call a Truce, which turns it on. It turns off when the parley ends, when you end it, or when anyone attempts violence under it. Once off, it cannot be turned on again until you have brokered a meeting between two enemies who would not otherwise have met, and settled the tab for it at the Black Goat's Tavern.
 
 **Powers.**
-- Call a Truce (Action, turn Truce on): Name a place and up to six people in it. For an hour, or until the parley ends, a named creature that tries to attack another named creature makes a WIL save, DC 14. On a failure the attack does not happen. Either way, the Truce ends.
+- Call a Truce (Action, turn Truce on): Name a place and up to six people in it. For an hour, or until the parley ends, a named creature that tries to attack another named creature makes a WIL save, DC 14. On a failure the attack does not happen, and the action is spent. Either way, the Truce ends.
 - Read the Notches (Passive): When you hold the stick at a table, you know who in the room owes whom, and whether the debt is money, a favor, or blood.
 
 **Escalation.** If the Truce breaks, the stick burns your palm for 1 Wound, and Vynan Halfhorn sends someone for whoever broke it within a session. Vynan Halfhorn will want to know why the peace failed under his stick.
@@ -694,7 +694,7 @@ Class arcana first, then found arcana. No notes or prior review included.
 **Powers.**
 - Draw Fire (Action, spend 1 Ward): Rattle the chain. Each enemy within 6 spaces that can see you makes a WIL save, DC 13, or is Taunted by you until the end of its next turn. Solo creatures save with advantage.
 - Long Links (Passive): Your Interpose reaches allies within 4 spaces, not 2.
-- Hold the Line (Free, spend 1 Ward, when you Interpose): You also Defend against that attack without spending an action for it.
+- Hold the Line (Free, spend 1 Ward, when you Interpose): You also Defend against that attack without spending an action for it. This counts as your Defend for the round.
 
 **Escalation.** When you spend the last Ward, the chain locks: until the encounter ends, you cannot willingly move away from an enemy. The Wardens' Lodge hears the old gate chain rang again. They want it back on the gate, and their gate captain drinks where the wall guards drink.
 
@@ -750,7 +750,7 @@ Class arcana first, then found arcana. No notes or prior review included.
 
 **Powers.**
 - Consult (downtime, 1 hour): Make a Lore check, DC 13. On a success, your next Craft downtime takes half the time and half the materials. On a failure, spend 1 Patience.
-- Patch (Action, spend 1 Patience): A broken weapon, shield, armor or arcanum object you touch works again until the encounter ends, or for an hour outside one. Patch cannot mend what an arcanum's Escalation broke.
+- Patch (Action, spend 1 Patience): A broken weapon, shield, armor or arcanum object you touch works again until the encounter ends, or for an hour outside one. Patch restores function only, never spent resources, and cannot mend what an arcanum's Escalation broke.
 - Maker's Price (Passive): Things you make from the Codex sell for double, and buyers know the hand.
 
 **Escalation.** At 0 Patience the Codex moves on: by morning it is gone, to a copy of itself in another world. Whoever you taught can still find it. The Forge's smiths come to your door asking what you did with it.

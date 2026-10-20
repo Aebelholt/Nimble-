@@ -130,6 +130,10 @@ A second model audited the deck from `analysis/blind_audit_prompt.md`. Triage in
 - GM calls: legacy faces are now Hexing Needles, Bear-Lodge Horn, Axe of Nine Eyes (Sown Teeth to the regular draw); Hut and Valkyrie kept as written; off-screen refills restore 1 pip; Hellhide blood from outside the party; Zephyr's escalation Wound can't kill.
 - Fixed: prompt card count, Gate Chain Hold the Line (Free), Spear Spare vs Last Stand, Contract Debt cap, Lens spell order, Cord roll order, Hourglass scope, Fairy Jar name lead, Gust geometry.
 
+### Audit round 6 triage
+- External audit of the frozen files; triage in `analysis/blind_audit_v6_triage.md`.
+- Eighteen clarity fixes (Dying under Death's Door, Fix for attacks, Harpoon save scope, Hold the Line counts as Defend, Hellhide spell Thirst, Patch restores function only, and more). Fairy Jar refill open.
+
 ## Diversity, found pool: before and after
 
 | | Before (25) | After (24) |
