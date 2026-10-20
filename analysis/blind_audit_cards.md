@@ -502,23 +502,25 @@ Class arcana first, then found arcana. No notes or prior review included.
 
 **Escalation.** Every victim knows the shape of your hands, and the Sisters of Dusk hear who is stitching in their style. At 0 Thread you can still Stitch, but the hex also lands on you, in your body, not on cloth: it lasts until you regain Thread, and unpicking cannot touch it.
 
-### The Sown Teeth
-`sown_teeth` · found, Major, draw face 22 (legacy bonus only)
+### The Bear-Lodge Horn
+`bear_lodge_horn` · found, Major, draw face 22 (legacy bonus only)
 
-**Object.** A hide satchel holding a handful of long dragon teeth from Drakeholm that click together like dice.
+**Object.** A hunting horn carved from the jawbone of a great white bear, banded in black iron and scored with a lodge's tally of hunts. It came through an arch from a world of ice. The lodge that blew it has not stopped looking.
 
 **Unlock.**
-- Read the command words etched inside the flap, in a dead language
-- Sow the first tooth on ground you mean to hold
-- Risk: The first warrior asks whom it must guard. Your answer binds every warrior after it, and the GM holds you to the letter.
+- Go through the arch and find the lodge it was taken from
+- Bring the lodge a hunt: a beast its hunters could not take
+- Blow it once in their hall, with their leave
+- Risk: The lodge tests you first. Make a Might check, DC 14, in their contest of strength. On a failure they keep the horn until you bring a second hunt.
 
-**Resource: Teeth (finite never-refill).** Teeth (finite, 1d4+1, rolled at unlock). Each Sow uses up one tooth. A sown tooth never comes back, and nothing refills the satchel.
+**Resource: Call (pip tracker).** Call (pip tracker, max 3). Regain all Call when you carry the horn back to the lodge hall and tell them the hunt you used it for. Call returns only this way.
 
 **Powers.**
-- Sow (Action, spend 1 Tooth): An armored warrior rises from the ground beside you and obeys you for an hour. It fights as a minion (GM guide): it attacks with a d10 (d12 from level 5, d20 from level 9), any damage destroys it, and all your warriors move and attack together on your turn.
-- Dragon's Click (Passive): The teeth click louder within 6 spaces of a dragon or dragonkin.
+- Hunting Call (Action, spend 1 Call): Every ally within 12 spaces who hears it gains +2 Speed and advantage on their next attack, until the end of their next turn.
+- The Horde (Action, spend 2 Call): Three spirit bears rise within 6 spaces and fight as minions (GM guide) until the encounter ends. Each attacks with a d10 (d12 from level 5, d20 from level 9), any damage destroys one, and they move and attack together on your turn. An enemy that starts its turn adjacent to a bear is Slowed.
+- Lodge-Kin (Passive): Beasts of cold lands do not attack you unless you attack first.
 
-**Escalation.** If two or more warriors stand and one is hit by an attacker it could not see, they turn on each other, then on whoever is closest. Dragons and their kin can smell the satchel. When the last tooth is gone, the satchel is just a bag.
+**Escalation.** If the horn leaves your hands without the lodge's leave, the bears hunt whoever carries it: each dawn, 1d4 bears find the carrier. If you blow it for a hunt the lodge would be ashamed of, its speaker comes through the arch to take it back. Name the speaker at the table.
 
 ### The Arch-Watch Mirror
 `arch_watch_mirror` · found, Major, faction reward
@@ -696,25 +698,23 @@ Class arcana first, then found arcana. No notes or prior review included.
 
 **Escalation.** When you spend the last Ward, the chain locks: until the encounter ends, you cannot willingly move away from an enemy. The Wardens' Lodge hears the old gate chain rang again. They want it back on the gate, and their gate captain drinks where the wall guards drink.
 
-### The Bear-Lodge Horn
-`bear_lodge_horn` · found, Major, level 1 draw
+### The Sown Teeth
+`sown_teeth` · found, Major, level 1 draw
 
-**Object.** A hunting horn carved from the jawbone of a great white bear, banded in black iron and scored with a lodge's tally of hunts. It came through an arch from a world of ice. The lodge that blew it has not stopped looking.
+**Object.** A hide satchel holding a handful of long dragon teeth from Drakeholm that click together like dice.
 
 **Unlock.**
-- Go through the arch and find the lodge it was taken from
-- Bring the lodge a hunt: a beast its hunters could not take
-- Blow it once in their hall, with their leave
-- Risk: The lodge tests you first. Make a Might check, DC 14, in their contest of strength. On a failure they keep the horn until you bring a second hunt.
+- Read the command words etched inside the flap, in a dead language
+- Sow the first tooth on ground you mean to hold
+- Risk: The first warrior asks whom it must guard. Your answer binds every warrior after it, and the GM holds you to the letter.
 
-**Resource: Call (pip tracker).** Call (pip tracker, max 3). Regain all Call when you carry the horn back to the lodge hall and tell them the hunt you used it for. Call returns only this way.
+**Resource: Teeth (finite never-refill).** Teeth (finite, 1d4+1, rolled at unlock). Each Sow uses up one tooth. A sown tooth never comes back, and nothing refills the satchel.
 
 **Powers.**
-- Hunting Call (Action, spend 1 Call): Every ally within 12 spaces who hears it gains +2 Speed and advantage on their next attack, until the end of their next turn.
-- The Horde (Action, spend 2 Call): Three spirit bears rise within 6 spaces and fight as minions (GM guide) until the encounter ends. Each attacks with a d10 (d12 from level 5, d20 from level 9), any damage destroys one, and they move and attack together on your turn. An enemy that starts its turn adjacent to a bear is Slowed.
-- Lodge-Kin (Passive): Beasts of cold lands do not attack you unless you attack first.
+- Sow (Action, spend 1 Tooth): An armored warrior rises from the ground beside you and obeys you for an hour. It fights as a minion (GM guide): it attacks with a d10 (d12 from level 5, d20 from level 9), any damage destroys it, and all your warriors move and attack together on your turn.
+- Dragon's Click (Passive): The teeth click louder within 6 spaces of a dragon or dragonkin.
 
-**Escalation.** If the horn leaves your hands without the lodge's leave, the bears hunt whoever carries it: each dawn, 1d4 bears find the carrier. If you blow it for a hunt the lodge would be ashamed of, its speaker comes through the arch to take it back. Name the speaker at the table.
+**Escalation.** If two or more warriors stand and one is hit by an attacker it could not see, they turn on each other, then on whoever is closest. Dragons and their kin can smell the satchel. When the last tooth is gone, the satchel is just a bag.
 
 ### The Hut on Hen's Legs
 `hen_legs_hut` · found, Major, level 1 draw

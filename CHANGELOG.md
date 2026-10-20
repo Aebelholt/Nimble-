@@ -127,7 +127,7 @@ A second model audited the deck from `analysis/blind_audit_prompt.md`. Triage in
 
 ### Audit round 5 triage
 - Session audit and an external audit of the v4 prompt; triage in `analysis/blind_audit_v5_triage.md`.
-- GM calls: Hut and Valkyrie kept as written; off-screen refills restore 1 pip; Hellhide blood from outside the party; Zephyr's escalation Wound can't kill.
+- GM calls: legacy faces are now Hexing Needles, Bear-Lodge Horn, Axe of Nine Eyes (Sown Teeth to the regular draw); Hut and Valkyrie kept as written; off-screen refills restore 1 pip; Hellhide blood from outside the party; Zephyr's escalation Wound can't kill.
 - Fixed: prompt card count, Gate Chain Hold the Line (Free), Spear Spare vs Last Stand, Contract Debt cap, Lens spell order, Cord roll order, Hourglass scope, Fairy Jar name lead, Gust geometry.
 
 ## Diversity, found pool: before and after

@@ -28,7 +28,7 @@ Already fixed in v4 before these arrived: armor proficiency, Harpoon damage, Cod
 - **A. Hut: kept.** Bottle episodes; its travel lets the party take far-off jobs, a Safe Rest ends an adventure anyway, and the hut itself can host a one-off episode.
 - **B. Off-screen refills: yes.** One pip or one point of accumulation, never a full reset.
 - **C. Valkyrie: kept.** Life comes cheap; roll a new hero.
-- **D. Legacy faces:** open.
+- **D. Legacy faces: swap.** Bear-Lodge Horn takes face 22; Sown Teeth joins the regular draw. Hexing Needles (21) and the Axe (23) stay.
 - **E. Rusted Spear: kept.**
 - **F. Hellhide: yes.** Blood from a willing person outside the party.
 - **G. Zephyr: yes.** The escalation Wound can't be your sixth.

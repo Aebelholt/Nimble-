@@ -4,7 +4,7 @@ Small house rules that sit beside the cards. The cards themselves live in `data/
 
 ## Hero creation
 - Roll a d20 for one found arcanum on the ordered draw (`other_arcanum`, faces 1-20). Major cards are in the draw on purpose: the unlock is the gate, and a starting hero holding a campaign-changing relic is part of the fun.
-- **Legacy bonus.** Faces 21-23 hold the three strongest cards (`legacy_arcanum_top`: Hexing Needles, Sown Teeth, Axe of Nine Eyes). A player adds +1 to the draw for each of their heroes who died, retired, or was lost to an arcanum's Escalation, up to +3. In Perchance: `legacy_arcanum(bonus)`.
+- **Legacy bonus.** Faces 21-23 hold the three strongest cards (`legacy_arcanum_top`: Hexing Needles, Bear-Lodge Horn, Axe of Nine Eyes). A player adds +1 to the draw for each of their heroes who died, retired, or was lost to an arcanum's Escalation, up to +3. In Perchance: `legacy_arcanum(bonus)`.
 - Take a holding, or join your class guild (`data/sejr_guilds.json`).
 - Class arcana are never drawn. A hero earns their class arcanum at Journeyman rank in their class guild. The Forgotten Key, Seven-Leaf Bracelet, Arch-Watch Mirror, Tide-Coat and Pitch-Sap Harness are faction rewards only.
 
