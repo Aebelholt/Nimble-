@@ -120,6 +120,11 @@ A second model audited the deck from `analysis/blind_audit_prompt.md`. Triage in
 - **Legacy draw:** d20 over 20 regular cards; faces 21-23 (Hexing Needles, Sown Teeth, Axe of Nine Eyes) need a legacy bonus of +1 per lost hero, max +3. `legacy_arcanum(bonus)` in Perchance, tested 3,000 rolls each way. Hero card edit is now `let arc = legacy_arcanum(0);`.
 - Blind audit prompt v4 regenerated: each card is labelled draw, legacy face or faction reward; Interpose and Craft added to the rules reference.
 
+### Blind audit v4 triage
+- Subagent audit of the 39-card deck (`analysis/blind_audit_v4_result.md`), triage in `analysis/blind_audit_v4_triage.md`.
+- Fixed: Rune Fragment's ninth fragment (a regression from v3), Codex Patch scope, Hexing self-hex loop, Tide-Coat water breathing, Hellhide unlock vs object, armor proficiency reminders, Loaded Die risk wording, Harpoon damage, Standard vs Muster, Rusted Spear covers Solo bosses, Forgotten Key tier, guild rank name.
+- Five calls wait on the GM (Hut, off-screen refills, Valkyrie, Teeth vs Horn, Spear drain).
+
 ## Diversity, found pool: before and after
 
 | | Before (25) | After (24) |

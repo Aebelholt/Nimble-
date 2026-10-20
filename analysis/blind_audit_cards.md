@@ -31,7 +31,7 @@ Class arcana first, then found arcana. No notes or prior review included.
 **Unlock.**
 - Win a wager against someone who genuinely believed they had the advantage: not a mark, not a fool, but someone who should have won.
 - Stake something you cannot afford to lose.
-- Risk: After the wager, the loser rolls Insight against your Influence roll. If they win, they know the die was loaded, and they name you to the Black Hand card sharp.
+- Risk: After the wager, the loser makes an Insight check against your Influence check. If they win, they know the die was loaded, and they name you to the Black Hand card sharp.
 
 **Resource: Fixes (pip tracker).** Fixes (pip tracker, max 4). Fixes do not refill automatically. To refill: run a game of chance during a Safe Rest and earn at least 1 silver in genuine winnings against an opponent who had a real chance of winning. Gain all 4 Fixes back. Safe Rests where you do not gamble leave the tracker as it is. Fixes return only this way.
 
@@ -44,7 +44,7 @@ Class arcana first, then found arcana. No notes or prior review included.
 ### The Battle Standard of the Nameless King
 `class_commander` · class arcanum, Commander
 
-**Object.** A black iron battle standard, the insignia ground off but the pole still bearing ghost-traces of a name no one can read. Found stacked with other confiscated relics in the Museum of Worlds Beyond storage vault. The curator is looking for it. Three scholars have separately attempted to identify the insignia's origin and stopped work without explanation.
+**Object.** A black iron battle standard, the insignia ground off but the pole still bearing ghost-traces of a name no one can read. Found stacked with other confiscated relics in the Museum of Worlds Beyond storage vault. The curator will not release it without a writ. Three scholars have separately attempted to identify the insignia's origin and stopped work without explanation.
 
 **Unlock.**
 - Lead a group of at least five non-party combatants to victory: soldiers, militia, hired swords, anyone you commanded in the field. The victory must be real, a fight that could have been lost.
@@ -220,7 +220,7 @@ Class arcana first, then found arcana. No notes or prior review included.
 **Escalation.** If you use either annotation while you have 3 or more Wounds, from any source, the wrappings tighten around your hands: take 1 additional Wound and you cannot use either annotation until your next Safe Rest. The annotations become illegible until a skilled martial artist re-inks them. Finding one is the GM's hook.
 
 ### The Forgotten Key
-`forgotten_key` · found, Minor, faction reward
+`forgotten_key` · found, Major, faction reward
 
 **Object.** A tarnished iron key, not sized for any human lock. Found in rubble beneath the Theater of Whispers, its bow etched with a spiral that matches no arch in the city's records.
 
@@ -386,7 +386,7 @@ Class arcana first, then found arcana. No notes or prior review included.
 **Resource: Growth (pip tracker).** Growth (pip tracker, max 4). Gain 1 Growth for each hour you spend underwater in a drowned place (the Lost Cisterns, Sunken Revvia, a flooded vault), beyond what the gig needs. That hour costs a scene. A rest never adds Growth. Lose 1 Growth when you take a Wound, and 1 for each episode in which you never go underwater. Using Eel Slip spends 1 Growth.
 
 **Powers.**
-- Tide Skin (Passive): Leather armor, Defense 3+DEX, plus 1 per Growth. Each Growth also gives -1 to Stealth.
+- Tide Skin (Passive): You can breathe water while you wear it. Leather armor, Defense 3+DEX, plus 1 per Growth. Each Growth also gives -1 to Stealth. Without leather armor proficiency, Defend costs 1 extra action, as normal.
 - Eel Slip (Reaction, spend 1 Growth): When you are Grappled or Restrained, you slip free and move 1 space.
 
 **Escalation.** At 4 Growth the coat is a landmark, and things in the deep start coming to see it.
@@ -404,7 +404,7 @@ Class arcana first, then found arcana. No notes or prior review included.
 **Resource: Burden (pip tracker).** Burden (pip tracker, max 3), one per weapon stuck in the sap. Burden clears when you pry the stuck weapons loose, which takes tools and an hour, and then re-glue the harness with fresh sap from the tree that gave it. A Safe Rest does not clear Burden.
 
 **Powers.**
-- Thorned Bark (Passive): Mail armor, Defense 6+DEX (max 2) and advantage on Stealth in forests and jungles. Each Burden gives -1 Speed.
+- Thorned Bark (Passive): Mail armor, Defense 6+DEX (max 2) and advantage on Stealth in forests and jungles. Each Burden gives -1 Speed. Without mail armor proficiency, Defend costs 1 extra action, as normal.
 - Snare (Reaction, +1 Burden): When a melee weapon hits you, the attacker makes a STR save, DC 13, or the weapon sticks. The attacker must let go of it or stay adjacent to you; anyone can pry a stuck weapon free with an action and a Might check, DC 13. A creature using natural weapons is Grappled to you, escaping as from any grapple, and adds no Burden.
 
 **Escalation.** When a fourth weapon would stick, the sap seals you in: you are Restrained until someone spends an action and passes a Might check, DC 14, to cut you out. Then the harness gives half its Defense until it is glued again with fresh sap.
@@ -415,15 +415,15 @@ Class arcana first, then found arcana. No notes or prior review included.
 **Object.** Plate made over with a demon's skin, its horns on the helm and its claws on the gauntlets. The skin came out of Irax, the wind-torn hell beyond the hidden archway of the Blood Spears' Watchtower of Averost.
 
 **Unlock.**
-- Hunt the demon and bring back the skin
-- Find a smith who will work it, and pay their price
+- Learn which demon of Irax gave the skin, and speak its name into the helm
+- Find a smith who will refit it to you, and pay their price
 - Put it on
 - Risk: Roll d10. On 1-3 the hide drinks magic: no spell can affect you, including your own and your allies' healing, while you wear it, and each spell cast on you gives the hide 1 Thirst.
 
 **Resource: Thirst (pip tracker).** Thirst (pip tracker, max 3). Gain 1 Thirst each time you use Command. Thirst clears only when you offer blood to the hide outside combat, from a willing person. Blood shed in a fight does not count.
 
 **Powers.**
-- Demon Plate (Passive): Plate armor, Defense 14, with no STR requirement.
+- Demon Plate (Passive): Plate armor, Defense 14, with no STR requirement. Without plate armor proficiency, Defend costs 1 extra action, as normal.
 - Terror (Passive): The first time a creature sees you in an encounter, it makes a WIL save, DC 14, or has -1 to all its rolls near you for the encounter.
 - Command (Action, +1 Thirst, 1/encounter): One undead or demon within 6 spaces that can hear you makes a WIL save, DC 14. On a failure, on its next turn it obeys one command of five words or fewer. It will not harm itself. Solo creatures save with advantage.
 
@@ -443,7 +443,7 @@ Class arcana first, then found arcana. No notes or prior review included.
 **Resource: Steam (pip tracker).** Steam (pip tracker, max 4). Spend 1 Steam per use. Regain all by stoking the boilers with a load of forge coal drawn from Vathrex's Forge, which means a trip to the ziggurat and whatever price Erna Ironhorn names. A load fills the boilers once and takes an inventory slot. Steam returns only this way.
 
 **Powers.**
-- Iron Joints (Passive): Plate armor, Defense 18, with no STR requirement.
+- Iron Joints (Passive): Plate armor, Defense 18, with no STR requirement. Without plate armor proficiency, Defend costs 1 extra action, as normal.
 - Boiler Fire (spend 1 Steam): Choose one. Wrist crossbow (Free, 1/turn): a ranged attack, Range 8, 1d8+DEX piercing, no loading. Hidden blade (Action): a melee attack, 1d8+STR slashing. Boiler surge (Free): advantage on one Might check.
 
 **Escalation.** At 0 Steam the servos lock: Speed 2 and disadvantage on DEX until stoked. If you spend the last Steam in combat, the boilers vent: 1d6 fire to you and everyone adjacent.
@@ -500,7 +500,7 @@ Class arcana first, then found arcana. No notes or prior review included.
 - Stitch (an hour of work, spend 1 Thread): Embroider a likeness of someone, using their hair, blood, or cloth. They have disadvantage on one kind of roll you name until the cloth is unpicked or burned. They feel every stitch.
 - Thread Sense (Passive): You can tell when cloth you touch carries a stitched hex, and whose likeness it is.
 
-**Escalation.** Every victim knows the shape of your hands, and the Sisters of Dusk hear who is stitching in their style. At 0 Thread you can still Stitch, but the hex also lands on your own likeness.
+**Escalation.** Every victim knows the shape of your hands, and the Sisters of Dusk hear who is stitching in their style. At 0 Thread you can still Stitch, but the hex also lands on you, in your body, not on cloth: it lasts until you regain Thread, and unpicking cannot touch it.
 
 ### The Sown Teeth
 `sown_teeth` · found, Major, draw face 22 (legacy bonus only)
@@ -570,7 +570,7 @@ Class arcana first, then found arcana. No notes or prior review included.
 - Hold the fragments together for 10 minutes and they fuse
 - Risk: Whoever carries another fragment feels yours wake. Holding the shards together while they grind takes a STR save, DC 13. On a failure you take 1 Wound and must hold them for another 10 minutes.
 
-**Resource: Runes (pip tracker).** Runes (pip tracker, up to 9, one per fused fragment). Each fragment carries one rune, rolled on a d8 when it fuses (roll again on a rune you already have). Each rune works once, then goes dark. A dark rune relights when you carve it into a gravestone or a standing stone and speak aloud the name of someone who died for something.
+**Resource: Runes (pip tracker).** Runes (pip tracker, up to 9, one per fused fragment). Each fragment carries one rune, rolled on a d8 when it fuses (roll again on a rune you already have). There are eight runes; the ninth fragment carries none of its own, and fusing it wakes the stone (see Escalation). Each rune works once, then goes dark. A dark rune relights when you carve it into a gravestone or a standing stone and speak aloud the name of someone who died for something.
 
 **Powers.**
 - Fehu (Action): An item you touch gives +1 to rolls made with it for an hour.
@@ -618,7 +618,7 @@ Class arcana first, then found arcana. No notes or prior review included.
 - Spare (Free): When you would drop a creature to 0 HP with the spear, it is left alive and Incapacitated at 0 HP instead (a hero falls Dying as normal), and its wound will not close until you choose to mend it.
 - Scrape (Action, spend 1 Rust): Scrape rust into a wound to heal 1 Wound on a creature you touch, yourself included, or to close a wound the spear made.
 
-**Escalation.** At 0 Rust the blade is clean and bright. The next creature it hits takes a wound that never closes: a hero gains a Wound that cannot heal and loses 1 max Wound for good, and a creature bleeds out by the end of the scene. A Legendary monster does not bleed out: it loses a third of its max HP at once (not from its Last Stand).
+**Escalation.** At 0 Rust the blade is clean and bright. The next creature it hits takes a wound that never closes: a hero gains a Wound that cannot heal and loses 1 max Wound for good, and a creature bleeds out by the end of the scene. A Legendary or Solo monster does not bleed out: it loses a third of its max HP at once (not from its Last Stand).
 
 ### The Derelict Harpoon
 `derelict_harpoon` · found, Minor, level 1 draw
@@ -633,7 +633,7 @@ Class arcana first, then found arcana. No notes or prior review included.
 **Resource: Slack (d6 vs. accumulation).** Slack (d6 vs. accumulation). Each time you Haul, roll a d6 against your current Slack, then add 1 Slack. If you roll equal to or below your Slack before adding, the line snarls (see Escalation). Slack has no maximum, so at 6 or more every Haul snarls. Slack clears when you carry a length of the line back to a derelict hull in Drendaan and splice it into the strand.
 
 **Powers.**
-- Haul (Action, Range 12, +1 Slack): Make a ranged attack with the harpoon. On a hit, choose one: pull yourself to the target, or pull a Medium or smaller target up to 6 spaces toward you. A pulled creature falls Prone and can make a STR save, DC 13, to resist.
+- Haul (Action, Range 12, +1 Slack): Make a ranged attack with the harpoon: 1d6+STR piercing, like a thrown spear. On a hit, choose one: pull yourself to the target, or pull a Medium or smaller target up to 6 spaces toward you. A pulled creature falls Prone and can make a STR save, DC 13, to resist.
 - Anchor (Free, 1/round, after a Haul that hits): Plant the line. The target cannot move more than 6 spaces from you until your next turn or until you let go (Free).
 
 **Escalation.** When the d6 triggers, the line snarls around you or your target, the GM's choice. Both of you are Restrained until either of you, or anyone adjacent, spends an action to cut it. The cut length keeps glowing, and whatever lived aboard the hulk follows it through the arch.
@@ -750,7 +750,7 @@ Class arcana first, then found arcana. No notes or prior review included.
 
 **Powers.**
 - Consult (downtime, 1 hour): Make a Lore check, DC 13. On a success, your next Craft downtime takes half the time and half the materials. On a failure, spend 1 Patience.
-- Patch (Action, spend 1 Patience): A broken weapon, shield, armor or arcanum object you touch works again until the encounter ends.
+- Patch (Action, spend 1 Patience): A broken weapon, shield, armor or arcanum object you touch works again until the encounter ends, or for an hour outside one. Patch cannot mend what an arcanum's Escalation broke.
 - Maker's Price (Passive): Things you make from the Codex sell for double, and buyers know the hand.
 
 **Escalation.** At 0 Patience the Codex moves on: by morning it is gone, to a copy of itself in another world. Whoever you taught can still find it. The Forge's smiths come to your door asking what you did with it.

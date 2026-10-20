@@ -74,7 +74,7 @@ Each line: **Hall** (canon place), **Master**, **Wants** (its designs on power),
 ### Mage: the University
 - This guild already exists in your overview. Hall: Kartan, Tower of the Arcane; its overseer is Savandra Thricecursed. Its split (Traditionalists, Royalists, a New School), its enforcement wing of ex-adventurers, and its secret key-making program are all there.
 - **Teaches:** Arcana. **Keeps:** the Laboratories of Kartan. **Asks:** your findings, published as its own.
-- **Gives:** the pawn shop's name. The University reported the Cracked Lens stolen, and lets a Reader-rank student who recovers it keep it on loan.
+- **Gives:** the pawn shop's name. The University reported the Cracked Lens stolen, and lets a Journeyman who recovers it keep it on loan.
 - **Rival:** the Archkeepers.
 
 ### Oathsworn: The Sworn Chapter
