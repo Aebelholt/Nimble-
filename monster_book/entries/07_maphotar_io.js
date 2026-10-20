@@ -41,8 +41,8 @@ module.exports = [
       }
     ],
 
-    tactics: "Wants to keep watch for a master who left. Frightens first, burns second, and fixes on whoever hurt it last. Never breaks off; it shuts, then opens again.",
-    sources: "Original to this book; no source text on hand.",
+    tactics: "Wants to keep watch for a master who left. Hangs back behind its servants, frightens whoever is in melee with it or standing near others, and burns the Frightened. Fixes on whoever hurt it last. Never breaks off; it shuts, then opens again.",
+    sources: "Monster Vault: Conflux Creatures: NPCs & Undead, CR 9.",
 
     designNote:
       "The 5e eye of fear and flame frightens to paralysis. Here fear steps up to " +
@@ -146,8 +146,8 @@ module.exports = [
       }
     ],
 
-    tactics: "Wants heat and food. Webs the nearest hero from hiding and bites whoever tries to cut them free. Breaks off once it molts.",
-    sources: "Original to this book; no source text on hand.",
+    tactics: "Wants heat and food. Hunts in groups, hidden in heat: one webs, the others knock prey into the web and gang up on whoever is Restrained. The group breaks off into the vents when half of it is dead.",
+    sources: "Monster Vault: Conflux Creatures: Elementals & Fiends, CR 4.",
 
     designNote:
       "A lurker that hides in heat and binds prey in burning silk. The web is " +
@@ -254,7 +254,7 @@ module.exports = [
     ],
 
     tactics: "Wants to run its quarry down. Bites the lone hero, breathes when two stand close, and harries anyone who runs. A trained pack retreats only with its handler; a feral one breaks off when half the pack is down.",
-    sources: "4e MM Hell Hound (Fire Shield aura); Ammann (hell hounds).",
+    sources: "Monster Vault: 4e MM, Lv 7 Brute. 4e MM Hell Hound (Fire Shield aura); Ammann (hell hounds).",
 
     designNote:
       "A straight brute with knockback. The bite throws heroes across the field, which " +

@@ -46,7 +46,7 @@ module.exports = [
     ],
 
     tactics: "Wants a victim to take back to the burrow and remake. Links to one hero, Dazes them and drags them toward the dark, while the others whisper from shadow. Breaks off when the light is too bright to step through, and trails the party for days after.",
-    sources: "4e MM3 Meenlock Stalker (Dimension Step, Horrid Link, meenlock corruption).",
+    sources: "Monster Vault: 4e MM3, Lv 9 Controller. 4e MM3 Meenlock Stalker (Dimension Step, Horrid Link, meenlock corruption).",
 
     designNote:
       "In 5e meenlock claws paralyse and their victims are carried off to be remade. " +
@@ -170,7 +170,7 @@ module.exports = [
     ],
 
     tactics: "Wants loot, not blood. Snuffs the light, darts in, steals, darts out. Targets whoever carries the most pouches. Breaks off as soon as it has something worth fencing, or when Bloodied.",
-    sources: "4e MM Dark Creeper (Dark Step, Killing Dark).",
+    sources: "Monster Vault: 4e MM, Lv 4 Skirmisher. 4e MM Dark Creeper (Dark Step, Killing Dark).",
 
     designNote:
       "A thief, not a killer. Dark creepers turn a fight into a scramble for light and " +
@@ -288,7 +288,7 @@ module.exports = [
     ],
 
     tactics: "Wants flesh, any flesh, now. Pours over the nearest creature and stays there. Under an adult neogi's eye it herds prey instead. Never breaks off on its own; it scatters only when its adult falls.",
-    sources: "4e MM2 Neogi Spawn Swarm (swarm aura, psychic scream on death).",
+    sources: "Monster Vault: Conflux Creatures: Aberrations & Dragons, CR 1. 4e MM2 Neogi Spawn Swarm (swarm aura, psychic scream on death).",
 
     designNote:
       "4e's neogi spawn are hungry slugs with small brains: a poison aura and a " +

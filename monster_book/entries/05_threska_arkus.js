@@ -50,7 +50,7 @@ module.exports = [
     ],
 
     tactics: "Wants knowledge, and meat second. Targets spellcasters to learn their magic, and talks before it fights. Its ghouls go first. Breaks off when Bloodied, up the wall and out of reach, to bargain later.",
-    sources: "Tales of the Valiant Monster Vault (Necrophage Ghast); Ammann (ghouls and ghasts).",
+    sources: "Monster Vault: Tales of the Valiant Monster Vault, CR 4. Tales of the Valiant Monster Vault (Necrophage Ghast); Ammann (ghouls and ghasts).",
 
     designNote:
       "Rebuilt from the Tales of the Valiant Monster Vault. A necrophage rises from a " +
@@ -166,7 +166,7 @@ module.exports = [
     ],
 
     tactics: "Wants intruders out of its temple. Strikes whoever crossed the threshold last, then slithers back. Inside its guarded room its venom never runs dry. Never breaks off inside the temple; never chases past the door.",
-    sources: "4e MM Iron Cobra (Guard Area, Slithering Shift).",
+    sources: "Monster Vault: 4e MM, Lv 6 Skirmisher. 4e MM Iron Cobra (Guard Area, Slithering Shift).",
 
     designNote:
       "A hit-and-run guardian with a small venom budget. Three doses per encounter " +
@@ -284,7 +284,7 @@ module.exports = [
     ],
 
     tactics: "Wants to keep its last order: watch the field. Glares at anyone inside its circle and claws whoever reaches the pole. Never breaks off, and never forgets a face it has struck.",
-    sources: "4e MM3 Scarecrow (bond with its maker, keeps its last command after the maker dies).",
+    sources: "Monster Vault: Ultimate Bestiary: The Dreaded Accursed, CR 6. 4e MM3 Scarecrow (bond with its maker, keeps its last command after the maker dies).",
 
     designNote:
       "In 5e the scarecrow's glare frightens and paralyses. Here it Frightens and then " +

@@ -52,7 +52,7 @@ module.exports = [
     ],
 
     tactics: "Wants to never fight at all. If it must, it strikes first, from a borrowed face, at the hero most suspicious of it, not the most dangerous one. Breaks off when exposed with no crowd within reach, or when Bloodied.",
-    sources: "4e MM Doppelganger Sneak (Shapeshifter Feint); Ammann, The Monsters Know What They're Doing (doppelgangers).",
+    sources: "Monster Vault: 4e MM, Lv 3 Skirmisher. 4e MM Doppelganger Sneak (Shapeshifter Feint); Ammann, The Monsters Know What They're Doing (doppelgangers).",
 
     designNote:
       "The sneak is a social lurker. Its armor is the crowd. It does little in an empty " +
@@ -190,7 +190,7 @@ module.exports = [
     ],
 
     tactics: "Wants to keep its post; it has no fear for itself and fights until destroyed. Targets Shepherds, Oathsworn and Mages first: the ones who can lay it to rest or outshoot it. Never breaks off, and is back in an hour.",
-    sources: "4e MM Flameskull (Regeneration); Ammann (flameskulls).",
+    sources: "Monster Vault: 4e MM, Lv 8 Artillery. 4e MM Flameskull (Regeneration); Ammann (flameskulls).",
 
     designNote:
       "Artillery that refuses melee. The flameskull's whole game is staying out of reach, " +
@@ -314,7 +314,7 @@ module.exports = [
     ],
 
     tactics: "Wants one meal, taken quietly. Targets whoever is speaking or casting, then whoever comes to help. Breaks off into the pipes when Bloodied, dropping its catch if it must.",
-    sources: "4e MM Cavern Choker (Body Shield).",
+    sources: "Monster Vault: 4e MM, Lv 4 Lurker. 4e MM Cavern Choker (Body Shield).",
 
     designNote:
       "The choker is the crawler's little cousin with a different geometry. Where the " +

@@ -55,7 +55,7 @@ module.exports = [
     ],
 
     tactics: "Wants to keep the food it has already found; the heroes are rivals, not prey. Lashes at reach first and only closes to bite a held target. Fights hard and breaks off only when Bloodied, withdrawing through its bottleneck with whatever it holds.",
-    sources: "Proof of concept; 4e MM Carrion Crawler (slowed-to-stunned ratchet, stopped at Slowed and Grappled); Ammann (carrion crawlers).",
+    sources: "Monster Vault: 4e MM, Lv 7 Controller. Proof of concept; 4e MM Carrion Crawler (slowed-to-stunned ratchet, stopped at Slowed and Grappled); Ammann (carrion crawlers).",
 
     designNote:
       "The carrion crawler is a moray eel, not a paralysis trap. " +
@@ -210,7 +210,7 @@ module.exports = [
     ],
 
     tactics: "Wants to finish its survey. Targets whoever blocks its route or touches its cords. Breaks off the moment it is Bloodied; it has somewhere else to be.",
-    sources: "Original to this book; no source text on hand.",
+    sources: "Monster Vault: Creature Codex, CR 3.",
 
     designNote:
       "Distance is the far wanderer's weapon. It splits the party with teleports and " +
@@ -337,7 +337,7 @@ module.exports = [
     ],
 
     tactics: "Wants to eat without leaving its ceiling. Lines the isolated hero at the back, reels, and keeps lining. A hunk of fresh meat thrown under it buys passage. Breaks off when its line is cut twice or it is Bloodied, and it climbs out of reach.",
-    sources: "4e MM3 Cave Fisher Angler (Sniper, filament ends on a hit or teleport, baited with meat).",
+    sources: "Monster Vault: 4e MM3, Lv 3 Lurker. 4e MM3 Cave Fisher Angler (Sniper, filament ends on a hit or teleport, baited with meat).",
 
     designNote:
       "The crawler owns corridors. The angler owns height. Its filament is a Restrain " +
@@ -449,7 +449,7 @@ module.exports = [
     ],
 
     tactics: "Wants a meal carried off to eat in peace. Targets the smallest hero it can lift, grabs, and rises. Can be bargained with by anyone who proves they are great hunters. Breaks off when Bloodied, dropping its catch from height.",
-    sources: "4e MM Grell (Elite Soldier, slowing rake); Ammann (grells).",
+    sources: "Monster Vault: 4e MM, Lv 7 Elite Soldier. 4e MM Grell (Elite Soldier, slowing rake); Ammann (grells).",
 
     designNote:
       "The 5e grell's tentacles paralyse. Here the beak Dazes for one turn, per the GM " +
@@ -562,7 +562,7 @@ module.exports = [
     ],
 
     tactics: "Wants to eat whatever stops moving. Flows toward the nearest warm body and stays on it. Never breaks off; once split, the halves crawl back together if left alone.",
-    sources: "4e MM Ochre Jelly (split once when first Bloodied, halves rejoin, flowing form); Ammann (oozes).",
+    sources: "Monster Vault: 4e MM, Lv 3 Elite Brute. 4e MM Ochre Jelly (split once when first Bloodied, halves rejoin, flowing form); Ammann (oozes).",
 
     designNote:
       "A brute that doubles at the halfway mark. The first draft split on every " +

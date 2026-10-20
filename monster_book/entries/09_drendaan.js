@@ -43,7 +43,7 @@ module.exports = [
     ],
 
     tactics: "Wants to hold its post as ordered. Drags the nearest swimmer into reach and holds the line. Never breaks off while the binding holds.",
-    sources: "Original to this book; no source text on hand.",
+    sources: "Monster Vault: Conflux Creatures: Elementals & Fiends, CR 7.",
 
     designNote:
       "The 5e myrmidon's freezing strikes slow; this one keeps that, and adds water as " +
@@ -153,7 +153,7 @@ module.exports = [
     ],
 
     tactics: "Wants subjects, secrets and revenge, in that order. Moves heroes into the lightning's line, then talks. Never truly flees, since it will be back in days.",
-    sources: "Tales of the Valiant Monster Vault (spirit naga lore); Ammann (nagas).",
+    sources: "Monster Vault: Monster Manual (2024), CR 8. Tales of the Valiant Monster Vault (spirit naga lore); Ammann (nagas).",
 
     designNote:
       "Nagas in 5e cast Hold Person. Here the naga moves heroes instead: Command the " +
@@ -258,7 +258,7 @@ module.exports = [
     ],
 
     tactics: "Wants its nest left alone. Flying snakes are solitary and flee after one strike; a swarm only forms over a nest. Breaks off and scatters when the nest burns or the swarm is Bloodied.",
-    sources: "Ammann (flying snakes).",
+    sources: "Monster Vault: Conflux Creatures: Aberrations & Dragons, CR 5. Ammann (flying snakes).",
 
     designNote:
       "A low-level controller that turns the air into Difficult Terrain with teeth. It " +

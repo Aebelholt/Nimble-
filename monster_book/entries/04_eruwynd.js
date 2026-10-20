@@ -42,7 +42,7 @@ module.exports = [
     ],
 
     tactics: "Wants to hold its post for a knight who is not there. Targets whoever moves toward what it guards. Never breaks off while the dream holds.",
-    sources: "Original to this book; no source text on hand.",
+    sources: "Monster Vault: Creature Codex, CR 2.",
 
     designNote:
       "Dream squires are defenders run as controllers. Drowse ratchets: one failed save " +
@@ -153,7 +153,7 @@ module.exports = [
     ],
 
     tactics: "Wants blood, and to be paid in it. Claws one hero, then pulls that hero to her through the thorns, again and again. Bargains before she fights. Breaks off when Bloodied with no blood left to call, vanishing into the thicket.",
-    sources: "Original to this book; no source text on hand.",
+    sources: "Monster Vault: Grim Hollow: Monster Grimoire, CR 1/2.",
 
     designNote:
       "The red hag reels heroes in by blood. Once her claws land, she can pull that " +
@@ -264,7 +264,7 @@ module.exports = [
     ],
 
     tactics: "Wants an easy kill from behind. Blinks in on the biggest hero, not the weakest, and blinks away. Breaks off when Bloodied; it simply stops coming back.",
-    sources: "4e MM2 Phase Spider (Ethereal Repulsion); Ammann (phase spiders).",
+    sources: "Monster Vault: 4e MM2, Lv 8 Skirmisher. 4e MM2 Phase Spider (Ethereal Repulsion); Ammann (phase spiders).",
 
     designNote:
       "In 5e the bite can leave a creature paralysed. Here it Poisons, so every roll " +

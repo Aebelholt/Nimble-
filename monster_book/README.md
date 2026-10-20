@@ -19,7 +19,7 @@ Nimble bestiary for the City of Arches: 33 entries across 11 worlds, each with a
 
 ## Source coverage
 
-Of the 33, 4e Monster Manuals 1-3 cover about 20 (the list's names and roles mostly come from there), the Tales of the Valiant Monster Vault covers the Necrophage Ghast, and Ammann covers about a dozen with tactics. No text was on hand for Far Wanderer, Dream Squire, Red Hag, Snow Golem, Coldlight Walker, Eye of Fear and Flame, Inferno Spider Moltling, Voidwracked Mage, Water Myrmidon, Common Feyr or the Vynan Alchemist-Mage. *Flee Mortals!*, *Where Evil Lives* and *Forge of Foes* are method references; none of them stats these monsters.
+"Monster Vault" means the index spreadsheet (`Monster_Vault_DnD2.xlsx`, 6,514 rows across 4e, 5e, A5E and ToV books), not the Tales of the Valiant book. All 33 entries have a Vault row, and each Sources line cites it. Mechanics were checked against full text where it was on hand: 4e Monster Manuals 1-3, the ToV Monster Vault and Ammann. Rows from Creature Codex, Conflux Creatures, Grim Hollow and Ultimate Bestiary were used for their tactics notes only; their books were not consulted. Where a row had no tactics note, the entry's In play line is this book's own.
 
 ## Known exceptions
 

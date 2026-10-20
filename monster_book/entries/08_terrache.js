@@ -40,8 +40,8 @@ module.exports = [
       }
     ],
 
-    tactics: "Wants to tear apart what its star hates. Leaps on whoever stands on the narrowest footing and throws them. Never breaks off while its star is in the sky.",
-    sources: "4e MM2 star spawn lore (baleful stars); mechanics original.",
+    tactics: "Wants to tear apart what its star hates. Alone, it comes from shadow; in a group, its claws clatter long before it is seen. Shreds one hero, throws them, scuttles off, and comes again. Never breaks off while its star is in the sky.",
+    sources: "Monster Vault: Conflux Creatures: Aberrations & Dragons, CR 5. 4e MM2 star spawn lore (baleful stars); mechanics original.",
 
     designNote:
       "A melee controller. Its push-pull on every hit means a mangler fight is a fight " +
@@ -148,7 +148,7 @@ module.exports = [
     ],
 
     tactics: "Wants the void to stop hurting, and cannot make it stop. Targets whoever is closest, because closest is loudest. Breaks off only by dying, and that hurts everyone.",
-    sources: "Original to this book; no source text on hand.",
+    sources: "Monster Vault: Creature Codex, CR 8.",
 
     designNote:
       "A glass cannon controller. It has the HP of a lower-level monster and the damage " +
@@ -250,8 +250,7 @@ module.exports = [
 
     tactics: "Wants to grow up. Fresh from its host, it hides, feeds on anything small, " +
       "and bites only what corners it. Breaks off at once if it can, every time.",
-    sources: "4e MM Slaad Tadpole (Lurker, Chaos Shift, insubstantial after a bite); " +
-      "Ammann, The Monsters Know What They're Doing (slaadi).",
+    sources: "Monster Vault: 4e MM, Lv 5 Lurker. 4e MM Slaad Tadpole (Lurker, Chaos Shift, insubstantial after a bite); Ammann, The Monsters Know What They're Doing (slaadi).",
 
     designNote:
       "The first draft made tadpoles minions that burrowed into heroes. That was " +

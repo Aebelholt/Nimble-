@@ -51,7 +51,7 @@ module.exports = [
     ],
 
     tactics: "Wants a meal, not a fight. Picks off the small, the slow and the stragglers from hiding, then carries one off. Breaks off as soon as it has a victim in its arms, or when Bloodied.",
-    sources: "4e MM3 Yeti Howler (Chilling Wail aura); Ammann (yetis).",
+    sources: "Monster Vault: 4e MM3, Lv 4 Controller. 4e MM3 Yeti Howler (Chilling Wail aura); Ammann (yetis).",
 
     designNote:
       "The 5e yeti's gaze can freeze a creature in place. Here the howl Frightens and " +
@@ -159,8 +159,8 @@ module.exports = [
       }
     ],
 
-    tactics: "Wants to keep doing what a child once told it to. Targets whatever comes closest to its charge. Never breaks off while it stands on snow.",
-    sources: "Original to this book; no source text on hand.",
+    tactics: "Wants to keep doing what a child once told it to. Pelts intruders from range and high ground, and rushes in to slam whoever hurts it with magic. Never breaks off while it stands on snow.",
+    sources: "Monster Vault: Conflux Creatures: Aberrations & Dragons, CR 3.",
 
     designNote:
       "A slow controller that makes the ground work for it. The frost field turns the " +
@@ -263,13 +263,14 @@ module.exports = [
         name: "Walk the line",
         cost: "Passive",
         damage: "—",
-        effect: "It never leaves its path. A creature standing in its way is walked " +
+        effect: "It never leaves its path, unless fire damages it: then it hunts that " +
+          "creature until one of them falls. A creature standing in its way is walked " +
           "through: 2d6+4 cold and pushed 2 spaces."
       }
     ],
 
-    tactics: "Wants to finish walking. Targets only what stands in its path or touches its lantern. Never breaks off and never turns aside.",
-    sources: "Original to this book; no source text on hand.",
+    tactics: "Wants to finish walking. Glares at the nearest hero until one stays Blind, then strikes them. Never leaves its path, unless burned: then it hunts whoever burned it until one of them falls.",
+    sources: "Monster Vault: Conflux Creatures: NPCs & Undead, CR 5.",
 
     designNote:
       "The 5e coldlight walker blinds with its light. Here Blind lasts a turn and the " +

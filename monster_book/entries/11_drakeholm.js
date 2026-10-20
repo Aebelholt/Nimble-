@@ -50,7 +50,7 @@ module.exports = [
     ],
 
     tactics: "Wants to stay out of the war and keep its valleys fed. Slides heroes to the cliff edge, then winds up its storm. Breaks off into the sky when Bloodied, then comes back with the storm ready.",
-    sources: "4e MM3 Young Blizzard Dragon (Freezing Winds aura, Rising Winds).",
+    sources: "Monster Vault: 4e MM3, Lv 7 Elite Controller. 4e MM3 Young Blizzard Dragon (Freezing Winds aura, Rising Winds).",
 
     designNote:
       "An Elite controller built on 4e's young blizzard dragon. Its big attack is " +
@@ -173,8 +173,8 @@ module.exports = [
       }
     ],
 
-    tactics: "Wants to prove its bones right. Names one hero and fights only them until one of them falls. Never breaks off from its named foe.",
-    sources: "4e MM2 drakkoth (dracotaur form, Raging Cleave, Venomous Hiss, Drakkoth Rage).",
+    tactics: "Wants to prove its bones right. Leaps into the thick of the party, names the strongest-looking hero, and fights only them until one of them falls. Ignores spellcasters unless they get in the way. Never breaks off from its named foe.",
+    sources: "Monster Vault: Conflux Creatures: Aberrations & Dragons, CR 8. 4e MM2 drakkoth (dracotaur form, Raging Cleave, Venomous Hiss, Drakkoth Rage).",
 
     designNote:
       "Drakkoths are 4e's dracotaurs, not dragonborn; the first draft got the body " +
