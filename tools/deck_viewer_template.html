@@ -1,0 +1,185 @@
+<title>Sejr Arcana Deck</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@500;700&family=Alegreya+Sans:ital,wght@0,400;0,500;0,700;1,400&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+/* Layout: a relic ledger. Sticky filter bar, one column of folded entries; each entry opens to its five parts. */
+:root {
+  --bg: #eef0f1;
+  --panel: #fbfcfc;
+  --ink: #1c2129;
+  --muted: #5d6673;
+  --line: #d3d8dd;
+  --accent: #8a5a12;
+  --minor: #2f6b5b;
+  --major: #8b2f3c;
+  --class: #3e4f8c;
+  --reward: #6b5a8e;
+  --chip-bg: #e3e7ea;
+  --display: "Alegreya SC", "Palatino Linotype", Georgia, serif;
+  --body: "Alegreya Sans", "Segoe UI", system-ui, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #13161b; --panel: #1b1f26; --ink: #e7e4dc; --muted: #9aa2ad; --line: #2e343d;
+  --accent: #d6a64c; --minor: #6cc1a8; --major: #e07a88; --class: #93a6ea; --reward: #b9a6e3; --chip-bg: #262c35;
+  color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #13161b; --panel: #1b1f26; --ink: #e7e4dc; --muted: #9aa2ad; --line: #2e343d;
+  --accent: #d6a64c; --minor: #6cc1a8; --major: #e07a88; --class: #93a6ea; --reward: #b9a6e3; --chip-bg: #262c35;
+  color-scheme: dark }
+
+body { background: var(--bg); color: var(--ink); font: 17px/1.5 var(--body); }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--bg); }
+.wrap { max-width: 760px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 20px 48px; }
+h1 { font: 700 2rem/1.1 var(--display); margin: 0; letter-spacing: .01em; text-wrap: balance; }
+.sub { color: var(--muted); margin: 6px 0 0; }
+.bar { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--bg); padding-block: 12px 10px; border-bottom: 1px solid var(--line); display: grid; gap: 10px; }
+.tabs, .filters { display: flex; flex-wrap: wrap; gap: 6px; }
+button { font: 500 .9rem var(--body); color: var(--ink); background: var(--chip-bg); border: 1px solid var(--line); border-radius: 999px; padding: 6px 12px; cursor: pointer; }
+button[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+button:focus-visible, input:focus-visible, summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+input[type="search"] { font: 1rem var(--body); width: 100%; box-sizing: border-box; padding: 9px 12px; border-radius: 8px; border: 1px solid var(--line); background: var(--panel); color: var(--ink); }
+.count { color: var(--muted); font-size: .85rem; }
+.list { display: grid; gap: 8px; margin-top: 14px; }
+details.card { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; }
+details.card[open] { border-color: var(--muted); }
+summary { list-style: none; cursor: pointer; padding: 12px 14px; display: grid; grid-template-columns: 2.4rem 1fr; gap: 2px 12px; align-items: baseline; }
+summary::-webkit-details-marker { display: none; }
+.face { grid-row: span 2; font: 500 .8rem var(--mono); color: var(--accent); text-align: center; border: 1px solid var(--line); border-radius: 6px; padding: 4px 0; align-self: center; font-variant-numeric: tabular-nums; }
+.name { font: 700 1.15rem/1.25 var(--display); min-width: 0; }
+.meta { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; color: var(--muted); font-size: .88rem; min-width: 0; }
+.chip { font-size: .72rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; padding: 2px 7px; border-radius: 4px; border: 1px solid currentColor; }
+.t-Minor { color: var(--minor); } .t-Major { color: var(--major); } .t-Class { color: var(--class); } .t-reward { color: var(--reward); } .t-legacy { color: var(--accent); }
+.body { padding: 0 14px 14px 14px; display: grid; gap: 12px; border-top: 1px solid var(--line); padding-top: 12px; }
+.part h3 { font: 700 .78rem var(--body); letter-spacing: .1em; text-transform: uppercase; color: var(--accent); margin: 0 0 4px; }
+.part p { margin: 0; }
+.part ul, .part ol { margin: 0; padding-left: 1.2rem; display: grid; gap: 4px; }
+.unlock li::marker { content: "☐  "; }
+.pname { font-weight: 700; }
+.res-type { font: 500 .78rem var(--mono); color: var(--muted); }
+.empty { color: var(--muted); padding: 24px 0; text-align: center; }
+.rules section, .guild { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 14px; }
+.rules, .guilds { display: grid; gap: 10px; margin-top: 14px; }
+.rules h2, .guild h2 { font: 700 1.1rem var(--display); margin: 0 0 6px; }
+.rules ul { margin: 0; padding-left: 1.2rem; display: grid; gap: 6px; }
+.guild dl { display: grid; grid-template-columns: max-content 1fr; gap: 4px 12px; margin: 0; }
+.guild dt { font-weight: 700; color: var(--muted); font-size: .9rem; }
+.guild dd { margin: 0; min-width: 0; }
+@media (max-width: 460px) { .guild dl { grid-template-columns: 1fr; } .guild dd { margin-bottom: 6px; } }
+@media (prefers-reduced-motion: no-preference) { details.card { transition: border-color .15s; } }
+</style>
+
+<div class="wrap">
+  <header>
+    <h1>Sejr Arcana Deck</h1>
+    <p class="sub" id="sub"></p>
+  </header>
+  <div class="bar">
+    <div class="tabs" role="group" aria-label="View">
+      <button id="tab-cards" aria-pressed="true" data-tab="cards">Cards</button>
+      <button id="tab-guilds" aria-pressed="false" data-tab="guilds">Guilds</button>
+      <button id="tab-rules" aria-pressed="false" data-tab="rules">Table rules</button>
+    </div>
+    <div id="card-controls" style="display:grid;gap:10px">
+      <input id="q" type="search" placeholder="Search names, powers, places…" aria-label="Search cards">
+      <div class="filters" role="group" aria-label="Filter">
+        <button id="f-all" data-f="all" aria-pressed="true">All</button>
+        <button id="f-draw" data-f="draw" aria-pressed="false">Level 1 draw</button>
+        <button id="f-legacy" data-f="legacy" aria-pressed="false">Legacy 21-23</button>
+        <button id="f-reward" data-f="reward" aria-pressed="false">Faction rewards</button>
+        <button id="f-class" data-f="class" aria-pressed="false">Class</button>
+        <button id="f-major" data-f="major" aria-pressed="false">Major</button>
+      </div>
+      <div class="count" id="count"></div>
+    </div>
+  </div>
+  <main>
+    <div id="view-cards" class="list"></div>
+    <div id="view-guilds" class="guilds" hidden></div>
+    <div id="view-rules" class="rules" hidden></div>
+  </main>
+</div>
+
+<script>
+const DATA = __DATA__;
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const $ = id => document.getElementById(id);
+
+function poolOf(c) {
+  if (c.kind === "class") return "class";
+  if (c.legacy_slot) return "legacy";
+  return c.pool === "faction_reward" ? "reward" : "draw";
+}
+function chips(c) {
+  const p = poolOf(c);
+  let h = c.kind === "class" ? `<span class="chip t-Class">${esc(c.class)}</span>` : `<span class="chip t-${esc(c.tier)}">${esc(c.tier)}</span>`;
+  if (p === "legacy") h += `<span class="chip t-legacy">Legacy</span>`;
+  if (p === "reward" || p === "class") h += `<span class="chip t-reward">Reward</span>`;
+  return h;
+}
+function power(p) {
+  const m = p.match(/^([^(:]+?)(\s*\([^)]*\))?:\s*(.*)$/);
+  return m ? `<span class="pname">${esc(m[1])}</span>${esc(m[2] || "")}: ${esc(m[3])}` : esc(p);
+}
+function cardHTML(c) {
+  const face = c._face ? `d20 ${c._face}` : (c.kind === "class" ? "cls" : "rwd");
+  const tbl = c.escalation_table ? `<div class="part"><h3>${esc(c.escalation_table.title)} (d6)</h3><ol>${c.escalation_table.rows.map(r => `<li>${esc(r)}</li>`).join("")}</ol></div>` : "";
+  return `<details class="card" id="c-${esc(c.id)}"><summary>
+    <span class="face" aria-label="Draw face">${face}</span>
+    <span class="name">${esc(c.name)}</span>
+    <span class="meta">${chips(c)}<span>${esc(c.role)}</span></span>
+  </summary><div class="body">
+    <div class="part"><h3>Object</h3><p>${esc(c.object)}</p></div>
+    <div class="part"><h3>Unlock</h3><ul class="unlock">${c.unlock.map(u => `<li>${esc(u)}</li>`).join("")}</ul></div>
+    <div class="part"><h3>Risk</h3><p>${esc(c.risk)}</p></div>
+    <div class="part"><h3>Resource <span class="res-type">${esc(c.resource.type)}</span></h3><p>${esc(c.resource.text)}</p></div>
+    <div class="part"><h3>Powers</h3><ul>${c.powers.map(p => `<li>${power(p)}</li>`).join("")}</ul></div>
+    <div class="part"><h3>Escalation</h3><p>${esc(c.escalation)}</p></div>${tbl}
+  </div></details>`;
+}
+
+let filter = "all", query = "";
+function renderCards() {
+  const q = query.trim().toLowerCase();
+  const list = DATA.deck.filter(c => {
+    const p = poolOf(c);
+    if (filter === "major" && c.tier !== "Major") return false;
+    if (!["all", "major"].includes(filter) && p !== filter) return false;
+    if (!q) return true;
+    return JSON.stringify(c).toLowerCase().includes(q);
+  });
+  $("view-cards").innerHTML = list.length ? list.map(cardHTML).join("") : `<p class="empty">No card matches. Clear the search or pick All.</p>`;
+  $("count").textContent = `${list.length} of ${DATA.deck.length} cards`;
+}
+function renderGuilds() {
+  const rows = [["Hall","hall"],["Master","master"],["Teaches","teaches"],["Wants","wants"],["Teeth","teeth"],["Keeps","keeps"],["Split","split"],["Asks","asks"],["Gives","gives"],["Rival","rival"]];
+  $("view-guilds").innerHTML = DATA.guilds.map(g => `<article class="guild"><h2>${esc(g.name)}</h2>
+    <div class="meta" style="margin-bottom:8px"><span class="chip t-Class">${esc(g.cls)}</span><span>${esc(g.arcanum)}</span></div>
+    <dl>${rows.map(([l, k]) => `<dt>${l}</dt><dd>${esc(g[k])}</dd>`).join("")}</dl></article>`).join("");
+}
+function renderRules() {
+  $("view-rules").innerHTML = DATA.rules.map(s => `<section><h2>${esc(s.title)}</h2><ul>${s.items.map(i => `<li>${esc(i)}</li>`).join("")}</ul></section>`).join("");
+}
+function setTab(t) {
+  document.querySelectorAll("[data-tab]").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.tab === t)));
+  $("view-cards").hidden = t !== "cards"; $("view-guilds").hidden = t !== "guilds"; $("view-rules").hidden = t !== "rules";
+  $("card-controls").style.display = t === "cards" ? "grid" : "none";
+}
+
+const drawN = DATA.deck.filter(c => poolOf(c) === "draw").length;
+const legN = DATA.deck.filter(c => poolOf(c) === "legacy").length;
+const rewN = DATA.deck.filter(c => poolOf(c) === "reward").length;
+const clsN = DATA.deck.filter(c => c.kind === "class").length;
+$("sub").textContent = `${drawN} level 1 draw cards (d20), ${legN} legacy faces, ${rewN} faction rewards, ${clsN} class arcana from the guilds.`;
+
+document.querySelectorAll("[data-tab]").forEach(b => b.addEventListener("click", () => setTab(b.dataset.tab)));
+document.querySelectorAll("[data-f]").forEach(b => b.addEventListener("click", () => {
+  filter = b.dataset.f;
+  document.querySelectorAll("[data-f]").forEach(x => x.setAttribute("aria-pressed", String(x === b)));
+  renderCards();
+}));
+$("q").addEventListener("input", e => { query = e.target.value; renderCards(); });
+renderCards(); renderGuilds(); renderRules();
+</script>
