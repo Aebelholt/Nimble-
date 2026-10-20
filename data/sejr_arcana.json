@@ -1224,7 +1224,7 @@
       "name": "Bargains",
       "type": "pip tracker",
       "max": 3,
-      "text": "Bargains (pip tracker, max 3). Spend 1 Bargain per Ask. Regain 1 when you answer the question the fairy asks about its home. It asks one each time it runs dry, and the answer is never found on the way to a gig. Bargains return only this way."
+      "text": "Bargains (pip tracker, max 3). Spend 1 Bargain per Ask. Regain 1 when you answer the question the fairy asks about its home. It asks one each time it runs dry, and the answer always lies through an arch: any trip through one can carry a clue. Bargains return only this way."
     },
     "powers": [
       "Ask (Action, spend 1 Bargain): Make an Influence check, DC 12. On a success the fairy works one small charm: a glamour, a lock undone, a minute of floating. On a failure it sulks and stays silent for 2d6 days.",
@@ -1232,7 +1232,7 @@
     ],
     "escalation": "On a natural 1 the fairy escapes and curses you. Once you know its name, you may smash the jar: it grants +1 to one stat for good and is gone. The fairy leaves its mark, one of your eyes turns its colour for good, and it tells its court: you owe the fey one favour, and they will collect. At 0 Bargains it only bargains for its freedom.",
     "status": "keep",
-    "notes": "Reworked. Source flavor kept (European fairy), origin set to the faerie archway (11_the_doorish_hills.md); passive added; clearing rule stated. Audit: clearing rule stated. Unlock pass: risk now a save. v3 audit: Ask is an Influence check, not a save. GM call after v3: smash only once unlocked; the eye mark and a fey favour. Audit round 5: the name has a place to look.",
+    "notes": "Reworked. Source flavor kept (European fairy), origin set to the faerie archway (11_the_doorish_hills.md); passive added; clearing rule stated. Audit: clearing rule stated. Unlock pass: risk now a save. v3 audit: Ask is an Influence check, not a save. GM call after v3: smash only once unlocked; the eye mark and a fey favour. Audit round 5: the name has a place to look. GM call (round 6): the answer lies through an arch, so gigs can refill it.",
     "source": "sources/sejr_arcana_perchance_original.txt",
     "matrix": {
       "tier": "Minor",

@@ -665,7 +665,7 @@
       "name": "Bargains",
       "type": "pip tracker",
       "max": 3,
-      "text": "Bargains (pip tracker, max 3). Spend 1 Bargain per Ask. Regain 1 when you answer the question the fairy asks about its home. It asks one each time it runs dry, and the answer is never found on the way to a gig. Bargains return only this way."
+      "text": "Bargains (pip tracker, max 3). Spend 1 Bargain per Ask. Regain 1 when you answer the question the fairy asks about its home. It asks one each time it runs dry, and the answer always lies through an arch: any trip through one can carry a clue. Bargains return only this way."
     },
     "powers": [
       "Ask (Action, spend 1 Bargain): Make an Influence check, DC 12. On a success the fairy works one small charm: a glamour, a lock undone, a minute of floating. On a failure it sulks and stays silent for 2d6 days.",

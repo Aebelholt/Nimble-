@@ -796,7 +796,7 @@ Class arcana first, then found arcana. Each class arcanum belongs to the class n
 - Promise it freedom, aloud, before a witness
 - Risk: Speak to it before you know its name, and it slips out and hexes you: make a WIL save, DC 12, or have disadvantage on WIL checks for a week.
 
-**Resource: Bargains (pip tracker).** Bargains (pip tracker, max 3). Spend 1 Bargain per Ask. Regain 1 when you answer the question the fairy asks about its home. It asks one each time it runs dry, and the answer is never found on the way to a gig. Bargains return only this way.
+**Resource: Bargains (pip tracker).** Bargains (pip tracker, max 3). Spend 1 Bargain per Ask. Regain 1 when you answer the question the fairy asks about its home. It asks one each time it runs dry, and the answer always lies through an arch: any trip through one can carry a clue. Bargains return only this way.
 
 **Powers.**
 - Ask (Action, spend 1 Bargain): Make an Influence check, DC 12. On a success the fairy works one small charm: a glamour, a lock undone, a minute of floating. On a failure it sulks and stays silent for 2d6 days.

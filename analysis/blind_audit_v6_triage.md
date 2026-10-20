@@ -25,5 +25,5 @@ Source: external model audit of the frozen files (commit 9fe456a), saved as `ana
 ## Kept (decided earlier)
 Hourglass scope, Hut, Rusted Spear, Hexing Needles' open scope, Drowning Scale allies, Valkyrie, Tide-Coat ceiling (capped at 4 Growth, as the auditor corrected itself).
 
-## Open
-- **Fairy Jar refill:** "the answer is never found on the way to a gig" makes the refill compete with the episodic format.
+## GM call
+- **Fairy Jar refill: changed.** The answer always lies through an arch, so any trip through one can carry a clue.

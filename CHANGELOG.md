@@ -132,7 +132,7 @@ A second model audited the deck from `analysis/blind_audit_prompt.md`. Triage in
 
 ### Audit round 6 triage
 - External audit of the frozen files; triage in `analysis/blind_audit_v6_triage.md`.
-- Eighteen clarity fixes (Dying under Death's Door, Fix for attacks, Harpoon save scope, Hold the Line counts as Defend, Hellhide spell Thirst, Patch restores function only, and more). Fairy Jar refill open.
+- Eighteen clarity fixes (Dying under Death's Door, Fix for attacks, Harpoon save scope, Hold the Line counts as Defend, Hellhide spell Thirst, Patch restores function only, and more). Fairy Jar: the answer to its question lies through an arch.
 
 ## Diversity, found pool: before and after
 
