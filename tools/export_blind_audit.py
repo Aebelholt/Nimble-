@@ -84,7 +84,7 @@ CANON = """These names appear on the cards and exist in the setting books. Treat
 
 INSTRUCTIONS = """# Blind audit: Sejr arcana deck
 
-You are auditing a deck of 35 magic items ("arcana") for a tabletop campaign. You have not seen any earlier review of this deck, and you should not try to guess what one said. Work from the material below only.
+You are auditing a deck of __N__ magic items ("arcana") for a tabletop campaign. You have not seen any earlier review of this deck, and you should not try to guess what one said. Work from the material below only.
 
 ## Your job
 
@@ -143,7 +143,7 @@ def card_md(c):
 feats = "\n".join(f"- **{cls}:** {quote(cls, s, n)}" for cls, s, n in FEATURES)
 hb = homebrew_arcana()
 parts = [
-    INSTRUCTIONS,
+    INSTRUCTIONS.replace("__N__", str(len(cards))),
     "## 1. Campaign context\n\n" + CAMPAIGN,
     "## 2. Design standard\n\nThe spec below is the GM's own design guide, written for solo design work. Use its checklist as a lens, but it does not bind group play: the GM has accepted finite resources and very strong powers. Where its vocabulary table disagrees with the rules reference in section 3, the rules reference wins.\n\n" + spec_body(),
 ]

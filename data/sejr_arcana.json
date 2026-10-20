@@ -179,7 +179,7 @@
       "name": "Marks",
       "type": "d6 vs. accumulation",
       "max": null,
-      "text": "Marks (d6 vs. accumulation). Your Mark count is the number of quarries the cord currently tracks. Each quarry takes one token, so the cord tracks no more quarries than it has unburned tokens (six to begin with). Roll 1d6 each time you use a cord ability (Mark a Quarry or Cord Pull). If you roll equal to or below your current Mark count, something near the quarry noticed you. A Mark clears when you confront that quarry directly, and its token is free for a new quarry; or when you Cut its Mark, and its token burns. Resting does not clear Marks."
+      "text": "Marks (d6 vs. accumulation). Your Mark count is the number of quarries the cord currently tracks. Each quarry takes one token, so the cord tracks no more quarries than it has unburned tokens (six to begin with). Roll 1d6 each time you use a cord ability (Mark a Quarry or Cord Pull), before any new Mark is added. If you roll equal to or below your current Mark count, something near the quarry noticed you. A Mark clears when you confront that quarry directly, and its token is free for a new quarry; or when you Cut its Mark, and its token burns. Resting does not clear Marks."
     },
     "powers": [
       "Mark a Quarry (1 Action): Touch the cord to any physical trace of a creature: a footprint, a drop of blood, shed skin. Add 1 Mark. While that quarry is marked, you know its general direction and distance within 1 mile regardless of cover or concealment. This works on creatures you have not marked with Hunter's Mark, because the cord marks independently of the class ability.",
@@ -189,7 +189,7 @@
     "escalation": "When the d6 roll triggers, the quarry, or something near it, begins tracking you in return. The GM introduces this threat within 1 to 2 sessions. The threat is proportional to what you marked: a city rat sends a rat, a Borderlands warlord sends soldiers.",
     "design_note": "The d6 tracker suits the Hunter's quarry identity. Several Marks make each use riskier, so tracking three creatures at once invites trouble. The cord works beyond sight, which Hunter's Mark does not. Being tracked back is the most Hunter-specific consequence available.",
     "status": "keep",
-    "notes": "Marks now one count with one clearing rule (confront or Cut); Safe Rest wipe removed; risk line added; em dashes removed; Slowed uses the rules wording. Unlock pass: risk now a per-session d6. Blind audit: Marks had no cap; the cord's own six tokens are now the cap, and Cut the Mark burning a token shrinks it. Pool: no longer rolled at hero creation; a faction reward, by the GM's decision. Guild: adopted; earned at Journeyman in The Wardens' Lodge (data/sejr_guilds.json). v2 audit: Cord Pull says when Slowed applies. v3 audit: confronting frees the token, Cut burns it.",
+    "notes": "Marks now one count with one clearing rule (confront or Cut); Safe Rest wipe removed; risk line added; em dashes removed; Slowed uses the rules wording. Unlock pass: risk now a per-session d6. Blind audit: Marks had no cap; the cord's own six tokens are now the cap, and Cut the Mark burning a token shrinks it. Pool: no longer rolled at hero creation; a faction reward, by the GM's decision. Guild: adopted; earned at Journeyman in The Wardens' Lodge (data/sejr_guilds.json). v2 audit: Cord Pull says when Slowed applies. v3 audit: confronting frees the token, Cut burns it. Audit round 5: roll before adding the new Mark.",
     "source": "sources/class_arcana_v3.docx",
     "matrix": {
       "tier": "1st",
@@ -228,7 +228,7 @@
       "name": "Overcharge",
       "type": "d6 vs. accumulation",
       "max": null,
-      "text": "Overcharge (d6 vs. accumulation). Roll 1d6 each time you cast a tiered spell while wearing the lens. If you roll equal to or below your current Overcharge, the lens fails (see Escalation). On a safe roll, add 1 Overcharge. Overcharge clears when you hold the lens to the glass of the Observatory of Infinite Skies through one night."
+      "text": "Overcharge (d6 vs. accumulation). Roll 1d6 each time you cast a tiered spell while wearing the lens. The spell takes effect either way. If you roll equal to or below your current Overcharge, the lens fails after the spell (see Escalation). On a safe roll, add 1 Overcharge and use the one safe-roll power that fits you: Steady Glass before you choose a subclass, then Controlled Upcast or Chaos Bloom. Overcharge clears when you hold the lens to the glass of the Observatory of Infinite Skies through one night."
     },
     "powers": [
       "Controlled Upcast (on a safe roll, +1 Overcharge, Control subclass): The spell gains one Upcast for free.",
@@ -239,7 +239,7 @@
     "escalation": "When the d6 triggers, the glass heats to burning. Control Mage: you Lose Control, doing every option on the Control Table, with the GM choosing each time. Chaos Mage: you Invoke Chaos with disadvantage. No subclass yet: you are Dazed until the end of your next turn. Either way you take 1 Wound and cannot remove the lens until the encounter ends, because it has fused to your face. After the encounter, the Mages of Kartan sense the discharge and know its rough location. They send someone within 1 to 3 sessions. The fusing is now, the visitors are later.",
     "design_note": "Differentiated by subclass. The Control Mage gets a free Upcast on safe rolls, a reward for precision, and Lose Control as the failure. The Chaos Mage gets Overcharge relief on safe rolls and a worse Chaos roll on failure. Neither subclass wins both ways. The Mages of Kartan escalation is the City of Arches hook.",
     "status": "keep",
-    "notes": "Failure now matches the Mage rules (Control mages Lose Control, Chaos mages Invoke Chaos); the 'Control roll' unlock replaced; refill changed from abstention plus rest to a night at the Observatory; costly step and risk added. [TABLE ROLL: whether the Observatory of Infinite Skies lets a visitor leave a lens at its glass overnight.] Unlock pass: added a week of study with an Arcana check, and a d6 on the first cast that can fail the way the item fails. The old unlock was a price and one spell with no real hazard. Blind audit: Chaos mages never gained Overcharge (their safe rolls reduced it), so the lens had no risk for them. Now every safe roll adds 1 Overcharge for both subclasses; the Chaos reward is advantage on Invoke Chaos (a real Mage feature, Master of Chaos). Pool: no longer rolled at hero creation; a faction reward, by the GM's decision. Guild: adopted; earned at Journeyman in The University (data/sejr_guilds.json). Polish: the generic d6 risk became a hazard tied to the object. v3 audit: unlock fuse lasts an hour; no-subclass lines added (subclass comes at level 3). [TABLE ROLL] a Lower Reaches pawn shop is not named in setting/.",
+    "notes": "Failure now matches the Mage rules (Control mages Lose Control, Chaos mages Invoke Chaos); the 'Control roll' unlock replaced; refill changed from abstention plus rest to a night at the Observatory; costly step and risk added. [TABLE ROLL: whether the Observatory of Infinite Skies lets a visitor leave a lens at its glass overnight.] Unlock pass: added a week of study with an Arcana check, and a d6 on the first cast that can fail the way the item fails. The old unlock was a price and one spell with no real hazard. Blind audit: Chaos mages never gained Overcharge (their safe rolls reduced it), so the lens had no risk for them. Now every safe roll adds 1 Overcharge for both subclasses; the Chaos reward is advantage on Invoke Chaos (a real Mage feature, Master of Chaos). Pool: no longer rolled at hero creation; a faction reward, by the GM's decision. Guild: adopted; earned at Journeyman in The University (data/sejr_guilds.json). Polish: the generic d6 risk became a hazard tied to the object. v3 audit: unlock fuse lasts an hour; no-subclass lines added (subclass comes at level 3). [TABLE ROLL] a Lower Reaches pawn shop is not named in setting/. Audit round 5: the spell resolves first; one safe-roll power per cast.",
     "source": "sources/class_arcana_v3.docx",
     "matrix": {
       "tier": "1st",
@@ -324,17 +324,17 @@
       "name": "Debt",
       "type": "pip tracker",
       "max": 4,
-      "text": "Debt (pip tracker, max 4). Mark 1 Debt each time you use one of the contract's powers. Debt clears when the patron collects (see Escalation), or when you carry out a sentence you wrote in the contract: write one sentence in your own blood describing something you will do for the patron, then do it. You must write something real, and you must mean it."
+      "text": "Debt (pip tracker, max 4). Mark Debt each time you use one of the contract's powers, as each power says. Debt above 4 is lost. Debt clears when the patron collects (see Escalation), or when you carry out a sentence you wrote in the contract: write one sentence in your own blood describing something you will do for the patron, then do it. You must write something real, and you must mean it."
     },
     "powers": [
       "Read the Contract (Free, 1/encounter, mark 1 Debt): Hold the vellum up. You see one true fact about a creature you can see: its most urgent want, its deepest fear, or the name of someone it has wronged.",
       "Patron's Margin (Free, 1/encounter, mark 2 Debt, patron path or before level 3): Spend a use of Pilfered Power to cast a spell from your schools one tier above your current maximum. The patron extends credit.",
       "Reaver's Margin (Free, 1/encounter, mark 2 Debt, Reaver path): Your next Bonescythe strike this turn rolls one extra d12."
     ],
-    "escalation": "When Debt reaches 4, the patron collects. It does not take power. It adds one sentence about your character to the contract, permanently. The GM decides what it says and reads it aloud. Debt clears. The sentence stays. A Reaver's contract still answers to the patron they left: that patron writes the sentence, and sends an agent to read it to them in person. Roll a d6 on the table below, or choose.",
+    "escalation": "When Debt reaches 4 or more, the patron collects. It does not take power. It adds one sentence about your character to the contract, permanently. The GM decides what it says and reads it aloud. Debt clears. The sentence stays. A Reaver's contract still answers to the patron they left: that patron writes the sentence, and sends an agent to read it to them in person. Roll a d6 on the table below, or choose.",
     "design_note": "Debt marks only on the contract's own powers, so it never rides on Pilfered Power, and the Safe Rest commune stays the class's own business. The Reaver path gives patronless Shadowmancers a card of their own. The permanent sentence is the right shape for a relationship with something ancient and dangerous.",
     "status": "keep",
-    "notes": "Debt no longer marks on Pilfered Power use and the Pilfered Power refill is gone (it duplicated the class commune); Reaver path and Reaver's Margin added (Reavers have no patron and cannot cast tiered spells at this echelon); risk added; em dash removed. Unlock pass: Reaver path now takes three nights with saves; patron path states that the counter-demand binds. Blind audit: the Reaver escalation now says the left patron collects through the stolen contract. Pool: no longer rolled at hero creation; a faction reward, by the GM's decision. Guild: adopted; earned at Journeyman in The Hollow Circle (data/sejr_guilds.json). Polish: escalation d6 table added, so the GM does not have to invent it at the table. v2 audit: Reaver's Margin names the die (Bonescythe is 2d12). v3 audit: Patron's Margin names its cost and covers levels 1-2 (the Reaver choice comes at level 3).",
+    "notes": "Debt no longer marks on Pilfered Power use and the Pilfered Power refill is gone (it duplicated the class commune); Reaver path and Reaver's Margin added (Reavers have no patron and cannot cast tiered spells at this echelon); risk added; em dash removed. Unlock pass: Reaver path now takes three nights with saves; patron path states that the counter-demand binds. Blind audit: the Reaver escalation now says the left patron collects through the stolen contract. Pool: no longer rolled at hero creation; a faction reward, by the GM's decision. Guild: adopted; earned at Journeyman in The Hollow Circle (data/sejr_guilds.json). Polish: escalation d6 table added, so the GM does not have to invent it at the table. v2 audit: Reaver's Margin names the die (Bonescythe is 2d12). v3 audit: Patron's Margin names its cost and covers levels 1-2 (the Reaver choice comes at level 3). Audit round 5: Debt over 4 is lost; collection at 4 or more.",
     "source": "sources/class_arcana_v3.docx",
     "matrix": {
       "tier": "1st",
@@ -732,12 +732,12 @@
       "text": "Sand (pip tracker, max 3). Spend 1 Sand each time you Turn Back. Regain 1 by returning to the place where you last turned time back and letting the glass run for an hour. Sand returns only this way."
     },
     "powers": [
-      "Turn Back (Reaction, spend 1 Sand, after a die you can see is rolled and before its result is applied): The die is rerolled. The new result stands.",
+      "Turn Back (Reaction, spend 1 Sand, after a die you can see is rolled and before its result is applied): One die, yours or anyone's, from any roll, is rerolled. The new result stands.",
       "Sand Sense (Passive): You always know the exact time, and you can tell when a clock, a calendar, or a witness near you has it wrong."
     ],
     "escalation": "When the last Sand falls, the original result happened somewhere. Within a session an Echo of you arrives carrying its consequences, and it wants the glass. Roll a d6 on the table below, or choose.",
     "status": "keep",
-    "notes": "Kept. Origin added (Library of Vrassa, 3_gazetteer); a passive added; clearing rule stated. Unlock pass: risk now a save that costs a Hit Die. Blind audit: Turn Back had no timing window; it now fires after the roll and before the result is applied, so it cannot rewrite a resolved scene. Polish: escalation d6 table added, so the GM does not have to invent it at the table.",
+    "notes": "Kept. Origin added (Library of Vrassa, 3_gazetteer); a passive added; clearing rule stated. Unlock pass: risk now a save that costs a Hit Die. Blind audit: Turn Back had no timing window; it now fires after the roll and before the result is applied, so it cannot rewrite a resolved scene. Polish: escalation d6 table added, so the GM does not have to invent it at the table. Audit round 5: scope stated: any one die you can see.",
     "source": "sources/sejr_arcana_perchance_original.txt",
     "matrix": {
       "tier": "Major",
@@ -1216,7 +1216,7 @@
     "tier": "Minor",
     "object": "A thumb-high jar of purple glass. Inside, a small furious face swims in mist. The fairy was netted at the Arch of Flowers in Briarheart Forest.",
     "unlock": [
-      "Learn the fairy's name, which it will not tell you",
+      "Learn the fairy's name, which it will not tell you; the fey beyond the Arch of Flowers in Briarheart Forest know it",
       "Promise it freedom, aloud, before a witness"
     ],
     "risk": "Speak to it before you know its name, and it slips out and hexes you: make a WIL save, DC 12, or have disadvantage on WIL checks for a week.",
@@ -1232,7 +1232,7 @@
     ],
     "escalation": "On a natural 1 the fairy escapes and curses you. Once you know its name, you may smash the jar: it grants +1 to one stat for good and is gone. The fairy leaves its mark, one of your eyes turns its colour for good, and it tells its court: you owe the fey one favour, and they will collect. At 0 Bargains it only bargains for its freedom.",
     "status": "keep",
-    "notes": "Reworked. Source flavor kept (European fairy), origin set to the faerie archway (11_the_doorish_hills.md); passive added; clearing rule stated. Audit: clearing rule stated. Unlock pass: risk now a save. v3 audit: Ask is an Influence check, not a save. GM call after v3: smash only once unlocked; the eye mark and a fey favour.",
+    "notes": "Reworked. Source flavor kept (European fairy), origin set to the faerie archway (11_the_doorish_hills.md); passive added; clearing rule stated. Audit: clearing rule stated. Unlock pass: risk now a save. v3 audit: Ask is an Influence check, not a save. GM call after v3: smash only once unlocked; the eye mark and a fey favour. Audit round 5: the name has a place to look.",
     "source": "sources/sejr_arcana_perchance_original.txt",
     "matrix": {
       "tier": "Minor",
@@ -1471,12 +1471,12 @@
     },
     "powers": [
       "Overcast (Passive): The clouded edge darkens when a creature within 6 spaces is angry at you over a wrong you have not apologised for.",
-      "Gust (Action, spend 1 Sky): A wind throws every creature in a Line 6 back 3 spaces (Knockback 3). STR save, DC 13, negates.",
+      "Gust (Action, spend 1 Sky): A wind throws every creature in a Line 6 from you, in a direction you choose, back 3 spaces (Knockback 3), allies included. STR save, DC 13, negates.",
       "Storm (Action, spend 2 Sky, once the storm wakes): For the encounter, enemies have disadvantage on ranged attacks and you cannot be pushed."
     ],
     "escalation": "If you wrong the one who gave it back, it is in their hands the next morning, wherever they are.",
     "status": "keep",
-    "notes": "Kept. Knockback and Line used as rules terms; origin added (Terrache, 13_worlds_beyond_the_arches.md); a passive added that points at the refill. Risk now an Influence check. Reassessment: loop closed: a player could wrong someone on purpose to apologise for a refill. Wrongs done on purpose after taking up the blade no longer count.",
+    "notes": "Kept. Knockback and Line used as rules terms; origin added (Terrache, 13_worlds_beyond_the_arches.md); a passive added that points at the refill. Risk now an Influence check. Reassessment: loop closed: a player could wrong someone on purpose to apologise for a refill. Wrongs done on purpose after taking up the blade no longer count. Audit round 5: Gust names origin, direction and allies.",
     "source": "sources/sejr_arcana_perchance_original.txt",
     "matrix": {
       "tier": "Major",
@@ -1598,12 +1598,12 @@
       "text": "Rust (pip tracker, max 3). Spend 1 Rust per Scrape. Regain 1 by leaving the spear a night in the red water of Bloodrust Depths. Rust returns only this way."
     },
     "powers": [
-      "Spare (Free): When you would drop a creature to 0 HP with the spear, it is left alive and Incapacitated at 0 HP instead (a hero falls Dying as normal), and its wound will not close until you choose to mend it.",
+      "Spare (Free): When you would kill a creature with the spear (a Legendary monster's Last Stand runs first), it is left alive and Incapacitated at 0 HP instead (a hero falls Dying as normal), and its wound will not close until you choose to mend it.",
       "Scrape (Action, spend 1 Rust): Scrape rust into a wound to heal 1 Wound on a creature you touch, yourself included, or to close a wound the spear made."
     ],
     "escalation": "At 0 Rust the blade is clean and bright. The next creature it hits takes a wound that never closes: a hero gains a Wound that cannot heal and loses 1 max Wound for good, and a creature bleeds out by the end of the scene. A Legendary or Solo monster does not bleed out: it loses a third of its max HP at once (not from its Last Stand).",
     "status": "keep",
-    "notes": "Reworked. Source flavor kept (Telephus and Achilles' spear). Seawater is not named in the city, so the refill is the red water of Bloodrust Depths (10_the_revlend_marshes.md); origin the Blood Spears of Averost (11_the_doorish_hills.md). Spare is now a free choice. Unlock pass: risk now an Influence check. Reassessment: power renamed from Mend to Scrape; Mend is a Shepherd class ability. Blind audit: 'the next wound it gives' now reads 'the next creature it hits'; Scrape says who it can heal. v3 audit: Spare no longer uses Dying for monsters. GM call after v3: Legendary monsters lose a third of max HP instead of bleeding out. v4 audit: Solo monsters count as bosses too.",
+    "notes": "Reworked. Source flavor kept (Telephus and Achilles' spear). Seawater is not named in the city, so the refill is the red water of Bloodrust Depths (10_the_revlend_marshes.md); origin the Blood Spears of Averost (11_the_doorish_hills.md). Spare is now a free choice. Unlock pass: risk now an Influence check. Reassessment: power renamed from Mend to Scrape; Mend is a Shepherd class ability. Blind audit: 'the next wound it gives' now reads 'the next creature it hits'; Scrape says who it can heal. v3 audit: Spare no longer uses Dying for monsters. GM call after v3: Legendary monsters lose a third of max HP instead of bleeding out. v4 audit: Solo monsters count as bosses too. Audit round 5: Spare no longer skips a Legendary Last Stand.",
     "source": "sources/sejr_arcana_perchance_original.txt",
     "matrix": {
       "tier": "Minor",
@@ -1775,12 +1775,12 @@
     "powers": [
       "Draw Fire (Action, spend 1 Ward): Rattle the chain. Each enemy within 6 spaces that can see you makes a WIL save, DC 13, or is Taunted by you until the end of its next turn. Solo creatures save with advantage.",
       "Long Links (Passive): Your Interpose reaches allies within 4 spaces, not 2.",
-      "Hold the Line (Reaction, spend 1 Ward): When you Interpose, you also Defend without spending an action for it."
+      "Hold the Line (Free, spend 1 Ward, when you Interpose): You also Defend against that attack without spending an action for it."
     ],
     "escalation": "When you spend the last Ward, the chain locks: until the encounter ends, you cannot willingly move away from an enemy. The Wardens' Lodge hears the old gate chain rang again. They want it back on the gate, and their gate captain drinks where the wall guards drink.",
     "status": "keep",
     "source": "new card; analysis/new_cards_draft.md",
-    "notes": "New card after the v3 audit role review.",
+    "notes": "New card after the v3 audit role review. Audit round 5: Hold the Line is Free; as a Reaction it cost the action it saved.",
     "matrix": {
       "tier": "Minor",
       "resource_type": "pip tracker",

@@ -125,6 +125,10 @@ A second model audited the deck from `analysis/blind_audit_prompt.md`. Triage in
 - Fixed: Rune Fragment's ninth fragment (a regression from v3), Codex Patch scope, Hexing self-hex loop, Tide-Coat water breathing, Hellhide unlock vs object, armor proficiency reminders, Loaded Die risk wording, Harpoon damage, Standard vs Muster, Rusted Spear covers Solo bosses, Forgotten Key tier, guild rank name.
 - Five calls wait on the GM (Hut, off-screen refills, Valkyrie, Teeth vs Horn, Spear drain).
 
+### Audit round 5 triage
+- Session audit and an external audit of the v4 prompt; triage in `analysis/blind_audit_v5_triage.md`.
+- Fixed: prompt card count, Gate Chain Hold the Line (Free), Spear Spare vs Last Stand, Contract Debt cap, Lens spell order, Cord roll order, Hourglass scope, Fairy Jar name lead, Gust geometry.
+
 ## Diversity, found pool: before and after
 
 | | Before (25) | After (24) |

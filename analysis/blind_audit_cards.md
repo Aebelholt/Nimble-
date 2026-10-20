@@ -71,7 +71,7 @@ Class arcana first, then found arcana. No notes or prior review included.
 - Track a single creature across at least two sessions without losing the trail, through city, ruin, or wilderness. The creature must be aware it is being hunted, and must have tried to lose you at least once.
 - Risk: Each session you track the creature, the GM rolls a d6. On a 1, it doubles back and ambushes you, and it acts first in the next encounter.
 
-**Resource: Marks (d6 vs. accumulation).** Marks (d6 vs. accumulation). Your Mark count is the number of quarries the cord currently tracks. Each quarry takes one token, so the cord tracks no more quarries than it has unburned tokens (six to begin with). Roll 1d6 each time you use a cord ability (Mark a Quarry or Cord Pull). If you roll equal to or below your current Mark count, something near the quarry noticed you. A Mark clears when you confront that quarry directly, and its token is free for a new quarry; or when you Cut its Mark, and its token burns. Resting does not clear Marks.
+**Resource: Marks (d6 vs. accumulation).** Marks (d6 vs. accumulation). Your Mark count is the number of quarries the cord currently tracks. Each quarry takes one token, so the cord tracks no more quarries than it has unburned tokens (six to begin with). Roll 1d6 each time you use a cord ability (Mark a Quarry or Cord Pull), before any new Mark is added. If you roll equal to or below your current Mark count, something near the quarry noticed you. A Mark clears when you confront that quarry directly, and its token is free for a new quarry; or when you Cut its Mark, and its token burns. Resting does not clear Marks.
 
 **Powers.**
 - Mark a Quarry (1 Action): Touch the cord to any physical trace of a creature: a footprint, a drop of blood, shed skin. Add 1 Mark. While that quarry is marked, you know its general direction and distance within 1 mile regardless of cover or concealment. This works on creatures you have not marked with Hunter's Mark, because the cord marks independently of the class ability.
@@ -91,7 +91,7 @@ Class arcana first, then found arcana. No notes or prior review included.
 - Then cast a spell of the highest tier you can cast, with the lens held to your eye for the whole cast.
 - Risk: When the cast ends, the crack pulls at your eye. Make an INT save, DC 13. On a failure the lens fails as its Escalation describes: take 1 Wound, the lens fuses to your face for an hour, and Kartan is told. If you flinch or remove the lens, the crack spreads and it is ruined.
 
-**Resource: Overcharge (d6 vs. accumulation).** Overcharge (d6 vs. accumulation). Roll 1d6 each time you cast a tiered spell while wearing the lens. If you roll equal to or below your current Overcharge, the lens fails (see Escalation). On a safe roll, add 1 Overcharge. Overcharge clears when you hold the lens to the glass of the Observatory of Infinite Skies through one night.
+**Resource: Overcharge (d6 vs. accumulation).** Overcharge (d6 vs. accumulation). Roll 1d6 each time you cast a tiered spell while wearing the lens. The spell takes effect either way. If you roll equal to or below your current Overcharge, the lens fails after the spell (see Escalation). On a safe roll, add 1 Overcharge and use the one safe-roll power that fits you: Steady Glass before you choose a subclass, then Controlled Upcast or Chaos Bloom. Overcharge clears when you hold the lens to the glass of the Observatory of Infinite Skies through one night.
 
 **Powers.**
 - Controlled Upcast (on a safe roll, +1 Overcharge, Control subclass): The spell gains one Upcast for free.
@@ -129,14 +129,14 @@ Class arcana first, then found arcana. No notes or prior review included.
 - Reaver path: you have no patron to ask. Read the vellum by your own shadow, in the room where it was found, for three nights, until the language stops changing.
 - Risk: Patron path: the counter-demand is whatever the GM names, and you have already agreed to it. Reaver path: make a WIL save, DC 12, each night, and each failure starts you with 1 Debt before you have any power. Either way, your patron, or the patron you left, learns the contract has a new reader.
 
-**Resource: Debt (pip tracker).** Debt (pip tracker, max 4). Mark 1 Debt each time you use one of the contract's powers. Debt clears when the patron collects (see Escalation), or when you carry out a sentence you wrote in the contract: write one sentence in your own blood describing something you will do for the patron, then do it. You must write something real, and you must mean it.
+**Resource: Debt (pip tracker).** Debt (pip tracker, max 4). Mark Debt each time you use one of the contract's powers, as each power says. Debt above 4 is lost. Debt clears when the patron collects (see Escalation), or when you carry out a sentence you wrote in the contract: write one sentence in your own blood describing something you will do for the patron, then do it. You must write something real, and you must mean it.
 
 **Powers.**
 - Read the Contract (Free, 1/encounter, mark 1 Debt): Hold the vellum up. You see one true fact about a creature you can see: its most urgent want, its deepest fear, or the name of someone it has wronged.
 - Patron's Margin (Free, 1/encounter, mark 2 Debt, patron path or before level 3): Spend a use of Pilfered Power to cast a spell from your schools one tier above your current maximum. The patron extends credit.
 - Reaver's Margin (Free, 1/encounter, mark 2 Debt, Reaver path): Your next Bonescythe strike this turn rolls one extra d12.
 
-**Escalation.** When Debt reaches 4, the patron collects. It does not take power. It adds one sentence about your character to the contract, permanently. The GM decides what it says and reads it aloud. Debt clears. The sentence stays. A Reaver's contract still answers to the patron they left: that patron writes the sentence, and sends an agent to read it to them in person. Roll a d6 on the table below, or choose.
+**Escalation.** When Debt reaches 4 or more, the patron collects. It does not take power. It adds one sentence about your character to the contract, permanently. The GM decides what it says and reads it aloud. Debt clears. The sentence stays. A Reaver's contract still answers to the patron they left: that patron writes the sentence, and sends an agent to read it to them in person. Roll a d6 on the table below, or choose.
 
 *The sentence the patron writes (d6):* 1 They will refuse help once, when it matters most.; 2 They owe me the name of someone they love.; 3 They will open a door they were told to leave shut.; 4 Their shadow answers to me first.; 5 They will come back to the sealed room.; 6 They will keep one promise I choose, whatever it costs..
 
@@ -291,7 +291,7 @@ Class arcana first, then found arcana. No notes or prior review included.
 **Resource: Sand (pip tracker).** Sand (pip tracker, max 3). Spend 1 Sand each time you Turn Back. Regain 1 by returning to the place where you last turned time back and letting the glass run for an hour. Sand returns only this way.
 
 **Powers.**
-- Turn Back (Reaction, spend 1 Sand, after a die you can see is rolled and before its result is applied): The die is rerolled. The new result stands.
+- Turn Back (Reaction, spend 1 Sand, after a die you can see is rolled and before its result is applied): One die, yours or anyone's, from any roll, is rerolled. The new result stands.
 - Sand Sense (Passive): You always know the exact time, and you can tell when a clock, a calendar, or a witness near you has it wrong.
 
 **Escalation.** When the last Sand falls, the original result happened somewhere. Within a session an Echo of you arrives carrying its consequences, and it wants the glass. Roll a d6 on the table below, or choose.
@@ -454,7 +454,7 @@ Class arcana first, then found arcana. No notes or prior review included.
 **Object.** A thumb-high jar of purple glass. Inside, a small furious face swims in mist. The fairy was netted at the Arch of Flowers in Briarheart Forest.
 
 **Unlock.**
-- Learn the fairy's name, which it will not tell you
+- Learn the fairy's name, which it will not tell you; the fey beyond the Arch of Flowers in Briarheart Forest know it
 - Promise it freedom, aloud, before a witness
 - Risk: Speak to it before you know its name, and it slips out and hexes you: make a WIL save, DC 12, or have disadvantage on WIL checks for a week.
 
@@ -554,7 +554,7 @@ Class arcana first, then found arcana. No notes or prior review included.
 
 **Powers.**
 - Overcast (Passive): The clouded edge darkens when a creature within 6 spaces is angry at you over a wrong you have not apologised for.
-- Gust (Action, spend 1 Sky): A wind throws every creature in a Line 6 back 3 spaces (Knockback 3). STR save, DC 13, negates.
+- Gust (Action, spend 1 Sky): A wind throws every creature in a Line 6 from you, in a direction you choose, back 3 spaces (Knockback 3), allies included. STR save, DC 13, negates.
 - Storm (Action, spend 2 Sky, once the storm wakes): For the encounter, enemies have disadvantage on ranged attacks and you cannot be pushed.
 
 **Escalation.** If you wrong the one who gave it back, it is in their hands the next morning, wherever they are.
@@ -615,7 +615,7 @@ Class arcana first, then found arcana. No notes or prior review included.
 **Resource: Rust (pip tracker).** Rust (pip tracker, max 3). Spend 1 Rust per Scrape. Regain 1 by leaving the spear a night in the red water of Bloodrust Depths. Rust returns only this way.
 
 **Powers.**
-- Spare (Free): When you would drop a creature to 0 HP with the spear, it is left alive and Incapacitated at 0 HP instead (a hero falls Dying as normal), and its wound will not close until you choose to mend it.
+- Spare (Free): When you would kill a creature with the spear (a Legendary monster's Last Stand runs first), it is left alive and Incapacitated at 0 HP instead (a hero falls Dying as normal), and its wound will not close until you choose to mend it.
 - Scrape (Action, spend 1 Rust): Scrape rust into a wound to heal 1 Wound on a creature you touch, yourself included, or to close a wound the spear made.
 
 **Escalation.** At 0 Rust the blade is clean and bright. The next creature it hits takes a wound that never closes: a hero gains a Wound that cannot heal and loses 1 max Wound for good, and a creature bleeds out by the end of the scene. A Legendary or Solo monster does not bleed out: it loses a third of its max HP at once (not from its Last Stand).
@@ -692,7 +692,7 @@ Class arcana first, then found arcana. No notes or prior review included.
 **Powers.**
 - Draw Fire (Action, spend 1 Ward): Rattle the chain. Each enemy within 6 spaces that can see you makes a WIL save, DC 13, or is Taunted by you until the end of its next turn. Solo creatures save with advantage.
 - Long Links (Passive): Your Interpose reaches allies within 4 spaces, not 2.
-- Hold the Line (Reaction, spend 1 Ward): When you Interpose, you also Defend without spending an action for it.
+- Hold the Line (Free, spend 1 Ward, when you Interpose): You also Defend against that attack without spending an action for it.
 
 **Escalation.** When you spend the last Ward, the chain locks: until the encounter ends, you cannot willingly move away from an enemy. The Wardens' Lodge hears the old gate chain rang again. They want it back on the gate, and their gate captain drinks where the wall guards drink.
 
