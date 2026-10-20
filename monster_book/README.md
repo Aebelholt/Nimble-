@@ -27,3 +27,14 @@ Nimble bestiary for the City of Arches: 33 entries across 11 worlds, each with a
 - **Necrophage Ghast** follows the Tales of the Valiant Monster Vault: a spellcaster ghast that cannot spread ghoul hunger.
 - **Level** is printed in each header line. The spec's header did not include it; it is there for encounter budgeting.
 - **Ice World** has no chapter in the setting book. Its entries lean on the bear lodges from the Bear-Lodge Horn arcanum and invent little else.
+
+## Next up: encounter rewrite (decided, not started)
+
+Encounters must be plug-in-and-play. Many current ones describe the setting the party is in ("the party wades a Lost Cisterns walkway...") instead of what the party meets. Each of the 33 x 4 encounters should become one of:
+
+- **Context-independent:** something the party meets that works in any room or map. Who or what, what it wants, what decision it forces.
+- **Context-pivoting:** names the terrain feature it needs in one generic phrase ("a one-way passage", "a high ledge") so the GM can drop it on whatever map the But+ roll gave them.
+
+Rule of thumb: delete the location, keep the situation. If the entry still makes sense, it is done. Setting flavour moves to Lairs, where it belongs.
+
+Then, in order of the earlier proposal: Dolmenwood fields (number appearing, chance in lair, Behaviour, Speech, Hoard), rival-crew appendix, Elite lairs.
