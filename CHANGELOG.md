@@ -134,6 +134,9 @@ A second model audited the deck from `analysis/blind_audit_prompt.md`. Triage in
 - External audit of the frozen files; triage in `analysis/blind_audit_v6_triage.md`.
 - Eighteen clarity fixes (Dying under Death's Door, Fix for attacks, Harpoon save scope, Hold the Line counts as Defend, Hellhide spell Thirst, Patch restores function only, and more). Fairy Jar: the answer to its question lies through an arch.
 
+### Generator merged
+- `data/sejr_generator_lists.txt` is the GM's lists panel with the arcana module merged in (built by `tools/build_generator.py` from `sources/sejr_generator_lists.txt`, which stays untouched). The hero card rolls `legacy_arcanum(0)`, shows the card with `arcanum_line()`, and offers the class guild after the holding. `tools/test_generator.js` rolls 300 heroes.
+
 ## Diversity, found pool: before and after
 
 | | Before (25) | After (24) |
@@ -166,6 +169,7 @@ After the reassessment move: upper city 7, worlds beyond 7, Lower Reaches 3, Doo
 ```
 python3 -I tools/audit.py
 python3 -I tools/build_perchance.py && node tools/test_perchance.js
+python3 -I tools/build_generator.py && node tools/test_generator.js
 python3 -I tools/export_review.py
 python3 -I tools/export_blind_audit.py && python3 -I tools/export_audit_cards.py
 ```
