@@ -9,7 +9,7 @@ Small house rules that sit beside the cards. The cards themselves live in `data/
 - Class arcana are never drawn. A hero earns their class arcanum at Journeyman rank in their class guild. The Forgotten Key, Seven-Leaf Bracelet, Arch-Watch Mirror, Tide-Coat and Pitch-Sap Harness are faction rewards only.
 
 ## Off-screen refills
-- Between episodes, each hero may make one refill off-screen, if it can be done inside the city: a vigil, a game of chance, a retelling to a new listener, a burial on the Cliffs of the Dead, hair, blood or cloth freely given by someone outside the party (Hexing Needles). Absent players may use it too, alongside their arcana-ritual tick.
+- Between episodes, each hero may make one refill off-screen, if it can be done inside the city. An off-screen refill restores 1 pip, or clears 1 point of accumulation, never the whole tracker: a vigil, a game of chance, a retelling to a new listener, a burial on the Cliffs of the Dead, hair, blood or cloth freely given by someone outside the party (Hexing Needles). Absent players may use it too, alongside their arcana-ritual tick.
 - Say it in one sentence in the next episode's "last time" line.
 - A refill that needs a place beyond the city needs a gig: the Revlend Marshes, Bloodrust Depths, the Lost Cavern of the Sundering Saurians, a world beyond an arch. That gig is a ready-made hero stake, and it takes the party to a region your Neglect clocks track.
 

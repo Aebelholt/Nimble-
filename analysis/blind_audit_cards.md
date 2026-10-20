@@ -217,7 +217,7 @@ Class arcana first, then found arcana. No notes or prior review included.
 - Deepest Annotation (Free, spend 1 Wound, 1/Safe Rest): Your unarmed and melee weapon attacks deal bonus damage equal to your level for the rest of the encounter.
 - Study (downtime, 1 hour per Safe Rest): Spend an hour reading the annotations during rest. Roll Lore DC 8 to learn something about a martial tradition relevant to the current adventure arc. The GM provides one true detail.
 
-**Escalation.** If you use either annotation while you have 3 or more Wounds, from any source, the wrappings tighten around your hands: take 1 additional Wound and you cannot use either annotation until your next Safe Rest. The annotations become illegible until a skilled martial artist re-inks them. Finding one is the GM's hook.
+**Escalation.** If you use either annotation while you have 3 or more Wounds, from any source, the wrappings tighten around your hands: take 1 additional Wound (it cannot be your sixth: at 5 Wounds you fall Dying instead) and you cannot use either annotation until your next Safe Rest. The annotations become illegible until a skilled martial artist re-inks them. Finding one is the GM's hook.
 
 ### The Forgotten Key
 `forgotten_key` · found, Major, faction reward
@@ -420,7 +420,7 @@ Class arcana first, then found arcana. No notes or prior review included.
 - Put it on
 - Risk: Roll d10. On 1-3 the hide drinks magic: no spell can affect you, including your own and your allies' healing, while you wear it, and each spell cast on you gives the hide 1 Thirst.
 
-**Resource: Thirst (pip tracker).** Thirst (pip tracker, max 3). Gain 1 Thirst each time you use Command. Thirst clears only when you offer blood to the hide outside combat, from a willing person. Blood shed in a fight does not count.
+**Resource: Thirst (pip tracker).** Thirst (pip tracker, max 3). Gain 1 Thirst each time you use Command. Thirst clears only when you offer blood to the hide outside combat, from a willing person outside your party. Blood shed in a fight does not count.
 
 **Powers.**
 - Demon Plate (Passive): Plate armor, Defense 14, with no STR requirement. Without plate armor proficiency, Defend costs 1 extra action, as normal.

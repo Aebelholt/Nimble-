@@ -42,7 +42,7 @@ Sejr is an episodic, drop-in Nimble 2 campaign in the City of Arches, a setting 
 - **Trackers carry memory.** A thread board of six index cards (one thread closes and one opens each episode), hidden Neglect clocks for the outer regions, six-step faction clocks. GM prep is the trackers and nothing else.
 - **Tiers.** Found arcana are Minor or Major. Class arcana are 1st echelon (levels 1-4). The found pool is 23 drawable cards plus faction rewards, diverse in look, role and mechanics.
 - **The GM, in their words:** these items are meant to be stronger than standard magic items, because they exist to drive player engagement. "Broken is not bad, because I will supercharge my combats and situations too." They are a very lenient GM: no player death across 4 systems and 7 groups.
-- **Since the first audit, the GM decided:** Major cards stay in the level 1 draw on purpose ("random players, huge powers; I'd be surprised if nothing cataclysmic came from this, and in that lies the fun"). Class arcana and the Forgotten Key are rewards, never drawn; each class arcanum comes from its class guild (section 7). Finite, never-refilling relics are intended. Three guild masters are left blank on purpose. The Drowning Scale's trigger (allies included) and the Hexing Needles' open "kind of roll" (attacks included, no save) are kept by choice. Canon is loose: the campaign uses the setting as a base, and a fact the books do not settle is a table roll, not an error. After a role review, four cards joined the draw (Gate Chain, Bear-Lodge Horn, Hut on Hen's Legs, Crafter's Codex) and four moved to faction rewards (Seven-Leaf Bracelet, Arch-Watch Mirror, Tide-Coat, Pitch-Sap Harness).
+- **Since the first audit, the GM decided:** Major cards stay in the level 1 draw on purpose ("random players, huge powers; I'd be surprised if nothing cataclysmic came from this, and in that lies the fun"). Class arcana and the Forgotten Key are rewards, never drawn; each class arcanum comes from its class guild (section 7). Finite, never-refilling relics are intended. Three guild masters are left blank on purpose. The Drowning Scale's trigger (allies included) and the Hexing Needles' open "kind of roll" (attacks included, no save) are kept by choice. Canon is loose: the campaign uses the setting as a base, and a fact the books do not settle is a table roll, not an error. After a role review, four cards joined the draw (Gate Chain, Bear-Lodge Horn, Hut on Hen's Legs, Crafter's Codex) and four moved to faction rewards (Seven-Leaf Bracelet, Arch-Watch Mirror, Tide-Coat, Pitch-Sap Harness). The Hut on Hen's Legs stays as written: in a campaign of bottle episodes its travel lets the party take far-off jobs, and a Safe Rest ends an adventure anyway. The Valkyrie's claimed life stays: life comes cheap, and a player rolls a new hero (with a legacy bonus).
 - **Sources.** Many items are deliberate ports from other systems and real-world myth (Norse, Greek, Egyptian, fairy lore), justified because the arches lead to other realms. Stonetop's arcana are the main inspiration.
 
 ## 2. Design standard
@@ -316,7 +316,7 @@ Small house rules that sit beside the cards. The cards themselves live in `data/
 - Class arcana are never drawn. A hero earns their class arcanum at Journeyman rank in their class guild. The Forgotten Key, Seven-Leaf Bracelet, Arch-Watch Mirror, Tide-Coat and Pitch-Sap Harness are faction rewards only.
 
 ### Off-screen refills
-- Between episodes, each hero may make one refill off-screen, if it can be done inside the city: a vigil, a game of chance, a retelling to a new listener, a burial on the Cliffs of the Dead, hair, blood or cloth freely given by someone outside the party (Hexing Needles). Absent players may use it too, alongside their arcana-ritual tick.
+- Between episodes, each hero may make one refill off-screen, if it can be done inside the city. An off-screen refill restores 1 pip, or clears 1 point of accumulation, never the whole tracker: a vigil, a game of chance, a retelling to a new listener, a burial on the Cliffs of the Dead, hair, blood or cloth freely given by someone outside the party (Hexing Needles). Absent players may use it too, alongside their arcana-ritual tick.
 - Say it in one sentence in the next episode's "last time" line.
 - A refill that needs a place beyond the city needs a gig: the Revlend Marshes, Bloodrust Depths, the Lost Cavern of the Sundering Saurians, a world beyond an arch. That gig is a ready-made hero stake, and it takes the party to a region your Neglect clocks track.
 
@@ -555,7 +555,7 @@ Class arcana first, then found arcana. Each class arcanum belongs to the class n
 - Deepest Annotation (Free, spend 1 Wound, 1/Safe Rest): Your unarmed and melee weapon attacks deal bonus damage equal to your level for the rest of the encounter.
 - Study (downtime, 1 hour per Safe Rest): Spend an hour reading the annotations during rest. Roll Lore DC 8 to learn something about a martial tradition relevant to the current adventure arc. The GM provides one true detail.
 
-**Escalation.** If you use either annotation while you have 3 or more Wounds, from any source, the wrappings tighten around your hands: take 1 additional Wound and you cannot use either annotation until your next Safe Rest. The annotations become illegible until a skilled martial artist re-inks them. Finding one is the GM's hook.
+**Escalation.** If you use either annotation while you have 3 or more Wounds, from any source, the wrappings tighten around your hands: take 1 additional Wound (it cannot be your sixth: at 5 Wounds you fall Dying instead) and you cannot use either annotation until your next Safe Rest. The annotations become illegible until a skilled martial artist re-inks them. Finding one is the GM's hook.
 
 ### The Forgotten Key
 `forgotten_key` · found, Major, faction reward
@@ -758,7 +758,7 @@ Class arcana first, then found arcana. Each class arcanum belongs to the class n
 - Put it on
 - Risk: Roll d10. On 1-3 the hide drinks magic: no spell can affect you, including your own and your allies' healing, while you wear it, and each spell cast on you gives the hide 1 Thirst.
 
-**Resource: Thirst (pip tracker).** Thirst (pip tracker, max 3). Gain 1 Thirst each time you use Command. Thirst clears only when you offer blood to the hide outside combat, from a willing person. Blood shed in a fight does not count.
+**Resource: Thirst (pip tracker).** Thirst (pip tracker, max 3). Gain 1 Thirst each time you use Command. Thirst clears only when you offer blood to the hide outside combat, from a willing person outside your party. Blood shed in a fight does not count.
 
 **Powers.**
 - Demon Plate (Passive): Plate armor, Defense 14, with no STR requirement. Without plate armor proficiency, Defend costs 1 extra action, as normal.
