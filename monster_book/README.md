@@ -6,6 +6,12 @@ Nimble bestiary for the City of Arches: 33 entries across 11 worlds, each with a
 - Data: `monster_book/entries/<nn>_<world>.js`, one array per world. Edit the data, not the docx.
 - Lint runs before every build and fails the build on: missing sections (including the In play line) or wrong table sizes, rumours not 2 true / 2 false, a gig verb outside Find / Stop / Steal / Escort / Prove / Bury, Paralyzed, Stunned, Unconscious, Incapacitated or Petrified in any action text, em or en dashes, "it's not" framing.
 
+## SEB: the house style
+
+**Succinct, Evocative, Built.** Find the core of the creature, or better the family, and cut the rest. Built means of the world: a monster is grown by its place (Deathreach grows its own surveyor; the Vats grow a hunter), not dropped in as gonzo. The frame is *Forge of Foes*' one-line enemy, translated to Nimble: one stat row (HP, Armor, Speed, DC, Stage, numbers from the GM Guide Monster Builder row) plus at most three abilities, each one clause.
+
+Entries marked `seb: true` are linted to these limits: a `core` line (max 22 words), at most 3 actions of max 20 words each, table rows max 22 words, designer note max 45, In play max 25, Gig Fit lines max 30. Deathreach is the first world through it (entries went from 630-1,040 words to about 400).
+
 ## Conventions
 
 - Stats follow the GM Guide Monster Builder row for the entry's level (HP by armor, damage per round, save DC). Elite entries take HP from about two levels up.

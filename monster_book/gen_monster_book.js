@@ -89,6 +89,7 @@ function headerTable(d) {
     rows: [new TableRow({ children: [cell([
       para(run(kicker, { font: HEAD, size: 16, bold: true, color: p.ink, characterSpacing: 40 }), { spacing: { after: 40 } }),
       para(run(d.name, { font: HEAD, size: 44, bold: true, color: p.ink }), { spacing: { after: 60 } }),
+      ...(d.core ? [para(run(d.core, { bold: true, size: 21 }), { spacing: { after: 60 } })] : []),
       para(run(d.description, { italics: true, size: 21 }), { spacing: { after: 40 } }),
     ], {
       shading: fill(p.bg),
@@ -100,11 +101,12 @@ function headerTable(d) {
 
 function statTable(stats, worldKey) {
   const p = pal(worldKey);
-  const items = [["HP", String(stats.hp)], ["Armor", stats.armor], ["Speed", stats.speed], ["Stage", stats.stage]];
-  const w = Math.floor(TEXT_W / 4);
+  const items = [["HP", String(stats.hp)], ["Armor", stats.armor], ["Speed", stats.speed],
+    ...(stats.dc ? [["DC", String(stats.dc)]] : []), ["Stage", stats.stage]];
+  const w = Math.floor(TEXT_W / items.length);
   return new Table({
     width: { size: TEXT_W, type: WidthType.DXA },
-    columnWidths: [w, w, w, TEXT_W - 3 * w],
+    columnWidths: [...items.slice(1).map(() => w), TEXT_W - (items.length - 1) * w],
     borders: { ...allBorders(bdr(p.bar, 4)), insideHorizontal: bdr(p.bar, 4), insideVertical: bdr(p.bar, 4) },
     rows: [new TableRow({ children: items.map(([k, v]) => cell([
       para(run(k.toUpperCase(), { font: HEAD, size: 15, bold: true, color: p.ink, characterSpacing: 30 }),
@@ -300,7 +302,26 @@ function lint(d) {
   const all = JSON.stringify({ ...d, actions: d.actions && d.actions.map(clean), shared: d.shared && d.shared.map(clean),
     roster: d.roster && d.roster.map((m) => ({ ...m, actions: m.actions.map(clean) })) });
   BANNED_TEXT.forEach(([re, label]) => need(!re.test(all), label));
+  if (d.seb) errs.push(...sebLint(d));
   return errs;
+}
+
+// SEB: Succinct, Evocative, Built. Entries marked seb: true are held to the trimmed shape.
+const SEB = { core: 22, actions: 3, effect: 20, row: 22, note: 45, tactics: 25, gig: 30 };
+function sebLint(d) {
+  const e = [];
+  const w = (t) => String(t || "").split(/\s+/).filter(Boolean).length;
+  const over = (label, t, max) => { if (w(t) > max) e.push(`SEB: ${label} ${w(t)} words, max ${max}`); };
+  if (!d.core) e.push("SEB: missing core line");
+  over("core", d.core, SEB.core);
+  const acts = d.roster ? d.roster.flatMap((m) => m.actions) : d.actions;
+  if (!d.roster && acts.length > SEB.actions) e.push(`SEB: ${acts.length} actions, max ${SEB.actions}`);
+  acts.forEach((a) => over(`action "${a.name}"`, a.effect, SEB.effect));
+  [...d.traits, ...d.encounters, ...d.lairs, ...d.rumours.map((r) => r.text)].forEach((t, i) => over(`table row ${i + 1}`, t, SEB.row));
+  over("designNote", d.designNote, SEB.note);
+  over("tactics", d.tactics, SEB.tactics);
+  ["butPlus", "patronHook", "cityName"].forEach((k) => over(`gigFit.${k}`, d.gigFit[k], SEB.gig));
+  return e;
 }
 
 // ---------- Document ----------
