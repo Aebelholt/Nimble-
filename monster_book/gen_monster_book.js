@@ -332,7 +332,9 @@ function readingGuide() {
     ["Damage", "The leftmost die is the Primary Die. A 1 misses; a max roll crits and explodes. Crits ignore monster armor."],
     ["Armor", "Medium (M): dice only, no modifiers. Heavy (H): half the dice, rounded up, no modifiers."],
     ["Saves", "Monsters roll a plain d20 for saves. Heroes save against the DC printed in the action."],
-    ["Agency", "No action in this book takes a hero's whole turn. Paralysis, stun and sleep from the source monsters are rebuilt as Dazed, Slowed, Grappled, forced movement or terrain."],
+    ["Agency", "No converted action in this book takes a hero's whole turn. Paralysis, stun and sleep from the source monsters are rebuilt as Dazed, Slowed, Grappled, forced movement or terrain."],
+    ["Core Bestiary", "The first section holds the GM Guide's own monsters, grouped by family, with the stat blocks exactly as printed. Printed conditions stand, including the Basilisk's Petrified. A family entry has one roster table, then actions by member. Groups per hero are the GM Guide's sample encounters, where it gives them."],
+    ["New entries", "The Gilded Hands (a rival crew), Hedge Casters, Children of Ibraxus and the Serpent Cult of Vithra are original to this book, written to the GM Guide's Monster Builder table."],
     ["Rumours", "⊤ is true, ⊥ is false. Give one per Lore success; a false one costs nothing to believe until it does."],
   ];
   const kids = [para(run("Reading an entry", { font: HEAD, size: 32, bold: true }), { spacing: { after: 200 } })];

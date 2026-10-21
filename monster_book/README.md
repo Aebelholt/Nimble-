@@ -17,6 +17,14 @@ Nimble bestiary for the City of Arches: 33 entries across 11 worlds, each with a
 - **Source rule.** Where a source has the monster, its mechanics and lore win over memory unless the entry's design note says why not. Levels follow the Sejr Stage curve, not 4e levels.
 - **Telegraphs over lockdowns.** Big attacks build up where they can (Young Blizzard Dragon's Rising winds), in the spirit of MCDM's villain actions: the heroes see it coming and spend their own turns answering it.
 
+## Core Bestiary
+
+The first section reproduces the Nimble GM Guide bestiary (19 families, about 60 stat blocks) in the book's format, unchanged. A family entry uses a `roster` (name, level, HP, armor, speed, actions) instead of the four-cell stat table, optional `shared` actions for traits every member has, and an optional `groups` line copied from the GM Guide's per-hero sample encounters. Printed conditions stand; an entry that keeps a banned one (the Basilisk's Petrified) names it in `allowConditions` and explains it in the designer note, or the lint fails.
+
+Original additions in the City of Arches section: **The Gilded Hands** (an early rival crew with a six-step clock and a three-gig ladder), **Hedge Casters** (four low-level controllers, each with a different verb), **Children of Ibraxus** (a rot cult built on Poisoned then Slowed) and **Serpent Cult of Vithra** (a blade-and-coil cult built on Restrained and Frightened). The GM Guide's own Cultists, Fanatics and Doomsayers are the rank and file for both.
+
+The book carries the Nimble 3rd Party Creator License attribution on its title page. Core stat blocks are Nimble Co.'s; the tables, tactics and gig lines are this book's.
+
 ## Source coverage
 
 "Monster Vault" means the index spreadsheet (`Monster_Vault_DnD2.xlsx`, 6,514 rows across 4e, 5e, A5E and ToV books), not the Tales of the Valiant book. All 33 entries have a Vault row, and each Sources line cites it. Mechanics were checked against full text where it was on hand: 4e Monster Manuals 1-3, the ToV Monster Vault and Ammann. Rows from Creature Codex, Conflux Creatures, Grim Hollow and Ultimate Bestiary were used for their tactics notes only; their books were not consulted. Where a row had no tactics note, the entry's In play line is this book's own.
