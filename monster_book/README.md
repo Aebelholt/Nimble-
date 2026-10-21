@@ -46,6 +46,12 @@ The book carries the Nimble 3rd Party Creator License attribution on its title p
 
 Not now. Making every encounter context-independent costs high-level play its tactics, since high-level fights lean on terrain. Revisit when high-level content is in use, probably as context-pivoting only (one generic terrain phrase) for Stages 9+ and fully context-independent for low levels. Current encounters stay as written.
 
+## Blind audit
+
+- `node monster_book/export_audit.js` writes `analysis/monster_blind_audit_prompt.md`: the audit job, the five lenses (rules, design standard, play, power, generated-content patterns), the campaign excerpts, the design standard, the rules reference (conditions, monster rules, the Monster Builder table parsed from `rules/`), the canon list and the GM's decisions, then the whole book as a GM reads it, the move index, and a computed stat sheet (HP and DC against the builder row). It is about 63k tokens. Blind means no README, changelog, lint output or earlier review in it.
+- Paste it into a fresh model session, save the answer as `analysis/monster_audit_vN_result.md`, and triage with `analysis/monster_audit_triage_template.md`. Regenerate the prompt after every fix so the next round audits the current book.
+- `node monster_book/check_core.js` (also run by every build) checks every Core Bestiary member's level, name, HP and armor, and every dice expression, against the GM Guide text. The prompt tells the auditor the Core numbers are machine-checked, so it spends its attention elsewhere.
+
 ## Backlog
 
 - **Detailing index: done.** `move_index.js` glosses about 75 printed Core moves (what it looks like, melee or ranged) and gives a marked Ruling where print is ambiguous (Specter's Deathly touch and Corrupt, Bandit's Inept, minion dice). It renders as an appendix. The build fails if a glossed move no longer exists, and warns (clarity watch) on any printed exclamation-named move without a gloss.

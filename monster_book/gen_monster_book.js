@@ -346,18 +346,20 @@ function titlePage(entries) {
   return kids;
 }
 
-function readingGuide() {
-  const lines = [
+const GUIDE_LINES = [
     ["Level", "Monster Builder level (GM Guide). Use it for encounter budget; HP, damage and save DC follow its row."],
     ["Stage", "Where the creature turns up on the Sejr Stage table. 1-6 city sites, 7-8 Lower Reaches, 9-10 Lost Cisterns, 11-12 Sunken Revvia, 13+ through an arch. Arch-native monsters also appear on any Arch episode to their world."],
     ["Damage", "The leftmost die is the Primary Die. A 1 misses; a max roll crits and explodes. Crits ignore monster armor."],
-    ["Armor", "Medium (M): dice only, no modifiers. Heavy (H): half the dice, rounded up, no modifiers."],
+    ["Armor", "Medium (M): -10 damage from each attack. Heavy (H): -20. Crits ignore armor."],
     ["Saves", "Monsters roll a plain d20 for saves. Heroes save against the DC printed in the action."],
     ["Agency", "No converted action in this book takes a hero's whole turn. Paralysis, stun and sleep from the source monsters are rebuilt as Dazed, Slowed, Grappled, forced movement or terrain."],
     ["Core Bestiary", "The first section holds the GM Guide's own monsters, grouped by family, with the stat blocks exactly as printed. Printed conditions stand, including the Basilisk's Petrified. A family entry has one roster table, then actions by member. Groups per hero are the GM Guide's sample encounters, where it gives them."],
     ["New entries", "The Gilded Hands (a rival crew), Hedge Casters, Children of Ibraxus and the Serpent Cult of Vithra are original to this book, written to the GM Guide's Monster Builder table."],
     ["Rumours", "⊤ is true, ⊥ is false. Give one per Lore success; a false one costs nothing to believe until it does."],
-  ];
+];
+
+function readingGuide() {
+  const lines = GUIDE_LINES;
   const kids = [para(run("Reading an entry", { font: HEAD, size: 32, bold: true }), { spacing: { after: 200 } })];
   lines.forEach(([k, v]) => kids.push(para([run(k + ". ", { bold: true }), run(v)], { spacing: { after: 120 } })));
   kids.push(new Paragraph({ children: [new PageBreak()] }));
@@ -439,6 +441,9 @@ if (require.main === module) {
     if (errs.length) { bad++; console.error(`${e.name || "?"}:\n  ${errs.join("\n  ")}`); }
   });
   if (bad) { console.error(`${bad} entr${bad === 1 ? "y" : "ies"} failed lint`); process.exit(1); }
+  // Core Bestiary stat blocks must match the GM Guide text.
+  try { process.stdout.write(require("child_process").execFileSync(process.execPath, [path.join(__dirname, "check_core.js")], { encoding: "utf8" })); }
+  catch (err) { process.stderr.write((err.stdout || "") + (err.stderr || "")); console.error("Core fidelity check failed"); process.exit(1); }
   const idxPath = path.join(__dirname, "move_index.js");
   const index = fs.existsSync(idxPath) ? require(idxPath) : [];
   // Index drift: every glossed move must exist in its family.
@@ -460,4 +465,4 @@ if (require.main === module) {
   });
 }
 
-module.exports = { WORLDS, monsterEntry, buildDoc, lint, statTable, d6Table, actionBullet, designNote };
+module.exports = { WORLDS, WORLD_ORDER, GUIDE_LINES, SEB, monsterEntry, buildDoc, lint, statTable, d6Table, actionBullet, designNote };
