@@ -13,6 +13,7 @@ const {
 // ---------- Palette and fonts ----------
 
 const WORLDS = {
+  "Core Bestiary":  { bg: "F1EFEA", ink: "3E3A33", bar: "7A7364" },
   "City of Arches": { bg: "F5EDD3", ink: "7D6608", bar: "C9A84C" },
   "Deathreach":     { bg: "EAECEE", ink: "212F3D", bar: "2C3E50" },
   "Korax":          { bg: "EAFBF0", ink: "1A5631", bar: "196F3D" },
@@ -32,6 +33,21 @@ const HEAD = "Georgia";
 const ROW_EVEN = "FAF7F2";
 const ROW_ODD = "FFFFFF";
 const TEXT_W = 12240 - 2 * 1440; // content width in DXA
+
+const lvlNum = (l) => {
+  if (typeof l === "number") return l;
+  const m = String(l).match(/^(\d+)\/(\d+)$/);
+  if (m) return Number(m[1]) / Number(m[2]);
+  return /^\d+$/.test(String(l)) ? Number(l) : NaN;
+};
+const levelLabel = (d) => {
+  if (!d.roster) return `Level ${d.level}`;
+  const ls = d.roster.map((m) => m.level).filter((l) => !Number.isNaN(lvlNum(l)));
+  if (!ls.length) return "Minion";
+  const lo = ls.reduce((a, b) => (lvlNum(b) < lvlNum(a) ? b : a));
+  const hi = ls.reduce((a, b) => (lvlNum(b) > lvlNum(a) ? b : a));
+  return lo === hi ? `Level ${lo}` : `Levels ${lo} to ${hi}`;
+};
 
 const pal = (world) => {
   const p = WORLDS[world];
@@ -65,7 +81,7 @@ const fill = (color) => ({ type: ShadingType.CLEAR, color: "auto", fill: color }
 
 function headerTable(d) {
   const p = pal(d.world);
-  const kicker = [d.world, d.tier, d.role, `Level ${d.level}`].join("  ·  ").toUpperCase();
+  const kicker = [d.world, d.tier, d.role, levelLabel(d)].join("  ·  ").toUpperCase();
   return new Table({
     width: { size: TEXT_W, type: WidthType.DXA },
     columnWidths: [TEXT_W],
@@ -98,6 +114,26 @@ function statTable(stats, worldKey) {
   });
 }
 
+function rosterTable(d) {
+  const p = pal(d.world);
+  const cols = [["Member", 3300], ["Lvl", 900], ["HP", 1100], ["Armor", 1200], ["Speed", TEXT_W - 3300 - 900 - 1100 - 1200]];
+  const hdr = new TableRow({ tableHeader: true, children: cols.map(([k, w], i) => cell(
+    [para(run(k.toUpperCase(), { font: HEAD, size: 15, bold: true, color: p.ink, characterSpacing: 30 }),
+      { alignment: i ? AlignmentType.CENTER : AlignmentType.LEFT, spacing: { after: 0 } })],
+    { shading: fill(p.bg), width: { size: w, type: WidthType.DXA } })) });
+  const rows = d.roster.map((m) => new TableRow({ cantSplit: true, children: [
+    [m.name, true], [String(m.level)], [String(m.hp)], [m.armor || "None"], [m.speed || "6"],
+  ].map(([v, left], i) => cell(
+    [para(run(v, { bold: i === 0, size: 19 }), { alignment: left ? AlignmentType.LEFT : AlignmentType.CENTER, spacing: { after: 0 } })],
+    { width: { size: cols[i][1], type: WidthType.DXA } })) }));
+  return new Table({
+    width: { size: TEXT_W, type: WidthType.DXA },
+    columnWidths: cols.map((c) => c[1]),
+    borders: { ...allBorders(bdr(p.bar, 4)), insideHorizontal: bdr(p.bar, 2), insideVertical: bdr(p.bar, 2) },
+    rows: [hdr, ...rows],
+  });
+}
+
 function actionBullet(boldPart, rest) {
   return new Paragraph({
     numbering: { reference: "actions", level: 0 },
@@ -119,7 +155,25 @@ const actionLine = (a) => {
 
 function bodyTable(d) {
   const p = pal(d.world);
-  const kids = [statTable(d.stats, d.world), sectionTitle("Actions", d.world), ...d.actions.map(actionLine)];
+  const kids = [];
+  if (d.roster) {
+    kids.push(rosterTable(d));
+    kids.push(para([run("Stage ", { bold: true, color: p.ink }), run(d.stats.stage),
+      ...(d.groups ? [run("   Groups per hero: ", { bold: true, color: p.ink }), run(d.groups)] : [])],
+      { spacing: { before: 80, after: 40 } }));
+    kids.push(sectionTitle("Actions", d.world));
+    if (d.shared) {
+      kids.push(para(run("All members", { font: HEAD, bold: true, size: 19, color: p.ink }), { spacing: { before: 60, after: 30 }, keepNext: true }));
+      d.shared.forEach((a) => kids.push(actionLine(a)));
+    }
+    d.roster.forEach((m) => {
+      kids.push(para(run(m.name + (m.note ? "  (" + m.note + ")" : ""), { font: HEAD, bold: true, size: 19, color: p.ink }),
+        { spacing: { before: 100, after: 30 }, keepNext: true }));
+      m.actions.forEach((a) => kids.push(actionLine(a)));
+    });
+  } else {
+    kids.push(statTable(d.stats, d.world), sectionTitle("Actions", d.world), ...d.actions.map(actionLine));
+  }
   kids.push(para([run("In play. ", { bold: true }), run(d.tactics)], { spacing: { before: 120, after: 40 } }));
   kids.push(designNote(d.designNote));
   if (d.sources) kids.push(para(run("Sources: " + d.sources, { size: 16, color: "707070" }), { spacing: { before: 60, after: 0 } }));
@@ -167,7 +221,7 @@ function d6Table(title, rows, worldKey) {
 function gigFitTable(g, worldKey) {
   const p = pal(worldKey);
   const labW = 1900;
-  const rows = [["Verb", g.verb], ["But+", g.butPlus], ["Patron hook", g.patronHook], ["City of Arches name", g.cityName]];
+  const rows = [["Verb", g.verb], ["But+", g.butPlus], ["Patron hook", g.patronHook], ["City of Arches name", g.cityName], ...(g.extra || [])];
   return new Table({
     width: { size: TEXT_W, type: WidthType.DXA },
     columnWidths: [labW, TEXT_W - labW],
@@ -214,23 +268,37 @@ const BANNED_TEXT = [
 function lint(d) {
   const errs = [];
   const need = (cond, msg) => { if (!cond) errs.push(msg); };
-  ["world", "tier", "role", "name", "level", "description", "stats", "actions", "tactics", "designNote",
+  ["world", "tier", "role", "name", "description", "stats", "tactics", "designNote",
     "traits", "encounters", "lairs", "rumours", "gigFit"].forEach((k) => need(d[k] !== undefined, `missing ${k}`));
+  need(d.roster ? d.level === undefined : d.level !== undefined && d.actions, "needs level+actions, or roster");
   if (errs.length) return errs;
   need(WORLDS[d.world], `unknown world ${d.world}`);
-  need(["Minion", "Standard", "Elite", "Boss"].includes(d.tier), `bad tier ${d.tier}`);
+  d.tier.split("/").map((t) => t.trim()).forEach((t) => need(["Minion", "Standard", "Elite", "Boss"].includes(t), `bad tier ${t}`));
+  const members = d.roster || [d];
+  if (d.roster) {
+    d.roster.forEach((m) => ["name", "level", "hp", "actions"].forEach((k) => need(m[k] !== undefined, `member ${m.name}: missing ${k}`)));
+    need(d.stats.stage !== undefined, "stats.stage missing");
+  }
   need(d.traits.length === 6, `traits: ${d.traits.length}, want 6`);
   need(d.encounters.length === 4, `encounters: ${d.encounters.length}, want 4`);
   need(d.lairs.length === 4, `lairs: ${d.lairs.length}, want 4`);
   need(d.rumours.length === 4, `rumours: ${d.rumours.length}, want 4`);
   need(d.rumours.filter((r) => r.true).length === 2, "rumours: want 2 true, 2 false");
   d.gigFit.verb.split("/").map((v) => v.trim()).forEach((v) => need(VERBS.includes(v), `verb "${v}" not in gig table`));
-  ["hp", "armor", "speed", "stage"].forEach((k) => need(d.stats[k] !== undefined, `stats.${k} missing`));
-  const playerFacing = [...d.actions.map((a) => `${a.name} ${a.cost} ${a.damage} ${a.effect}`), d.tactics].join("\n");
-  const m = playerFacing.match(BANNED_CONDITIONS);
-  need(!m, `turn-removing condition in actions: ${m && m[0]}`);
+  if (!d.roster) ["hp", "armor", "speed", "stage"].forEach((k) => need(d.stats[k] !== undefined, `stats.${k} missing`));
+  const playerFacing = [...members.flatMap((m) => m.actions.map((a) => `${a.name} ${a.cost} ${a.damage} ${a.effect}`)),
+    ...(d.shared || []).map((a) => `${a.name} ${a.cost} ${a.damage} ${a.effect}`), d.tactics].join("\n");
+  // Printed Nimble stat blocks may keep a turn-removing condition if the entry names it
+  // in allowConditions and explains it in the designer note.
+  const allowed = d.allowConditions || [];
+  allowed.forEach((w) => need(d.designNote.includes(w), `allowConditions "${w}" must be explained in designNote`));
+  const bad = playerFacing.match(new RegExp(BANNED_CONDITIONS.source, "g")) || [];
+  const left = bad.filter((w) => !allowed.includes(w));
+  need(!left.length, `turn-removing condition in actions: ${left[0]}`);
   // "—" is the spec's placeholder for an action with no damage roll.
-  const all = JSON.stringify({ ...d, actions: d.actions.map((a) => ({ ...a, damage: a.damage === "—" ? "" : a.damage })) });
+  const clean = (a) => ({ ...a, damage: a.damage === "—" ? "" : a.damage });
+  const all = JSON.stringify({ ...d, actions: d.actions && d.actions.map(clean), shared: d.shared && d.shared.map(clean),
+    roster: d.roster && d.roster.map((m) => ({ ...m, actions: m.actions.map(clean) })) });
   BANNED_TEXT.forEach(([re, label]) => need(!re.test(all), label));
   return errs;
 }
@@ -251,6 +319,8 @@ function titlePage(entries) {
     kids.push(para([run(w + "  ", { font: HEAD, bold: true, color: pal(w).ink }), run(names.join(", "))],
       { alignment: AlignmentType.CENTER, spacing: { after: 60 } }));
   });
+  kids.push(para(run("Sejr Monster Book is an independent product published under the Nimble 3rd Party Creator License. Nimble TTRPG \u00A9 Nimble Co. Core Bestiary stat blocks are taken from the Nimble Game Master's Guide.",
+    { size: 16, italics: true, color: "707070" }), { alignment: AlignmentType.CENTER, spacing: { before: 800 } }));
   kids.push(new Paragraph({ children: [new PageBreak()] }));
   return kids;
 }
