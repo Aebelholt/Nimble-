@@ -1,3 +1,6 @@
+// SEB pass (Succinct, Evocative, Built). One core line; at most three actions of one clause each.
+const A = (name, cost, damage, effect) => ({ name, cost, damage: damage || "—", effect });
+
 module.exports = [
   {
     world: "Drendaan",
@@ -5,109 +8,57 @@ module.exports = [
     role: "Controller",
     level: 6,
     name: "Water Myrmidon",
-    description: "A warrior-shape of living seawater in coral-plated armour, a trident " +
-      "of the same water in its fist. Small fish swim through its chest. It was bound " +
-      "to guard a level of Gorvund's Spindle, and the binding has outlived the djinni.",
+    seb: true,
+    core: "Gorvund the djinni bound seawater soldiers to guard his Spindle. He is gone; the binding is not.",
+    description: "A warrior-shape of living seawater in coral plate, a trident of the same water in " +
+      "its fist, small fish swimming through its chest.",
 
-    stats: { hp: 60, armor: "Medium", speed: "6 (swim 8)", stage: "13+" },
+    stats: { hp: 60, armor: "Medium", speed: "6 (swim 8)", dc: 13, stage: "13+" },
 
     actions: [
-      {
-        name: "Trident",
-        cost: "1 Action, ×2, Reach 2",
-        damage: "1d8+7",
-        effect: "Cold. On hit: the target is Slowed."
-      },
-      {
-        name: "Whirlpool",
-        cost: "2 Actions, 1/encounter, in or next to water",
-        damage: "—",
-        effect: "Every creature within 3 spaces makes a STR save DC 13 or is pulled 2 " +
-          "spaces toward it and Restrained until the start of its next turn, spinning. " +
-          "A Restrained hero can still act."
-      },
-      {
-        name: "Riptide",
-        cost: "Free, 1/round",
-        damage: "—",
-        effect: "It moves 4 spaces through water without provoking. A creature in water " +
-          "that it passes is pushed 2 spaces."
-      },
-      {
-        name: "Waterform",
-        cost: "Passive",
-        damage: "—",
-        effect: "It can move through gaps an inch wide. Cold doesn't hurt it; lightning " +
-          "deals double damage."
-      }
+      A("Trident", "1 Action, ×2, Reach 2", "1d8+7", "Cold. Slowed."),
+      A("Whirlpool", "2 Actions, 1/encounter, near water", "", "Everyone within 3: STR save or pulled 2 toward it and Restrained, spinning, until their next turn."),
+      A("Waterform", "Passive", "", "Flows through any gap. Immune to cold; lightning deals double."),
     ],
 
-    tactics: "Wants to hold its post as ordered. Drags the nearest swimmer into reach and holds the line. Never breaks off while the binding holds.",
-    sources: "Monster Vault: Conflux Creatures: Elementals & Fiends, CR 7.",
+    tactics: "Holds its post as ordered. Drags the nearest swimmer into reach and holds the line.",
+    sources: "Monster Vault: Conflux Creatures: Elementals & Fiends, CR 7. Freezing strikes kept as Slowed.",
 
     designNote:
-      "The 5e myrmidon's freezing strikes slow; this one keeps that, and adds water as " +
-      "the battlefield. In open sea or flooded halls the myrmidon pulls heroes into its " +
-      "reach and holds them spinning in place, still acting. On dry stone it is a solid " +
-      "soldier with a trident. Use it on the Spindle, in Barthen, and in the half-sunk " +
-      "levels where the sea gets in.",
+      "In the water it pulls heroes in and spins them in place, still acting. On dry stone, just a " +
+      "good soldier with a trident.",
 
     traits: [
-      "A small octopus lives in its helm and watches the party with more interest " +
-        "than the myrmidon does.",
-      "It hums a sea-shanty in a voice like a breaking wave. The words are djinni.",
-      "Its coral armour is cracked. Water sheets out of the gaps when it swings.",
-      "Old and murky, clouded with silt. It has not been relieved of duty in centuries.",
-      "It bows to anyone carrying Gorvund's seal, then attacks them anyway.",
-      "A token of Queen Nora of Barthen hangs from its trident on a kelp cord."
+      "An octopus lives in its helm and watches the party.",
+      "It hums a sea-shanty in djinni.",
+      "Cracked coral plate. Water sheets out when it swings.",
+      "Murky with silt. Not relieved of duty in centuries.",
+      "It bows to Gorvund's seal, then attacks anyway.",
+      "Queen Nora's token on its trident, on a kelp cord."
     ],
-
     encounters: [
-      "A myrmidon guards the stair between two levels of Gorvund's Spindle and asks " +
-        "for a password in dead djinni. A drowned scholar's notebook nearby has three " +
-        "guesses crossed out.",
-      "Witch queen Thrancev's sahuagin hold a merfolk envoy in a flooded hall, with " +
-        "a myrmidon on the door. Queen Nora wants the envoy back before the treaty " +
-        "meeting.",
-      "The party's skiff drifts past a vine tower at slack tide. The water beside it " +
-        "stands up, takes a trident's shape, and steps aboard.",
-      "A myrmidon has come through an arch into the Lost Cisterns and taken a sluice " +
-        "gate as its post. It lets water through on its own schedule."
+      "It guards a stair and asks for a password in dead djinni. A drowned scholar's notes cross out three guesses.",
+      "It holds the door where sahuagin keep a merfolk envoy. Queen Nora wants her back before the treaty.",
+      "The water beside the skiff stands up, takes a trident's shape, and steps aboard.",
+      "One has taken a Lost Cisterns sluice as its post. It opens on its own schedule."
     ],
-
     lairs: [
-      "A Spindle level holding a slice of some drowned world: a flooded market " +
-        "square, stalls still standing, and one dry island where the post once stood.",
-      "A derelict ship wrapped in vines, its hold flooded to the deck. The myrmidon " +
-        "walks the hold from bow to stern, always the same number of steps.",
-      "A vault in Barthen with an empty plinth. Whatever it guarded was stolen and " +
-        "it has not been told.",
-      "A Lost Cisterns chamber where the water is suddenly cold, clear and full of " +
-        "sea fish that should not be there."
+      "A Spindle level holding a drowned market square, one dry island where the post once stood.",
+      "A flooded derelict hold it paces, bow to stern, the same steps every time.",
+      "An empty plinth in Barthen. What it guarded was stolen; nobody told it.",
+      "A cistern chamber suddenly cold, clear and full of sea fish."
     ],
-
     rumours: [
-      { true: true,
-        text: "Get it out of the water and it's just a soldier." },
-      { true: true,
-        text: "Lightning boils it. Bring a storm." },
-      { true: false,
-        text: "Its trident freezes you solid. One cut and you're ice until someone " +
-          "thaws you." },
-      { true: false,
-        text: "Say Gorvund's name and it'll let you pass." }
+      { true: true, text: "Get it out of the water and it's just a soldier." },
+      { true: true, text: "Lightning boils it. Bring a storm." },
+      { true: false, text: "One cut from the trident freezes you solid." },
+      { true: false, text: "Say Gorvund's name and it lets you pass." }
     ],
-
     gigFit: {
       verb: "Steal / Escort",
-      butPlus:
-        "But+ Monster on any Drendaan arch, and at Stages 9-10 in the Lost Cisterns.",
-      patronHook:
-        "The Golden Council has a myrmidon standing in a flood gate in the Lost " +
-          "Cisterns, and the flooding season is coming.",
-      cityName:
-        "\"Sea-soldiers\": dockhands' name. The Lost Cisterns crews call the one in " +
-          "the sluice \"the Sergeant\" and leave it bread."
+      butPlus: "Drendaan arches, and Stages 9-10 in the Lost Cisterns.",
+      patronHook: "The Council has one standing in a cistern flood gate, and flood season is coming.",
+      cityName: "\"Sea-soldiers\". The cistern crews call theirs \"the Sergeant\" and leave it bread."
     }
   },
 
@@ -117,102 +68,57 @@ module.exports = [
     role: "Controller",
     level: 7,
     name: "Spirit Naga",
-    description: "A serpent twenty feet long with a human face, scaled in midnight blue " +
-      "and silver, a crest of fins along its spine. It speaks softly and sings spells. " +
-      "If killed, it returns, and it remembers everyone.",
+    seb: true,
+    core: "A naga crowned in one of the Spindle's stolen worlds. It returns from death unless its heart-pearl is crushed.",
+    description: "A serpent twenty feet long with a human face, scaled midnight blue and silver. It " +
+      "sings its spells softly, and it remembers everyone.",
 
-    stats: { hp: 87, armor: "None", speed: "8 (swim 8)", stage: "13+" },
+    stats: { hp: 87, armor: "None", speed: "8 (swim 8)", dc: 13, stage: "13+" },
 
     actions: [
-      {
-        name: "Bite",
-        cost: "1 Action",
-        damage: "1d12+10",
-        effect: "Poison. STR save DC 13 or Poisoned."
-      },
-      {
-        name: "Command the body",
-        cost: "1 Action, Range 8",
-        damage: "—",
-        effect: "WIL save DC 13 or the naga moves the target up to 4 spaces. This costs " +
-          "the target nothing; they keep their actions."
-      },
-      {
-        name: "Lightning song",
-        cost: "2 Actions, 1/encounter",
-        damage: "3d8+5",
-        effect: "Lightning, 10-space line. DEX save DC 13 for half."
-      },
-      {
-        name: "Rejuvenation",
-        cost: "Passive",
-        damage: "—",
-        effect: "Destroyed, it re-forms in 1d6 days unless its heart-pearl is found and " +
-          "crushed."
-      }
+      A("Bite", "1 Action", "1d12+10", "Poison. STR save or Poisoned."),
+      A("Command the body", "1 Action, Range 8", "", "WIL save or it moves the target 4 spaces. They keep their actions."),
+      A("Lightning song", "2 Actions, 1/encounter", "3d8+5", "Lightning, 10-space line. DEX save for half."),
     ],
 
-    tactics: "Wants subjects, secrets and revenge, in that order. Moves heroes into the lightning's line, then talks. Never truly flees, since it will be back in days.",
-    sources: "Monster Vault: Monster Manual (2024), CR 8. Tales of the Valiant Monster Vault (spirit naga lore); Ammann (nagas).",
+    tactics: "Moves heroes into the lightning's line, then talks. Never truly flees; it will be back in 1d6 days.",
+    sources: "Monster Vault: Monster Manual (2024), CR 8. Hold Person rebuilt as forced movement; never flees (Ammann).",
 
     designNote:
-      "Nagas in 5e cast Hold Person. Here the naga moves heroes instead: Command the " +
-      "body puts a hero on the wrong side of the fight, or in front of the lightning, " +
-      "and they still take their full turn. Rejuvenation makes it a long-term enemy " +
-      "with a weakness to find. Put it in Gorvund's Spindle among the stolen worlds.",
+      "It puts a hero on the wrong side of the fight, and they still take their whole turn. The " +
+      "pearl makes it a long enemy with a weakness to find.",
 
     traits: [
-      "It sings in the voice of a hero's old friend, and gets the friend's words right.",
-      "Its scales pulse in the same rhythm as the bioluminescent vines.",
-      "It wears a crown of sea-silver from Barthen and claims it was a gift.",
-      "A scar runs down its human face, a djinni's lightning, never healed.",
-      "It keeps a library of shells, each holding a whisper. One is a hero's voice.",
-      "Lonely. It talks too much, asks about the city, and remembers every answer."
+      "It sings in an old friend's voice and gets the words right.",
+      "Its scales pulse in time with the vines.",
+      "A crown of Barthen sea-silver it calls a gift.",
+      "A djinni's lightning scar down its human face.",
+      "A library of whispering shells. One holds a hero's voice.",
+      "Lonely. It talks too much and remembers every answer."
     ],
-
     encounters: [
-      "On a Spindle level holding a slice of a desert world, a naga has crowned itself " +
-        "queen of the sand and wants subjects. The party will do.",
-      "A naga is negotiating with the three queens of Barthen over a heart-pearl. " +
-        "Each queen privately offers the party a reward to make the talks fail.",
-      "The party finds a black pearl in a derelict ship's strongbox. Three days later " +
-        "they hear singing from the water below their boat.",
-      "A naga has come through an arch and asked the Archkeepers for asylum. It " +
-        "names an old enemy in the city and asks the party to keep them away."
+      "It has crowned itself queen of a stolen desert and wants subjects. The party will do.",
+      "It bargains with Barthen's three queens. Each pays the party, privately, to make the talks fail.",
+      "A black pearl in a strongbox. Three nights later, singing under the boat.",
+      "It asks the Archkeepers for asylum, and the party to keep an old enemy away."
     ],
-
     lairs: [
-      "A Spindle level holding an entire sea-palace, lifted whole from another world. " +
-        "Its throne room is set for a feast no one has eaten.",
-      "A sunken temple of Barthen, its altar carved with coiled snakes, and a fresh " +
-        "pearl-sized hollow pressed into the stone.",
-      "A derelict ship wrapped in vines, the naga's coils worn into the mast. The " +
-        "captain's log ends with a list of everyone it asked to stay.",
-      "A shell-lined cave on a drifting island where every shell hums a different " +
-        "voice. Two of the voices are arguing about the party."
+      "A whole sea-palace lifted into the Spindle, its feast set and never eaten.",
+      "A snake-carved Barthen altar with a fresh pearl-sized hollow.",
+      "A derelict ship, its coils worn into the mast, a log listing everyone it asked to stay.",
+      "A cave of humming shells. Two voices argue about the party."
     ],
-
     rumours: [
-      { true: true,
-        text: "You haven't killed it until you've crushed its pearl." },
-      { true: true,
-        text: "It can move you, but it can't make you swing. Keep fighting." },
-      { true: false,
-        text: "It can't hurt anyone who has heard it sing. Let it sing first." },
-      { true: false,
-        text: "It can't lie. Ask it anything." }
+      { true: true, text: "It isn't dead until its pearl is crushed." },
+      { true: true, text: "It can move you, not make you swing. Keep fighting." },
+      { true: false, text: "It can't hurt anyone who heard it sing." },
+      { true: false, text: "It can't lie. Ask it anything." }
     ],
-
     gigFit: {
       verb: "Find / Bury",
-      butPlus:
-        "But+ Monster on any Drendaan arch, best on the Spindle or near Barthen.",
-      patronHook:
-        "The Archkeepers want to grant a naga asylum. The Golden Council wants proof " +
-          "it's safe. The naga's heart-pearl would be proof.",
-      cityName:
-        "\"Pearl-keepers\": Drendaan arrivals' term, from the stories of nagas who " +
-          "guard their own hearts."
+      butPlus: "Drendaan arches, best on the Spindle or near Barthen.",
+      patronHook: "The Archkeepers would grant it asylum; the Council wants proof it's safe. Its pearl would be proof.",
+      cityName: "\"Pearl-keepers\": they guard their own hearts."
     }
   },
 
@@ -222,101 +128,57 @@ module.exports = [
     role: "Controller",
     level: 2,
     name: "Swarm of Flying Snakes",
-    description: "A cloud of bright, winged snakes, each the length of a forearm, " +
-      "shimmering green and gold in the light of the vines. They ride the wind in " +
-      "loops and dive in a hissing rush.",
+    seb: true,
+    core: "Flying snakes nest in Drendaan's vine towers. Alone they strike once and flee; over a nest they swarm.",
+    description: "A cloud of bright winged snakes, each a forearm long, green and gold in the " +
+      "vine-light, looping on the wind and diving in a hissing rush.",
 
-    stats: { hp: 24, armor: "None", speed: "Fly 8", stage: "13+" },
+    stats: { hp: 24, armor: "None", speed: "Fly 8", dc: 11, stage: "13+" },
 
     actions: [
-      {
-        name: "Bites",
-        cost: "1 Action",
-        damage: "2d4+3",
-        effect: "Poison. One creature in or adjacent to the swarm's space."
-      },
-      {
-        name: "Coiling mass",
-        cost: "Passive",
-        damage: "—",
-        effect: "A creature that starts its turn in the swarm's space is Slowed."
-      },
-      {
-        name: "Ride the wind",
-        cost: "Free, 1/round",
-        damage: "—",
-        effect: "In open air it moves 4 spaces with the wind and can carry a Small " +
-          "creature with it."
-      },
-      {
-        name: "Swarm",
-        cost: "Passive",
-        damage: "—",
-        effect: "It occupies other creatures' spaces. Single-target attacks deal half " +
-          "damage; AoE deals double."
-      }
+      A("Bites", "1 Action", "2d4+3", "Poison. One creature in or beside its space."),
+      A("Swarm", "Passive", "", "Anyone starting a turn in its space is Slowed. Single targets half, AoE double."),
+      A("Ride the wind", "Free, 1/round", "", "Moves 4 with the wind in open air, carrying a Small creature."),
     ],
 
-    tactics: "Wants its nest left alone. Flying snakes are solitary and flee after one strike; a swarm only forms over a nest. Breaks off and scatters when the nest burns or the swarm is Bloodied.",
-    sources: "Monster Vault: Conflux Creatures: Aberrations & Dragons, CR 5. Ammann (flying snakes).",
+    tactics: "Defends its nest. Scatters when the nest burns or the swarm is Bloodied.",
+    sources: "Monster Vault: Conflux Creatures: Aberrations & Dragons, CR 5. Solitary unless nesting (Ammann).",
 
     designNote:
-      "A low-level controller that turns the air into Difficult Terrain with teeth. It " +
-      "Slows anyone it covers and makes aerial fights messy. AoE is the answer. Pair it " +
-      "with something bigger, a sahuagin raid or a djinni's elementals, so the swarm is " +
-      "a nuisance that changes the shape of a larger fight.",
+      "Difficult Terrain with teeth. Pair it with something bigger, a sahuagin raid or Kesset's " +
+      "elementals, so it changes the shape of a larger fight.",
 
     traits: [
-      "Their scales flash like thrown coins in the vine-light.",
-      "The swarm makes shapes in the air: a fish, a ship, then a hero's face.",
-      "One red snake leads. Kill it and the rest wheel, confused, for a round.",
-      "They hiss in rhythm, a three-beat pattern sailors use to row.",
-      "They carry vine seeds in their mouths, and new shoots sprout where they nest.",
-      "Tame, or once were. They wear thin silver bands from Irathas."
+      "Scales flash like thrown coins.",
+      "The swarm makes shapes: a fish, a ship, a hero's face.",
+      "One red snake leads. Kill it and the rest wheel for a round.",
+      "They hiss in a three-beat rowing rhythm.",
+      "Vine seeds in their mouths. Shoots sprout where they nest.",
+      "Thin silver bands from Irathas. Tame, once."
     ],
-
     encounters: [
-      "The party's skiff passes a vine tower at dusk. The vines peel off the tower " +
-        "and come down the wind toward them.",
-      "Verosa's people mine a crystal island while a swarm circles overhead. Every " +
-        "time a miner looks up, the swarm dives.",
-      "Kesset's air elementals herd a swarm into the party's sails, then wait to " +
-        "see what lands in the water.",
-      "A swarm has nested in the spray of the falls above the City of Arches, by " +
-        "the crystal arch. Pilgrims to the Falls of the Three Gods are being bitten."
+      "The vines peel off a tower at dusk and come down the wind.",
+      "Miners work a crystal island under a circling swarm. Every miner who looks up gets dived.",
+      "Air elementals herd a swarm into the sails, then wait to see what falls.",
+      "A swarm nests in the spray of the falls above the city. Pilgrims are being bitten."
     ],
-
     lairs: [
-      "A vine tower around a derelict ship, hung with nests like paper lanterns, " +
-        "each one glowing with the vine-light it was woven from.",
-      "Kesset's collapsed crystal garden, the shards draped with shed snake-skins " +
-        "that rattle in the wind like chimes.",
-      "A wind-cave in the side of Gorvund's Spindle where a djinni's aviary once " +
-        "stood. The perches are still there, and the cages are open.",
-      "The underside of a cloud bank, where the swarm hangs in the mist and a " +
-        "missing birdfolk scout's satchel hangs with it."
+      "Nests hung like paper lanterns on a vine tower, glowing.",
+      "A collapsed crystal garden draped in shed skins that rattle like chimes.",
+      "A djinni's old aviary in the Spindle's side, the cages open.",
+      "The underside of a cloud, a missing scout's satchel hanging with the swarm."
     ],
-
     rumours: [
-      { true: true,
-        text: "Fire and wind break them up. One blade won't do much." },
-      { true: true,
-        text: "They nest in the vines. Burn the nest and the swarm leaves." },
-      { true: false,
-        text: "Their venom kills in an hour unless you suck it out." },
-      { true: false,
-        text: "They won't attack anyone in the water. Jump overboard and you're safe." }
+      { true: true, text: "Fire and wind break them. A blade won't." },
+      { true: true, text: "Burn the nest and the swarm leaves." },
+      { true: false, text: "Their venom kills in an hour unless you suck it out." },
+      { true: false, text: "Jump in the water and they won't follow." }
     ],
-
     gigFit: {
       verb: "Escort / Stop",
-      butPlus:
-        "But+ Monster on any Drendaan arch, in the air or on ships.",
-      patronHook:
-        "Verosa the birdfolk asks the party to escort her family from their island. " +
-          "The swarm is between them and the arch.",
-      cityName:
-        "\"Sky-eels\": dockhands' term for anything that swims in the air."
+      butPlus: "Drendaan arches, in the air or on ships.",
+      patronHook: "Verosa asks the party to escort her family off their island. The swarm sits between them and the arch.",
+      cityName: "\"Sky-eels\": anything that swims in the air."
     }
   },
 ];

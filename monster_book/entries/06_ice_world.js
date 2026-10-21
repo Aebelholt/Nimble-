@@ -1,3 +1,6 @@
+// SEB pass (Succinct, Evocative, Built). One core line; at most three actions of one clause each.
+const A = (name, cost, damage, effect) => ({ name, cost, damage: damage || "—", effect });
+
 module.exports = [
   {
     world: "Ice World",
@@ -5,117 +8,57 @@ module.exports = [
     role: "Controller",
     level: 5,
     name: "Yeti Howler",
-    description: "A white-furred ape twice a man's height, with a blue-black face and " +
-      "breath that freezes in the air. Its howl carries for miles across the ice. When " +
-      "it stops, the snow on the slopes above has started to slide.",
+    seb: true,
+    core: "The bear lodges' rival for every hunt. It howls the snow down, then carries off whoever fell.",
+    description: "A white-furred ape twice a man's height, blue-black face, breath freezing in the " +
+      "air. When its howl stops, the slope above has started to slide.",
 
-    stats: { hp: 64, armor: "None", speed: "8 (ignores snow)", stage: "13+" },
+    stats: { hp: 64, armor: "None", speed: "8 (ignores snow)", dc: 13, stage: "13+" },
 
     actions: [
-      {
-        name: "Claws",
-        cost: "1 Action, ×2",
-        damage: "1d10+5",
-        effect: "Cold."
-      },
-      {
-        name: "Chilling howl",
-        cost: "1 Action, 1/round",
-        damage: "—",
-        effect: "Every hero within 8 spaces who can hear it makes a WIL save DC 13 or " +
-          "is Frightened and Slowed until the end of their next turn."
-      },
-      {
-        name: "Bring down the slope",
-        cost: "2 Actions, 1/encounter, on a slope",
-        damage: "2d6+4",
-        effect: "A 3-space-wide line of snow 10 spaces long. DEX save DC 13 or take the " +
-          "damage, get pushed 4 spaces downhill, and be Restrained in snow. A hero or " +
-          "ally can dig them out with an action."
-      },
-      {
-        name: "Carry off",
-        cost: "1 Action",
-        damage: "—",
-        effect: "Against a Frightened, Prone or Dazed creature of Medium size or smaller: " +
-          "STR save DC 13 or the yeti Grapples them and moves its full Speed. It does not " +
-          "come back to finish the fight."
-      },
-      {
-        name: "Snow camouflage",
-        cost: "Passive",
-        damage: "—",
-        effect: "Advantage on Stealth on snow. Its first attack from hiding has " +
-          "advantage."
-      }
+      A("Claws", "1 Action, ×2", "1d10+5", "Cold. A Frightened, Prone or Dazed target: STR save or carried off at full Speed."),
+      A("Chilling howl", "1 Action, 1/round", "", "Heroes within 8 who hear it: WIL save or Frightened and Slowed until their next turn ends."),
+      A("Bring down the slope", "2 Actions, 1/encounter, on a slope", "2d6+4", "3 by 10 line downhill: DEX save or pushed 4 and Restrained in snow until dug out."),
     ],
 
-    tactics: "Wants a meal, not a fight. Picks off the small, the slow and the stragglers from hiding, then carries one off. Breaks off as soon as it has a victim in its arms, or when Bloodied.",
-    sources: "Monster Vault: 4e MM3, Lv 4 Controller. 4e MM3 Yeti Howler (Chilling Wail aura); Ammann (yetis).",
+    tactics: "Wants a meal, not a fight. Hunts the slow and the stragglers from hiding, then leaves with one.",
+    sources: "Monster Vault: 4e MM3, Lv 4 Controller. Chilling Wail (4e); grab and run (Ammann). Freezing gaze rebuilt as Frightened and Slowed.",
 
     designNote:
-      "The 5e yeti's gaze can freeze a creature in place. Here the howl Frightens and " +
-      "Slows: heroes still act, but approaching costs more and the fear is a tax on " +
-      "every roll. Carry off follows Ammann's " +
-      "reading of the yeti: a predator that grabs a meal and leaves. The fight's real " +
-      "question is whether the party can catch it in the snow. The slope is the encounter. On flat ice the yeti is a strong beast. " +
-      "On a hillside, with the snow above, it is a weather event. Put a trail " +
-      "below a ridge and let it howl.",
+      "On flat ice, a strong beast. Under a ridge, a weather event. The real question is whether " +
+      "the party can catch it in the snow once it has someone.",
 
     traits: [
       "Its fur is matted with old blood, none of it its own.",
-      "It carries a bear-lodge hunting spear in its fist like a toothpick.",
-      "Its howl has a crack in it, a high wobble like a child's cry.",
-      "This one is old and grizzled grey. Others follow it.",
+      "It carries a lodge hunting spear like a toothpick.",
+      "Its howl cracks into a high wobble, like a child's cry.",
+      "Old and grizzled grey. Others follow it.",
       "Icicles hang from its brow and chin.",
-      "It has a bear-lodge tally cut into its shoulder, an old scar. A lodge hunter " +
-        "once claimed it."
+      "A lodge tally scar on its shoulder. A hunter once claimed it."
     ],
-
     encounters: [
-      "A bear lodge's hunters are pinned at the bottom of a valley by a yeti howling " +
-        "from the ridge. Every howl brings a little more snow down.",
-      "A yeti has taken a lodge child up into the ice caves. The lodge will pay with " +
-        "a favour, but none of their hunters will go.",
-      "The party's path crosses a frozen lake. Halfway across, a howl comes from the " +
-        "shore, and the ice cracks in answer.",
-      "A yeti has been driven into the low passes by something larger, and it is " +
-        "hungry and frightened."
+      "Lodge hunters are pinned below a ridge. Every howl brings more snow down.",
+      "It has taken a lodge child. The lodge will pay a favour; none of its hunters will go.",
+      "A howl from the shore, and the ice underfoot cracks in answer.",
+      "Driven down by something larger, it is hungry and afraid."
     ],
-
     lairs: [
-      "An ice cave with walls of blue glass, the floor strewn with cracked bones and " +
-        "chewed bear-lodge spears.",
-      "A ledge high on a mountain with a nest of furs and a view down three valleys.",
-      "A frozen waterfall with a hollow behind it, and a yeti's nest full of glittering " +
-        "trinkets.",
-      "A bear-lodge hunting camp, abandoned, with every tent flattened and footprints " +
-        "the size of shields."
+      "An ice cave of blue glass, floor strewn with bones and chewed spears.",
+      "A high ledge nest of furs overlooking three valleys.",
+      "A hollow behind a frozen waterfall, full of glittering trinkets.",
+      "An abandoned hunting camp, tents flattened, footprints the size of shields."
     ],
-
     rumours: [
-      { true: true,
-        text: "Stay off the slopes. Its howl doesn't hurt you, but the snow it brings " +
-          "down will." },
-      { true: true,
-        text: "It can't hide on rock. Find bare ground and you'll see it coming." },
-      { true: false,
-        text: "One look into a yeti's eyes freezes your blood solid." },
-      { true: false,
-        text: "Yetis are afraid of fire. Wave a torch and it runs." }
+      { true: true, text: "Stay off the slopes. The howl won't hurt you; the snow will." },
+      { true: true, text: "It can't hide on bare rock. Find stone and watch." },
+      { true: false, text: "One look in its eyes freezes your blood solid." },
+      { true: false, text: "It fears fire. Wave a torch and it runs." }
     ],
-
     gigFit: {
       verb: "Find / Escort",
-      butPlus:
-        "But+ Monster on any arch to the Ice World, on mountain or valley maps.",
-      patronHook:
-        "A bear lodge has come through the arch to ask the Archkeepers for help. Their " +
-          "hunting grounds are cut off by a yeti, and their own tradition forbids them " +
-          "from killing it.",
-      cityName:
-        "\"Avalanche-callers\": Ice World arrivals use the word for the yeti and for " +
-          "anyone in the city who talks too loud in the wrong room."
+      butPlus: "Ice World arches, on mountain or valley maps.",
+      patronHook: "A bear lodge asks the Archkeepers for help: a yeti cuts off their hunting grounds, and their law forbids them to kill it.",
+      cityName: "\"Avalanche-callers\": also said of anyone who talks too loud in the wrong room."
     }
   },
 
@@ -125,103 +68,57 @@ module.exports = [
     role: "Controller",
     level: 4,
     name: "Snow Golem",
-    description: "A lumbering figure packed from snow and ice, eyes of black stone, a " +
-      "carrot-shaped icicle for a nose. It was made by children of the bear lodges as " +
-      "a joke. Something in the cold took the joke seriously.",
+    seb: true,
+    core: "Lodge children pack snow-wards against the long cold. Some winters the cold fills one and it keeps watch.",
+    description: "A lumbering figure of packed snow and ice, pebble eyes set in a child's lopsided " +
+      "drawing of a face.",
 
-    stats: { hp: 52, armor: "None", speed: "4", stage: "13+" },
+    stats: { hp: 52, armor: "None", speed: "4", dc: 12, stage: "13+" },
 
     actions: [
-      {
-        name: "Slam",
-        cost: "1 Action",
-        damage: "1d10+6",
-        effect: "Cold."
-      },
-      {
-        name: "Snowball volley",
-        cost: "1 Action, Range 10",
-        damage: "1d8+4",
-        effect: "On hit: the target is Slowed."
-      },
-      {
-        name: "Packed snow",
-        cost: "Reaction, when hit by a melee weapon",
-        damage: "—",
-        effect: "The weapon sticks. The attacker's next attack with it has disadvantage."
-      },
-      {
-        name: "Frost field",
-        cost: "Passive",
-        damage: "—",
-        effect: "Spaces within 2 of it are icy Difficult Terrain. It heals 5 HP at the " +
-          "start of its turn while standing on snow. Fire deals double damage."
-      }
+      A("Slam", "1 Action", "1d10+6", "Cold. A melee weapon that hits it sticks: its next attack is disadvantaged."),
+      A("Snowball volley", "1 Action, Range 10", "1d8+4", "Slowed."),
+      A("Frost field", "Passive", "", "Within 2 is icy Difficult Terrain. Heals 5 a turn on snow. Fire deals double."),
     ],
 
-    tactics: "Wants to keep doing what a child once told it to. Pelts intruders from range and high ground, and rushes in to slam whoever hurts it with magic. Never breaks off while it stands on snow.",
-    sources: "Monster Vault: Conflux Creatures: Aberrations & Dragons, CR 3.",
+    tactics: "Pelts intruders from high ground, then slams whoever hurts it with magic. Never breaks off while on snow.",
+    sources: "Monster Vault: Conflux Creatures: Aberrations & Dragons, CR 3. Tactics from the Vault note.",
 
     designNote:
-      "A slow controller that makes the ground work for it. The frost field turns the " +
-      "area around it into a slog, the snowballs Slow anyone trying to close, and its " +
-      "healing on snow means the party needs fire, or to drag it onto bare rock. It is " +
-      "a puzzle with a body. Children made it: let that be a clue for how to unmake it.",
+      "A puzzle with a body: fire, or drag it onto bare rock. Children made it, and that is the " +
+      "clue to unmaking it.",
 
     traits: [
-      "It wears a bear-lodge scarf, knitted and patched.",
-      "Its face is a child's drawing in pebbles, slightly lopsided.",
-      "This one is melting. It leaves a trail of slush and is slowly shrinking.",
-      "A child's mitten is frozen into its fist.",
+      "A patched lodge scarf around its neck.",
+      "A face drawn in pebbles, slightly lopsided.",
+      "Melting. It leaves slush and shrinks a little each hour.",
+      "A child's mitten frozen into its fist.",
       "It hums a lodge lullaby in a crackle of ice.",
-      "It has a smaller golem with it, half-finished, that follows it like a child."
+      "A smaller, half-finished golem follows it."
     ],
-
     encounters: [
-      "A snow golem guards a lodge's empty village, keeping strangers out. The lodge " +
-        "left two days ago and it doesn't know.",
-      "Three golems are building a fourth on the frozen lake. The fourth will be much " +
-        "bigger.",
-      "Lodge children beg the party not to hurt their golem. It is sitting on the " +
-        "party's sled.",
-      "A golem has wandered through an arch into the City of Arches in winter and is " +
-        "standing in Market Square, getting bigger with every snowfall."
+      "It guards a village the lodge left two days ago. It doesn't know.",
+      "Three are building a fourth, much bigger.",
+      "Lodge children beg the party not to hurt it. It is sitting on the party's sled.",
+      "One came through an arch in winter and grows in the Market Square with every snowfall."
     ],
-
     lairs: [
-      "A courtyard in a lodge village, packed with snow sculptures. One of them " +
-        "moves.",
-      "A frozen pond where the golem stands in the centre, motionless, with snow " +
-        "drifts like a moat around it.",
-      "A snow-filled ravine full of half-built golems, made over generations of " +
-        "children's games.",
-      "A cave of ice under a glacier, glittering, with a single throne carved from " +
-        "snow at its heart."
+      "A courtyard of snow sculptures. One of them moves.",
+      "A frozen pond, the golem motionless at the centre, drifts around it like a moat.",
+      "A ravine of half-built golems from generations of children.",
+      "An ice cave under a glacier, a snow throne at its heart."
     ],
-
     rumours: [
-      { true: true,
-        text: "Get it off the snow and it stops mending. Lure it onto rock or ice." },
-      { true: true,
-        text: "The child who made it can unmake it. Find them." },
-      { true: false,
-        text: "Snow golems melt in the sun. Wait for noon and it's a puddle." },
-      { true: false,
-        text: "Take its nose and it falls apart." }
+      { true: true, text: "Get it off the snow and it stops mending." },
+      { true: true, text: "The child who made it can unmake it." },
+      { true: false, text: "Wait for noon and it melts." },
+      { true: false, text: "Pull out its eyes and it falls apart." }
     ],
-
     gigFit: {
       verb: "Escort / Stop",
-      butPlus:
-        "But+ Monster on any arch to the Ice World, and in the City of Arches during " +
-          "winter episodes.",
-      patronHook:
-        "The Golden Council has a snow golem standing in the middle of the market, and " +
-          "the merchants want it gone without anyone looking foolish. The Archkeepers " +
-          "want it returned, gently.",
-      cityName:
-        "\"Lodge-men\": what market children call them, and they build their own every " +
-          "winter, hoping."
+      butPlus: "Ice World arches, and the City of Arches in winter episodes.",
+      patronHook: "The Council wants one out of the market without anyone looking foolish. The Archkeepers want it sent home, gently.",
+      cityName: "\"Lodge-men\": market children build their own every winter, hoping."
     }
   },
 
@@ -231,103 +128,57 @@ module.exports = [
     role: "Controller",
     level: 6,
     name: "Coldlight Walker",
-    description: "A frozen corpse in lodge furs, its face white as snow and its eyes " +
-      "gone to blue light. It walks a straight line across the ice, carrying a lantern " +
-      "that burns cold. Whoever it is looking for, it hasn't found them yet.",
+    seb: true,
+    core: "A lodge hunter froze searching for someone and kept walking. Its cold lantern marks everyone it passes.",
+    description: "A frozen corpse in lodge furs, eyes gone to blue light, walking a straight line " +
+      "across the ice with a lantern that burns cold.",
 
-    stats: { hp: 75, armor: "None", speed: "6", stage: "13+" },
+    stats: { hp: 75, armor: "None", speed: "6", dc: 13, stage: "13+" },
 
     actions: [
-      {
-        name: "Frozen touch",
-        cost: "1 Action, ×2",
-        damage: "1d8+8",
-        effect: "Cold."
-      },
-      {
-        name: "Glare",
-        cost: "1 Action, Range 8",
-        damage: "—",
-        effect: "One creature makes a DEX save DC 13 or is Blind until the end of its " +
-          "next turn."
-      },
-      {
-        name: "Coldlight",
-        cost: "Passive, Reach 4",
-        damage: "—",
-        effect: "Creatures within 4 spaces are lit. They can't hide and its allies have " +
-          "advantage against them. A hero adjacent to it can smother the lantern (1 " +
-          "Action, Finesse DC 13) to end this until its next turn."
-      },
-      {
-        name: "Walk the line",
-        cost: "Passive",
-        damage: "—",
-        effect: "It never leaves its path, unless fire damages it: then it hunts that " +
-          "creature until one of them falls. A creature standing in its way is walked " +
-          "through: 2d6+4 cold and pushed 2 spaces."
-      }
+      A("Frozen touch", "1 Action, ×2", "1d8+8", "Cold. Anything standing in its path is walked through: same damage, pushed 2."),
+      A("Glare", "1 Action, Range 8", "", "DEX save or Blind until the end of the target's next turn."),
+      A("Coldlight", "Passive, Reach 4", "", "Everyone within 4 is lit and can't hide. Smother the lantern (1 Action, Finesse DC 13): dark for a round."),
     ],
 
-    tactics: "Wants to finish walking. Glares at the nearest hero until one stays Blind, then strikes them. Never leaves its path, unless burned: then it hunts whoever burned it until one of them falls.",
-    sources: "Monster Vault: Conflux Creatures: NPCs & Undead, CR 5.",
+    tactics: "Never leaves its line, unless burned: then it hunts whoever burned it until one of them falls.",
+    sources: "Monster Vault: Conflux Creatures: NPCs & Undead, CR 5. Hunts whoever burns it (Vault note).",
 
     designNote:
-      "The 5e coldlight walker blinds with its light. Here Blind lasts a turn and the " +
-      "light's real job is to mark the heroes for everything else on the ice. The " +
-      "walker is a hazard that fights back: it walks a fixed line, and the party can " +
-      "simply get out of its way, unless what they need is on the line. Smothering " +
-      "the lantern rewards a hero who closes in.",
+      "A hazard that fights back. The party can step off its line, unless what they need is on it. " +
+      "Its light marks heroes for everything else on the ice.",
 
     traits: [
-      "Its furs bear the badge of a lodge that no longer exists.",
-      "It calls a single name, softly, as it walks.",
-      "Its lantern has a tiny figure of a bear inside, glowing.",
-      "Frost spreads under its feet in a fern pattern.",
-      "This one walks in a circle, endlessly.",
-      "Its body is so old that the furs have grown through its skin."
+      "Furs bearing the badge of a lodge that no longer exists.",
+      "It calls one name, softly, as it walks.",
+      "A tiny glowing bear inside its lantern.",
+      "Frost ferns spread under its feet.",
+      "This one walks a circle, endlessly.",
+      "So old the furs have grown into its skin."
     ],
-
     encounters: [
-      "A walker's line runs straight across the only bridge in the pass.",
-      "Lodge hunters have built a hide on the walker's path to see who it seeks. " +
-        "They've been waiting for days and want the party to ask it.",
-      "The party's guide is from the lodge the walker belonged to. It stops when it " +
-        "sees them.",
-      "A walker has come through an arch to the City of Arches and is walking a straight " +
-        "line down the Villas of the Second Rise."
+      "Its line runs straight across the only bridge.",
+      "Lodge hunters have waited days in a hide on its path. They want the party to ask it who it seeks.",
+      "It stops dead when it sees the party's guide, who is from its lodge.",
+      "One walks a straight line down the Villas of the Second Rise."
     ],
-
     lairs: [
-      "A path of blue ice across a frozen sea, perfectly straight, with nothing at " +
-        "either end.",
-      "A collapsed lodge hall with a single lantern hook, empty, by the door.",
-      "A grave in the ice with the walker's name carved on it, and the body missing.",
-      "A circle of standing stones in the snow, where every walker's line crosses."
+      "A straight path of blue ice across a frozen sea, nothing at either end.",
+      "A collapsed lodge hall, an empty lantern hook by the door.",
+      "A grave in the ice with its name on it, and no body.",
+      "A ring of standing stones where every walker's line crosses."
     ],
-
     rumours: [
-      { true: true,
-        text: "Step off its path. It won't chase you, it only walks." },
-      { true: true,
-        text: "Cover the lantern and it goes blind as you do." },
-      { true: false,
-        text: "Its light freezes you to the spot. Don't look at it." },
-      { true: false,
-        text: "Find who it seeks and bring them to it, and it'll lie down and rest." }
+      { true: true, text: "Step off its path. It won't chase you, unless you burn it." },
+      { true: true, text: "Cover the lantern and it goes as blind as you." },
+      { true: false, text: "Its light freezes you to the spot." },
+      { true: false, text: "Bring it the one it seeks and it will lie down." }
     ],
-
     gigFit: {
       verb: "Find / Bury",
-      butPlus:
-        "But+ Monster on any arch to the Ice World, at Dusk or Dark results.",
-      patronHook:
-        "The Archkeepers have learned a coldlight walker's line runs straight through " +
-          "an Ice World arch and into the City of Arches. They want it laid to rest " +
-          "before it walks through.",
-      cityName:
-        "\"Lantern-men\": lodge arrivals say the name with a shiver and won't use a " +
-          "lantern after dark."
+      butPlus: "Ice World arches, at Dusk or Dark results.",
+      patronHook: "A walker's line runs through an Ice World arch and into the city. The Archkeepers want it laid to rest first.",
+      cityName: "\"Lantern-men\": lodge arrivals won't carry a lantern after dark."
     }
   },
 ];

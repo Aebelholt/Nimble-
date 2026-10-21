@@ -10,7 +10,7 @@ Nimble bestiary for the City of Arches: 33 entries across 11 worlds, each with a
 
 **Succinct, Evocative, Built.** Find the core of the creature, or better the family, and cut the rest. Built means of the world: a monster is grown by its place (Deathreach grows its own surveyor; the Vats grow a hunter), not dropped in as gonzo. The frame is *Forge of Foes*' one-line enemy, translated to Nimble: one stat row (HP, Armor, Speed, DC, Stage, numbers from the GM Guide Monster Builder row) plus at most three abilities, each one clause.
 
-Entries marked `seb: true` are linted to these limits: a `core` line (max 22 words), at most 3 actions of max 20 words each, table rows max 22 words, designer note max 45, In play max 25, Gig Fit lines max 30. Deathreach is the first world through it (entries went from 630-1,040 words to about 400).
+Entries marked `seb: true` are linted to these limits: a `core` line (max 22 words), at most 3 actions of max 20 words each, table rows max 22 words, designer note max 45, In play max 25, Gig Fit lines max 30. All 37 non-core entries are through it: words per ability fell from 21.5 to 12.5 (the GM Guide core runs 8.5), and Deathreach entries went from 630-1,040 words to about 400. Each core line also states where the creature comes from in its world (Built).
 
 ## Conventions
 

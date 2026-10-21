@@ -1,3 +1,6 @@
+// SEB pass (Succinct, Evocative, Built). One core line; at most three actions of one clause each.
+const A = (name, cost, damage, effect) => ({ name, cost, damage: damage || "—", effect });
+
 module.exports = [
   {
     world: "Threska/Arkus",
@@ -5,120 +8,57 @@ module.exports = [
     role: "Controller",
     level: 7,
     name: "Necrophage Ghast",
-    description: "A ghast that was a wizard once, and still dresses like one: robes gone " +
-      "stiff with old blood, ink stains under the grave-dirt on its fingers. It crawls " +
-      "the ceiling of a library it has eaten its way into, reading by the light of its " +
-      "own green eyes.",
+    seb: true,
+    core: "Threska's council wizards rotted into ghasts that still read. It hungers for magic first, meat second.",
+    description: "A ghast in a wizard's robes gone stiff with blood, ink under the grave-dirt on " +
+      "its fingers. It reads on the ceiling by the light of its own eyes.",
 
-    stats: { hp: 72, armor: "Medium", speed: "6 (climb 6)", stage: "4, 13+" },
+    stats: { hp: 72, armor: "Medium", speed: "6 (climb 6)", dc: 13, stage: "4, 13+" },
 
     actions: [
-      {
-        name: "Claws",
-        cost: "1 Action, ×2",
-        damage: "1d4+9",
-        effect: "On hit: STR save DC 13 or Dazed on the target's next turn."
-      },
-      {
-        name: "Arcane blast",
-        cost: "1 Action, ×2, Range 12",
-        damage: "2d6+4",
-        effect: "Force. It uses this from the ceiling while heroes look for a way up."
-      },
-      {
-        name: "Command",
-        cost: "1 Action, 1/round, Range 8",
-        damage: "—",
-        effect: "WIL save DC 13. Failure: the ghast chooses where the target spends its " +
-          "movement on its next turn. The target chooses its own actions."
-      },
-      {
-        name: "Necrophage stench",
-        cost: "Passive, Reach 6",
-        damage: "—",
-        effect: "A hero who starts their turn within 6 spaces makes a STR save DC 13. " +
-          "Failure: disadvantage on saves against Claws and Command until the encounter " +
-          "ends. Success: immune to the stench until the next Safe Rest."
-      },
-      {
-        name: "Ghoul-master",
-        cost: "Free, 1/round",
-        damage: "—",
-        effect: "One ghoul within 12 spaces moves and attacks. Ghouls follow a ghast " +
-          "by instinct."
-      }
+      A("Claws", "1 Action, ×2", "1d4+9", "STR save or Dazed next turn. From the ceiling: Arcane blast instead, Range 12, 2d6+4 force."),
+      A("Command", "1 Action, 1/round, Range 8", "", "WIL save or it chooses where the target moves next turn. Never their actions."),
+      A("Stench", "Passive, Reach 6", "", "Heroes starting a turn within 6: STR save or disadvantage on saves against it this encounter."),
     ],
 
-    tactics: "Wants knowledge, and meat second. Targets spellcasters to learn their magic, and talks before it fights. Its ghouls go first. Breaks off when Bloodied, up the wall and out of reach, to bargain later.",
-    sources: "Monster Vault: Tales of the Valiant Monster Vault, CR 4. Tales of the Valiant Monster Vault (Necrophage Ghast); Ammann (ghouls and ghasts).",
+    tactics: "Talks before it fights; its ghouls go first. Goes for spellcasters. Bloodied, it climbs out of reach to bargain later.",
+    sources: "Monster Vault: Tales of the Valiant Monster Vault, CR 4 (spellcaster ghast, cannot spread ghoul hunger). Ammann (ghouls and ghasts).",
 
     designNote:
-      "Rebuilt from the Tales of the Valiant Monster Vault. A necrophage rises from a " +
-      "spellcaster, hungers for magic as much as meat, and cannot pass on ghoul " +
-      "hunger, which is why some mages will trade with it. Its claws and its hold " +
-      "spell paralyse in the source; here both Daze for one turn, and its command " +
-      "steers a hero's feet, never their hands. The stench is a set-up: it makes " +
-      "every save after it harder, so the party's first decision is whether to close " +
-      "in or back off and shoot. Use it as a librarian and a broker, not just a " +
-      "monster: it knows things, and it wants to know more.",
+      "It can't spread the hunger, which is why mages trade with it. The stench decides the fight: " +
+      "close in fast or back off and shoot. Play it as a broker first.",
 
     traits: [
-      "Ink, not blood, under its claws. It has been copying something.",
-      "It still wears its University ring and turns it while it thinks.",
-      "It speaks politely, in a dry lecturer's voice, between bites.",
-      "One hand is wrapped in clean linen. It burned it on a ward and is studying " +
-        "the scar.",
-      "It keeps a bookmark in every book on its shelves, and knows where each one is.",
-      "Two ghouls follow it everywhere, carrying its lamp and its stool."
+      "Ink, not blood, under its claws.",
+      "Its old University ring, turned while it thinks.",
+      "A dry lecturer's voice between bites.",
+      "One hand in clean linen, burned on a ward it is studying.",
+      "A bookmark in every book. It knows where each one is.",
+      "Two ghouls carry its lamp and its stool."
     ],
-
     encounters: [
-      "A necrophage has made a lich-tower library in Threska its larder. The party " +
-        "needs one book. It will trade the book for a spell they know.",
-      "A Kartan mage is meeting a necrophage in a tomb on the Cliffs of the Dead to buy " +
-        "a page. The mage has brought too few guards and the ghast has brought too " +
-        "many ghouls.",
-      "Ghouls are carrying a living scholar up a Threskan bastion stair. The ghast " +
-        "walking behind them wants what the scholar knows, not the body.",
-      "A necrophage clings to the ceiling of a plundered temple, reading the god's " +
-        "name off the vault. Every word it reads aloud, the floor cracks."
+      "The book the party needs is in its larder. It will trade it for a spell.",
+      "A Kartan mage meets it to buy a page, with too few guards against too many ghouls.",
+      "Ghouls carry a living scholar upstairs. It wants what she knows, not the body.",
+      "It reads a dead god's name off a ceiling. Each word cracks the floor."
     ],
-
     lairs: [
-      "A lich-tower library with the books shelved by how good they tasted. The " +
-        "catalogue is in the ghast's own hand.",
-      "A Cliffs of the Dead tomb fitted out as a study: a desk, a chair for a guest, " +
-        "and a ledger of every mage who came to trade.",
-      "An Arkus temple vault where every wall glyph has been scraped off and copied " +
-        "into a stack of skin-bound notebooks.",
-      "A sand-buried scriptorium in the Red Wastes where ghouls sit at the desks, " +
-        "copying, slowly, because it told them to."
+      "A lich-tower library, books shelved by how good they tasted.",
+      "A tomb fitted as a study, a guest chair, and a ledger of every mage who traded.",
+      "A temple vault with every glyph scraped off and copied into skin-bound notebooks.",
+      "A buried scriptorium where ghouls sit at the desks, copying slowly."
     ],
-
     rumours: [
-      { true: true,
-        text: "It can't give you the hunger. Its bite is all magic, no sickness. That's " +
-          "why the mages deal with it." },
-      { true: true,
-        text: "Don't stand in its stink. Back off a dozen paces before you close in, " +
-          "or every spell it throws will land." },
-      { true: false,
-        text: "One scratch from a ghast and you're stone-stiff until dawn, while it eats." },
-      { true: false,
-        text: "It's only hungry for books. Throw it a spellbook and it'll let you pass." }
+      { true: true, text: "It can't give you the hunger. That's why mages deal with it." },
+      { true: true, text: "Stay out of its stink, or every spell it throws lands." },
+      { true: false, text: "One scratch and you're stiff until dawn while it eats." },
+      { true: false, text: "Throw it a spellbook and it'll let you pass." }
     ],
-
     gigFit: {
       verb: "Steal / Find",
-      butPlus:
-        "But+ Monster at Stage 4 (Cliffs of the Dead) and on any Threska or Arkus arch. " +
-          "Best in a library, scriptorium or archive, with ghouls as the room's mob.",
-      patronHook:
-        "The University has been buying pages from a necrophage through a cut-out and " +
-          "wants the party to find out what the ghast has been buying in return.",
-      cityName:
-        "\"The Reader\": grave diggers' name for the one on the Cliffs, said the way " +
-          "you would name a landlord. Kartan students say it with a nervous laugh."
+      butPlus: "Stage 4 and Threska or Arkus arches, in a library or archive with ghouls as the mob.",
+      patronHook: "The University buys pages from one through a cut-out. What is the ghast buying in return?",
+      cityName: "\"The Reader\": grave diggers name the one on the Cliffs like a landlord."
     }
   },
 
@@ -128,108 +68,57 @@ module.exports = [
     role: "Skirmisher",
     level: 4,
     name: "Iron Cobra",
-    description: "A mechanical serpent of black iron plates, jointed at every handspan, " +
-      "with a reservoir of green venom visible through a glass panel in its neck. It " +
-      "was built to guard a temple, and the temple is gone.",
+    seb: true,
+    core: "The Nameless King's temples were built with guards that outlived the god. It strikes, recoils, and obeys one word.",
+    description: "A serpent of jointed black iron with green venom showing through a glass panel " +
+      "in its neck. It ticks while it waits.",
 
-    stats: { hp: 37, armor: "Medium", speed: "8", stage: "13+" },
+    stats: { hp: 37, armor: "Medium", speed: "8", dc: 12, stage: "13+" },
 
     actions: [
-      {
-        name: "Bite",
-        cost: "1 Action",
-        damage: "1d10+6",
-        effect: "On hit, it may spend a venom dose (3 per encounter, unlimited inside its " +
-          "guarded room). The target makes a " +
-          "STR save DC 12 or suffers one of: Poisoned, Slowed, or Dazed on their next " +
-          "turn. The cobra picks."
-      },
-      {
-        name: "Strike and recoil",
-        cost: "Free, after a Bite",
-        damage: "—",
-        effect: "It moves up to 4 spaces without provoking Opportunity Attacks."
-      },
-      {
-        name: "Ward-word",
-        cost: "Passive",
-        damage: "—",
-        effect: "It obeys a command word cut into its temple's walls. A hero who reads it " +
-          "(Lore DC 14) and speaks it as an Action halts the cobra for a round."
-      },
-      {
-        name: "Construct",
-        cost: "Passive",
-        damage: "—",
-        effect: "Immune to Poisoned, Frightened and Charmed."
-      }
+      A("Bite", "1 Action", "1d10+6", "Spends a dose (3; unlimited in its room): STR save or Poisoned, Slowed or Dazed. Then moves 4."),
+      A("Ward-word", "Passive", "", "Read the word on the temple walls (Lore DC 14) and speak it: it halts for a round."),
+      A("Construct", "Passive", "", "Immune to Poisoned, Frightened and Charmed. Never chases past its temple door."),
     ],
 
-    tactics: "Wants intruders out of its temple. Strikes whoever crossed the threshold last, then slithers back. Inside its guarded room its venom never runs dry. Never breaks off inside the temple; never chases past the door.",
-    sources: "Monster Vault: 4e MM, Lv 6 Skirmisher. 4e MM Iron Cobra (Guard Area, Slithering Shift).",
+    tactics: "Strikes whoever crossed the threshold last, then slithers back. Never breaks off inside the temple.",
+    sources: "Monster Vault: 4e MM, Lv 6 Skirmisher. Guard Area and Slithering Shift (4e). Paralysis dose rebuilt as Dazed.",
 
     designNote:
-      "A hit-and-run guardian with a small venom budget. Three doses per encounter " +
-      "means the GM picks when to spend them, and the heroes can count, until they " +
-      "enter the room it guards, where 4e's guard rule lifts the limit. Its paralysing " +
-      "dose from 5e is now Dazed for a turn. The ward-word rewards heroes who read the " +
-      "room. Put cobras in Arkus temples, among half-buried statues and long halls where " +
-      "it can strike and slither back into the dark.",
+      "Three doses outside its room, so the heroes can count. Inside, the limit lifts. The word on the walls " +
+      "rewards heroes who read the room.",
 
     traits: [
-      "Its venom panel is cracked and leaks a thin green trail.",
-      "A priest's name is etched on its head in tiny letters.",
-      "It ticks like a clock when it waits.",
-      "This one's tail is broken and drags, scraping a groove in the sand.",
-      "Its eyes are rubies. Someone has already pried one out.",
-      "It coils around a god's statue, its iron rubbed smooth from centuries of the " +
-        "same patrol."
+      "A cracked venom panel, leaking a thin green trail.",
+      "A priest's name etched small on its head.",
+      "It ticks like a clock while it waits.",
+      "A broken tail that drags a groove in the sand.",
+      "Ruby eyes. Someone has pried one out.",
+      "Its iron is worn smooth from one patrol, centuries long."
     ],
-
     encounters: [
-      "A temple door in Arkus is ajar. On the threshold lies a dwarf thrall, dead, with " +
-        "two tiny holes in his ankle. Something clicks inside.",
-      "Clan scavengers have captured a cobra and are trying to rewire it to serve them. " +
-        "They need a reader for the ward-word.",
-      "The party must cross a temple courtyard ringed by fallen statues. Two cobras " +
-        "patrol in opposite directions and will meet in the middle.",
-      "A Black Hand crew has smuggled a cobra into the city, and someone has spoken " +
-        "the wrong word to it."
+      "A dead thrall on a threshold, two tiny holes in his ankle. Something clicks inside.",
+      "Clan scavengers are rewiring a captured cobra. They need someone to read the word.",
+      "Two cobras patrol a courtyard from opposite ends and will meet in the middle.",
+      "A smuggled cobra loose in the city, after someone said the wrong word."
     ],
-
     lairs: [
-      "A step-pyramid shrine with walls carved in looping script. The ward-word is " +
-        "there, three times, each one different.",
-      "A sand-choked hall where the cobra's coils have worn a figure-eight in the stone " +
-        "floor.",
-      "A vault with a broken reliquary, its relic long gone and the cobra still guarding " +
-        "the empty case.",
-      "A dead warlock's workshop under a planet-killing spire, full of half-built cobras " +
-        "and one finished one."
+      "A shrine carved with the word three times, each one different.",
+      "A sand-choked hall, a figure-eight worn into the floor.",
+      "A broken reliquary, the relic long gone, still guarded.",
+      "A dead warlock's workshop of half-built cobras, and one finished."
     ],
-
     rumours: [
-      { true: true,
-        text: "They obey a word. Find it on the temple walls and you can stop one cold." },
-      { true: true,
-        text: "It only carries so much venom. Make it waste three bites and the rest is " +
-          "iron and teeth." },
-      { true: false,
-        text: "Iron cobras rust in water. Splash it and it seizes up." },
-      { true: false,
-        text: "Destroy the temple's god-statue and the cobras that guard it fall apart." }
+      { true: true, text: "Find the word on the walls and you can stop it cold." },
+      { true: true, text: "Make it waste three bites and the rest is iron and teeth." },
+      { true: false, text: "Splash it with water and it rusts solid." },
+      { true: false, text: "Break the god's statue and its guards fall apart." }
     ],
-
     gigFit: {
       verb: "Steal / Find",
-      butPlus:
-        "But+ Monster on any Arkus or Threska arch, inside temples and tombs.",
-      patronHook:
-        "The University wants a working cobra and its command word to study the old " +
-          "temple guardians. The Black Hand wants the venom reservoir intact to sell.",
-      cityName:
-        "\"Temple-snakes\": what the clans of Arkus call them. The few who have reached " +
-          "the City of Arches flinch at the ticking of any clock."
+      butPlus: "Arkus and Threska arches, inside temples and tombs.",
+      patronHook: "The University wants a working cobra and its word. The Black Hand wants the venom reservoir intact.",
+      cityName: "\"Temple-snakes\": Arkus arrivals flinch at any ticking clock."
     }
   },
 
@@ -239,111 +128,57 @@ module.exports = [
     role: "Controller",
     level: 3,
     name: "Hitched Scarecrow",
-    description: "A straw man tied to a ward-pole by a rope of braided hair, its sackcloth " +
-      "face painted with a single wide eye. The pole stands at the edge of a clan's " +
-      "dead field. The clan is gone. The scarecrow is still watching.",
+    seb: true,
+    core: "Arkus clans tied watchmen to their fields against the dead. The clans are gone; the watchmen still keep their last order.",
+    description: "A straw man tied to a ward-pole by a rope of braided hair, its sackcloth face " +
+      "painted with one wide eye.",
 
-    stats: { hp: 41, armor: "None", speed: "6 (tethered)", stage: "13+" },
+    stats: { hp: 41, armor: "None", speed: "6 (tethered)", dc: 12, stage: "13+" },
 
     actions: [
-      {
-        name: "Claws",
-        cost: "1 Action, ×2",
-        damage: "1d6+4",
-        effect: "Advantage against a Frightened target."
-      },
-      {
-        name: "Terrifying glare",
-        cost: "1 Action, Range 6",
-        damage: "—",
-        effect: "WIL save DC 12 or Frightened until the end of the target's next turn. " +
-          "A target already Frightened of it is Dazed instead."
-      },
-      {
-        name: "Hitched",
-        cost: "Passive",
-        damage: "—",
-        effect: "It cannot move more than 6 spaces from its ward-pole. Any creature can " +
-          "cut the rope (1 Action, adjacent to the pole). Freed, it loses the limit and " +
-          "its glare's Range doubles."
-      },
-      {
-        name: "Maker's eye",
-        cost: "Passive",
-        damage: "—",
-        effect: "Whoever made it sees what it sees and knows the face of anyone it claws. " +
-          "If the maker is dead, it keeps the last order it was given."
-      },
-      {
-        name: "Straw",
-        cost: "Passive",
-        damage: "—",
-        effect: "Fire deals double damage. While burning it deals 1d6 fire to adjacent " +
-          "creatures at the start of its turn."
-      }
+      A("Terrifying glare", "1 Action, Range 6", "", "WIL save or Frightened until the end of the target's next turn. Already Frightened, Dazed."),
+      A("Claws", "1 Action, ×2", "1d6+4", "Advantage against a Frightened target."),
+      A("Hitched", "Passive", "", "Can't go beyond 6 of its pole. Cut the rope (1 Action) and it's free, its glare doubling in range."),
     ],
 
-    tactics: "Wants to keep its last order: watch the field. Glares at anyone inside its circle and claws whoever reaches the pole. Never breaks off, and never forgets a face it has struck.",
-    sources: "Monster Vault: Ultimate Bestiary: The Dreaded Accursed, CR 6. 4e MM3 Scarecrow (bond with its maker, keeps its last command after the maker dies).",
+    tactics: "Glares at anyone in its circle, claws whoever reaches the pole. Never breaks off and never forgets a face.",
+    sources: "Monster Vault: Ultimate Bestiary: The Dreaded Accursed, CR 6. Bond with its maker (4e MM3 Scarecrow). Paralysis rebuilt as Dazed.",
 
     designNote:
-      "In 5e the scarecrow's glare frightens and paralyses. Here it Frightens and then " +
-      "Dazes on a second fail: one action lost, never the whole turn. The rope is the " +
-      "encounter. Tethered, the scarecrow guards a circle the heroes can avoid or " +
-      "fight at the edge of. Cutting the rope to get past it, or to reach what it " +
-      "guards, sets it loose. Put something the heroes want just inside the circle.",
+      "The rope is the encounter: fight at the edge of the circle, or cut it and set it loose. " +
+      "Fire does double damage. Put what the heroes want just inside the circle.",
 
     traits: [
-      "Its rope is braided from the hair of every clan member who planted the field.",
-      "It turns its head to follow the party, a slow creak of straw.",
-      "Crows will not land within 6 spaces of it.",
-      "Its painted eye has been touched up recently. Someone still tends it.",
-      "A child's doll is stuffed into its chest.",
-      "It wears a dead warlock's robe, too fine for straw."
+      "The rope is braided from the hair of every clan member who planted the field.",
+      "It turns its head to follow, with a slow creak of straw.",
+      "Crows won't land within 6 spaces of it.",
+      "Its eye was repainted recently. Someone still tends it.",
+      "A child's doll stuffed in its chest.",
+      "A dead warlock's robe, too fine for straw."
     ],
-
     encounters: [
-      "The only well for a day's walk stands inside a scarecrow's circle.",
-      "Three scarecrows ring an old clan field in Arkus. One of them has already been " +
-        "cut loose and is somewhere nearby.",
-      "A clan elder pleads with the party: their child cut a scarecrow loose on a dare " +
-        "and it is now walking toward the cave where the clan hides.",
-      "A Threskan bastion has hitched scarecrows along its walls as wards against the " +
-        "dead. One is facing inward."
+      "The only well for a day stands inside a scarecrow's circle.",
+      "Three watch a field. A fourth pole stands empty, its rope cut.",
+      "A child cut one loose on a dare. It is walking toward where the clan hides.",
+      "A wall lined with watchmen against the dead. One faces inward."
     ],
-
     lairs: [
-      "A field of dead stalks in Arkus with a single ward-pole and a frayed rope at its " +
-        "foot. The scarecrow is not here.",
-      "A clan graveyard ringed by scarecrows, each tied with a different coloured rope.",
-      "A barn inside an Arkus fissure where the clan made scarecrows. Half-stuffed " +
-        "sacks hang from the rafters, and one painted eye looks at the door.",
-      "A Threskan tower stair lined with scarecrows, tied to the banisters, their eyes " +
-        "freshly painted."
+      "A dead field, one pole, a frayed rope at its foot, and no scarecrow.",
+      "A clan graveyard ringed by watchmen, each on a different coloured rope.",
+      "A barn of half-stuffed sacks. One painted eye watches the door.",
+      "A tower stair lined with watchmen tied to the banisters, eyes fresh."
     ],
-
     rumours: [
-      { true: true,
-        text: "It can't leave its pole. Six paces out and it's just a voice in your head." },
-      { true: true,
-        text: "Don't cut the rope. Whatever you want past it, there's a way round." },
-      { true: false,
-        text: "Look it in the eye and you're frozen till sunrise." },
-      { true: false,
-        text: "Scarecrows only move at night. Cross by day and you're fine." }
+      { true: true, text: "It can't leave its pole. Six paces out it's just a voice in your head." },
+      { true: true, text: "It's straw. Fire takes it twice as fast." },
+      { true: false, text: "Meet its eye and you're frozen till sunrise." },
+      { true: false, text: "They only move at night." }
     ],
-
     gigFit: {
       verb: "Steal / Bury",
-      butPlus:
-        "But+ Monster on any Arkus or Threska arch, in fields and at clan sites.",
-      patronHook:
-        "The Archkeepers want to bring an Arkus clan through an arch to the City of " +
-          "Arches. The clan won't leave without their dead, and their dead are guarded " +
-          "by scarecrows that no longer know who tied them.",
-      cityName:
-        "\"Watchmen\": Arkus arrivals call them that, with respect, and won't walk past " +
-          "a scarecrow in a city garden."
+      butPlus: "Arkus and Threska arches, in fields and at clan sites.",
+      patronHook: "The Archkeepers want to bring an Arkus clan to the city. The clan won't leave its dead, and watchmen guard them.",
+      cityName: "\"Watchmen\": Arkus arrivals won't walk past a scarecrow in a city garden."
     }
   },
 ];

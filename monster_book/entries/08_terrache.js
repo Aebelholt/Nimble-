@@ -1,3 +1,6 @@
+// SEB pass (Succinct, Evocative, Built). One core line; at most three actions of one clause each.
+const A = (name, cost, damage, effect) => ({ name, cost, damage: damage || "—", effect });
+
 module.exports = [
   {
     world: "Terrache",
@@ -5,103 +8,57 @@ module.exports = [
     role: "Controller",
     level: 5,
     name: "Star Spawn Mangler",
-    description: "A thin, too-long humanoid with six arms jointed at angles that hurt to " +
-      "look at, skin the grey of wet slate and a face with no features but a mouth. It " +
-      "folds itself into shadows that should be too small.",
+    seb: true,
+    core: "The god the Violet Eye hunts stirs under the Seas of Madness. Manglers climb out of the water as its hands.",
+    description: "A too-long grey figure with six arms jointed at angles that hurt to look at, and " +
+      "a face that is only a mouth. It folds into shadows too small for it.",
 
-    stats: { hp: 64, armor: "None", speed: "8 (climb 8)", stage: "13+" },
+    stats: { hp: 64, armor: "None", speed: "8 (climb 8)", dc: 13, stage: "13+" },
 
     actions: [
-      {
-        name: "Flurry",
-        cost: "1 Action",
-        damage: "3d6+4",
-        effect: "Six arms at once. On a crit, the target is also Slowed."
-      },
-      {
-        name: "Wrong angle",
-        cost: "Free, after a hit",
-        damage: "—",
-        effect: "It pushes or pulls the target 2 spaces in any direction, including " +
-          "sideways along a wall."
-      },
-      {
-        name: "Shadow fold",
-        cost: "Passive",
-        damage: "—",
-        effect: "In dim light or darkness it is Invisible until it attacks."
-      },
-      {
-        name: "Psychic static",
-        cost: "Passive, Reach 2",
-        damage: "—",
-        effect: "Heroes within 2 spaces can't use Reactions, and roll Concentration " +
-          "saves with disadvantage."
-      }
+      A("Flurry", "1 Action", "3d6+4", "Six arms at once. Then push or pull the target 2 spaces any way, walls included."),
+      A("Shadow fold", "Passive", "", "Invisible in dim light or darkness until it attacks."),
+      A("Psychic static", "Passive, Reach 2", "", "Heroes within 2 can't take Reactions and roll Concentration with disadvantage."),
     ],
 
-    tactics: "Wants to tear apart what its star hates. Alone, it comes from shadow; in a group, its claws clatter long before it is seen. Shreds one hero, throws them, scuttles off, and comes again. Never breaks off while its star is in the sky.",
-    sources: "Monster Vault: Conflux Creatures: Aberrations & Dragons, CR 5. 4e MM2 star spawn lore (baleful stars); mechanics original.",
+    tactics: "Alone it comes from shadow; in a group its claws clatter first. Shreds one hero, throws them, scuttles off, returns.",
+    sources: "Monster Vault: Conflux Creatures: Aberrations & Dragons, CR 5 (tactics note). Origin rebuilt from Terrache canon.",
 
     designNote:
-      "A melee controller. Its push-pull on every hit means a mangler fight is a fight " +
-      "over where you stand, and the static shuts off Reactions and weakens " +
-      "Concentration without costing any actions. Light is its weakness. Put it on the " +
-      "narrow bridges of Terrache, where every push is a fall.",
+      "Every hit moves a hero, so the fight is over where you stand. On Terrache's bridges, every " +
+      "push is a fall. Light is the answer.",
 
     traits: [
-      "One of its arms is broken and hangs wrong, wronger than the others.",
+      "One arm broken, hanging wronger than the rest.",
       "It hums in a key that makes teeth ache.",
-      "It is wearing a Violet Eye warlock's sash.",
-      "This one moves in fits, like a puppet with tangled strings.",
-      "Its mouth is full of tiny violet stones.",
-      "It has a shard of a Pillar of Sin embedded in its chest, still whispering."
+      "A Violet Eye warlock's sash, wet from the sea.",
+      "It moves in fits, like a puppet with tangled strings.",
+      "Its mouth is full of small violet stones.",
+      "A shard of a Pillar of Sin in its chest, still whispering."
     ],
-
     encounters: [
-      "A mangler squats mid-span on the bridge between Qinroris's and Kraketen's " +
-        "stalactites. Each side swears it belongs to the other, and neither will " +
-        "open its gate until it's gone.",
-      "A shadow elf patrol has cornered a mangler in a glowing grotto. Two soldiers " +
-        "are already on the ceiling, held there at angles that should drop them.",
-      "A Violet Eye warlock offers to call a mangler off the party's only route, in " +
-        "exchange for one hero describing their worst dream, in full, for the record.",
-      "The party's lamp gutters on a spidery walkway over the Seas of Madness. Ahead, " +
-        "six grey hands close around the rail, one after another."
+      "It squats mid-bridge between two shadow elf cities. Each swears it belongs to the other.",
+      "A shadow elf patrol has it cornered. Two soldiers hang from the ceiling at impossible angles.",
+      "A Violet Eye warlock will call it off the party's route for one hero's worst dream, told in full.",
+      "The lamp gutters on a walkway. Six grey hands close on the rail ahead, one by one."
     ],
-
     lairs: [
-      "A hollow stalactite tip with walls scratched in spirals that tighten toward a " +
-        "hole too small for anything with arms to pass. Something passes.",
-      "A ledge above the Seas of Madness where the Pillars of Sin can be heard. The " +
-        "mangler sits facing the water, rocking in time with the screams.",
-      "A shadow elf watchtower with every door bent outward and every guard's armour " +
-        "folded neatly, the bodies nowhere.",
-      "A grotto of violet crystal near Vestellis where the Violet Eye left offerings: " +
-        "lamp oil, mirrors, and a scroll asking it to stay away from the tower."
+      "A hollow stalactite tip, spirals scratched toward a hole too small to pass. Something passes.",
+      "A ledge over the sea, where it sits rocking in time with the Pillars' screams.",
+      "A watchtower with every door bent outward and every guard's armour folded, empty.",
+      "A violet grotto heaped with Violet Eye offerings: oil, mirrors, a scroll begging it to stay away."
     ],
-
     rumours: [
-      { true: true,
-        text: "Bring light. It can't hide in it." },
-      { true: true,
-        text: "Stay off the bridges when it's near. It throws people." },
-      { true: false,
-        text: "Its touch scrambles your thoughts. One hit and you won't be able to " +
-          "act for the rest of the fight." },
-      { true: false,
-        text: "It can't climb. Get above it on the stalactites and it can't follow." }
+      { true: true, text: "Bring light. It can't hide in it." },
+      { true: true, text: "Off the bridges when it's near. It throws people." },
+      { true: false, text: "One touch scrambles your mind for the whole fight." },
+      { true: false, text: "It can't climb. Get above it." }
     ],
-
     gigFit: {
       verb: "Escort / Stop",
-      butPlus:
-        "But+ Monster on any Terrache arch, on bridges, walkways and ledges.",
-      patronHook:
-        "The University wants a mangler's arm to study its joints, and has a stalactite " +
-          "map and a Violet Eye contact to sell.",
-      cityName:
-        "\"Six-hands\": shadow elf arrivals' name, used as a curse."
+      butPlus: "Terrache arches, on bridges, walkways and ledges.",
+      patronHook: "The University wants a mangler's arm for its joints, and has a Violet Eye contact to sell.",
+      cityName: "\"Six-hands\": a shadow elf curse."
     }
   },
 
@@ -111,104 +68,57 @@ module.exports = [
     role: "Controller",
     level: 4,
     name: "Voidwracked Mage",
-    description: "A shadow elf in the remains of a Violet Eye robe, one half of their " +
-      "body hollowed out into star-speckled black. They speak in two voices, one theirs, " +
-      "one from the Seas of Madness. Neither voice agrees.",
+    seb: true,
+    core: "A Violet Eye warlock who listened to the Pillars of Sin too long. Half of them is gone, and the hole hurts.",
+    description: "A shadow elf in a ruined Violet Eye robe, half the body hollowed into star-flecked " +
+      "black. Two voices speak, and they never agree.",
 
-    stats: { hp: 40, armor: "None", speed: "6", stage: "13+" },
+    stats: { hp: 40, armor: "None", speed: "6", dc: 12, stage: "13+" },
 
     actions: [
-      {
-        name: "Void lash",
-        cost: "1 Action, Range 8",
-        damage: "1d10+6",
-        effect: "On hit: the target is pulled 2 spaces toward the mage or toward the " +
-          "nearest Pillar of Sin."
-      },
-      {
-        name: "Unravel",
-        cost: "1 Action, 1/round, Range 8",
-        damage: "—",
-        effect: "WIL save DC 12 or Dazed on the target's next turn."
-      },
-      {
-        name: "Leak",
-        cost: "Passive",
-        damage: "—",
-        effect: "Each time it takes damage, everything within 1 space takes 1d6 void " +
-          "damage, allies included."
-      },
-      {
-        name: "Collapse",
-        cost: "Passive, on death",
-        damage: "2d6",
-        effect: "The void inside it folds in. Creatures within 2 spaces make a DEX save " +
-          "DC 12 or take the damage, are pulled to its space, and are knocked Prone."
-      }
+      A("Void lash", "1 Action, Range 8", "1d10+6", "Pulls the target 2 spaces toward it or the nearest Pillar of Sin."),
+      A("Unravel", "1 Action, 1/round, Range 8", "", "WIL save or Dazed on the target's next turn."),
+      A("Leak", "Passive", "", "Hits on it deal 1d6 to all within 1. Dying, it implodes: DEX save or 2d6, pulled in, Prone."),
     ],
 
-    tactics: "Wants the void to stop hurting, and cannot make it stop. Targets whoever is closest, because closest is loudest. Breaks off only by dying, and that hurts everyone.",
-    sources: "Monster Vault: Creature Codex, CR 8.",
+    tactics: "Lashes whoever is closest, because closest is loudest. Breaks off only by dying, and that hurts everyone.",
+    sources: "Monster Vault: Creature Codex, CR 8. Scaled down as a glass cannon; origin rebuilt from Terrache canon.",
 
     designNote:
-      "A glass cannon controller. It has the HP of a lower-level monster and the damage " +
-      "of a level higher, and it hurts everyone near it, including itself, every time " +
-      "it's hit. Melee heroes pay for closing in. Unravel Dazes for a turn, never more. " +
-      "Collapse gives the fight a final beat: kill it carefully or eat the implosion.",
+      "Glass cannon: lower-level HP, higher-level damage, and it punishes melee every time it is " +
+      "hit. Kill it carefully, or eat the implosion.",
 
     traits: [
-      "Their eyes are two holes with stars in them, and the stars move.",
-      "A Violet Eye tattoo on the wrist, half eaten away by the black.",
-      "They mutter the names of Vestellis's five spires, always skipping the fourth.",
-      "They weep tiny black stones that roll uphill.",
-      "Their spellbook is blank. They still read from it, and still cast.",
+      "Eyes like two holes with moving stars in them.",
+      "A Violet Eye tattoo, half eaten by the black.",
+      "It names the five spires of Vestellis, always skipping the fourth.",
+      "It weeps black stones that roll uphill.",
+      "A blank spellbook it still reads from.",
       "A signet from Qinroris's court on the hand that remains."
     ],
-
     encounters: [
-      "A wracked mage preaches on a stalagmite bridge to goblins and bugbears of " +
-        "Vettex's band. They are listening, and two have started to go dark at the " +
-        "fingertips.",
-      "The Violet Eye contact who sold the party their map shows up to the meeting " +
-        "with one hand gone black to the wrist, and asks them to look at it.",
-      "A wracked mage has the myconid sage who holds the party's one-way key, and " +
-        "is feeding it a shard of a Pillar of Sin.",
-      "A Violet Eye warlock pays for a wracked mage brought back to Vestellis alive. " +
-        "Alive is the hard part: every blow makes it worse to stand near."
+      "It preaches on a bridge to goblins and bugbears. Two have gone dark at the fingertips.",
+      "The party's Violet Eye contact arrives with a hand black to the wrist and asks them to look.",
+      "It is feeding a Pillar shard to the myconid sage who holds the party's key.",
+      "A warlock pays for one brought back alive. Every blow makes that harder."
     ],
-
     lairs: [
-      "A tower room in Vestellis, walls scorched black, the floor a mosaic of stars " +
-        "that do not match any sky the party knows.",
-      "A volcanic island cave where the rock has gone thin as paper, and stars show " +
-        "through it.",
-      "A shrine at the waterline near a Pillar of Sin, heaped with Violet Eye robes. " +
-        "Each robe is empty and folded.",
-      "A library in Kraketen's city with every book open and every page blank. The " +
-        "librarian is still at the desk, writing nothing."
+      "A scorched tower room, the floor a mosaic of stars from no known sky.",
+      "A volcanic cave where the rock has gone thin as paper and stars show through.",
+      "A shrine by a Pillar of Sin, heaped with empty, folded Violet Eye robes.",
+      "A library of blank pages, the librarian still at the desk, writing nothing."
     ],
-
     rumours: [
-      { true: true,
-        text: "Hit it from range. It hurts everyone who's close." },
-      { true: true,
-        text: "When it dies, it pulls in. Step back before the last blow." },
-      { true: false,
-        text: "The void is contagious. Touch one and you'll hollow out too." },
-      { true: false,
-        text: "The void hates water. Push it into the sea and it unravels." }
+      { true: true, text: "Hit it from range. It hurts everyone close." },
+      { true: true, text: "It pulls in when it dies. Step back before the last blow." },
+      { true: false, text: "The void is catching. Touch one and you hollow out too." },
+      { true: false, text: "Push it into the sea and it unravels." }
     ],
-
     gigFit: {
       verb: "Find / Escort",
-      butPlus:
-        "But+ Monster on any Terrache arch, near Vestellis or the Seas of Madness.",
-      patronHook:
-        "The University's star lecturer has started speaking in two voices after a " +
-          "Terrache trip. They want to know what happened before it spreads.",
-      cityName:
-        "\"Hollowed\": University term, used for any scholar who goes too deep, in " +
-          "any subject."
+      butPlus: "Terrache arches, near Vestellis or the Seas of Madness.",
+      patronHook: "A University lecturer came back from Terrache speaking in two voices. They want to know why before it spreads.",
+      cityName: "\"Hollowed\": University slang for any scholar who goes too deep."
     }
   },
 
@@ -218,102 +128,57 @@ module.exports = [
     role: "Lurker",
     level: 5,
     name: "Slaad Tadpole",
-    description: "A slick, dog-sized tadpole with a mouth full of needle teeth and " +
-      "bulging eyes that glow faintly red. It came out of someone's skull a few days " +
-      "ago. In a few more it will be a slaad.",
+    seb: true,
+    core: "Chaos breeds in the Seas of Madness. A slaad plants the embryo; this is what bursts out of the host.",
+    description: "A slick, dog-sized tadpole with needle teeth and faintly red eyes. It came out of " +
+      "someone's skull days ago. Soon it will be a slaad.",
 
-    stats: { hp: 49, armor: "None", speed: "6 (swim 8)", stage: "13+" },
+    stats: { hp: 49, armor: "None", speed: "6 (swim 8)", dc: 13, stage: "13+" },
 
     actions: [
-      {
-        name: "Bite",
-        cost: "1 Action",
-        damage: "2d8+6",
-        effect: "After biting it slips half out of the world: until the start of its next " +
-          "turn, attacks against it have disadvantage."
-      },
-      {
-        name: "Chaos shift",
-        cost: "Reaction, when attacked in melee",
-        damage: "—",
-        effect: "It moves 2 spaces without provoking before the attack is rolled. If that " +
-          "takes it out of reach, the attack misses."
-      },
-      {
-        name: "Grow",
-        cost: "Passive",
-        damage: "—",
-        effect: "It becomes an adult slaad 1d4+3 days after it emerged. Every day it " +
-          "eats well, take one day off."
-      }
+      A("Bite", "1 Action", "2d8+6", "Then it slips half out of the world: attacks against it are disadvantaged until its next turn."),
+      A("Chaos shift", "Reaction, attacked in melee", "", "Moves 2 first, without provoking. Out of reach, the attack misses."),
+      A("Grow", "Passive", "", "Becomes an adult slaad 1d4+3 days after emerging, a day sooner for each good meal."),
     ],
 
-    tactics: "Wants to grow up. Fresh from its host, it hides, feeds on anything small, " +
-      "and bites only what corners it. Breaks off at once if it can, every time.",
-    sources: "Monster Vault: 4e MM, Lv 5 Lurker. 4e MM Slaad Tadpole (Lurker, Chaos Shift, insubstantial after a bite); Ammann, The Monsters Know What They're Doing (slaadi).",
+    tactics: "Wants to grow up. Hides, eats anything small, bites only what corners it, and runs every time.",
+    sources: "Monster Vault: 4e MM, Lv 5 Lurker. Chaos Shift, insubstantial after a bite (4e); flees to hide (Ammann, Vault note).",
 
     designNote:
-      "The first draft made tadpoles minions that burrowed into heroes. That was " +
-      "backwards: adult slaadi plant the embryos, and a tadpole is what bursts out of " +
-      "the host's skull. Rebuilt from 4e as a slippery lurker, it is hard to pin down " +
-      "and keeps running. The real job is the clock: find it before it grows. The host " +
-      "story belongs to the encounters, not the stat block.",
+      "Hard to pin and always running. The real job is the clock: find it before it grows. The " +
+      "host story lives in the encounters.",
 
     traits: [
-      "A strip of its host's scalp still clings to its back, hair and all.",
-      "It chirps like a cricket, faster when it is hungry.",
+      "A strip of its host's scalp still on its back.",
+      "It chirps like a cricket, faster when hungry.",
       "Its skin shimmers every colour, like oil on water.",
-      "It is already growing claws. Two days, maybe less.",
-      "It drags a silver earring on a thread of skin. The host's.",
-      "One of its eyes is a human eye, brown and frightened."
+      "Claws already budding. Two days, maybe less.",
+      "It drags the host's silver earring on a thread of skin.",
+      "One eye is human, brown and frightened."
     ],
-
     encounters: [
-      "A warm volcanic pool, the first clean water in days. Under the steam, " +
-        "something dog-sized turns over and looks at the party.",
-      "A shadow elf soldier staggers out of a cave clutching his head, begging for a " +
-        "priest. He has two days left, and he knows what will come out.",
-      "A Violet Eye warlock keeps tadpoles in a glass tank, each one labelled with " +
-        "its host's name. One label is in a hero's handwriting.",
-      "A Terrache traveller came through an arch complaining of headaches and has " +
-        "not been seen at the Public Baths since Tuesday. The drain in the warm pool " +
-        "is chewed open."
+      "The first clean water in days. Under the steam, something dog-sized turns to look.",
+      "A soldier begs for a priest, clutching his head. He has two days and knows what's coming.",
+      "A warlock keeps them in a tank, labelled by host. One label is in a hero's handwriting.",
+      "A traveller with headaches hasn't been seen since Tuesday. The warm pool's drain is chewed open."
     ],
-
     lairs: [
-      "A steaming volcanic pool with a cracked skull on the rim, the crack from " +
-        "the inside.",
-      "A slaad nest in a cave, littered with empty skulls and one tadpole too young " +
-        "to leave.",
-      "A Violet Eye laboratory with a chalkboard of hosts and days remaining, most " +
-        "crossed out.",
-      "A Lost Cisterns overflow chamber, warm from the baths above, with fish bones " +
-        "stacked by size."
+      "A steaming pool with a cracked skull on the rim, cracked from inside.",
+      "A slaad nest of empty skulls and one tadpole too young to leave.",
+      "A chalkboard of hosts and days remaining, most crossed out.",
+      "A warm overflow chamber under the baths, fish bones stacked by size."
     ],
-
     rumours: [
-      { true: true,
-        text: "It wants to hide and grow, not fight. Corner it or it's gone." },
-      { true: true,
-        text: "The slaad that laid it is still around. Tadpoles don't come alone." },
-      { true: false,
-        text: "Kill the tadpole and the host's madness lifts." },
-      { true: false,
-        text: "Slaad tadpoles die outside Terrache. Through an arch they're harmless." }
+      { true: true, text: "It wants to hide, not fight. Corner it or lose it." },
+      { true: true, text: "The slaad that laid it is still around." },
+      { true: false, text: "Kill the tadpole and the host's madness lifts." },
+      { true: false, text: "Through an arch, away from Terrache, they die." }
     ],
-
     gigFit: {
       verb: "Find / Stop",
-      butPlus:
-        "But+ Monster on any Terrache arch near water, or at Stages 9-10 for one that " +
-          "came through in a host. Run it as a hunt with a clock.",
-      patronHook:
-        "A priest from the Temple of the Three Sisters has a patient with the slaad " +
-          "embryo in them and three days left. The cure is in Terrache. So, probably, " +
-          "is the slaad that planted it.",
-      cityName:
-        "\"Headaches\": Public Baths attendants' word for any Terrache arrival who " +
-          "complains of one. They are told to report it."
+      butPlus: "Terrache arches near water, or Stages 9-10 for one that came through in a host. A hunt with a clock.",
+      patronHook: "A Temple priest's patient carries an embryo with three days left. The cure is in Terrache, and so is the slaad.",
+      cityName: "\"Headaches\": Baths attendants report any Terrache arrival who complains of one."
     }
   },
 ];

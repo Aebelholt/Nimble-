@@ -1,3 +1,6 @@
+// SEB pass (Succinct, Evocative, Built). One core line; at most three actions of one clause each.
+const A = (name, cost, damage, effect) => ({ name, cost, damage: damage || "—", effect });
+
 module.exports = [
   {
     world: "Vynan",
@@ -5,100 +8,57 @@ module.exports = [
     role: "Controller",
     level: 3,
     name: "Common Feyr",
-    description: "A writhing knot of grey flesh, eyes and mouths that floats a pace " +
-      "above the ground, born from the nightmares the Yondoth's ghost-engine whispers " +
-      "into Vynan's sleepers. It smells of cold sweat and burnt sugar.",
+    seb: true,
+    core: "The Yondoth's ghost-engine whispers into Vynan's sleepers, and their nightmares climb out. Wake the dreamer and it ends.",
+    description: "A floating knot of grey flesh, eyes and mouths. It smells of cold sweat and burnt " +
+      "sugar.",
 
-    stats: { hp: 41, armor: "None", speed: "Fly 6", stage: "13+" },
+    stats: { hp: 41, armor: "None", speed: "Fly 6", dc: 12, stage: "13+" },
 
     actions: [
-      {
-        name: "Lash of fears",
-        cost: "1 Action, ×2, Reach 2",
-        damage: "1d6+4",
-        effect: "Psychic."
-      },
-      {
-        name: "Nightmare",
-        cost: "1 Action, Range 6",
-        damage: "—",
-        effect: "WIL save DC 12 or Frightened until the end of the target's next turn. " +
-          "The player names what they see. The feyr counts as the source of fear " +
-          "wherever it is."
-      },
-      {
-        name: "Born of a dreamer",
-        cost: "Passive",
-        damage: "—",
-        effect: "Its dreamer sleeps within 30 spaces. Waking them (1 Action adjacent, " +
-          "Influence DC 12) ends the feyr at once."
-      }
+      A("Lash of fears", "1 Action, ×2, Reach 2", "1d6+4", "Psychic."),
+      A("Nightmare", "1 Action, Range 6", "", "WIL save or Frightened of it until their next turn ends. The player names what they see."),
+      A("Born of a dreamer", "Passive", "", "Its dreamer sleeps within 30. Waking them (1 Action, Influence DC 12) ends it at once."),
     ],
 
-    tactics: "Wants to frighten its dreamer's fears into the world. Targets whoever moves toward the dreamer. Ends the moment the dreamer wakes.",
-    sources: "Monster Vault: Conflux Creatures: Aberrations & Dragons, CR 3.",
+    tactics: "Strikes whoever moves toward its dreamer. Ends the moment the dreamer wakes.",
+    sources: "Monster Vault: Conflux Creatures: Aberrations & Dragons, CR 3. Origin rebuilt from Vynan canon (the Yondoth).",
 
     designNote:
-      "A nightmare with a plug. The feyr is a straightforward fear controller until " +
-      "the party realises it has a dreamer, and then the fight becomes a race to find " +
-      "and wake them. Letting the player name their fear gives the table a story beat " +
-      "without costing anyone their turn.",
+      "A nightmare with a plug. The fight becomes a race to find and wake the dreamer, and naming " +
+      "the fear gives the table a story beat without costing a turn.",
 
     traits: [
-      "One of its mouths keeps saying a hero's name, in the voice of someone who " +
-        "used to say it often.",
-      "It has a child's eyes, frightened and wet. Its dreamer is young.",
-      "It sheds grey ash that smells of a kitchen nobody in Vynan remembers.",
-      "Newly born and small, the size of a cat. It is still deciding what to be.",
-      "All its mouths sing a lullaby, slightly out of tune, and the tune leads to " +
-        "its dreamer.",
-      "It drifts toward lamps like a moth and flinches back from blue light."
+      "One mouth says a hero's name in a voice that used to say it often.",
+      "A child's eyes, wet and frightened. Its dreamer is young.",
+      "Grey ash smelling of a kitchen nobody in Vynan remembers.",
+      "Newborn, cat-sized, still deciding what to be.",
+      "Its mouths sing an out-of-tune lullaby that leads to the dreamer.",
+      "It drifts toward lamps and flinches from blue light."
     ],
-
     encounters: [
-      "A Vynan street gone silent: every survivor asleep at once, mid-task, and the " +
-        "lanes full of drifting shapes. One sleeper is the party's contact.",
-      "A survivor mother begs the party to guard her child's sleep for one night. " +
-        "Around midnight the air above the cot starts to knot.",
-      "Feyr cluster around the Yondoth's hull where the ghost-engine whispers " +
-        "loudest. The repair crew are working in their sleep.",
-      "A Vynan arrival sleeps in the Archkeepers' hostel. Two guests have moved out, " +
-        "one is missing, and the hostel cat won't go upstairs."
+      "A street gone silent, everyone asleep mid-task, shapes drifting between them. One sleeper is the party's contact.",
+      "A mother asks the party to guard her child's sleep. At midnight the air over the cot knots.",
+      "The engine crew works in their sleep, feyr clustered around them.",
+      "A Vynan arrival sleeps upstairs at the hostel. The cat won't go up."
     ],
-
     lairs: [
-      "A barracks in Vynan with forty beds, all occupied, all twitching. A feyr " +
-        "hangs over each like a cloud of breath on a cold morning.",
-      "The Yondoth's engine room, where the whispering is loud enough to make out " +
-        "words, and the words are names of people who have not been born.",
-      "A street corner in Vynan where the cobbles are worn in circles by something " +
-        "that has paced there for years. A blanket and a bowl sit in the middle.",
-      "A Lower Reaches attic rented to a Vynan arrival. The walls are scratched with " +
-        "tally marks, one per night slept, and the smell of burnt sugar never leaves."
+      "Forty twitching sleepers in a barracks, a feyr over each like breath on a cold morning.",
+      "The engine room, whispering names of people not yet born.",
+      "A corner worn in circles by years of pacing, a blanket and bowl at the centre.",
+      "An attic of tally marks, one per night slept, that smells of burnt sugar."
     ],
-
     rumours: [
-      { true: true,
-        text: "Wake the dreamer and the thing goes out like a candle." },
-      { true: true,
-        text: "The fear's yours, not its. Name it and you can face it." },
-      { true: false,
-        text: "If you fall asleep near a feyr, it moves into your dreams and you never " +
-          "wake up." },
-      { true: false,
-        text: "Feyr can't follow anyone through an arch. Get the dreamer to the city " +
-          "and it's over." }
+      { true: true, text: "Wake the dreamer and it goes out like a candle." },
+      { true: true, text: "The fear is yours. Name it and you can face it." },
+      { true: false, text: "Fall asleep near one and you never wake." },
+      { true: false, text: "They can't follow through an arch." }
     ],
-
     gigFit: {
       verb: "Find / Stop",
-      butPlus:
-        "But+ Monster on any Vynan arch, and anywhere a Vynan arrival is sleeping.",
-      patronHook:
-        "The Archkeepers have a Vynan arrival in their hostel who won't stop dreaming, " +
-          "and the other guests are starting to see things.",
-      cityName:
-        "\"Night-sweats\": Archkeeper hostel staff's term, with a nervous laugh."
+      butPlus: "Vynan arches, and anywhere a Vynan arrival sleeps.",
+      patronHook: "An arrival at the Archkeepers' hostel won't stop dreaming, and the other guests are seeing things.",
+      cityName: "\"Night-sweats\": hostel staff say it with a nervous laugh."
     }
   },
 
@@ -108,105 +68,57 @@ module.exports = [
     role: "Controller",
     level: 6,
     name: "Vynan Alchemist-Mage",
-    description: "A survivor of Vynan in a patched leather coat hung with vials, retorts " +
-      "and glass, goggles pushed up on a scarred forehead. They've been working on the " +
-      "Yondoth's engine for twenty years, and they'll kill anyone who gets in the way.",
+    seb: true,
+    core: "Vynan's survivors have spent generations repairing a crashed ship. This one will melt anyone between it and the engine.",
+    description: "A survivor in a patched leather coat hung with vials and retorts, goggles pushed " +
+      "up on a scarred forehead.",
 
-    stats: { hp: 49, armor: "None", speed: "6", stage: "13+" },
+    stats: { hp: 49, armor: "None", speed: "6", dc: 13, stage: "13+" },
 
     actions: [
-      {
-        name: "Retort flask",
-        cost: "1 Action, Range 8",
-        damage: "2d6+5",
-        effect: "Acid, 1-space radius. DEX save DC 13 for half. Everyone hit is Slowed."
-      },
-      {
-        name: "Smoke of forgetting",
-        cost: "2 Actions, 1/encounter",
-        damage: "—",
-        effect: "A cloud of grey smoke, 2-space radius within Range 8. Inside, creatures " +
-          "are Blind. A creature that ends its turn in it makes a WIL save DC 13 or is " +
-          "Dazed on its next turn."
-      },
-      {
-        name: "Transmute ground",
-        cost: "1 Action, Range 8",
-        damage: "—",
-        effect: "A 3×3 area of floor turns to mud (Difficult Terrain) or to brittle glass " +
-          "that breaks under weight. Creatures standing on breaking glass fall to the level " +
-          "below."
-      },
-      {
-        name: "Flesh guardian",
-        cost: "Passive",
-        damage: "—",
-        effect: "Usually guarded by a flesh guardian. While it stands adjacent, attacks " +
-          "against the alchemist have disadvantage."
-      }
+      A("Retort flask", "1 Action, Range 8", "2d6+5", "Acid, 1-space radius, DEX save for half. Everyone hit is Slowed."),
+      A("Smoke of forgetting", "2 Actions, 1/encounter, Range 8", "", "2-space cloud: Blind inside. Ending a turn there: WIL save or Dazed."),
+      A("Transmute ground", "1 Action, Range 8", "", "A 3 by 3 floor turns to mud, or to glass that breaks and drops whoever stands on it."),
     ],
 
-    tactics: "Wants the Yondoth to fly. Splits the party with mud and glass and fights only to save its notes. Breaks off when Bloodied and will trade instead.",
-    sources: "Monster Vault: Drow Deepmage, Conflux Creatures: Giants & Monstrosities, CR 7. Reskinned.",
+    tactics: "Splits the party with mud and glass from behind its flesh guardian. Fights for its notes. Bloodied, it trades.",
+    sources: "Monster Vault: Drow Deepmage, Conflux Creatures: Giants & Monstrosities, CR 7. Reskinned as a Vynan survivor.",
 
     designNote:
-      "A reskin of the drow deepmage as a Vynan survivor. Its tools are terrain and " +
-      "smoke: mud and breaking glass split the party, the smoke blinds and threatens " +
-      "Daze for one turn. It wants the Yondoth to fly and has nothing against the " +
-      "heroes personally. That makes it a good target for negotiation.",
+      "Terrain and smoke split the party. It has nothing against the heroes and wants the ship to " +
+      "fly, so it is a good target for a deal.",
 
     traits: [
-      "One goggle lens is cracked, and they tilt their head to see through the other.",
-      "Burn scars to both elbows in the shape of retort-stands.",
-      "They mutter sums under their breath, the same three numbers, over and over.",
-      "A Kartan student's pin on their lapel. They don't know what it is.",
-      "A grey rat rides in their coat pocket. It has a tiny goggle of its own.",
-      "They remember nothing before the Yondoth, and have stopped trying."
+      "One cracked goggle lens. It tilts its head to see.",
+      "Burn scars to both elbows, shaped like retort stands.",
+      "It mutters the same three numbers, over and over.",
+      "A Kartan student's pin it can't explain.",
+      "A grey rat in its pocket, wearing its own tiny goggle.",
+      "No memory before the ship, and no wish to find one."
     ],
-
     encounters: [
-      "The alchemist needs one part to finish an engine coupling, and it is in a " +
-        "hero's pack: an arch key, a lens, an arcanum.",
-      "Uzul's flesh guardians are breaking down the alchemist's workshop door. The " +
-        "alchemist would rather blow the workshop than lose the notes.",
-      "An alchemist has come to the City of Arches to buy reagents from the " +
-        "Laboratories of Kartan, and is paying with Vynan glass that whispers.",
-      "Stranded in Vynan, the party is offered a way home: three nights' work on the " +
-        "engine. On the second night the engine starts to whisper their names."
+      "It needs one part to finish a coupling, and the part is in a hero's pack.",
+      "Uzul's flesh guardians are breaking in. It would rather blow the workshop than lose the notes.",
+      "One shops for reagents in Kartan, paying in Vynan glass that whispers.",
+      "Stranded, the party is offered a way home for three nights' work. On the second, the engine whispers their names."
     ],
-
     lairs: [
-      "A workshop under a collapsed bridge, shelves of vials labelled in a private " +
-        "code, a cot, and a scale model of the Yondoth with one piece missing.",
-      "The Yondoth's engine room, half-repaired, cables strung like vines, every " +
-        "fitting stamped with a different alchemist's mark. Most of them are dead.",
-      "A tank-room where a flesh guardian hangs half-built in green fluid, its " +
-        "face unfinished. The alchemist talks to it at night.",
-      "A storeroom in the Laboratories of Kartan rented under a false name. The " +
-        "University has been reading its notes for a month."
+      "A workshop under a fallen bridge, a ship model with one piece missing.",
+      "The engine room, every fitting stamped by a different alchemist, most of them dead.",
+      "A tank-room with a half-built guardian it talks to at night.",
+      "A storeroom in Kartan under a false name. The University reads its notes."
     ],
-
     rumours: [
-      { true: true,
-        text: "They want the ship to fly. Help them and they'll help you." },
-      { true: true,
-        text: "Their guardian is their shield. Get it away from them first." },
-      { true: false,
-        text: "Their smoke wipes your memory. Breathe it and you'll forget your own " +
-          "name for good." },
-      { true: false,
-        text: "All of them work for the lich Ivextus. The Yondoth is his idea." }
+      { true: true, text: "It wants the ship to fly. Help it and it helps you." },
+      { true: true, text: "The guardian is its shield. Pull them apart first." },
+      { true: false, text: "Breathe its smoke and you forget your own name for good." },
+      { true: false, text: "They all work for the lich Ivextus." }
     ],
-
     gigFit: {
       verb: "Escort / Steal",
-      butPlus:
-        "But+ Monster on any Vynan arch, near workshops or the Yondoth.",
-      patronHook:
-        "A mage of Kartan wants an alchemist's notes on the Yondoth's ghost-engine, " +
-          "and will pay well for a copy taken without the alchemist knowing.",
-      cityName:
-        "\"Engine-folk\": Kartan students' term, half admiring, half afraid."
+      butPlus: "Vynan arches, near workshops or the ship.",
+      patronHook: "A Kartan mage wants a copy of its engine notes, taken without it knowing.",
+      cityName: "\"Engine-folk\": Kartan students say it half admiring, half afraid."
     }
   },
 ];
