@@ -158,4 +158,83 @@ module.exports = [
       cityName: "\"Doorstones\": arch porters' word. \"Ask the doorstone\" means test a key."
     }
   },
+  {
+    world: "City of Arches",
+    tier: "Standard",
+    role: "Defender",
+    name: "The Steel Hands",
+    seb: true,
+    core: "Lady Kalya's hired knights. Her bodyguard Asher will die for her; the rest can be bought.",
+    description: "Matched steel plate with the gilt sanded off, a merchant lady in the middle, and " +
+      "a quiet woman with a longsword who never leaves her side.",
+
+    roster: [
+      { name: "Lady Kalya", level: 1, hp: 21,
+        actions: [
+          A("Paid in full", "Free, 1/round", "—", "A Steel Hand within 8 moves and attacks."),
+          P("No fighter", "Never attacks. Asher Interposes for her whenever she can."),
+        ] },
+      { name: "Steel Hand", level: 3, hp: 27, armor: "Medium",
+        actions: [
+          A("Longsword", "1 Action, ×2", "1d8+3", ""),
+          P("Mercenary", "Offered more than Kalya pays (Influence DC 12, and the coin), it walks away."),
+        ] },
+      { name: "Steel Hand Crossbow", level: 2, hp: 24, armor: "Medium",
+        actions: [
+          A("Heavy crossbow", "1 Action, Range 12", "2d6+3", ""),
+          P("Mercenary", "Offered more than Kalya pays (Influence DC 12, and the coin), it walks away."),
+        ] },
+      { name: "Silent Asher", level: 5, hp: 64, armor: "Medium",
+        actions: [
+          A("Longsword", "1 Action, ×2", "1d10+5", "Advantage against anyone who struck Kalya this round."),
+          A("Run through", "1 Action, 1/encounter", "2d10+10", "Against a Prone or Grappled target. Can't be Interposed."),
+          P("Sworn", "Never breaks off while Kalya lives. Can't be bought."),
+        ] },
+    ],
+    stats: { stage: "1-8" },
+
+    tactics: "Asher shadows Kalya, the Hands form a line, the crossbows shoot whoever talks. The Hands leave when the coin runs out.",
+    sources: "Adopted from the setting: Lady Kalya, Silent Asher and the Steel Hands (Appendix A, Children of Ibraxus).",
+
+    designNote:
+      "A rival crew the party can dismantle without a fight: outbid the Hands and only Asher is " +
+      "left. Kalya is a low-level villain with a deep purse and no sense of danger.",
+
+    traits: [
+      "Kalya wears a merchant lord's chain and a cult sigil under her collar.",
+      "Asher hasn't spoken in years. She answers with her eyes.",
+      "One Hand keeps a ledger of what Kalya owes him.",
+      "The Hands' armour is Golden Knight surplus with the gilt sanded off.",
+      "A crossbow Hand with a Black Hand debt mark on his wrist.",
+      "Kalya tips every servant twice what they're owed, and remembers their names."
+    ],
+    encounters: [
+      "Kalya buys the building the party is standing in, then asks them to leave.",
+      "A merchant who crossed Kalya is found run through. The Knights suspect Asher and can't prove it.",
+      "Two Hands approach the party off-duty and ask what the party would pay.",
+      "Kalya hires the party, through a cut-out, to find a lost arch ritual."
+    ],
+    lairs: [
+      "Kalya's counting-house, ledgers on every wall, a cult shrine behind the safe.",
+      "A barracks above a stable where the Hands dice for watch shifts.",
+      "A Lower Reaches chamber being cleared for a gateway, Hands on guard.",
+      "Asher's room: a bed, a whetstone, and nothing else."
+    ],
+    rumours: [
+      { true: true, text: "The Hands are hired. Pay them more and they walk." },
+      { true: true, text: "Asher will die for Kalya. Don't try to buy her." },
+      { true: false, text: "Kalya is a harmless merchant the cult uses for money." },
+      { true: false, text: "Asher works for the Golden Knights, undercover." }
+    ],
+    gigFit: {
+      verb: "Stop / Prove",
+      butPlus: "Faction result 'the Children of Ibraxus' at Stages 1-8, or the NPC-room rival crew once per episode.",
+      patronHook: "The Golden Knights want proof Asher did the murders. Roselyn Zeshe wants Kalya's ledgers.",
+      cityName: "\"Kalya's hands\": merchants' warning about who just bought the building next door.",
+      extra: [
+        ["Rival clock (6)", "1 Kalya buys a building the party needs. 2 A merchant dies. 3 The Hands hire the party's contact. 4 A ritual is found. 5 The Choul gateway room is cleared. 6 The gate opens. Moved by choices, never But+ alone."],
+        ["Campaign ladder", "Prove Asher's murders. Steal Kalya's ledgers. Stop the gateway. Buying off the Hands skips a fight at any rung."],
+      ],
+    },
+  },
 ];
