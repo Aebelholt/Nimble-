@@ -381,7 +381,23 @@ function worldDivider(w) {
   ];
 }
 
-function buildDoc(entries) {
+function moveIndex(index) {
+  const p = pal("Core Bestiary");
+  const kids = [para(run("Index of Named Moves", { font: HEAD, size: 32, bold: true }), { spacing: { after: 120 } }),
+    para(run("What the Core Bestiary's named moves look like at the table. Glosses add no rules; a Ruling is a suggested reading where the printed line is ambiguous.", { italics: true, size: 19 }), { spacing: { after: 160 } })];
+  const families = [...new Set(index.map((i) => i.family))];
+  families.forEach((f) => {
+    kids.push(sectionTitle(f, "Core Bestiary"));
+    index.filter((i) => i.family === f).forEach((i) => {
+      kids.push(para([run(i.move + (/[.!?]$/.test(i.move) ? " " : ". "), { bold: true }), run(i.gloss),
+        ...(i.ruling ? [run("  Ruling: ", { bold: true, italics: true, color: p.ink }), run(i.ruling, { italics: true })] : [])],
+        { spacing: { after: 60 } }));
+    });
+  });
+  return kids;
+}
+
+function buildDoc(entries, index) {
   const children = [...titlePage(entries), ...readingGuide()];
   WORLD_ORDER.forEach((w) => {
     const group = entries.filter((e) => e.world === w);
@@ -389,6 +405,7 @@ function buildDoc(entries) {
     children.push(...worldDivider(w));
     group.forEach((e) => children.push(...monsterEntry(e)));
   });
+  if (index && index.length) children.push(...moveIndex(index));
   return new Document({
     creator: "Sejr",
     title: "Sejr Monster Book",
@@ -422,7 +439,22 @@ if (require.main === module) {
     if (errs.length) { bad++; console.error(`${e.name || "?"}:\n  ${errs.join("\n  ")}`); }
   });
   if (bad) { console.error(`${bad} entr${bad === 1 ? "y" : "ies"} failed lint`); process.exit(1); }
-  Packer.toBuffer(buildDoc(entries)).then((buf) => {
+  const idxPath = path.join(__dirname, "move_index.js");
+  const index = fs.existsSync(idxPath) ? require(idxPath) : [];
+  // Index drift: every glossed move must exist in its family.
+  index.forEach((i) => {
+    const fam = entries.find((e) => e.name === i.family);
+    const moves = fam ? [...(fam.shared || []), ...(fam.roster || []).flatMap((m) => m.actions), ...(fam.actions || [])].map((a) => a.name) : [];
+    const ok = moves.some((m) => m === i.move || (i.move === "Haha, missed me!" && /^(Haha|Gotta)/.test(m)) || (i.move === "Goopy" && m.startsWith("Goopy")));
+    if (!ok) { bad++; console.error(`Index: "${i.move}" not found in ${i.family}`); }
+    if (/[\u2013\u2014]/.test(i.gloss + (i.ruling || ""))) { bad++; console.error(`Index: dash in "${i.move}"`); }
+  });
+  // Clarity watch: exclamation-named moves with no gloss.
+  entries.filter((e) => !e.seb).forEach((e) => [...(e.shared || []), ...(e.roster || []).flatMap((m) => m.actions), ...(e.actions || [])]
+    .filter((a) => /!$/.test(a.name) && !index.some((i) => i.move === a.name || (/^(Haha|Gotta)/.test(a.name) && i.move.startsWith("Haha"))))
+    .forEach((a) => console.warn(`Clarity watch: "${a.name}" (${e.name}) has no index gloss`)));
+  if (bad) { console.error(`${bad} index problems`); process.exit(1); }
+  Packer.toBuffer(buildDoc(entries, index)).then((buf) => {
     fs.writeFileSync(out, buf);
     console.log(`${entries.length} entries, ${WORLD_ORDER.filter((w) => entries.some((e) => e.world === w)).length} worlds -> ${out}`);
   });
