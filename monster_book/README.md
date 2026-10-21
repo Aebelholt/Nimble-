@@ -45,3 +45,8 @@ The book carries the Nimble 3rd Party Creator License attribution on its title p
 ## Deferred: encounter rewrite
 
 Not now. Making every encounter context-independent costs high-level play its tactics, since high-level fights lean on terrain. Revisit when high-level content is in use, probably as context-pivoting only (one generic terrain phrase) for Stages 9+ and fully context-independent for low levels. Current encounters stay as written.
+
+## Backlog
+
+- **Detailing index (clarity watch).** Some printed action names don't say what physically happens: the Bandit's "Hand it over!" (1d8, "or Shoot") is a weapon swing made while demanding the purse, but the name reads like a robbery. Core text stays as printed, so the fix is an auxiliary index at the back: one gloss line per named move (what it is, melee or ranged, what the fiction looks like). A lint warning could flag any action whose name is an exclamation and whose text names no weapon or means.
+- **Setting monsters worth adopting** (from the City of Arches book, Appendix A and F): arch guardians (clay, flesh, skeletal tomb), the Golden Knights as a city-watch family, the Steel Hands (Lady Kalya's buyable mercenaries) as a second rival crew, duergar dig crews (already cited by Deathreach entries), gibbering mouthers, grimlocks, lizardfolk mages.
