@@ -8,7 +8,7 @@ module.exports = [
     world: "City of Arches",
     tier: "Standard",
     role: "Skirmisher",
-    name: "The Gilded Hands",
+    name: "The Sterling Scabbards",
     seb: true,
     core: "The party in a mirror: four professionals who take the same jobs for the same patrons, and got there first.",
     description: "Good boots, clean kit, polite manners, paid on time. They owe the Black Hand, and " +
@@ -19,18 +19,18 @@ module.exports = [
         actions: [
           A("Rapier", "1 Action, ×2", "1d8+1", ""),
           A("Form up!", "Free, 1/round", "—", "Two allies within 8 move up to 4 spaces."),
-          P("Contract", "When Maren calls a retreat, each Hand moves away without provoking. Blocked, held or bargained with, they stay."),
+          P("Contract", "When Maren calls a retreat, each Scabbard moves away without provoking. Blocked, held or bargained with, they stay."),
         ] },
       { name: "Tobin Quill, Cheat", level: 2, hp: 24,
         actions: [
-          A("Dirty knife", "1 Action, ×2", "1d6+2", "Advantage against a target beside another Hand."),
+          A("Dirty knife", "1 Action, ×2", "1d6+2", "Advantage against a target beside another Scabbard."),
           A("Pick pocket", "1 Action, adjacent", "—", "Finesse contest: takes one unsecured item, never a held one."),
           A("Smoke and mirrors", "Reaction, 1/encounter, when Bloodied", "—", "Invisible until he attacks, and moves 4."),
         ] },
       { name: "Ysolde Rook, Hunter", level: 2, hp: 27,
         actions: [
           A("Longbow", "1 Action, Range 12", "2d6+3", ""),
-          A("Mark quarry", "Free, 1/round", "—", "One creature is Marked for the encounter. Each round the first Hand attack on it has advantage."),
+          A("Mark quarry", "Free, 1/round", "—", "One creature is Marked for the encounter. Each round the first Scabbard attack on it has advantage."),
           A("Snare", "1 Action, 1/encounter, Range 8", "—", "2-space radius. DEX save DC 11 or Restrained (escape DC 11)."),
         ] },
       { name: "Brother Anselm, Shepherd", level: 2, hp: 31,
@@ -46,20 +46,20 @@ module.exports = [
     sources: "Original. Built from the Sejr rival-crew tables: Neutral, wealthy, locally known, in debt to the Black Hand.",
 
     designNote:
-      "Rivals, not villains. They run when losing, but a crew that cannot run can be taken. Two Hands suit one hero; all four suit a party of three. Put them on the tracker at the second meeting.",
+      "Rivals, not villains. They run when losing, but a crew that cannot run can be taken. Two Scabbards suit one hero; all four suit a party of three. Put them on the tracker at the second meeting.",
 
     traits: [
       "Maren carries a pair of rapiers and uses only one.",
       "Tobin counts coins aloud, then leaves one behind on purpose.",
       "Ysolde buys every arrow fresh and never owns a spare.",
       "Anselm's holy symbol belongs to a god nobody has heard of.",
-      "All four have the same gilded-hand tattoo, each in a different place.",
+      "All four wear a sterling scabbard-tip, each on a different weapon.",
       "One of them (roll) is terrified of the Black Hand, and the rest know."
     ],
     encounters: [
       "They are already at the door the party came to open, resting in a row. Information is for sale.",
       "They offer to split the job and the pay. Tobin's smile says trap; Maren's says not.",
-      "A wounded Hand, left behind on purpose by the others.",
+      "A wounded Scabbard, left behind on purpose by the others.",
       "They are being robbed by someone worse, and ask politely for help."
     ],
     lairs: [
@@ -72,13 +72,13 @@ module.exports = [
       { true: true, text: "They don't die for coin. Make it cost more than the job and they walk." },
       { true: true, text: "They owe the Black Hand. Someone below is always watching them." },
       { true: false, text: "They are a Council front. Every job is on Zeshe's list." },
-      { true: false, text: "They always work alone. One Hand means you're about to be robbed." }
+      { true: false, text: "They always work alone. One Scabbard means you're about to be robbed." }
     ],
     gigFit: {
       verb: "Find / Prove / Steal",
       butPlus: "Faction result at Stages 1-8, or the NPC-room rival crew, once per episode. The second meeting goes on the tracker.",
-      patronHook: "The party's patron hired the Hands for the same job, to see who is better.",
-      cityName: "\"The Hands\": a Hand job is one already done properly.",
+      patronHook: "The party's patron hired the Scabbards for the same job, to see who is better.",
+      cityName: "\"Tips\": a tip job is one already done properly.",
       extra: [
         ["Rival clock (6)", "1 First to the objective. 2 Offer a split. 3 Take a promised job. 4 The Black Hand calls the debt. 5 The party is offered the debt, or the names. 6 Resolve: allied (the party took the debt), owned (the Black Hand holds them), or buried (captured, dead or disbanded). Step on when the party loses a scene to them or ignores a clue they left; step back when it outbids, exposes or helps them. Capturing or killing Maren jumps to 6."],
         ["Campaign ladder", "Find their buyer. Steal their cache before the Black Hand does. Prove it in the open, or refuse. Each rung can end with the crew allied, owned, or buried."],

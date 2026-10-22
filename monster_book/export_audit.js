@@ -280,7 +280,7 @@ Names below exist in the setting books. Treat them as canon. Treat any claim abo
 - Stat levels follow the Monster Builder table, not source levels. Entries cite a spreadsheet index of monster books; the text of 4e Monster Manuals 1 to 3, the Tales of the Valiant Monster Vault and Keith Ammann's tactics books was consulted for some entries, other books were not. Where a source line says original, no source text was used.
 - The Ochre Jelly appears twice on purpose (Core Oozes, and a Deathreach Elite).
 - Encounters at Stage 13 and above may depend on terrain; making every encounter context-independent was considered and deferred.
-- Two rival crews exist (the Gilded Hands, the Steel Hands) with six-step clocks and campaign ladders; a clock moves by player choices, never by But+ alone.
+- Two rival crews exist (the Sterling Scabbards, the Steel Hands) with six-step clocks and campaign ladders; a clock moves by player choices, never by But+ alone.
 - A Dolmenwood-style field set (number appearing, hoard, speech) and Elite lairs are not yet in the book.
 - Scope for this round: critique only monsters up to level 4, a party of level 3. Entries wholly above level 4 are parked: do not critique them (you may list them as parked in section A). For a family that spans levels, critique members up to level 4 and the family's shared text.
 - The reading guide's Turns, Saves and Holds lines are the book's rules for how a monster's costs, saves and escapes work; check entries against them, and flag a conflict with section 3.

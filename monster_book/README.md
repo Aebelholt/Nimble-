@@ -27,7 +27,7 @@ Entries marked `seb: true` are linted to these limits: a `core` line (max 22 wor
 
 The first section reproduces the Nimble GM Guide bestiary (19 families, about 60 stat blocks) in the book's format, unchanged. A family entry uses a `roster` (name, level, HP, armor, speed, actions) instead of the four-cell stat table, optional `shared` actions for traits every member has, and an optional `groups` line copied from the GM Guide's per-hero sample encounters. Printed conditions stand; an entry that keeps a banned one (the Basilisk's Petrified) names it in `allowConditions` and explains it in the designer note, or the lint fails.
 
-Original additions in the City of Arches section: **The Gilded Hands** (an early rival crew with a six-step clock and a three-gig ladder), **Hedge Casters** (four low-level controllers, each with a different verb), **Children of Ibraxus** (a rot cult built on Poisoned then Slowed) and **Serpent Cult of Vithra** (a blade-and-coil cult built on Restrained and Frightened). The GM Guide's own Cultists, Fanatics and Doomsayers are the rank and file for both.
+Original additions in the City of Arches section: **The Sterling Scabbards** (an early rival crew with a six-step clock and a three-gig ladder), **Hedge Casters** (four low-level controllers, each with a different verb), **Children of Ibraxus** (a rot cult built on Poisoned then Slowed) and **Serpent Cult of Vithra** (a blade-and-coil cult built on Restrained and Frightened). The GM Guide's own Cultists, Fanatics and Doomsayers are the rank and file for both.
 
 The book carries the Nimble 3rd Party Creator License attribution on its title page. Core stat blocks are Nimble Co.'s; the tables, tactics and gig lines are this book's.
 
