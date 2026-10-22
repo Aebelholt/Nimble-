@@ -263,7 +263,7 @@ Names below exist in the setting books. Treat them as canon. Treat any claim abo
 - Korax: a red star Veles over a petrified land; the city of Kor, the Red Deeps, mountain temple of Zyx, the Sundered Vaults of Athraxa.
 - Eruwynd: the Endless Forest; the elven ruins of Celevis and the Immortal's Blade; Dreadroot (hobgoblin queen Tresiira, the Iron Six); the Bluesteel Armada (seven dwarf sisters).
 - Threska and Arkus: Nameless King's ruined worlds; Teveron the Shadowed Mountain (grimlocks, ogres, giants, ogre mages chanting to keep primordials asleep); Averast.
-- Maphotar and Io: the Grenneth war machine, Agulon, the Triset scavengers; Io's Forge of Creation, the Silent Watch, the Iverundians.
+- Maphotar and Io: the Grenneth war machine forged by the archdevil Klamas, Agulon (once Klamas's seat, still held by his servants), the Triset scavengers; Io's Forge of Creation, the Silent Watch, the Iverundians.
 - Terrache: the Jaws of Chaos; shadow elf rulers Qinroris and Kraketen; the Violet Eye warlocks of Vestellis; the aboleth Zyn's Pillars of Sin.
 - Drendaan: air and sea; Gorvund's Spindle, the city of Barthen (queens Varuel, Nora, Thrancev), Irathas, the djinni Kesset.
 - Vynan: the Forgotten Laboratory; the lich Ivextus, storm giant Uzul, the crashed ship Yondoth, doppelganger replacement agents.
