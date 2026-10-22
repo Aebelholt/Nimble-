@@ -76,8 +76,8 @@ module.exports = [
     stats: { hp: 37, armor: "Medium", speed: "8", dc: 12, stage: "13+" },
 
     actions: [
-      A("Bite", "1 Action", "1d10+6", "Spends a dose (3; unlimited in its room): STR save or Poisoned, Slowed or Dazed. Then moves 4."),
-      A("Ward-word", "Passive", "", "Read the word on the temple walls (Lore DC 14) and speak it: it halts for a round."),
+      A("Bite", "1 Action", "1d10+6", "Dose (3; endless in its room): STR save or Poisoned, Slowed or Dazed, its pick, one turn. Then moves 4."),
+      A("Ward-word", "Passive", "", "Speak the word from the temple walls (Lore DC 14) to halt it a round, once."),
       A("Construct", "Passive", "", "Immune to Poisoned, Frightened and Charmed. Never chases past its temple door."),
     ],
 
@@ -136,9 +136,9 @@ module.exports = [
     stats: { hp: 41, armor: "None", speed: "6 (tethered)", dc: 12, stage: "13+" },
 
     actions: [
-      A("Terrifying glare", "1 Action, Range 6", "", "WIL save or Frightened until the end of the target's next turn. Already Frightened, Dazed."),
+      A("Terrifying glare", "1 Action, Range 6", "", "WIL save or Frightened until the end of the scarecrow's next turn. Already Frightened, Dazed."),
       A("Claws", "1 Action, ×2", "1d6+4", "Advantage against a Frightened target."),
-      A("Hitched", "Passive", "", "Can't go beyond 6 of its pole. Cut the rope (1 Action) and it's free, its glare doubling in range."),
+      A("Hitched", "Passive", "", "Tethered within 6 of its pole; cutting the rope frees it, doubling glare range. Fire does it double damage."),
     ],
 
     tactics: "Glares at anyone in its circle, claws whoever reaches the pole. Never breaks off and never forgets a face.",

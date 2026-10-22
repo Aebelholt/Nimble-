@@ -17,7 +17,7 @@ module.exports = [
 
     actions: [
       A("Claws", "1 Action, ×2", "1d6+4", "STR save or Dazed next turn; already Dazed, Slowed. Two adjacent meenlocks drag a Dazed hero 3 spaces."),
-      A("Horrid link", "Free, 1/round, Range 10", "", "Links one hero until its next turn: Frightened, and 1d6+2 psychic whenever the meenlock is hurt."),
+      A("Horrid link", "Free, 1/round, Range 10", "", "Links one hero until its next turn: Frightened, 1d6+2 psychic whenever it's hurt. Bright light breaks the link."),
       A("Shadow step", "1 Action", "", "Teleports 8 spaces, dark to dark, never into bright light. Again only after it is hit or a round passes."),
     ],
 
@@ -26,7 +26,7 @@ module.exports = [
 
     designNote:
       "Hurting it hurts your friend, so the party chooses whether to swing. Light is the answer: " +
-      "keep torches lit and a horror hunt becomes a fair fight. Victims turn unless the meenlock that marked them burns.",
+      "keep torches lit and a horror hunt becomes a fair fight. A hero kept in the burrow two days turns; burning the marker frees them.",
 
     traits: [
       "Red clay in its fur. Fresh up from the Red Deeps.",
@@ -77,7 +77,7 @@ module.exports = [
 
     actions: [
       A("Stolen blade", "1 Action", "1d8+3", "Advantage if unseen. Swap damage for an unsecured item, then move 4 without provoking."),
-      A("Snuff", "1 Action, 1/encounter", "", "Every flame within 6 goes out. Heroes without darkvision are Blind until they relight one."),
+      A("Snuff", "1 Action, 1/encounter", "", "Every flame within 6 goes out. Heroes without darkvision are Blind until they relight one. Creepers see in the dark."),
       A("Flare", "Passive, on death", "", "Burns away in a flash: DEX save or Blind a turn within 2. Its loot drops."),
     ],
 
@@ -112,7 +112,7 @@ module.exports = [
       { true: true, text: "They burn up in a flash when they die. Close your eyes." },
       { true: true, text: "Offer lamp oil and they'll tell you anything about the Red Deeps." },
       { true: false, text: "Their blades are poisoned. One cut costs an arm." },
-      { true: false, text: "They see in the dark like cats, so fighting without light is hopeless." }
+      { true: false, text: "Bring a torch and they won't come near. They fear fire." }
     ],
     gigFit: {
       verb: "Steal / Find",
@@ -138,14 +138,14 @@ module.exports = [
     actions: [
       A("Bites", "1 Action", "2d6+5", "One creature in or beside its space. Half damage once Bloodied."),
       A("Swarm", "Passive", "", "Its space is Difficult Terrain; starting a turn in or beside it costs 1d6. Single targets half, AoE double."),
-      A("Mind leash", "1 Action, 1/round, adult neogi within 12", "", "WIL save or the swarm chooses where the target moves next turn. Never their actions."),
+      A("Mind leash", "1 Action, 1/round", "", "WIL save or the swarm chooses where the target moves next turn. Never their actions."),
     ],
 
     tactics: "Pours over the nearest body. With an adult watching, it herds prey instead. Scatters when the adult falls.",
     sources: "Monster Vault: Conflux Creatures: Aberrations & Dragons, CR 1. Swarm aura (4e MM2 Neogi Spawn Swarm). Death scream cut.",
 
     designNote:
-      "The leash needs an adult nearby, so the adult is the real target. When it works, it walks " +
+      "The leash steers feet, never hands. It walks " +
       "heroes into the pit while they keep swinging. AoE is the answer.",
 
     traits: [

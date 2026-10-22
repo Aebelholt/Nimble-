@@ -15,11 +15,11 @@ module.exports = [
       "everyone in the Lower Reaches knows it.",
 
     roster: [
-      { name: "Maren Vale, Commander", level: 3, hp: 41, armor: "Medium",
+      { name: "Maren Vale, Commander", level: 3, hp: 27, armor: "Medium",
         actions: [
-          A("Rapier", "1 Action, ×2", "1d8+3", ""),
+          A("Rapier", "1 Action, ×2", "1d8+1", ""),
           A("Form up!", "Free, 1/round", "—", "Two allies within 8 move up to 4 spaces."),
-          P("Contract", "When Maren calls the retreat, every member disengages for free and leaves."),
+          P("Contract", "When Maren calls a retreat, each Hand moves away without provoking. Blocked, held or bargained with, they stay."),
         ] },
       { name: "Tobin Quill, Cheat", level: 2, hp: 24,
         actions: [
@@ -46,8 +46,7 @@ module.exports = [
     sources: "Original. Built from the Sejr rival-crew tables: Neutral, wealthy, locally known, in debt to the Black Hand.",
 
     designNote:
-      "Rivals, not villains. They run when losing, so there is never a clean kill to end the " +
-      "thread. Put them on the tracker at the second meeting; for higher parties, add a level each.",
+      "Rivals, not villains. They run when losing, but a crew that cannot run can be taken. Two Hands suit one hero; all four suit a party of three. Put them on the tracker at the second meeting.",
 
     traits: [
       "Maren carries a pair of rapiers and uses only one.",
@@ -81,7 +80,7 @@ module.exports = [
       patronHook: "The party's patron hired the Hands for the same job, to see who is better.",
       cityName: "\"The Hands\": a Hand job is one already done properly.",
       extra: [
-        ["Rival clock (6)", "1 First to the objective. 2 Offer a split. 3 Take a promised job. 4 The Black Hand calls the debt. 5 The party is offered the debt, or the names. 6 Disband, switch sides, or die. Moved by choices, never But+ alone."],
+        ["Rival clock (6)", "1 First to the objective. 2 Offer a split. 3 Take a promised job. 4 The Black Hand calls the debt. 5 The party is offered the debt, or the names. 6 Resolve: allied (the party took the debt), owned (the Black Hand holds them), or buried (captured, dead or disbanded). Step on when the party loses a scene to them or ignores a clue they left; step back when it outbids, exposes or helps them. Capturing or killing Maren jumps to 6."],
         ["Campaign ladder", "Find their buyer. Steal their cache before the Black Hand does. Prove it in the open, or refuse. Each rung can end with the crew allied, owned, or buried."],
       ],
     },
@@ -110,17 +109,17 @@ module.exports = [
           A("Stage fright", "1 Action, 1/round, Range 8", "—", "WIL save DC 11 or Frightened of it until their next turn ends."),
           A("Mirror masks", "1 Action, 1/encounter", "—", "Two harmless 1 HP decoys within 4. While one is adjacent, attacks on the Masquer are disadvantaged."),
         ] },
-      { name: "Writ-Binder", level: 3, hp: 38, armor: "Medium",
+      { name: "Writ-Binder", level: 3, hp: 34,
         actions: [
-          A("Writ of seizure", "1 Action, Range 8", "—", "DEX save DC 12 or Restrained by glowing script. An ally's touch breaks it."),
+          A("Writ of seizure", "1 Action, Range 8", "—", "DEX save DC 12 or Restrained until their next turn ends, or until an ally touches the script."),
           A("Writ of silence", "1 Action, 1/encounter, Range 6", "—", "WIL save DC 12 or Silenced until their next turn ends."),
           A("Writ of citation", "Free, 1/round", "—", "A target is Taunted by the Writ-Binder until their next turn ends."),
         ] },
       { name: "Kartan Hedge-Mage", level: 4, hp: 42,
         actions: [
           A("Slowing bolt", "1 Action, Range 12", "2d6+5", "Slowed until their next turn ends."),
-          A("Gravity well", "2 Actions, 1/encounter, Range 8", "—", "2-space radius: STR save DC 13 or pulled 3 to the centre and Prone."),
-          A("Overreach", "Reaction, when crit", "1d8", "Backlash: it takes the damage and loses its next Free action."),
+          A("Gravity well", "Replaces its attacks, 1/encounter, Range 8", "—", "2-space radius: STR save DC 13 or pulled 3 to the centre and Prone."),
+          A("Overreach", "Reaction, when crit", "1d8", "Backlash: it takes the damage and its next attack is disadvantaged."),
         ] },
     ],
     stats: { stage: "1-8" },
@@ -179,7 +178,7 @@ module.exports = [
       { name: "Mire Acolyte", level: 1, hp: 20,
         actions: [
           A("Rotten blade", "1 Action", "1d6+4", "Poisoned until the target's next turn ends."),
-          P("Carrier", "A Poisoned creature starting a turn beside a Child takes 1d4."),
+          P("Carrier", "A Poisoned creature starting its turn beside any Child takes 1d4, once, however many Children."),
         ] },
       { name: "Censer-Bearer", level: 2, hp: 28,
         actions: [
@@ -190,7 +189,7 @@ module.exports = [
         actions: [
           A("Plague sermon", "1 Action, 1/round", "—", "Enemies within 8 who hear: STR save DC 12 or Poisoned a turn. Already Poisoned, also Slowed."),
           A("Fever touch", "1 Action", "2d6+4", "A Poisoned target is Slowed."),
-          P("Share the fever", "Once a round, takes half the damage dealt to an ally within 6."),
+          P("Share the fever", "Once a round, splits damage dealt to an ally within 6: it takes half, the ally half."),
         ] },
     ],
     stats: { stage: "7-10, 13+" },
@@ -248,7 +247,7 @@ module.exports = [
     roster: [
       { name: "Blade-Dancer", level: 2, hp: 28,
         actions: [
-          A("Twin blades", "1 Action, ×2", "1d6+3", "On crit, Slowed."),
+          A("Twin blades", "1 Action, ×2", "1d6", "On crit, Slowed."),
           A("Sway", "Reaction, 1/round, targeted in melee", "—", "Moves 2 first. Out of reach, the attack misses."),
         ] },
       { name: "Serpent-Charmer", level: 3, hp: 38,

@@ -337,7 +337,7 @@ module.exports = [
       "A bathhouse turned temple, all steam, and the water is the wrong colour."
     ],
     rumours: [
-      { true: true, text: "Fire or a blade frees you from a grapple, and a crit on either of you breaks it." },
+      { true: true, text: "A crit on you or the snakeman breaks its coil. So does being knocked apart." },
       { true: true, text: "The Cobra Captain is the one giving the orders. Take him out and the snakemen just hiss." },
       { true: false, text: "Snakemen are cold-blooded and slow in a chill. Bring ice and they sleep." },
       { true: false, text: "The Black Hand has a treaty with the snakemen. Show a Black Hand mark and they stand aside." }
@@ -493,7 +493,7 @@ module.exports = [
     ],
     rumours: [
       { true: true, text: "Poke anything that looks too good with a ten-foot pole before you touch it." },
-      { true: true, text: "A mimic cannot move once it has stuck. Cut free the grabbed and get out." },
+      { true: true, text: "A crit on a mimic pries one creature loose, the attacker's choice." },
       { true: false, text: "Mimics only pretend to be chests. Anything else is just furniture." },
       { true: false, text: "A mimic can only hold one creature at a time. Send the sturdiest in first." }
     ],

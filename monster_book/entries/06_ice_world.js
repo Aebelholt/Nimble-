@@ -73,7 +73,7 @@ module.exports = [
     description: "A lumbering figure of packed snow and ice, pebble eyes set in a child's lopsided " +
       "drawing of a face.",
 
-    stats: { hp: 52, armor: "None", speed: "4", dc: 12, stage: "13+" },
+    stats: { hp: 52, armor: "None", speed: "4", dc: 12, stage: "13+, winter city" },
 
     actions: [
       A("Slam", "1 Action", "1d10+6", "Cold. A melee weapon that hits it sticks: its next attack is disadvantaged."),

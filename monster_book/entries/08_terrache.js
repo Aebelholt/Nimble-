@@ -78,7 +78,7 @@ module.exports = [
     actions: [
       A("Void lash", "1 Action, Range 8", "1d10+6", "Pulls the target 2 spaces toward it or the nearest Pillar of Sin."),
       A("Unravel", "1 Action, 1/round, Range 8", "", "WIL save or Dazed on the target's next turn."),
-      A("Leak", "Passive", "", "Hits on it deal 1d6 to all within 1. Dying, it implodes: DEX save or 2d6, pulled in, Prone."),
+      A("Leak", "Passive", "", "Hits on it burn all within 1 (1d6). At 0 HP it implodes: 2d6 within 2, pulled in."),
     ],
 
     tactics: "Lashes whoever is closest, because closest is loudest. Breaks off only by dying, and that hurts everyone.",

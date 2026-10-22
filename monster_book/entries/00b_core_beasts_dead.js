@@ -280,7 +280,7 @@ module.exports = [
     ],
     rumours: [
       { true: true, text: "Once it latches, it never misses. Kill it off you fast, or burn it." },
-      { true: true, text: "Light scares them. A bright lantern turns the swarm." },
+      { true: true, text: "A plain stirge has only 10 HP. Kill them fast and the latch ends." },
       { true: false, text: "They only drink from sleepers. Stay awake and you'll be fine." },
       { true: false, text: "A pinch of salt on the wound makes it let go." }
     ],
@@ -427,7 +427,7 @@ module.exports = [
     ],
     rumours: [
       { true: true, text: "Radiance makes them vulnerable. A holy light turns the fight." },
-      { true: true, text: "A specter that touches you and fails is gone for a round. Don't panic." },
+      { true: true, text: "Its touch only drops you if it does damage. Enough Defense turns it into a cold hand." },
       { true: false, text: "Salt on the threshold keeps a ghost out." },
       { true: false, text: "A spirit can only be hurt by a weapon blessed by a priest." }
     ],

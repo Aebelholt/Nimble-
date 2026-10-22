@@ -18,7 +18,7 @@ module.exports = [
     actions: [
       A("Wear a face", "1 Action", "", "Copies a humanoid it saw this scene. Spotting it takes Examination DC 12."),
       A("Knife", "1 Action, ×2", "1d8+2", "+1d6 with advantage. Always advantaged against someone who doesn't know what it is."),
-      A("Swap", "Reaction, 1/round", "", "Trades places with an adjacent bystander and takes their face. The attack hits them."),
+      A("Swap", "Reaction, 1/round", "", "When a melee attack targets it beside a bystander: swaps places and takes their face. The attack hits the bystander."),
     ],
 
     tactics: "Would rather not fight. Strikes first, at the hero who doubts it most. Bloodied, it walks into a crowd as someone else.",
@@ -136,9 +136,9 @@ module.exports = [
     stats: { hp: 37, armor: "Medium", speed: "4 (climb 6)", dc: 12, stage: "7-10" },
 
     actions: [
-      A("Throat grab", "1 Action, Reach 3", "1d8+5", "Grappled, Silenced and hoisted 2 spaces up. Escapes have disadvantage."),
+      A("Throat grab", "1 Action, Reach 3", "1d8+5", "Grappled (escape DC 12 at disadvantage), Silenced, hoisted 2 spaces. Escaping drops them, Prone."),
       A("Squeeze", "1 Action, held target", "1d6+8", "Can't miss."),
-      A("Body shield", "Reaction, recharges on a hit", "", "Swings its catch into the way. The attack hits the victim."),
+      A("Body shield", "Reaction, 1/round, while it holds someone", "", "An attack on the choker hits its catch instead, who may Defend."),
     ],
 
     tactics: "Takes the caster or the singer, then whoever comes to help. Bloodied, it drops its catch and leaves by any grate within 10.",

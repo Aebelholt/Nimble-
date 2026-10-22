@@ -52,6 +52,11 @@ Not now. Making every encounter context-independent costs high-level play its ta
 - Paste it into a fresh model session, save the answer as `analysis/monster_audit_vN_result.md`, and triage with `analysis/monster_audit_triage_template.md`. Regenerate the prompt after every fix so the next round audits the current book.
 - `node monster_book/check_core.js` (also run by every build) checks every Core Bestiary member's level, name, HP and armor, and every dice expression, against the GM Guide text. The prompt tells the auditor the Core numbers are machine-checked, so it spends its attention elsewhere.
 
+## Parked for play (not for now)
+
+- **Hell Hound chase episode.** Soul-scent as an unlimited tracker is a hostile threat the party can outrun with a plea to celestial power or a proper religious ritual. A hound the party courts and breaks would make a Find gig easy, and the difficulty lands somewhere else. Revisit when a party reaches level 5.
+- **Draw Steel oozes** (the "Time to Ooze" supplement): splitting that conserves Stamina, a malice-gated Congeal, ooze as dynamic terrain, and oozes born of place. Ideas to fold into the Oozes family if its level 4 and below members are revisited.
+
 ## Backlog
 
 - **Detailing index: done.** `move_index.js` glosses about 75 printed Core moves (what it looks like, melee or ranged) and gives a marked Ruling where print is ambiguous (Specter's Deathly touch and Corrupt, Bandit's Inept, minion dice). It renders as an appendix. The build fails if a glossed move no longer exists, and warns (clarity watch) on any printed exclamation-named move without a gloss.

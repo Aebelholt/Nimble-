@@ -17,10 +17,10 @@ module.exports = [
     roster: [
       { name: "Watch Guard", level: "Min", hp: "Minion",
         actions: [A("Halt!", "1 Action", "1d8", "A spear jab, shouted. Follows the GM Guide minion rules.")] },
-      { name: "Golden Knight", level: 3, hp: 27, armor: "Medium",
+      { name: "Golden Knight", level: 3, hp: 34,
         actions: [
-          A("Halberd", "1 Action, ×2, Reach 2", "1d6+4", ""),
-          P("Formation", "Armor one step heavier for each adjacent Knight, to Heavy."),
+          A("Halberd", "1 Action, ×2, Reach 2", "1d6+2", ""),
+          P("Formation", "Armor one step heavier for each adjacent Knight, up to Medium."),
         ] },
       { name: "Knight Sergeant", level: 4, hp: 37, armor: "Medium",
         actions: [
@@ -83,10 +83,6 @@ module.exports = [
     role: "Defender",
     name: "Arch Guardians",
     seb: true,
-    shared: [
-      P("Keyed", "Ignores anyone carrying its arch's key, unless they attack it."),
-      P("Bound", "Never moves more than 12 spaces from its arch."),
-    ],
     core: "Whoever built the arches left them watched. A guardian wakes when its arch opens without the right key.",
     description: "Bone, clay, stitched flesh or carved stone, standing at a gate so long that dust " +
       "has drifted against its feet.",
@@ -95,13 +91,13 @@ module.exports = [
       { name: "Skeletal Tomb Guardian", level: 2, hp: 31,
         actions: [
           A("Glaive", "1 Action, Reach 2", "1d4+7", ""),
-          A("Bar the way", "Reaction, enemy moves within 2", "—", "Glaive them first."),
+          A("Bar the way", "Reaction, 1/round, enemy moves within 2", "—", "Glaive them first."),
           P("Just bones!", "Resistant to piercing hits (not crits)."),
         ] },
       { name: "Flesh Guardian", level: 4, hp: 52,
         actions: [
           A("Fists", "1 Action, ×2", "1d8+4", "If both hit: Grappled and dragged 2 toward the arch."),
-          P("Stitched", "Lightning heals it. Fire makes it lose its next Free action."),
+          P("Stitched", "Lightning heals it. Fire makes its next Fists attack disadvantaged."),
         ] },
       { name: "Clay Guardian", level: 5, hp: 49, armor: "Medium",
         actions: [
@@ -118,12 +114,12 @@ module.exports = [
     ],
     stats: { stage: "Any arch" },
 
-    tactics: "Holds the threshold. Strikes whoever crosses without the key, pushes them back, never follows past 12 spaces.",
+    tactics: "Holds the threshold, ignoring any key-bearer who doesn't attack it. Strikes everyone else; never goes past 12 spaces from its arch.",
     sources: "Adopted from the setting: clay guardians at arches (Deathreach seed, Deadlands), skeletal tomb guardians (Threska seed), flesh and stone guardians. Keyed and Bound are this book's.",
 
     designNote:
       "Keys are Sejr's politics, and guardians enforce them. Steal the key and the fight never " +
-      "happens. Fight the guardian and the gate still won't open.",
+      "happens. Fight the guardian and the gate still won't open. A key shields only its bearer.",
 
     traits: [
       "Dust drifted against its feet, undisturbed for centuries.",
@@ -179,7 +175,7 @@ module.exports = [
           A("Longsword", "1 Action, ×2", "1d8+3", ""),
           P("Mercenary", "Offered more than Kalya pays (Influence DC 12, and the coin), it walks away."),
         ] },
-      { name: "Steel Hand Crossbow", level: 2, hp: 24, armor: "Medium",
+      { name: "Steel Hand Crossbow", level: 2, hp: 24,
         actions: [
           A("Heavy crossbow", "1 Action, Range 12", "2d6+3", ""),
           P("Mercenary", "Offered more than Kalya pays (Influence DC 12, and the coin), it walks away."),
@@ -198,7 +194,7 @@ module.exports = [
 
     designNote:
       "A rival crew the party can dismantle without a fight: outbid the Hands and only Asher is " +
-      "left. Kalya is a low-level villain with a deep purse and no sense of danger.",
+      "left. Kalya is a low-level villain with a deep purse and no sense of danger. For one hero: Kalya, one Hand, no Asher.",
 
     traits: [
       "Kalya wears a merchant lord's chain and a cult sigil under her collar.",
@@ -232,7 +228,7 @@ module.exports = [
       patronHook: "The Golden Knights want proof Asher did the murders. Roselyn Zeshe wants Kalya's ledgers.",
       cityName: "\"Kalya's hands\": merchants' warning about who just bought the building next door.",
       extra: [
-        ["Rival clock (6)", "1 Kalya buys a building the party needs. 2 A merchant dies. 3 The Hands hire the party's contact. 4 A ritual is found. 5 The Choul gateway room is cleared. 6 The gate opens. Moved by choices, never But+ alone."],
+        ["Rival clock (6)", "1 Kalya buys a building the party needs. 2 A merchant dies. 3 The Hands hire the party's contact. 4 A ritual is found. 5 The Choul gateway room is cleared. 6 The gate opens. Step on when the party ignores a clue, loses a scene or takes Kalya's coin; step back when it outbids the Hands, exposes a murder or takes the ritual. Capturing or killing Kalya, or holding the gateway room, ends the clock."],
         ["Campaign ladder", "Prove Asher's murders. Steal Kalya's ledgers. Stop the gateway. Buying off the Hands skips a fight at any rung."],
       ],
     },

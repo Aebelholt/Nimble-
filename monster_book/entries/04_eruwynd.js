@@ -21,7 +21,7 @@ module.exports = [
       A("Stand for the knight", "Reaction, 1/round", "", "Takes a hit meant for an ally within 2. The attacker: WIL save or Prone with sleep."),
     ],
 
-    tactics: "Holds its post against whoever approaches it. Never breaks off; dropped, it wakes at dawn unless its dream is broken.",
+    tactics: "Holds its post. Never breaks off; dropped, it wakes at dawn unless someone wakes its dreamer (Influence DC 12, beside them).",
     sources: "Monster Vault: Creature Codex, CR 2. Rebuilt as Celevis's sentinel elves (canon).",
 
     designNote:
@@ -38,7 +38,7 @@ module.exports = [
     ],
     encounters: [
       "Two squires at a door bow to the party and draw. The door hums with sleep.",
-      "A squire walks at night under a cloud of moths. Everyone it passes falls asleep standing.",
+      "A squire walks at night under a cloud of moths. Bystanders it passes nod off; heroes only feel Drowse.",
       "Bluesteel hunters have caught one as a trophy. The crew is nodding off.",
       "The party wakes with their gear laid out neatly. A squire guards them and won't say who ordered it."
     ],

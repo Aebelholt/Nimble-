@@ -39,7 +39,7 @@ module.exports = [
 
     designNote:
       "Darkness is home ground. The chanter is the trap: killing it wins the fight and wakes " +
-      "the mountain. Advance the Waking clock one step each round after.",
+      "the mountain. Advance the Waking clock one step each round after. At 4 the floor splits: the party flees, or something old surfaces.",
 
     traits: [
       "Skin grey as cave clay, ridged where eyes should be.",

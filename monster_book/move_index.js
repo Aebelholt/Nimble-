@@ -89,7 +89,7 @@ module.exports = [
   g("Cultists", "Despair", "Disadvantage on everything, until the hero deals or heals any damage."),
   g("Cultists", "Whispers of madness", "Psychic whispers that hold a despairing hero in place. Radiant breaks it."),
   g("Cultists", "Feverish chant", "Allies who hear the Doomsayer take only 1 damage from each hit."),
-  g("Cultists", "Ecstatic outburst", "A scream of joy that hurts every despairing hero."),
+  g("Cultists", "Ecstatic outburst", "A scream of joy that hurts every despairing hero.", "Printed as a Passive with no trigger. Read as: once, at the start of the Doomsayer's turn."),
 
   g("Lesser Fiends", "Putrid cloud", "A stenchling bursts when it dies, hitting enemies within 2."),
   g("Lesser Fiends", "Spines", "Hitting it in melee costs the attacker 4 damage."),

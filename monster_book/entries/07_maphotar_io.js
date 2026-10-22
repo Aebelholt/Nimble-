@@ -78,14 +78,14 @@ module.exports = [
     actions: [
       A("Bite", "1 Action", "1d10+5", "Fire, Smoldering."),
       A("Molten web", "1 Action, Range 6", "", "DEX save or Restrained, taking 1d6 fire each turn. Escape DC 12, or cool it with water."),
-      A("Molt", "Reaction, 1/encounter, would drop to 0", "", "Sheds its shell, stays at 1 HP and moves 6. The shell burns anyone ending a turn beside it."),
+      A("Molt", "Reaction, 1/encounter, would drop to 0", "", "Sheds its shell, stays at 1 HP, moves 6. The shell burns 1d6 to anyone ending a turn beside it."),
     ],
 
     tactics: "Hunts in groups, hidden in heat: one webs, the others knock prey in and swarm the Restrained. Leaves when half are dead.",
     sources: "Monster Vault: Conflux Creatures: Elementals & Fiends, CR 4 (tactics note).",
 
     designNote:
-      "The webbed hero still acts, and the party's job is clear: cool it or cut it. Molt means the " +
+      "The webbed hero still acts, and the party's job is clear: cool it or break free. Molt means the " +
       "first kill doesn't count.",
 
     traits: [

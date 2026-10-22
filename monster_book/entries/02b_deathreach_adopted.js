@@ -17,10 +17,10 @@ module.exports = [
     roster: [
       { name: "Dig-Hand", level: "Min", hp: "Minion",
         actions: [A("Shovel", "1 Action", "1d6", "A flat-bladed swing. Follows the GM Guide minion rules.")] },
-      { name: "Duergar Delver", level: 2, hp: 31, armor: "Medium",
+      { name: "Duergar Delver", level: 2, hp: 31,
         actions: [
-          A("Pick", "1 Action, ×2", "1d6+2", ""),
-          A("Swell", "Free, 1/encounter", "—", "Grows Large until its next turn ends: Reach 2, +4 damage."),
+          A("Pick", "1 Action, ×2", "1d6", ""),
+          A("Swell", "Free, 1/encounter", "—", "Grows Large until its next turn ends: Reach 2, +2 damage."),
         ] },
       { name: "Drill-Wright", level: 4, hp: 37, armor: "Medium",
         actions: [
@@ -87,7 +87,7 @@ module.exports = [
 
     actions: [
       A("Bites", "1 Action, ×2", "1d6+5", "A Prone target is bitten with advantage."),
-      A("Gibbering", "Passive, Reach 4", "", "Heroes starting a turn near it: WIL save or the GM picks where they move. Actions stay theirs."),
+      A("Gibbering", "Passive, Reach 4", "", "WIL save DC 12 or the GM moves them up to 3 spaces; the hero keeps all their actions."),
       A("Blinding spittle", "1 Action, 1/encounter, Range 6", "", "2-space radius: DEX save or Blind until their next turn ends."),
     ],
 
@@ -143,9 +143,9 @@ module.exports = [
       "as if the walls answer. They do.",
 
     roster: [
-      { name: "Lizardfolk Warden", level: 2, hp: 31, armor: "Medium",
+      { name: "Lizardfolk Warden", level: 2, hp: 31,
         actions: [
-          A("Spear", "1 Action, ×2, Reach 2", "1d6+2", ""),
+          A("Spear", "1 Action, ×2, Reach 2", "1d6", ""),
           A("Hold breath", "Passive", "—", "Fights underwater as on land."),
         ] },
       { name: "Lizardfolk Mage", level: 5, hp: 49,
