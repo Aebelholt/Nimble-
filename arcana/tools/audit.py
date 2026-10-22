@@ -20,6 +20,7 @@ Exit status 1 if any check fails without an exception.
 import json, pathlib, re, sys
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
+REF = ROOT.parent / "reference"
 CARDS = json.loads((ROOT / "data/sejr_arcana.json").read_text())
 EXC_PATH = ROOT / "tools/audit_exceptions.json"
 EXC = json.loads(EXC_PATH.read_text()) if EXC_PATH.exists() else {}
@@ -48,7 +49,7 @@ def text_of(c):
 
 def build_vocab():
     words = set()
-    srcs = list((ROOT / "rules").rglob("*.txt")) + list((ROOT / "setting").glob("*.md"))
+    srcs = list((REF / "rules").rglob("*.txt")) + list((REF / "setting").glob("*.md"))
     for p in srcs:
         for w in re.findall(r"[A-Za-z][A-Za-z'’-]*", p.read_text(errors="ignore")):
             words.add(w.lower().replace("’", "'"))
@@ -61,7 +62,7 @@ def build_vocab():
 
 VOCAB, OWN = build_vocab()
 CLASS_ABILITIES = set()
-for _p in (ROOT / "rules/classes").glob("*.txt"):
+for _p in (REF / "rules/classes").glob("*.txt"):
     for _m in re.finditer(r"(?m)(?:^|•\s*)([A-Z][A-Za-z'’ ]{2,30})\.\s", _p.read_text(errors="ignore")):
         CLASS_ABILITIES.add(_m.group(1).strip().replace("’", "'"))
 

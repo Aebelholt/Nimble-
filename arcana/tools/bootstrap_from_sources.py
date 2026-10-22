@@ -12,6 +12,7 @@ Run once; later edits happen in the JSON directly.
 import json, re, subprocess, zipfile, html, pathlib, sys
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
+REF = ROOT.parent / "reference"
 CLASSES = ["BERSERKER", "CHEAT", "COMMANDER", "HUNTER", "MAGE", "OATHSWORN",
            "SHADOWMANCER", "SHEPHERD", "SONGWEAVER", "STORMSHIFTER", "ZEPHYR"]
 
@@ -27,7 +28,7 @@ def sentences(text):
 
 
 def class_cards():
-    z = zipfile.ZipFile(ROOT / "sources/class_arcana_v3.docx")
+    z = zipfile.ZipFile(REF / "sources/class_arcana_v3.docx")
     x = z.read("word/document.xml").decode()
     x = re.sub(r"</w:p>", "\n", x)
     x = html.unescape(re.sub(r"<[^>]+>", "", x))
@@ -92,7 +93,7 @@ def class_cards():
 
 
 def found_cards():
-    src = (ROOT / "sources/sejr_arcana_perchance_original.txt").read_text()
+    src = (REF / "sources/sejr_arcana_perchance_original.txt").read_text()
     m = re.search(r"arcana_data\(\) =>\s*return (\{.*?\n  \});", src, re.S)
     js = "const o=" + m.group(1) + ";console.log(JSON.stringify(o));"
     raw = json.loads(subprocess.check_output(["node", "-e", js]))

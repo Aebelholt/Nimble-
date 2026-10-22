@@ -9,8 +9,9 @@ Cut cards are left out. Found cards with pool 'faction_reward' go to faction_rew
 import json, pathlib, re
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
+REF = ROOT.parent / "reference"
 cards = [c for c in json.loads((ROOT / "data/sejr_arcana.json").read_text()) if c["status"] != "cut"]
-orig = (ROOT / "sources/sejr_arcana_perchance_original.txt").read_text()
+orig = (REF / "sources/sejr_arcana_perchance_original.txt").read_text()
 found = [c for c in cards if c["kind"] == "found"]
 draw_all = [c for c in found if c.get("pool", "draw") == "draw"]
 draw = [c for c in draw_all if not c.get("legacy_slot")]

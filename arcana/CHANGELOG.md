@@ -1,6 +1,6 @@
 # Changelog
 
-Arcana rework for Sejr (Nimble 2, City of Arches). Branch `ccr-cae13937-ajbjcv`.
+Arcana rework for Sejr (Nimble 2, City of Arches). Paths below are relative to `arcana/`; setting, rules and sources now live in `../reference/`.
 
 ## Read this first
 

@@ -240,6 +240,8 @@ Names below exist in the setting books. Treat them as canon. Treat any claim abo
 
 ### Decisions the GM has made (do not flag as errors)
 
+- Priorities: fun first, rules second, lore third. This is an arches-first campaign about discovery and exploration, not a lore-faithful one. Where the book bends or invents setting detail to be more engaging, that is intended. Do not flag canon divergence as an error; flag it only when it makes an entry less usable at the table. The GM paraphrases any canon from a summary on the day, so nothing exists before it reaches the table: weight a finding by whether it hurts play, not by whether it contradicts a setting book.
+- Keys and arches are common and strong in this campaign (arcana fill the world). A key-bearer being ignored by Arch Guardians is a feature, not a loophole. Judge an entry by whether it is forwardly engaging (a clear next move for the party), not by how much intrigue it carries.
 - Core Bestiary stat blocks are the GM Guide's, regrouped by family and lightly formatted, with every level, HP, armor value and dice expression machine-checked against the Guide text. Judge their presentation (family grouping, wording of abilities, Stage, tables, Gig Fit, the index) and internal consistency, not the printed numbers.
 - Printed Core conditions stand, including the Basilisk's Petrified (three stacked Lithify gazes over 10 minutes) and the Specter's "set HP to 0".
 - The agency rule applies to converted and original entries only.
@@ -247,7 +249,7 @@ Names below exist in the setting books. Treat them as canon. Treat any claim abo
 - Stat levels follow the Monster Builder table, not source levels. Entries cite a spreadsheet index of monster books; the text of 4e Monster Manuals 1 to 3, the Tales of the Valiant Monster Vault and Keith Ammann's tactics books was consulted for some entries, other books were not. Where a source line says original, no source text was used.
 - The Ochre Jelly appears twice on purpose (Core Oozes, and a Deathreach Elite).
 - Encounters at Stage 13 and above may depend on terrain; making every encounter context-independent was considered and deferred.
-- Two rival crews exist (the Gilded Hands, the Steel Hands) with six-step clocks and campaign ladders; a clock moves by player choices, never by But+ alone.
+- Two rival crews exist (the Sterling Scabbards, the Steel Hands) with six-step clocks and campaign ladders; a clock moves by player choices, never by But+ alone.
 - A Dolmenwood-style field set (number appearing, hoard, speech) and Elite lairs are not yet in the book.
 - Scope for this round: critique only monsters up to level 4, a party of level 3. Entries wholly above level 4 are parked: do not critique them (you may list them as parked in section A). For a family that spans levels, critique members up to level 4 and the family's shared text.
 - The reading guide's Turns, Saves and Holds lines are the book's rules for how a monster's costs, saves and escapes work; check entries against them, and flag a conflict with section 3.
@@ -267,7 +269,7 @@ Everything below is printed in the book as a GM would read it, in book order.
 - **Holds.** Grappled and Restrained heroes still act. To escape a Grapple, spend an action on a STR or DEX save against the printed escape DC; a crit on either creature also frees them.
 - **Agency.** No converted action in this book takes a hero's whole turn. Paralysis, stun and sleep from the source monsters are rebuilt as Dazed, Slowed, Grappled, forced movement or terrain.
 - **Core Bestiary.** The first section holds the GM Guide's own monsters, grouped by family, with the stat blocks exactly as printed. Printed conditions stand, including the Basilisk's Petrified. A family entry has one roster table, then actions by member. Groups per hero are the GM Guide's sample encounters, where it gives them.
-- **New entries.** The Gilded Hands (a rival crew), Hedge Casters, Children of Ibraxus and the Serpent Cult of Vithra are original to this book, written to the GM Guide's Monster Builder table.
+- **New entries.** The Sterling Scabbards (a rival crew), Hedge Casters, Children of Ibraxus and the Serpent Cult of Vithra are original to this book, written to the GM Guide's Monster Builder table.
 - **Rumours.** ⊤ is true, ⊥ is false. Give one per Lore success; a false one costs nothing to believe until it does.
 
 ---
@@ -1608,7 +1610,7 @@ HP 37 · Armor Medium · Speed 4 (climb 6) · DC 12 · Stage 7-10
 - Patron hook: A Black Hand fixer needs a package walked through the drains under a Council toll post. Three couriers have vanished on that route.
 - City of Arches name: "Drainhands": every Lower Reaches child is told never to put a hand in a drain.
 
-### The Gilded Hands
+### The Sterling Scabbards
 *City of Arches · Standard · Skirmisher · Levels 2 to 3*
 **Core:** The party in a mirror: four professionals who take the same jobs for the same patrons, and got there first.
 *Good boots, clean kit, polite manners, paid on time. They owe the Black Hand, and everyone in the Lower Reaches knows it.*
@@ -1626,14 +1628,14 @@ Stage 1-8.
 *Maren Vale, Commander*
 - **Rapier** (1 Action, ×2) 1d8+1.
 - **Form up!** (Free, 1/round) Two allies within 8 move up to 4 spaces.
-- **Contract** (Passive) When Maren calls a retreat, each Hand moves away without provoking. Blocked, held or bargained with, they stay.
+- **Contract** (Passive) When Maren calls a retreat, each Scabbard moves away without provoking. Blocked, held or bargained with, they stay.
 *Tobin Quill, Cheat*
-- **Dirty knife** (1 Action, ×2) 1d6+2. Advantage against a target beside another Hand.
+- **Dirty knife** (1 Action, ×2) 1d6+2. Advantage against a target beside another Scabbard.
 - **Pick pocket** (1 Action, adjacent) Finesse contest: takes one unsecured item, never a held one.
 - **Smoke and mirrors** (Reaction, 1/encounter, when Bloodied) Invisible until he attacks, and moves 4.
 *Ysolde Rook, Hunter*
 - **Longbow** (1 Action, Range 12) 2d6+3.
-- **Mark quarry** (Free, 1/round) One creature is Marked for the encounter. Each round the first Hand attack on it has advantage.
+- **Mark quarry** (Free, 1/round) One creature is Marked for the encounter. Each round the first Scabbard attack on it has advantage.
 - **Snare** (1 Action, 1/encounter, Range 8) 2-space radius. DEX save DC 11 or Restrained (escape DC 11).
 *Brother Anselm, Shepherd*
 - **Searing light** (1 Action, Range 8) 1d8+2. Radiant. Double against undead.
@@ -1641,7 +1643,7 @@ Stage 1-8.
 - **Sanctuary** (Reaction, 1/encounter, Range 6) An ally who would drop to 0 HP stays at 1.
 
 **In play.** Gets the job done first and cleanly. Marks the best hero, snares the exit, takes the prize, and leaves on Maren's word.
-**Designer note.** Rivals, not villains. They run when losing, but a crew that cannot run can be taken. Two Hands suit one hero; all four suit a party of three. Put them on the tracker at the second meeting.
+**Designer note.** Rivals, not villains. They run when losing, but a crew that cannot run can be taken. Two Scabbards suit one hero; all four suit a party of three. Put them on the tracker at the second meeting.
 **Sources.** Original. Built from the Sejr rival-crew tables: Neutral, wealthy, locally known, in debt to the Black Hand.
 
 **Traits (d6)**
@@ -1649,13 +1651,13 @@ Stage 1-8.
 2. Tobin counts coins aloud, then leaves one behind on purpose.
 3. Ysolde buys every arrow fresh and never owns a spare.
 4. Anselm's holy symbol belongs to a god nobody has heard of.
-5. All four have the same gilded-hand tattoo, each in a different place.
+5. All four wear a sterling scabbard-tip, each on a different weapon.
 6. One of them (roll) is terrified of the Black Hand, and the rest know.
 
 **Encounters (d4)**
 1. They are already at the door the party came to open, resting in a row. Information is for sale.
 2. They offer to split the job and the pay. Tobin's smile says trap; Maren's says not.
-3. A wounded Hand, left behind on purpose by the others.
+3. A wounded Scabbard, left behind on purpose by the others.
 4. They are being robbed by someone worse, and ask politely for help.
 
 **Lairs (d4)**
@@ -1668,13 +1670,13 @@ Stage 1-8.
 1. ⊤ They don't die for coin. Make it cost more than the job and they walk.
 2. ⊤ They owe the Black Hand. Someone below is always watching them.
 3. ⊥ They are a Council front. Every job is on Zeshe's list.
-4. ⊥ They always work alone. One Hand means you're about to be robbed.
+4. ⊥ They always work alone. One Scabbard means you're about to be robbed.
 
 **Gig Fit**
 - Verb: Find / Prove / Steal
 - But+: Faction result at Stages 1-8, or the NPC-room rival crew, once per episode. The second meeting goes on the tracker.
-- Patron hook: The party's patron hired the Hands for the same job, to see who is better.
-- City of Arches name: "The Hands": a Hand job is one already done properly.
+- Patron hook: The party's patron hired the Scabbards for the same job, to see who is better.
+- City of Arches name: "Tips": a tip job is one already done properly.
 - Rival clock (6): 1 First to the objective. 2 Offer a split. 3 Take a promised job. 4 The Black Hand calls the debt. 5 The party is offered the debt, or the names. 6 Resolve: allied (the party took the debt), owned (the Black Hand holds them), or buried (captured, dead or disbanded). Step on when the party loses a scene to them or ignores a clue they left; step back when it outbids, exposes or helps them. Capturing or killing Maren jumps to 6.
 - Campaign ladder: Find their buyer. Steal their cache before the Black Hand does. Prove it in the open, or refuse. Each rung can end with the crew allied, owned, or buried.
 
@@ -3955,10 +3957,10 @@ Generated from the entries and the Monster Builder table. It compares each non-m
 | Doppelganger Sneak | Doppelganger Sneak | 3 | None | 41 | 41 | 1.00 | 12 | 12 |
 | Flameskull | Flameskull | 5 | Medium | 49 | 49 | 1.00 | none | 13 |
 | Cavern Choker | Cavern Choker | 4 | Medium | 37 | 37 | 1.00 | 12 | 12 |
-| The Gilded Hands | Maren Vale, Commander | 3 | Medium | 27 | 27 | 1.00 | none | 12 |
-| The Gilded Hands | Tobin Quill, Cheat | 2 | None | 24 | 31 | 0.77 | none | 11 |
-| The Gilded Hands | Ysolde Rook, Hunter | 2 | None | 27 | 31 | 0.87 | 11 | 11 |
-| The Gilded Hands | Brother Anselm, Shepherd | 2 | None | 31 | 31 | 1.00 | none | 11 |
+| The Sterling Scabbards | Maren Vale, Commander | 3 | Medium | 27 | 27 | 1.00 | none | 12 |
+| The Sterling Scabbards | Tobin Quill, Cheat | 2 | None | 24 | 31 | 0.77 | none | 11 |
+| The Sterling Scabbards | Ysolde Rook, Hunter | 2 | None | 27 | 31 | 0.87 | 11 | 11 |
+| The Sterling Scabbards | Brother Anselm, Shepherd | 2 | None | 31 | 31 | 1.00 | none | 11 |
 | Hedge Casters | Hedge Witch | 1 | None | 18 | 21 | 0.86 | 10 | 11 |
 | Hedge Casters | Masquer | 2 | None | 24 | 31 | 0.77 | 11 | 11 |
 | Hedge Casters | Writ-Binder | 3 | None | 34 | 41 | 0.83 | 12 | 12 |

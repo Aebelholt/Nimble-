@@ -8,6 +8,7 @@ reassessment, power levels or audit exceptions.
 import json, pathlib, re
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
+REF = ROOT.parent / "reference"
 cards = [c for c in json.loads((ROOT / "data/sejr_arcana.json").read_text()) if c["status"] != "cut"]
 spec = (ROOT / "spec/arcana_design_spec.md").read_text()
 
@@ -28,21 +29,21 @@ FEATURES = [
 
 
 def quote(cls, start, n):
-    lines = (ROOT / f"rules/classes/{cls}.txt").read_text().split("\n")
+    lines = (REF / f"rules/classes/{cls}.txt").read_text().split("\n")
     i = next(k for k, l in enumerate(lines) if l.strip().startswith(start))
     q = " ".join(l.strip() for l in lines[i:i + n] if l.strip())
     return re.sub(r"\s+Yes!.*$", "", q).replace("\t", " ")
 
 
 def mage_control_table():
-    t = (ROOT / "rules/classes/Mage.txt").read_text()
+    t = (REF / "rules/classes/Mage.txt").read_text()
     seg = t[t.index("CONTROL TABLE"):t.index("LOSE CONTROL.")]
     seg = re.sub(r"\n\s*\d+\s*\n", "\n", seg)
     return " ".join(s.strip() for s in seg.split("\n") if s.strip())
 
 
 def homebrew_arcana():
-    p = ROOT / "sources/arches_homebrew_arcana.txt"
+    p = REF / "sources/arches_homebrew_arcana.txt"
     return p.read_text().strip() if p.exists() else ""
 
 

@@ -48,8 +48,8 @@ Not now. Making every encounter context-independent costs high-level play its ta
 
 ## Blind audit
 
-- `node monster_book/export_audit.js` writes `analysis/monster_blind_audit_prompt.md`: the audit job, the five lenses (rules, design standard, play, power, generated-content patterns), the campaign excerpts, the design standard, the rules reference (conditions, monster rules, the Monster Builder table parsed from `rules/`), the canon list and the GM's decisions, then the whole book as a GM reads it, the move index, and a computed stat sheet (HP and DC against the builder row). It is about 63k tokens. Blind means no README, changelog, lint output or earlier review in it.
-- Paste it into a fresh model session, save the answer as `analysis/monster_audit_vN_result.md`, and triage with `analysis/monster_audit_triage_template.md`. Regenerate the prompt after every fix so the next round audits the current book.
+- `node monster_book/export_audit.js` writes `monster_book/analysis/monster_blind_audit_prompt.md`: the audit job, the five lenses (rules, design standard, play, power, generated-content patterns), the campaign excerpts, the design standard, the rules reference (conditions, monster rules, the Monster Builder table parsed from `rules/`), the canon list and the GM's decisions, then the whole book as a GM reads it, the move index, and a computed stat sheet (HP and DC against the builder row). It is about 63k tokens. Blind means no README, changelog, lint output or earlier review in it.
+- Paste it into a fresh model session, save the answer as `monster_book/analysis/monster_audit_vN_result.md`, and triage with `monster_book/analysis/monster_audit_triage_template.md`. Regenerate the prompt after every fix so the next round audits the current book.
 - `node monster_book/check_core.js` (also run by every build) checks every Core Bestiary member's level, name, HP and armor, and every dice expression, against the GM Guide text. The prompt tells the auditor the Core numbers are machine-checked, so it spends its attention elsewhere.
 
 ## Parked for play (not for now)
@@ -61,3 +61,7 @@ Not now. Making every encounter context-independent costs high-level play its ta
 
 - **Detailing index: done.** `move_index.js` glosses about 75 printed Core moves (what it looks like, melee or ranged) and gives a marked Ruling where print is ambiguous (Specter's Deathly touch and Corrupt, Bandit's Inept, minion dice). It renders as an appendix. The build fails if a glossed move no longer exists, and warns (clarity watch) on any printed exclamation-named move without a gloss.
 - **Setting monsters worth adopting** (from the City of Arches book, Appendix A and F). All adopted: Arch Guardians, Golden Knights and the Steel Hands (`01c_city_adopted.js`), duergar dig crew, gibbering mouther, lizardfolk (`02b_deathreach_adopted.js`), grimlocks (`05b_threska_adopted.js`). Originally listed: the Steel Hands (Lady Kalya's buyable mercenaries) as a second rival crew, duergar dig crews (already cited by Deathreach entries), gibbering mouthers, grimlocks, lizardfolk mages.
+
+## Design priorities (GM decision)
+
+Fun first, rules second, lore third. The campaign leans on discovery and exploration, so keys and arches are common and strong, and the setting books are a source to borrow from, not a canon to defend. The GM paraphrases canon on the day, so nothing exists until it hits the table. An entry is judged on whether it gives the party a clear next move, not on intrigue. The audit prompt carries this as a standing decision.

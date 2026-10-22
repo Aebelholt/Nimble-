@@ -4,7 +4,7 @@ const fs = require("fs");
 const path = require("path");
 
 function parse() {
-  const t = fs.readFileSync(path.join(__dirname, "..", "rules", "nimble_gmg_3.0.txt"), "utf8")
+  const t = fs.readFileSync(path.join(__dirname, "..", "reference", "rules", "nimble_gmg_3.0.txt"), "utf8")
     .replace(/\r?\n/g, " ").replace(/’/g, "'").replace(/\s+/g, " ");
   const i = t.indexOf("Monster Level HP & Armor");
   const j = t.indexOf("+ +20 |", i);

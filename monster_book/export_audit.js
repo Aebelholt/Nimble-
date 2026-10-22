@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// Writes analysis/monster_blind_audit_prompt.md: a self-contained prompt for a blind audit of the
+// Writes monster_book/analysis/monster_blind_audit_prompt.md: a self-contained prompt for a blind audit of the
 // Sejr Monster Book by another model.
 //
 // Blind means the auditor sees the book exactly as a GM would, plus the design standard, the rules
@@ -24,13 +24,13 @@ const section = (md, heading) => {
   const j = md.indexOf("\n## ", i + 5);
   return md.slice(i, j < 0 ? md.length : j).replace(/&#91;embedded content[^\n]*/g, "").trim();
 };
-const overview = fs.readFileSync(path.join(ROOT, "setting", "sejr_campaign_overview.md"), "utf8");
+const overview = fs.readFileSync(path.join(ROOT, "reference", "setting", "sejr_campaign_overview.md"), "utf8");
 const lvlNum = (l) => (typeof l === "number" ? l : /^\d+\/\d+$/.test(l) ? eval(l) : /^\d+$/.test(l) ? Number(l) : NaN);
 const levelOf = (l) => builder.find((r) => String(r.lvl) === String(l));
 
 // ---------- rules reference (from the repo's rules files, not from memory) ----------
 
-const load = (f) => fs.readFileSync(path.join(ROOT, "rules", f), "utf8").replace(/\r?\n/g, " ").replace(/[\u2018\u2019]/g, "'").replace(/\s+/g, " ");
+const load = (f) => fs.readFileSync(path.join(ROOT, "reference", "rules", f), "utf8").replace(/\r?\n/g, " ").replace(/[\u2018\u2019]/g, "'").replace(/\s+/g, " ");
 const core = load("nimble_core_rules_3.2.txt");
 const gmg = load("nimble_gmg_3.0.txt");
 const between = (t, from, to) => {
@@ -273,6 +273,8 @@ Names below exist in the setting books. Treat them as canon. Treat any claim abo
 
 ### Decisions the GM has made (do not flag as errors)
 
+- Priorities: fun first, rules second, lore third. This is an arches-first campaign about discovery and exploration, not a lore-faithful one. Where the book bends or invents setting detail to be more engaging, that is intended. Do not flag canon divergence as an error; flag it only when it makes an entry less usable at the table. The GM paraphrases any canon from a summary on the day, so nothing exists before it reaches the table: weight a finding by whether it hurts play, not by whether it contradicts a setting book.
+- Keys and arches are common and strong in this campaign (arcana fill the world). A key-bearer being ignored by Arch Guardians is a feature, not a loophole. Judge an entry by whether it is forwardly engaging (a clear next move for the party), not by how much intrigue it carries.
 - Core Bestiary stat blocks are the GM Guide's, regrouped by family and lightly formatted, with every level, HP, armor value and dice expression machine-checked against the Guide text. Judge their presentation (family grouping, wording of abilities, Stage, tables, Gig Fit, the index) and internal consistency, not the printed numbers.
 - Printed Core conditions stand, including the Basilisk's Petrified (three stacked Lithify gazes over 10 minutes) and the Specter's "set HP to 0".
 - The agency rule applies to converted and original entries only.
@@ -309,7 +311,7 @@ const out = [
 if (/[–—]/.test(out.replace(/—/g, "").replace(/\|\s*—\s*\|/g, ""))) {
   // Builder-table cells use an em dash for "none"; entry text must not.
 }
-const dest = path.join(ROOT, "analysis", "monster_blind_audit_prompt.md");
+const dest = path.join(__dirname, "analysis", "monster_blind_audit_prompt.md");
 fs.writeFileSync(dest, out);
 const words = out.split(/\s+/).length;
 console.log(`${dest}\n${entries.length} entries, ${words} words (about ${Math.round(words * 1.35)} tokens)`);

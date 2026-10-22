@@ -4,7 +4,7 @@
 const fs = require("fs");
 const path = require("path");
 
-const raw = fs.readFileSync(path.join(__dirname, "..", "rules", "nimble_gmg_3.0.txt"), "utf8")
+const raw = fs.readFileSync(path.join(__dirname, "..", "reference", "rules", "nimble_gmg_3.0.txt"), "utf8")
   .replace(/\r?\n/g, " ").replace(/[‘’]/g, "'").replace(/[“”]/g, '"').replace(/−/g, "-");
 const a = raw.indexOf("BESTIARY ARTIST: KEREM BEYIT");
 const b = raw.indexOf("LEGENDARY MONSTERS", a + 100);

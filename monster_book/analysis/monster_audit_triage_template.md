@@ -1,6 +1,6 @@
 # Monster book audit round N triage
 
-Source: external model audit of the book at commit `<hash>`, run from `analysis/monster_blind_audit_prompt.md` and saved as `analysis/monster_audit_vN_result.md`.
+Source: external model audit of the book at commit `<hash>`, run from `monster_book/analysis/monster_blind_audit_prompt.md` and saved as `analysis/monster_audit_vN_result.md`.
 
 ## Verify first
 Rules claims the auditor made that can be checked in a minute. Mark each true or false before acting.

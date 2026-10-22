@@ -33,7 +33,10 @@ Source: blind audit saved as `analysis/monster_audit_v2_result.md`. Scope: monst
 - The "Share the fever" and "Gibbering" Passive labels: kept as Passive with a stated trigger line, not relabelled.
 - Escalation templates (G1), "steers feet" (G2), low-ceiling notes (G3): pattern findings. Vary them in a later polish pass, not now.
 
-## GM call (open)
+## GM call (settled by the GM after this triage)
+- **Canon and keys:** fun first, rules second, lore third. Arches and keys stay common and strong; canon divergence (Black Hand and kobolds, Knights truce, Ibraxus, Vithra, Choul, lodge law, Arch Guardians vs patron keys) is allowed and no longer a finding. Joslyn/Salvana: keep or cut by table use, not by canon. Recorded in the README and the audit prompt.
+
+## GM call (still open)
 1. **Stage reachability (P1, the largest finding).** With Stage = d6 + renown capped at level, a level-3 party only reaches Stages 4-9, so about 30 arch-native entries (Stage 13+) are reachable only through the Arch-episode clause. Do you want the book to label them "Arch", or state a rule for how an Arch episode picks its world? I did not touch the campaign tables.
 2. **Arch Guardians vs patron keys (P5, C8).** If patrons hand out keys, the guardian fight is the failure case, not the default. Which is intended?
 3. **Rival clocks (C9).** Two clocks step on "loses a scene" or "ignores a clue", which sits close to But+ alone. Tighten the triggers to player choices, or accept?
