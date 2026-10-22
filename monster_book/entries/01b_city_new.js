@@ -101,7 +101,7 @@ module.exports = [
         actions: [
           A("Pinch of spite", "1 Action, Range 6", "1d6+2", "Psychic."),
           A("Hex of clumsy feet", "1 Action, Range 8", "—", "WIL save DC 10 or Slowed until their next turn ends."),
-          A("Familiar crow", "Reaction, 1/round", "—", "An enemy attacking within 6 gets a crow in the face: disadvantage."),
+          A("Familiar crow", "Reaction, 1/round, attacked within 6", "—", "A crow in the face: the attack on the Witch is disadvantaged."),
         ] },
       { name: "Masquer", level: 2, hp: 24,
         actions: [
@@ -111,15 +111,15 @@ module.exports = [
         ] },
       { name: "Writ-Binder", level: 3, hp: 34,
         actions: [
-          A("Writ of seizure", "1 Action, Range 8", "—", "DEX save DC 12 or Restrained until their next turn ends, or until an ally touches the script."),
+          A("Writ of seizure", "1 Action, Range 8", "—", "DEX save DC 12 or Restrained until an ally touches the script, or escape DC 12."),
           A("Writ of silence", "1 Action, 1/encounter, Range 6", "—", "WIL save DC 12 or Silenced until their next turn ends."),
-          A("Writ of citation", "Free, 1/round", "—", "A target is Taunted by the Writ-Binder until their next turn ends."),
+          A("Writ of citation", "1 Action, Range 8", "—", "WIL save DC 12 or Taunted by the Writ-Binder until their next turn ends."),
         ] },
       { name: "Kartan Hedge-Mage", level: 4, hp: 42,
         actions: [
           A("Slowing bolt", "1 Action, Range 12", "2d6+5", "Slowed until their next turn ends."),
           A("Gravity well", "Replaces its attacks, 1/encounter, Range 8", "—", "2-space radius: STR save DC 13 or pulled 3 to the centre and Prone."),
-          A("Overreach", "Reaction, when crit", "1d8", "Backlash: it takes the damage and its next attack is disadvantaged."),
+          A("Overreach", "Reaction, when a hero crits it", "1d8", "Backlash on the attacker; its own next attack is disadvantaged."),
         ] },
     ],
     stats: { stage: "1-8" },
@@ -128,7 +128,7 @@ module.exports = [
     sources: "Original. Fills a gap: below level 8 the GM Guide has no caster that Blinds, Frightens, Taunts or pulls.",
 
     designNote:
-      "Each one is a different verb, and none takes a turn. Glass cannons: they need a front rank " +
+      "Each one is a different verb, and none takes a turn. Frail and harmless alone: they need a front rank " +
       "of Bandits or Cultists, and the party's job is to reach them.",
 
     traits: [
@@ -189,7 +189,7 @@ module.exports = [
         actions: [
           A("Plague sermon", "1 Action, 1/round", "—", "Enemies within 8 who hear: STR save DC 12 or Poisoned a turn. Already Poisoned, also Slowed."),
           A("Fever touch", "1 Action", "2d6+4", "A Poisoned target is Slowed."),
-          P("Share the fever", "Once a round, splits damage dealt to an ally within 6: it takes half, the ally half."),
+          P("Share the fever", "When an ally within 6 is damaged, once a round, the Preacher takes half of it."),
         ] },
     ],
     stats: { stage: "7-10, 13+" },
@@ -252,7 +252,7 @@ module.exports = [
         ] },
       { name: "Serpent-Charmer", level: 3, hp: 38,
         actions: [
-          A("Call the coil", "1 Action, Range 8", "—", "2-space radius: DEX save DC 12 or Restrained by snakes. Fire or slashing frees."),
+          A("Call the coil", "1 Action, Range 8", "—", "2-space radius: DEX save DC 12 or Restrained by snakes: escape DC 12, or fire or slashing damage frees."),
           A("Snake swarm", "1 Action, 1/encounter", "—", "Summons 2 snake minions (d6)."),
         ] },
       { name: "Voice of the Idol", level: 5, hp: 66,
@@ -268,7 +268,7 @@ module.exports = [
     sources: "Original. Vithra, the Idol and the Night of Vithra's Kiss are setting canon (the Deadlands).",
 
     designNote:
-      "Coils and fear, not poison: it plays differently from the Children of Ibraxus. Fire frees " +
+      "Coils and fear, with poison only from the Voice: it plays differently from the Children of Ibraxus. Fire frees " +
       "the coil. Snakemen treat the Voice as a prophet.",
 
     traits: [
@@ -282,7 +282,7 @@ module.exports = [
     encounters: [
       "A dusk procession sings softly. The covered cart at the back drips.",
       "A young man scaled to the elbow begs for help leaving before the next ceremony.",
-      "The Charmer plays for children in the market. Small snakes follow the tune out of a drain.",
+      "The Charmer plays for children in a Lower Reaches square. Small snakes follow the tune out of a drain.",
       "A Dancer challenges the party's best fighter to a duel. It's a distraction."
     ],
     lairs: [

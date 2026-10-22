@@ -138,7 +138,7 @@ module.exports = [
     actions: [
       A("Throat grab", "1 Action, Reach 3", "1d8+5", "Grappled (escape DC 12 at disadvantage), Silenced, hoisted 2 spaces. Escaping drops them, Prone."),
       A("Squeeze", "1 Action, held target", "1d6+8", "Can't miss."),
-      A("Body shield", "Reaction, 1/round, while it holds someone", "", "An attack on the choker hits its catch instead, who may Defend."),
+      A("Body shield", "Reaction, 1/round, while it holds someone", "", "An attack on the choker by someone else hits its catch instead, who may Defend."),
     ],
 
     tactics: "Takes the caster or the singer, then whoever comes to help. Bloodied, it drops its catch and leaves by any grate within 10.",

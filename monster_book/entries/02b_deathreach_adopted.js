@@ -25,7 +25,7 @@ module.exports = [
       { name: "Drill-Wright", level: 4, hp: 37, armor: "Medium",
         actions: [
           A("Bore", "2 Actions, Line 4", "2d8+5", "DEX save for half. The wall at the end of the line opens."),
-          A("Bring it down", "1 Action, 1/encounter, Range 8", "—", "2-space radius of ceiling falls: DEX save DC 12 or Prone and Restrained under rubble."),
+          A("Bring it down", "1 Action, 1/encounter, Range 8", "—", "2-space radius of ceiling falls: DEX save DC 12 or Prone and Restrained (escape DC 12, or an ally digs)."),
           A("Wrench", "1 Action", "1d8+4", ""),
         ] },
     ],
@@ -83,15 +83,15 @@ module.exports = [
     description: "A heap of flesh that flows like spilled porridge, studded with eyes and mouths, " +
       "all of them talking.",
 
-    stats: { hp: 52, armor: "None", speed: "3 (ground within 2 turns to mush)", dc: 12, stage: "13+" },
+    stats: { hp: 52, armor: "None", speed: "3", dc: 12, stage: "13+" },
 
     actions: [
       A("Bites", "1 Action, ×2", "1d6+5", "A Prone target is bitten with advantage."),
-      A("Gibbering", "Passive, Reach 4", "", "WIL save DC 12 or the GM moves them up to 3 spaces; the hero keeps all their actions."),
+      A("Gibbering", "Passive, Reach 4", "", "Start of their turn: WIL save DC 12 or the GM moves them 3; they keep all actions."),
       A("Blinding spittle", "1 Action, 1/encounter, Range 6", "", "2-space radius: DEX save or Blind until their next turn ends."),
     ],
 
-    tactics: "Oozes at the nearest noise and keeps babbling. Never breaks off.",
+    tactics: "Oozes at the nearest noise, babbling. Ground within 2 of it turns to mush (Difficult Terrain). Falls deal 1d6 per 2 spaces.",
     sources: "Adopted from the setting: gibbering mouthers spawned in the Abhorrent Vats (Chapter 9) and loose on the Dreamcaster. Confusion rebuilt as GM-chosen movement.",
 
     designNote:

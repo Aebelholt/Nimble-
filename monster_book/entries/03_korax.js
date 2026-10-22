@@ -9,7 +9,7 @@ module.exports = [
     level: 3,
     name: "Meenlock Stalker",
     seb: true,
-    core: "Korax's long twilight bred something that hates light. It takes victims to the burrow and remakes them.",
+    core: "Korax's long twilight bred something that hates light. It takes victims to the burrow and keeps them.",
     description: "A child-sized thing, insect-headed and moss-furred, with claws like split reeds. " +
       "It waits at the edge of the torchlight and whispers that you are alone.",
 
@@ -17,7 +17,7 @@ module.exports = [
 
     actions: [
       A("Claws", "1 Action, ×2", "1d6+4", "STR save or Dazed next turn; already Dazed, Slowed. Two adjacent meenlocks drag a Dazed hero 3 spaces."),
-      A("Horrid link", "Free, 1/round, Range 10", "", "Links one hero until its next turn: Frightened, 1d6+2 psychic whenever it's hurt. Bright light breaks the link."),
+      A("Horrid link", "1 Action, 1/round, Range 10", "", "WIL save DC 12 or linked until its next turn: Frightened, and 1d6+2 psychic whenever the meenlock is hurt."),
       A("Shadow step", "1 Action", "", "Teleports 8 spaces, dark to dark, never into bright light. Again only after it is hit or a round passes."),
     ],
 
@@ -26,7 +26,7 @@ module.exports = [
 
     designNote:
       "Hurting it hurts your friend, so the party chooses whether to swing. Light is the answer: " +
-      "keep torches lit and a horror hunt becomes a fair fight. A hero kept in the burrow two days turns; burning the marker frees them.",
+      "keep torches lit and a horror hunt becomes a fair fight. A taken hero waits Restrained in the burrow, a rescue for the next scene.",
 
     traits: [
       "Red clay in its fur. Fresh up from the Red Deeps.",
@@ -76,8 +76,8 @@ module.exports = [
     stats: { hp: 24, armor: "None", speed: "6", dc: 11, stage: "7-8, 13+" },
 
     actions: [
-      A("Stolen blade", "1 Action", "1d8+3", "Advantage if unseen. Swap damage for an unsecured item, then move 4 without provoking."),
-      A("Snuff", "1 Action, 1/encounter", "", "Every flame within 6 goes out. Heroes without darkvision are Blind until they relight one. Creepers see in the dark."),
+      A("Stolen blade", "1 Action", "1d8+3", "Advantage if unseen. Instead of damage, may take one carried item, then move 4 without provoking."),
+      A("Snuff", "1 Action, 1/encounter, once per pack", "", "Flames within 6 go out. Heroes without darkvision are Blind until they use an action to relight one."),
       A("Flare", "Passive, on death", "", "Burns away in a flash: DEX save or Blind a turn within 2. Its loot drops."),
     ],
 
@@ -141,7 +141,7 @@ module.exports = [
       A("Mind leash", "1 Action, 1/round", "", "WIL save or the swarm chooses where the target moves next turn. Never their actions."),
     ],
 
-    tactics: "Pours over the nearest body. With an adult watching, it herds prey instead. Scatters when the adult falls.",
+    tactics: "Pours over the nearest body. Leashes the strongest and herds the rest toward the nest. Scatters when Bloodied.",
     sources: "Monster Vault: Conflux Creatures: Aberrations & Dragons, CR 1. Swarm aura (4e MM2 Neogi Spawn Swarm). Death scream cut.",
 
     designNote:

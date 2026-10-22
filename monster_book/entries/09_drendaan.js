@@ -136,7 +136,7 @@ module.exports = [
     stats: { hp: 24, armor: "None", speed: "Fly 8", dc: 11, stage: "13+" },
 
     actions: [
-      A("Bites", "1 Action", "2d4+3", "Poison. One creature in or beside its space."),
+      A("Bites", "1 Action", "2d4+3", "Poison. One creature in or beside its space is Poisoned until its next turn ends."),
       A("Swarm", "Passive", "", "Anyone starting a turn in its space is Slowed. Single targets half, AoE double."),
       A("Ride the wind", "Free, 1/round", "", "Moves 4 with the wind in open air, carrying a Small creature."),
     ],
@@ -145,8 +145,8 @@ module.exports = [
     sources: "Monster Vault: Conflux Creatures: Aberrations & Dragons, CR 5. Solitary unless nesting (Ammann).",
 
     designNote:
-      "Difficult Terrain with teeth. Pair it with something bigger, a sahuagin raid or Kesset's " +
-      "elementals, so it changes the shape of a larger fight.",
+      "Difficult Terrain with teeth. Pair it with something bigger, a raid or an air elemental, " +
+      "so it changes the shape of a larger fight.",
 
     traits: [
       "Scales flash like thrown coins.",

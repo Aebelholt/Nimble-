@@ -17,8 +17,8 @@ module.exports = [
 
     actions: [
       A("Lash", "1 Action, ×2, Reach 2", "1d6+2", "STR save or dragged 2 spaces toward it, Slowed and Grappled (escape DC 12)."),
-      A("Withdraw", "Free, 1/encounter", "", "Climbs back through its crack, taking whoever it holds."),
-      A("Bite", "1 Action, Grappled target", "2d8+3", "Crits if the target did not try to escape on its last turn."),
+      A("Withdraw", "Free, 1/encounter", "", "Climbs 6 into its crack, dragging whoever it holds. They are released there, Prone. Allies can follow."),
+      A("Bite", "1 Action, Grappled target", "2d8+3", "Automatic crit if the target did not try to escape on its last turn."),
     ],
 
     tactics: "Guards food, not prey. Lashes from reach, bites only what it holds, withdraws when Bloodied.",
@@ -136,7 +136,7 @@ module.exports = [
     stats: { hp: 37, armor: "Medium", speed: "4 (climb 6)", dc: 12, stage: "13+" },
 
     actions: [
-      A("Filament", "1 Action, Range 8", "", "DEX save or Restrained on the line. Any hit or flame cuts it. One line at a time."),
+      A("Filament", "1 Action, Range 8", "", "DEX save or Restrained (escape DC 12). A hit or flame cuts it; the fall is 1d6 per 2 spaces."),
       A("Reel", "Free, start of its turn", "", "Pulls its catch 3 spaces toward it, straight up if need be."),
       A("Claws", "1 Action, ×2", "1d8+4", "Only within Reach 1."),
     ],
@@ -253,12 +253,12 @@ module.exports = [
     description: "A yellow-brown slick of living acid, flat as a spill or heaped as tall as a man. " +
       "It leaves stone polished and bones pitted.",
 
-    stats: { hp: 62, armor: "None", speed: "4 (climb 4, through any gap)", stage: "9-10, 13+" },
+    stats: { hp: 62, armor: "None", speed: "4 (climb 4, through any gap)", dc: 12, stage: "9-10, 13+" },
 
     actions: [
       A("Pseudopod", "1 Action, ×2", "1d8+3", "Acid. Slowed."),
-      A("Split", "Reaction, when first Bloodied", "", "Two jellies, each with half its current HP and the same attacks. Rejoined, they add HP up to 62."),
-      A("Engulf", "1 Action, Prone or Dying target", "2d6+4", "Can't miss."),
+      A("Split", "Reaction, when first Bloodied", "", "Two jellies, each half its current HP, sharing one set of Pseudopods. Touching, they rejoin, HP up to 62."),
+      A("Engulf", "1 Action, Prone target", "2d6+4", "Can't miss."),
     ],
 
     tactics: "Flows to the nearest warm body and stays on it. Never breaks off.",

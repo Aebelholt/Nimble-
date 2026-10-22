@@ -73,10 +73,10 @@ module.exports = [
     description: "A lumbering figure of packed snow and ice, pebble eyes set in a child's lopsided " +
       "drawing of a face.",
 
-    stats: { hp: 52, armor: "None", speed: "4", dc: 12, stage: "13+, winter city" },
+    stats: { hp: 52, armor: "None", speed: "4", dc: 12, stage: "13+" },
 
     actions: [
-      A("Slam", "1 Action", "1d10+6", "Cold. A melee weapon that hits it sticks: its next attack is disadvantaged."),
+      A("Slam", "1 Action", "1d10+6", "Cold. A melee weapon that hits it sticks: the golem's next attack is disadvantaged."),
       A("Snowball volley", "1 Action, Range 10", "1d8+4", "Slowed."),
       A("Frost field", "Passive", "", "Within 2 is icy Difficult Terrain. Heals 5 a turn on snow. Fire deals double."),
     ],

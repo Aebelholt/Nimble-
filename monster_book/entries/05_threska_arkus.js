@@ -76,9 +76,9 @@ module.exports = [
     stats: { hp: 37, armor: "Medium", speed: "8", dc: 12, stage: "13+" },
 
     actions: [
-      A("Bite", "1 Action", "1d10+6", "Dose (3; endless in its room): STR save or Poisoned, Slowed or Dazed, its pick, one turn. Then moves 4."),
+      A("Bite", "1 Action", "1d10+6", "A failed STR save spends a dose (3, endless at home): Poisoned, Slowed or Dazed, its pick. Then moves 4."),
       A("Ward-word", "Passive", "", "Speak the word from the temple walls (Lore DC 14) to halt it a round, once."),
-      A("Construct", "Passive", "", "Immune to Poisoned, Frightened and Charmed. Never chases past its temple door."),
+      A("Construct", "Passive", "", "Immune to Poisoned and Frightened. Never chases past its temple door."),
     ],
 
     tactics: "Strikes whoever crossed the threshold last, then slithers back. Never breaks off inside the temple.",
@@ -138,7 +138,7 @@ module.exports = [
     actions: [
       A("Terrifying glare", "1 Action, Range 6", "", "WIL save or Frightened until the end of the scarecrow's next turn. Already Frightened, Dazed."),
       A("Claws", "1 Action, ×2", "1d6+4", "Advantage against a Frightened target."),
-      A("Hitched", "Passive", "", "Tethered within 6 of its pole; cutting the rope frees it, doubling glare range. Fire does it double damage."),
+      A("Hitched", "Passive", "", "Tethered within 6 of its pole; cutting the rope frees it and doubles glare range. Fire deals it double damage."),
     ],
 
     tactics: "Glares at anyone in its circle, claws whoever reaches the pole. Never breaks off and never forgets a face.",
@@ -146,7 +146,7 @@ module.exports = [
 
     designNote:
       "The rope is the encounter: fight at the edge of the circle, or cut it and set it loose. " +
-      "Fire does double damage. Put what the heroes want just inside the circle.",
+      "Fire deals it double damage. Put what the heroes want just inside the circle.",
 
     traits: [
       "The rope is braided from the hair of every clan member who planted the field.",
@@ -169,7 +169,7 @@ module.exports = [
       "A tower stair lined with watchmen tied to the banisters, eyes fresh."
     ],
     rumours: [
-      { true: true, text: "It can't leave its pole. Six paces out it's just a voice in your head." },
+      { true: true, text: "It can't leave its pole. Twelve paces out it's just a voice in your head." },
       { true: true, text: "It's straw. Fire takes it twice as fast." },
       { true: false, text: "Meet its eye and you're frozen till sunrise." },
       { true: false, text: "They only move at night." }

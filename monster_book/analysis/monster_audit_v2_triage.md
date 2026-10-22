@@ -2,7 +2,8 @@
 
 Source: blind audit saved as `analysis/monster_audit_v2_result.md`. Scope: monsters up to level 4, party of level 3 (42 critiqued, 21 parked). Verdicts: ship 16, fix 25, rethink 1 (Meenlock Stalker). Nothing here is applied yet. The crew is now The Sterling Scabbards, so "Gilded Hands" and "Hand" in the audit mean the Scabbards.
 
-## Fix now (real defects, in scope, cheap)
+## Fix now (applied in the commit after this triage)
+All items below are done except the Stage 5-6 gap, the Stage reachability label and the clock-trigger wording, which stay open. Verify items resolved: Hampered, Charmed and Bloodied are in the core rules; Smoldering is now defined in the reading guide; the five false Minion headers now read Standard; the Packleader and Fanatic Turns conflict is left (printed Core).
 - **Open-ended holds (R1, P4, C3, C5, C12):** Dig Crew rubble, Serpent-Charmer coil and Cave Fisher line get an escape DC, a duration and an actor. Cave Fisher also states the fall damage. Highest priority: a solo hero can be stuck for good.
 - **Dream Squire (R2):** drop "Prone with sleep" (agency rule); Drowse once per hero per round.
 - **Meenlock (R11, P4):** remove "turns after two days" and the nonexistent marker; Horrid link gets a WIL save. This is the one "rethink", and the fix is to cut the endgame, not the monster.

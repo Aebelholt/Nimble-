@@ -42,7 +42,7 @@ module.exports = [
       "target, and the worg's Grapple plus Savage turns a held hero into a crit target. The answer is a " +
       "front line that keeps no one alone and heals early. In Sejr they are the Doorish Hills' raiders " +
       "and the payoff when the Hills' Neglect clock fills. The demon-worshipping gnolls under the Hills " +
-      "are the same block with a priest on top.",
+      "use the same blocks.",
 
     traits: [
       "A necklace of bells, each one a victim's, and they all ring a different note.",
@@ -104,7 +104,7 @@ module.exports = [
           A("Crush & drop", "1 Action", "2d20", "Fly upward 20 spaces, deal damage to Grappled creatures, then release them (10d6 fall damage)."),
         ] },
     ],
-    stats: { stage: "7-12, 13+" },
+    stats: { stage: "4, 7-12, 13+" },
 
     tactics: "Wants prey it can carry. The drake dives and strikes, the griffon grabs the smallest hero it can lift and " +
       "drops them, the roc takes two at once. Breaks off when Bloodied, climbing out of reach.",
@@ -128,7 +128,7 @@ module.exports = [
     encounters: [
       "A shadow crosses the party and moves on. A moment later, it comes back lower.",
       "A griffon has a human in its claws, alive, and is hovering at the edge of the party's reach. It is waiting for something.",
-      "A lightning drake has nested in a Market Square clock tower, and the festival crowd below has just noticed.",
+      "A lightning drake has nested in a Lower Reaches bell tower, and the market crowd below has just noticed.",
       "A rider with a hunting bow asks the party for help: his griffon is wounded and has gone wild."
     ],
     lairs: [
@@ -139,7 +139,7 @@ module.exports = [
     ],
     rumours: [
       { true: true, text: "Cut the hold before it climbs. Once it is above you, the drop is the weapon." },
-      { true: true, text: "Metal conducts the drake's lightning. Take off your plate and it can't hurt you through it." },
+      { true: true, text: "The drake's lightning ignores metal armor. Plate is no protection." },
       { true: false, text: "Griffons never attack riders. Wave a saddle and it will land." },
       { true: false, text: "Rocs are a story. No bird grows that large." }
     ],
@@ -147,7 +147,7 @@ module.exports = [
       verb: "Find / Escort",
       butPlus: "Monster result at Stages 7-12 for the drake and griffon, and 13+ for a roc. Strong on a rooftop or a ledge map.",
       patronHook: "A Golden Council member's hunting party was taken apart on the Cliffs of the Dead. She wants the survivors found and the griffon, if there was one, handled without a story getting out.",
-      cityName: "\"Rooftop kings\": Market Square name for anything that nests above the festival."
+      cityName: "\"Rooftop kings\": Lower Reaches name for anything that nests above the market."
     }
   },
 
@@ -228,7 +228,7 @@ module.exports = [
 
   {
     world: "Core Bestiary",
-    tier: "Minion / Standard",
+    tier: "Standard",
     role: "Lurker",
     name: "Stirges",
     description: "Bloated mosquitos the size of a fist, or a gull. They hang in the dark, drop " +
@@ -294,7 +294,7 @@ module.exports = [
 
   {
     world: "Core Bestiary",
-    tier: "Minion / Standard",
+    tier: "Standard",
     role: "Defender",
     name: "Rank-and-File Dead",
     description: "The dead that do the work: bones that clatter, meat that shambles, ghouls that " +

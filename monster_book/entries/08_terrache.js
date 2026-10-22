@@ -85,7 +85,7 @@ module.exports = [
     sources: "Monster Vault: Creature Codex, CR 8. Scaled down as a glass cannon; origin rebuilt from Terrache canon.",
 
     designNote:
-      "Glass cannon: lower-level HP, higher-level damage, and it punishes melee every time it is " +
+      "Glass cannon: low HP, mid damage, and it punishes melee every time it is " +
       "hit. Kill it carefully, or eat the implosion.",
 
     traits: [

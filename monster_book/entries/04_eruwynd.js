@@ -17,8 +17,8 @@ module.exports = [
 
     actions: [
       A("Ceremonial blade", "1 Action", "1d8+6", "Advantage against a Slowed target."),
-      A("Drowse", "Passive, Reach 3", "", "Heroes starting a turn near it: WIL save or Slowed. Already Slowed, Dazed instead."),
-      A("Stand for the knight", "Reaction, 1/round", "", "Takes a hit meant for an ally within 2. The attacker: WIL save or Prone with sleep."),
+      A("Drowse", "Passive, Reach 3, once per hero per round", "", "Heroes starting a turn near it: WIL save or Slowed. Already Slowed, Dazed instead."),
+      A("Stand for the knight", "Reaction, 1/round", "", "Takes a hit meant for an ally within 2. The attacker: WIL save or Dazed."),
     ],
 
     tactics: "Holds its post. Never breaks off; dropped, it wakes at dawn unless someone wakes its dreamer (Influence DC 12, beside them).",

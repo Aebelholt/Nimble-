@@ -23,7 +23,7 @@ module.exports = [
       { name: "Grimlock Ogre", level: 4, hp: 52,
         actions: [
           A("Club", "1 Action, ×2", "1d8+4", ""),
-          A("Carry off", "1 Action, Prone target", "—", "STR save DC 12 or Grappled and carried its full Speed."),
+          A("Carry off", "1 Action, Prone or Grappled target", "—", "STR save DC 12 or Grappled and carried its full Speed, then dropped."),
         ] },
       { name: "Ogre Mage Chanter", level: 6, hp: 60, armor: "Medium",
         actions: [
@@ -39,7 +39,7 @@ module.exports = [
 
     designNote:
       "Darkness is home ground. The chanter is the trap: killing it wins the fight and wakes " +
-      "the mountain. Advance the Waking clock one step each round after. At 4 the floor splits: the party flees, or something old surfaces.",
+      "the mountain. Step the Waking clock each round after. At 4 the floor splits and the chanting stops. Nothing climbs out tonight.",
 
     traits: [
       "Skin grey as cave clay, ridged where eyes should be.",

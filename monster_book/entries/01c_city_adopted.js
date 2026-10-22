@@ -20,7 +20,7 @@ module.exports = [
       { name: "Golden Knight", level: 3, hp: 34,
         actions: [
           A("Halberd", "1 Action, ×2, Reach 2", "1d6+2", ""),
-          P("Formation", "Armor one step heavier for each adjacent Knight, up to Medium."),
+          P("Formation", "Armor Medium while a Watch Guard, Knight or Sergeant is adjacent."),
         ] },
       { name: "Knight Sergeant", level: 4, hp: 37, armor: "Medium",
         actions: [
@@ -41,7 +41,7 @@ module.exports = [
 
     designNote:
       "A fight with the Knights is a clock: the whistle brings more. Surrender gets a cell, not a " +
-      "grave, which makes them the city's soft fail state.",
+      "grave, and a cell is a scene: it always has a bail, a favour to call in or a back door.",
 
     traits: [
       "The gilt is flaking. Under it, plain city steel.",
@@ -58,7 +58,7 @@ module.exports = [
       "A Sergeant conscripts the party on the spot: something just came through an arch."
     ],
     lairs: [
-      "The Citadel's three towers behind iron doors and the gold statue of Lord Salvana.",
+      "The Citadel's towers behind iron doors, and a gold statue of the first Lord Commander.",
       "A road outpost in the Doorish Hills: a stable, a cell, an evidence shelf with gaps.",
       "A griffon aerie on a Citadel tower, a rider polishing a lance.",
       "A watch-house at the Black Hand line, where the truce is kept with coin."
@@ -72,7 +72,7 @@ module.exports = [
     gigFit: {
       verb: "Escort / Prove",
       butPlus: "Faction result 'the Golden Knights' at Stages 1-8, as patron muscle, obstacle, or the arrest after a loud job.",
-      patronHook: "Commander Joslyn Halfcloak hires adventurers for what the Knights can't be seen doing.",
+      patronHook: "Joslyn Halfcloak, second of the Knights, hires adventurers for what the Knights can't be seen doing.",
       cityName: "\"Gilt\": Lower Reaches slang. \"Gilt on the corner\" means take the long way home."
     }
   },
@@ -87,6 +87,10 @@ module.exports = [
     description: "Bone, clay, stitched flesh or carved stone, standing at a gate so long that dust " +
       "has drifted against its feet.",
 
+    shared: [
+      P("Keyed", "Ignores anyone carrying its arch's key who doesn't attack it. Never goes past 12 spaces from the arch."),
+    ],
+
     roster: [
       { name: "Skeletal Tomb Guardian", level: 2, hp: 31,
         actions: [
@@ -97,13 +101,13 @@ module.exports = [
       { name: "Flesh Guardian", level: 4, hp: 52,
         actions: [
           A("Fists", "1 Action, ×2", "1d8+4", "If both hit: Grappled and dragged 2 toward the arch."),
-          P("Stitched", "Lightning heals it. Fire makes its next Fists attack disadvantaged."),
+          P("Stitched", "Lightning heals it by the damage dealt. Fire makes its next Fists attack disadvantaged."),
         ] },
       { name: "Clay Guardian", level: 5, hp: 49, armor: "Medium",
         actions: [
           A("Slam", "1 Action, ×2", "1d8+6", "Knockback 2, away from the arch."),
           A("Rush", "Free, 1/encounter", "—", "Moves its full Speed and Slams once."),
-          P("Kiln-fired", "Fire damage heals it."),
+          P("Kiln-fired", "Fire heals it by the damage dealt."),
         ] },
       { name: "Stone Guardian", level: 8, hp: 60, armor: "Heavy",
         actions: [
@@ -114,8 +118,8 @@ module.exports = [
     ],
     stats: { stage: "Any arch" },
 
-    tactics: "Holds the threshold, ignoring any key-bearer who doesn't attack it. Strikes everyone else; never goes past 12 spaces from its arch.",
-    sources: "Adopted from the setting: clay guardians at arches (Deathreach seed, Deadlands), skeletal tomb guardians (Threska seed), flesh and stone guardians. Keyed and Bound are this book's.",
+    tactics: "Holds the threshold and strikes everyone without the key. Fights only inside its leash.",
+    sources: "Adopted from the setting: clay guardians at arches (Deathreach seed, Deadlands), skeletal tomb guardians (Threska seed), flesh and stone guardians. Keyed is this book's.",
 
     designNote:
       "Keys are Sejr's politics, and guardians enforce them. Steal the key and the fight never " +
@@ -149,7 +153,7 @@ module.exports = [
     ],
     gigFit: {
       verb: "Steal / Prove",
-      butPlus: "Any arch episode, at the gate in or out. The opening fight of an Arch direction.",
+      butPlus: "Any arch episode, at the gate in or out. The fight comes when someone lacks a key, or a key is stolen or forged.",
       patronHook: "A guardian can tell a true key from a forged one. The University wants to know how.",
       cityName: "\"Doorstones\": arch porters' word. \"Ask the doorstone\" means test a key."
     }
@@ -167,18 +171,18 @@ module.exports = [
     roster: [
       { name: "Lady Kalya", level: 1, hp: 21,
         actions: [
-          A("Paid in full", "Free, 1/round", "—", "A Steel Hand within 8 moves and attacks."),
+          A("Paid in full", "Free, 1/round", "—", "A Steel Hand within 8 makes one Longsword attack."),
           P("No fighter", "Never attacks. Asher Interposes for her whenever she can."),
         ] },
       { name: "Steel Hand", level: 3, hp: 27, armor: "Medium",
         actions: [
           A("Longsword", "1 Action, ×2", "1d8+3", ""),
-          P("Mercenary", "Offered more than Kalya pays (Influence DC 12, and the coin), it walks away."),
+          P("Mercenary", "Kalya pays 10 gp a day. Offered double (Influence DC 12, and the coin), it walks away."),
         ] },
       { name: "Steel Hand Crossbow", level: 2, hp: 24,
         actions: [
           A("Heavy crossbow", "1 Action, Range 12", "2d6+3", ""),
-          P("Mercenary", "Offered more than Kalya pays (Influence DC 12, and the coin), it walks away."),
+          P("Mercenary", "Kalya pays 10 gp a day. Offered double (Influence DC 12, and the coin), it walks away."),
         ] },
       { name: "Silent Asher", level: 5, hp: 64, armor: "Medium",
         actions: [
@@ -228,7 +232,7 @@ module.exports = [
       patronHook: "The Golden Knights want proof Asher did the murders. Roselyn Zeshe wants Kalya's ledgers.",
       cityName: "\"Kalya's hands\": merchants' warning about who just bought the building next door.",
       extra: [
-        ["Rival clock (6)", "1 Kalya buys a building the party needs. 2 A merchant dies. 3 The Hands hire the party's contact. 4 A ritual is found. 5 The Choul gateway room is cleared. 6 The gate opens. Step on when the party ignores a clue, loses a scene or takes Kalya's coin; step back when it outbids the Hands, exposes a murder or takes the ritual. Capturing or killing Kalya, or holding the gateway room, ends the clock."],
+        ["Rival clock (6)", "1 Kalya buys a building the party needs. 2 A merchant dies. 3 The Hands hire the party's contact. 4 A ritual is found. 5 The gateway room is cleared (a Lower Reaches chamber Kalya is readying for a ritual gate). 6 The gate opens. Step on when the party ignores a clue, loses a scene or takes Kalya's coin; step back when it outbids the Hands, exposes a murder or takes the ritual. Capturing or killing Kalya, or holding the gateway room, ends the clock."],
         ["Campaign ladder", "Prove Asher's murders. Steal Kalya's ledgers. Stop the gateway. Buying off the Hands skips a fight at any rung."],
       ],
     },

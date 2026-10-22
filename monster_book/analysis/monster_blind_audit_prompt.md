@@ -266,7 +266,8 @@ Everything below is printed in the book as a GM would read it, in book order.
 - **Armor.** Medium (M): -10 damage from each attack. Heavy (H): -20. Crits ignore armor.
 - **Turns.** A monster's turn is a move plus the attacks on its block. 1 Action is one of its attacks; 2 Actions replaces all its attacks that turn; Free costs nothing; a Reaction happens off its turn on its printed trigger. 1/round and 1/encounter cap any of these.
 - **Saves.** Monsters roll a plain d20 for saves. Heroes save against the DC printed in the action, or the stat row's DC if none is printed.
-- **Holds.** Grappled and Restrained heroes still act. To escape a Grapple, spend an action on a STR or DEX save against the printed escape DC; a crit on either creature also frees them.
+- **Smoldering.** Burning: 1d4 fire at the end of each of its turns, until it uses an action to put the fire out.
+- **Holds.** Grappled and Restrained heroes still act. To escape a Grapple or a Restrained effect with an escape DC, spend an action on a STR or DEX save against the printed escape DC; a crit on either creature also frees them.
 - **Agency.** No converted action in this book takes a hero's whole turn. Paralysis, stun and sleep from the source monsters are rebuilt as Dazed, Slowed, Grappled, forced movement or terrain.
 - **Core Bestiary.** The first section holds the GM Guide's own monsters, grouped by family, with the stat blocks exactly as printed. Printed conditions stand, including the Basilisk's Petrified. A family entry has one roster table, then actions by member. Groups per hero are the GM Guide's sample encounters, where it gives them.
 - **New entries.** The Sterling Scabbards (a rival crew), Hedge Casters, Children of Ibraxus and the Serpent Cult of Vithra are original to this book, written to the GM Guide's Monster Builder table.
@@ -393,7 +394,7 @@ Stage 1-8.
 - **Slice** (1 Action, ×3) 1d8. Or Shoot, Range 8.
 
 **In play.** Wants the purse, not the fight. Hunters shoot the one who looks richest, a Bruiser puts the toughest hero on the ground, and everyone breaks off the moment the Captain falls or the purse is in hand.
-**Designer note.** Printed GM Guide blocks, unchanged. Mortal Panic is the point: bandits are fragile (a 2 or less misses them) and dangerous only in numbers, so the Captain's Strict Training is the real stat to watch. In Sejr they are the street-level Black Hand: cut-outs with knives, deniable. They work as the enforcement end of any episode where someone wants something taken without a name attached.
+**Designer note.** Printed GM Guide blocks, unchanged. Mortal Panic is the point: bandits are slippery (a 2 or less misses them) and dangerous only in numbers, so the Captain's Strict Training is the real stat to watch. In Sejr they are the street-level Black Hand: cut-outs with knives, deniable. They work as the enforcement end of any episode where someone wants something taken without a name attached.
 **Sources.** Nimble GM Guide, Bestiary: Bandits.
 
 **Traits (d6)**
@@ -417,8 +418,8 @@ Stage 1-8.
 4. A crowded tenement floor where bandits live as neighbours, with children and laundry, and no one will ever testify.
 
 **Rumours (d4, Lore check)**
-1. ⊤ They panic when bloodied. Hit one hard and the rest lose their nerve.
-2. ⊤ Hurt the Captain first. Without him, the hired knives stop knowing how to fight.
+1. ⊤ A low roll misses a bandit. Hit hard and few, not light and often.
+2. ⊤ Hurt the Captain first. His Strict Training drives the rest.
 3. ⊥ Bandits never attack a group of five or more. Walk in numbers and they let you pass.
 4. ⊥ The Black Hand protects its own. Name a Black Hand fixer and they will put down their blades.
 
@@ -463,7 +464,7 @@ Stage 7-10, 13+. Groups per hero: Level 1: 2 Goblins or 3 Minions. Level 2: 3 Go
 - **Get in here!** (Free, after Stab) Call a Goblin Minion to the fight.
 
 **In play.** Wants loot, a laugh, and never to be the one in front. Taunts the hero who just missed, throws minions at the strongest, and charges the backline with Ratriders. Breaks off the moment the Taskmaster dies.
-**Designer note.** Printed GM Guide blocks, unchanged. The family's one rule is that surviving an attack hurts you: every miss costs a hero 2 psychic damage that ignores Defense. A party that spreads its attacks across five goblins takes ten damage a round for free, so focus fire and block the retaliation. The Taskmaster feeds minions into the fight, so killing it first is usually right. In Sejr they are Lower Reaches and cistern vermin with a grudge and a sense of humour.
+**Designer note.** Printed GM Guide blocks, unchanged. The family's one rule is that surviving an attack hurts you: every survived attack costs a hero 2 psychic damage that ignores Defense. A party that spreads its attacks across five goblins takes ten damage a round for free, so focus fire and block the retaliation. The Taskmaster feeds minions into the fight, so killing it first is usually right. In Sejr they are Lower Reaches and cistern vermin with a grudge and a sense of humour.
 **Sources.** Nimble GM Guide, Bestiary: Goblins.
 
 **Traits (d6)**
@@ -487,8 +488,8 @@ Stage 7-10, 13+. Groups per hero: Level 1: 2 Goblins or 3 Minions. Level 2: 3 Go
 4. A cave with a trapdoor in the ceiling, stuffed with goblin minions waiting for someone to look up.
 
 **Rumours (d4, Lore check)**
-1. ⊤ Every miss costs you. Don't spread your attacks across a gang of them. Pick one and finish it.
-2. ⊤ Kill the Taskmaster and the rest lose their stomach. It's the one making them stay.
+1. ⊤ Every attack a goblin survives costs you. Don't spread your attacks across a gang of them. Pick one and finish it.
+2. ⊤ Kill the Taskmaster and the minions stop coming.
 3. ⊥ Goblins can't stand daylight. Drag the fight outside and they fold.
 4. ⊥ A goblin that laughs at you is bluffing. They always run when it matters.
 
@@ -711,7 +712,7 @@ Stage 1-8, 13+.
 - **Rip apart** (1 Action) 2d6. Grappled, escape DC 10.
 
 **In play.** Wants a kill that has already stopped running. Worgs Grapple the lone hero, gnolls pile on whoever is bleeding, and the Packleader moves the pack to wherever blood is fresh. Breaks off when the Packleader falls.
-**Designer note.** Printed GM Guide blocks, unchanged. Bloodthirsty means the first hero to bleed becomes everyone's target, and the worg's Grapple plus Savage turns a held hero into a crit target. The answer is a front line that keeps no one alone and heals early. In Sejr they are the Doorish Hills' raiders and the payoff when the Hills' Neglect clock fills. The demon-worshipping gnolls under the Hills are the same block with a priest on top.
+**Designer note.** Printed GM Guide blocks, unchanged. Bloodthirsty means the first hero to bleed becomes everyone's target, and the worg's Grapple plus Savage turns a held hero into a crit target. The answer is a front line that keeps no one alone and heals early. In Sejr they are the Doorish Hills' raiders and the payoff when the Hills' Neglect clock fills. The demon-worshipping gnolls under the Hills use the same blocks.
 **Sources.** Nimble GM Guide, Bestiary: Hill & Field, gnolls and worgs.
 
 **Traits (d6)**
@@ -756,7 +757,7 @@ Stage 1-8, 13+.
 | Griffon | 4 | 52 | None | Fly 12 |
 | Roc | 17 | 236 | None | Fly 20 |
 
-Stage 7-12, 13+.
+Stage 4, 7-12, 13+.
 
 **Actions**
 *Blue Drake*
@@ -784,7 +785,7 @@ Stage 7-12, 13+.
 **Encounters (d4)**
 1. A shadow crosses the party and moves on. A moment later, it comes back lower.
 2. A griffon has a human in its claws, alive, and is hovering at the edge of the party's reach. It is waiting for something.
-3. A lightning drake has nested in a Market Square clock tower, and the festival crowd below has just noticed.
+3. A lightning drake has nested in a Lower Reaches bell tower, and the market crowd below has just noticed.
 4. A rider with a hunting bow asks the party for help: his griffon is wounded and has gone wild.
 
 **Lairs (d4)**
@@ -795,7 +796,7 @@ Stage 7-12, 13+.
 
 **Rumours (d4, Lore check)**
 1. ⊤ Cut the hold before it climbs. Once it is above you, the drop is the weapon.
-2. ⊤ Metal conducts the drake's lightning. Take off your plate and it can't hurt you through it.
+2. ⊤ The drake's lightning ignores metal armor. Plate is no protection.
 3. ⊥ Griffons never attack riders. Wave a saddle and it will land.
 4. ⊥ Rocs are a story. No bird grows that large.
 
@@ -803,7 +804,7 @@ Stage 7-12, 13+.
 - Verb: Find / Escort
 - But+: Monster result at Stages 7-12 for the drake and griffon, and 13+ for a roc. Strong on a rooftop or a ledge map.
 - Patron hook: A Golden Council member's hunting party was taken apart on the Cliffs of the Dead. She wants the survivors found and the griffon, if there was one, handled without a story getting out.
-- City of Arches name: "Rooftop kings": Market Square name for anything that nests above the festival.
+- City of Arches name: "Rooftop kings": Lower Reaches name for anything that nests above the market.
 
 ### Hill Brutes
 *Core Bestiary · Standard · Brute · Level 10*
@@ -868,7 +869,7 @@ Stage 13+.
 - City of Arches name: "Big uns": Lower Reaches name for anything over three metres, and a warning not to stay.
 
 ### Stirges
-*Core Bestiary · Minion / Standard · Lurker · Levels 1/2 to 6*
+*Core Bestiary · Standard · Lurker · Levels 1/2 to 6*
 *Bloated mosquitos the size of a fist, or a gull. They hang in the dark, drop on a warm neck, and do not let go.*
 
 | Member | Lvl | HP | Armor | Speed |
@@ -923,7 +924,7 @@ Stage 7-12.
 - City of Arches name: "Neck-biters": dockhands' name, said with a hand to the throat.
 
 ### Rank-and-File Dead
-*Core Bestiary · Minion / Standard · Defender · Levels 1/3 to 8*
+*Core Bestiary · Standard · Defender · Levels 1/3 to 8*
 *The dead that do the work: bones that clatter, meat that shambles, ghouls that claw. They get up again once, whatever you do, and they don't mind the rain.*
 
 | Member | Lvl | HP | Armor | Speed |
@@ -1101,7 +1102,7 @@ Stage 13+.
 - City of Arches name: "Dusty ones": Cliffs of the Dead name, and an insult in the Market Square.
 
 ### Briarbanes
-*Core Bestiary · Minion / Standard · Controller · Levels 1/2 to 5*
+*Core Bestiary · Standard · Controller · Levels 1/2 to 5*
 *Soulless plant things, thorned and red-veined, fed on blood. Seedlings spit thorns, pods burst, and the tanglers reach out from the dark with long arms of bramble.*
 
 | Member | Lvl | HP | Armor | Speed |
@@ -1111,7 +1112,7 @@ Stage 13+.
 | Briarbane Tangler | 2 | 24 | Heavy (peels) | 6 |
 | Briarbane Rootbreaker | 5 | 58 | Heavy (peels) | 6 |
 
-Stage 13+.
+Stage 7-8, 13+.
 
 **Actions**
 *Briarbane Seedling*
@@ -1259,7 +1260,7 @@ Stage 4, 7-12.
 6. A tidy ledger of names, with a tick against each one they have 'saved'.
 
 **Encounters (d4)**
-1. A cheerful cult recruiter hands out leaflets at the Market Square festival. Several members of the crowd are plants.
+1. A cheerful cult recruiter hands out leaflets at a Lower Reaches market. Several members of the crowd are plants.
 2. A Cultist begs the party for a swift death, saying the god told him they would be the ones. He is not lying.
 3. Cultists are digging up a grave in the dark, in a hurry, singing under their breath. The grave belongs to someone the party knew.
 4. A Doomsayer preaches in an alley to a crowd of children and street vendors, who are all listening very carefully.
@@ -1280,10 +1281,10 @@ Stage 4, 7-12.
 - Verb: Stop / Find
 - But+: Faction result with 'cultists' as the band kind, at Stage 4 or 7-12, or 'the Children of Ibraxus'. A cheap, readable early villain with a clear opening hook.
 - Patron hook: The Archkeepers have lost an arrival to a cult. The arrival may have joined willingly. They need the party to ask.
-- City of Arches name: "The Smilers": Market Square name for any cult that looks too cheerful.
+- City of Arches name: "The Smilers": Lower Reaches name for any cult that looks too cheerful.
 
 ### Lesser Fiends
-*Core Bestiary · Minion / Standard · Brute · Levels 1/2 to 14*
+*Core Bestiary · Standard · Brute · Levels 1/2 to 14*
 *Small, large, and in between, and all of them wrong: a stinking little thing that bursts, a spined fiend that spits, and a four-armed horror whose claws want to tear.*
 
 | Member | Lvl | HP | Armor | Speed |
@@ -1307,7 +1308,7 @@ Stage 9-12, 13+.
 - **Tear asunder** (1 Action, vs a creature Grappled by both claws) 50. Unpreventable damage. Then, if the target is Dying: DC 16 STR save or be torn in two, dying instantly.
 
 **In play.** Wants a mess. Stenchlings run at the nearest enemy and burst, Spiny Fiends shoot from behind them, and a Glabrezu takes the toughest hero with both claws. Never breaks off while its summoner is watching.
-**Designer note.** Printed GM Guide blocks, unchanged. Stenchlings are cheap bomb-carriers, and killing one adjacent to a friend is worth thinking about. The Spiny Fiend punishes melee with 4 damage and shoots 12 spaces. The Glabrezu is a level 14 fiend whose Tear Asunder ends a Dying hero outright, so keep its victim out of two grips at once. Cultists and the Children of Ibraxus summon the first two.
+**Designer note.** Printed GM Guide blocks, unchanged. Stenchlings are cheap bomb-carriers, and killing one adjacent to a friend is worth thinking about. The Spiny Fiend punishes melee with 4 damage and shoots 12 spaces. The Glabrezu is a level 14 fiend whose Tear Asunder ends a Dying hero outright, so keep its victim out of two grips at once. Cultist rites can call the first two.
 **Sources.** Nimble GM Guide, Bestiary: Cultists/Horrors, fiends.
 
 **Traits (d6)**
@@ -1343,7 +1344,7 @@ Stage 9-12, 13+.
 - City of Arches name: "Imps": Market Square word for anything with horns, accurate or not.
 
 ### Spiders
-*Core Bestiary · Minion / Standard · Controller · Levels 2 to 6*
+*Core Bestiary · Standard · Controller · Levels 2 to 6*
 *A web is never only a web. These spin their traps wide, sit at the centre, and wait for something to touch a thread. Ettercaps do it with a wire.*
 
 | Member | Lvl | HP | Armor | Speed |
@@ -1572,7 +1573,7 @@ HP 37 · Armor Medium · Speed 4 (climb 6) · DC 12 · Stage 7-10
 **Actions**
 - **Throat grab** (1 Action, Reach 3) 1d8+5. Grappled (escape DC 12 at disadvantage), Silenced, hoisted 2 spaces. Escaping drops them, Prone.
 - **Squeeze** (1 Action, held target) 1d6+8. Can't miss.
-- **Body shield** (Reaction, 1/round, while it holds someone) An attack on the choker hits its catch instead, who may Defend.
+- **Body shield** (Reaction, 1/round, while it holds someone) An attack on the choker by someone else hits its catch instead, who may Defend.
 
 **In play.** Takes the caster or the singer, then whoever comes to help. Bloodied, it drops its catch and leaves by any grate within 10.
 **Designer note.** The crawler drags you somewhere; the choker lifts you out of the fight. The hero still acts but can't cast, and every rescue risks hitting them. A room with no openings kills it.
@@ -1698,22 +1699,22 @@ Stage 1-8.
 *Hedge Witch*
 - **Pinch of spite** (1 Action, Range 6) 1d6+2. Psychic.
 - **Hex of clumsy feet** (1 Action, Range 8) WIL save DC 10 or Slowed until their next turn ends.
-- **Familiar crow** (Reaction, 1/round) An enemy attacking within 6 gets a crow in the face: disadvantage.
+- **Familiar crow** (Reaction, 1/round, attacked within 6) A crow in the face: the attack on the Witch is disadvantaged.
 *Masquer*
 - **Flash powder** (1 Action, Range 6) DEX save DC 11 or Blinded until their next turn ends.
 - **Stage fright** (1 Action, 1/round, Range 8) WIL save DC 11 or Frightened of it until their next turn ends.
 - **Mirror masks** (1 Action, 1/encounter) Two harmless 1 HP decoys within 4. While one is adjacent, attacks on the Masquer are disadvantaged.
 *Writ-Binder*
-- **Writ of seizure** (1 Action, Range 8) DEX save DC 12 or Restrained until their next turn ends, or until an ally touches the script.
+- **Writ of seizure** (1 Action, Range 8) DEX save DC 12 or Restrained until an ally touches the script, or escape DC 12.
 - **Writ of silence** (1 Action, 1/encounter, Range 6) WIL save DC 12 or Silenced until their next turn ends.
-- **Writ of citation** (Free, 1/round) A target is Taunted by the Writ-Binder until their next turn ends.
+- **Writ of citation** (1 Action, Range 8) WIL save DC 12 or Taunted by the Writ-Binder until their next turn ends.
 *Kartan Hedge-Mage*
 - **Slowing bolt** (1 Action, Range 12) 2d6+5. Slowed until their next turn ends.
 - **Gravity well** (Replaces its attacks, 1/encounter, Range 8) 2-space radius: STR save DC 13 or pulled 3 to the centre and Prone.
-- **Overreach** (Reaction, when crit) 1d8. Backlash: it takes the damage and its next attack is disadvantaged.
+- **Overreach** (Reaction, when a hero crits it) 1d8. Backlash on the attacker; its own next attack is disadvantaged.
 
 **In play.** Hang back behind the nearest body. Blind the first hero to close, pin the strongest, heap the rest. Leave when out of tricks.
-**Designer note.** Each one is a different verb, and none takes a turn. Glass cannons: they need a front rank of Bandits or Cultists, and the party's job is to reach them.
+**Designer note.** Each one is a different verb, and none takes a turn. Frail and harmless alone: they need a front rank of Bandits or Cultists, and the party's job is to reach them.
 **Sources.** Original. Fills a gap: below level 8 the GM Guide has no caster that Blinds, Frightens, Taunts or pulls.
 
 **Traits (d6)**
@@ -1771,7 +1772,7 @@ Stage 7-10, 13+.
 *Pestilent Preacher*
 - **Plague sermon** (1 Action, 1/round) Enemies within 8 who hear: STR save DC 12 or Poisoned a turn. Already Poisoned, also Slowed.
 - **Fever touch** (1 Action) 2d6+4. A Poisoned target is Slowed.
-- **Share the fever** (Passive) Once a round, splits damage dealt to an ally within 6: it takes half, the ally half.
+- **Share the fever** (Passive) When an ally within 6 is damaged, once a round, the Preacher takes half of it.
 
 **In play.** Smoke first, then the sermon on whoever breathed it, then blades on the Slowed. Never breaks off.
 **Designer note.** A ratchet: Poisoned, then Slowed, then 1d4 beside a cultist. No turn is lost. Distance and healing answer it, and the Preacher dies first.
@@ -1827,7 +1828,7 @@ Stage 7-12.
 - **Twin blades** (1 Action, ×2) 1d6. On crit, Slowed.
 - **Sway** (Reaction, 1/round, targeted in melee) Moves 2 first. Out of reach, the attack misses.
 *Serpent-Charmer*
-- **Call the coil** (1 Action, Range 8) 2-space radius: DEX save DC 12 or Restrained by snakes. Fire or slashing frees.
+- **Call the coil** (1 Action, Range 8) 2-space radius: DEX save DC 12 or Restrained by snakes: escape DC 12, or fire or slashing damage frees.
 - **Snake swarm** (1 Action, 1/encounter) Summons 2 snake minions (d6).
 *Voice of the Idol*
 - **Serpent-King's kiss** (1 Action) 2d6+8. Poison. Poisoned until the target's next turn ends.
@@ -1835,7 +1836,7 @@ Stage 7-12.
 - **Venom-bathed** (Passive) Immune to Poisoned; resists poison.
 
 **In play.** Dancers take the best melee hero, the Charmer pins the next, the Voice frightens the rest. Scatter when the Voice falls.
-**Designer note.** Coils and fear, not poison: it plays differently from the Children of Ibraxus. Fire frees the coil. Snakemen treat the Voice as a prophet.
+**Designer note.** Coils and fear, with poison only from the Voice: it plays differently from the Children of Ibraxus. Fire frees the coil. Snakemen treat the Voice as a prophet.
 **Sources.** Original. Vithra, the Idol and the Night of Vithra's Kiss are setting canon (the Deadlands).
 
 **Traits (d6)**
@@ -1849,7 +1850,7 @@ Stage 7-12.
 **Encounters (d4)**
 1. A dusk procession sings softly. The covered cart at the back drips.
 2. A young man scaled to the elbow begs for help leaving before the next ceremony.
-3. The Charmer plays for children in the market. Small snakes follow the tune out of a drain.
+3. The Charmer plays for children in a Lower Reaches square. Small snakes follow the tune out of a drain.
 4. A Dancer challenges the party's best fighter to a duel. It's a distraction.
 
 **Lairs (d4)**
@@ -1889,7 +1890,7 @@ Stage 1-8.
 - **Halt!** (1 Action) 1d8. A spear jab, shouted. Follows the GM Guide minion rules.
 *Golden Knight*
 - **Halberd** (1 Action, ×2, Reach 2) 1d6+2.
-- **Formation** (Passive) Armor one step heavier for each adjacent Knight, up to Medium.
+- **Formation** (Passive) Armor Medium while a Watch Guard, Knight or Sergeant is adjacent.
 *Knight Sergeant*
 - **Longsword** (1 Action, ×2) 1d8+4.
 - **Shackle** (1 Action, adjacent Prone or Grappled target) Restrained in manacles. Escape DC 12, or the key.
@@ -1899,7 +1900,7 @@ Stage 1-8.
 - **Griffon talons** (Free, 1/round) 1d8+5. Grappled, escape DC 12.
 
 **In play.** Want order, and credit for it. Shackle the downed, whistle early, kill only when a writ says so or a Knight falls.
-**Designer note.** A fight with the Knights is a clock: the whistle brings more. Surrender gets a cell, not a grave, which makes them the city's soft fail state.
+**Designer note.** A fight with the Knights is a clock: the whistle brings more. Surrender gets a cell, not a grave, and a cell is a scene: it always has a bail, a favour to call in or a back door.
 **Sources.** Adopted from the setting: Golden Knights (Gazetteer, Citadel; Doorish Hills patrols; griffon riders). Formation from the GM Guide ability table.
 
 **Traits (d6)**
@@ -1917,7 +1918,7 @@ Stage 1-8.
 4. A Sergeant conscripts the party on the spot: something just came through an arch.
 
 **Lairs (d4)**
-1. The Citadel's three towers behind iron doors and the gold statue of Lord Salvana.
+1. The Citadel's towers behind iron doors, and a gold statue of the first Lord Commander.
 2. A road outpost in the Doorish Hills: a stable, a cell, an evidence shelf with gaps.
 3. A griffon aerie on a Citadel tower, a rider polishing a lance.
 4. A watch-house at the Black Hand line, where the truce is kept with coin.
@@ -1931,7 +1932,7 @@ Stage 1-8.
 **Gig Fit**
 - Verb: Escort / Prove
 - But+: Faction result 'the Golden Knights' at Stages 1-8, as patron muscle, obstacle, or the arrest after a loud job.
-- Patron hook: Commander Joslyn Halfcloak hires adventurers for what the Knights can't be seen doing.
+- Patron hook: Joslyn Halfcloak, second of the Knights, hires adventurers for what the Knights can't be seen doing.
 - City of Arches name: "Gilt": Lower Reaches slang. "Gilt on the corner" means take the long way home.
 
 ### Arch Guardians
@@ -1949,25 +1950,27 @@ Stage 1-8.
 Stage Any arch.
 
 **Actions**
+*All members*
+- **Keyed** (Passive) Ignores anyone carrying its arch's key who doesn't attack it. Never goes past 12 spaces from the arch.
 *Skeletal Tomb Guardian*
 - **Glaive** (1 Action, Reach 2) 1d4+7.
 - **Bar the way** (Reaction, 1/round, enemy moves within 2) Glaive them first.
 - **Just bones!** (Passive) Resistant to piercing hits (not crits).
 *Flesh Guardian*
 - **Fists** (1 Action, ×2) 1d8+4. If both hit: Grappled and dragged 2 toward the arch.
-- **Stitched** (Passive) Lightning heals it. Fire makes its next Fists attack disadvantaged.
+- **Stitched** (Passive) Lightning heals it by the damage dealt. Fire makes its next Fists attack disadvantaged.
 *Clay Guardian*
 - **Slam** (1 Action, ×2) 1d8+6. Knockback 2, away from the arch.
 - **Rush** (Free, 1/encounter) Moves its full Speed and Slams once.
-- **Kiln-fired** (Passive) Fire damage heals it.
+- **Kiln-fired** (Passive) Fire heals it by the damage dealt.
 *Stone Guardian*
 - **Fist** (1 Action, ×2) 2d6+8.
 - **Slowing glare** (1 Action, 1/round, Range 6) WIL save DC 13 or Slowed until their next turn ends.
 - **Spell-proof** (Passive) Half damage from spells.
 
-**In play.** Holds the threshold, ignoring any key-bearer who doesn't attack it. Strikes everyone else; never goes past 12 spaces from its arch.
+**In play.** Holds the threshold and strikes everyone without the key. Fights only inside its leash.
 **Designer note.** Keys are Sejr's politics, and guardians enforce them. Steal the key and the fight never happens. Fight the guardian and the gate still won't open. A key shields only its bearer.
-**Sources.** Adopted from the setting: clay guardians at arches (Deathreach seed, Deadlands), skeletal tomb guardians (Threska seed), flesh and stone guardians. Keyed and Bound are this book's.
+**Sources.** Adopted from the setting: clay guardians at arches (Deathreach seed, Deadlands), skeletal tomb guardians (Threska seed), flesh and stone guardians. Keyed is this book's.
 
 **Traits (d6)**
 1. Dust drifted against its feet, undisturbed for centuries.
@@ -1997,7 +2000,7 @@ Stage Any arch.
 
 **Gig Fit**
 - Verb: Steal / Prove
-- But+: Any arch episode, at the gate in or out. The opening fight of an Arch direction.
+- But+: Any arch episode, at the gate in or out. The fight comes when someone lacks a key, or a key is stolen or forged.
 - Patron hook: A guardian can tell a true key from a forged one. The University wants to know how.
 - City of Arches name: "Doorstones": arch porters' word. "Ask the doorstone" means test a key.
 
@@ -2017,14 +2020,14 @@ Stage 1-8.
 
 **Actions**
 *Lady Kalya*
-- **Paid in full** (Free, 1/round) A Steel Hand within 8 moves and attacks.
+- **Paid in full** (Free, 1/round) A Steel Hand within 8 makes one Longsword attack.
 - **No fighter** (Passive) Never attacks. Asher Interposes for her whenever she can.
 *Steel Hand*
 - **Longsword** (1 Action, ×2) 1d8+3.
-- **Mercenary** (Passive) Offered more than Kalya pays (Influence DC 12, and the coin), it walks away.
+- **Mercenary** (Passive) Kalya pays 10 gp a day. Offered double (Influence DC 12, and the coin), it walks away.
 *Steel Hand Crossbow*
 - **Heavy crossbow** (1 Action, Range 12) 2d6+3.
-- **Mercenary** (Passive) Offered more than Kalya pays (Influence DC 12, and the coin), it walks away.
+- **Mercenary** (Passive) Kalya pays 10 gp a day. Offered double (Influence DC 12, and the coin), it walks away.
 *Silent Asher*
 - **Longsword** (1 Action, ×2) 1d10+5. Advantage against anyone who struck Kalya this round.
 - **Run through** (1 Action, 1/encounter) 2d10+10. Against a Prone or Grappled target. Can't be Interposed.
@@ -2065,7 +2068,7 @@ Stage 1-8.
 - But+: Faction result 'the Children of Ibraxus' at Stages 1-8, or the NPC-room rival crew once per episode.
 - Patron hook: The Golden Knights want proof Asher did the murders. Roselyn Zeshe wants Kalya's ledgers.
 - City of Arches name: "Kalya's hands": merchants' warning about who just bought the building next door.
-- Rival clock (6): 1 Kalya buys a building the party needs. 2 A merchant dies. 3 The Hands hire the party's contact. 4 A ritual is found. 5 The Choul gateway room is cleared. 6 The gate opens. Step on when the party ignores a clue, loses a scene or takes Kalya's coin; step back when it outbids the Hands, exposes a murder or takes the ritual. Capturing or killing Kalya, or holding the gateway room, ends the clock.
+- Rival clock (6): 1 Kalya buys a building the party needs. 2 A merchant dies. 3 The Hands hire the party's contact. 4 A ritual is found. 5 The gateway room is cleared (a Lower Reaches chamber Kalya is readying for a ritual gate). 6 The gate opens. Step on when the party ignores a clue, loses a scene or takes Kalya's coin; step back when it outbids the Hands, exposes a murder or takes the ritual. Capturing or killing Kalya, or holding the gateway room, ends the clock.
 - Campaign ladder: Prove Asher's murders. Steal Kalya's ledgers. Stop the gateway. Buying off the Hands skips a fight at any rung.
 
 ---
@@ -2080,8 +2083,8 @@ HP 28 · Armor Medium · Speed 6 (climb 8) · DC 12 · Stage 7-10, 13+
 
 **Actions**
 - **Lash** (1 Action, ×2, Reach 2) 1d6+2. STR save or dragged 2 spaces toward it, Slowed and Grappled (escape DC 12).
-- **Withdraw** (Free, 1/encounter) Climbs back through its crack, taking whoever it holds.
-- **Bite** (1 Action, Grappled target) 2d8+3. Crits if the target did not try to escape on its last turn.
+- **Withdraw** (Free, 1/encounter) Climbs 6 into its crack, dragging whoever it holds. They are released there, Prone. Allies can follow.
+- **Bite** (1 Action, Grappled target) 2d8+3. Automatic crit if the target did not try to escape on its last turn.
 
 **In play.** Guards food, not prey. Lashes from reach, bites only what it holds, withdraws when Bloodied.
 **Designer note.** A moray eel, not a paralysis trap: the venom only Slows, and the danger is where the held hero ends up. Sluggish in an open room, a siege weapon at a two-space junction.
@@ -2175,7 +2178,7 @@ HP 60 · Armor Medium · Speed 6 (teleport 12, 1/round) · DC 13 · Stage 13+
 HP 37 · Armor Medium · Speed 4 (climb 6) · DC 12 · Stage 13+
 
 **Actions**
-- **Filament** (1 Action, Range 8) DEX save or Restrained on the line. Any hit or flame cuts it. One line at a time.
+- **Filament** (1 Action, Range 8) DEX save or Restrained (escape DC 12). A hit or flame cuts it; the fall is 1d6 per 2 spaces.
 - **Reel** (Free, start of its turn) Pulls its catch 3 spaces toward it, straight up if need be.
 - **Claws** (1 Action, ×2) 1d8+4. Only within Reach 1.
 
@@ -2268,12 +2271,12 @@ HP 80 · Armor None · Speed Fly 6 (hover) · DC 13 · Stage 13+
 **Core:** The Vats' cleaner. It eats whatever stops moving, and splits once when hurt.
 *A yellow-brown slick of living acid, flat as a spill or heaped as tall as a man. It leaves stone polished and bones pitted.*
 
-HP 62 · Armor None · Speed 4 (climb 4, through any gap) · Stage 9-10, 13+
+HP 62 · Armor None · Speed 4 (climb 4, through any gap) · DC 12 · Stage 9-10, 13+
 
 **Actions**
 - **Pseudopod** (1 Action, ×2) 1d8+3. Acid. Slowed.
-- **Split** (Reaction, when first Bloodied) Two jellies, each with half its current HP and the same attacks. Rejoined, they add HP up to 62.
-- **Engulf** (1 Action, Prone or Dying target) 2d6+4. Can't miss.
+- **Split** (Reaction, when first Bloodied) Two jellies, each half its current HP, sharing one set of Pseudopods. Touching, they rejoin, HP up to 62.
+- **Engulf** (1 Action, Prone target) 2d6+4. Can't miss.
 
 **In play.** Flows to the nearest warm body and stays on it. Never breaks off.
 **Designer note.** Two acts: one slow jelly, then two that flank. Leaving a half alive is a real choice, because it rejoins. Use this one as the set piece, the Core Bestiary's for an ordinary drain.
@@ -2332,7 +2335,7 @@ Stage 7-10, 13+.
 - **Swell** (Free, 1/encounter) Grows Large until its next turn ends: Reach 2, +2 damage.
 *Drill-Wright*
 - **Bore** (2 Actions, Line 4) 2d8+5. DEX save for half. The wall at the end of the line opens.
-- **Bring it down** (1 Action, 1/encounter, Range 8) 2-space radius of ceiling falls: DEX save DC 12 or Prone and Restrained under rubble.
+- **Bring it down** (1 Action, 1/encounter, Range 8) 2-space radius of ceiling falls: DEX save DC 12 or Prone and Restrained (escape DC 12, or an ally digs).
 - **Wrench** (1 Action) 1d8+4.
 
 **In play.** Want the next shaft dug and the party out of the way. Delvers hold, the Drill-Wright brings the roof down. Leave when the drill breaks.
@@ -2376,14 +2379,14 @@ Stage 7-10, 13+.
 **Core:** The Abhorrent Vats spawn it from primordial fluid. It is mouths, eyes, and the noise of every adventurer it ate.
 *A heap of flesh that flows like spilled porridge, studded with eyes and mouths, all of them talking.*
 
-HP 52 · Armor None · Speed 3 (ground within 2 turns to mush) · DC 12 · Stage 13+
+HP 52 · Armor None · Speed 3 · DC 12 · Stage 13+
 
 **Actions**
 - **Bites** (1 Action, ×2) 1d6+5. A Prone target is bitten with advantage.
-- **Gibbering** (Passive, Reach 4) WIL save DC 12 or the GM moves them up to 3 spaces; the hero keeps all their actions.
+- **Gibbering** (Passive, Reach 4) Start of their turn: WIL save DC 12 or the GM moves them 3; they keep all actions.
 - **Blinding spittle** (1 Action, 1/encounter, Range 6) 2-space radius: DEX save or Blind until their next turn ends.
 
-**In play.** Oozes at the nearest noise and keeps babbling. Never breaks off.
+**In play.** Oozes at the nearest noise, babbling. Ground within 2 of it turns to mush (Difficult Terrain). Falls deal 1d6 per 2 spaces.
 **Designer note.** The babble steers feet, never hands, so heroes walk into the mush while still swinging. Kill it at range or fight with your ears stopped.
 **Sources.** Adopted from the setting: gibbering mouthers spawned in the Abhorrent Vats (Chapter 9) and loose on the Dreamcaster. Confusion rebuilt as GM-chosen movement.
 
@@ -2481,18 +2484,18 @@ Stage 13+.
 
 ### Meenlock Stalker
 *Korax · Standard · Controller · Level 3*
-**Core:** Korax's long twilight bred something that hates light. It takes victims to the burrow and remakes them.
+**Core:** Korax's long twilight bred something that hates light. It takes victims to the burrow and keeps them.
 *A child-sized thing, insect-headed and moss-furred, with claws like split reeds. It waits at the edge of the torchlight and whispers that you are alone.*
 
 HP 30 · Armor None · Speed 6 · DC 12 · Stage 13+
 
 **Actions**
 - **Claws** (1 Action, ×2) 1d6+4. STR save or Dazed next turn; already Dazed, Slowed. Two adjacent meenlocks drag a Dazed hero 3 spaces.
-- **Horrid link** (Free, 1/round, Range 10) Links one hero until its next turn: Frightened, 1d6+2 psychic whenever it's hurt. Bright light breaks the link.
+- **Horrid link** (1 Action, 1/round, Range 10) WIL save DC 12 or linked until its next turn: Frightened, and 1d6+2 psychic whenever the meenlock is hurt.
 - **Shadow step** (1 Action) Teleports 8 spaces, dark to dark, never into bright light. Again only after it is hit or a round passes.
 
 **In play.** Links one hero, Dazes them, drags them toward the dark. Breaks off in bright light, then trails the party for days.
-**Designer note.** Hurting it hurts your friend, so the party chooses whether to swing. Light is the answer: keep torches lit and a horror hunt becomes a fair fight. A hero kept in the burrow two days turns; burning the marker frees them.
+**Designer note.** Hurting it hurts your friend, so the party chooses whether to swing. Light is the answer: keep torches lit and a horror hunt becomes a fair fight. A taken hero waits Restrained in the burrow, a rescue for the next scene.
 **Sources.** Monster Vault: 4e MM3, Lv 9 Controller. Dimension Step, Horrid Link, corruption (4e). Paralysis rebuilt as Dazed.
 
 **Traits (d6)**
@@ -2535,8 +2538,8 @@ HP 30 · Armor None · Speed 6 · DC 12 · Stage 13+
 HP 24 · Armor None · Speed 6 · DC 11 · Stage 7-8, 13+
 
 **Actions**
-- **Stolen blade** (1 Action) 1d8+3. Advantage if unseen. Swap damage for an unsecured item, then move 4 without provoking.
-- **Snuff** (1 Action, 1/encounter) Every flame within 6 goes out. Heroes without darkvision are Blind until they relight one. Creepers see in the dark.
+- **Stolen blade** (1 Action) 1d8+3. Advantage if unseen. Instead of damage, may take one carried item, then move 4 without provoking.
+- **Snuff** (1 Action, 1/encounter, once per pack) Flames within 6 go out. Heroes without darkvision are Blind until they use an action to relight one.
 - **Flare** (Passive, on death) Burns away in a flash: DEX save or Blind a turn within 2. Its loot drops.
 
 **In play.** Wants loot, not blood. Darkness, steal, gone. Breaks off with anything worth fencing, or when Bloodied.
@@ -2587,7 +2590,7 @@ HP 40 · Armor None · Speed 6 (climb 6) · DC 12 · Stage 13+
 - **Swarm** (Passive) Its space is Difficult Terrain; starting a turn in or beside it costs 1d6. Single targets half, AoE double.
 - **Mind leash** (1 Action, 1/round) WIL save or the swarm chooses where the target moves next turn. Never their actions.
 
-**In play.** Pours over the nearest body. With an adult watching, it herds prey instead. Scatters when the adult falls.
+**In play.** Pours over the nearest body. Leashes the strongest and herds the rest toward the nest. Scatters when Bloodied.
 **Designer note.** The leash steers feet, never hands. It walks heroes into the pit while they keep swinging. AoE is the answer.
 **Sources.** Monster Vault: Conflux Creatures: Aberrations & Dragons, CR 1. Swarm aura (4e MM2 Neogi Spawn Swarm). Death scream cut.
 
@@ -2635,8 +2638,8 @@ HP 27 · Armor Medium · Speed 6 · DC 12 · Stage 13+
 
 **Actions**
 - **Ceremonial blade** (1 Action) 1d8+6. Advantage against a Slowed target.
-- **Drowse** (Passive, Reach 3) Heroes starting a turn near it: WIL save or Slowed. Already Slowed, Dazed instead.
-- **Stand for the knight** (Reaction, 1/round) Takes a hit meant for an ally within 2. The attacker: WIL save or Prone with sleep.
+- **Drowse** (Passive, Reach 3, once per hero per round) Heroes starting a turn near it: WIL save or Slowed. Already Slowed, Dazed instead.
+- **Stand for the knight** (Reaction, 1/round) Takes a hit meant for an ally within 2. The attacker: WIL save or Dazed.
 
 **In play.** Holds its post. Never breaks off; dropped, it wakes at dawn unless someone wakes its dreamer (Influence DC 12, beside them).
 **Designer note.** The sleep ratchets: one failed save Slows, a second Dazes, never more. Its weakness is the dreamer. Put the sleeping knight in the room.
@@ -2829,9 +2832,9 @@ HP 72 · Armor Medium · Speed 6 (climb 6) · DC 13 · Stage 4, 13+
 HP 37 · Armor Medium · Speed 8 · DC 12 · Stage 13+
 
 **Actions**
-- **Bite** (1 Action) 1d10+6. Dose (3; endless in its room): STR save or Poisoned, Slowed or Dazed, its pick, one turn. Then moves 4.
+- **Bite** (1 Action) 1d10+6. A failed STR save spends a dose (3, endless at home): Poisoned, Slowed or Dazed, its pick. Then moves 4.
 - **Ward-word** (Passive) Speak the word from the temple walls (Lore DC 14) to halt it a round, once.
-- **Construct** (Passive) Immune to Poisoned, Frightened and Charmed. Never chases past its temple door.
+- **Construct** (Passive) Immune to Poisoned and Frightened. Never chases past its temple door.
 
 **In play.** Strikes whoever crossed the threshold last, then slithers back. Never breaks off inside the temple.
 **Designer note.** Three doses outside its room, so the heroes can count. Inside, the limit lifts. The word on the walls rewards heroes who read the room.
@@ -2879,10 +2882,10 @@ HP 41 · Armor None · Speed 6 (tethered) · DC 12 · Stage 13+
 **Actions**
 - **Terrifying glare** (1 Action, Range 6) WIL save or Frightened until the end of the scarecrow's next turn. Already Frightened, Dazed.
 - **Claws** (1 Action, ×2) 1d6+4. Advantage against a Frightened target.
-- **Hitched** (Passive) Tethered within 6 of its pole; cutting the rope frees it, doubling glare range. Fire does it double damage.
+- **Hitched** (Passive) Tethered within 6 of its pole; cutting the rope frees it and doubles glare range. Fire deals it double damage.
 
 **In play.** Glares at anyone in its circle, claws whoever reaches the pole. Never breaks off and never forgets a face.
-**Designer note.** The rope is the encounter: fight at the edge of the circle, or cut it and set it loose. Fire does double damage. Put what the heroes want just inside the circle.
+**Designer note.** The rope is the encounter: fight at the edge of the circle, or cut it and set it loose. Fire deals it double damage. Put what the heroes want just inside the circle.
 **Sources.** Monster Vault: Ultimate Bestiary: The Dreaded Accursed, CR 6. Bond with its maker (4e MM3 Scarecrow). Paralysis rebuilt as Dazed.
 
 **Traits (d6)**
@@ -2906,7 +2909,7 @@ HP 41 · Armor None · Speed 6 (tethered) · DC 12 · Stage 13+
 4. A tower stair lined with watchmen tied to the banisters, eyes fresh.
 
 **Rumours (d4, Lore check)**
-1. ⊤ It can't leave its pole. Six paces out it's just a voice in your head.
+1. ⊤ It can't leave its pole. Twelve paces out it's just a voice in your head.
 2. ⊤ It's straw. Fire takes it twice as fast.
 3. ⊥ Meet its eye and you're frozen till sunrise.
 4. ⊥ They only move at night.
@@ -2937,14 +2940,14 @@ Stage 13+.
 - **Stone club** (1 Action) 2d6. Advantage against a creature carrying light.
 *Grimlock Ogre*
 - **Club** (1 Action, ×2) 1d8+4.
-- **Carry off** (1 Action, Prone target) STR save DC 12 or Grappled and carried its full Speed.
+- **Carry off** (1 Action, Prone or Grappled target) STR save DC 12 or Grappled and carried its full Speed, then dropped.
 *Ogre Mage Chanter*
 - **Chant** (Passive) While it chants, the god below sleeps. If it dies, start the Waking clock (4).
 - **Darkness** (1 Action, 1/encounter, Range 8) 3-space radius: Blind inside, except grimlocks.
 - **Cold breath** (1 Action, cone 3) 3d6+5. DEX save DC 13 for half.
 
 **In play.** Put out the light, then club whoever carried it. The ogre takes the fallen. The chanter never stops chanting.
-**Designer note.** Darkness is home ground. The chanter is the trap: killing it wins the fight and wakes the mountain. Advance the Waking clock one step each round after. At 4 the floor splits: the party flees, or something old surfaces.
+**Designer note.** Darkness is home ground. The chanter is the trap: killing it wins the fight and wakes the mountain. Step the Waking clock each round after. At 4 the floor splits and the chanting stops. Nothing climbs out tonight.
 **Sources.** Adopted from the setting: grimlocks, grimlock ogres and ogre mages of Teveron (Chapter 9), the Abhuman Effigy (campaign arcs).
 
 **Traits (d6)**
@@ -3035,10 +3038,10 @@ HP 64 · Armor None · Speed 8 (ignores snow) · DC 13 · Stage 13+
 **Core:** Lodge children pack snow-wards against the long cold. Some winters the cold fills one and it keeps watch.
 *A lumbering figure of packed snow and ice, pebble eyes set in a child's lopsided drawing of a face.*
 
-HP 52 · Armor None · Speed 4 · DC 12 · Stage 13+, winter city
+HP 52 · Armor None · Speed 4 · DC 12 · Stage 13+
 
 **Actions**
-- **Slam** (1 Action) 1d10+6. Cold. A melee weapon that hits it sticks: its next attack is disadvantaged.
+- **Slam** (1 Action) 1d10+6. Cold. A melee weapon that hits it sticks: the golem's next attack is disadvantaged.
 - **Snowball volley** (1 Action, Range 10) 1d8+4. Slowed.
 - **Frost field** (Passive) Within 2 is icy Difficult Terrain. Heals 5 a turn on snow. Fire deals double.
 
@@ -3337,7 +3340,7 @@ HP 40 · Armor None · Speed 6 · DC 12 · Stage 13+
 - **Leak** (Passive) Hits on it burn all within 1 (1d6). At 0 HP it implodes: 2d6 within 2, pulled in.
 
 **In play.** Lashes whoever is closest, because closest is loudest. Breaks off only by dying, and that hurts everyone.
-**Designer note.** Glass cannon: lower-level HP, higher-level damage, and it punishes melee every time it is hit. Kill it carefully, or eat the implosion.
+**Designer note.** Glass cannon: low HP, mid damage, and it punishes melee every time it is hit. Kill it carefully, or eat the implosion.
 **Sources.** Monster Vault: Creature Codex, CR 8. Scaled down as a glass cannon; origin rebuilt from Terrache canon.
 
 **Traits (d6)**
@@ -3527,12 +3530,12 @@ HP 87 · Armor None · Speed 8 (swim 8) · DC 13 · Stage 13+
 HP 24 · Armor None · Speed Fly 8 · DC 11 · Stage 13+
 
 **Actions**
-- **Bites** (1 Action) 2d4+3. Poison. One creature in or beside its space.
+- **Bites** (1 Action) 2d4+3. Poison. One creature in or beside its space is Poisoned until its next turn ends.
 - **Swarm** (Passive) Anyone starting a turn in its space is Slowed. Single targets half, AoE double.
 - **Ride the wind** (Free, 1/round) Moves 4 with the wind in open air, carrying a Small creature.
 
 **In play.** Defends its nest. Scatters when the nest burns or the swarm is Bloodied.
-**Designer note.** Difficult Terrain with teeth. Pair it with something bigger, a sahuagin raid or Kesset's elementals, so it changes the shape of a larger fight.
+**Designer note.** Difficult Terrain with teeth. Pair it with something bigger, a raid or an air elemental, so it changes the shape of a larger fight.
 **Sources.** Monster Vault: Conflux Creatures: Aberrations & Dragons, CR 5. Solitary unless nesting (Ammann).
 
 **Traits (d6)**
@@ -3984,7 +3987,7 @@ Generated from the entries and the Monster Builder table. It compares each non-m
 | The Steel Hands | Silent Asher | 5 | Medium | 64 | 49 | 1.31 | none | 13 |
 | Carrion Crawler | Carrion Crawler | 3 | Medium | 28 | 27 | 1.04 | 12 | 12 |
 | Far Wanderer | Far Wanderer | 6 | Medium | 60 | 60 | 1.00 | none | 13 |
-| Cave Fisher Angler | Cave Fisher Angler | 4 | Medium | 37 | 37 | 1.00 | none | 12 |
+| Cave Fisher Angler | Cave Fisher Angler | 4 | Medium | 37 | 37 | 1.00 | 12 | 12 |
 | Grell | Grell | 5 | None | 80 | 64 | 1.25 | none | 13 |
 | Ochre Jelly | Ochre Jelly | 3 | None | 62 | 41 | 1.51 | none | 12 |
 | Duergar Dig Crew | Duergar Delver | 2 | None | 31 | 31 | 1.00 | none | 11 |
@@ -3992,7 +3995,7 @@ Generated from the entries and the Monster Builder table. It compares each non-m
 | Gibbering Mouther | Gibbering Mouther | 4 | None | 52 | 52 | 1.00 | 12 | 12 |
 | Lizardfolk of the Dungeon | Lizardfolk Warden | 2 | None | 31 | 31 | 1.00 | none | 11 |
 | Lizardfolk of the Dungeon | Lizardfolk Mage | 5 | None | 49 | 64 | 0.77 | 13 | 13 |
-| Meenlock Stalker | Meenlock Stalker | 3 | None | 30 | 41 | 0.73 | none | 12 |
+| Meenlock Stalker | Meenlock Stalker | 3 | None | 30 | 41 | 0.73 | 12 | 12 |
 | Dark Creeper | Dark Creeper | 2 | None | 24 | 31 | 0.77 | none | 11 |
 | Neogi Hatchling Swarm | Neogi Hatchling Swarm | 4 | None | 40 | 52 | 0.77 | none | 12 |
 | Dream Squire | Dream Squire | 3 | Medium | 27 | 27 | 1.00 | none | 12 |

@@ -153,7 +153,7 @@ module.exports = [
     sources: SRC + "Bandits.",
 
     designNote:
-      "Printed GM Guide blocks, unchanged. Mortal Panic is the point: bandits are fragile (a 2 or less " +
+      "Printed GM Guide blocks, unchanged. Mortal Panic is the point: bandits are slippery (a 2 or less " +
       "misses them) and dangerous only in numbers, so the Captain's Strict Training is the real stat to watch. " +
       "In Sejr they are the street-level Black Hand: cut-outs with knives, deniable. They work as the " +
       "enforcement end of any episode where someone wants something taken without a name attached.",
@@ -179,8 +179,8 @@ module.exports = [
       "A crowded tenement floor where bandits live as neighbours, with children and laundry, and no one will ever testify."
     ],
     rumours: [
-      { true: true, text: "They panic when bloodied. Hit one hard and the rest lose their nerve." },
-      { true: true, text: "Hurt the Captain first. Without him, the hired knives stop knowing how to fight." },
+      { true: true, text: "A low roll misses a bandit. Hit hard and few, not light and often." },
+      { true: true, text: "Hurt the Captain first. His Strict Training drives the rest." },
       { true: false, text: "Bandits never attack a group of five or more. Walk in numbers and they let you pass." },
       { true: false, text: "The Black Hand protects its own. Name a Black Hand fixer and they will put down their blades." }
     ],
@@ -240,7 +240,7 @@ module.exports = [
 
     designNote:
       "Printed GM Guide blocks, unchanged. The family's one rule is that surviving an attack hurts you: " +
-      "every miss costs a hero 2 psychic damage that ignores Defense. A party that spreads its attacks " +
+      "every survived attack costs a hero 2 psychic damage that ignores Defense. A party that spreads its attacks " +
       "across five goblins takes ten damage a round for free, so focus fire and block the retaliation. " +
       "The Taskmaster feeds minions into the fight, so killing it first is usually right. In Sejr they are " +
       "Lower Reaches and cistern vermin with a grudge and a sense of humour.",
@@ -266,8 +266,8 @@ module.exports = [
       "A cave with a trapdoor in the ceiling, stuffed with goblin minions waiting for someone to look up."
     ],
     rumours: [
-      { true: true, text: "Every miss costs you. Don't spread your attacks across a gang of them. Pick one and finish it." },
-      { true: true, text: "Kill the Taskmaster and the rest lose their stomach. It's the one making them stay." },
+      { true: true, text: "Every attack a goblin survives costs you. Don't spread your attacks across a gang of them. Pick one and finish it." },
+      { true: true, text: "Kill the Taskmaster and the minions stop coming." },
       { true: false, text: "Goblins can't stand daylight. Drag the fight outside and they fold." },
       { true: false, text: "A goblin that laughs at you is bluffing. They always run when it matters." }
     ],

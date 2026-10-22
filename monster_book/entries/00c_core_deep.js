@@ -6,7 +6,7 @@ const SRC = "Nimble GM Guide, Bestiary: ";
 module.exports = [
   {
     world: "Core Bestiary",
-    tier: "Minion / Standard",
+    tier: "Standard",
     role: "Controller",
     name: "Briarbanes",
     description: "Soulless plant things, thorned and red-veined, fed on blood. Seedlings spit " +
@@ -32,7 +32,7 @@ module.exports = [
           A("Slam", "1 Action, ×2", "1d6+5", "On damage, Knockback 2 or Prone."),
         ] },
     ],
-    stats: { stage: "13+" },
+    stats: { stage: "7-8, 13+" },
 
     tactics: "Wants blood for the soil. Tanglers pull the lone hero toward the pods, the seedlings thin the rest from behind, " +
       "and the Rootbreaker holds the middle. Never breaks off: plants don't.",
@@ -199,7 +199,7 @@ module.exports = [
       "A tidy ledger of names, with a tick against each one they have 'saved'."
     ],
     encounters: [
-      "A cheerful cult recruiter hands out leaflets at the Market Square festival. Several members of the crowd are plants.",
+      "A cheerful cult recruiter hands out leaflets at a Lower Reaches market. Several members of the crowd are plants.",
       "A Cultist begs the party for a swift death, saying the god told him they would be the ones. He is not lying.",
       "Cultists are digging up a grave in the dark, in a hurry, singing under their breath. The grave belongs to someone the party knew.",
       "A Doomsayer preaches in an alley to a crowd of children and street vendors, who are all listening very carefully."
@@ -220,13 +220,13 @@ module.exports = [
       verb: "Stop / Find",
       butPlus: "Faction result with 'cultists' as the band kind, at Stage 4 or 7-12, or 'the Children of Ibraxus'. A cheap, readable early villain with a clear opening hook.",
       patronHook: "The Archkeepers have lost an arrival to a cult. The arrival may have joined willingly. They need the party to ask.",
-      cityName: "\"The Smilers\": Market Square name for any cult that looks too cheerful."
+      cityName: "\"The Smilers\": Lower Reaches name for any cult that looks too cheerful."
     }
   },
 
   {
     world: "Core Bestiary",
-    tier: "Minion / Standard",
+    tier: "Standard",
     role: "Brute",
     name: "Lesser Fiends",
     description: "Small, large, and in between, and all of them wrong: a stinking little thing " +
@@ -260,7 +260,7 @@ module.exports = [
       "Printed GM Guide blocks, unchanged. Stenchlings are cheap bomb-carriers, and killing one adjacent " +
       "to a friend is worth thinking about. The Spiny Fiend punishes melee with 4 damage and shoots 12 spaces. " +
       "The Glabrezu is a level 14 fiend whose Tear Asunder ends a Dying hero outright, so " +
-      "keep its victim out of two grips at once. Cultists and the Children of Ibraxus summon the first two.",
+      "keep its victim out of two grips at once. Cultist rites can call the first two.",
 
     traits: [
       "It smells of boiled eggs and wet iron.",
@@ -298,7 +298,7 @@ module.exports = [
 
   {
     world: "Core Bestiary",
-    tier: "Minion / Standard",
+    tier: "Standard",
     role: "Controller",
     name: "Spiders",
     description: "A web is never only a web. These spin their traps wide, sit at the centre, and " +
