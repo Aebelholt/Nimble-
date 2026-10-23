@@ -137,11 +137,11 @@ module.exports = [
 
     actions: [
       A("Bite", "1 Action", "2d8+6", "STR save or Poisoned until healed."),
-      A("Phase", "Free, 1/round", "", "Vanishes; reappears within 8 at the start of its next turn, its first attack advantaged."),
-      A("Ethereal repulsion", "Reaction, enemy moves adjacent", "", "WIL save or that enemy is teleported 4 spaces."),
+      A("Phase", "Free, after a Bite, not the turn it appeared", "", "Vanishes. The GM marks a shimmer within 8; it reappears there next turn, first Bite advantaged."),
+      A("Ethereal repulsion", "Reaction, enemy moves adjacent", "", "WIL save or that enemy is teleported 4 spaces, never into harm. Once per enemy per encounter."),
     ],
 
-    tactics: "Blinks in on the biggest hero, bites, blinks away. Bloodied, it simply stops coming back.",
+    tactics: "Blinks in and bites the biggest hero, stays exposed a round, bites, then blinks out. Heroes beside the shimmer strike first. Bloodied, it stops returning.",
     sources: "Monster Vault: 4e MM2, Lv 8 Skirmisher. Ethereal Repulsion (4e); targets the large (Ammann). Paralysis rebuilt as Poisoned.",
 
     designNote:

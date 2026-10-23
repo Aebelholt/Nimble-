@@ -1,4 +1,4 @@
-// Core Bestiary: stat blocks are the Nimble GM Guide's, unchanged. Everything else is this book's.
+// Core Bestiary: stat numbers are the Nimble GM Guide's, ability wording reformatted. Everything else is this book's.
 const A = (name, cost, damage, effect) => ({ name, cost, damage: damage || "—", effect });
 const P = (name, effect) => A(name, "Passive", "—", effect);
 const SRC = "Nimble GM Guide, Bestiary: ";
@@ -55,7 +55,7 @@ module.exports = [
     sources: SRC + "Kobolds.",
 
     designNote:
-      "Printed GM Guide blocks, unchanged. The whole family runs on Nooooo!: every kill is a free " +
+      "Official Nimble blocks. The whole family runs on Nooooo!: every kill is a free " +
       "swing for the neighbour, so the question is who dies first and where the rest are standing. Kill " +
       "the Clanger and the Denwarden early, then the line. The GM Guide's warning applies in full: " +
       "outnumbering the party more than three to one makes even weak monsters lethal. The Lower " +
@@ -153,7 +153,7 @@ module.exports = [
     sources: SRC + "Bandits.",
 
     designNote:
-      "Printed GM Guide blocks, unchanged. Mortal Panic is the point: bandits are slippery (a 2 or less " +
+      "Official Nimble blocks. Mortal Panic is the point: bandits are slippery (a 2 or less " +
       "misses them) and dangerous only in numbers, so the Captain's Strict Training is the real stat to watch. " +
       "In Sejr they are the street-level Black Hand: cut-outs with knives, deniable. They work as the " +
       "enforcement end of any episode where someone wants something taken without a name attached.",
@@ -239,7 +239,7 @@ module.exports = [
     sources: SRC + "Goblins.",
 
     designNote:
-      "Printed GM Guide blocks, unchanged. The family's one rule is that surviving an attack hurts you: " +
+      "Official Nimble blocks. The family's one rule is that surviving an attack hurts you: " +
       "every survived attack costs a hero 2 psychic damage that ignores Defense. A party that spreads its attacks " +
       "across five goblins takes ten damage a round for free, so focus fire and block the retaliation. " +
       "The Taskmaster feeds minions into the fight, so killing it first is usually right. In Sejr they are " +
@@ -311,7 +311,7 @@ module.exports = [
     sources: SRC + "Snakemen.",
 
     designNote:
-      "Printed GM Guide blocks, unchanged. Grapple is the whole kit: Coiling Strike on a crit, Coiling " +
+      "Official Nimble blocks. Grapple is the whole kit: Coiling Strike on a crit, Coiling " +
       "Command on demand, and a Giant Cobra that crushes anything smaller. Heroes still act while " +
       "Grappled, so the answer is mobility or fire. Pair them with the Serpent Cult of Vithra, which " +
       "treats them as holy. Sunken Revvia and the Lost Cisterns are snake country.",
@@ -389,7 +389,7 @@ module.exports = [
     sources: SRC + "Dungeon Denizens, oozes. The Deathreach Ochre Jelly is a separate 4e Elite.",
 
     designNote:
-      "Printed GM Guide blocks, unchanged. Slashing and crits feed the oozes, so the answer is blunt, fire, " +
+      "Official Nimble blocks. Slashing and crits feed the oozes, so the answer is blunt, fire, " +
       "cold, or radiant damage and spreading out so Digested stops stacking on one hero. " +
       "This is the Lower Reaches and Lost Cisterns default for an ooze; the Deathreach Ochre Jelly is the " +
       "4e Elite built for a set piece. Use the core block for any ordinary drain, and the Elite " +
@@ -465,7 +465,7 @@ module.exports = [
     sources: SRC + "Dungeon Denizens, mimics.",
 
     designNote:
-      "Printed GM Guide blocks, unchanged. A mimic is a trap with a hunger: it always acts first, " +
+      "Official Nimble blocks. A mimic is a trap with a hunger: it always acts first, " +
       "and its Grapple stacks across the whole party. Heroes lose initiative and mobility but " +
       "never their turn, and a crit frees one creature. The right answer is to find the right item " +
       "in the room first, which makes the mimic a Find clock as much as a fight. A mimic needs a " +

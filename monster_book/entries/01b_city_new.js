@@ -119,7 +119,7 @@ module.exports = [
         actions: [
           A("Slowing bolt", "1 Action, Range 12", "2d6+5", "Slowed until their next turn ends."),
           A("Gravity well", "Replaces its attacks, 1/encounter, Range 8", "—", "2-space radius: STR save DC 13 or pulled 3 to the centre and Prone."),
-          A("Overreach", "Reaction, when a hero crits it", "1d8", "Backlash on the attacker; its own next attack is disadvantaged."),
+          A("Overreach", "Reaction, 1/round, when a hero crits it", "1d8", "Backlash on the attacker; its own next attack is disadvantaged."),
         ] },
     ],
     stats: { stage: "1-8" },

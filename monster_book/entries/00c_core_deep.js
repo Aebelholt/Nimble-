@@ -1,4 +1,4 @@
-// Core Bestiary: stat blocks are the Nimble GM Guide's, unchanged. Everything else is this book's.
+// Core Bestiary: stat numbers are the Nimble GM Guide's, ability wording reformatted. Everything else is this book's.
 const A = (name, cost, damage, effect) => ({ name, cost, damage: damage || "—", effect });
 const P = (name, effect) => A(name, "Passive", "—", effect);
 const SRC = "Nimble GM Guide, Bestiary: ";
@@ -39,7 +39,7 @@ module.exports = [
     sources: SRC + "Forest Denizens, briarbanes.",
 
     designNote:
-      "Printed GM Guide blocks, unchanged. The Tangler is a 6-space reach Grapple plus a 4-space pull, " +
+      "Official Nimble blocks. The Tangler is a 6-space reach Grapple plus a 4-space pull, " +
       "so a hero ends up standing next to an Acidpod that bursts for 4d6. Fire and slashing frees the " +
       "grapple, and every hit peels armor, so the party should hit first with what ignores it. " +
       "On the far side of Eruwynd, the Endless Forest, and any overgrown ruin.",
@@ -111,7 +111,7 @@ module.exports = [
     sources: SRC + "Forest Denizens, forest keepers.",
 
     designNote:
-      "Printed GM Guide blocks, unchanged. The Basilisk is the one place this book keeps a printed " +
+      "Official Nimble blocks. The Basilisk is the one place this book keeps a printed " +
       "Petrified: three stacked Lithify gazes over 10 minutes. It is gradual, telegraphed, and costs " +
       "an action per stack rather than a turn, so it stays. If a Sejr table wants it gentler, cap Lithify at two " +
       "stacks and let the third only Slow. The Duskprowler wants area damage or a hero with " +
@@ -184,7 +184,7 @@ module.exports = [
     sources: SRC + "Cultists/Horrors, cultists.",
 
     designNote:
-      "Printed GM Guide blocks, unchanged. Despair is disadvantage on every roll until the afflicted " +
+      "Official Nimble blocks. Despair is disadvantage on every roll until the afflicted " +
       "hero deals or heals any damage, which is a one-action fix and a reason to keep a Shepherd close. " +
       "The Doomsayer reduces damage to its allies to 1 for anyone who can hear, so killing it, silencing it, " +
       "or standing out of earshot is the whole fight. The setting's cults, Children of Ibraxus and " +
@@ -257,7 +257,7 @@ module.exports = [
     sources: SRC + "Cultists/Horrors, fiends.",
 
     designNote:
-      "Printed GM Guide blocks, unchanged. Stenchlings are cheap bomb-carriers, and killing one adjacent " +
+      "Official Nimble blocks. Stenchlings are cheap bomb-carriers, and killing one adjacent " +
       "to a friend is worth thinking about. The Spiny Fiend punishes melee with 4 damage and shoots 12 spaces. " +
       "The Glabrezu is a level 14 fiend whose Tear Asunder ends a Dying hero outright, so " +
       "keep its victim out of two grips at once. Cultist rites can call the first two.",
@@ -328,7 +328,7 @@ module.exports = [
     sources: SRC + "Underground, spiders.",
 
     designNote:
-      "Printed GM Guide blocks, unchanged. Everything here is Hampered bait: Restrained is a bite on a " +
+      "Official Nimble blocks. Everything here is Hampered bait: Restrained is a bite on a " +
       "plate. The Ettercap's Silence matters most against Mages, Songweavers, and Commanders, and the " +
       "Nestweaver's three minions make the room feel like a spider swarm. Fire and slashing are the keys, " +
       "and a hero with a torch changes the encounter. Lower Reaches cellars and Lost Cisterns beams.",
@@ -369,7 +369,7 @@ module.exports = [
 
   {
     world: "Core Bestiary",
-    tier: "Standard / Elite",
+    tier: "Standard",
     role: "Brute",
     name: "Deep Horrors",
     description: "Nightmarish denizens of the deep, lurking in dark tunnels and cavernous depths, " +
@@ -402,7 +402,7 @@ module.exports = [
     sources: SRC + "Underground, deep horrors.",
 
     designNote:
-      "Printed GM Guide blocks, unchanged. Three solo-grade horrors. The Umber Hulk steals actions, " +
+      "Official Nimble blocks. Three solo-grade horrors. The Umber Hulk steals actions, " +
       "the Cloaker steals the first round, and the Great Worm punishes anyone who moves. Each is a high-level " +
       "threat and a terrain problem, so use one per episode and make the map do half the work. " +
       "They belong to Deathreach's Abhorrent Vats and Terrache's deep caves, not the city.",

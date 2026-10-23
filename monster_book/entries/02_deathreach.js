@@ -185,6 +185,7 @@ module.exports = [
   {
     world: "Deathreach",
     tier: "Elite",
+    cost: 6,
     role: "Skirmisher",
     level: 5,
     name: "Grell",
@@ -245,6 +246,7 @@ module.exports = [
   {
     world: "Deathreach",
     tier: "Elite",
+    cost: 5,
     role: "Brute",
     level: 3,
     name: "Ochre Jelly",

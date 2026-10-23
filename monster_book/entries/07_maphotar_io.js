@@ -136,7 +136,7 @@ module.exports = [
     stats: { hp: 64, armor: "None", speed: "10", dc: 13, stage: "13+" },
 
     actions: [
-      A("Bite", "1 Action", "1d10+10", "Fire. Knockback equal to the Primary Die. Advantage if an ally is beside the target."),
+      A("Bite", "1 Action", "1d10+10", "Fire. Knockback 2. Advantage if an ally is beside the target."),
       A("Fire breath", "2 Actions, 1/encounter", "3d6+4", "Fire, cone 3. DEX save for half."),
       A("Fire shield", "Passive", "", "Anyone starting a turn beside it takes 1d6 fire."),
     ],
@@ -145,7 +145,7 @@ module.exports = [
     sources: "Monster Vault: 4e MM, Lv 7 Brute. Fire Shield (4e); pack logic (Ammann).",
 
     designNote:
-      "The bite throws heroes apart; the pack gangs up on whoever lands alone. Soul-scent makes it " +
+      "The bite throws heroes 2 spaces; a wall or ally behind adds 5 per space cut short. The pack gangs up on whoever lands alone. Soul-scent makes it " +
       "a thread: whoever has been to Maphotar is being hunted.",
 
     traits: [

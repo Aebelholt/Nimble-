@@ -25,7 +25,7 @@ Entries marked `seb: true` are linted to these limits: a `core` line (max 22 wor
 
 ## Core Bestiary
 
-The first section reproduces the Nimble GM Guide bestiary (19 families, about 60 stat blocks) in the book's format, unchanged. A family entry uses a `roster` (name, level, HP, armor, speed, actions) instead of the four-cell stat table, optional `shared` actions for traits every member has, and an optional `groups` line copied from the GM Guide's per-hero sample encounters. Printed conditions stand; an entry that keeps a banned one (the Basilisk's Petrified) names it in `allowConditions` and explains it in the designer note, or the lint fails.
+The first section reproduces the Nimble GM Guide bestiary (19 families, about 60 stat blocks) in the book's format: stat numbers as printed and machine-checked, ability wording reformatted (not verbatim). A family entry uses a `roster` (name, level, HP, armor, speed, actions) instead of the four-cell stat table, optional `shared` actions for traits every member has, and an optional `groups` line copied from the GM Guide's per-hero sample encounters. Printed conditions stand; an entry that keeps a banned one (the Basilisk's Petrified) names it in `allowConditions` and explains it in the designer note, or the lint fails.
 
 Original additions in the City of Arches section: **The Sterling Scabbards** (an early rival crew with a six-step clock and a three-gig ladder), **Hedge Casters** (four low-level controllers, each with a different verb), **Children of Ibraxus** (a rot cult built on Poisoned then Slowed) and **Serpent Cult of Vithra** (a blade-and-coil cult built on Restrained and Frightened). The GM Guide's own Cultists, Fanatics and Doomsayers are the rank and file for both.
 
@@ -65,3 +65,10 @@ Not now. Making every encounter context-independent costs high-level play its ta
 ## Design priorities (GM decision)
 
 Fun first, rules second, lore third. The campaign leans on discovery and exploration, so keys and arches are common and strong, and the setting books are a source to borrow from, not a canon to defend. The GM paraphrases canon on the day, so nothing exists until it hits the table. An entry is judged on whether it gives the party a clear next move, not on intrigue. The audit prompt carries this as a standing decision.
+
+## Roles, turns, tiers and provenance
+
+- `member_meta.js` holds each family member's battlefield role and a Turn line for every creature with a choice of actions. The build fails if a creature with two or more live abilities has no Turn line, or a family member has no role. A family header shows the roles its members actually play ("Mixed roles" past two).
+- Tiers: Minion and Standard cost their level. Elite is this book's own tier; it costs level times HP over Builder HP, rounded, printed in the header as `cost`.
+- Provenance is printed on the Sources line: official Nimble blocks (numbers machine-checked, wording reformatted, not verbatim), SEJR variants, conversions, adaptations from the setting book, and originals. Variants set `variantOf`; prototypes set `prototype: true` and are not SEB-trimmed.
+- Draw Steel adaptations: the Draw Steel Monsters book is not in the repo. Work from it needs the book uploaded so page references can be checked.

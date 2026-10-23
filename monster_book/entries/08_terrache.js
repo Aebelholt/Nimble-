@@ -136,8 +136,8 @@ module.exports = [
     stats: { hp: 49, armor: "None", speed: "6 (swim 8)", dc: 13, stage: "13+" },
 
     actions: [
-      A("Bite", "1 Action", "2d8+6", "Then it slips half out of the world: attacks against it are disadvantaged until its next turn."),
-      A("Chaos shift", "Reaction, attacked in melee", "", "Moves 2 first, without provoking. Out of reach, the attack misses."),
+      A("Bite", "1 Action", "2d8+6", "Then it slips away: moves 4 without provoking."),
+      A("Chaos shift", "Reaction, 1/round, attacked in melee", "", "Moves 2 first, without provoking. Out of reach, the attack misses."),
       A("Grow", "Passive", "", "Becomes an adult slaad 1d4+3 days after emerging, a day sooner for each good meal."),
     ],
 

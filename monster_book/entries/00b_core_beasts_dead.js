@@ -1,4 +1,4 @@
-// Core Bestiary: stat blocks are the Nimble GM Guide's, unchanged. Everything else is this book's.
+// Core Bestiary: stat numbers are the Nimble GM Guide's, ability wording reformatted. Everything else is this book's.
 const A = (name, cost, damage, effect) => ({ name, cost, damage: damage || "—", effect });
 const P = (name, effect) => A(name, "Passive", "—", effect);
 const SRC = "Nimble GM Guide, Bestiary: ";
@@ -38,7 +38,7 @@ module.exports = [
     sources: SRC + "Hill & Field, gnolls and worgs.",
 
     designNote:
-      "Printed GM Guide blocks, unchanged. Bloodthirsty means the first hero to bleed becomes everyone's " +
+      "Official Nimble blocks. Bloodthirsty means the first hero to bleed becomes everyone's " +
       "target, and the worg's Grapple plus Savage turns a held hero into a crit target. The answer is a " +
       "front line that keeps no one alone and heals early. In Sejr they are the Doorish Hills' raiders " +
       "and the payoff when the Hills' Neglect clock fills. The demon-worshipping gnolls under the Hills " +
@@ -111,7 +111,7 @@ module.exports = [
     sources: SRC + "Hill & Field, flying beasts.",
 
     designNote:
-      "Printed GM Guide blocks, unchanged. The family is a height problem: Grapple, lift, and drop " +
+      "Official Nimble blocks. The family is a height problem: Grapple, lift, and drop " +
       "(6d6 or 10d6 on a fall). The party's job is to cut the hold before the drop, or be below to catch it. " +
       "Bows and spells beat a flying enemy that will not land. Use under an open sky or a tall hall; a " +
       "low ceiling ends the griffon and the roc completely, and the Blue Drake's Burst Lightning " +
@@ -186,7 +186,7 @@ module.exports = [
     sources: SRC + "Hill & Field, brutes.",
 
     designNote:
-      "Printed GM Guide blocks, unchanged. Three solutions to the same question, how do you stop a big thing? " +
+      "Official Nimble blocks. Three solutions to the same question, how do you stop a big thing? " +
       "The Bulette is punished by leaving the heaviest hero out front and waiting. The troll punishes bad " +
       "damage: carry fire or radiance, and do not leave it at 0 HP. The giant wants to throw: " +
       "get under its reach, behind cover, or out of its line. These are high-level monsters, so the " +
@@ -253,7 +253,7 @@ module.exports = [
     sources: SRC + "Dungeon Denizens, stirges.",
 
     designNote:
-      "Printed GM Guide blocks, unchanged. A latched stirge cannot miss, and cannot be Defended or " +
+      "Official Nimble blocks. A latched stirge cannot miss, and cannot be Defended or " +
       "Interposed, so the answer is killing it off the host, which hurts the host too. " +
       "They are a cheap, nasty, low-level pressure that makes the party move, and the Greater Stirge is a " +
       "serious mid-level threat in a dark room. Light is the best tool.",
@@ -334,7 +334,7 @@ module.exports = [
     sources: SRC + "Undead.",
 
     designNote:
-      "Printed GM Guide blocks, unchanged. Everything gets up once at 1 HP, so a wave of skeletons is " +
+      "Official Nimble blocks. Everything gets up once at 1 HP, so a wave of skeletons is " +
       "two waves, and the Ghoul's Dazed is the only real tax on actions. The d4 is the thematic undead " +
       "die: slow, with a big flat bonus, so armor matters more than damage dice. These are the Cliffs " +
       "of the Dead's ordinary residents, and the Archkeepers will pay to have them laid to rest.",
@@ -400,7 +400,7 @@ module.exports = [
     sources: SRC + "Undead, spirits.",
 
     designNote:
-      "Printed GM Guide blocks, unchanged. The Specter's touch sets a hero to 0 HP on damage, so it is " +
+      "Official Nimble blocks. The Specter's touch sets a hero to 0 HP on damage, so it is " +
       "a hit-or-miss monster where one hit changes the fight, and the reward for radiant damage is " +
       "advantage on the next attack. The Wraith's Wound is the same fear at higher cost. Keep a " +
       "Shepherd close. Cliffs of the Dead, Sunken Revvia, and any tomb arch.",
@@ -464,7 +464,7 @@ module.exports = [
     sources: SRC + "Undead, mummies.",
 
     designNote:
-      "Printed GM Guide blocks, unchanged. A Mummy is a slow, hard hitter whose Dazed takes one action a " +
+      "Official Nimble blocks. A Mummy is a slow, hard hitter whose Dazed takes one action a " +
       "turn, so it taxes rather than stops. A Mummy Lord is a level 21 boss and not a Sejr encounter: keep " +
       "it as a campaign villain for a tomb in Threska or Arkus and let the heroes meet it once, " +
       "late, or run from it. Fire is the answer to the wrappings.",

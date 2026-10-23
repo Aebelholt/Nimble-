@@ -5,6 +5,7 @@ module.exports = [
   {
     world: "Drakeholm",
     tier: "Elite",
+    cost: 9,
     role: "Controller",
     level: 7,
     name: "Young Blizzard Dragon",

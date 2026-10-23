@@ -34,6 +34,7 @@ const ROW_EVEN = "FAF7F2";
 const ROW_ODD = "FFFFFF";
 const TEXT_W = 12240 - 2 * 1440; // content width in DXA
 
+const { ROLES, TURNS } = require("./member_meta.js");
 const lvlNum = (l) => {
   if (typeof l === "number") return l;
   const m = String(l).match(/^(\d+)\/(\d+)$/);
@@ -79,9 +80,18 @@ const fill = (color) => ({ type: ShadingType.CLEAR, color: "auto", fill: color }
 
 // ---------- Blocks ----------
 
+// A family section shows the roles its members actually play, not one label for all of them.
+function famRole(d) {
+  if (!d.roster) return d.role;
+  const rs = [...new Set(d.roster.map((m) => ROLES[d.name + "/" + m.name]).filter(Boolean))];
+  if (!rs.length) return d.role;
+  return rs.length > 2 ? "Mixed roles" : rs.join(" / ");
+}
+const turnOf = (d, m) => TURNS[m ? d.name + "/" + m.name : d.name];
+
 function headerTable(d) {
   const p = pal(d.world);
-  const kicker = [d.world, d.tier, d.role, levelLabel(d)].join("  ·  ").toUpperCase();
+  const kicker = [d.world, d.tier + (d.cost ? ` (cost ${d.cost})` : ""), famRole(d), levelLabel(d)].join("  ·  ").toUpperCase();
   return new Table({
     width: { size: TEXT_W, type: WidthType.DXA },
     columnWidths: [TEXT_W],
@@ -118,13 +128,13 @@ function statTable(stats, worldKey) {
 
 function rosterTable(d) {
   const p = pal(d.world);
-  const cols = [["Member", 3300], ["Lvl", 900], ["HP", 1100], ["Armor", 1200], ["Speed", TEXT_W - 3300 - 900 - 1100 - 1200]];
+  const cols = [["Member", 3900], ["Lvl", 800], ["HP", 1000], ["Armor", 1100], ["Speed", TEXT_W - 3900 - 800 - 1000 - 1100]];
   const hdr = new TableRow({ tableHeader: true, children: cols.map(([k, w], i) => cell(
     [para(run(k.toUpperCase(), { font: HEAD, size: 15, bold: true, color: p.ink, characterSpacing: 30 }),
       { alignment: i ? AlignmentType.CENTER : AlignmentType.LEFT, spacing: { after: 0 } })],
     { shading: fill(p.bg), width: { size: w, type: WidthType.DXA } })) });
   const rows = d.roster.map((m) => new TableRow({ cantSplit: true, children: [
-    [m.name, true], [String(m.level)], [String(m.hp)], [m.armor || "None"], [m.speed || "6"],
+    [m.name + (ROLES[d.name + "/" + m.name] ? " · " + ROLES[d.name + "/" + m.name] : ""), true], [String(m.level)], [String(m.hp)], [m.armor || "None"], [m.speed || "6"],
   ].map(([v, left], i) => cell(
     [para(run(v, { bold: i === 0, size: 19 }), { alignment: left ? AlignmentType.LEFT : AlignmentType.CENTER, spacing: { after: 0 } })],
     { width: { size: cols[i][1], type: WidthType.DXA } })) }));
@@ -155,6 +165,15 @@ const actionLine = (a) => {
   return actionBullet(head + ":", dmg + " " + a.effect);
 };
 
+// What kind of block this is: official Nimble, a converted source creature, or an original design.
+function provenance(d) {
+  if (d.world === "Core Bestiary") return "Official Nimble (GM Guide 3.0), regrouped. Numbers machine-checked; ability wording reformatted, not verbatim.";
+  if (d.variantOf) return "SEJR variant of " + d.variantOf + ". Original design, unplaytested.";
+  if (/^Original/.test(d.sources || "")) return "SEJR original.";
+  if (/^Adopted/.test(d.sources || "")) return "SEJR adaptation from the setting book, rebuilt in Nimble numbers.";
+  return "SEJR conversion, rebuilt in Nimble numbers.";
+}
+
 function bodyTable(d) {
   const p = pal(d.world);
   const kids = [];
@@ -171,14 +190,19 @@ function bodyTable(d) {
     d.roster.forEach((m) => {
       kids.push(para(run(m.name + (m.note ? "  (" + m.note + ")" : ""), { font: HEAD, bold: true, size: 19, color: p.ink }),
         { spacing: { before: 100, after: 30 }, keepNext: true }));
+      const tl = turnOf(d, m);
+      if (tl) kids.push(para([run("Turn. ", { bold: true, italics: true, size: 19 }), run(tl, { italics: true, size: 19 })], { spacing: { after: 50 } }));
       m.actions.forEach((a) => kids.push(actionLine(a)));
     });
   } else {
-    kids.push(statTable(d.stats, d.world), sectionTitle("Actions", d.world), ...d.actions.map(actionLine));
+    const tl = turnOf(d);
+    kids.push(statTable(d.stats, d.world), sectionTitle("Actions", d.world));
+    if (tl) kids.push(para([run("Turn. ", { bold: true, italics: true, size: 19 }), run(tl, { italics: true, size: 19 })], { spacing: { after: 50 } }));
+    kids.push(...d.actions.map(actionLine));
   }
   kids.push(para([run("In play. ", { bold: true }), run(d.tactics)], { spacing: { before: 120, after: 40 } }));
   kids.push(designNote(d.designNote));
-  if (d.sources) kids.push(para(run("Sources: " + d.sources, { size: 16, color: "707070" }), { spacing: { before: 60, after: 0 } }));
+  if (d.sources) kids.push(para(run(provenance(d) + " " + d.sources, { size: 16, color: "707070" }), { spacing: { before: 60, after: 0 } }));
   return new Table({
     width: { size: TEXT_W, type: WidthType.DXA },
     columnWidths: [TEXT_W],
@@ -351,12 +375,14 @@ const GUIDE_LINES = [
     ["Stage", "Where the creature turns up on the Sejr Stage table. 1-6 city sites, 7-8 Lower Reaches, 9-10 Lost Cisterns, 11-12 Sunken Revvia, 13+ through an arch. Arch-native monsters also appear on any Arch episode to their world."],
     ["Damage", "The leftmost die is the Primary Die. A 1 misses; a max roll crits and explodes. Crits ignore monster armor."],
     ["Armor", "Medium (M): -10 damage from each attack. Heavy (H): -20. Crits ignore armor."],
-    ["Turns", "A monster's turn is a move plus the attacks on its block. 1 Action is one of its attacks; 2 Actions replaces all its attacks that turn; Free costs nothing; a Reaction happens off its turn on its printed trigger. 1/round and 1/encounter cap any of these."],
+    ["Turns", "A monster does not get a hero's three actions. On its turn it moves (a move may replace one attack) and uses the actions on its block. 1 Action is one attack or ability; x2 is two attacks in that Action; 2 Actions replaces all its attacks; an ability that says 'then' or 'after' is part of the same Action. Free costs nothing. A Reaction happens off its turn on its printed trigger, once a round, and never triggers another Reaction. 1/round and 1/encounter cap any of these. Each creature's Turn line is the rule for that creature."],
+    ["Tiers", "Minion and Standard cost their level from the encounter budget. Elite is this book's own tier (the Guide has none): built with extra HP and a hard-to-ignore trick, it costs its level times its HP over the Builder HP at its armor, rounded, and the cost is printed in its header."],
+    ["Collisions", "Forced movement into something solid costs 5 bludgeoning damage per space cut short. Large creatures move half as far; Huge and Gargantuan ignore it. Count that when a Knockback ends beside a wall, a drop or another creature."],
     ["Saves", "Monsters roll a plain d20 for saves. Heroes save against the DC printed in the action, or the stat row's DC if none is printed."],
     ["Smoldering", "Burning: 1d4 fire at the end of each of its turns, until it uses an action to put the fire out."],
     ["Holds", "Grappled and Restrained heroes still act. To escape a Grapple or a Restrained effect with an escape DC, spend an action on a STR or DEX save against the printed escape DC; a crit on either creature also frees them."],
     ["Agency", "No converted action in this book takes a hero's whole turn. Paralysis, stun and sleep from the source monsters are rebuilt as Dazed, Slowed, Grappled, forced movement or terrain."],
-    ["Core Bestiary", "The first section holds the GM Guide's own monsters, grouped by family, with the stat blocks exactly as printed. Printed conditions stand, including the Basilisk's Petrified. A family entry has one roster table, then actions by member. Groups per hero are the GM Guide's sample encounters, where it gives them."],
+    ["Core Bestiary", "The first section holds the GM Guide's own monsters, grouped by family, with the stat numbers as printed (machine-checked against the Guide) and the ability wording reformatted into this book's layout. Printed conditions stand, including the Basilisk's Petrified. A family entry has one roster table, then actions by member. Groups per hero are the GM Guide's sample encounters, where it gives them."],
     ["New entries", "The Sterling Scabbards (a rival crew), Hedge Casters, Children of Ibraxus and the Serpent Cult of Vithra are original to this book, written to the GM Guide's Monster Builder table."],
     ["Rumours", "⊤ is true, ⊥ is false. Give one per Lore success; a false one costs nothing to believe until it does."],
 ];
@@ -444,6 +470,17 @@ if (require.main === module) {
     if (errs.length) { bad++; console.error(`${e.name || "?"}:\n  ${errs.join("\n  ")}`); }
   });
   if (bad) { console.error(`${bad} entr${bad === 1 ? "y" : "ies"} failed lint`); process.exit(1); }
+  // Every creature with a choice of actions needs a Turn line; every family member needs a role.
+  const metaErr = [];
+  entries.forEach((e) => {
+    (e.roster || [{ name: null, actions: e.actions, level: e.level }]).forEach((m) => {
+      const key = m.name ? e.name + "/" + m.name : e.name;
+      if (e.roster && m.level !== "Min" && !ROLES[key]) metaErr.push("no role: " + key);
+      const live = (m.actions || []).filter((x) => !/^Passive|^Reaction/.test(x.cost));
+      if (live.length >= 2 && m.level !== "Min" && !TURNS[key]) metaErr.push("no Turn line: " + key);
+    });
+  });
+  if (metaErr.length) { console.error(metaErr.join("\n")); process.exit(1); }
   // Core Bestiary stat blocks must match the GM Guide text.
   try { process.stdout.write(require("child_process").execFileSync(process.execPath, [path.join(__dirname, "check_core.js")], { encoding: "utf8" })); }
   catch (err) { process.stderr.write((err.stdout || "") + (err.stderr || "")); console.error("Core fidelity check failed"); process.exit(1); }

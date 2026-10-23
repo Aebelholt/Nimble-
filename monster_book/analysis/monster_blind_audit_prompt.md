@@ -1,6 +1,6 @@
 # Blind audit: Sejr Monster Book
 
-You are auditing a bestiary for a tabletop campaign. It has 63 entries: the Nimble Game Master's Guide monsters regrouped by family, plus converted and original creatures for a specific setting. You have not seen any earlier review of this book, and you should not try to guess what one said. Work from the material below only.
+You are auditing a bestiary for a tabletop campaign. It has 64 entries: the Nimble Game Master's Guide monsters regrouped by family, plus converted and original creatures for a specific setting. You have not seen any earlier review of this book, and you should not try to guess what one said. Work from the material below only.
 
 ## Your job
 
@@ -264,12 +264,14 @@ Everything below is printed in the book as a GM would read it, in book order.
 - **Stage.** Where the creature turns up on the Sejr Stage table. 1-6 city sites, 7-8 Lower Reaches, 9-10 Lost Cisterns, 11-12 Sunken Revvia, 13+ through an arch. Arch-native monsters also appear on any Arch episode to their world.
 - **Damage.** The leftmost die is the Primary Die. A 1 misses; a max roll crits and explodes. Crits ignore monster armor.
 - **Armor.** Medium (M): -10 damage from each attack. Heavy (H): -20. Crits ignore armor.
-- **Turns.** A monster's turn is a move plus the attacks on its block. 1 Action is one of its attacks; 2 Actions replaces all its attacks that turn; Free costs nothing; a Reaction happens off its turn on its printed trigger. 1/round and 1/encounter cap any of these.
+- **Turns.** A monster does not get a hero's three actions. On its turn it moves (a move may replace one attack) and uses the actions on its block. 1 Action is one attack or ability; x2 is two attacks in that Action; 2 Actions replaces all its attacks; an ability that says 'then' or 'after' is part of the same Action. Free costs nothing. A Reaction happens off its turn on its printed trigger, once a round, and never triggers another Reaction. 1/round and 1/encounter cap any of these. Each creature's Turn line is the rule for that creature.
+- **Tiers.** Minion and Standard cost their level from the encounter budget. Elite is this book's own tier (the Guide has none): built with extra HP and a hard-to-ignore trick, it costs its level times its HP over the Builder HP at its armor, rounded, and the cost is printed in its header.
+- **Collisions.** Forced movement into something solid costs 5 bludgeoning damage per space cut short. Large creatures move half as far; Huge and Gargantuan ignore it. Count that when a Knockback ends beside a wall, a drop or another creature.
 - **Saves.** Monsters roll a plain d20 for saves. Heroes save against the DC printed in the action, or the stat row's DC if none is printed.
 - **Smoldering.** Burning: 1d4 fire at the end of each of its turns, until it uses an action to put the fire out.
 - **Holds.** Grappled and Restrained heroes still act. To escape a Grapple or a Restrained effect with an escape DC, spend an action on a STR or DEX save against the printed escape DC; a crit on either creature also frees them.
 - **Agency.** No converted action in this book takes a hero's whole turn. Paralysis, stun and sleep from the source monsters are rebuilt as Dazed, Slowed, Grappled, forced movement or terrain.
-- **Core Bestiary.** The first section holds the GM Guide's own monsters, grouped by family, with the stat blocks exactly as printed. Printed conditions stand, including the Basilisk's Petrified. A family entry has one roster table, then actions by member. Groups per hero are the GM Guide's sample encounters, where it gives them.
+- **Core Bestiary.** The first section holds the GM Guide's own monsters, grouped by family, with the stat numbers as printed (machine-checked against the Guide) and the ability wording reformatted into this book's layout. Printed conditions stand, including the Basilisk's Petrified. A family entry has one roster table, then actions by member. Groups per hero are the GM Guide's sample encounters, where it gives them.
 - **New entries.** The Sterling Scabbards (a rival crew), Hedge Casters, Children of Ibraxus and the Serpent Cult of Vithra are original to this book, written to the GM Guide's Monster Builder table.
 - **Rumours.** ⊤ is true, ⊥ is false. Give one per Lore success; a false one costs nothing to believe until it does.
 
@@ -314,7 +316,7 @@ Stage 7-10. Groups per hero: Level 1: 2-3 Kobolds. Level 2: 2 Kobolds + 1 Sneak 
 - **Stab** (1 Action, ×2) 2d4+2. Or Sling, Range 8.
 
 **In play.** Wants the den kept and the shinies safe. Goes for whoever killed a kobold, then whoever carries the shiniest thing. Breaks off when the Denwarden falls, into holes too small to follow.
-**Designer note.** Printed GM Guide blocks, unchanged. The whole family runs on Nooooo!: every kill is a free swing for the neighbour, so the question is who dies first and where the rest are standing. Kill the Clanger and the Denwarden early, then the line. The GM Guide's warning applies in full: outnumbering the party more than three to one makes even weak monsters lethal. The Lower Reaches is kobold ground, and the Black Hand pays them in shinies.
+**Designer note.** Official Nimble blocks. The whole family runs on Nooooo!: every kill is a free swing for the neighbour, so the question is who dies first and where the rest are standing. Kill the Clanger and the Denwarden early, then the line. The GM Guide's warning applies in full: outnumbering the party more than three to one makes even weak monsters lethal. The Lower Reaches is kobold ground, and the Black Hand pays them in shinies.
 **Sources.** Nimble GM Guide, Bestiary: Kobolds.
 
 **Traits (d6)**
@@ -394,7 +396,7 @@ Stage 1-8.
 - **Slice** (1 Action, ×3) 1d8. Or Shoot, Range 8.
 
 **In play.** Wants the purse, not the fight. Hunters shoot the one who looks richest, a Bruiser puts the toughest hero on the ground, and everyone breaks off the moment the Captain falls or the purse is in hand.
-**Designer note.** Printed GM Guide blocks, unchanged. Mortal Panic is the point: bandits are slippery (a 2 or less misses them) and dangerous only in numbers, so the Captain's Strict Training is the real stat to watch. In Sejr they are the street-level Black Hand: cut-outs with knives, deniable. They work as the enforcement end of any episode where someone wants something taken without a name attached.
+**Designer note.** Official Nimble blocks. Mortal Panic is the point: bandits are slippery (a 2 or less misses them) and dangerous only in numbers, so the Captain's Strict Training is the real stat to watch. In Sejr they are the street-level Black Hand: cut-outs with knives, deniable. They work as the enforcement end of any episode where someone wants something taken without a name attached.
 **Sources.** Nimble GM Guide, Bestiary: Bandits.
 
 **Traits (d6)**
@@ -464,7 +466,7 @@ Stage 7-10, 13+. Groups per hero: Level 1: 2 Goblins or 3 Minions. Level 2: 3 Go
 - **Get in here!** (Free, after Stab) Call a Goblin Minion to the fight.
 
 **In play.** Wants loot, a laugh, and never to be the one in front. Taunts the hero who just missed, throws minions at the strongest, and charges the backline with Ratriders. Breaks off the moment the Taskmaster dies.
-**Designer note.** Printed GM Guide blocks, unchanged. The family's one rule is that surviving an attack hurts you: every survived attack costs a hero 2 psychic damage that ignores Defense. A party that spreads its attacks across five goblins takes ten damage a round for free, so focus fire and block the retaliation. The Taskmaster feeds minions into the fight, so killing it first is usually right. In Sejr they are Lower Reaches and cistern vermin with a grudge and a sense of humour.
+**Designer note.** Official Nimble blocks. The family's one rule is that surviving an attack hurts you: every survived attack costs a hero 2 psychic damage that ignores Defense. A party that spreads its attacks across five goblins takes ten damage a round for free, so focus fire and block the retaliation. The Taskmaster feeds minions into the fight, so killing it first is usually right. In Sejr they are Lower Reaches and cistern vermin with a grudge and a sense of humour.
 **Sources.** Nimble GM Guide, Bestiary: Goblins.
 
 **Traits (d6)**
@@ -523,7 +525,7 @@ Stage 9-12, 13+.
 - **Crush** (1 Action) 2d6+20. Advantage against smaller creatures.
 
 **In play.** Wants prey held still. The Captain orders a Grapple on the hero standing alone, others slash the grappled, and the Giant Cobra is held back for the biggest target. Breaks off when the Captain is Bloodied.
-**Designer note.** Printed GM Guide blocks, unchanged. Grapple is the whole kit: Coiling Strike on a crit, Coiling Command on demand, and a Giant Cobra that crushes anything smaller. Heroes still act while Grappled, so the answer is mobility or fire. Pair them with the Serpent Cult of Vithra, which treats them as holy. Sunken Revvia and the Lost Cisterns are snake country.
+**Designer note.** Official Nimble blocks. Grapple is the whole kit: Coiling Strike on a crit, Coiling Command on demand, and a Giant Cobra that crushes anything smaller. Heroes still act while Grappled, so the answer is mobility or fire. Pair them with the Serpent Cult of Vithra, which treats them as holy. Sunken Revvia and the Lost Cisterns are snake country.
 **Sources.** Nimble GM Guide, Bestiary: Snakemen.
 
 **Traits (d6)**
@@ -589,7 +591,7 @@ Stage 9-12, 13+.
 - **Acidic touch** (1 Action, ×3, Reach 3) 1d6+6. Digested. Deal an additional 6 damage for each time the target has been Digested already this encounter.
 
 **In play.** Wants whatever moves. Flows toward the nearest warm body and stays on it, Digesting the same hero until they leave. Never breaks off. It is hungry the way a river is wet.
-**Designer note.** Printed GM Guide blocks, unchanged. Slashing and crits feed the oozes, so the answer is blunt, fire, cold, or radiant damage and spreading out so Digested stops stacking on one hero. This is the Lower Reaches and Lost Cisterns default for an ooze; the Deathreach Ochre Jelly is the 4e Elite built for a set piece. Use the core block for any ordinary drain, and the Elite when the jelly is the whole room.
+**Designer note.** Official Nimble blocks. Slashing and crits feed the oozes, so the answer is blunt, fire, cold, or radiant damage and spreading out so Digested stops stacking on one hero. This is the Lower Reaches and Lost Cisterns default for an ooze; the Deathreach Ochre Jelly is the 4e Elite built for a set piece. Use the core block for any ordinary drain, and the Elite when the jelly is the whole room.
 **Sources.** Nimble GM Guide, Bestiary: Dungeon Denizens, oozes. The Deathreach Ochre Jelly is a separate 4e Elite.
 
 **Traits (d6)**
@@ -651,7 +653,7 @@ Stage 7-12, 13+.
 - **Bite** (1 Action, vs a Grappled creature) 2d8+20. Use instead of Pseudopod.
 
 **In play.** Wants a meal that stops moving. Opens with Pseudopod on whoever touched it first, then Bites whoever is stuck. Never breaks off. It cannot, and has nowhere to go.
-**Designer note.** Printed GM Guide blocks, unchanged. A mimic is a trap with a hunger: it always acts first, and its Grapple stacks across the whole party. Heroes lose initiative and mobility but never their turn, and a crit frees one creature. The right answer is to find the right item in the room first, which makes the mimic a Find clock as much as a fight. A mimic needs a room full of other furniture, so use it in rooms with something to take.
+**Designer note.** Official Nimble blocks. A mimic is a trap with a hunger: it always acts first, and its Grapple stacks across the whole party. Heroes lose initiative and mobility but never their turn, and a crit frees one creature. The right answer is to find the right item in the room first, which makes the mimic a Find clock as much as a fight. A mimic needs a room full of other furniture, so use it in rooms with something to take.
 **Sources.** Nimble GM Guide, Bestiary: Dungeon Denizens, mimics.
 
 **Traits (d6)**
@@ -712,7 +714,7 @@ Stage 1-8, 13+.
 - **Rip apart** (1 Action) 2d6. Grappled, escape DC 10.
 
 **In play.** Wants a kill that has already stopped running. Worgs Grapple the lone hero, gnolls pile on whoever is bleeding, and the Packleader moves the pack to wherever blood is fresh. Breaks off when the Packleader falls.
-**Designer note.** Printed GM Guide blocks, unchanged. Bloodthirsty means the first hero to bleed becomes everyone's target, and the worg's Grapple plus Savage turns a held hero into a crit target. The answer is a front line that keeps no one alone and heals early. In Sejr they are the Doorish Hills' raiders and the payoff when the Hills' Neglect clock fills. The demon-worshipping gnolls under the Hills use the same blocks.
+**Designer note.** Official Nimble blocks. Bloodthirsty means the first hero to bleed becomes everyone's target, and the worg's Grapple plus Savage turns a held hero into a crit target. The answer is a front line that keeps no one alone and heals early. In Sejr they are the Doorish Hills' raiders and the payoff when the Hills' Neglect clock fills. The demon-worshipping gnolls under the Hills use the same blocks.
 **Sources.** Nimble GM Guide, Bestiary: Hill & Field, gnolls and worgs.
 
 **Traits (d6)**
@@ -771,7 +773,7 @@ Stage 4, 7-12, 13+.
 - **Crush & drop** (1 Action) 2d20. Fly upward 20 spaces, deal damage to Grappled creatures, then release them (10d6 fall damage).
 
 **In play.** Wants prey it can carry. The drake dives and strikes, the griffon grabs the smallest hero it can lift and drops them, the roc takes two at once. Breaks off when Bloodied, climbing out of reach.
-**Designer note.** Printed GM Guide blocks, unchanged. The family is a height problem: Grapple, lift, and drop (6d6 or 10d6 on a fall). The party's job is to cut the hold before the drop, or be below to catch it. Bows and spells beat a flying enemy that will not land. Use under an open sky or a tall hall; a low ceiling ends the griffon and the roc completely, and the Blue Drake's Burst Lightning punishes a crowded rooftop.
+**Designer note.** Official Nimble blocks. The family is a height problem: Grapple, lift, and drop (6d6 or 10d6 on a fall). The party's job is to cut the hold before the drop, or be below to catch it. Bows and spells beat a flying enemy that will not land. Use under an open sky or a tall hall; a low ceiling ends the griffon and the roc completely, and the Blue Drake's Burst Lightning punishes a crowded rooftop.
 **Sources.** Nimble GM Guide, Bestiary: Hill & Field, flying beasts.
 
 **Traits (d6)**
@@ -833,7 +835,7 @@ Stage 13+.
 - **Boulder!** (1 Action, Range 12, 2×2 AoE) 1d4+30. Prone. Use instead of Punt.
 
 **In play.** The Bulette wants the heaviest meal. The troll wants whoever is Prone. The giant wants to throw something. None of them breaks off while it is winning; the giant leaves when Bloodied and the Bulette dives.
-**Designer note.** Printed GM Guide blocks, unchanged. Three solutions to the same question, how do you stop a big thing? The Bulette is punished by leaving the heaviest hero out front and waiting. The troll punishes bad damage: carry fire or radiance, and do not leave it at 0 HP. The giant wants to throw: get under its reach, behind cover, or out of its line. These are high-level monsters, so the Sejr use is through an arch, or as an episode's one big problem, not an everyday fight.
+**Designer note.** Official Nimble blocks. Three solutions to the same question, how do you stop a big thing? The Bulette is punished by leaving the heaviest hero out front and waiting. The troll punishes bad damage: carry fire or radiance, and do not leave it at 0 HP. The giant wants to throw: get under its reach, behind cover, or out of its line. These are high-level monsters, so the Sejr use is through an arch, or as an episode's one big problem, not an everyday fight.
 **Sources.** Nimble GM Guide, Bestiary: Hill & Field, brutes.
 
 **Traits (d6)**
@@ -888,7 +890,7 @@ Stage 7-12.
 - **Latch on** (1 Action) 1d12+10. On hit, Latched On: Riding. Your attacks can't miss or be Defended or Interposed.
 
 **In play.** Wants a warm neck. Goes for the hero with the least armor, latches, and stays. Breaks off only when dead or when the target is, and the second is faster.
-**Designer note.** Printed GM Guide blocks, unchanged. A latched stirge cannot miss, and cannot be Defended or Interposed, so the answer is killing it off the host, which hurts the host too. They are a cheap, nasty, low-level pressure that makes the party move, and the Greater Stirge is a serious mid-level threat in a dark room. Light is the best tool.
+**Designer note.** Official Nimble blocks. A latched stirge cannot miss, and cannot be Defended or Interposed, so the answer is killing it off the host, which hurts the host too. They are a cheap, nasty, low-level pressure that makes the party move, and the Greater Stirge is a serious mid-level threat in a dark room. Light is the best tool.
 **Sources.** Nimble GM Guide, Bestiary: Dungeon Denizens, stirges.
 
 **Traits (d6)**
@@ -956,7 +958,7 @@ Stage 4, 7-12.
 - **Decaying swipe** (1 Action, ×2) 1d4+10. On damage, Prone or Knockback Primary Die spaces.
 
 **In play.** Wants nothing. Walks at the nearest warm thing and attacks it. Never breaks off. The Ghoul alone has an appetite.
-**Designer note.** Printed GM Guide blocks, unchanged. Everything gets up once at 1 HP, so a wave of skeletons is two waves, and the Ghoul's Dazed is the only real tax on actions. The d4 is the thematic undead die: slow, with a big flat bonus, so armor matters more than damage dice. These are the Cliffs of the Dead's ordinary residents, and the Archkeepers will pay to have them laid to rest.
+**Designer note.** Official Nimble blocks. Everything gets up once at 1 HP, so a wave of skeletons is two waves, and the Ghoul's Dazed is the only real tax on actions. The d4 is the thematic undead die: slow, with a big flat bonus, so armor matters more than damage dice. These are the Cliffs of the Dead's ordinary residents, and the Archkeepers will pay to have them laid to rest.
 **Sources.** Nimble GM Guide, Bestiary: Undead.
 
 **Traits (d6)**
@@ -1011,7 +1013,7 @@ Stage 4, 11-12, 13+.
 - **Soul rend** (1 Action, ×2, Range 8) 1d4+10. On damage, deal 1 Wound.
 
 **In play.** Wants the living to feel what it felt. Goes for the hero who holds the most life: the biggest, the healthiest. Breaks off when the Shepherd's light shows.
-**Designer note.** Printed GM Guide blocks, unchanged. The Specter's touch sets a hero to 0 HP on damage, so it is a hit-or-miss monster where one hit changes the fight, and the reward for radiant damage is advantage on the next attack. The Wraith's Wound is the same fear at higher cost. Keep a Shepherd close. Cliffs of the Dead, Sunken Revvia, and any tomb arch.
+**Designer note.** Official Nimble blocks. The Specter's touch sets a hero to 0 HP on damage, so it is a hit-or-miss monster where one hit changes the fight, and the reward for radiant damage is advantage on the next attack. The Wraith's Wound is the same fear at higher cost. Keep a Shepherd close. Cliffs of the Dead, Sunken Revvia, and any tomb arch.
 **Sources.** Nimble GM Guide, Bestiary: Undead, spirits.
 
 **Traits (d6)**
@@ -1066,7 +1068,7 @@ Stage 13+.
 - **Slam** (1 Action, ×2) 1d4+20. On damage, Dazed.
 
 **In play.** Wants the tomb undisturbed. Slams the hero closest to what it guards, and sends scarabs for the rest. Never breaks off. Tombs have no exits for the dead.
-**Designer note.** Printed GM Guide blocks, unchanged. A Mummy is a slow, hard hitter whose Dazed takes one action a turn, so it taxes rather than stops. A Mummy Lord is a level 21 boss and not a Sejr encounter: keep it as a campaign villain for a tomb in Threska or Arkus and let the heroes meet it once, late, or run from it. Fire is the answer to the wrappings.
+**Designer note.** Official Nimble blocks. A Mummy is a slow, hard hitter whose Dazed takes one action a turn, so it taxes rather than stops. A Mummy Lord is a level 21 boss and not a Sejr encounter: keep it as a campaign villain for a tomb in Threska or Arkus and let the heroes meet it once, late, or run from it. Fire is the answer to the wrappings.
 **Sources.** Nimble GM Guide, Bestiary: Undead, mummies.
 
 **Traits (d6)**
@@ -1129,7 +1131,7 @@ Stage 7-8, 13+.
 - **Slam** (1 Action, ×2) 1d6+5. On damage, Knockback 2 or Prone.
 
 **In play.** Wants blood for the soil. Tanglers pull the lone hero toward the pods, the seedlings thin the rest from behind, and the Rootbreaker holds the middle. Never breaks off: plants don't.
-**Designer note.** Printed GM Guide blocks, unchanged. The Tangler is a 6-space reach Grapple plus a 4-space pull, so a hero ends up standing next to an Acidpod that bursts for 4d6. Fire and slashing frees the grapple, and every hit peels armor, so the party should hit first with what ignores it. On the far side of Eruwynd, the Endless Forest, and any overgrown ruin.
+**Designer note.** Official Nimble blocks. The Tangler is a 6-space reach Grapple plus a 4-space pull, so a hero ends up standing next to an Acidpod that bursts for 4d6. Fire and slashing frees the grapple, and every hit peels armor, so the party should hit first with what ignores it. On the far side of Eruwynd, the Endless Forest, and any overgrown ruin.
 **Sources.** Nimble GM Guide, Bestiary: Forest Denizens, briarbanes.
 
 **Traits (d6)**
@@ -1188,7 +1190,7 @@ Stage 13+.
 - **Hurricane** (1 Action, Reach 3, AoE) 4d4+10. To enemies. On damage, move targets anywhere within Reach. Use instead of Beastshift.
 
 **In play.** Wants intruders gone, or fed to the forest. The Duskprowler picks the one at the back, the Basilisk looks at the one with the fewest actions, and the Druid moves the party where it wants them. Breaks off when Bloodied, into the trees.
-**Designer note.** Printed GM Guide blocks, unchanged. The Basilisk is the one place this book keeps a printed Petrified: three stacked Lithify gazes over 10 minutes. It is gradual, telegraphed, and costs an action per stack rather than a turn, so it stays. If a Sejr table wants it gentler, cap Lithify at two stacks and let the third only Slow. The Duskprowler wants area damage or a hero with advantage to spare, and the Druid is a mobility controller who moves the party around its trees.
+**Designer note.** Official Nimble blocks. The Basilisk is the one place this book keeps a printed Petrified: three stacked Lithify gazes over 10 minutes. It is gradual, telegraphed, and costs an action per stack rather than a turn, so it stays. If a Sejr table wants it gentler, cap Lithify at two stacks and let the third only Slow. The Duskprowler wants area damage or a hero with advantage to spare, and the Druid is a mobility controller who moves the party around its trees.
 **Sources.** Nimble GM Guide, Bestiary: Forest Denizens, forest keepers.
 
 **Traits (d6)**
@@ -1248,7 +1250,7 @@ Stage 4, 7-12.
 - **Ecstatic outburst** (Passive) 3d6 psychic damage to all Despairing enemies (ignoring Defense).
 
 **In play.** Wants a gift for the god, and the heroes are it. Cultists spread Despair on whoever is adjacent, the Fanatic grapples a despairing hero, and the Doomsayer chants until the room is theirs. Never breaks off; cultists die happy.
-**Designer note.** Printed GM Guide blocks, unchanged. Despair is disadvantage on every roll until the afflicted hero deals or heals any damage, which is a one-action fix and a reason to keep a Shepherd close. The Doomsayer reduces damage to its allies to 1 for anyone who can hear, so killing it, silencing it, or standing out of earshot is the whole fight. The setting's cults, Children of Ibraxus and the Serpent Cult of Vithra, use these blocks as their rank and file.
+**Designer note.** Official Nimble blocks. Despair is disadvantage on every roll until the afflicted hero deals or heals any damage, which is a one-action fix and a reason to keep a Shepherd close. The Doomsayer reduces damage to its allies to 1 for anyone who can hear, so killing it, silencing it, or standing out of earshot is the whole fight. The setting's cults, Children of Ibraxus and the Serpent Cult of Vithra, use these blocks as their rank and file.
 **Sources.** Nimble GM Guide, Bestiary: Cultists/Horrors, cultists.
 
 **Traits (d6)**
@@ -1308,7 +1310,7 @@ Stage 9-12, 13+.
 - **Tear asunder** (1 Action, vs a creature Grappled by both claws) 50. Unpreventable damage. Then, if the target is Dying: DC 16 STR save or be torn in two, dying instantly.
 
 **In play.** Wants a mess. Stenchlings run at the nearest enemy and burst, Spiny Fiends shoot from behind them, and a Glabrezu takes the toughest hero with both claws. Never breaks off while its summoner is watching.
-**Designer note.** Printed GM Guide blocks, unchanged. Stenchlings are cheap bomb-carriers, and killing one adjacent to a friend is worth thinking about. The Spiny Fiend punishes melee with 4 damage and shoots 12 spaces. The Glabrezu is a level 14 fiend whose Tear Asunder ends a Dying hero outright, so keep its victim out of two grips at once. Cultist rites can call the first two.
+**Designer note.** Official Nimble blocks. Stenchlings are cheap bomb-carriers, and killing one adjacent to a friend is worth thinking about. The Spiny Fiend punishes melee with 4 damage and shoots 12 spaces. The Glabrezu is a level 14 fiend whose Tear Asunder ends a Dying hero outright, so keep its victim out of two grips at once. Cultist rites can call the first two.
 **Sources.** Nimble GM Guide, Bestiary: Cultists/Horrors, fiends.
 
 **Traits (d6)**
@@ -1367,7 +1369,7 @@ Stage 7-12, 13+.
 - **Bite** (1 Action, vs a Hampered creature) 1d8+10. Poisoned (healing ends).
 
 **In play.** Wants prey stuck first and eaten second. Webs the one who will not be missed, bites the Restrained, and the Ettercap garrotes whoever is talking. Breaks off when Bloodied, up the web.
-**Designer note.** Printed GM Guide blocks, unchanged. Everything here is Hampered bait: Restrained is a bite on a plate. The Ettercap's Silence matters most against Mages, Songweavers, and Commanders, and the Nestweaver's three minions make the room feel like a spider swarm. Fire and slashing are the keys, and a hero with a torch changes the encounter. Lower Reaches cellars and Lost Cisterns beams.
+**Designer note.** Official Nimble blocks. Everything here is Hampered bait: Restrained is a bite on a plate. The Ettercap's Silence matters most against Mages, Songweavers, and Commanders, and the Nestweaver's three minions make the room feel like a spider swarm. Fire and slashing are the keys, and a hero with a torch changes the encounter. Lower Reaches cellars and Lost Cisterns beams.
 **Sources.** Nimble GM Guide, Bestiary: Underground, spiders.
 
 **Traits (d6)**
@@ -1403,7 +1405,7 @@ Stage 7-12, 13+.
 - City of Arches name: "Weavers": cellar-dwellers' word for the web-folk, and the first thing a hero learns in the Lower Reaches.
 
 ### Deep Horrors
-*Core Bestiary · Standard / Elite · Brute · Levels 10 to 16*
+*Core Bestiary · Standard · Brute · Levels 10 to 16*
 *Nightmarish denizens of the deep, lurking in dark tunnels and cavernous depths, ready to ensnare or devour any intruders: a chitin-plated tunneller, a living cloak, and a worm.*
 
 | Member | Lvl | HP | Armor | Speed |
@@ -1429,7 +1431,7 @@ Stage 13+.
 - **Bite** (1 Action, Reach 6) 1d4+50. On crit, Swallowed. Swallowed: you take 20 damage at the start of your turn. Your attacks cannot miss and ignore armor. Use instead of Crush.
 
 **In play.** The Hulk wants the tunnel. The Cloaker wants a meal in the dark. The Worm wants anything that moves. All of them break off when Bloodied, into the rock or the dark.
-**Designer note.** Printed GM Guide blocks, unchanged. Three solo-grade horrors. The Umber Hulk steals actions, the Cloaker steals the first round, and the Great Worm punishes anyone who moves. Each is a high-level threat and a terrain problem, so use one per episode and make the map do half the work. They belong to Deathreach's Abhorrent Vats and Terrache's deep caves, not the city.
+**Designer note.** Official Nimble blocks. Three solo-grade horrors. The Umber Hulk steals actions, the Cloaker steals the first round, and the Great Worm punishes anyone who moves. Each is a high-level threat and a terrain problem, so use one per episode and make the map do half the work. They belong to Deathreach's Abhorrent Vats and Terrache's deep caves, not the city.
 **Sources.** Nimble GM Guide, Bestiary: Underground, deep horrors.
 
 **Traits (d6)**
@@ -1711,7 +1713,7 @@ Stage 1-8.
 *Kartan Hedge-Mage*
 - **Slowing bolt** (1 Action, Range 12) 2d6+5. Slowed until their next turn ends.
 - **Gravity well** (Replaces its attacks, 1/encounter, Range 8) 2-space radius: STR save DC 13 or pulled 3 to the centre and Prone.
-- **Overreach** (Reaction, when a hero crits it) 1d8. Backlash on the attacker; its own next attack is disadvantaged.
+- **Overreach** (Reaction, 1/round, when a hero crits it) 1d8. Backlash on the attacker; its own next attack is disadvantaged.
 
 **In play.** Hang back behind the nearest body. Blind the first hero to close, pin the strongest, heap the rest. Leave when out of tricks.
 **Designer note.** Each one is a different verb, and none takes a turn. Frail and harmless alone: they need a front rank of Bandits or Cultists, and the party's job is to reach them.
@@ -2070,6 +2072,56 @@ Stage 1-8.
 - City of Arches name: "Kalya's hands": merchants' warning about who just bought the building next door.
 - Rival clock (6): 1 Kalya buys a building the party needs. 2 A merchant dies. 3 The Hands hire the party's contact. 4 A ritual is found. 5 The gateway room is cleared (a Lower Reaches chamber Kalya is readying for a ritual gate). 6 The gate opens. Step on when the party ignores a clue, loses a scene or takes Kalya's coin; step back when it outbids the Hands, exposes a murder or takes the ritual. Capturing or killing Kalya, or holding the gateway room, ends the clock.
 - Campaign ladder: Prove Asher's murders. Steal Kalya's ledgers. Stop the gateway. Buying off the Hands skips a fight at any rung.
+
+### Rotbound Giant
+*City of Arches · Elite · Brute · Level 8*
+**Core:** A giant that died on the Cliffs of the Dead and was never told to lie down. It grabs two at a time and decides later.
+*Twice a man's height, grey-green and swollen, grave-cloth rotted into its skin. One hand holds a lantern-post it tore from the road, and it does not look at what it holds.*
+
+HP 100 · Armor None · Speed 6 · DC 13 · Stage 13+
+
+**Actions**
+- **Decaying swipe** (1 Action, ×2, Reach 2) 1d4+10. On damage, Prone, or Knockback 2.
+- **Rotten smash** (2 Actions, replaces its attacks, Reach 2) Seizes up to two creatures or objects within Reach: STR save DC 14 or Grappled (escape DC 14). It holds them until its next turn.
+- **Slam** (Free, start of its next turn, replaces its attacks) 4d8+8. Smashes one held creature down, Prone. If it holds two, they are knocked together instead: 3d8+8 each and both Dazed. A held object is hurled at a target within 6: DEX save DC 13 for half.
+- **Wrench free** (Passive) 20 or more damage from one attack makes it drop one held creature, chosen by the attacker.
+- **Rises again** (Passive) Once. At 0 HP it lies still. At the start of the second round after, it rises with 30 HP, unless fire or radiant damage dealt the killing blow, or a hero spends an action to burn or bless the body.
+
+**In play.** Takes the two biggest threats, holds them while the others scramble, then smashes them together. Finish it with fire or a blessing, or it gets up.
+**Designer note.** The slam waits a turn, and that is the point: two heroes are held, everyone sees the smash coming, and the party spends a round on rescue, wrenching or killing it. Cost 10: level 8, plus 30 HP of revival. The revival is a finishing-blow problem, not a fire weakness. Fire or a blessing ends it for good. Unresolved: the delay and the 30 HP are untested. Best at 3-4 heroes of level 4 or higher; against fewer it holds one and the Slam is 4d8+8.
+**Sources.** Draw Steel Monsters v1, Giant Zombie (p.266): Rotten Smash, Knocking Heads and conditional revival, from the review handoff. The Draw Steel book was not available when this was written, so the numbers and the delay are this book's own. Base block: the GM Guide's Giant Zombie, level 8.
+
+**Traits (d6)**
+1. A lantern-post for a club, still lit.
+2. Grave-cloth sewn into its skin with fishing line.
+3. It sets what it holds down gently, then picks them up again.
+4. A cairn of stones trails behind it, dragged by a rope.
+5. Its jaw is wired shut. The wire is new.
+6. The names of the men who raised it are tattooed on its knuckles.
+
+**Encounters (d4)**
+1. It stands in the road with a cart in each hand, waiting for someone to ask it to put them down.
+2. Mourners flee a funeral procession. A coffin lid is on the ground, and the pall-bearer is in its fist.
+3. A necromancer's apprentice is frozen under its shadow, begging for the word to stop it.
+4. It walks toward the city gate carrying a priest who is calmly reciting the burial rites.
+
+**Lairs (d4)**
+1. A barrow mound torn open from inside, the door lying twenty paces away.
+2. A crypt hall with room for exactly one giant, the shelves around it smashed.
+3. A ferry landing, a dozen oars in a row, each one snapped in half.
+4. A quarry of unmarked graves, one trench dug deep enough to stand in.
+
+**Rumours (d4, Lore check)**
+1. ⊤ Fire or a blessing on the body keeps it down. Nothing else does.
+2. ⊤ It lets go if it is hurt hard. One big hit frees whoever it holds.
+3. ⊥ It rises again every time you kill it.
+4. ⊥ It cannot hurt the dead, so skeletons are safe.
+
+**Gig Fit**
+- Verb: Stop / Bury
+- But+: Monster result on an arch to the Cliffs of the Dead, or any world of ruins. A set-piece fight for a party that can split into rescuers and finishers.
+- Patron hook: A Temple priest has a funeral booked at the barrow in two days, and the guest of honor is already walking.
+- City of Arches name: "Standing dead": Cliffs of the Dead mourners' word for the ones that did not stay.
 
 ---
 ## Deathreach
@@ -2734,10 +2786,10 @@ HP 49 · Armor None · Speed 6 (climb 6) · DC 13 · Stage 13+
 
 **Actions**
 - **Bite** (1 Action) 2d8+6. STR save or Poisoned until healed.
-- **Phase** (Free, 1/round) Vanishes; reappears within 8 at the start of its next turn, its first attack advantaged.
-- **Ethereal repulsion** (Reaction, enemy moves adjacent) WIL save or that enemy is teleported 4 spaces.
+- **Phase** (Free, after a Bite, not the turn it appeared) Vanishes. The GM marks a shimmer within 8; it reappears there next turn, first Bite advantaged.
+- **Ethereal repulsion** (Reaction, enemy moves adjacent) WIL save or that enemy is teleported 4 spaces, never into harm. Once per enemy per encounter.
 
-**In play.** Blinks in on the biggest hero, bites, blinks away. Bloodied, it simply stops coming back.
+**In play.** Blinks in and bites the biggest hero, stays exposed a round, bites, then blinks out. Heroes beside the shimmer strike first. Bloodied, it stops returning.
 **Designer note.** Its trick is position: behind the backline, then gone, and whoever charges it lands somewhere else. Strong in open forest, predictable in a corridor.
 **Sources.** Monster Vault: 4e MM2, Lv 8 Skirmisher. Ethereal Repulsion (4e); targets the large (Ammann). Paralysis rebuilt as Poisoned.
 
@@ -3236,12 +3288,12 @@ HP 27 · Armor Medium · Speed 6 (climb 6) · DC 12 · Stage 13+
 HP 64 · Armor None · Speed 10 · DC 13 · Stage 13+
 
 **Actions**
-- **Bite** (1 Action) 1d10+10. Fire. Knockback equal to the Primary Die. Advantage if an ally is beside the target.
+- **Bite** (1 Action) 1d10+10. Fire. Knockback 2. Advantage if an ally is beside the target.
 - **Fire breath** (2 Actions, 1/encounter) 3d6+4. Fire, cone 3. DEX save for half.
 - **Fire shield** (Passive) Anyone starting a turn beside it takes 1d6 fire.
 
 **In play.** Bites the lone hero, breathes when two stand close, harries runners. A feral pack quits when half is down.
-**Designer note.** The bite throws heroes apart; the pack gangs up on whoever lands alone. Soul-scent makes it a thread: whoever has been to Maphotar is being hunted.
+**Designer note.** The bite throws heroes 2 spaces; a wall or ally behind adds 5 per space cut short. The pack gangs up on whoever lands alone. Soul-scent makes it a thread: whoever has been to Maphotar is being hunted.
 **Sources.** Monster Vault: 4e MM, Lv 7 Brute. Fire Shield (4e); pack logic (Ammann).
 
 **Traits (d6)**
@@ -3383,8 +3435,8 @@ HP 40 · Armor None · Speed 6 · DC 12 · Stage 13+
 HP 49 · Armor None · Speed 6 (swim 8) · DC 13 · Stage 13+
 
 **Actions**
-- **Bite** (1 Action) 2d8+6. Then it slips half out of the world: attacks against it are disadvantaged until its next turn.
-- **Chaos shift** (Reaction, attacked in melee) Moves 2 first, without provoking. Out of reach, the attack misses.
+- **Bite** (1 Action) 2d8+6. Then it slips away: moves 4 without provoking.
+- **Chaos shift** (Reaction, 1/round, attacked in melee) Moves 2 first, without provoking. Out of reach, the attack misses.
 - **Grow** (Passive) Becomes an adult slaad 1d4+3 days after emerging, a day sooner for each good meal.
 
 **In play.** Wants to grow up. Hides, eats anything small, bites only what corners it, and runs every time.
@@ -4023,3 +4075,4 @@ Generated from the entries and the Monster Builder table. It compares each non-m
 | Vynan Alchemist-Mage | Vynan Alchemist-Mage | 6 | None | 49 | 75 | 0.65 | none | 13 |
 | Young Blizzard Dragon | Young Blizzard Dragon | 7 | Medium | 95 | 72 | 1.32 | none | 13 |
 | Drakkoth Faterager | Drakkoth Faterager | 5 | Medium | 49 | 49 | 1.00 | none | 13 |
+| Rotbound Giant | Rotbound Giant | 8 | None | 100 | 100 | 1.00 | 14, 13 | 13 |
