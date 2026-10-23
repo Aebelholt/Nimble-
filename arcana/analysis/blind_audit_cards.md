@@ -36,7 +36,7 @@ Class arcana first, then found arcana. No notes or prior review included.
 **Resource: Fixes (pip tracker).** Fixes (pip tracker, max 4). Fixes do not refill automatically. To refill: run a game of chance during a Safe Rest and earn at least 1 silver in genuine winnings against an opponent who had a real chance of winning. Gain all 4 Fixes back. Safe Rests where you do not gamble leave the tracker as it is. Fixes return only this way.
 
 **Powers.**
-- Fix (Free, before you roll an attack, spend 1 Fix): Declare you are using the die. Roll your Primary Die twice and take whichever result you prefer. No memory required, both rolls happen now, in front of everyone.
+- Fix (Free, before you roll an attack, spend 1 Fix): Declare you are using the die. Roll your Primary Die twice and take whichever result you prefer. This replaces your Primary Die only; advantage, disadvantage and extra dice from rushing are rolled normally. No memory required, both rolls happen now, in front of everyone.
 - Loaded Odds (Passive): Once per session, you may ask the GM whether a creature you can see is bluffing. The die rolls and the GM answers truthfully, but only yes or no.
 
 **Escalation.** When all 4 Fixes are spent, the die gets you anyway. On your next Vicious Opportunist use after depletion, the GM secretly rolls a d6. On a 1-3 the die turns on you: Vicious Opportunist does nothing, and that use is spent, and you do not know until after you have committed. The uncertainty lasts for one use only. Word that a loaded die is back in play reaches the card sharp within a session.
@@ -71,11 +71,11 @@ Class arcana first, then found arcana. No notes or prior review included.
 - Track a single creature across at least two sessions without losing the trail, through city, ruin, or wilderness. The creature must be aware it is being hunted, and must have tried to lose you at least once.
 - Risk: Each session you track the creature, the GM rolls a d6. On a 1, it doubles back and ambushes you, and it acts first in the next encounter.
 
-**Resource: Marks (d6 vs. accumulation).** Marks (d6 vs. accumulation). Your Mark count is the number of quarries the cord currently tracks. Each quarry takes one token, so the cord tracks no more quarries than it has unburned tokens (six to begin with). Roll 1d6 each time you use a cord ability (Mark a Quarry or Cord Pull), before any new Mark is added. If you roll equal to or below your current Mark count, something near the quarry you are marking or pulling noticed you. A Mark clears when you confront that quarry directly, and its token is free for a new quarry; or when you Cut its Mark, and its token burns. Resting does not clear Marks.
+**Resource: Marks (d6 vs. accumulation).** Marks (d6 vs. accumulation). Your Mark count is the number of quarries the cord currently tracks. Each quarry takes one token, so the cord tracks no more quarries than it has unburned tokens (six to begin with). Roll 1d6 each time you use a cord ability (Mark a Quarry or Cord Pull), before any new Mark is added. If you roll equal to or below your current Mark count, something near the quarry you are marking or pulling noticed you. A Mark clears when you confront that quarry directly (you end a turn adjacent to it, and it is aware of you), and its token is free for a new quarry; or when you Cut its Mark, and its token burns. Resting does not clear Marks.
 
 **Powers.**
 - Mark a Quarry (1 Action): Touch the cord to any physical trace of a creature: a footprint, a drop of blood, shed skin. Add 1 Mark. While that quarry is marked, you know its general direction and distance within 1 mile regardless of cover or concealment. This works on creatures you have not marked with Hunter's Mark, because the cord marks independently of the class ability.
-- Cord Pull (Free, 1/encounter): When your marked quarry moves away from you, pull the cord taut. The quarry is Slowed (Speed halved on its next turn). No roll required. The quarry feels it.
+- Cord Pull (Free, 1/encounter): When your marked quarry moves away from you, pull the cord taut. The quarry is Slowed (Speed halved on its next turn). The quarry makes no save, but the cord's d6 still applies. The quarry feels it.
 - Cut the Mark (Free): Remove one Mark from the cord and burn its token. The cord forgets that quarry, your sense of its direction ends, and it is no longer tracked. Use this when the pursuit is no longer worth the rising risk. Nothing alerts the quarry.
 
 **Escalation.** When the d6 roll triggers, the quarry, or something near it, begins tracking you in return. The GM introduces this threat within 1 to 2 sessions. The threat is proportional to what you marked: a city rat sends a rat, a Borderlands warlord sends soldiers.
@@ -91,7 +91,7 @@ Class arcana first, then found arcana. No notes or prior review included.
 - Then cast a spell of the highest tier you can cast, with the lens held to your eye for the whole cast.
 - Risk: When the cast ends, the crack pulls at your eye. Make an INT save, DC 13. On a failure the lens fails as its Escalation describes: take 1 Wound, the lens fuses to your face for an hour, and Kartan is told. If you flinch or remove the lens, the crack spreads and it is ruined.
 
-**Resource: Overcharge (d6 vs. accumulation).** Overcharge (d6 vs. accumulation). Roll 1d6 each time you cast a tiered spell while wearing the lens. The spell takes effect either way. If you roll equal to or below your current Overcharge, the lens fails after the spell (see Escalation). On a safe roll, add 1 Overcharge and use the one safe-roll power that fits you: Steady Glass before you choose a subclass, then Controlled Upcast or Chaos Bloom. Overcharge clears when you hold the lens to the glass of the Observatory of Infinite Skies through one night.
+**Resource: Overcharge (d6 vs. accumulation).** Overcharge (d6 vs. accumulation). Roll 1d6 each time you cast a tiered spell while wearing the lens, before the spell resolves. The spell takes effect either way. If you roll equal to or below your current Overcharge, the lens fails after the spell (see Escalation). On a safe roll, add 1 Overcharge once (the +1 printed on each power is that same point, not extra), and apply the one safe-roll power that fits you to this spell: Steady Glass before you choose a subclass, then Controlled Upcast or Chaos Bloom. Overcharge clears when you hold the lens to the glass of the Observatory of Infinite Skies through one night.
 
 **Powers.**
 - Controlled Upcast (on a safe roll, +1 Overcharge, Control subclass): The spell gains one Upcast for free.
@@ -99,7 +99,7 @@ Class arcana first, then found arcana. No notes or prior review included.
 - Steady Glass (on a safe roll, +1 Overcharge, before you choose a subclass): The spell rolls one extra damage die.
 - Chaos Sight (Passive, while worn): You see magical auras on creatures and objects within 4 spaces without casting a spell. Illusions appear slightly wrong. Invisible creatures show as a faint shimmer.
 
-**Escalation.** When the d6 triggers, the glass heats to burning. Control Mage: you Lose Control, doing every option on the Control Table, with the GM choosing each time. Chaos Mage: you Invoke Chaos with disadvantage. No subclass yet: you are Dazed until the end of your next turn. Either way you take 1 Wound and cannot remove the lens until the encounter ends, because it has fused to your face. After the encounter, the Mages of Kartan sense the discharge and know its rough location. They send someone within 1 to 3 sessions. The fusing is now, the visitors are later.
+**Escalation.** When the d6 triggers, the glass heats to burning. Control Mage: you Lose Control, doing every option on the Control Table, with the GM choosing each time. Chaos Mage: you Invoke Chaos with disadvantage. No subclass yet: you are Dazed until the end of your next turn. Either way you take 1 Wound and cannot remove the lens until the encounter ends, because it has fused to your face. While fused it is inert: no more Overcharge rolls and no safe-roll powers. After the encounter, the Mages of Kartan sense the discharge and know its rough location. They send someone within 1 to 3 sessions. The fusing is now, the visitors are later.
 
 ### The Broken Verdict
 `class_oathsworn` · class arcanum, Oathsworn
@@ -111,7 +111,7 @@ Class arcana first, then found arcana. No notes or prior review included.
 - The refusal must be genuine. The Verdict will know if you were simply afraid.
 - Risk: The GM starts a six-step clock for whoever was owed the verdict. It ticks whenever you are seen shielding the person you chose, and when it fills they act against you both.
 
-**Resource: Held Judgment (toggle).** Held Judgment (toggle, on/off). When your Radiant Judgment would roll Judgment Dice, you may roll them and put them on the scales instead, which turns the toggle on. The scales hold one set of dice at a time, and while they hold it you roll no new Judgment Dice. Held dice stay on the scales past the end of the encounter. The toggle clears when you Release the dice on an attack, or when you bring the scales to the Temple of the Three Sisters to be cleared (see Escalation).
+**Resource: Held Judgment (toggle).** Held Judgment (toggle, on/off). When your Radiant Judgment would roll Judgment Dice, you may roll them and put them on the scales instead, which turns the toggle on. The scales hold one set of dice at a time, and while they hold it you roll no new Judgment Dice. Held dice stay on the scales past the end of the encounter. The toggle clears when you Release the dice on an attack. If the dice have fused to your Lay on Hands pool (see Escalation), only bringing the scales to the Temple of the Three Sisters clears the fusion.
 
 **Powers.**
 - Hold Judgment (Free, when Judgment Dice would be rolled): Keep the dice on the scales. While they are held, you see the remaining pan tilt when a creature within 6 spaces lies to you, visible only to you. You know. They do not know you know. You must decide what to do with that.
@@ -133,7 +133,7 @@ Class arcana first, then found arcana. No notes or prior review included.
 
 **Powers.**
 - Read the Contract (Free, 1/encounter, mark 1 Debt): Hold the vellum up. You see one true fact about a creature you can see: its most urgent want, its deepest fear, or the name of someone it has wronged.
-- Patron's Margin (Free, 1/encounter, mark 2 Debt, patron path; every Shadowmancer is on it until choosing a subclass at level 3): Spend a use of Pilfered Power to cast a spell from your schools one tier above your current maximum. The patron extends credit.
+- Patron's Margin (Free, 1/encounter, mark 2 Debt, patron path; every Shadowmancer is on it until choosing a subclass at level 3): You need a use of Pilfered Power (gained at level 2). Spend it to cast a spell from your schools one tier above your current maximum, paying its normal action cost. The patron extends credit.
 - Reaver's Margin (Free, 1/encounter, mark 2 Debt, Reaver path): Your next Bonescythe strike this turn rolls one extra d12.
 
 **Escalation.** When Debt reaches 4 or more, the patron collects. It does not take power. It adds one sentence about your character to the contract, permanently. The GM decides what it says and reads it aloud. Debt clears. The sentence stays. A Reaver's contract still answers to the patron they left: that patron writes the sentence, and sends an agent to read it to them in person. Roll a d6 on the table below, or choose.
@@ -173,7 +173,7 @@ Class arcana first, then found arcana. No notes or prior review included.
 
 **Powers.**
 - Call the Song (Free, in combat, 1/round): Name the song you are playing and roll against your Crowd. The first safe roll each encounter returns 1 spent use of Songweaver's Inspiration.
-- Protective Verse (Free, 1/encounter, counts as a Call: roll against your Crowd, then add 1): A specific song from the setlist grants immunity to the Taunted or Frightened condition to all allies within 6 spaces until the end of the round.
+- Protective Verse (Free, 1/encounter, counts as a Call in every way: combat only, 1/round, roll against your Crowd then add 1; a first safe roll still returns Inspiration): A specific song from the setlist grants immunity to the Taunted or Frightened condition to all allies within 6 spaces until the end of the round.
 
 **Escalation.** When Crowd reaches 4, someone in the crowd knows who this setlist belonged to. They approach between encounters, or send someone. The GM decides who and what they want. They may be a fan. They may not. Roll a d6 on the table below, or choose.
 
@@ -210,14 +210,14 @@ Class arcana first, then found arcana. No notes or prior review included.
 - Then take a hit in combat that you could have Defended but deliberately chose not to, in order to observe how the attack was made. The choice must be your own. The wrappings can tell the difference between courage and negligence.
 - Risk: If the hit drops you to 0 HP, the wrappings do not count it. You take the Wound and must try again after you recover. The last teacher's notes stop mid-technique, and whoever silenced them hears the wrappings are in use.
 
-**Resource: Strain (Wound-cost).** Strain (Wound-cost). Each annotation you use costs 1 Wound. There is no tracker, only the Wounds. A Medical Kit, healing magic and other effects cannot remove these Wounds; they heal only by Safe Rest, 1 per rest.
+**Resource: Strain (Wound-cost).** Strain (Wound-cost). Each annotation you use costs 1 Wound. There is no tracker, only the Wounds. A Medical Kit, healing magic and other effects cannot remove these Wounds; they heal only by Safe Rest, 1 per rest. Mark them apart on your Wound track. You cannot use an annotation at 5 Wounds, because the cost would be your sixth.
 
 **Powers.**
 - Study the Form (Free, spend 1 Wound, 1/encounter): Before you attack a creature, spend 1 Wound to activate the wrappings' oldest annotations. For the rest of the encounter, your attacks against that creature ignore its armor. You are choosing to hurt yourself to learn faster.
 - Deepest Annotation (Free, spend 1 Wound, 1/Safe Rest): Your unarmed and melee weapon attacks deal bonus damage equal to your level for the rest of the encounter.
 - Study (downtime, 1 hour per Safe Rest): Spend an hour reading the annotations during rest. Roll Lore DC 8 to learn something about a martial tradition relevant to the current adventure arc. The GM provides one true detail.
 
-**Escalation.** If you use either annotation while you have 3 or more Wounds, from any source, the wrappings tighten around your hands: the annotation still works, then take 1 additional Wound (it cannot be your sixth: at 5 Wounds you fall Dying instead) and you cannot use either annotation until your next Safe Rest. The annotations become illegible until a skilled martial artist re-inks them. Finding one is the GM's hook.
+**Escalation.** If you use either annotation while you have 3 or more Wounds, from any source, the wrappings tighten around your hands: the annotation still works, then take 1 additional Wound (it cannot be your sixth: at 5 Wounds you drop to 0 HP and fall Dying instead) and you cannot use either annotation until your next Safe Rest. The annotations become illegible until a skilled martial artist re-inks them. Finding one is the GM's hook.
 
 ### The Forgotten Key
 `forgotten_key` · found, Major, faction reward
@@ -256,7 +256,7 @@ Class arcana first, then found arcana. No notes or prior review included.
 - Hold the Breath (Free, spend 1 Breath): You go without air for up to one hour.
 - Choke (1 Action, spend 2 Breath): A creature within Reach 2 gasps. It makes a STR save, DC 13, or is Incapacitated as it chokes, until the end of its next turn. Solo creatures save with advantage. The whispers tell you its name.
 
-**Escalation.** If you try to use the pendant with no Breath, make a WIL save, DC 12, or you inhale your own breath: take 1 Wound and become Dying at once.
+**Escalation.** If you use Hold the Breath or Choke with too little Breath, make a WIL save, DC 12. On a success the power fails and no Breath is spent. On a failure you inhale your own breath: take 1 Wound, drop to 0 HP and fall Dying.
 
 ### The Axe of Nine Eyes
 `axe_of_nine_eyes` · found, Major, draw face 23 (legacy bonus only)
@@ -333,7 +333,7 @@ Class arcana first, then found arcana. No notes or prior review included.
 
 **Powers.**
 - Sworn (Passive): While the oath stands, you have advantage on checks that directly advance it. The GM grades it when you swear. Worthy: a session's work, at risk to you. Mighty: an arc's work, at risk to someone or something you love. Legendary: it changes the city.
-- Hold Fast (Reaction, once per oath): When you fail a check or save that directly advances the oath, reroll it with advantage. The oath drops one grade.
+- Hold Fast (Reaction, once per oath): When you fail a check or save that directly advances the oath, reroll it with advantage. The oath drops one grade; a Worthy oath has no grade to drop, so fulfilling it then heals 1 Wound and gives no max HP.
 
 **Escalation.** Fulfilled: heal 1 Wound and gain +1, +2 or +3 max HP for good, by grade. The Band's total max HP bonus never exceeds your level. Failed: the oath clears, you lose that much max HP for good, the Golden Council writes the broken oath on the record under your name, and the Band stays shut until you do a penance.
 
@@ -350,7 +350,7 @@ Class arcana first, then found arcana. No notes or prior review included.
 **Resource: Tithe (pip tracker).** Tithe (pip tracker, max 3). Gain 1 Tithe each time you Call In. Tithe clears only when you do the patron a favor the GM presents.
 
 **Powers.**
-- Call In (Action, +1 Tithe): Name one small, specific impossibility, and the GM approves it before you take the Tithe. Examples: a door opens, a lie is believed, or a creature within 6 spaces loses its next action (WIL save, DC 13, negates).
+- Call In (Action, +1 Tithe): Name one small, specific impossibility, and the GM approves it before you take the Tithe. Examples: a door opens, a lie is believed, or a creature within 6 spaces is Dazed until the end of its next turn (WIL save, DC 13, negates).
 - Warm (Passive): The symbol grows hot when a worshipper of the Lower Twelve is within 6 spaces.
 
 **Escalation.** If you Call In with 3 Tithe, the patron collects first. Roll a d6. 1 Newt: you are Tiny and Incapacitated for 3 rounds. 2 Imps: lose 2 random items. 3 Salt ring: you cannot cross it until it breaks. 4 Cobwebs: no arcanum use until you atone. 5 Nemesis: someone is born who will hunt you. 6 Wither: take 1 Wound.
@@ -401,7 +401,7 @@ Class arcana first, then found arcana. No notes or prior review included.
 - Wear it through one fight without taking it off
 - Risk: The sap takes. It won't come off until the next full moon.
 
-**Resource: Burden (pip tracker).** Burden (pip tracker, max 3), one per weapon stuck in the sap. Burden clears when you pry the stuck weapons loose, which takes tools and an hour, and then re-glue the harness with fresh sap from the tree that gave it. A Safe Rest does not clear Burden.
+**Resource: Burden (pip tracker).** Burden (pip tracker, max 3), one per weapon currently stuck in the sap. Prying a stuck weapon loose removes its Burden. A sealed or half-Defense harness is glued again only with fresh sap from the tree that gave it. A Safe Rest does not clear Burden.
 
 **Powers.**
 - Thorned Bark (Passive): Mail armor, Defense 6+DEX (max 2) and advantage on Stealth in forests and jungles. Each Burden gives -1 Speed. Without mail armor proficiency, Defend costs 1 extra action, as normal.
@@ -464,7 +464,7 @@ Class arcana first, then found arcana. No notes or prior review included.
 - Ask (Action, spend 1 Bargain): Make an Influence check, DC 12. On a success the fairy works one small charm: a glamour, a lock undone, a minute of floating. On a failure it sulks and stays silent for 2d6 days.
 - Fairy Light (Passive): The jar glows when fey are within 6 spaces.
 
-**Escalation.** On a natural 1 the fairy escapes and curses you. Once you know its name, you may smash the jar: it grants +1 to one stat for good and is gone. The fairy leaves its mark, one of your eyes turns its colour for good, and it tells its court: you owe the fey one favour, and they will collect. At 0 Bargains it only bargains for its freedom.
+**Escalation.** On a natural 1 the fairy escapes and curses you. Once the jar is unlocked (you know its name and have promised it freedom), you may smash it: it grants +1 to one stat for good and is gone. The fairy leaves its mark, one of your eyes turns its colour for good, and it tells its court: you owe the fey one favour, and they will collect. At 0 Bargains it only bargains for its freedom.
 
 ### The Seven-Leaf Bracelet
 `seven_leaf_bracelet` · found, Minor, faction reward
@@ -517,7 +517,7 @@ Class arcana first, then found arcana. No notes or prior review included.
 
 **Powers.**
 - Hunting Call (Action, spend 1 Call): Every ally within 12 spaces who hears it gains +2 Speed and advantage on their next attack, until the end of their next turn.
-- The Horde (Action, spend 2 Call): Three spirit bears rise within 6 spaces and fight as minions (GM guide) until the encounter ends. Each attacks with a d10 (d12 from level 5, d20 from level 9), any damage destroys one, and they move and attack together on your turn. An enemy that starts its turn adjacent to a bear is Slowed.
+- The Horde (Action, spend 2 Call): Three spirit bears rise within 6 spaces and fight as minions (GM guide), Medium, Speed 6, until the encounter ends. Each attacks with a d10 (d12 from level 5, d20 from level 9), any damage destroys one, and they move and attack together on your turn. An enemy that starts its turn adjacent to a bear is Slowed.
 - Lodge-Kin (Passive): Beasts of cold lands do not attack you unless you attack first.
 
 **Escalation.** If the horn leaves your hands without the lodge's leave, the bears hunt whoever carries it: each dawn, 1d4 great bears of the ice world find the carrier. If you blow it for a hunt the lodge would be ashamed of, its speaker comes through the arch to take it back. Name the speaker at the table.
@@ -632,13 +632,13 @@ Class arcana first, then found arcana. No notes or prior review included.
 - Make one throw that hauls you across a gap you could not have jumped
 - Risk: Whatever lived aboard the hulk feels the line cut. Make a Stealth check, DC 13, to get clear of the hulk unseen. On a failure it follows the line through the arch within a session.
 
-**Resource: Slack (d6 vs. accumulation).** Slack (d6 vs. accumulation). Each time you Haul, roll a d6 against your current Slack, then add 1 Slack. If you roll equal to or below your Slack before adding, the line snarls (see Escalation). Slack has no maximum, so at 6 or more every Haul snarls. Slack clears when you carry a length of the line back to a derelict hull in Drendaan and splice it into the strand.
+**Resource: Slack (d6 vs. accumulation).** Slack (d6 vs. accumulation). Each time you Haul, add 1 Slack. If the Haul hits, first roll a d6 against the Slack you had before adding. If you roll equal to or below it, the line snarls (see Escalation). Slack has no maximum, so at 6 or more every Haul snarls. Slack clears when you carry a length of the line back to a derelict hull in Drendaan and splice it into the strand.
 
 **Powers.**
 - Haul (Action, Range 12, +1 Slack): Make a ranged attack with the harpoon: 1d6+STR piercing, like a thrown spear. On a hit, choose one: pull yourself to the target, or pull a Medium or smaller target up to 6 spaces toward you. A pulled creature can make a STR save, DC 13; on a success it is neither pulled nor Prone, on a failure it is pulled and falls Prone.
 - Anchor (Free, 1/round, after a Haul that hits): Plant the line. The target cannot move more than 6 spaces from you until your next turn or until you let go (Free).
 
-**Escalation.** When the d6 triggers, the line snarls around you or your target, the GM's choice. Both of you are Restrained until either of you, or anyone adjacent, spends an action to cut it. The cut length keeps glowing, and whatever lived aboard the hulk follows it through the arch.
+**Escalation.** When the d6 triggers, the line snarls around you or your target, the GM's choice. Both of you are Restrained until either of you, or anyone adjacent, spends an action to cut it. Once the line is cut you may Haul again from your next turn. The cut length keeps glowing, and whatever lived aboard the hulk follows it through the arch.
 
 ### The Seekers' Provenance Ledger
 `provenance_ledger` · found, Minor, level 1 draw
@@ -674,7 +674,7 @@ Class arcana first, then found arcana. No notes or prior review included.
 **Resource: Truce (toggle).** Truce (toggle, on/off). Strike the stick on a table to call a Truce, which turns it on. It turns off when the parley ends, when you end it, or when anyone attempts violence under it. Once off, it cannot be turned on again until you have brokered a meeting between two enemies who would not otherwise have met, and settled the tab for it at the Black Goat's Tavern.
 
 **Powers.**
-- Call a Truce (Action, turn Truce on): Name a place and up to six people in it. For an hour, or until the parley ends, a named creature that tries to attack another named creature makes a WIL save, DC 14. On a failure the attack does not happen, and the action is spent. Either way, the Truce ends.
+- Call a Truce (Action, turn Truce on): Name a place and up to six people in it. For an hour, or until the parley ends, a named creature that tries to attack or harm another named creature makes a WIL save, DC 14. On a failure the attack does not happen, and the action is spent. Either way, the Truce ends. Violence by anyone not named ends it at once, with no save, and the stick burns you as below.
 - Read the Notches (Passive): When you hold the stick at a table, you know who in the room owes whom, and whether the debt is money, a favor, or blood.
 
 **Escalation.** If the Truce breaks, the stick burns your palm for 1 Wound, and Vynan Halfhorn sends someone for whoever broke it within a session. Vynan Halfhorn will want to know why the peace failed under his stick.
@@ -711,7 +711,7 @@ Class arcana first, then found arcana. No notes or prior review included.
 **Resource: Teeth (finite never-refill).** Teeth (finite, 1d4+1, rolled at unlock). Each Sow uses up one tooth. A sown tooth never comes back, and nothing refills the satchel.
 
 **Powers.**
-- Sow (Action, spend 1 Tooth): An armored warrior rises from the ground beside you and obeys you for an hour. It fights as a minion (GM guide): it attacks with a d10 (d12 from level 5, d20 from level 9), any damage destroys it, and all your warriors move and attack together on your turn.
+- Sow (Action, spend 1 Tooth): An armored warrior (Medium, Speed 6; the armor is for show) rises from the ground beside you and obeys you for an hour. It fights as a minion (GM guide): it attacks with a d10 (d12 from level 5, d20 from level 9), any damage destroys it, and all your warriors move and attack together on your turn.
 - Dragon's Click (Passive): The teeth click louder within 6 spaces of a dragon or dragonkin.
 
 **Escalation.** If two or more warriors stand and one is hit by an attacker it could not see, they turn on each other, then on whoever is closest. Dragons and their kin can smell the satchel. When the last tooth is gone, the satchel is just a bag.
