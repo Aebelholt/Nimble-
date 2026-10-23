@@ -28,6 +28,11 @@ module.exports = [
           A("Shackle", "1 Action, adjacent Prone or Grappled target", "—", "Restrained in manacles. Escape DC 12, or the key."),
           A("Whistle", "Free, 1/encounter", "—", "In 1d4 rounds, 1d4 Watch Guards arrive."),
         ] },
+      { name: "Shieldward Knight", level: 4, hp: 37, armor: "Medium", note: "Grandguard variant",
+        actions: [
+          A("Tower shield smash", "1 Action", "2d6+10", "Knockback 1."),
+          A("Wide guard", "Reaction, 1/round, an attack targets an ally within 2", "—", "That attack is disadvantaged. Not while it is Grappled, Restrained or Prone, nor against an attacker adjacent to it."),
+        ] },
       { name: "Griffon Knight", level: 5, hp: 49, armor: "Medium", speed: "Fly 12",
         actions: [
           A("Lance charge", "1 Action, after 4+ spaces in a line", "2d8+6", "Prone."),
@@ -37,7 +42,7 @@ module.exports = [
     stats: { stage: "1-8" },
 
     tactics: "Want order, and credit for it. Shackle the downed, whistle early, kill only when a writ says so or a Knight falls.",
-    sources: "Adopted from the setting: Golden Knights (Gazetteer, Citadel; Doorish Hills patrols; griffon riders). Formation from the GM Guide ability table.",
+    sources: "Adopted from the setting: Golden Knights (Gazetteer, Citadel; Doorish Hills patrols; griffon riders). Formation from the GM Guide ability table. Shieldward after the Hobgoblin Grandguard's Wide Guard (Draw Steel Monsters, p.174).",
 
     designNote:
       "A fight with the Knights is a clock: the whistle brings more. Surrender gets a cell, not a " +

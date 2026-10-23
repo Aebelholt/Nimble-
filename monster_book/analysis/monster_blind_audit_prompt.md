@@ -1,6 +1,6 @@
 # Blind audit: Sejr Monster Book
 
-You are auditing a bestiary for a tabletop campaign. It has 64 entries: the Nimble Game Master's Guide monsters regrouped by family, plus converted and original creatures for a specific setting. You have not seen any earlier review of this book, and you should not try to guess what one said. Work from the material below only.
+You are auditing a bestiary for a tabletop campaign. It has 66 entries: the Nimble Game Master's Guide monsters regrouped by family, plus converted and original creatures for a specific setting. You have not seen any earlier review of this book, and you should not try to guess what one said. Work from the material below only.
 
 ## Your job
 
@@ -1190,7 +1190,7 @@ Stage 13+.
 - **Hurricane** (1 Action, Reach 3, AoE) 4d4+10. To enemies. On damage, move targets anywhere within Reach. Use instead of Beastshift.
 
 **In play.** Wants intruders gone, or fed to the forest. The Duskprowler picks the one at the back, the Basilisk looks at the one with the fewest actions, and the Druid moves the party where it wants them. Breaks off when Bloodied, into the trees.
-**Designer note.** Official Nimble blocks. The Basilisk is the one place this book keeps a printed Petrified: three stacked Lithify gazes over 10 minutes. It is gradual, telegraphed, and costs an action per stack rather than a turn, so it stays. If a Sejr table wants it gentler, cap Lithify at two stacks and let the third only Slow. The Duskprowler wants area damage or a hero with advantage to spare, and the Druid is a mobility controller who moves the party around its trees.
+**Designer note.** Official Nimble blocks. The Basilisk is the one place this book keeps a printed Petrified: three stacked Lithify gazes over 10 minutes. It is gradual, telegraphed, and costs an action per stack rather than a turn, so it stays. If a Sejr table wants it gentler, cap Lithify at two stacks and let the third only Slow. Book ruling, from the Draw Steel Basilisk: an adjacent hero, or the Lithified one, may spend an action to cut away the stone, removing one Lithify for 1d8 damage that ignores armor. The Duskprowler wants area damage or a hero with advantage to spare, and the Druid is a mobility controller who moves the party around its trees.
 **Sources.** Nimble GM Guide, Bestiary: Forest Denizens, forest keepers.
 
 **Traits (d6)**
@@ -1883,6 +1883,7 @@ Stage 7-12.
 | Watch Guard | Min | Minion | None | 6 |
 | Golden Knight | 3 | 34 | None | 6 |
 | Knight Sergeant | 4 | 37 | Medium | 6 |
+| Shieldward Knight (Grandguard variant) | 4 | 37 | Medium | 6 |
 | Griffon Knight | 5 | 49 | Medium | Fly 12 |
 
 Stage 1-8.
@@ -1897,13 +1898,16 @@ Stage 1-8.
 - **Longsword** (1 Action, ×2) 1d8+4.
 - **Shackle** (1 Action, adjacent Prone or Grappled target) Restrained in manacles. Escape DC 12, or the key.
 - **Whistle** (Free, 1/encounter) In 1d4 rounds, 1d4 Watch Guards arrive.
+*Shieldward Knight*
+- **Tower shield smash** (1 Action) 2d6+10. Knockback 1.
+- **Wide guard** (Reaction, 1/round, an attack targets an ally within 2) That attack is disadvantaged. Not while it is Grappled, Restrained or Prone, nor against an attacker adjacent to it.
 *Griffon Knight*
 - **Lance charge** (1 Action, after 4+ spaces in a line) 2d8+6. Prone.
 - **Griffon talons** (Free, 1/round) 1d8+5. Grappled, escape DC 12.
 
 **In play.** Want order, and credit for it. Shackle the downed, whistle early, kill only when a writ says so or a Knight falls.
 **Designer note.** A fight with the Knights is a clock: the whistle brings more. Surrender gets a cell, not a grave, and a cell is a scene: it always has a bail, a favour to call in or a back door.
-**Sources.** Adopted from the setting: Golden Knights (Gazetteer, Citadel; Doorish Hills patrols; griffon riders). Formation from the GM Guide ability table.
+**Sources.** Adopted from the setting: Golden Knights (Gazetteer, Citadel; Doorish Hills patrols; griffon riders). Formation from the GM Guide ability table. Shieldward after the Hobgoblin Grandguard's Wide Guard (Draw Steel Monsters, p.174).
 
 **Traits (d6)**
 1. The gilt is flaking. Under it, plain city steel.
@@ -2082,14 +2086,14 @@ HP 100 · Armor None · Speed 6 · DC 13 · Stage 13+
 
 **Actions**
 - **Decaying swipe** (1 Action, ×2, Reach 2) 1d4+10. On damage, Prone, or Knockback 2.
-- **Rotten smash** (2 Actions, replaces its attacks, Reach 2) Seizes up to two creatures or objects within Reach: STR save DC 14 or Grappled (escape DC 14). It holds them until its next turn.
-- **Slam** (Free, start of its next turn, replaces its attacks) 4d8+8. Smashes one held creature down, Prone. If it holds two, they are knocked together instead: 3d8+8 each and both Dazed. A held object is hurled at a target within 6: DEX save DC 13 for half.
+- **Rotten smash** (2 Actions, replaces its attacks, Reach 2) 2d6+6. Up to two creatures or objects within Reach. STR save DC 14 or Grappled (escape DC 14), held until its next turn.
+- **Slam** (Free, start of its next turn, replaces its attacks) 3d8+8. Smashes one held creature down, Prone. If it holds two, they are knocked together instead: 2d8+8 each and both Dazed. A held object is hurled at a target within 6: DEX save DC 13 for half.
 - **Wrench free** (Passive) 20 or more damage from one attack makes it drop one held creature, chosen by the attacker.
 - **Rises again** (Passive) Once. At 0 HP it lies still. At the start of the second round after, it rises with 30 HP, unless fire or radiant damage dealt the killing blow, or a hero spends an action to burn or bless the body.
 
 **In play.** Takes the two biggest threats, holds them while the others scramble, then smashes them together. Finish it with fire or a blessing, or it gets up.
-**Designer note.** The slam waits a turn, and that is the point: two heroes are held, everyone sees the smash coming, and the party spends a round on rescue, wrenching or killing it. Cost 10: level 8, plus 30 HP of revival. The revival is a finishing-blow problem, not a fire weakness. Fire or a blessing ends it for good. Unresolved: the delay and the 30 HP are untested. Best at 3-4 heroes of level 4 or higher; against fewer it holds one and the Slam is 4d8+8.
-**Sources.** Draw Steel Monsters v1, Giant Zombie (p.266): Rotten Smash, Knocking Heads and conditional revival, from the review handoff. The Draw Steel book was not available when this was written, so the numbers and the delay are this book's own. Base block: the GM Guide's Giant Zombie, level 8.
+**Designer note.** The slam waits a turn, and that is the point: two heroes are held, everyone sees the smash coming, and the party spends a round on rescue, wrenching or killing it. Cost 10: level 8, plus 30 HP of revival. The source smashes at once and rises at once at 36 percent; this version waits a turn and rises after two rounds at 30 percent. The revival is a finishing-blow problem, not a fire weakness. Fire or a blessing ends it for good. Unresolved: the delay and the 30 HP are untested. Best at 3-4 heroes of level 4 or higher; against fewer it holds one and the Slam is 3d8+8.
+**Sources.** Draw Steel Monsters v1, Giant Zombie (p.266, level 4 Elite Brute, 140 Stamina): Rotten Smash grabs two on a strike, Knocking Heads (1 Malice) smashes them together, Endless Knight rises once at 50 Stamina unless fire or holy damage or a destroyed body. The delay, damage and numbers are this book's own. Base block: the GM Guide's Giant Zombie, level 8.
 
 **Traits (d6)**
 1. A lantern-post for a club, still lit.
@@ -2122,6 +2126,103 @@ HP 100 · Armor None · Speed 6 · DC 13 · Stage 13+
 - But+: Monster result on an arch to the Cliffs of the Dead, or any world of ruins. A set-piece fight for a party that can split into rescuers and finishers.
 - Patron hook: A Temple priest has a funeral booked at the barrow in two days, and the guest of honor is already walking.
 - City of Arches name: "Standing dead": Cliffs of the Dead mourners' word for the ones that did not stay.
+
+### Kobold Artifex
+*City of Arches · Standard · Controller · Level 2*
+**Core:** The kobold who builds the trap, picks the spot, and then drags you onto it with a hook on a chain.
+*A kobold in a leather apron hung with hooks and cord, standing beside a rigged corner with a lever in one hand and a chain-hook in the other.*
+
+HP 28 · Armor None · Speed 6 · DC 11 · Stage 7-10
+
+**Actions**
+- **Chain hook** (1 Action, Range 6) 1d6+6. Pulls the target up to 2 spaces toward it. If the pull ends on a rigged space, the mechanism fires at once and the save is at disadvantage.
+- **Pull the cord** (Free, 1/round, Range 10) Fires one rigged mechanism, whoever is standing in it.
+- **Rigging** (Passive) Three mechanisms are rigged before the fight, each with a visible cord. Net: 2-space radius, DEX save DC 11 or Restrained (escape DC 11). Hive cart: 2d6 to a 2-space radius, DEX save DC 11 for half. Oil and spark: 2d6 fire to a 2-space radius, Smoldering. Each fires once. An action and DEX DC 11, or any hit on the cord, disarms one. Any creature beside a cord may fire it instead, as a Free action.
+- **Shield wall** (Passive) Beside another kobold with this trait, both have cover.
+
+**In play.** Stays behind the rig and drags the biggest hero onto it. Two Artifex fire the traps in turn. A Denwarden holds the front. Flee when the rig is spent.
+**Designer note.** The traps are terrain the party can read, cut, or turn on the kobolds. The hook is a forced move, never a lost turn. Cost 3: level 2, plus about 30 damage of one-use rigging. Unresolved: two Artifex fire six mechanisms in a fight; cap at three in total if it drags. Not playtested.
+**Sources.** Draw Steel Monsters v1, Kobold Artifex (p.192): Chain Hook, Activate Trap, Shield? Shield!. Built on the Core Kobold Trapper (GM Guide). Numbers are the Builder row for level 2; the rigging is this book's.
+
+**Traits (d6)**
+1. Every cord is dyed a different colour, and the kobold knows each by heart.
+2. A chain-hook carved with the names of everything it has caught.
+3. Its apron is full of bee stings, healed over.
+4. It hums while it works, and stops when you walk in.
+5. Spare cord looped around its neck like a scarf.
+6. One cord is white and is not connected to anything. It is for show.
+
+**Encounters (d4)**
+1. The corridor floor is too clean. A kobold waves from the far end, holding a lever.
+2. A tunnel crew argues over which cord does what. One of them is a hero's snare, copied.
+3. Kobolds have rigged a market stall. The crowd is the audience.
+4. A single Artifex is trapped in its own net and offers to disarm the rest for a fee.
+
+**Lairs (d4)**
+1. A tunnel of three trapped chambers, a lever room above them.
+2. A workshop of half-built traps, one for each of the party's likely routes.
+3. A pit lined with old hooks, a scrap of heroic cloak on each.
+4. A kobold shrine to a trap that works every time. It has been oiled.
+
+**Rumours (d4, Lore check)**
+1. ⊤ Cut the cord and the trap is dead. Pull it first and it is yours.
+2. ⊤ The hook pulls you toward the kobold. Stand on solid ground.
+3. ⊥ The cords are magic. Only a mage can cut them.
+4. ⊥ They only trap one corridor. Go around.
+
+**Gig Fit**
+- Verb: Find / Stop
+- But+: Monster result at Stages 7-10, in Lower Reaches tunnels. Sits behind a Denwarden front line.
+- Patron hook: A Black Hand fixer's courier route has been trapped from end to end. He wants the Artifex found, not hurt.
+- City of Arches name: "Cord-men": Lower Reaches word for anyone who works behind a lever.
+
+### Goblin Drum-Band
+*City of Arches · Standard · Support · Level 2*
+**Core:** A goblin with a drum, and a mob that dives in on every hit.
+*A goblin in a patched coat beating a skin drum with two bones, backed by a mob of grinning minions who watch only for the beat.*
+
+HP 27 · Armor None · Speed 6 · DC 11 · Stage 7-10
+
+**Actions**
+- **Rat-a-tat** (1 Action, Range 6) 1d6+6. Sonic. Pushes the target 2.
+- **Pester** (Reaction, 1/round, an ally damages a creature within 6) A Goblin Minion adjacent to that creature attacks it. A Pester attack never triggers another Pester.
+- **Drumroll** (Free, 1/encounter) Each minion that Pestered this round may Pester once more this round.
+
+**In play.** Hangs back behind the minions and beats time. Every hit on a hero brings a stab. Flees if the drum is silenced.
+**Designer note.** The drum turns every goblin hit into two. It stops at one Pester a round, two with Drumroll, so it adds a stab or two a round and cannot chain. Kill the drummer, or keep the minions off the target. Cost 2, the minions extra. Unresolved: it is strong with many minions. Cap at 3 minions per drummer. Not playtested.
+**Sources.** Draw Steel Monsters v1, Radenwight Piper (p.227): Ready Rodent and Vivace!, with the follow-up chain capped. Built on the Core Goblins (GM Guide). Numbers are the Builder row for level 2.
+
+**Traits (d6)**
+1. The drum is a bucket with a skin stretched over it.
+2. The minions hum the tune and miss the beat.
+3. The drummer can't read. The tune is copied from a street musician.
+4. A bone drumstick, polished by use, with a name carved on it.
+5. The minions dance when the drummer hits an enemy.
+6. The drum has a hole in it where a heroic arrow went through.
+
+**Encounters (d4)**
+1. A beat from the next room. Goblins are coming in time.
+2. A street musician is playing for a goblin crowd. The drum is not his.
+3. A mob of goblins is halted by a drummer who has fallen asleep.
+4. The party's thief has joined the band, for the cut.
+
+**Lairs (d4)**
+1. A cistern echo-chamber with a drum on a plinth.
+2. A tunnel junction where the beat bounces to every minion.
+3. A pawn shop back room stacked with stolen instruments.
+4. A goblin hall with a stage, and no audience.
+
+**Rumours (d4, Lore check)**
+1. ⊤ Kill the drummer and the minions stop diving in.
+2. ⊤ The beat only works near a hit. Keep your wounded away from the minions.
+3. ⊥ The drum is magic. Break it and they all die.
+4. ⊥ Goblins can't be taken by surprise while the drum plays.
+
+**Gig Fit**
+- Verb: Stop / Steal
+- But+: Monster result at Stages 7-10, in cisterns and tunnels. Pairs with a Goblin Taskmaster.
+- Patron hook: A merchant's courier was stopped by a drumbeat. The cargo is a set of silver bells.
+- City of Arches name: "Beaters": Lower Reaches word for a goblin crew that hits as one.
 
 ---
 ## Deathreach
@@ -4028,6 +4129,7 @@ Generated from the entries and the Monster Builder table. It compares each non-m
 | Serpent Cult of Vithra | Voice of the Idol | 5 | None | 66 | 64 | 1.03 | 13 | 13 |
 | Golden Knights | Golden Knight | 3 | None | 34 | 41 | 0.83 | none | 12 |
 | Golden Knights | Knight Sergeant | 4 | Medium | 37 | 37 | 1.00 | 12 | 12 |
+| Golden Knights | Shieldward Knight | 4 | Medium | 37 | 37 | 1.00 | none | 12 |
 | Golden Knights | Griffon Knight | 5 | Medium | 49 | 49 | 1.00 | 12 | 13 |
 | Arch Guardians | Skeletal Tomb Guardian | 2 | None | 31 | 31 | 1.00 | none | 11 |
 | Arch Guardians | Flesh Guardian | 4 | None | 52 | 52 | 1.00 | none | 12 |
@@ -4076,3 +4178,5 @@ Generated from the entries and the Monster Builder table. It compares each non-m
 | Young Blizzard Dragon | Young Blizzard Dragon | 7 | Medium | 95 | 72 | 1.32 | none | 13 |
 | Drakkoth Faterager | Drakkoth Faterager | 5 | Medium | 49 | 49 | 1.00 | none | 13 |
 | Rotbound Giant | Rotbound Giant | 8 | None | 100 | 100 | 1.00 | 14, 13 | 13 |
+| Kobold Artifex | Kobold Artifex | 2 | None | 28 | 31 | 0.90 | 11 | 11 |
+| Goblin Drum-Band | Goblin Drum-Band | 2 | None | 27 | 31 | 0.87 | none | 11 |

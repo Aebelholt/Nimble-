@@ -114,7 +114,7 @@ module.exports = [
       "Official Nimble blocks. The Basilisk is the one place this book keeps a printed " +
       "Petrified: three stacked Lithify gazes over 10 minutes. It is gradual, telegraphed, and costs " +
       "an action per stack rather than a turn, so it stays. If a Sejr table wants it gentler, cap Lithify at two " +
-      "stacks and let the third only Slow. The Duskprowler wants area damage or a hero with " +
+      "stacks and let the third only Slow. Book ruling, from the Draw Steel Basilisk: an adjacent hero, or the Lithified one, may spend an action to cut away the stone, removing one Lithify for 1d8 damage that ignores armor. The Duskprowler wants area damage or a hero with " +
       "advantage to spare, and the Druid is a mobility controller who moves the party around its trees.",
 
     traits: [
