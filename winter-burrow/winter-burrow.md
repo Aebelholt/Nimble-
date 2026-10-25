@@ -18,7 +18,7 @@ Chassis: Mausritter. Anything not written here works as Mausritter says.
 
 | d6 | City trade | Item | Item |
 | --- | --- | --- | --- |
-| 1 | Seamstress | Needle (d6) | Thimble of buttons, good for trade |
+| 1 | Seamstress | Needle (d6, light: wears out slower than a stick) | Thimble of buttons, good for trade |
 | 2 | Lamplighter | Matches, 3 uses: a fire anywhere dry | Brass snuffer |
 | 3 | Porter | Rope | Shoulder strap, +1 pack slot |
 | 4 | Baker | Jar of honey, 3 Food | Copper pan: 1 Food cooks two full bellies, yours and a guest's |
@@ -47,7 +47,7 @@ When a condition has no free pack slot, drop something in the snow to make room.
 
 **Harm.** Damage comes off HP, then STR. After STR damage, make a STR save or take Injured and go down. Attacks always hit, so roll your weapon die. Almost everything out there is bigger than you. Running and hiding are always on the table. After a fight, roll Warmth, because the sweat freezes.
 
-**Weapons.** A stick, a needle or anything improvised does d6. A wrench or a hatchet does d6, or d8 held in both paws. A spear does d10 and needs both paws.
+**Weapons.** A stick, a needle or anything improvised does d6. A wrench or a hatchet does d6, or d8 held in both paws. A spear does d10 and needs both paws. A weapon in each paw: roll both, keep the best.
 
 **The day.** Mark an hour for every hour of travel and every task. Between two places, it's the difference in their hours from home, at least 1.
 
