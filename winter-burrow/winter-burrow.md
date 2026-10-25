@@ -6,7 +6,7 @@ You are a mouse come home from the city. Your parents are dead. The family burro
 
 Go out, bring things home, make the burrow warm again. Find out where she went.
 
-Chassis: Mausritter. Anything not written here works as Mausritter says.
+Built on Mausritter. Everything you play by is in these pages. When something isn't, the GM makes a ruling and writes it down.
 
 ## Make a mouse
 
@@ -50,27 +50,6 @@ When a condition has no free pack slot, drop something in the snow to make room.
 Morning ☐☐☐☐ · Afternoon ☐☐☐☐ · Dusk ☐☐ · Night
 
 No XP, no levels. The burrow is how you grow.
-
-## Moves
-
-Roll only when the outcome is uncertain and failing costs something. Say what you're doing, and the GM names the move and the stat. Equal to or under is **done**. Up to 5 over is **at a cost**. More than that **fails**. When a rule names the failure (save or wet, save or stuck), it's pass or fail.
-
-A cost is one you can see: an extra hour, a Warmth step, a slot left behind, a noise, d4 damage. Advantage when a tool, a neighbour or a good plan helps. Disadvantage when a condition says so, or you're encumbered.
-
-| Move | Stat | Done | At a cost | Fails |
-| --- | --- | --- | --- | --- |
-| **Climb** a trunk, a bank, a beam, a drift | STR or DEX | You're up, or down | You make it, but it takes an extra hour, or something falls from your pack | You fall: d6 damage, back where you started |
-| **Sneak** past something, or up on it | DEX | It never knows. If you attack, you go first and roll d12 | You're past, but it heard something and is looking your way | It knows where you are, and it acts first |
-| **Cross** ice, a gap, a thin branch, running water | DEX | Across, dry | Across, but wet | You go in: wet, d4 damage, back where you started |
-| **Force** a lid, a stuck door, a stone, something caught | STR | It gives | It gives, but loudly, or mark a use on what you forced it with | It won't move. Find another way or another tool |
-| **Haul** a loaded sled, something heavy, someone who can't walk | STR | It moves at the usual pace | It moves, but each leg costs an extra hour | Not as you are. Lighten it, get help, or leave it |
-| **Search** for something you can name, an hour | WIL | You find it | You find it, but it took an extra hour | The hour's gone. The GM tells you one true thing about why |
-| **Read** tracks, a sky, a sound | WIL | Ask two: what was here, how long ago, where it went, what tomorrow's weather is | Ask one | Nothing you can trust |
-| **Lure** something out to where you want it | WIL | It comes where you want, when you want | It comes, but closer or sooner than you'd like. It acts first | It won't come, or it comes for you now |
-| **Talk round** someone wary, angry or afraid | WIL | They listen, and give you a straight answer | They listen, but want something first | They shut you out for today |
-| **Make do** a splint, a snare, a sling, a patch | DEX or WIL | It works until you're home | It works once | The materials are spent |
-
-The GM rolls tomorrow's weather when a Read asks for it, and keeps that roll.
 
 ## Fighting
 
@@ -181,6 +160,50 @@ Come home, light the fire, then do one thing before you sleep. No fire, you slee
 - **Make.** Make a tool at the workbench.
 - **Knit.** Knit a garment. A scarf can be knitted anywhere.
 - **Remember.** Hold something you brought home. The GM tells you what you remember.
+
+## GM: Rules reference
+
+**Saves.** STR is force, endurance and holding on. DEX is speed, balance, dodging and quiet. WIL is nerve, noticing and persuading. Only roll when she's trying to avoid something bad, and say what failing will cost before she rolls. Advantage when she's well prepared or equipped. Disadvantage when she's badly placed, badly equipped, or a condition says so.
+
+**Opposed saves.** When she and someone else want the same thing, both save. The lowest roll that succeeds wins. If both fail, neither gets it.
+
+**Luck rolls.** For anything that isn't her doing, like whether the cat is out or Nibs has honey today, give it a chance in 6 and roll d6. Equal or under, it happens. 1-in-6 is unlikely, 3-in-6 even, 5-in-6 likely.
+
+**Picking a cost** (a failure, or the middle band):
+
+| Cost | Size |
+| --- | --- |
+| Damage | d4 minor, d6 dangerous, d8 serious, d10 and up rare |
+| Time | An hour on the track |
+| Cold | A Warmth step |
+| A thing | A random pack slot (d6) is lost, or mark 1–3 uses |
+| A condition | Exhausted, Injured, wet |
+| Attention | A noise. Roll an encounter |
+
+**Usage.** Most things have 3 uses. Weapons and the bark shield mark one on a 4–6 after a fight. A stick or anything improvised marks one every fight. Matches mark one per fire, a lantern one per Night it's lit. Anything else marks one when it's used in a way that could break or spend it. At three it's broken or spent. A Make at the workbench clears every use on one thing, for 1 of what it's made from.
+
+**Fights, from the GM's side.**
+
+- A fight takes minutes and marks no hour. The Warmth roll after it is its cost.
+- A foe with no WIL listed has WIL 10.
+- A foe that's plainly outmatched makes a WIL save when the fight starts, or flees. A group makes one when half of it is down.
+- Critical damage in a stat block replaces the usual Injured-and-down.
+
+**Stats at 0.** STR 0: she goes down and wakes at STR 1, Frostbitten. DEX 0: she can't move until a night at home brings a point back. WIL 0: she's out of the scene, as if she'd gone down.
+
+**Who talks.** Mice and the neighbours talk. Birds, foxes, cats and spiders don't. When a creature's mood isn't obvious, roll 2d6:
+
+| 2d6 | Mood | Ask yourself |
+| --- | --- | --- |
+| 2 | Hostile | How has she angered it? |
+| 3–5 | Unfriendly | How could it be appeased? |
+| 6–8 | Unsure | What would win it over? |
+| 9–11 | Talkative | What would it trade? |
+| 12 | Helpful | How can it help? |
+
+**Time and rest.** A task is an hour: gathering, searching, cutting through a web, going around the ants. A look around, a short talk or a fight is minutes and marks nothing. HP comes back only with sleep, with no short rests. A night without sleep is Exhausted.
+
+**Not in this game:** magic, pips and prices, XP, levels and grit, hirelings and warbands, banks, hexes and watches, and Mausritter's own weather table.
 
 ## GM: Opening
 

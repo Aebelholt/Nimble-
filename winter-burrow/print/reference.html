@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Winter Burrow, rules reference</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,400;0,700;1,400&family=IM+Fell+English:ital@0;1&display=block" rel="stylesheet">
+<link rel="stylesheet" href="wb.css">
+<style>
+  body { font-size: 9pt; line-height: 1.3; }
+  .page { display: flex; flex-direction: column; gap: 3.4mm; padding-top: 10mm; }
+  .head { display: flex; justify-content: space-between; align-items: flex-end; border-bottom: 0.9pt solid var(--ink); padding-bottom: 1.8mm; }
+  .head h1 { font-size: 22pt; }
+  h2 { font-size: 12.5pt; margin-bottom: 1.2mm; }
+  .cols.two { gap: 6.5mm; align-items: start; }
+  .stack > * + * { margin-top: 2.8mm; }
+  table { font-size: 8.5pt; margin-bottom: 1mm; }
+  td, th { padding: 0.75mm 1.3mm; }
+  ul { margin-bottom: 0.6mm; }
+  .rulings { flex: 1; min-height: 22mm; display: flex; flex-direction: column; }
+  .rulings .lines { flex: 1; background: repeating-linear-gradient(to bottom, transparent 0, transparent 6.4mm, var(--hair) 6.4mm, var(--hair) calc(6.4mm + 0.5pt)); }
+</style>
+</head>
+<body>
+<section class="page">
+  <div class="head">
+    <div><h1>Rules reference</h1><div class="kicker">what Mausritter used to cover</div></div>
+    <div class="kicker">Winter Burrow · GM</div>
+  </div>
+
+  <div class="cols two">
+    <div class="stack">
+      <div>
+        <h2>Saves</h2>
+        <table>
+          <tr><th>Stat</th><th>Covers</th></tr>
+          <tr><td><b>STR</b></td><td>Force, endurance, holding on</td></tr>
+          <tr><td><b>DEX</b></td><td>Speed, balance, dodging, moving quietly</td></tr>
+          <tr><td><b>WIL</b></td><td>Nerve, noticing, persuading</td></tr>
+        </table>
+        <p>Only roll when she's trying to avoid something bad, and say what failing will cost before she rolls. Equal or under: done. Up to 5 over: at a cost. More: fails. A save with a named failure (save or wet) is pass or fail.</p>
+        <p><b>Advantage</b> when she's well prepared or equipped. <b>Disadvantage</b> when she's badly placed, badly equipped, or a condition says so.</p>
+        <p><b>Opposed.</b> When she and someone else want the same thing, both save. The lowest roll that succeeds wins. If both fail, neither gets it.</p>
+      </div>
+      <div>
+        <h2>Luck rolls</h2>
+        <p>For anything that isn't her doing, like whether the cat is out or Nibs has honey today, give it a chance in 6 and roll d6. Equal or under, it happens. 1-in-6 is unlikely, 3-in-6 even, 5-in-6 likely.</p>
+      </div>
+      <div>
+        <h2>Picking a cost</h2>
+        <p>For a failure, or the middle band.</p>
+        <table>
+          <tr><th>Cost</th><th>Size</th></tr>
+          <tr><td><b>Damage</b></td><td>d4 minor, d6 dangerous, d8 serious, d10 and up rare</td></tr>
+          <tr><td><b>Time</b></td><td>An hour on the track</td></tr>
+          <tr><td><b>Cold</b></td><td>A Warmth step</td></tr>
+          <tr><td><b>A thing</b></td><td>A random pack slot (d6) is lost, or mark 1–3 uses</td></tr>
+          <tr><td><b>A condition</b></td><td>Exhausted, Injured, wet</td></tr>
+          <tr><td><b>Attention</b></td><td>A noise. Roll an encounter</td></tr>
+        </table>
+      </div>
+      <div>
+        <h2>Usage</h2>
+        <p>Most things have 3 uses. At three, it's broken or spent.</p>
+        <table>
+          <tr><th>Thing</th><th>Marks a use</th></tr>
+          <tr><td>Weapons, bark shield</td><td>After a fight, on a d6 roll of 4–6</td></tr>
+          <tr><td>Stick, anything improvised</td><td>Every fight</td></tr>
+          <tr><td>Matches</td><td>Each fire</td></tr>
+          <tr><td>Lantern</td><td>Each Night it's lit</td></tr>
+          <tr><td>Anything else</td><td>When used in a way that could break or spend it</td></tr>
+        </table>
+        <p><b>Repair.</b> A Make at the workbench clears every use on one thing, for 1 of what it's made from.</p>
+      </div>
+    </div>
+
+    <div class="stack">
+      <div>
+        <h2>Fights, from the GM's side</h2>
+        <ul>
+          <li>A fight takes minutes and marks no hour. The Warmth roll after it is its cost.</li>
+          <li>A foe with no WIL listed has WIL 10.</li>
+          <li>A foe that's plainly outmatched makes a WIL save when the fight starts, or flees. A group makes one when half of it is down.</li>
+          <li>A foe that fails its STR save is beaten: it flees or dies. Critical damage in a stat block replaces that, and replaces her Injured-and-down.</li>
+          <li>Hampered (in a web, grabbed, through cover): d4. Set up (stuck, unaware, a trick that worked): d12.</li>
+        </ul>
+      </div>
+      <div>
+        <h2>Stats at 0</h2>
+        <table>
+          <tr><td><b>STR 0</b></td><td>She goes down and wakes at STR 1, Frostbitten</td></tr>
+          <tr><td><b>DEX 0</b></td><td>She can't move until a night at home brings a point back</td></tr>
+          <tr><td><b>WIL 0</b></td><td>She's out of the scene, as if she'd gone down</td></tr>
+        </table>
+        <p>She never dies. Going down: next Morning, somewhere worse, 1 HP, Warmth d4, Injured, all but one Chilled cleared, bundles lost.</p>
+      </div>
+      <div>
+        <h2>Who talks</h2>
+        <p>Mice and the neighbours talk. Birds, foxes, cats and spiders don't. When a creature's mood isn't obvious, roll 2d6.</p>
+        <table>
+          <tr><th>2d6</th><th>Mood</th><th>Ask yourself</th></tr>
+          <tr><td>2</td><td><b>Hostile</b></td><td>How has she angered it?</td></tr>
+          <tr><td class="n">3–5</td><td><b>Unfriendly</b></td><td>How could it be appeased?</td></tr>
+          <tr><td class="n">6–8</td><td><b>Unsure</b></td><td>What would win it over?</td></tr>
+          <tr><td class="n">9–11</td><td><b>Talkative</b></td><td>What would it trade?</td></tr>
+          <tr><td>12</td><td><b>Helpful</b></td><td>How can it help?</td></tr>
+        </table>
+      </div>
+      <div>
+        <h2>Time and rest</h2>
+        <ul>
+          <li>A task is an hour: gathering, searching, cutting through a web, going around the ants.</li>
+          <li>A look around, a short talk or a fight is minutes and marks nothing.</li>
+          <li>HP comes back only with sleep. There are no short rests.</li>
+          <li>A night without sleep is Exhausted.</li>
+        </ul>
+      </div>
+      <div>
+        <h2>Not in this game</h2>
+        <p>Magic, pips and prices, XP, levels and grit, hirelings and warbands, banks, hexes and watches, Mausritter's weather table.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="rulings">
+    <h2>Rulings</h2>
+    <p class="small soft">When something isn't covered, make a call, write it here, and keep it.</p>
+    <div class="lines"></div>
+  </div>
+
+  <div class="footer"><span>GM only</span><span>reference</span></div>
+</section>
+</body>
+</html>
