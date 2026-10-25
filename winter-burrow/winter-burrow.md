@@ -45,15 +45,45 @@ When a rule names the failure (save or get wet, save or stuck), it's pass or fai
 
 When a condition has no free pack slot, drop something in the snow to make room. When every pack slot holds a condition, you go down in the snow.
 
-**Harm.** Damage comes off HP, then STR. After STR damage, make a STR save or take Injured and go down. Attacks always hit, so roll your weapon die. Almost everything out there is bigger than you. Running and hiding are always on the table. After a fight, roll Warmth, because the sweat freezes.
-
-**Weapons.** A stick, a needle or anything improvised does d6. A wrench or a hatchet does d6, or d8 held in both paws. A spear does d10 and needs both paws. A weapon in each paw: roll both, keep the best.
-
 **The day.** Mark an hour for every hour of travel and every task. Between two places, it's the difference in their hours from home, at least 1.
 
 Morning ☐☐☐☐ · Afternoon ☐☐☐☐ · Dusk ☐☐ · Night
 
 No XP, no levels. The burrow is how you grow.
+
+## Fighting
+
+Almost everything out there is bigger than you. Running and hiding are always on the table.
+
+**Who goes first.** If you strike before they know you're there, you go first. Otherwise, make a DEX save to act before them. Then keep that order.
+
+**Your turn.** Move, and do one thing: attack, run, hide, talk, or try something risky like a trip or a feint. Then each of them acts.
+
+**Attacks always hit.** Roll your weapon die, take off the target's Armour, and the rest comes off its HP.
+
+- **Hampered** (stuck in a web, grabbed, striking through cover): roll d4, whatever the weapon.
+- **Set up** (a trick that worked, a target stuck, asleep or caught unawares): roll d12.
+
+| Weapon | Damage |
+| --- | --- |
+| Stick, needle, anything improvised | d6 |
+| Wrench, hatchet | d6, or d8 in both paws |
+| Spear | d10, both paws |
+| A weapon in each paw | Roll both, keep the best |
+
+**Taking damage.** Damage comes off HP first, then STR. After any STR damage, make a STR save. Pass and you keep going. Fail and you take Injured and go down. A bite "to DEX" works the same way, but past HP it comes off DEX and the save is DEX. At DEX 0 you can't move.
+
+The same holds for them. When one fails its save, it's beaten: it flees or dies. Some list their own critical damage, which replaces this.
+
+**Running.** On your turn, run. From anything slower, or busy, you're away. From anything faster, make a DEX save: pass and you're away, fail and it gets one more attack before you are. Encumbered, you can't run.
+
+**Hiding.** Get into cover. If it's looking for you, make a DEX save.
+
+**After a fight**, roll Warmth, because the sweat freezes. Roll d6 for each weapon you used: on 4–6, mark a use. A stick or anything improvised marks a use every fight. Three uses and it breaks. A new sharpened stick takes an hour at home and 1 Wood.
+
+**Healing.** HP comes back with sleep (see the Nest). Lost STR, DEX and WIL come back one point each per night at home.
+
+**Going down.** You don't die in Winter Burrow. Going down ends the scene, and the GM moves time on. You wake at the next Morning somewhere worse: where you fell, under the snow, dragged somewhere, or by a neighbour's fire. You wake with 1 HP, Warmth d4 and Injured. Clear all but one Chilled. Other conditions stay. Your bundles are lost in the snow, and the GM decides where anything else ended up. If STR hit 0, you wake at STR 1 and Frostbitten too.
 
 ## Warmth
 
@@ -206,7 +236,12 @@ Each threat has one answer. You fight spiders, hide from the crow, avoid the owl
 
 The ladder resets under cover or at home. Show only the omens, and never name what it wants.
 
-**The owl, at Night.** In the open at Night, a Warmth 1 means the owl, with no ladder. With a lit lantern she rolls once an hour, but a 1 or 2 means the owl. DEX save or she's taken. If taken, she wakes somewhere high, cold and alone, and the GM decides where. 15hp, STR 15, DEX 15, d10 bite. Fighting it is a last resort.
+**The owl, at Night.** No ladder. In the open at Night, a Warmth 1 brings the owl. With a lit lantern, a 1 or 2 does. The roll still steps Warmth down as usual. The owl comes at most once an hour.
+
+- It stoops. She makes a DEX save, pass or fail, with no middle band.
+- **Pass:** talons close on snow. It's gone back into the dark, and it can come again on the next 1.
+- **Fail:** she's taken. She wakes at first light somewhere high, cold and alone, and the GM decides where: a branch, a beam, a ledge. She has her pack, Warmth d4 and one Chilled. Getting down is the morning's first scene.
+- **Fighting it** is a last resort: 15hp, STR 15, DEX 15, d10 bite. Its critical damage is that it takes her.
 
 **Ant columns.** A line across the path. Standing in it strips d3 Food a round. Going around costs an hour. The column moves on at Dusk.
 
@@ -223,7 +258,7 @@ Each neighbour has a want, a grief and a gift. Play the grief through what they 
 
 **Underoak** ☐☐☐
 
-Fill a dot each time she properly helps a neighbour. At three, they start coming to her: someone at the door with Food, a paw on a Mend, a chair pulled up at her table. Where it goes from there is play.
+Fill a dot each time she properly helps a neighbour. At three, they start coming to her: someone at the door with Food, a paw on a Mend, a chair pulled up at her table. If she goes down, someone finds her and she wakes by their fire. Where it goes from there is play.
 
 ## GM: Marit
 

@@ -8,13 +8,13 @@
 <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,400;0,700;1,400&family=IM+Fell+English:ital@0;1&display=block" rel="stylesheet">
 <link rel="stylesheet" href="wb.css">
 <style>
-  body { font-size: 10.5pt; line-height: 1.34; }
+  body { font-size: 10pt; line-height: 1.32; }
   .page { display: flex; flex-direction: column; gap: 4mm; }
   .premise { display: grid; grid-template-columns: 62mm 1fr; gap: 7mm; align-items: end; border-bottom: 0.9pt solid var(--ink); padding-bottom: 3mm; }
   .premise p { font-family: var(--display); font-size: 12.5pt; line-height: 1.32; margin: 0 0 1.2mm; }
   .premise p:last-child { margin: 0; }
   .cols.two { gap: 7mm; align-items: start; }
-  table { font-size: 9.5pt; }
+  table { font-size: 9pt; }
   th { font-size: 8.5pt; }
   .steps li { margin-bottom: 1mm; }
   .tight td { padding: 0.8mm 1.3mm; }
@@ -58,19 +58,6 @@
         <tr><td class="c">6</td><td><b>Factory hand</b></td><td>Wrench (d6/d8), opens human things. Tin cup: hot drinks step Warmth up twice</td></tr>
       </table>
       <div>
-        <h2>The day</h2>
-        <p>Mark an hour for every hour of travel and every task. Between two places, it's the difference in their hours from home, at least 1.</p>
-        <table class="tight">
-          <tr><th>Morning</th><th>Afternoon</th><th>Dusk</th><th>Night</th></tr>
-          <tr><td>4 hours</td><td>4 hours</td><td>2 hours</td><td>Roll Warmth twice an hour</td></tr>
-        </table>
-        <p>No XP, no levels. The burrow is how you grow.</p>
-        <p class="soft"><em>Chassis: Mausritter. Anything not written here works as Mausritter says.</em></p>
-      </div>
-    </div>
-
-    <div class="stack">
-      <div>
         <h2>Core rules</h2>
         <p><b>Saves.</b> When the outcome is uncertain and failing costs something, roll d20 against STR, DEX or WIL. With advantage, roll two and take the lower. With disadvantage, take the higher.</p>
       </div>
@@ -83,20 +70,34 @@
       <div>
         <p>When a rule names the failure (save or get wet, save or stuck), it's pass or fail.</p>
         <p><b>Slots.</b> You have 2 paw slots, 2 body slots and 6 pack slots. Every item, bundle and condition takes one. Food stacks 3 to a slot. Over the limit you are encumbered: disadvantage on everything and no running.</p>
-        <p><b>Conditions</b> sit in a pack slot until cleared.</p>
+        <p><b>The day.</b> Mark an hour for every hour of travel and every task. Between two places, it's the difference in their hours from home, at least 1. Morning 4, Afternoon 4, Dusk 2, then Night.</p>
+        <p>No XP, no levels. The burrow is how you grow.</p>
+      </div>
+    </div>
+
+    <div class="stack">
+      <div>
+        <h2>Fighting</h2>
+        <p>Almost everything out there is bigger than you. Running and hiding are always on the table.</p>
+        <p><b>Who goes first.</b> Strike before they know you're there and you go first. Otherwise, a DEX save to act before them. Keep that order.</p>
+        <p><b>Your turn.</b> Move, and do one thing: attack, run, hide, talk, or try something risky like a trip or a feint. Then each of them acts.</p>
+        <p><b>Attacks always hit.</b> Roll your weapon die, take off the target's Armour, and the rest comes off its HP. <b>Hampered</b> (in a web, grabbed, through cover): roll d4. <b>Set up</b> (a trick that worked, a target stuck or unaware): roll d12.</p>
       </div>
       <table class="tight">
-        <tr><th>Condition</th><th>You get it</th><th>Cleared by</th></tr>
-        <tr><td><b>Chilled</b></td><td>Warmth would step down from d4</td><td>An hour by a fire clears one. A night by a fire clears them all</td></tr>
-        <tr><td><b>Hungry</b></td><td>A day without Food</td><td>Eating</td></tr>
-        <tr><td><b>Exhausted</b></td><td>A night without sleep</td><td>A night in a nest</td></tr>
-        <tr><td><b>Injured</b></td><td>Hurt badly. Disadvantage on STR and DEX</td><td>Three nights at home</td></tr>
-        <tr><td><b>Frostbitten</b></td><td>The GM says so. Disadvantage on DEX</td><td>Three nights at home</td></tr>
+        <tr><th>Weapon</th><th>Damage</th></tr>
+        <tr><td>Stick, needle, anything improvised</td><td>d6</td></tr>
+        <tr><td>Wrench, hatchet</td><td>d6, or d8 in both paws</td></tr>
+        <tr><td>Spear</td><td>d10, both paws</td></tr>
+        <tr><td>A weapon in each paw</td><td>Roll both, keep the best</td></tr>
       </table>
       <div>
-        <p>When a condition has no free pack slot, drop something in the snow to make room. When every pack slot holds a condition, you go down in the snow.</p>
-        <p><b>Harm.</b> Damage comes off HP, then STR. After STR damage, make a STR save or take Injured and go down. Attacks always hit, so roll your weapon die. Almost everything out there is bigger than you. Running and hiding are always on the table. After a fight, roll Warmth, because the sweat freezes.</p>
-        <p><b>Weapons.</b> A stick, a needle or anything improvised does d6. A wrench or a hatchet does d6, or d8 held in both paws. A spear does d10 and needs both paws. A weapon in each paw: roll both, keep the best.</p>
+        <p><b>Taking damage.</b> It comes off HP, then STR. After any STR damage, a STR save: pass and you keep going, fail and you take Injured and go down. A bite "to DEX" works the same, but past HP it comes off DEX and the save is DEX. At DEX 0 you can't move. Your foes work the same way: one that fails its save flees or dies.</p>
+        <p><b>Running.</b> From anything slower or busy, you're away. From anything faster, a DEX save, or it gets one more attack first. <b>Hiding.</b> Get into cover. If it's looking, a DEX save.</p>
+        <p><b>After a fight</b>, roll Warmth, because the sweat freezes. Roll d6 per weapon used: on 4–6, mark a use. A stick marks one every fight. Three uses and it breaks. A new stick: an hour at home and 1 Wood.</p>
+        <p><b>Healing.</b> HP comes back with sleep. Lost STR, DEX and WIL come back one point each per night at home.</p>
+      </div>
+      <div class="panel">
+        <p style="margin:0"><b>Going down.</b> You don't die in Winter Burrow. The scene ends and the GM moves time on. You wake at the next Morning somewhere worse, with 1 HP, Warmth d4 and Injured. Clear all but one Chilled. Your bundles are lost in the snow. If STR hit 0, you wake at STR 1, Frostbitten too.</p>
       </div>
     </div>
   </div>
@@ -171,6 +172,21 @@
       <div>
         <p>A web cut down gives 1 <b>Silk</b>. Silk counts as Fiber, and some things need it.</p>
         <p>A <b>keepsake</b> is a found or brought thing you keep to Remember. It takes a slot like anything else.</p>
+      </div>
+      <div>
+        <h2>Conditions</h2>
+        <p>A condition sits in a pack slot until it's cleared.</p>
+      </div>
+      <table class="tight">
+        <tr><th>Condition</th><th>You get it</th><th>Cleared by</th></tr>
+        <tr><td><b>Chilled</b></td><td>Warmth would step down from d4</td><td>An hour by a fire clears one. A night by a fire clears them all</td></tr>
+        <tr><td><b>Hungry</b></td><td>A day without Food</td><td>Eating</td></tr>
+        <tr><td><b>Exhausted</b></td><td>A night without sleep</td><td>A night in a nest</td></tr>
+        <tr><td><b>Injured</b></td><td>Hurt badly. Disadvantage on STR and DEX</td><td>Three nights at home</td></tr>
+        <tr><td><b>Frostbitten</b></td><td>The GM says so. Disadvantage on DEX</td><td>Three nights at home</td></tr>
+      </table>
+      <div>
+        <p>No free pack slot: drop something in the snow to make room. Every pack slot a condition: you go down.</p>
       </div>
     </div>
   </div>

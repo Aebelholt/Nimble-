@@ -34,12 +34,15 @@
   .world td, .world th { padding-top: 0.55mm; padding-bottom: 0.55mm; }
   .world p { margin-bottom: 0.9mm; }
   table.fixed { table-layout: fixed; }
+  .proc { font-size: 8pt; gap: 2.4mm; padding-top: 8mm; }
+  .proc td, .proc th { padding-top: 0.55mm; padding-bottom: 0.55mm; }
+  .proc table { margin-bottom: 1mm; }
 </style>
 </head>
 <body>
 
 <!-- PAGE 1: procedure -->
-<section class="page">
+<section class="page proc">
   <div class="head"><h1>Winter Burrow</h1><span class="kicker">GM sheet · procedure</span></div>
 
   <div class="cols two">
@@ -64,6 +67,8 @@
           <li>A save up to 5 over is a cost or a half success. Make the cost one she can see: an hour, a Warmth step, a dropped slot, a crow rung, a noise. A save with a named failure (save or wet, save or taken) stays pass or fail.</li>
           <li>The hours are on the track where she can see them. Turning back is her call.</li>
           <li>Don't announce what a room will turn up. Let her find it.</li>
+          <li><b>Foes</b> take damage like she does: HP, then STR and a STR save. Fail and it flees or dies. Running from something faster (fox, jay, owl) is a DEX save, or it gets one more attack.</li>
+          <li><b>She can't die.</b> When she goes down, end the scene and move to the next Morning. She wakes somewhere worse (where she fell, under snow, dragged off, or by a neighbour's fire once Underoak is full) with 1 HP, Warmth d4 and Injured. Clear all but one Chilled. Her bundles are lost. STR 0: she wakes at STR 1, Frostbitten too.</li>
           <li>The Weir is far on purpose. It probably takes clothes, a tool, and a friend's tunnel. One evening may not get there, and that's fine.</li>
         </ul>
       </div>
@@ -105,7 +110,9 @@
         </ol>
         <p>Resets under cover or at home. Show only the omens. Never name what it wants.</p>
         <h3>The owl, at Night</h3>
-        <p>In the open at Night, a Warmth 1 means the owl, no ladder. With a lit lantern she rolls once an hour, but a 1 or 2 means the owl. DEX save or she's taken, and wakes somewhere high, cold and alone, where the GM decides. 15hp, STR 15, DEX 15, d10 bite. Fighting it is a last resort.</p>
+        <p>No ladder. In the open at Night, a Warmth 1 brings it (with a lit lantern, a 1 or 2). The roll still steps Warmth down. At most once an hour. It stoops: DEX save, no middle band.</p>
+        <p><b>Pass:</b> talons close on snow. It can come again on the next 1. <b>Fail:</b> taken. She wakes at first light somewhere high, cold and alone (a branch, a beam, a ledge) with her pack, Warmth d4 and one Chilled. Getting down is the morning's first scene.</p>
+        <p>Fighting it is a last resort: 15hp, STR 15, DEX 15, d10 bite. Its critical damage is that it takes her.</p>
         <h3>Ant columns</h3>
         <p>A line across the path. Standing in it strips d3 Food a round. Going around costs an hour. The column moves on at Dusk.</p>
       </div>
@@ -131,21 +138,17 @@
       </ul>
     </div>
   </div>
-  <div class="cols two" style="grid-template-columns: 1.45fr 1fr">
-    <div>
-      <h3>Nests</h3>
+  <div>
+    <h3>Nests</h3>
       <table class="fixed">
-        <colgroup><col style="width:24mm"><col><col style="width:44mm"></colgroup>
+        <colgroup><col style="width:26mm"><col style="width:66mm"><col></colgroup>
         <tr><th>Nest</th><th>What's there</th><th>Guards</th></tr>
         <tr><td><b>Larch hollow</b></td><td>1 web-weaver</td><td>Seasoned wood, each bundle counts 2</td></tr>
         <tr><td><b>Pit, lower cut</b></td><td>Wolf spiders at Dusk</td><td>Rask's third cache, the moles' work</td></tr>
         <tr><td><b>Shed rafters</b></td><td>2 web-weavers</td><td>The wool sock. The ash and scratches below</td></tr>
         <tr><td><b>The back room</b></td><td>Broodmother, in the warm earth behind the chimney</td><td>Your mother's letter</td></tr>
       </table>
-    </div>
-    <div style="padding-top:5.4mm">
-        <p>The back room wakes when the Hearth reaches Simple. Something scratches behind the wall at night. Say no more than that.</p>
-    </div>
+    <p>The back room wakes when the Hearth reaches Simple. Something scratches behind the wall at night. Say no more than that.</p>
   </div>
   <div class="footer"><span>GM only</span><span>1 of 2</span></div>
 </section>
