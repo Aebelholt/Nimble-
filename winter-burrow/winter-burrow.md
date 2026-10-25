@@ -27,7 +27,9 @@ Chassis: Mausritter. Anything not written here works as Mausritter says.
 
 ## Core rules
 
-**Saves.** When the outcome is uncertain and failing costs something, roll d20 equal to or under STR, DEX or WIL. With advantage, roll two and take the lower. With disadvantage, take the higher.
+**Saves.** When the outcome is uncertain and failing costs something, roll d20 against STR, DEX or WIL. Equal to or under: you do it. Up to 5 over: you do it at a cost, or only partly, and the GM says which. More than 5 over: it fails. With advantage, roll two and take the lower. With disadvantage, take the higher.
+
+When a rule names the failure (save or get wet, save or stuck), it's pass or fail: the band doesn't apply.
 
 **Slots.** You have 2 paw slots, 2 body slots and 6 pack slots. Every item, bundle and condition takes one. Food stacks 3 to a slot. Over the limit you are encumbered, which means disadvantage on everything and no running.
 
