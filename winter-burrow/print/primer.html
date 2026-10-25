@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Winter Burrow, primer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,400;0,700;1,400&family=IM+Fell+English:ital@0;1&display=block" rel="stylesheet">
+<link rel="stylesheet" href="wb.css">
+<style>
+  body { font-size: 10.5pt; line-height: 1.34; }
+  .page { display: flex; flex-direction: column; gap: 4mm; }
+  .premise { display: grid; grid-template-columns: 62mm 1fr; gap: 7mm; align-items: end; border-bottom: 0.9pt solid var(--ink); padding-bottom: 3mm; }
+  .premise p { font-family: var(--display); font-size: 12.5pt; line-height: 1.32; margin: 0 0 1.2mm; }
+  .premise p:last-child { margin: 0; }
+  .cols.two { gap: 7mm; align-items: start; }
+  table { font-size: 9.5pt; }
+  th { font-size: 8.5pt; }
+  .steps li { margin-bottom: 1mm; }
+  .tight td { padding: 0.8mm 1.3mm; }
+  .hearth-list { list-style: none; padding: 0; }
+  .hearth-list li { margin-bottom: 1.2mm; }
+</style>
+</head>
+<body>
+
+<section class="page">
+  <div class="premise">
+    <div>
+      <h1>Winter Burrow</h1>
+      <div class="kicker">a mouse come home</div>
+    </div>
+    <div>
+      <p>You are a mouse come home from the city. Your parents are dead. The family burrow under the old beech has gone cold, and the aunt who kept it is gone. The snow is coming in.</p>
+      <p>Go out, bring things home, make the burrow warm again. Find out where she went.</p>
+    </div>
+  </div>
+
+  <div class="cols two">
+    <div class="stack">
+      <div>
+        <h2>Make a mouse</h2>
+        <ol class="steps">
+          <li>Roll 3d6 for STR, DEX and WIL in order, keeping the two highest each time. Swap two if you like.</li>
+          <li>Roll d6 for HP.</li>
+          <li>Roll d6 for your city trade and take both items.</li>
+          <li>Take a city coat (Warmth d8), a sharpened stick (d6), 2 Food and the letter.</li>
+          <li>Name yourself.</li>
+        </ol>
+      </div>
+      <table class="tight">
+        <tr><th class="c">d6</th><th>City trade</th><th>Items</th></tr>
+        <tr><td class="c">1</td><td><b>Seamstress</b></td><td>Needle (d6). Thimble of buttons, good for trade</td></tr>
+        <tr><td class="c">2</td><td><b>Lamplighter</b></td><td>Matches, 3 uses: a fire anywhere dry. Brass snuffer</td></tr>
+        <tr><td class="c">3</td><td><b>Porter</b></td><td>Rope. Shoulder strap, +1 pack slot</td></tr>
+        <tr><td class="c">4</td><td><b>Baker</b></td><td>Jar of honey, 3 Food. Copper pan: 1 Food cooks two full bellies, yours and a guest's</td></tr>
+        <tr><td class="c">5</td><td><b>Clerk</b></td><td>Pencil and ledger: a route you've walked and written down costs 1 hour less, never below 1. Spectacles</td></tr>
+        <tr><td class="c">6</td><td><b>Factory hand</b></td><td>Wrench (d6/d8), opens human things. Tin cup: hot drinks step Warmth up twice</td></tr>
+      </table>
+      <div>
+        <h2>The day</h2>
+        <p>Mark an hour for every hour of travel and every task. Between two places, it's the difference in their hours from home, at least 1.</p>
+        <table class="tight">
+          <tr><th>Morning</th><th>Afternoon</th><th>Dusk</th><th>Night</th></tr>
+          <tr><td>4 hours</td><td>4 hours</td><td>2 hours</td><td>Roll Warmth twice an hour</td></tr>
+        </table>
+        <p>No XP, no levels. The burrow is how you grow.</p>
+      </div>
+    </div>
+
+    <div class="stack">
+      <div>
+        <h2>Core rules</h2>
+        <p><b>Saves.</b> When the outcome is uncertain and failing costs something, roll d20 equal to or under STR, DEX or WIL. With advantage, roll two and take the lower. With disadvantage, take the higher.</p>
+        <p><b>Slots.</b> You have 2 paw slots, 2 body slots and 6 pack slots. Every item, bundle and condition takes one. Food stacks 3 to a slot. Over the limit you are encumbered: disadvantage on everything and no running.</p>
+        <p><b>Conditions</b> sit in a pack slot until cleared.</p>
+      </div>
+      <table class="tight">
+        <tr><th>Condition</th><th>You get it</th><th>Cleared by</th></tr>
+        <tr><td><b>Chilled</b></td><td>Warmth would step down from d4</td><td>An hour by a fire clears one. A night by a fire clears them all</td></tr>
+        <tr><td><b>Hungry</b></td><td>A day without Food</td><td>Eating</td></tr>
+        <tr><td><b>Exhausted</b></td><td>A night without sleep</td><td>A night in a nest</td></tr>
+        <tr><td><b>Injured</b></td><td>Hurt badly. Disadvantage on STR and DEX</td><td>Three nights at home</td></tr>
+        <tr><td><b>Frostbitten</b></td><td>The GM says so. Disadvantage on DEX</td><td>Three nights at home</td></tr>
+      </table>
+      <div>
+        <p>When a condition has no free pack slot, drop something in the snow to make room. When every pack slot holds a condition, you go down in the snow.</p>
+        <p><b>Harm.</b> Damage comes off HP, then STR. After STR damage, make a STR save or take Injured and go down. Attacks always hit, so roll your weapon die. Almost everything out there is bigger than you. Running and hiding are always on the table. After a fight, roll Warmth, because the sweat freezes.</p>
+        <p><b>Weapons.</b> A stick, a needle or anything improvised does d6. A wrench or a hatchet does d6, or d8 held in both paws. A spear does d10 and needs both paws.</p>
+        <p class="soft"><em>Chassis: Mausritter. Anything not written here works as Mausritter says.</em></p>
+      </div>
+    </div>
+  </div>
+  <div class="footer"><span>Winter Burrow</span><span>1 of 2</span></div>
+</section>
+
+<section class="page">
+  <div class="cols two">
+    <div class="stack">
+      <div>
+        <h2>Warmth</h2>
+        <p>Warmth is one die: d4, d6, d8, d10 or d12. Your clothes set your top die. You leave home at your top.</p>
+        <p><b>Roll Warmth</b> every hour you mark outdoors, twice an hour at Night. On a 1 or 2, step it down one size. Getting wet counts as rolling a 1.</p>
+        <p><b>At d4</b>, a step down puts a Chilled in a pack slot instead, and the die stays at d4.</p>
+        <h3>Warming up</h3>
+        <ul>
+          <li>A hot drink steps it up one, never above your top. Brew one at the hearth for 1 Food. It takes a slot and stays hot until Dusk.</li>
+          <li>Shelter out of the wind means no roll that hour.</li>
+          <li>A fire puts you back at your top. Each hour beside it clears one Chilled, and a night beside it clears them all.</li>
+          <li>A fire away from home costs 1 Wood and needs somewhere dry.</li>
+        </ul>
+      </div>
+      <table class="tight">
+        <tr><th>Clothing</th><th>Effect</th></tr>
+        <tr><td><b>City coat</b></td><td>Top die d8</td></tr>
+        <tr><td><b>Scarf</b></td><td>Top die one step up</td></tr>
+        <tr><td><b>Mittens</b></td><td>Top die one step up</td></tr>
+        <tr><td><b>Felted boots</b></td><td>Deep snow costs no extra hour</td></tr>
+        <tr><td><b>Waxed cloak</b></td><td>Getting wet is no longer a 1</td></tr>
+      </table>
+      <div>
+        <h2>The Burrow</h2>
+        <p>The burrow is a sheet of rooms, on the back of your character sheet. Every room starts Forlorn, more an idea than a room. Pay a rung's cost on a Mend to climb it. A room's first climb turns something up.</p>
+      </div>
+      <div class="panel">
+        <h3>Hearth</h3>
+        <p>Come home, light the fire, then do one thing before you sleep. No fire, you sleep Chilled.</p>
+        <ul class="hearth-list">
+          <li><b>Cook.</b> Spend 1 Food, your day's Food, for a full belly.</li>
+          <li><b>Mend.</b> Restore a room.</li>
+          <li><b>Make.</b> Make a tool at the workbench.</li>
+          <li><b>Knit.</b> Knit a garment. A scarf can be knitted anywhere.</li>
+          <li><b>Remember.</b> Hold something you brought home. The GM tells you what you remember.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="stack">
+      <div>
+        <h2>Gathering and haul</h2>
+        <p>Spend an hour at a place to gather one bundle of what's there: Wood, Stone, Fiber, Food or Salvage. A bundle takes a slot. Some things need a tool. Whatever you find out there takes a slot too, and you choose what goes home.</p>
+        <p>You eat 1 Food a day. A meal cooked at home gives you a <b>full belly</b>: your first Warmth roll the next day can't step down.</p>
+      </div>
+      <table class="tight">
+        <tr><th>Made thing</th><th>Costs</th><th>Opens</th></tr>
+        <tr><td><b>Shovel</b></td><td>2 Wood, 1 Stone</td><td>Drifts, frozen earth</td></tr>
+        <tr><td><b>Hatchet</b></td><td>1 Wood, 2 Stone</td><td>Branches, ice, proper firewood</td></tr>
+        <tr><td><b>Pick</b></td><td>1 Wood, 2 Salvage</td><td>Rock faces</td></tr>
+        <tr><td><b>Sled</b></td><td>3 Wood, 1 Fiber</td><td>3 extra bundle slots. Can't climb</td></tr>
+        <tr><td><b>Lantern</b></td><td>1 Salvage, 1 Fiber. 3 uses, one each Night it's lit. Refill: 1 Fiber</td><td>At Night you roll Warmth once an hour</td></tr>
+        <tr><td><b>Scarf</b></td><td>2 Fiber</td><td>Known</td></tr>
+        <tr><td><b>Mittens</b></td><td>2 Fiber</td><td>Needs a pattern</td></tr>
+        <tr><td><b>Felted boots</b></td><td>3 Fiber</td><td>Needs a pattern</td></tr>
+        <tr><td><b>Waxed cloak</b></td><td>2 Fiber, 1 Salvage</td><td>Needs a pattern</td></tr>
+      </table>
+      <p>Patterns come from people and from things you find.</p>
+      <table class="tight">
+        <tr><th>Arms</th><th>Costs</th><th>Does</th></tr>
+        <tr><td><b>Spear</b></td><td>2 Wood, 1 Stone</td><td>d10, both paws. Against anything that bites, you act first</td></tr>
+        <tr><td><b>Bark shield</b></td><td>1 Wood, 1 Fiber</td><td>Armour 1, off paw</td></tr>
+      </table>
+      <div>
+        <p>A web cut down gives 1 <b>Silk</b>. Silk counts as Fiber, and some things need it.</p>
+        <p>A <b>keepsake</b> is a found or brought thing you keep to Remember. It takes a slot like anything else.</p>
+      </div>
+    </div>
+  </div>
+  <div class="footer"><span>Winter Burrow</span><span>2 of 2</span></div>
+</section>
+</body>
+</html>

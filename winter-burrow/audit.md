@@ -1,6 +1,8 @@
 # Winter Burrow, kinks audit
 
-Source: `winter-burrow.md`, read against Mausritter 2.3 where the hack defers to it. No rule has been changed. Every fix below is a proposal waiting for your yes or no.
+Source: `winter-burrow.md`, read against Mausritter 2.3 where the hack defers to it.
+
+**Status:** all 32 fixes approved and applied to `winter-burrow.md`. Where a fix offered two options, the first was taken (K19 Door roll, K26 cat on every clear day, K31 keep spectacles and snuffer).
 
 Simulation: `tools/warmth_sim.py`, 100,000 runs per cell, full output in `tools/sim_results.md`. Assumptions are listed at the end.
 

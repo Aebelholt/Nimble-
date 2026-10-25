@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Winter Burrow, GM sheet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,400;0,700;1,400&family=IM+Fell+English:ital@0;1&display=block" rel="stylesheet">
+<link rel="stylesheet" href="wb.css">
+<style>
+  body { font-size: 8.5pt; line-height: 1.25; }
+  .page { display: flex; flex-direction: column; gap: 3mm; padding-top: 9mm; }
+  .head { display: flex; justify-content: space-between; align-items: flex-end; border-bottom: 0.9pt solid var(--ink); padding-bottom: 1.6mm; }
+  .head h1 { font-size: 20pt; }
+  .head .kicker { font-size: 10.5pt; }
+  h2 { font-size: 12.5pt; margin-bottom: 1.2mm; }
+  h3 { font-size: 10.5pt; }
+  table { font-size: 8pt; margin-bottom: 1.4mm; }
+  td, th { padding: 0.65mm 1.2mm; }
+  .cols.two { gap: 6mm; align-items: start; }
+  .stack > * + * { margin-top: 2mm; }
+  .loop { padding-left: 4.4mm; margin: 0; }
+  .loop li { margin-bottom: 0.9mm; }
+  .ladder { padding-left: 4.4mm; margin: 0.6mm 0 1mm; }
+  .ladder li { margin-bottom: 0.4mm; }
+  p { margin-bottom: 1.1mm; }
+  .dots .dot { margin-right: 1.4mm; }
+  .world { font-size: 8pt; gap: 1.8mm; }
+  .world .read-aloud { font-size: 9pt; }
+  .world { padding: 8mm 11mm 9mm; }
+  .world .head h1 { font-size: 16pt; }
+  .world h2 { margin-bottom: 0.9mm; }
+  .world table { margin-bottom: 0.8mm; }
+  .world td, .world th { padding-top: 0.55mm; padding-bottom: 0.55mm; }
+  .world p { margin-bottom: 0.9mm; }
+  table.fixed { table-layout: fixed; }
+</style>
+</head>
+<body>
+
+<!-- PAGE 1: procedure -->
+<section class="page">
+  <div class="head"><h1>Winter Burrow</h1><span class="kicker">GM sheet · procedure</span></div>
+
+  <div class="cols two">
+    <div class="stack">
+      <div>
+        <h2>The hour loop</h2>
+        <ol class="loop">
+          <li><b>Morning.</b> Roll 2d6 for weather. She leaves home at her top die.</li>
+          <li><b>Each hour</b>, she marks it. Outdoors, she rolls Warmth, twice an hour at Night or in a snowstorm, never more. On 1–2 it steps down. At d4, a step down is a Chilled instead. Wet counts as a 1.</li>
+          <li><b>Shelter</b>: no roll, and the crow's ladder resets.</li>
+          <li><b>Read the same die.</b> By day, the crow. At Night, the owl.</li>
+          <li><b>Arriving outdoors</b>, she throws that hour's Warmth die with two d6 of different colours. First d6: 1 is an encounter, 2 an omen (tracks, a feather, a silence where there was birdsong). Second d6: the table.</li>
+          <li><b>Crossing the Brook</b>: DEX save or wet. Tobben's stones: no save.</li>
+          <li><b>After a fight</b>, roll Warmth.</li>
+          <li><b>Home.</b> Light the fire, one Hearth action, sleep. No fire, she sleeps Chilled. Door Forlorn: d6 each night, on a 1 something gets in.</li>
+        </ol>
+      </div>
+      <div>
+        <h2>Running it</h2>
+        <ul>
+          <li>Say "roll Warmth". Never give the odds. The die on the table is the whole message.</li>
+          <li>The hours are on the track where she can see them. Turning back is her call.</li>
+          <li>Don't announce what a room will turn up. Let her find it.</li>
+          <li>The Weir is far on purpose. It probably takes clothes, a tool, and a friend's tunnel. One evening may not get there, and that's fine.</li>
+        </ul>
+      </div>
+      <div>
+        <h2>Weather</h2>
+        <table>
+          <tr><th class="n">2d6</th><th>Weather</th><th>Effect</th></tr>
+          <tr><td>2</td><td class="n"><b>Snowstorm</b></td><td>Warmth twice an hour all day. Each leg of a trip costs an extra hour</td></tr>
+          <tr><td class="n">3–5</td><td><b>Sleet</b></td><td>Wet in the first hour out</td></tr>
+          <tr><td class="n">6–8</td><td class="n"><b>Bitter cold</b></td><td>Start the day one step below her top</td></tr>
+          <tr><td class="n">9–11</td><td><b>Overcast</b></td><td>Nothing</td></tr>
+          <tr><td>12</td><td class="n"><b>Clear, crisp</b></td><td>Tracks show. The cat is on the Shed step</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="stack">
+      <div>
+        <h2>Encounters</h2>
+        <table>
+          <tr><th>d6</th><th>Encounter</th></tr>
+          <tr><td>1</td><td>A jay turning snow for seeds. It wants what's in her pack and will follow, loudly. 4hp, DEX 15, d6 peck</td></tr>
+          <tr><td>2</td><td>Nibs on the path, shaking</td></tr>
+          <tr><td>3</td><td>A web strung across the way, fresh and glistening. A web-weaver sits above it</td></tr>
+          <tr><td>4</td><td>By day, a fox, head cocked, listening at the snow. It hasn't heard her yet. 15hp, STR 15, DEX 15, d8 bite. At Dusk or Night, d3 wolf spiders instead</td></tr>
+          <tr><td>5</td><td>A wolf spider dragging something wrapped in silk. It hasn't seen her</td></tr>
+          <tr><td>6</td><td>By day, an ant column across the way. At Dusk, the owl on a low branch, watching. At Night, the owl rule</td></tr>
+        </table>
+      </div>
+      <div>
+        <h2>Sky and ground</h2>
+        <p>Each threat has one answer. Fight spiders, hide from the crow, avoid the owl, wait out the ants.</p>
+        <h3>The crow, Morning to Dusk</h3>
+        <p>No stat block, can't be fought. Every Warmth 1 rolled in the open moves it a rung. On open ground (Long Field, the Brook ice, the Larch clearing) a 2 counts too. Any Salvage or keepsake in the pack: each counting roll moves it two rungs. Wet isn't a rolled 1.</p>
+        <ol class="ladder">
+          <li>A caw, far off.</li>
+          <li>A black shape on a high branch. It turns its head when she moves.</li>
+          <li>It drops. DEX save, or it takes a random pack slot and is gone. The ladder resets.</li>
+        </ol>
+        <p>Resets under cover or at home. Show only the omens. Never name what it wants.</p>
+        <h3>The owl, at Night</h3>
+        <p>In the open at Night, a Warmth 1 means the owl, no ladder. With a lit lantern she rolls once an hour, but a 1 or 2 means the owl. DEX save or she's taken, and wakes somewhere high, cold and alone, where the GM decides. 15hp, STR 15, DEX 15, d10 bite. Fighting it is a last resort.</p>
+        <h3>Ant columns</h3>
+        <p>A line across the path. Standing in it strips d3 Food a round. Going around costs an hour. The column moves on at Dusk.</p>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <h2>Spiders</h2>
+    <p>They live where it's warm and still: in shelter, down deep, and in the places worth reaching. A spider's place is out of the wind, so no Warmth roll there. That's the trap.</p>
+    <div class="cols two">
+      <table>
+        <tr><th>Spider</th><th>Stats</th><th>How it fights</th></tr>
+        <tr><td><b>Web-weaver</b></td><td>6hp, STR 8, DEX 15, d6 bite to DEX</td><td>Waits in its web. She fights at disadvantage inside it. On critical damage it wraps her and drags her up</td></tr>
+        <tr><td class="n"><b>Wolf spiders</b>, d3</td><td>3hp, STR 6, DEX 15, d4 bite</td><td>Hunt the open at Dusk, from more than one side</td></tr>
+        <tr><td><b>Broodmother</b></td><td>12hp, STR 12, DEX 12, Armour 1, d8 bite to DEX</td><td>Won't leave the egg sacs. On critical damage, d12 to STR</td></tr>
+      </table>
+      <ul>
+        <li>Bites hurt DEX. At DEX 0 she can't move.</li>
+        <li>Walking into a web: DEX save or stuck. Each STR save to pull free costs an action.</li>
+        <li>Cutting a way through takes an hour. Fire clears a web at once and wakes everything nearby.</li>
+        <li>In the open on a Bitter cold or Snowstorm day, spiders are slow and she always acts first. Luring one into the cold is a plan.</li>
+        <li>A web cut down gives 1 Silk.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="cols two" style="grid-template-columns: 1.45fr 1fr">
+    <div>
+      <h3>Nests</h3>
+      <table class="fixed">
+        <colgroup><col style="width:24mm"><col><col style="width:44mm"></colgroup>
+        <tr><th>Nest</th><th>What's there</th><th>Guards</th></tr>
+        <tr><td><b>Larch hollow</b></td><td>1 web-weaver</td><td>Seasoned wood, each bundle counts 2</td></tr>
+        <tr><td><b>Pit, lower cut</b></td><td>Wolf spiders at Dusk</td><td>Rask's third cache, the moles' work</td></tr>
+        <tr><td><b>Shed rafters</b></td><td>2 web-weavers</td><td>The wool sock. The ash and scratches below</td></tr>
+        <tr><td><b>The back room</b></td><td>Broodmother, in the warm earth behind the chimney</td><td>Your mother's letter</td></tr>
+      </table>
+    </div>
+    <div style="padding-top:5.4mm">
+        <p>The back room wakes when the Hearth reaches Simple. Something scratches behind the wall at night. Say no more than that.</p>
+    </div>
+  </div>
+  <div class="footer"><span>GM only</span><span>1 of 2</span></div>
+</section>
+
+<!-- PAGE 2: world -->
+<section class="page world">
+  <div class="head"><h1>Winter Burrow</h1><span class="kicker">GM sheet · the world</span></div>
+
+  <div class="cols two">
+    <div>
+      <h2>Opening</h2>
+      <p>Start at Dusk with two hours of light left, snow just starting. She has nothing to burn.</p>
+      <div class="read-aloud">The beech is where you left it, bigger than you remember. The door hangs off one hinge. Inside, the hearth is grey ash, and the cold has got into everything. On the wall is a calendar, the days crossed out in pencil until the middle of last month. Then nothing.</div>
+      <p>Ask: <em>What did you bring from the city that you couldn't leave behind?</em> It takes a slot, and it's hers to Remember.</p>
+      <p><b>Tonight's problem.</b> Deadfall among the beech roots: an hour's work for 1 Wood. The Hedge is an hour away and has more. Without a fire she sleeps Chilled.</p>
+    </div>
+    <div>
+      <h2>Marit</h2>
+      <p>Marit kept the burrow alone after your parents went to the city. When word came that your mother had died, she stopped mending things. Late in autumn she walked to the Weir to fetch your mother's seed tin. The sisters had saved seed in it every year since they were girls, for the garden under the beech. The first snow caught her coming back. She is in the mill loft with a twisted ankle, rationing the seeds as food and ashamed of the state she left the burrow in. If she's found, she can be helped home, and a sled carries her. Nothing about how it ends is fixed.</p>
+      <p><b>The letter</b>, in Aunt Marit's hand, late summer: <em>Come home before the snow. There is something of your mother's I want you to have, and I'd rather give it to you here.</em></p>
+
+      <p>When she Remembers, give one small, concrete memory, never a conclusion. <em>Her hands red from the cold, knitting by this fire, never a matching pair.</em></p>
+    </div>
+  </div>
+
+  <div>
+    <h2>The wood</h2>
+    <p>Hours from the beech, deep snow counted. Between places, the difference, at least 1. Every Brook crossing is a DEX save, or wet. A sled can't go into the Larch hollow, the Pit's lower cut or the Shed rafters.</p>
+    <table class="fixed">
+      <colgroup><col style="width:21mm"><col style="width:23mm"><col style="width:15mm"><col style="width:33mm"><col></colgroup>
+      <tr><th>Place</th><th>Hours</th><th>Shelter</th><th>Gather</th><th>What's there</th></tr>
+      <tr><td class="n"><b>Beech roots</b></td><td>0</td><td>Home</td><td>1 Wood a day</td><td>Home</td></tr>
+      <tr><td class="n"><b>Bramble Hedge</b></td><td>1</td><td>No</td><td>Wood, Fiber, Food</td><td>A red mitten frozen on the thorns. Jays work the hedge in the mornings</td></tr>
+      <tr><td class="n"><b>The Brook</b></td><td>1</td><td>No</td><td>Stone</td><td>Ice over moving water. Tobben lives under the bank</td></tr>
+      <tr><td class="n"><b>Underoak</b></td><td>2</td><td>If welcome</td><td>Trade</td><td>A hollow oak along the hedge line. Rask lives in it, and Nibs stops here</td></tr>
+      <tr><td class="n"><b>Fallen Larch</b></td><td class="n">2, across</td><td>The hollow</td><td>Wood: 1 an hour, 2 with a Hatchet</td><td>An open clearing. A fox listens here at Dusk. A hollow in the trunk is webbed shut</td></tr>
+      <tr><td class="n"><b>Gravel Pit</b></td><td>2</td><td>Below</td><td>Stone; Salvage with a Pick</td><td>A cut bank of old human digging. Agnes and Pil live below. Something hunts the lower cut at Dusk</td></tr>
+      <tr><td class="n"><b>The Shed</b></td><td class="n">3, across</td><td>Yes</td><td>Salvage, Fiber (a wool sock gives 2)</td><td>A garden shed, door ajar. Webs in the rafters. Under the potting bench: ash from a tiny fire, two scratches on a floorboard</td></tr>
+      <tr><td class="n"><b>Long Field</b></td><td class="n">5, across<br>4 boots</td><td>No</td><td>Nothing</td><td>Open snow, no shelter. Deep snow, so each hour costs two. Her staff stands upright halfway</td></tr>
+      <tr><td class="n"><b>The Weir</b></td><td>7, across<br>5 boots, 6 tunnel</td><td>Mill loft</td><td>Nothing</td><td>The old mill where Marit and your mother were born. A light in the loft, some nights</td></tr>
+    </table>
+  </div>
+
+  <div>
+      <h2>What the rooms turn up</h2>
+      <table class="fixed">
+        <colgroup><col style="width:24mm"><col><col style="width:68mm"></colgroup>
+        <tr><th>Room</th><th>Turns up</th><th>If Remembered</th></tr>
+        <tr><td><b>Hearth</b></td><td>Pencil lines on the chimney stone, your height year by year. The last a hand higher than any child's</td><td>She measured herself the year you left, "so the wall wouldn't feel finished"</td></tr>
+        <tr><td><b>Door</b></td><td>The old bell, wrapped in a rag to keep it quiet</td><td>She stopped wanting visitors</td></tr>
+        <tr><td><b>Nest</b></td><td>A blanket in two wools, half neat, half hurried</td><td>Your mother started it. Marit finished it</td></tr>
+        <tr><td><b>Pantry</b></td><td>Full jars in her hand, one empty shelf marked <em>for the walk</em></td><td>She packed for a long trip and meant to come back</td></tr>
+        <tr><td><b>Workbench</b></td><td>Your father's tools, a gap on the rack the shape of a small saw</td><td>She took it with her</td></tr>
+        <tr><td><b>Knitting</b></td><td>Her needles, still in a mitten with no pair</td><td>The red one at the Hedge is its twin</td></tr>
+        <tr><td><b>Back room</b></td><td>Your mother's last letter to Marit: <em>Save the seed. I'll come for spring.</em></td><td>Why she went</td></tr>
+      </table>
+      <p><b>Along the way:</b> the calendar, the red mitten, Rask's rope trade, Nibs's lantern, the ash at the Shed, the staff in Long Field, then the light in the loft.</p>
+  </div>
+
+  <div>
+    <h2>Neighbours</h2>
+    <p>Each has a want, a grief and a gift. Play the grief through what they do. Let the gift follow from help, not payment.</p>
+    <table class="fixed">
+      <colgroup><col style="width:35mm"><col><col style="width:41mm"><col style="width:64mm"></colgroup>
+      <tr><th>Who</th><th>Wants</th><th>Grief</th><th>Gives</th></tr>
+      <tr><td><b>Tobben</b>, toad under the Brook bank. Awake when he should sleep</td><td>Dry moss for a bed (2 Fiber), and someone to sit with him an evening</td><td>His wife went down to sleep last autumn and didn't wake in spring</td><td>The stepping stones: no Brook save. Saw Marit cross late in the year, "with a pack bigger than her"</td></tr>
+      <tr><td><b>Rask</b>, old red squirrel at Underoak. Forgot where he hoarded</td><td>His three caches found, at the Hedge, the Larch and the Pit. An hour's search each</td><td>Some mornings he forgets his own name</td><td>Each cache holds 4 Food, he gives her 2. His late mate's mittens pattern. Marit traded him honey for rope and asked about the Weir road</td></tr>
+      <tr><td><b>Agnes and Pil</b>, mole sisters under the Gravel Pit</td><td>3 Wood cut with a Hatchet to shore the tunnel to Grandmother's chamber. Wolf spiders drive them off at Dusk</td><td>Pil says Grandmother is dead. Agnes won't let her say it. Grandmother is alive and very hungry</td><td>The tunnel under Long Field: 3 hours from the Pit, no Warmth rolls, out an hour from the Weir. The felted boots pattern</td></tr>
+      <tr><td><b>Nibs</b>, shrew pedlar. Must eat every few hours or turns mean</td><td>A hot meal every time they meet (1 Food)</td><td>Everyone he loved is a day's walk behind him and keeps getting further</td><td>1 Salvage for 1 Food. The waxed cloak pattern. Marit's lantern (3 uses), her initials in the brass, for 3 Food</td></tr>
+    </table>
+    <p class="dots"><b>Underoak</b> <i class="dot"></i><i class="dot"></i><i class="dot"></i> Fill a dot each time she properly helps a neighbour. At three, they start coming to her: someone at the door with Food, a paw on a Mend, a chair pulled up at her table. Where it goes from there is play.</p>
+  </div>
+  <div class="footer"><span>GM only</span><span>2 of 2</span></div>
+</section>
+</body>
+</html>

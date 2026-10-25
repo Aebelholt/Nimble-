@@ -1,0 +1,64 @@
+/* Winter Burrow print style. A4, fixed pages, nothing flows between pages. */
+@page { size: A4; margin: 0; }
+
+:root {
+  --paper: #f8f3e9;
+  --ink: #231e1a;
+  --soft: #5f564e;
+  --hair: #a99d8e;
+  --fill: #ebe3d4;
+  --display: "IM Fell English", Georgia, serif;
+  --text: "Alegreya Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; background: #d9d2c6; }
+body { font-family: var(--text); color: var(--ink); font-size: 9pt; line-height: 1.28; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+
+.page {
+  width: 210mm; height: 297mm; padding: 11mm 12mm 10mm;
+  background: var(--paper); overflow: hidden; position: relative;
+  break-after: page; page-break-after: always; margin: 0 auto;
+}
+.page:last-child { break-after: auto; page-break-after: auto; }
+.fill-rest { flex: 1; min-height: 0; }
+
+h1, h2, h3 { font-family: var(--display); font-weight: 400; margin: 0; line-height: 1.05; }
+h1 { font-size: 26pt; letter-spacing: 0.01em; }
+h2 { font-size: 14pt; border-bottom: 0.8pt solid var(--ink); padding-bottom: 0.6mm; margin: 0 0 1.6mm; }
+h3 { font-size: 11pt; margin: 0 0 1mm; }
+.kicker { font-family: var(--display); font-style: italic; font-size: 11pt; color: var(--soft); }
+p { margin: 0 0 1.4mm; }
+em { font-style: italic; }
+b, strong { font-weight: 700; }
+.small { font-size: 8pt; }
+.soft { color: var(--soft); }
+ul, ol { margin: 0 0 1.4mm; padding-left: 4.2mm; }
+li { margin: 0 0 0.6mm; }
+
+/* Tables over prose */
+table { width: 100%; border-collapse: collapse; margin: 0 0 2mm; font-size: inherit; }
+th, td { text-align: left; vertical-align: top; padding: 0.9mm 1.4mm; border-bottom: 0.4pt solid var(--hair); }
+th { font-weight: 700; border-bottom: 0.9pt solid var(--ink); font-size: 8pt; text-transform: uppercase; letter-spacing: 0.05em; }
+tr:last-child td { border-bottom: 0.9pt solid var(--ink); }
+td.n, th.n { white-space: nowrap; }
+td.c, th.c { text-align: center; }
+
+/* Boxes and lines */
+.bx { display: inline-block; width: 3mm; height: 3mm; border: 0.7pt solid var(--ink); vertical-align: -0.5mm; background: #fff8; margin-right: 0.8mm; }
+.bx.on { background: var(--ink); }
+.dot { display: inline-block; width: 3.4mm; height: 3.4mm; border: 0.8pt solid var(--ink); border-radius: 50%; vertical-align: -0.6mm; margin-right: 1mm; }
+.line { border-bottom: 0.6pt solid var(--ink); min-height: 6mm; }
+.field { display: flex; align-items: flex-end; gap: 2mm; }
+.field .lab { font-size: 8pt; text-transform: uppercase; letter-spacing: 0.06em; white-space: nowrap; padding-bottom: 0.6mm; }
+.field .line { flex: 1; }
+.panel { border: 0.9pt solid var(--ink); padding: 2mm 2.4mm; background: #fffdf8; }
+.rule-note { font-size: 8pt; color: var(--soft); }
+
+.cols { display: grid; gap: 6mm; }
+.cols.two { grid-template-columns: 1fr 1fr; }
+.stack > * + * { margin-top: 2.6mm; }
+
+.read-aloud { font-family: var(--display); font-style: italic; font-size: 10pt; line-height: 1.3; border-left: 1.2pt solid var(--ink); padding: 0.6mm 0 0.6mm 3mm; margin: 0 0 1.8mm; }
+
+.footer { position: absolute; left: 12mm; right: 12mm; bottom: 5mm; display: flex; justify-content: space-between; font-size: 8pt; color: var(--soft); font-family: var(--display); font-style: italic; }

@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Winter Burrow, character sheet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,400;0,700;1,400&family=IM+Fell+English:ital@0;1&display=block" rel="stylesheet">
+<link rel="stylesheet" href="wb.css">
+<style>
+  .front { display: flex; flex-direction: column; gap: 4.2mm; }
+  .head { display: grid; grid-template-columns: auto 1fr; gap: 8mm; align-items: end; }
+  .head .fields { display: grid; grid-template-columns: 1.3fr 1fr; gap: 5mm; }
+
+  .top { display: grid; grid-template-columns: 62mm 1fr; gap: 6mm; }
+  .stats { width: 100%; border-collapse: collapse; margin: 0; }
+  .stats th { text-align: center; }
+  .stats th:first-child { text-align: left; }
+  .stats td { border-bottom: 0.4pt solid var(--hair); padding: 1.2mm 1mm; vertical-align: middle; }
+  .stats td.k { font-family: var(--display); font-size: 16pt; padding-left: 0; width: 15mm; }
+  .stats .box { height: 10mm; border: 0.9pt solid var(--ink); background: #fff; }
+  .stats .box.max { border-width: 0.6pt; width: 15mm; margin: 0 auto; }
+  .stats .box.cur { width: 21mm; margin: 0 auto; }
+
+  .warmth h2 { margin-bottom: 2mm; }
+  .track { display: grid; grid-template-columns: repeat(5, 1fr); gap: 2mm; margin-bottom: 1.6mm; }
+  .die { border: 0.9pt solid var(--ink); background: #fff; height: 15mm; display: flex; align-items: center; justify-content: center; font-family: var(--display); font-size: 17pt; position: relative; }
+  .die .arrow { position: absolute; right: 1mm; top: 0.4mm; font-family: var(--text); font-size: 8pt; color: var(--soft); }
+  .tops { display: grid; grid-template-columns: repeat(5, 1fr); gap: 2mm; font-size: 8pt; text-align: center; margin-bottom: 2mm; }
+  .tops .bx { margin: 0 0.8mm 0 0; }
+  .warm-rules { display: grid; grid-template-columns: 1fr 1fr; gap: 4mm; }
+  .clothes td { padding: 0.6mm 1.2mm; }
+
+  .inv { display: grid; grid-template-columns: auto auto auto; gap: 4mm; align-items: start; }
+  .slots { display: grid; grid-template-columns: repeat(var(--c), 27mm); grid-auto-rows: 27mm; gap: 2mm; }
+  .slot { border: 0.9pt solid var(--ink); background: #fff; position: relative; }
+  .slot span { position: absolute; left: 1.2mm; top: 0.8mm; font-size: 8pt; color: var(--soft); text-transform: uppercase; letter-spacing: 0.05em; }
+  .slot.strap { border-style: dashed; background: transparent; }
+  .grp-lab { font-size: 8pt; text-transform: uppercase; letter-spacing: 0.06em; font-weight: 700; margin-bottom: 1mm; }
+  .inv-note { font-size: 8pt; color: var(--soft); margin-top: 1.2mm; }
+
+  .lower { display: grid; grid-template-columns: 1.15fr 1fr; gap: 6mm; }
+  .day td { padding: 1.4mm 1.4mm; vertical-align: middle; }
+  .day .bx { width: 5mm; height: 5mm; margin-right: 1.2mm; vertical-align: middle; }
+  .day td:first-child { font-family: var(--display); font-size: 11pt; width: 24mm; }
+  .belly { display: flex; align-items: center; gap: 2mm; margin-top: 1mm; }
+  .belly .bx { width: 5mm; height: 5mm; }
+
+  .patterns td { padding: 1.2mm 1.4mm; }
+  .notes { display: flex; flex-direction: column; min-height: 0; }
+  .notes .lines { flex: 1; background: repeating-linear-gradient(to bottom, transparent 0, transparent 6.4mm, var(--hair) 6.4mm, var(--hair) calc(6.4mm + 0.5pt)); }
+
+  /* Back: the Burrow */
+  .back { display: flex; flex-direction: column; gap: 4mm; }
+  .rooms td { padding: 1.4mm 1.4mm; }
+  .rooms td.room { font-family: var(--display); font-size: 11pt; width: 25mm; line-height: 1.1; }
+  .rooms td.rung { width: 31%; }
+  .rooms td.forlorn { width: 23%; }
+  .rooms .cost { font-weight: 700; display: block; margin-bottom: 0.4mm; }
+  .rooms .bx { float: left; margin: 0.2mm 1.4mm 1mm 0; }
+  .rooms .eff { display: block; overflow: hidden; }
+
+  .stock { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2.4mm; }
+  .mat { border: 0.9pt solid var(--ink); background: #fff; height: 20mm; padding: 1mm 1.6mm; }
+  .mat b { font-family: var(--display); font-weight: 400; font-size: 12pt; }
+  .mat .why { font-size: 8pt; color: var(--soft); float: right; padding-top: 1mm; }
+
+  .backlow { display: grid; grid-template-columns: 1fr 1fr; gap: 6mm; flex: 1; min-height: 0; }
+  .keeps { display: flex; flex-direction: column; min-height: 0; }
+  .keep-row { display: grid; grid-template-columns: 1fr 22mm; gap: 2mm; align-items: end; height: 7mm; border-bottom: 0.5pt solid var(--hair); font-size: 8pt; }
+  .keep-row .bx { margin: 0 0 0.6mm; }
+  .made td { padding: 0.7mm 1.2mm; }
+</style>
+</head>
+<body>
+
+<!-- FRONT: the mouse -->
+<section class="page front">
+  <div class="head">
+    <div>
+      <h1>Winter Burrow</h1>
+      <div class="kicker">a mouse come home</div>
+    </div>
+    <div class="fields">
+      <div class="field"><span class="lab">Name</span><div class="line"></div></div>
+      <div class="field"><span class="lab">City trade</span><div class="line"></div></div>
+    </div>
+  </div>
+
+  <div class="top">
+    <div>
+      <h2>Mouse</h2>
+      <table class="stats">
+        <tr><th></th><th>Max</th><th>Current</th></tr>
+        <tr><td class="k">STR</td><td><div class="box max"></div></td><td><div class="box cur"></div></td></tr>
+        <tr><td class="k">DEX</td><td><div class="box max"></div></td><td><div class="box cur"></div></td></tr>
+        <tr><td class="k">WIL</td><td><div class="box max"></div></td><td><div class="box cur"></div></td></tr>
+        <tr><td class="k">HP</td><td><div class="box max"></div></td><td><div class="box cur"></div></td></tr>
+      </table>
+      <p class="rule-note" style="margin-top:1.4mm">Save: d20 equal to or under. Damage comes off HP, then STR.</p>
+    </div>
+
+    <div class="warmth">
+      <h2>Warmth</h2>
+      <div class="track">
+        <div class="die">d4</div><div class="die">d6</div><div class="die">d8</div><div class="die">d10</div><div class="die">d12</div>
+      </div>
+      <div class="tops">
+        <div><i class="bx"></i>top</div><div><i class="bx"></i>top</div><div><i class="bx"></i>top</div><div><i class="bx"></i>top</div><div><i class="bx"></i>top</div>
+      </div>
+      <div class="warm-rules">
+        <div class="small">
+          <p>Keep a token on the die you're at. Tick your top die. You leave home at your top.</p>
+          <p><b>Roll every hour outdoors</b>, twice an hour at Night. On a 1 or 2, step down. Wet counts as a 1.</p>
+          <p><b>At d4</b>, a step down is a Chilled instead.</p>
+        </div>
+        <table class="clothes small">
+          <tr><th colspan="2">Clothing</th></tr>
+          <tr><td><i class="bx on"></i>City coat</td><td>Top d8</td></tr>
+          <tr><td><i class="bx"></i>Scarf</td><td>Top +1 step</td></tr>
+          <tr><td><i class="bx"></i>Mittens</td><td>Top +1 step</td></tr>
+          <tr><td><i class="bx"></i>Felted boots</td><td>No deep snow hour</td></tr>
+          <tr><td><i class="bx"></i>Waxed cloak</td><td>Wet isn't a 1</td></tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <h2>Carried</h2>
+    <div class="inv">
+      <div>
+        <div class="grp-lab">Paws</div>
+        <div class="slots" style="--c:1"><div class="slot"><span>Main</span></div><div class="slot"><span>Off</span></div></div>
+      </div>
+      <div>
+        <div class="grp-lab">Body</div>
+        <div class="slots" style="--c:1"><div class="slot"></div><div class="slot"></div></div>
+      </div>
+      <div>
+        <div class="grp-lab">Pack</div>
+        <div class="slots" style="--c:4">
+          <div class="slot"><span>1</span></div><div class="slot"><span>2</span></div><div class="slot"><span>3</span></div><div class="slot strap"><span>Strap</span></div>
+          <div class="slot"><span>4</span></div><div class="slot"><span>5</span></div><div class="slot"><span>6</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="inv-note">Every item, bundle and condition takes a slot. Food stacks 3 to a slot. Conditions go in the pack. Over the limit: encumbered, disadvantage on everything and no running. The dashed slot is the Porter's strap.</div>
+  </div>
+
+  <div class="lower">
+    <div>
+      <h2>Conditions</h2>
+      <table class="small">
+        <tr><th>Condition</th><th>You get it</th><th>Cleared by</th></tr>
+        <tr><td class="n"><b>Chilled</b></td><td>Warmth would step down from d4</td><td>An hour by a fire clears one, a night clears all</td></tr>
+        <tr><td class="n"><b>Hungry</b></td><td>A day without Food</td><td>Eating</td></tr>
+        <tr><td class="n"><b>Exhausted</b></td><td>A night without sleep</td><td>A night in a nest</td></tr>
+        <tr><td class="n"><b>Injured</b></td><td>Hurt badly. Disadv. on STR and DEX</td><td>Three nights at home</td></tr>
+        <tr><td class="n"><b>Frostbitten</b></td><td>The GM says so. Disadv. on DEX</td><td>Three nights at home</td></tr>
+      </table>
+      <p class="rule-note">No free pack slot: drop something in the snow. Every pack slot a condition: you go down.</p>
+    </div>
+    <div>
+      <h2>The day</h2>
+      <table class="day">
+        <tr><td>Morning</td><td><i class="bx"></i><i class="bx"></i><i class="bx"></i><i class="bx"></i></td></tr>
+        <tr><td>Afternoon</td><td><i class="bx"></i><i class="bx"></i><i class="bx"></i><i class="bx"></i></td></tr>
+        <tr><td>Dusk</td><td><i class="bx"></i><i class="bx"></i></td></tr>
+        <tr><td>Night</td><td class="small">Roll Warmth twice an hour</td></tr>
+      </table>
+      <div class="belly"><i class="bx"></i><span><b>Full belly.</b> <span class="small">Your first Warmth roll tomorrow can't step down.</span></span></div>
+    </div>
+  </div>
+
+  <div class="lower" style="flex:1; min-height:0">
+    <div>
+      <h2>Patterns known</h2>
+      <table class="patterns small">
+        <tr><td><i class="bx on"></i>Scarf, 2 Fiber</td><td><i class="bx"></i>Mittens, 2 Fiber</td></tr>
+        <tr><td><i class="bx"></i>Felted boots, 3 Fiber</td><td><i class="bx"></i>Waxed cloak, 2 Fiber, 1 Salvage</td></tr>
+        <tr><td><i class="bx"></i></td><td><i class="bx"></i></td></tr>
+      </table>
+    </div>
+    <div class="notes">
+      <h2>Notes</h2>
+      <div class="lines"></div>
+    </div>
+  </div>
+
+  <div class="footer"><span>Mausritter hack. Anything not written here works as Mausritter says.</span><span>front</span></div>
+</section>
+
+<!-- BACK: the Burrow -->
+<section class="page back">
+  <div class="head" style="display:flex; justify-content:space-between; align-items:flex-end">
+    <div>
+      <h1>The Burrow</h1>
+      <div class="kicker">under the old beech</div>
+    </div>
+    <p class="small" style="max-width:96mm; margin:0">Every room starts Forlorn. Pay a rung's cost on a Mend to climb it. A room's first climb turns something up.</p>
+  </div>
+
+  <table class="rooms">
+    <tr><th>Room</th><th>Forlorn</th><th>Simple</th><th>Good</th></tr>
+    <tr><td class="room">Hearth</td>
+      <td class="forlorn"><i class="bx"></i><span class="eff">Each night's fire costs 1 Wood</span></td>
+      <td class="rung"><i class="bx"></i><span class="eff"><span class="cost">2 Wood, 1 Stone</span>Fires at home are free</span></td>
+      <td class="rung"><i class="bx"></i><span class="eff"><span class="cost">1 Stone, 1 Salvage</span>Banked embers. Coming home also clears Hungry</span></td></tr>
+    <tr><td class="room">Door and tunnel</td>
+      <td class="forlorn"><i class="bx"></i><span class="eff">Roll d6 each night. On a 1, something gets in</span></td>
+      <td class="rung"><i class="bx"></i><span class="eff"><span class="cost">2 Wood</span>Nights at home are safe</span></td>
+      <td class="rung"><i class="bx"></i><span class="eff"><span class="cost">1 Salvage, 1 Fiber</span>A lamp at the door. Your last hour home rolls no Warmth</span></td></tr>
+    <tr><td class="room">Nest</td>
+      <td class="forlorn"><i class="bx"></i><span class="eff">Sleep restores d6 HP</span></td>
+      <td class="rung"><i class="bx"></i><span class="eff"><span class="cost">3 Fiber</span>Sleep restores all HP</span></td>
+      <td class="rung"><i class="bx"></i><span class="eff"><span class="cost">2 Silk</span>Each night here counts double for clearing Injured and Frostbitten</span></td></tr>
+    <tr><td class="room">Pantry</td>
+      <td class="forlorn"><i class="bx"></i><span class="eff"></span></td>
+      <td class="rung"><i class="bx"></i><span class="eff"><span class="cost">2 Wood, 1 Stone</span>Stored Food keeps. Guests can eat</span></td>
+      <td class="rung"><i class="bx"></i><span class="eff"><span class="cost">2 Wood, 1 Salvage</span>Cooked food travels. A full belly covers your first two rolls</span></td></tr>
+    <tr><td class="room">Workbench</td>
+      <td class="forlorn"><i class="bx"></i><span class="eff"></span></td>
+      <td class="rung"><i class="bx"></i><span class="eff"><span class="cost">3 Wood, 1 Stone</span>Make things</span></td>
+      <td class="rung"><i class="bx"></i><span class="eff"><span class="cost">2 Stone, 2 Salvage</span>Make two things a night</span></td></tr>
+    <tr><td class="room">Knitting corner</td>
+      <td class="forlorn"><i class="bx"></i><span class="eff"></span></td>
+      <td class="rung"><i class="bx"></i><span class="eff"><span class="cost">2 Wood, 2 Fiber</span>Knit from patterns</span></td>
+      <td class="rung"><i class="bx"></i><span class="eff"><span class="cost">2 Silk</span>Knit two things a night</span></td></tr>
+    <tr><td class="room">The back room</td>
+      <td class="forlorn"><i class="bx"></i><span class="eff"></span></td>
+      <td class="rung"><i class="bx"></i><span class="eff"><span class="cost">A Shovel and a Mend</span>Dig it out</span></td>
+      <td class="rung"><i class="bx"></i><span class="eff"></span></td></tr>
+  </table>
+
+  <div>
+    <h2>Stockpile</h2>
+    <div class="stock">
+      <div class="mat"><b>Wood</b></div>
+      <div class="mat"><b>Stone</b></div>
+      <div class="mat"><b>Fiber</b></div>
+      <div class="mat"><b>Silk</b><span class="why">counts as Fiber</span></div>
+      <div class="mat"><b>Food</b><span class="why">keeps once the Pantry is Simple</span></div>
+      <div class="mat"><b>Salvage</b></div>
+    </div>
+  </div>
+
+  <div class="backlow">
+    <div class="keeps">
+      <h2>Keepsakes brought home</h2>
+      <div class="keep-row"><span></span><span><i class="bx"></i>Remembered</span></div>
+      <div class="keep-row"><span></span><span><i class="bx"></i>Remembered</span></div>
+      <div class="keep-row"><span></span><span><i class="bx"></i>Remembered</span></div>
+      <div class="keep-row"><span></span><span><i class="bx"></i>Remembered</span></div>
+      <div class="keep-row"><span></span><span><i class="bx"></i>Remembered</span></div>
+      <div class="keep-row"><span></span><span><i class="bx"></i>Remembered</span></div>
+      <div class="keep-row"><span></span><span><i class="bx"></i>Remembered</span></div>
+      <div class="keep-row"><span></span><span><i class="bx"></i>Remembered</span></div>
+      <div class="keep-row"><span></span><span><i class="bx"></i>Remembered</span></div>
+      <div class="keep-row"><span></span><span><i class="bx"></i>Remembered</span></div>
+    </div>
+    <div class="stack">
+      <div class="panel">
+        <h3>At the hearth</h3>
+        <p class="small" style="margin:0">Light the fire, then do one thing before you sleep: <b>Cook</b> (your day's Food, for a full belly), <b>Mend</b>, <b>Make</b>, <b>Knit</b> or <b>Remember</b>. No fire, you sleep Chilled.</p>
+      </div>
+      <div>
+        <h3>Made at the workbench</h3>
+        <table class="made small">
+          <tr><td>Shovel</td><td>2 Wood, 1 Stone</td><td>Hatchet</td><td>1 Wood, 2 Stone</td></tr>
+          <tr><td>Pick</td><td>1 Wood, 2 Salvage</td><td>Sled</td><td>3 Wood, 1 Fiber</td></tr>
+          <tr><td>Lantern</td><td>1 Salvage, 1 Fiber</td><td>Spear</td><td>2 Wood, 1 Stone</td></tr>
+          <tr><td>Bark shield</td><td>1 Wood, 1 Fiber</td><td></td><td></td></tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer"><span>No XP, no levels. The burrow is how you grow.</span><span>back</span></div>
+</section>
+</body>
+</html>
