@@ -51,6 +51,27 @@ Morning ☐☐☐☐ · Afternoon ☐☐☐☐ · Dusk ☐☐ · Night
 
 No XP, no levels. The burrow is how you grow.
 
+## Moves
+
+Roll only when the outcome is uncertain and failing costs something. Say what you're doing, and the GM names the move and the stat. Equal to or under is **done**. Up to 5 over is **at a cost**. More than that **fails**. When a rule names the failure (save or wet, save or stuck), it's pass or fail.
+
+A cost is one you can see: an extra hour, a Warmth step, a slot left behind, a noise, d4 damage. Advantage when a tool, a neighbour or a good plan helps. Disadvantage when a condition says so, or you're encumbered.
+
+| Move | Stat | Done | At a cost | Fails |
+| --- | --- | --- | --- | --- |
+| **Climb** a trunk, a bank, a beam, a drift | STR or DEX | You're up, or down | You make it, but it takes an extra hour, or something falls from your pack | You fall: d6 damage, back where you started |
+| **Sneak** past something, or up on it | DEX | It never knows. If you attack, you go first and roll d12 | You're past, but it heard something and is looking your way | It knows where you are, and it acts first |
+| **Cross** ice, a gap, a thin branch, running water | DEX | Across, dry | Across, but wet | You go in: wet, d4 damage, back where you started |
+| **Force** a lid, a stuck door, a stone, something caught | STR | It gives | It gives, but loudly, or mark a use on what you forced it with | It won't move. Find another way or another tool |
+| **Haul** a loaded sled, something heavy, someone who can't walk | STR | It moves at the usual pace | It moves, but each leg costs an extra hour | Not as you are. Lighten it, get help, or leave it |
+| **Search** for something you can name, an hour | WIL | You find it | You find it, but it took an extra hour | The hour's gone. The GM tells you one true thing about why |
+| **Read** tracks, a sky, a sound | WIL | Ask two: what was here, how long ago, where it went, what tomorrow's weather is | Ask one | Nothing you can trust |
+| **Lure** something out to where you want it | WIL | It comes where you want, when you want | It comes, but closer or sooner than you'd like. It acts first | It won't come, or it comes for you now |
+| **Talk round** someone wary, angry or afraid | WIL | They listen, and give you a straight answer | They listen, but want something first | They shut you out for today |
+| **Make do** a splint, a snare, a sling, a patch | DEX or WIL | It works until you're home | It works once | The materials are spent |
+
+The GM rolls tomorrow's weather when a Read asks for it, and keeps that roll.
+
 ## Fighting
 
 Almost everything out there is bigger than you. Running and hiding are always on the table.
