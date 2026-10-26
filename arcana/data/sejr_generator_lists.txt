@@ -678,7 +678,7 @@ empty_feature
   an echo that answers back
 
 trap_box
-  [trap_adj], [trap_noun.lowerCase]<div class\="box trap"><b>Type:</b> [trap_type]<br><b>Trigger:</b> [trap_trigger]<br><b>Damage and effect:</b> [trap_damage()]</div>
+  [trap_adj], [trap_noun.lowerCase]<div class\="box trap"><b>Type:</b> [trap_type]<br><b>Trigger:</b> [trap_trigger]<br><b>Damage and effect:</b> [trap_damage()]<br><b>Spot:</b> Perception DC 12, 13 or 14 by tier halts you. Otherwise DEX save: 1-9 full damage and the effect, 10-14 half, 15+ clear.</div>
 
 minor_hazard_box
   <div class\="box haz">[minor_hazard]</div>
@@ -735,7 +735,7 @@ hazard_weakening
   Magical silence
   Numbing cold
   Sickening smell
-  Sleep-inducing spores
+  Drowsing spores
   Confusing reflections
   Memory-stealing
 
@@ -783,21 +783,21 @@ trap_trigger
 
 trap_damage_low
   1d6
-  1d6, Sleep
-  1d6, Paralyze
-  1d6, Blind
+  1d6, Slowed until the end of their next turn (drowsing gas)
+  1d6, Restrained (escape DC 12)
+  1d6, Blinded until the end of their next turn
 
 trap_damage_mid
   2d8
-  2d8, Sleep
-  2d8, Paralyze
-  2d8, Confuse
+  2d8, Dazed until the end of their next turn (drowsing gas)
+  2d8, Restrained (escape DC 13)
+  2d8, Confused: the GM spends 1 of their actions next turn
 
 trap_damage_high
   3d10
-  3d10, Paralyze
-  3d10, Unconscious
-  3d10, Petrify
+  3d10, Restrained (escape DC 14)
+  3d10, Prone and Dazed until the end of their next turn
+  3d10, turning to stone: Restrained (escape DC 14); an ally can chip it free with an action, for 1d8 damage that ignores armor
 
 solo_adj
   Sneaky
@@ -903,7 +903,7 @@ rival_party_name
   The Silver Vipers
   The Crimson Skulls
   The Silent Blades
-  The Gilded Hands
+  The Sterling Scabbards
   The Shattered Shields
   The Shadow Seekers
   The Bloodhound Company

@@ -330,14 +330,23 @@ def rooms():
     room = block(h2("Rooms", "d10 + average level ÷ 3, rounded down, max 10"),
                  table(["d10", "Room", "Then"], [[str(i + 1), a, b] for i, (a, b) in enumerate(rr)], "dt", ["2.6em", "auto", "auto"]),
                  dtable("Empty feature", txt("empty_feature")))
-    trap = block(h2("Traps"), table(["d12", "Type", "Trigger"], [[str(i + 1), a, b] for i, (a, b) in enumerate(zip(txt("trap_type"), txt("trap_trigger")))], "dt", ["2.6em", "auto", "auto"]),
-                 table(["d4", "Tier 1", "Tier 2", "Tier 3"], [[str(i + 1), a, b, c] for i, (a, b, c) in
-                       enumerate(zip(txt("trap_damage_low"), txt("trap_damage_mid"), txt("trap_damage_high")))], "dt", ["2.6em", "auto", "auto", "auto"]),
+    trap = block(h2("Traps", "a trap is a single-use monster: count it as level 1, 2 or 4 by tier"),
+                 table(["d12", "Type", "Trigger"], [[str(i + 1), a, b] for i, (a, b) in enumerate(zip(txt("trap_type"), txt("trap_trigger")))], "dt", ["2.6em", "auto", "auto"]),
                  p("<b>Flavor.</b> " + ", ".join(txt("trap_adj")) + " · " + ", ".join(txt("trap_noun")) + "."))
+    run_trap = block(h2("Springing a trap", "after the Monsters &amp; More trap model"),
+                 "<ol class='steps'><li><b>Spot it.</b> A hidden trap: Perception DC 12, 13 or 14 by tier stops the hero short. An obvious hazard needs no roll; it costs time or a detour.</li>"
+                 "<li><b>Save.</b> Otherwise a DEX save, read as a band: <b>1–9</b> full damage and the effect; <b>10–14</b> half damage, no effect; <b>15+</b> clear.</li>"
+                 "<li><b>Never a lost turn.</b> No trap takes a hero's whole turn. Holds have an escape DC, and conditions end with the hero's next turn.</li></ol>",
+                 table(["d4", "Tier 1", "Tier 2", "Tier 3"], [[str(i + 1), a, b, c] for i, (a, b, c) in
+                       enumerate(zip(txt("trap_damage_low"), txt("trap_damage_mid"), txt("trap_damage_high")))], "dt small", ["2.4em", "auto", "auto", "auto"]),
+                 cls="wide")
     haz = block(h2("Hazards", "minor: one column (d3). Major: two or three"),
                 table(["d12", "Movement", "Damage", "Weakening"], [[str(i + 1), a, b, c] for i, (a, b, c) in
                       enumerate(zip(txt("hazard_movement"), txt("hazard_damage"), txt("hazard_weakening")))], "dt", ["2.6em", "auto", "auto", "auto"]),
-                p("<b>Major hazard</b> (d4): 1 movement and damage, 2 movement and weakening, 3 damage and weakening, 4 all three."))
+                p("<b>Major hazard</b> (d4): 1 movement and damage, 2 movement and weakening, 3 damage and weakening, 4 all three."),
+                "<ul><li><b>Movement</b> hazards are Difficult Terrain, or a DEX save to cross without falling Prone or sliding 2 spaces.</li>"
+                "<li><b>Damage</b> hazards deal 1d6 per tier to anyone who enters or starts a turn in them.</li>"
+                "<li><b>Weakening</b> hazards give disadvantage on one kind of roll, or Slowed or Blinded while inside. Never a lost turn.</li></ul>")
     mon = block(h2("Monsters, treasure, bosses"),
                 table(["d4", "Solo", "", "Treasure", "Boss"], [[str(i + 1), a, b, c, d] for i, (a, b, c, d) in enumerate(zip(
                     txt("solo_adj"), txt("solo_noun"), ["Hidden", "Guarded by a solo monster", "Protected by a trap", "Protected by a minor hazard"],
@@ -363,7 +372,7 @@ def rooms():
         table(["d4", "Lawful", "Neutral", "Chaotic"], [[str(r + 1)] + [tac[a][r] for a in ("Lawful", "Neutral", "Chaotic")] for r in range(4)], "dt small", ["2.4em", "auto", "auto", "auto"]),
         p("<b>Members.</b> Four, each a name, a level (d6) and a class (d6): " + ", ".join(txt("rival_class")) + "."),
         p("<b>Alignment</b> (d3) picks the tactics column."))
-    return chapter("Rooms and people", "what's behind each door on the map", cols(room, trap, haz, mon, npc, people, rival) + names)
+    return chapter("Rooms and people", "what's behind each door on the map", cols(room, trap, haz, mon, npc, people, rival) + run_trap + names)
 
 
 PATRONS = [
