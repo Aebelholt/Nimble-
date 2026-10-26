@@ -7,7 +7,7 @@ The goal: something to work toward. Stats rise by growing mushrooms in the back 
 ## The chain
 
 1. **The scratching.** Once the Hearth reaches Simple, the Broodmother scratches behind the chimney at night. She only hears it on nights she sleeps at home.
-2. **The Shovel.** It's on the workbench list: 2 Wood, 1 Stone, with the Workbench at Simple. Agnes and Pil can tell her it's what a mouse needs for frozen earth. *(Still open: how she learns of it.)*
+2. **The Shovel.** It's on the workbench list: 2 Wood, 1 Stone, with the Workbench at Simple. Agnes and Pil tell her it's what a mouse needs for frozen earth. Diggers know digging, and the Pit is where the DEX mushroom is too.
 3. **Dig it out.** That's the back room's Simple rung: a Shovel and a Mend. It wakes the Broodmother.
 4. **The Broodmother.** Her eggs, her warm earth, and your mother's last letter.
 5. **The cellar.** The back room's Good rung, blank today: **mushroom beds, 2 Wood, 1 Fiber.**
@@ -19,7 +19,7 @@ The goal: something to work toward. Stats rise by growing mushrooms in the back 
 | Mushroom | Raises | Source | How she gets it |
 | --- | --- | --- | --- |
 | **Red caps** (fly amanita) | STR | Murder | Murder has been on a red-cap binge, and that's where the killing came from, like the berserkers. Murder knows where they grow |
-| **Velvet shank** | DEX | Old stumps along the Bramble Hedge | Gathered there. It freezes solid and thaws all winter, and keeps growing |
+| **Velvet shank** | DEX | Gravel Pit, on the rotten props of the moles' caved-in tunnel | When she brings Agnes and Pil the 3 Wood to shore the tunnel, the old props come out with the shank on them. It freezes solid and thaws all winter, and keeps growing |
 | **Foxfire** | WIL | Tobben, at the Brook | Once she has helped Tobben and crossed on his stones both ways, he gives her the mycelium compound. The light he has is this |
 
 ## Growing
@@ -48,7 +48,6 @@ A straight fight is not the answer. Doors that already exist in the rules:
 
 ## Open
 
-- How she learns of the Shovel. Agnes and Pil are the current suggestion.
 - Do red caps cost something, the way they cost Murder? One option: eating them also gives Exhausted, a night of fever dreams.
 - Murder's want and grief.
 
