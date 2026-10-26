@@ -42,6 +42,7 @@ When a rule names the failure (save or get wet, save or stuck), it's pass or fai
 | Exhausted | A night without sleep | A night in a nest |
 | Injured | Hurt badly. Disadvantage on STR and DEX | Three nights at home |
 | Frostbitten | The GM says so. Disadvantage on DEX | Three nights at home |
+| Wet | Going through ice, sleet, a soaking. Warmth steps down on 1–3 | An hour by a fire |
 
 When a condition has no free pack slot, drop something in the snow to make room. When every pack slot holds a condition, you go down in the snow.
 
@@ -89,9 +90,11 @@ The same holds for them. When one fails its save, it's beaten: it flees or dies.
 
 Warmth is one die: d4, d6, d8, d10 or d12. Your clothes set your top die. You leave home at your top.
 
-**Roll Warmth** every hour you mark outdoors, twice an hour at Night. On a 1 or 2, step it down one size. Getting wet counts as rolling a 1.
+**Roll Warmth** every hour you mark outdoors, twice an hour at Night. On a 1 or 2, step it down one size, or on 1 to 3 while you're Wet.
 
 **At d4**, a step down puts a Chilled in a pack slot instead, and the die stays at d4.
+
+**Getting wet** steps Warmth down once and puts Wet in a pack slot. Shelter keeps the wind off but doesn't dry you. Only a fire does.
 
 **Warming up:**
 
@@ -106,7 +109,7 @@ Warmth is one die: d4, d6, d8, d10 or d12. Your clothes set your top die. You le
 | Scarf | Top die one step up |
 | Mittens | Top die one step up |
 | Felted boots | Deep snow costs no extra hour |
-| Waxed cloak | Getting wet is no longer a 1 |
+| Waxed cloak | You don't get Wet |
 
 ## Gathering and haul
 
@@ -177,7 +180,7 @@ Come home, light the fire, then do one thing before you sleep. No fire, you slee
 | Time | An hour on the track |
 | Cold | A Warmth step |
 | A thing | A random pack slot (d6) is lost, or mark 1–3 uses |
-| A condition | Exhausted, Injured, wet |
+| A condition | Exhausted, Injured, Wet |
 | Attention | A noise. Roll an encounter |
 
 **Usage.** Most things have 3 uses. Weapons and the bark shield mark one on a 4–6 after a fight. A stick or anything improvised marks one every fight. Matches mark one per fire, a lantern one per Night it's lit. Anything else marks one when it's used in a way that could break or spend it. At three it's broken or spent. A Make at the workbench clears every use on one thing, for 1 of what it's made from.
@@ -284,7 +287,7 @@ The back room wakes when the Hearth reaches Simple. Something scratches behind t
 
 Each threat has one answer. You fight spiders, hide from the crow, avoid the owl and wait out the ants.
 
-**The crow, by day.** Morning to Dusk. It has no stat block and can't be fought. Every Warmth 1 rolled in the open moves it one rung, and in open ground (Long Field, the Brook ice, the Larch clearing) a 2 counts too. If the pack holds any Salvage or keepsake, each counting roll moves it two rungs. Getting wet steps Warmth but isn't a rolled 1.
+**The crow, by day.** Morning to Dusk. It has no stat block and can't be fought. Every Warmth 1 rolled in the open moves it one rung, and in open ground (Long Field, the Brook ice, the Larch clearing) a 2 counts too. If the pack holds any Salvage or keepsake, each counting roll moves it two rungs. Getting wet steps Warmth down, but it isn't a rolled 1.
 
 1. A caw, far off.
 2. A black shape on a high branch. It turns its head when she moves.
