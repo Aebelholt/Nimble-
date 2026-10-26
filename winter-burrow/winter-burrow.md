@@ -45,7 +45,7 @@ When a rule names the failure (save or get wet, save or stuck), it's pass or fai
 
 When a condition has no free pack slot, drop something in the snow to make room. When every pack slot holds a condition, you go down in the snow.
 
-**The day.** Mark an hour for every hour of travel and every task. Between two places, it's the difference in their hours from home, at least 1.
+**The day.** Mark an hour for every hour of travel and every task. Places are joined by paths, and each path has its hours.
 
 Morning ☐☐☐☐ · Afternoon ☐☐☐☐ · Dusk ☐☐ · Night
 
@@ -226,7 +226,19 @@ Ask her one question: *What did you bring from the city that you couldn't leave 
 
 ## GM: The wood
 
-Hours are counted from the beech, and they already count deep snow. Between two places, it's the difference, at least 1. The Brook splits the map: the Larch, the Shed, Long Field and the Weir all lie across it, and every crossing is a DEX save.
+The wood is a point crawl. Places are joined by paths, and each path has its hours, with deep snow already counted. The Hours column below is from the beech by the shortest way. The Brook splits the map: Underoak, the Larch, the Shed, Long Field and the Weir all lie across it, and every path over it is a DEX save.
+
+| Path | Hours |
+| --- | --- |
+| Beech roots to Bramble Hedge | 1 |
+| Beech roots to the Brook | 1 |
+| The Brook to Gravel Pit | 1 |
+| The Brook to Underoak, over the ice | 1 |
+| The Brook to Fallen Larch, over the ice | 1 |
+| Fallen Larch to the Shed | 1 |
+| The Shed to Long Field, deep snow | 2 (1 with boots) |
+| Long Field to the Weir, deep snow | 2 (1 with boots) |
+| Gravel Pit to the Weir, the moles' tunnel | 4, 3 of them underground |
 
 Shelter means no Warmth roll and the crow's ladder resets.
 
@@ -235,7 +247,7 @@ Shelter means no Warmth roll and the crow's ladder resets.
 | Beech roots | 0 | Home | 1 Wood a day | Home |
 | Bramble Hedge | 1 | No | Wood (deadfall), Fiber, Food | A red mitten frozen on the thorns. Jays work the hedge in the mornings |
 | The Brook | 1 | No | Stone | Ice over moving water: on each crossing, DEX save or go through and get wet. Tobben lives under the bank |
-| Underoak | 2 | If welcome | Trade | A hollow oak along the hedge line. Rask lives in it, and Nibs stops here |
+| Underoak | 2, across | If welcome | Trade | A hollow oak along the hedge line. Rask lives in it, and Nibs stops here |
 | Fallen Larch | 2, across | The hollow | Wood: 1 an hour, 2 with a Hatchet | An open clearing. Murder listens here at Dusk. A hollow in the trunk is webbed shut |
 | Gravel Pit | 2 | Below, with the moles | Stone; Salvage with a Pick | A cut bank of old human digging. Agnes and Pil live below. Something hunts the lower cut at Dusk |
 | The Shed | 3, across | Yes | Salvage, Fiber (a wool sock gives 2) | A garden shed with its door ajar. The cat sleeps on the step on clear days. Webs hang in the rafters. Under the potting bench are ash from a tiny fire and two scratches on a floorboard |
@@ -338,7 +350,7 @@ Roll 2d6 for weather each morning.
 | 9–11 | Overcast | Nothing |
 | 12 | Clear and crisp | Tracks show. The cat is on the Shed step |
 
-When she arrives somewhere outdoors, throw that hour's Warmth die with two d6 of different colours. On the first d6, a 1 is an encounter and a 2 is an omen, like tracks, a feather, or a silence where there was birdsong. For either, read the second d6 on the table below.
+When she arrives somewhere outdoors and stops there (not just passing through), throw that hour's Warmth die with two d6 of different colours. On the first d6, a 1 is an encounter and a 2 is an omen, like tracks, a feather, or a silence where there was birdsong. For either, read the second d6 on the table below.
 
 | d6 | Encounter |
 | --- | --- |

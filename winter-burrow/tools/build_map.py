@@ -9,8 +9,8 @@ def p(v):
 
 NODES = {  # name: (x, y, hours from home, label side)
     "Beech roots": (40, 90, "home", "below"),
-    "Bramble Hedge": (40, 56, "1", "left"),
-    "Underoak": (40, 20, "2", "left"),
+    "Bramble Hedge": (40, 50, "1", "left"),
+    "Underoak": (104, 19, "2", "right"),
     "The Brook": (72, 90, "1", "below"),
     "Gravel Pit": (72, 114, "2", "left"),
     "Fallen Larch": (110, 90, "2", "below"),
@@ -20,7 +20,7 @@ NODES = {  # name: (x, y, hours from home, label side)
 }
 EDGES = [  # a, b, label, style
     ("Beech roots", "Bramble Hedge", "1", "path"),
-    ("Bramble Hedge", "Underoak", "1", "path"),
+    ("The Brook", "Underoak", "1 · ice", "ice", 1, 9),
     ("Beech roots", "The Brook", "1", "path"),
     ("The Brook", "Gravel Pit", "1", "path"),
     ("The Brook", "Fallen Larch", "1 · ice", "ice", -1, 10),
@@ -61,9 +61,9 @@ tunnel = "M {} {} C {} {}, {} {}, {} {} S {} {}, {} {}".format(
 
 svg = [f'<svg width="{W}mm" height="{H}mm" viewBox="0 0 {p(W)} {p(H)}" xmlns="http://www.w3.org/2000/svg">',
        f'<path d="{brook}" class="brook"/>',
-       f'<text x="{p(99)}" y="{p(24)}" class="area">the Brook</text>',
+       f'<text x="{p(70)}" y="{p(40)}" class="area">the Brook</text>',
        f'<text x="{p(60)}" y="{p(8)}" class="side">this side</text>',
-       f'<text x="{p(104)}" y="{p(8)}" class="side">across</text>',
+       f'<text x="{p(140)}" y="{p(116)}" class="side">across</text>',
        f'<path d="{tunnel}" class="tunnel"/>',
        f'<text x="{p(150)}" y="{p(84)}" class="elab" text-anchor="middle">4 · moles\' tunnel</text>',
        f'<text x="{p(150)}" y="{p(88.4)}" class="elab small" text-anchor="middle">3 underground</text>']
