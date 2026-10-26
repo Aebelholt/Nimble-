@@ -191,7 +191,7 @@ Come home, light the fire, then do one thing before you sleep. No fire, you slee
 
 **Stats at 0.** STR 0: she goes down and wakes at STR 1, Frostbitten. DEX 0: she can't move until a night at home brings a point back. WIL 0: she's out of the scene, as if she'd gone down.
 
-**Who talks.** Mice and the neighbours talk. Birds, foxes, cats and spiders don't. When a creature's mood isn't obvious, roll 2d6:
+**Who talks.** Mice, the neighbours and Murder talk. Birds, cats and spiders don't. When a creature's mood isn't obvious, roll 2d6:
 
 | 2d6 | Mood | Ask yourself |
 | --- | --- | --- |
@@ -236,7 +236,7 @@ Shelter means no Warmth roll and the crow's ladder resets.
 | Bramble Hedge | 1 | No | Wood (deadfall), Fiber, Food | A red mitten frozen on the thorns. Jays work the hedge in the mornings |
 | The Brook | 1 | No | Stone | Ice over moving water: on each crossing, DEX save or go through and get wet. Tobben lives under the bank |
 | Underoak | 2 | If welcome | Trade | A hollow oak along the hedge line. Rask lives in it, and Nibs stops here |
-| Fallen Larch | 2, across | The hollow | Wood: 1 an hour, 2 with a Hatchet | An open clearing. A fox listens here at Dusk. A hollow in the trunk is webbed shut |
+| Fallen Larch | 2, across | The hollow | Wood: 1 an hour, 2 with a Hatchet | An open clearing. Murder listens here at Dusk. A hollow in the trunk is webbed shut |
 | Gravel Pit | 2 | Below, with the moles | Stone; Salvage with a Pick | A cut bank of old human digging. Agnes and Pil live below. Something hunts the lower cut at Dusk |
 | The Shed | 3, across | Yes | Salvage, Fiber (a wool sock gives 2) | A garden shed with its door ajar. The cat sleeps on the step on clear days. Webs hang in the rafters. Under the potting bench are ash from a tiny fire and two scratches on a floorboard |
 | Long Field | 5, across (4 with boots) | No | Nothing | Open snow with no shelter. Deep snow, so each hour costs two. Her staff stands upright halfway |
@@ -298,7 +298,9 @@ Each neighbour has a want, a grief and a gift. Play the grief through what they 
 | **Tobben**, toad under the Brook bank. Should be asleep for the winter and can't sleep | Dry moss for a bed (2 Fiber), and someone to sit with him an evening | His wife went down to sleep last autumn and didn't wake in spring | The stepping stones: cross the Brook with no save. He saw Marit cross late in the year, "with a pack bigger than her" |
 | **Rask**, old red squirrel at Underoak. Hoarded all autumn and can't remember where | His three caches found, at the Hedge, the Larch and the Pit. An hour's search each | Some mornings he forgets his own name | Each cache holds 4 Food and he gives her 2. His late mate's mittens pattern. Marit traded him honey for rope and asked about the Weir road |
 | **Agnes and Pil**, mole sisters under the Gravel Pit | 3 Wood cut with a Hatchet, to shore the caved-in tunnel to their grandmother's chamber. Wolf spiders come up the cut at Dusk and keep driving them off the work | Pil says Grandmother is dead. Agnes won't let her say it. Grandmother is alive and very hungry | The long tunnel under Long Field: 3 hours from the Pit with no Warmth rolls, coming out an hour from the Weir. The felted boots pattern |
-| **Nibs**, shrew pedlar on the road. Has to eat every few hours or he turns mean | A hot meal every time you meet (1 Food) | Everyone he loved is a day's walk behind him and keeps getting further | Gives 1 Salvage for 1 Food. The waxed cloak pattern. He's carrying Marit's lantern (3 uses), her initials scratched in the brass, and he'll part with it for 3 Food |
+| **Nibs**, shrew inventor on the road, working on a waxen coat. Has to eat every few hours or he turns mean | A hot meal every time you meet (1 Food) | Everyone he loved is a day's walk behind him and keeps getting further | Gives 1 Salvage for 1 Food. The waxed cloak pattern. He's carrying Marit's lantern (3 uses), her initials scratched in the brass, and he'll part with it for 3 Food |
+
+**Murder**, a fox. She befriended it on the road and gave it a hat. Told it needed a name, it chose one for what it's good at.
 
 **Underoak** ☐☐☐
 
@@ -343,6 +345,6 @@ When she arrives somewhere outdoors, throw that hour's Warmth die with two d6 of
 | 1 | A jay turning snow for seeds. It wants what's in your pack and will follow, loudly. 4hp, DEX 15, d6 peck |
 | 2 | Nibs on the path, shaking |
 | 3 | A web strung across the way, fresh and glistening. A web-weaver sits above it |
-| 4 | By day, a fox, head cocked, listening at the snow. It hasn't heard you yet. 15hp, STR 15, DEX 15, d8 bite. At Dusk or Night, d3 wolf spiders instead |
+| 4 | By day, Murder, the fox in her hat, head cocked, listening at the snow. 15hp, STR 15, DEX 15, d8 bite. At Dusk or Night, d3 wolf spiders instead |
 | 5 | A wolf spider dragging something wrapped in silk. It hasn't seen you |
 | 6 | By day, an ant column across the way. At Dusk, the owl on a low branch, watching. At Night, the owl rule |

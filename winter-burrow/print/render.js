@@ -10,7 +10,7 @@ const { chromium } = require("playwright");
 
 const here = __dirname;
 const outDir = process.argv[2];
-const DOCS = { "character-sheet": 2, "primer": 2, "gm-sheet": 2, "reference": 1 };
+const DOCS = { "character-sheet": 2, "primer": 2, "gm-sheet": 2, "reference": 1, "wood-map": 1 };
 const MIN_PT = 8;
 
 (async () => {
