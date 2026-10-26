@@ -317,7 +317,7 @@ Class arcana first, then found arcana. No notes or prior review included.
 - Wallwalker (Passive, while chosen): Climb sheer surfaces and walk on water.
 - Drowsing Pollen (once, when chosen): One creature of level 5 or lower within 2 spaces makes a WIL save, DC 13, or falls asleep: Incapacitated for 1d4 rounds, or until it takes damage.
 
-**Escalation.** Each time the case empties, the Stain advances for good. 1: fingertips blacken, advantage on Finesse, and you can no longer feel heat or cold through them. 2: veins darken, +1 Initiative, your pulse is audible. 3: eyes black, you see in the dark, strangers flinch (disadvantage on Influence). Stage 3 is the last Stain. After it, the bloom roots in your palm: you no longer need the case to carry the petals, and no one can take them from you.
+**Escalation.** Each time the case empties, the Stain advances for good. 1: fingertips blacken: advantage on Finesse, and disadvantage on Might, because your grip has gone numb. 2: veins darken: +1 Initiative, and disadvantage on Stealth, because your pulse is audible. 3: eyes black: you see in the dark, sunlight stings (disadvantage on Perception in daylight), and strangers flinch (disadvantage on Influence). Stage 3 is the last Stain. After it, the bloom roots in your palm: you no longer need the case to carry the petals, and no one can take them from you.
 
 ### The Oath-Band
 `oath_band` · found, Minor, level 1 draw
@@ -345,7 +345,7 @@ Class arcana first, then found arcana. No notes or prior review included.
 **Unlock.**
 - Learn which of the Lower Twelve it belongs to
 - Make a true offering at midnight
-- Risk: The patron takes a small price first. Make a WIL save, DC 12. On a success it takes only your name for a week. On a failure it takes a memory, and the GM names which.
+- Risk: The patron takes a small price first. Make a WIL save, DC 12. On a success it takes only your name until the next episode: no one who meets you remembers it afterward. On a failure it takes a memory, and the GM names which.
 
 **Resource: Tithe (pip tracker).** Tithe (pip tracker, max 3). Gain 1 Tithe each time you Call In. Tithe clears only when you do the patron a favor the GM presents.
 
@@ -353,7 +353,7 @@ Class arcana first, then found arcana. No notes or prior review included.
 - Call In (Action, +1 Tithe): Name one small, specific impossibility, and the GM approves it before you take the Tithe. Examples: a door opens, a lie is believed, or a creature within 6 spaces is Dazed until the end of its next turn (WIL save, DC 13, negates).
 - Warm (Passive): The symbol grows hot when a worshipper of the Lower Twelve is within 6 spaces.
 
-**Escalation.** If you Call In with 3 Tithe, the patron collects first. Roll a d6. 1 Newt: you are Tiny and Incapacitated for 3 rounds. 2 Imps: lose 2 random items. 3 Salt ring: you cannot cross it until it breaks. 4 Cobwebs: no arcanum use until you atone. 5 Nemesis: someone is born who will hunt you. 6 Wither: take 1 Wound.
+**Escalation.** If you Call In with 3 Tithe, the patron collects first. Roll a d6. 1 Newt: you are Tiny and Incapacitated for 3 rounds. 2 Imps: lose 2 random items. 3 Salt ring: a ring of salt closes around your space, and you cannot leave it until someone else spends an action to scatter it. 4 Cobwebs: no arcanum use until you do the favor that clears Tithe. 5 Nemesis: a stranger swears to hunt you; write them a thread card (if the board is full, tick the closest clock). 6 Wither: take 1 Wound.
 
 ### The Valkyrie's Feather
 `valkyries_feather` · found, Minor, level 1 draw
@@ -435,7 +435,7 @@ Class arcana first, then found arcana. No notes or prior review included.
 **Object.** Full plate with two boilers on the back and a servo at every joint. One of a kind, built to someone's measure, and not to yours. The boiler plate is stamped with the mark of Vathrex's Forge.
 
 **Unlock.**
-- Find the workshop that built it
+- Learn at Vathrex's Forge whose measure it was built to, and why that owner never came for it
 - Have it refitted to you, which costs a favor the makers name
 - Stoke it yourself, the first time
 - Risk: The refit fails on a test fire. 1d6 fire damage and a week of repairs.

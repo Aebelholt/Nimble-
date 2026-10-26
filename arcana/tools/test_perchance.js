@@ -10,7 +10,7 @@ const path = require("path");
 const root = path.resolve(__dirname, "..");
 const src = fs.readFileSync(path.join(root, "data/sejr_arcana_perchance.txt"), "utf8");
 const cards = JSON.parse(fs.readFileSync(path.join(root, "data/sejr_arcana.json"), "utf8"));
-const genLists = fs.readFileSync(path.join(root, "sources/sejr_generator_lists.txt"), "utf8");
+const genLists = fs.readFileSync(path.join(root, "../reference/sources/sejr_generator_lists.txt"), "utf8");
 
 function parse(text) {
   const lists = {}, fns = {};

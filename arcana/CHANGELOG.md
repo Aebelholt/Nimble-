@@ -141,6 +141,11 @@ A second model audited the deck from `analysis/blind_audit_prompt.md`. Triage in
 - `print/arcana_cards.pdf`: 39 A6 card fronts, four per A4 sheet (name, d20 face or pool, object, and empty Unlock, Power and Price panels).
 - `print/arcana_stickers.pdf`: the matching stickers for full-sheet A4 sticker paper, numbered and labelled by card and panel; Power stickers carry a pip track. Built by `tools/build_print.py`, rendered by `tools/render_print.js`, which shrinks text to fit and fails if anything overflows.
 
+### Round 2 audit fixes (`analysis/blind_audit_result_2.md`)
+- Of its ten ranked fixes, six were already on the cards from rounds 4-6 (Gate Chain, Hellhide, Rusted Spear, Zephyr, Codex, legacy faces). Two were GM calls and stay as they are: the Hut (kept, round 5) and the Kettle Plate's free crossbow (kept, round 3).
+- **Applied:** Kettle Plate's first unlock step asks whose measure the plate was built to, since the Forge's stamp already answered "find the workshop". Black Lotus: each Stain now pairs its gain with a cost (Might, Stealth, Perception in daylight), which closes the open v7 question. Unpaid Favor: "your name for a week", Salt ring, Cobwebs' atonement and Nemesis now have effects in play.
+- `tools/test_perchance.js` reads the generator lists from `../reference/sources/` (broken by the repo tidy).
+
 ## Diversity, found pool: before and after
 
 | | Before (25) | After (24) |
