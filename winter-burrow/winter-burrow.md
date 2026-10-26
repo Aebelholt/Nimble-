@@ -374,5 +374,5 @@ When she arrives somewhere outdoors and stops there (not just passing through), 
 | 2 | Nibs on the path, shaking |
 | 3 | A web strung across the way, fresh and glistening. A web-weaver sits above it |
 | 4 | By day, Murder, the fox in her hat, head cocked, listening at the snow. 15hp, STR 15, DEX 15, d8 bite. At Dusk or Night, d3 wolf spiders instead |
-| 5 | A wolf spider dragging something wrapped in silk. It hasn't seen you |
+| 5 | Ground beetles, d6+4, packed in the leaf litter. Disturb them and they come as one (see Beetles) |
 | 6 | By day, an ant column across the way. At Dusk, the owl on a low branch, watching. At Night, the owl rule |
