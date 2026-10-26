@@ -146,7 +146,7 @@ The burrow is a sheet of rooms. Every room starts Forlorn, more an idea than a r
 | Hearth | Each night's fire costs 1 Wood | 2 Wood, 1 Stone | Fires at home are free | 1 Stone, 1 Salvage | Banked embers. Coming home also clears Hungry |
 | Door and tunnel | Roll d6 each night. On a 1, something gets in | 2 Wood | Nights at home are safe | 1 Salvage, 1 Fiber | A lamp at the door. Your last hour home rolls no Warmth |
 | Nest | Sleep restores d6 HP | 3 Fiber | +1 max HP. Sleep restores all HP | 2 Silk | +1 max HP. Each night here counts double for clearing Injured and Frostbitten |
-| Pantry | | 2 Wood, 1 Stone | Stored Food keeps. Guests can eat | 2 Wood, 1 Salvage | Cooked food travels. A full belly covers your first two rolls |
+| Pantry | Only 3 Food keeps at home. The rest is gone by morning | 2 Wood, 1 Stone | Stored Food keeps. Guests can eat | 2 Wood, 1 Salvage | Cooked food travels. A full belly covers your first two rolls |
 | Workbench | | 3 Wood, 1 Stone | Make things | 2 Stone, 2 Salvage | Make two things a night |
 | Knitting corner | | 2 Wood, 2 Fiber | Knit from patterns | 2 Silk | Knit two things a night |
 | The back room | | Dig it out: a Shovel and a Mend | ☐ | | |
