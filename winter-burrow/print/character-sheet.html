@@ -70,6 +70,8 @@
   .keep-row { display: grid; grid-template-columns: 1fr 22mm; gap: 2mm; align-items: end; height: 7mm; border-bottom: 0.5pt solid var(--hair); font-size: 8pt; }
   .keep-row .bx { margin: 0 0 0.6mm; }
   .made td { padding: 0.7mm 1.2mm; }
+  .beds td { padding: 1.2mm 1.2mm; height: 6.5mm; }
+  .beds td:first-child { width: 40%; }
 </style>
 </head>
 <body>
@@ -230,8 +232,8 @@
       <td class="rung"><i class="bx"></i><span class="eff"><span class="cost">2 Silk</span>Knit two things a night</span></td></tr>
     <tr><td class="room">The back room</td>
       <td class="forlorn"><i class="bx"></i><span class="eff"></span></td>
-      <td class="rung"><i class="bx"></i><span class="eff"><span class="cost">A Shovel and a Mend</span>Dig it out</span></td>
-      <td class="rung"><i class="bx"></i><span class="eff"></span></td></tr>
+      <td class="rung"><i class="bx"></i><span class="eff"><span class="cost">A Shovel and a Mend</span>Dug out</span></td>
+      <td class="rung"><i class="bx"></i><span class="eff"><span class="cost">2 Wood, 1 Fiber</span>Mushroom beds</span></td></tr>
   </table>
 
   <div>
@@ -263,7 +265,7 @@
     <div class="stack">
       <div class="panel">
         <h3>At the hearth</h3>
-        <p class="small" style="margin:0">Light the fire, then do one thing before you sleep: <b>Cook</b> (your day's Food, for a full belly), <b>Mend</b>, <b>Make</b>, <b>Knit</b> or <b>Remember</b>. No fire, you sleep Chilled.</p>
+        <p class="small" style="margin:0">Light the fire, then do one thing before you sleep: <b>Cook</b> (your day's Food, for a full belly), <b>Mend</b>, <b>Make</b>, <b>Knit</b>, <b>Remember</b> or <b>Seed</b>. No fire, you sleep Chilled.</p>
       </div>
       <div>
         <h3>Made at the workbench</h3>
@@ -273,6 +275,16 @@
           <tr><td>Lantern</td><td>1 Salvage, 1 Fiber</td><td>Spear</td><td>2 Wood, 1 Stone</td></tr>
           <tr><td>Bark shield</td><td>1 Wood, 1 Fiber</td><td></td><td></td></tr>
         </table>
+      </div>
+      <div>
+        <h3>Mushroom beds</h3>
+        <table class="beds small">
+          <tr><th>Kind</th><th>Nights lit</th><th>Eaten</th></tr>
+          <tr><td></td><td><i class="bx"></i><i class="bx"></i><i class="bx"></i></td><td><i class="bx"></i> +d3 ____</td></tr>
+          <tr><td></td><td><i class="bx"></i><i class="bx"></i><i class="bx"></i></td><td><i class="bx"></i> +d3 ____</td></tr>
+          <tr><td></td><td><i class="bx"></i><i class="bx"></i><i class="bx"></i></td><td><i class="bx"></i> +d3 ____</td></tr>
+        </table>
+        <p class="rule-note" style="margin:0">Fruits after three nights with the hearth lit. The first harvest of each kind: +d3 to a stat. Later: 2 Food.</p>
       </div>
     </div>
   </div>

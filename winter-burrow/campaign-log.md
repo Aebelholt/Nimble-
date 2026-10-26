@@ -19,13 +19,15 @@ What happened at the table. Where play changed canon, `winter-burrow.md` and the
 | Birds, foxes, cats and spiders don't talk | Murder talks |
 | Underoak along the hedge, this side of the Brook | Underoak across the Brook, 2 hours, over the ice |
 | Places listed by hours from home | The wood is a point crawl (`print/wood-map.pdf`) |
-| No beetles | Ground beetle swarms, run as minions (rules reference) |
+| No beetles | Ground beetle swarms, run as minions (rules reference). Encounter 5 |
+| Something scratches behind the wall | The Broodmother scratches behind the chimney, on nights she sleeps at home |
+| The back room's Good rung blank | Mushroom beds (2 Wood, 1 Fiber). Red caps STR from Murder, velvet shank DEX from the moles' props, foxfire WIL from Tobben. First harvest of each +d3 |
+| Murder's want, grief and gift open | Wants to murder something. Alone: it hurt its own family when they came between it and what it wanted. A red-cap binge made it a killer, and it knows where they grow |
 
 ## Open
 
 - The web-weaver that wrapped her: where did it go?
 - The two wolf spiders in the house: what became of them?
-- Murder's want, grief and gift. Blank on the GM sheet until play fills them.
 - Did Rask finding her count as helping a neighbour? It didn't fill an Underoak dot, since she was the one helped.
 
 ## Table notes

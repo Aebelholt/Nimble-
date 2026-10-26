@@ -1,6 +1,6 @@
 # Draft: the mushroom cellar
 
-Status: proposal, revised with Seb's calls. Not canon until Seb gives the go.
+Status: folded into canon. `winter-burrow.md` and the sheets are now the source; this note is the reasoning behind it.
 
 The goal: something to work toward. Stats rise by growing mushrooms in the back room, once it's dug out and taken from the Broodmother. Each kind raises one stat.
 
@@ -48,8 +48,7 @@ A straight fight is not the answer. Doors that already exist in the rules:
 
 ## Open
 
-- Do red caps cost something, the way they cost Murder? One option: eating them also gives Exhausted, a night of fever dreams.
-- Murder's want and grief.
+- None. Red caps give Exhausted. Murder's want and grief are in the neighbours table.
 
 ## What it touches
 

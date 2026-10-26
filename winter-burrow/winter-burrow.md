@@ -152,7 +152,16 @@ The burrow is a sheet of rooms. Every room starts Forlorn, more an idea than a r
 | Pantry | Only 3 Food keeps at home. The rest is gone by morning | 2 Wood, 1 Stone | Stored Food keeps. Guests can eat | 2 Wood, 1 Salvage | Cooked food travels. A full belly covers your first two rolls |
 | Workbench | | 3 Wood, 1 Stone | Make things | 2 Stone, 2 Salvage | Make two things a night |
 | Knitting corner | | 2 Wood, 2 Fiber | Knit from patterns | 2 Silk | Knit two things a night |
-| The back room | | Dig it out: a Shovel and a Mend | ☐ | | |
+| The back room | | A Shovel and a Mend | Dug out | 2 Wood, 1 Fiber | Mushroom beds |
+
+## Mushrooms
+
+Once the back room has its beds, you can grow mushrooms.
+
+- **Spawn** is a piece of mushroom or mycelium. It takes a slot until it's seeded, and it keeps until you have somewhere to seed it.
+- **Seed** it at the hearth as the night's one thing. One bed per kind, and the cellar holds three.
+- **It fruits after three nights** with the hearth lit. A night without a fire doesn't count.
+- **Harvest and eat it** as a Cook. The first harvest of each kind raises one stat by d3, both max and current. Later harvests are 2 Food.
 
 ## Hearth
 
@@ -163,6 +172,7 @@ Come home, light the fire, then do one thing before you sleep. No fire, you slee
 - **Make.** Make a tool at the workbench.
 - **Knit.** Knit a garment. A scarf can be knitted anywhere.
 - **Remember.** Hold something you brought home. The GM tells you what you remember.
+- **Seed.** Plant spawn in a mushroom bed.
 
 ## GM: Rules reference
 
@@ -281,7 +291,7 @@ Spiders live where it's warm and still: in shelter, down deep, and in the places
 | Shed rafters | 2 web-weavers | The wool sock. The ash and the scratches are under the bench below them |
 | The back room | Broodmother, in the warm earth behind the chimney | Your mother's letter |
 
-The back room wakes when the Hearth reaches Simple. Something scratches behind the wall at night. Say no more than that.
+Once the Hearth reaches Simple, the Broodmother scratches behind the chimney at night, on nights she sleeps at home. Say no more than that.
 
 ## GM: Beetles
 
@@ -323,16 +333,32 @@ Each neighbour has a want, a grief and a gift. Play the grief through what they 
 
 | Who | Wants | Grief | Gives |
 | --- | --- | --- | --- |
-| **Tobben**, toad under the Brook bank. Should be asleep for the winter and can't sleep | Dry moss for a bed (2 Fiber), and someone to sit with him an evening | His wife went down to sleep last autumn and didn't wake in spring | The stepping stones: cross the Brook with no save. He saw Marit cross late in the year, "with a pack bigger than her" |
+| **Tobben**, toad under the Brook bank. Should be asleep for the winter and can't sleep | Dry moss for a bed (2 Fiber), and someone to sit with him an evening | His wife went down to sleep last autumn and didn't wake in spring | The stepping stones: cross the Brook with no save. He saw Marit cross late in the year, "with a pack bigger than her". Once she has helped him and crossed on his stones both ways: the foxfire compound, the mycelium behind his light |
 | **Rask**, old red squirrel at Underoak. Hoarded all autumn and can't remember where | His three caches found, at the Hedge, the Larch and the Pit. An hour's search each | Some mornings he forgets his own name | Each cache holds 4 Food and he gives her 2. His late mate's mittens pattern. Marit traded him honey for rope and asked about the Weir road |
-| **Agnes and Pil**, mole sisters under the Gravel Pit | 3 Wood cut with a Hatchet, to shore the caved-in tunnel to their grandmother's chamber. Wolf spiders come up the cut at Dusk and keep driving them off the work | Pil says Grandmother is dead. Agnes won't let her say it. Grandmother is alive and very hungry | The long tunnel under Long Field: 3 hours from the Pit with no Warmth rolls, coming out an hour from the Weir. The felted boots pattern |
+| **Agnes and Pil**, mole sisters under the Gravel Pit | 3 Wood cut with a Hatchet, to shore the caved-in tunnel to their grandmother's chamber. Wolf spiders come up the cut at Dusk and keep driving them off the work | Pil says Grandmother is dead. Agnes won't let her say it. Grandmother is alive and very hungry | The long tunnel under Long Field: 3 hours from the Pit with no Warmth rolls, coming out an hour from the Weir. The felted boots pattern. The old tunnel props, with velvet shank on them. What digging frozen earth takes: a Shovel |
 | **Nibs**, shrew inventor on the road, working on a waxen coat. Has to eat every few hours or he turns mean | A hot meal every time you meet (1 Food) | Everyone he loved is a day's walk behind him and keeps getting further | Gives 1 Salvage for 1 Food. The waxed cloak pattern. He's carrying Marit's lantern (3 uses), her initials scratched in the brass, and he'll part with it for 3 Food |
-
-**Murder**, a fox. She befriended it on the road and gave it a hat. Told it needed a name, it chose one for what it's good at.
+| **Murder**, a fox in her hat. Told it needed a name, it chose one for what it's good at. A red-cap binge is where the killing came from, like the berserkers | To murder something. Sic it on the Broodmother, or any fight she can't win | Alone. It hurt its own family when they came between it and what it wanted | Knows where the red caps grow |
 
 **Underoak** ☐☐☐
 
 Fill a dot each time she properly helps a neighbour. At three, they start coming to her: someone at the door with Food, a paw on a Mend, a chair pulled up at her table. If she goes down, someone finds her and she wakes by their fire. Where it goes from there is play.
+
+## GM: Mushrooms
+
+| Mushroom | Raises | Where it comes from |
+| --- | --- | --- |
+| **Red caps** (fly amanita) | STR | Murder knows where they grow. Eating them also gives Exhausted: a night of fever dreams |
+| **Velvet shank** | DEX | The rotten props of the moles' caved-in tunnel. They come out when she brings Agnes and Pil the 3 Wood |
+| **Foxfire** | WIL | Tobben's compound, once she has helped him and crossed on his stones both ways |
+
+Don't name the stat until she eats it.
+
+**The Broodmother is a wall.** Fought straight, Sofie's mouse wins less than 1 in 10 (see `tools/brood_results.md`). The ways through:
+
+- **Murder.** It wants to murder something. A fox against a spider is a fair fight.
+- **The cold.** Dig through to the outside on a Bitter cold day. Spiders are slow, and she acts first.
+- **Fire** strips the egg sacs from the walls, and with them her reason to stay.
+- **Underoak.** With three dots, a neighbour might come and hold a light.
 
 ## GM: Marit
 
