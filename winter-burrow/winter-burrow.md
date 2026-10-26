@@ -283,6 +283,19 @@ Spiders live where it's warm and still: in shelter, down deep, and in the places
 
 The back room wakes when the Hearth reaches Simple. Something scratches behind the wall at night. Say no more than that.
 
+## GM: Beetles
+
+Ground beetles winter packed together in the leaf litter and under bark. Woken, they come as one. They're built from Flee Mortals' minion rules.
+
+**A swarm** is d6+4 beetles. Don't track their HP. Count them.
+
+- **Her hits:** each hit downs one beetle for every 2 damage, rounding up, so a 5 downs three. A set-up d12 can clear six.
+- **Their turn:** the swarm bites as one, 1 damage for each beetle on her, at most 2. Only two can get at a mouse at once.
+- **At half**, the rest scatter into the litter.
+- **In the cold:** in the open on a Bitter cold or Snowstorm day, she always acts first.
+
+Put the count on the table as dice or tokens, and take them away as they fall.
+
 ## GM: Sky and ground
 
 Each threat has one answer. You fight spiders, hide from the crow, avoid the owl and wait out the ants.

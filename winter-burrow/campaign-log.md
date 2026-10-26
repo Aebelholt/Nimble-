@@ -19,6 +19,7 @@ What happened at the table. Where play changed canon, `winter-burrow.md` and the
 | Birds, foxes, cats and spiders don't talk | Murder talks |
 | Underoak along the hedge, this side of the Brook | Underoak across the Brook, 2 hours, over the ice |
 | Places listed by hours from home | The wood is a point crawl (`print/wood-map.pdf`) |
+| No beetles | Ground beetle swarms, run as minions (rules reference) |
 
 ## Open
 
