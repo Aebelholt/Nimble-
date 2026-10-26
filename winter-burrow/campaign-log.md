@@ -32,5 +32,5 @@ What happened at the table. Where play changed canon, `winter-burrow.md` and the
 - Warmth didn't slow the game down.
 - Some rules were forgotten at the table.
 - Sofie wants a good initiative roll to do more than go first. Proposal with Seb.
-- Her mouse: STR 9, DEX 8, WIL 8, HP 2. See `tools/fight_results.md`.
+- Her mouse: STR 9, DEX 8, WIL 8, HP 2. See `tools/fight_results.md`. Answer: the Nest now adds +1 max HP at Simple and +1 at Good.
 - The map would work better as a point crawl than a list. Done.
