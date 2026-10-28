@@ -1,0 +1,164 @@
+{
+  "note": "Stage kits for the rule book. Tag format after the Without Number books: d6 each of Enemies, Friends, Complications, Things and Places. Names from the gazetteer are canon; everything else is table fodder until it's played.",
+  "stages": [
+    {
+      "n": 2,
+      "name": "Villas of the Second Rise",
+      "genre": "noir and intrigue",
+      "blurb": [
+        "Switchback roads climb from the city to a ridge of white villas pinned against the cliffs. Council members and the richest merchants live up here, behind the Silver Talons, a mercenary watch that answers to whoever pays the season's fee.",
+        "Nothing on the Second Rise is what it costs. Every house has a cellar older than the house, and a guest list that's really a list of debts. Jobs here are quiet: find what was lost before anyone notices, prove who did it without naming them, steal it back without breaking the glass."
+      ],
+      "play": "Run it as noir. Everyone is polite and everyone is lying about something small to hide something big. Violence is a scandal; a fight is loud, and the Silver Talons come.",
+      "canon": "Silver Talons (overseer Tanya Steelfang); Summervine Villa and Lady Elvenia Summervine (see the setting book's Summervine framework); the Reynold villa and the temple behind it.",
+      "tags": {
+        "Enemies": [
+          "A Council member covering a debt with someone else's crime",
+          "A Silver Talons sergeant selling the patrol schedule",
+          "A butler who has served three families and buried two",
+          "A masked cultist of the Nameless King at a garden party",
+          "A Black Hand fixer renting a villa under a dead man's name",
+          "An heir who hired someone to fail"
+        ],
+        "Friends": [
+          "Tanya Steelfang of the Silver Talons, who wants it kept quiet",
+          "A scullery maid who hears everything through the dumbwaiter",
+          "A Council clerk with a grudge and the right ledger",
+          "A carter on the switchbacks who counts who goes up and who comes down",
+          "A disgraced poet tutoring the rich children",
+          "A guard dog that likes one hero"
+        ],
+        "Complications": [
+          "The client is the culprit's spouse",
+          "A masquerade tonight: everyone is masked, the party too",
+          "The Silver Talons arrive and want the credit",
+          "A second crew was hired for the same job",
+          "The evidence is in a villa that's up for sale",
+          "A cliff slip opens the house into the mountain"
+        ],
+        "Things": [
+          "A signet that opens a Council vault",
+          "A letter that ruins an engagement",
+          "A private arch key, kept in a hatbox",
+          "A portrait with the wrong face painted over",
+          "A ledger of who owes Lady Summervine",
+          "A seed of a feral god in a reliquary"
+        ],
+        "Places": [
+          "Summervine's ballroom, its floor sprung for dancing",
+          "A wine cellar that goes deeper than the house",
+          "The switchbacks at night, a lamp every hundred paces",
+          "A roof garden over a sheer drop",
+          "The Reynold villa's broken back wall, and the temple behind it",
+          "The Silver Talons' gatehouse and its visitors' book"
+        ]
+      }
+    },
+    {
+      "n": 5,
+      "name": "Theater of Whispers",
+      "genre": "masks and secrets",
+      "blurb": [
+        "An open-air amphitheater older than anyone's records, free to all: plays every week, concerts every night, and bouts of non-lethal gladiatorial combat when the crowd wants blood that washes off. A gilded arch stands behind the stage, and now and then a stranger from another world steps through it in the middle of a show.",
+        "Under the stage a platform sinks on chains into halls of old props and older statues. The staff hear dead actors whispering their lines down there. Some say the vampires Vyctor and Evylend LeStrange, entertainers to the Nameless King, still keep their crypts below the lowest store."
+      ],
+      "play": "Masks and secrets: everyone has a role, and the job is to get someone to drop theirs. Scenes happen in front of a crowd that thinks it's part of the show.",
+      "canon": "Kaylex Thren, dragonborn master of revels; Bryessa Star, gnome singer; the under-theater and its thespian specters; Vyctor and Evylend LeStrange; the Night of the Dead play; the Whisper Company (Songweaver guild).",
+      "tags": {
+        "Enemies": [
+          "An understudy who wants the lead for good",
+          "A thespian specter stuck in a murderous role",
+          "A critic who blackmails with reviews",
+          "Vyctor LeStrange, a gracious host in the deep crypts",
+          "A gladiator throwing bouts for the Black Hand",
+          "A mask-maker whose masks don't come off"
+        ],
+        "Friends": [
+          "Kaylex Thren, desperate for the season to go on",
+          "Bryessa Star, who saw something below and won't go back",
+          "A stagehand who knows every trapdoor",
+          "An Archkeeper posted to catch arrivals through the gilded arch",
+          "A prompter who remembers every line ever spoken here",
+          "A retired gladiator who sells the safe routes under the stage"
+        ],
+        "Complications": [
+          "The show must go on: the job happens mid-performance",
+          "An arrival steps through the gilded arch on cue",
+          "The audience thinks the fight is part of the play",
+          "The platform drops and takes the party below",
+          "A whispering voice feeds one hero their lines",
+          "It's the Night of the Dead, and the vampire play is tonight"
+        ],
+        "Things": [
+          "A script nobody remembers writing",
+          "Evylend's wedding veil",
+          "A prop sword that turned out to be real",
+          "The prompt book, with a murder written in the margins",
+          "A mask that remembers its last wearer",
+          "The key to the platform winch"
+        ],
+        "Places": [
+          "The stage under the stars, the gilded arch behind it",
+          "The winch room beneath the platform",
+          "The prop halls: centuries of statues, some of them breathing",
+          "The dressing rooms, a mirror for every face",
+          "The gladiators' pit, sand over old blood",
+          "The LeStrange crypts, below the lowest prop store"
+        ]
+      }
+    },
+    {
+      "n": 6,
+      "name": "Arch of Kings",
+      "genre": "arrivals and the weird",
+      "blurb": [
+        "The largest arch anyone knows of: two hundred feet of banded bronze-coloured stone, raised at the start of the Nameless King's reign and never opened. Every arrival sees it first. Under it is a plaza of pilgrims, hawkers, sages and zealots, all waiting for something.",
+        "Nobody agrees what's on the other side. Old texts say Choul, where the demon prince Ibraxus waits to step through. Others say the Outside, or the heavens. In Sejr every key in the city is a small door; this is the big one, and everyone with a theory wants to be the one holding the key when it turns."
+      ],
+      "play": "Run the weird straight. Arrivals are frightened and strange, prophets are sometimes right, and the arch should feel like it's listening.",
+      "canon": "Dennyse Alakamp's stolen ritual book and the mage Drakus (setting hook); the Choul, Outside and heavens theories; the Children of Ibraxus; the Archkeepers who greet arrivals.",
+      "tags": {
+        "Enemies": [
+          "Drakus, a mage with a ritual to open it",
+          "A Child of Ibraxus counting the days to the Prince's coming",
+          "A sage who must be proved right, at any price",
+          "Masked thieves selling the arch's secrets one page at a time",
+          "Something that came through a smaller arch and thinks it's the vanguard",
+          "Lady Kalya, quietly buying the buildings around the base"
+        ],
+        "Friends": [
+          "Garland Willowmane's Archkeepers, greeting the lost",
+          "Dennyse Alakamp, retired, wounded, and owed",
+          "A sage of the Observatory who measures the arch's hum",
+          "A pilgrim who has prayed at its foot for forty years",
+          "A new arrival who remembers something about the other side",
+          "A bronze-smith who swears the arch isn't bronze"
+        ],
+        "Complications": [
+          "The arch hums, and every key in the city warms",
+          "Pilgrims, zealots and sages riot over a sign",
+          "Something knocks from the far side",
+          "A Golden Knight cordon: nobody in or out",
+          "The ritual needs a hero's arcanum",
+          "Arrivals through other arches all point at this one"
+        ],
+        "Things": [
+          "Dennyse's stolen ritual book",
+          "A rubbing of the arch's highest band",
+          "A coin from the first year of the Nameless King",
+          "A shard fallen from the keystone, still warm",
+          "A chart of the arch's shadow at every solstice",
+          "A pilgrim's offering box, full of keys"
+        ],
+        "Places": [
+          "The plaza beneath the arch, packed with pilgrims and hawkers",
+          "Dennyse's shop, floorboards up",
+          "The top of the arch, by scaffolding nobody admits to building",
+          "The Archkeepers' welcome hall and its gift baskets",
+          "A cellar where the arch's footing is carved with names",
+          "The Temple of the Three Sisters, where Drakus plans his ceremony"
+        ]
+      }
+    }
+  ]
+}

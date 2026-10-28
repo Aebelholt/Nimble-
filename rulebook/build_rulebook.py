@@ -323,6 +323,25 @@ def episode():
     return chapter("The episode", "how a session is rolled and run", cols(loop, stage, tier, arch, verb, butplus, guard) + '<div class="cols">' + hook + "</div>")
 
 
+STAGE_KITS = json.loads((ROOT / "rulebook/stages.json").read_text())["stages"]
+TAGS = ("Enemies", "Friends", "Complications", "Things", "Places")
+
+
+def stage_kits():
+    intro = p("A kit for each Stage the setting books cover least. Roll or pick from each column when a scene needs a face, a twist, "
+              "a prize or a place. Stage 1 and 3 lean on the gazetteer, Stage 4 on the Cliffs of the Dead chapter.", "intro")
+    out = intro
+    for k in STAGE_KITS:
+        here = [m for m in MONSTERS if k["n"] in stages_of(m["stage"])[0]]
+        mons = ", ".join(f"{E(m['name'])} <span class='muted'>(L{lvl(m)})</span>" for m in here)
+        tags = table(["d6"] + list(TAGS), [[str(i + 1)] + [E(k["tags"][t][i]) for t in TAGS] for i in range(6)],
+                     "dt small kit", ["2em"] + ["auto"] * 5)
+        out += f'<div class="kitpage">' + h2(f"Stage {k['n']} · {E(k['name'])}", E(k["genre"])) + \
+            '<div class="cols">' + "".join(p(E(b)) for b in k["blurb"]) + p("<b>At the table.</b> " + E(k["play"])) + \
+            p("<b>Canon to lean on.</b> " + E(k["canon"])) + p("<b>Who turns up.</b> " + mons + ".") + "</div>" + tags + "</div>"
+    return chapter("Stage kits", "Second Rise, the Theater, the Arch of Kings", out)
+
+
 def rooms():
     rr = [("Empty", "roll a feature"), ("Empty", "roll a feature"), ("Trap", "roll a trap"), ("Minor hazard", "one hazard"),
           ("Solo monster", "adjective and noun"), ("NPC", "d4 below"), ("Monster mob", "adjective and noun"),
@@ -443,7 +462,8 @@ def stages_of(s):
 
 
 def lvl(m):
-    ls = [x for x in m["levels"] if x != "Min"]
+    num = lambda x: eval(x) if re.fullmatch(r"\d+(/\d+)?", x) else 0
+    ls = sorted((x for x in m["levels"] if x != "Min"), key=num)
     return ls[0] if len(set(ls)) == 1 else f"{ls[0]}–{ls[-1]}"
 
 
@@ -564,7 +584,7 @@ FONTS = (ROOT / "rulebook/fonts/fonts.css").read_text()
 
 
 def main():
-    body = "".join([cover(), how_we_play(), make_hero(), arcana(), guilds(), episode(), rooms(), patrons(), trackers(), bia(),
+    body = "".join([cover(), how_we_play(), make_hero(), arcana(), guilds(), episode(), stage_kits(), rooms(), patrons(), trackers(), bia(),
                     monsters(), deck(), forge(), sheets()])
     OUT.write_text(f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Sejr rule book</title>
 <style>{FONTS}{CSS}</style></head><body>{body}</body></html>""")
