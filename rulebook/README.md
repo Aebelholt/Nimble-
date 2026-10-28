@@ -8,6 +8,7 @@ Every table is read from the repo, so a change to the generator lists, the deck,
 - `arcana/data/sejr_arcana.json`: the deck, in full (cut cards left out)
 - `arcana/data/sejr_guilds.json` and `arcana/data/sejr_table_rules.md`
 - `monster_book/entries` and `monster_book/member_meta.js`: the Stage index in *Who's out there*
+- `rulebook/stages.json`: Stage kits for the six city Stages and the five Neglect places (Without Number tag format, our own text)
 
 Rules that live only in `reference/setting/sejr_campaign_overview.md` (the session loop, patrons, trackers, Bia, the key-making front) are written into the builder as prose. Edit them there.
 

@@ -245,7 +245,7 @@ Names below exist in the setting books. Treat them as canon. Treat any claim abo
 - Core Bestiary stat blocks are the GM Guide's, regrouped by family and lightly formatted, with every level, HP, armor value and dice expression machine-checked against the Guide text. Judge their presentation (family grouping, wording of abilities, Stage, tables, Gig Fit, the index) and internal consistency, not the printed numbers.
 - Printed Core conditions stand, including the Basilisk's Petrified (three stacked Lithify gazes over 10 minutes) and the Specter's "set HP to 0".
 - The agency rule applies to converted and original entries only.
-- Stage assignments are by theme; the Guide gives none. Arch Guardians read "Any arch" on purpose. The Clay Guardian heals from fire on purpose. The Index of Named Moves rulings are accepted readings.
+- Stage assignments are by theme; the Guide gives none. Arch Guardians read "6, any arch" on purpose (the Arch of Kings, and every gate). The Clay Guardian heals from fire on purpose. The Index of Named Moves rulings are accepted readings.
 - Stat levels follow the Monster Builder table, not source levels. Entries cite a spreadsheet index of monster books; the text of 4e Monster Manuals 1 to 3, the Tales of the Valiant Monster Vault and Keith Ammann's tactics books was consulted for some entries, other books were not. Where a source line says original, no source text was used.
 - The Ochre Jelly appears twice on purpose (Core Oozes, and a Deathreach Elite).
 - Encounters at Stage 13 and above may depend on terrain; making every encounter context-independent was considered and deferred.
@@ -1002,7 +1002,7 @@ Stage 4, 7-12.
 | Specter | 3 | 34 | None | Fly 6 |
 | Wraith | 10 | 120 | None | Fly 6 |
 
-Stage 4, 11-12, 13+.
+Stage 4-5, 11-12, 13+.
 
 **Actions**
 *Specter*
@@ -1044,7 +1044,7 @@ Stage 4, 11-12, 13+.
 
 **Gig Fit**
 - Verb: Bury / Find
-- But+: Monster result at Stage 4 and Sunken Revvia (11-12) for specters, and 13+ for a wraith. Ghost stories belong here.
+- But+: Monster result at Stage 4, the under-theater at Stage 5, and Sunken Revvia (11-12) for specters, and 13+ for a wraith. Ghost stories belong here.
 - Patron hook: The Archkeepers want a haunted villa quieted. The family still lives there, and does not want it quiet. They are afraid of the ghost's silence.
 - City of Arches name: "Cold ones": Cliffs of the Dead name, and never said inside a graveyard.
 
@@ -1953,7 +1953,7 @@ Stage 1-8.
 | Clay Guardian | 5 | 49 | Medium | 6 |
 | Stone Guardian | 8 | 60 | Heavy | 6 |
 
-Stage Any arch.
+Stage 6, any arch.
 
 **Actions**
 *All members*

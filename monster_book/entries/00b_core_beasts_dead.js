@@ -393,7 +393,7 @@ module.exports = [
           A("Soul rend", "1 Action, ×2, Range 8", "1d4+10", "On damage, deal 1 Wound."),
         ] },
     ],
-    stats: { stage: "4, 11-12, 13+" },
+    stats: { stage: "4-5, 11-12, 13+" },
 
     tactics: "Wants the living to feel what it felt. Goes for the hero who holds the most life: the biggest, the healthiest. " +
       "Breaks off when the Shepherd's light shows.",
@@ -433,7 +433,7 @@ module.exports = [
     ],
     gigFit: {
       verb: "Bury / Find",
-      butPlus: "Monster result at Stage 4 and Sunken Revvia (11-12) for specters, and 13+ for a wraith. Ghost stories belong here.",
+      butPlus: "Monster result at Stage 4, the under-theater at Stage 5, and Sunken Revvia (11-12) for specters, and 13+ for a wraith. Ghost stories belong here.",
       patronHook: "The Archkeepers want a haunted villa quieted. The family still lives there, and does not want it quiet. They are afraid of the ghost's silence.",
       cityName: "\"Cold ones\": Cliffs of the Dead name, and never said inside a graveyard."
     }

@@ -1,6 +1,59 @@
 {
-  "note": "Stage kits for the rule book. Tag format after the Without Number books: d6 each of Enemies, Friends, Complications, Things and Places. Names from the gazetteer are canon; everything else is table fodder until it's played.",
+  "note": "Stage kits and Neglect places for the rule book. Tag format after the Without Number books: d6 each of Enemies, Friends, Complications, Things and Places. Names from the gazetteer are canon; everything else is table fodder until it's played.",
   "stages": [
+    {
+      "n": 1,
+      "name": "Market Square festival",
+      "genre": "comedy and heist",
+      "blurb": [
+        "Banners, awnings and stalls around a square megalith of grey volcanic stone carved with grim faces: one of the city's arches, and the busiest square in it. Traders from the Borderlands and from worlds through the arches sell food, gear and wonders at fair prices, and there is nearly always a festival on.",
+        "Jobs here are loud and quick. A crowd is cover, a festival is a timetable, and every stall is somebody's livelihood. Stage 1 is where heists go wrong in public and everyone ends up in the fountain."
+      ],
+      "play": "Run it as comedy with stakes. Chases knock over stalls, the crowd takes sides, and the worst outcome is being laughed out of the square, or arrested in front of it.",
+      "canon": "The megalith arch with grim faces; traders from the Borderlands and beyond the arches; the city's festivals (Celebration of the Found, Wolf Races, the Queen's High Day, Day of Sword and Fist).",
+      "tags": {
+        "Enemies": [
+          "A pickpocket ring run by a child in a borrowed crown",
+          "A food vendor whose dish shows visions, and who sells the visions back",
+          "A Council tax collector who changed the stall rents overnight",
+          "A rival crew fencing goods out of a pie cart",
+          "A stall-holder from beyond the arches who isn't what she looks like",
+          "A Black Hand enforcer collecting festival dues"
+        ],
+        "Friends": [
+          "A fruit seller who knows every face on the square",
+          "A festival marshal with a schedule and no authority",
+          "A street performer who'll make a scene on cue",
+          "A Golden Knight on festival duty who'd rather be anywhere else",
+          "A cartographer child who sells maps that are always right, once",
+          "A newly arrived trader who needs a translator and pays in curiosities"
+        ],
+        "Complications": [
+          "The festival parade cuts the square in half at noon",
+          "The thing to steal is the festival's prize",
+          "Two vendors sell the same item, and both are fakes",
+          "The megalith's faces start to move",
+          "A wolf race comes straight through the market",
+          "The crowd decides the party are the show"
+        ],
+        "Things": [
+          "A spice that lets you taste a memory",
+          "The festival prize: a gold-plated key",
+          "A ledger of stall rents and who paid in favours",
+          "A caged creature from beyond an arch, very rare and very hungry",
+          "A parcel addressed to someone who died yesterday",
+          "A map that's right once"
+        ],
+        "Places": [
+          "The megalith arch at the square's heart, its faces watching",
+          "A row of stalls on a rooftop, reached by ladders",
+          "The festival stage and the cellar under it",
+          "A pie shop with three exits and one window",
+          "The fountain everyone ends up in",
+          "The tax office overlooking the square"
+        ]
+      }
+    },
     {
       "n": 2,
       "name": "Villas of the Second Rise",
@@ -51,6 +104,112 @@
           "A roof garden over a sheer drop",
           "The Reynold villa's broken back wall, and the temple behind it",
           "The Silver Talons' gatehouse and its visitors' book"
+        ]
+      }
+    },
+    {
+      "n": 3,
+      "name": "Public Baths and the Falls of the Three Gods",
+      "genre": "rumor and romance",
+      "blurb": [
+        "At the north edge of the city, three faceless statues two hundred feet tall catch glacial water in their hands and pour it, warmed, into a pool stepped like an upside-down pyramid. Half the city comes here to bathe, swim and talk business with nothing to hide behind.",
+        "The baths are where rumours are born and deals are struck without paper. Newly arrived folk are sent here by the Archkeepers to calm down. Under the pool, huge pipes carry the outflow down into the Lost Cisterns, and things sometimes come back up."
+      ],
+      "play": "Rumor and romance: everyone is unarmed, half-dressed and talking. The job is usually a conversation, and the fight, when it comes, comes up out of the water.",
+      "canon": "The Falls of the Three Sisters (Levyl, Kryssa and Dura, faceless gods of good), the Public Baths, the drains to the Lost Cisterns, the rumour of hollow statues (Gelered Stonehome's map).",
+      "tags": {
+        "Enemies": [
+          "A gossip who sells rumours to both sides of a feud",
+          "A smiling Child of Ibraxus offering the water's blessing",
+          "A rival suitor with a hired thug in the steam room",
+          "Something large in the outflow pipes",
+          "A priest who claims one statue speaks only through him",
+          "A Black Hand banker who does business in the hot pool"
+        ],
+        "Friends": [
+          "A bath attendant who hears every whispered deal",
+          "An Archkeeper calming a terrified new arrival",
+          "Gelered Stonehome, old dwarf with a map of a tunnel into the statues",
+          "A lifeguard who's seen what comes up the drains",
+          "A matchmaker who owes a hero a favour",
+          "A pilgrim praying to the statues under the wrong god's name"
+        ],
+        "Complications": [
+          "Nobody is armed, the party included",
+          "Someone important is here incognito and wants it kept that way",
+          "The rumour the party started is now true",
+          "The water turns cold for the first time in living memory",
+          "A courtship, and the party is the chaperone",
+          "The pipes start to drain the wrong way"
+        ],
+        "Things": [
+          "A love letter in a waterproof pouch",
+          "A token said to cure whatever ails you, if you believe",
+          "Gelered's map to the hollow statue",
+          "A Council seal lost in the deep end",
+          "A drowned man's ring, still warm",
+          "A vial of water from the central statue's hands"
+        ],
+        "Places": [
+          "The stepped pool at full noon, every step crowded",
+          "The steam rooms, where nobody can see far",
+          "The private alcoves on the upper steps",
+          "A pump chamber behind the falls",
+          "The hollow inside the central statue",
+          "The outflow pipe mouth, where the cistern dark begins"
+        ]
+      }
+    },
+    {
+      "n": 4,
+      "name": "Cliffs of the Dead",
+      "genre": "ghost story",
+      "blurb": [
+        "West of the falls, the mountain is honeycombed with crypts, ossuaries, shrines and charnel pits, the oldest thousands of years deep. The Nameless King's magic twisted the veil here, so some of the dead don't rest, and the mountain slowly pulls its oldest tombs further in.",
+        "Tomb raiding is a crime, judged by the Magistrate of Tombs, a Council committee. It also licenses entry when an heir, preservation or a direct threat demands it. Stage 4 jobs are ghost stories with paperwork: who is allowed in, what they may carry out, and what follows them home."
+      ],
+      "play": "Ghost story: quiet, slow and sad before it is frightening. The dead want something specific, and the living usually want something they shouldn't have.",
+      "canon": "The Magistrate of Tombs and its licences; the Royal Tombs and their Golden Knight honour guard; the Arch of Threska; the Howling Catacombs and the corrupting spike; the Devouring Maw that draws old tombs deeper.",
+      "tags": {
+        "Enemies": [
+          "An unlicensed tomb crew with a forged Magistrate's writ",
+          "A ghost who thinks the party are its murderers",
+          "A necromancer collecting names for the Well of the Damned",
+          "A Golden Knight honour guard who takes bribes to look away",
+          "A family patriarch who wants his ancestor to stay dead, whatever it costs",
+          "Something that came through the Arch of Threska"
+        ],
+        "Friends": [
+          "A Magistrate of Tombs clerk who issues licences, slowly",
+          "A crypt keeper whose family has tended one tomb for nine generations",
+          "A mourner who visits a sealed crypt every day with fresh flowers",
+          "An heir with a genuine claim and no money",
+          "A priest of the Three Sisters who lays the restless to rest",
+          "A ghost who wants to help, and can't remember why"
+        ],
+        "Complications": [
+          "The licence covers this tomb but not the one behind its wall",
+          "The tomb has moved deeper since the map was drawn",
+          "The Night of the Dead: every tomb is open, and so is every door",
+          "The heir is the ghost",
+          "The relic is cursed to return here",
+          "A funeral procession is coming up the path right now"
+        ],
+        "Things": [
+          "A Magistrate's licence with someone else's name",
+          "A burial mask that whispers its owner's name",
+          "A royal signet from the Royal Tombs",
+          "A lantern that shows the dead",
+          "An ancestor's will, with a different heir",
+          "A shard of the corrupting spike"
+        ],
+        "Places": [
+          "The switchback funeral path up the cliff face",
+          "A family crypt with a door that opens inward only",
+          "The Royal Tombs, two Knights at the door",
+          "A charnel pit full of bones sorted by size",
+          "The Arch of Threska's hemispherical chamber",
+          "A tomb wall freshly broken through into somewhere older"
         ]
       }
     },
@@ -157,6 +316,238 @@
           "The Archkeepers' welcome hall and its gift baskets",
           "A cellar where the arch's footing is carved with names",
           "The Temple of the Three Sisters, where Drakus plans his ceremony"
+        ]
+      }
+    }
+  ],
+  "neglect": [
+    {
+      "name": "Revlend Marshes",
+      "where": "north and northwest: a hundred miles of lakes, pools and stilt villages",
+      "blurb": "Revlenders fish, hunt and keep to themselves in stilt villages like Heron's Stride, trading fish in the city for everything else. Their seasonal festivals draw city folk out. Under the water lie drowned temples, barrows and the black dragon Rynfeyr's tower.",
+      "canon": "Heron's Stride; Rynfeyr Blacktongue at Rynfeyr's Rest; Mirewraith's Barrow; Bloodrust Cove; the Tower of the Moons; Drowned Elvenya.",
+      "payoff": [
+        "Refugees from a stilt village fill a holding's street, carrying their nets",
+        "The fish stop coming: prices double at Market Square",
+        "Rynfeyr's tribute-collectors reach the city gate",
+        "Marsh fever arrives with a barge, and the Children of Ibraxus arrive to help",
+        "A supplier's boats go missing, and so does the supplier",
+        "Something follows the fish into the Lost Cisterns"
+      ],
+      "tags": {
+        "Enemies": [
+          "Rynfeyr's troll tribute-takers",
+          "A Bloodrust pirate fencing marsh relics",
+          "A cultist feeding the Skull of the World's End",
+          "A Revlender elder selling out a rival village"
+        ],
+        "Friends": [
+          "A Heron's Stride fisher who knows the safe channels",
+          "A festival-master who owes the city a favour",
+          "A barrow-warden who keeps the Eternal Blades asleep",
+          "A stilt-village healer short of everything"
+        ],
+        "Complications": [
+          "The channels move with the season",
+          "A festival is on, and outsiders are watched",
+          "The village is paying Rynfeyr and wants it kept quiet",
+          "The Tower of the Moons appears where the camp is"
+        ],
+        "Things": [
+          "A blade of the Nameless King's Eternal Blades",
+          "A season's catch, owed to someone",
+          "A lantern from Drowned Elvenya",
+          "A dragon's tally of who has paid"
+        ],
+        "Places": [
+          "Heron's Stride and its headless statue",
+          "A drowned temple lit from below",
+          "A barrow on a grassy hill, its stones pulled aside",
+          "The stormy Peak of Life Returned"
+        ]
+      }
+    },
+    {
+      "name": "Doorish Hills",
+      "where": "south and southwest: a hundred miles of farmland, canals and small temples",
+      "blurb": "The city's breadbasket: grain and cattle come in along the Suntouched Highway and the canals of Predalion's Belt. The Doorish keep many small temples to gods of food and fertility, and leave alone the tombs their eroding hills keep uncovering.",
+      "canon": "Village of Peat; Predalion's Belt; the Suntouched Highway; Briarheart Forest and the Arch of Flowers; Sevelet's Throne and the Blood Spears; Castle Nightfall.",
+      "payoff": [
+        "Grain stops at the trade festival: bread prices rise in the city",
+        "Farm families walk in along the highway with what they could carry",
+        "Highway bridges change hands, and tolls go up",
+        "Blood Spear skeletons claw up under the Watchtower of Averost and walk north",
+        "A holding's supplier of cheese, wool or ale goes silent",
+        "Gnolls raid a canal lock, and barges back up all the way to the city"
+      ],
+      "tags": {
+        "Enemies": [
+          "Gnoll raiders paid in grain",
+          "A highway bridge-holder charging double",
+          "Something under the Village of Peat",
+          "A Blood Spear revenant with old orders"
+        ],
+        "Friends": [
+          "A canal-lock keeper who logs every barge",
+          "A Peat farmer who saw something in Briarheart",
+          "A Golden Knight patrol stretched too thin",
+          "A shrine-keeper of a harvest god"
+        ],
+        "Complications": [
+          "The harvest festival is in a week",
+          "A canal lock is broken and the barges are stuck",
+          "The forest trails have moved again",
+          "The farmers don't want the city's help"
+        ],
+        "Things": [
+          "A seed-store that must reach the city",
+          "A Blood Spear banner",
+          "An offering left at the Arch of Flowers",
+          "A toll ledger from a highway bridge"
+        ],
+        "Places": [
+          "A canal lock on Predalion's Belt",
+          "The Village of Peat's market green",
+          "The Cairn of the Last Titan",
+          "A ruined watchtower in cow pasture"
+        ]
+      }
+    },
+    {
+      "name": "Deadlands",
+      "where": "west: a hundred miles of dust, cracked earth and dead trees up to the Shattered Teeth",
+      "blurb": "The Nameless King's mages tore the life out of this land. Caravans still cross it, and fewer arrive than set out. The walled City of Blades holds its edge, the Deadland Shadows keep the Oasis of Mother's Tears, and Vithra's idols stand in the dust.",
+      "canon": "The City of Blades; the Oasis of Mother's Tears and the Deadland Shadows; the Idol of the Serpent King (Vithra); Graydust Keep; the Crater of the White Spire.",
+      "payoff": [
+        "Caravans stop: anything from the west costs triple",
+        "The City of Blades sends an envoy, and a demand",
+        "Survivors stagger in, one more than left",
+        "The Serpent Cult recruits in the camps outside the walls",
+        "Dust storms reach the city and close the western gate",
+        "A holding's salt, glass or spice supplier never arrives"
+      ],
+      "tags": {
+        "Enemies": [
+          "A City of Blades champion looking for a fight to win",
+          "A Vithra priest at a blood-stained pool",
+          "A caravan master who sells his passengers",
+          "A mirage that speaks with a dead friend's voice"
+        ],
+        "Friends": [
+          "A Deadland Shadow guide who'll take the party to the oasis",
+          "A caravan cook who's crossed thirty times",
+          "A Graydust Keep sentry, the last of her company",
+          "A scholar measuring the White Spire's hum"
+        ],
+        "Complications": [
+          "The water ran out a day early",
+          "The caravan has one extra traveller",
+          "The City of Blades wants a duel first",
+          "The compass points at the White Spire"
+        ],
+        "Things": [
+          "A water-skin that never runs dry",
+          "A Serpent King idol's eye",
+          "Graydust Keep's command seal",
+          "A map to Thryne, walked to its end"
+        ],
+        "Places": [
+          "The walls of the City of Blades",
+          "The Oasis of Mother's Tears",
+          "A dry blood pool before Vithra's idol",
+          "Graydust Keep's skull-maw gate"
+        ]
+      }
+    },
+    {
+      "name": "Borderlands",
+      "where": "the near country: the roads, walls and outskirts where the city meets the three lands",
+      "blurb": "In the setting books the Borderlands are all three lands together. In Sejr this clock tracks the ring nearest the city: the gate roads, toll bridges, waystations and walled outskirts where marsh, hill and desert traffic meets the city's.",
+      "canon": "The City Walls; the Suntouched Highway into the city; Borderlands traders in Market Square. The ring itself is this book's reading of the setting.",
+      "payoff": [
+        "The gate queue stretches for a mile; nothing gets in on time",
+        "A Borderlands warlord hires guides who know the old tunnels",
+        "Waystations close and travellers camp against the walls",
+        "Bandits take a toll bridge and call it a charter",
+        "Market Square loses its outside traders for a festival",
+        "A holding's courier stops coming"
+      ],
+      "tags": {
+        "Enemies": [
+          "A warlord hiring tunnel guides",
+          "A toll-taker with a forged charter",
+          "A smuggler using a sealed gate",
+          "A Golden Knight captain taking a cut"
+        ],
+        "Friends": [
+          "A waystation keeper who feeds anyone",
+          "A gate clerk who can lose a name",
+          "A carter who runs all three roads",
+          "A Borderlands trader with family in the city"
+        ],
+        "Complications": [
+          "The gates close at dusk, and it's an hour to dusk",
+          "The road is fine; the bridge is gone",
+          "Two lands' traders are feuding at the gate",
+          "Refugees and raiders look the same from the wall"
+        ],
+        "Things": [
+          "A gate pass, slightly forged",
+          "A waystation's strongbox",
+          "A warlord's map of the old tunnels",
+          "A cart of something nobody will name"
+        ],
+        "Places": [
+          "The gate queue at dawn",
+          "A waystation inn on the highway",
+          "A toll bridge over Predalion's Belt",
+          "The walled camp outside the western gate"
+        ]
+      }
+    },
+    {
+      "name": "Lower Reaches",
+      "where": "under the city: canals, everburning torches and miles of carved streets; also Stages 7-8",
+      "blurb": "The city beneath the city, crossed by murky canals and lit by everburning torches. It isn't lawless, only flexible, and the Black Hand runs it from Mekello. The further from the centre, the more desolate the streets.",
+      "canon": "Mekello and the Black Hand; Adel's Curio Shop; the Arena of Blood; the Black Goat's Tavern; the Rusty Cutlass and its job board; the Stacks; the Wreck of Saint Varrys and the Sodden Fiends.",
+      "payoff": [
+        "A street of the Reaches empties, and its people come up into a holding's district",
+        "Black Hand dues double, and the holding's landlord pays them",
+        "A gang war spills up through the cellars",
+        "The everburning torches go out in a whole district",
+        "A holding's fence, guide or supplier is found in a canal",
+        "Something from the deep streets moves into the Stacks"
+      ],
+      "tags": {
+        "Enemies": [
+          "A Black Hand collector with a new list",
+          "A Sodden Fiends captain from the Saint Varrys",
+          "An Arena promoter who fixes bouts",
+          "A Kartan experiment loose from the laboratories"
+        ],
+        "Friends": [
+          "Adel Rosethorn, who sells anything and hears everything",
+          "A Rusty Cutlass veteran who reads the job board",
+          "A Stacks tenant with nowhere else to go",
+          "A torch-lighter who walks every street"
+        ],
+        "Complications": [
+          "Violence at the Black Goat's Tavern is never forgiven",
+          "The canals rise with the rain above",
+          "The Black Hand already has an interest",
+          "The torches on this street are out"
+        ],
+        "Things": [
+          "A Black Hand ledger page",
+          "A token from the Black Goat",
+          "A fixed bout's betting slips",
+          "A key to a Stacks cell"
+        ],
+        "Places": [
+          "A canal market under a pillar-building",
+          "Mekello's outer houses",
+          "The Arena of Blood's sand floor",
+          "The listing decks of the Saint Varrys"
         ]
       }
     }

@@ -328,8 +328,8 @@ TAGS = ("Enemies", "Friends", "Complications", "Things", "Places")
 
 
 def stage_kits():
-    intro = p("A kit for each Stage the setting books cover least. Roll or pick from each column when a scene needs a face, a twist, "
-              "a prize or a place. Stage 1 and 3 lean on the gazetteer, Stage 4 on the Cliffs of the Dead chapter.", "intro")
+    intro = p("A kit for each city Stage. Roll or pick from each column when a scene needs a face, a twist, a prize or a place. "
+              "For Stages 7-8 use the Lower Reaches in <i>Neglect places</i>.", "intro")
     out = intro
     for k in STAGE_KITS:
         here = [m for m in MONSTERS if k["n"] in stages_of(m["stage"])[0]]
@@ -339,7 +339,22 @@ def stage_kits():
         out += f'<div class="kitpage">' + h2(f"Stage {k['n']} · {E(k['name'])}", E(k["genre"])) + \
             '<div class="cols">' + "".join(p(E(b)) for b in k["blurb"]) + p("<b>At the table.</b> " + E(k["play"])) + \
             p("<b>Canon to lean on.</b> " + E(k["canon"])) + p("<b>Who turns up.</b> " + mons + ".") + "</div>" + tags + "</div>"
-    return chapter("Stage kits", "Second Rise, the Theater, the Arch of Kings", out)
+    return chapter("Stage kits", "the six city Stages", out)
+
+
+NEGLECT = json.loads((ROOT / "rulebook/stages.json").read_text())["neglect"]
+
+
+def neglect_places():
+    intro = p("The places the party doesn't go. Each City episode ticks one of these clocks, hidden. When one fills, roll its payoff: "
+              "the place arrives at the party's door. Use the tags when an episode finally goes there.", "intro")
+    out = intro
+    for k in NEGLECT:
+        tags = table(["d4"] + list(TAGS), [[str(i + 1)] + [E(k["tags"][t][i]) for t in TAGS] for i in range(4)],
+                     "dt small kit", ["2em"] + ["auto"] * 5)
+        out += '<div class="kitpage">' + h2(E(k["name"]), E(k["where"])) + '<div class="cols">' + p(E(k["blurb"])) + \
+            p("<b>Canon to lean on.</b> " + E(k["canon"])) + dtable("When the clock fills", k["payoff"]) + "</div>" + tags + "</div>"
+    return chapter("Neglect places", "what the party skipped, and how it comes for them", out)
 
 
 def rooms():
@@ -584,7 +599,7 @@ FONTS = (ROOT / "rulebook/fonts/fonts.css").read_text()
 
 
 def main():
-    body = "".join([cover(), how_we_play(), make_hero(), arcana(), guilds(), episode(), stage_kits(), rooms(), patrons(), trackers(), bia(),
+    body = "".join([cover(), how_we_play(), make_hero(), arcana(), guilds(), episode(), stage_kits(), rooms(), patrons(), trackers(), neglect_places(), bia(),
                     monsters(), deck(), forge(), sheets()])
     OUT.write_text(f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Sejr rule book</title>
 <style>{FONTS}{CSS}</style></head><body>{body}</body></html>""")
