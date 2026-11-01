@@ -10,6 +10,16 @@ What happened at the table. Where play changed canon, `winter-burrow.md` and the
 - When she got back from Rask's, two wolf spiders were in the house. The Forlorn door had let something in.
 - She fixed the door. **Door and tunnel: Simple.**
 
+## Her sheet, as of the upload
+
+Otilla Ronnebær, Seamstress. STR 9, DEX 8, WIL 8, HP 3 (2 rolled, +1 from the Nest). Top Warmth d10 (city coat and scarf). Needle, skjold, city coat, scarf.
+
+- **Burrow:** Hearth, Door and tunnel, Nest, Pantry and Workbench at Simple. Knitting corner ticked at Good. Back room Forlorn.
+- **Stockpile:** Wood 4, Stone 5, Fiber 4, Silk 5, Food 7, Salvage 2.
+- **Keepsakes:** bridal gown and veil, toppe, the letter "Gem frøene", the web-weaver's tooth, 2 red mittens, knitting needles, an acorn cup, a human sock.
+- **Patterns:** scarf, and the hatchet (økse) noted as 1 Wood, 2 Stone.
+- Filled sheet: `characters/othilia.json`, built by `tools/make_fillable.sh`.
+
 ## Canon changes
 
 | Was | Now |
