@@ -110,6 +110,7 @@ Ratings are absolute power at that level, in core bands (U, R, VR, L; "U/R" is b
 
 ## Limits
 
+- Written at 47 cards. The Worldtree Whistle (a rising card) joined the live deck later, in round 8; `tools/power_curve.py` includes it, this table does not.
 - Ratings are judgement against the core's nine printed items and the GM Guide's tables; Nimble prints no items for levels 1-4 or 15-20 to compare. Confidence: medium on shapes, medium-low on exact bands.
 - The deck-mean line treats every card as equally likely to be held. Class arcana and faction rewards arrive later than draws, so the real held curve starts a little lower and falls a little later.
 - Minion damage against armor depends on the ruling in option 2; both readings are given.

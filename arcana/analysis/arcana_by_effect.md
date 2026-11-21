@@ -86,4 +86,4 @@ The eight are written as five-part cards with a Cracker line in `arcana_fold4_ca
 - `python3 -I tools/power_curve.py --draft`: the eight lift the deck's mean at levels 15-20 (1.95 to 1.99 at 20) and slightly lower it at level 1 (2.03 to 1.99).
 - A hand read against the rules found seven fixes, all applied: Assess options on the Calipers, the Whistle's companion cut from level minus 2 to minus 4, Bought Time paying directly so it cannot fund the Invest refill, the Seat's Safe Rest wording, the Chalk's rooms (plain, no upgrade slot, a clock to tick), a duplicated Chalk limit, and the Lamp's Hit Dice variant of Wound-cost.
 
-Open for fold 5: the Chalk's door cap, the Whistle's companion at table, and which of the eight to put in the draw.
+Round 8: the Worldtree Whistle is in the live deck on d20 face 18 (Sown Teeth moved to faction rewards). Open for fold 5: the Chalk's door cap and which of the other seven to put in the draw.

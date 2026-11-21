@@ -70,8 +70,40 @@ CAMPAIGN = """Sejr is an episodic, drop-in Nimble 2 campaign in the City of Arch
 - **Trackers carry memory.** A thread board of six index cards (one thread closes and one opens each episode), hidden Neglect clocks for the outer regions, six-step faction clocks. GM prep is the trackers and nothing else.
 - **Tiers.** Found arcana are Minor or Major. Class arcana are 1st echelon (levels 1-4). The found pool is 23 drawable cards plus faction rewards, diverse in look, role and mechanics.
 - **The GM, in their words:** these items are meant to be stronger than standard magic items, because they exist to drive player engagement. "Broken is not bad, because I will supercharge my combats and situations too." They are a very lenient GM: no player death across 4 systems and 7 groups.
-- **Since the first audit, the GM decided:** Major cards stay in the level 1 draw on purpose ("random players, huge powers; I'd be surprised if nothing cataclysmic came from this, and in that lies the fun"). Class arcana and the Forgotten Key are rewards, never drawn; each class arcanum comes from its class guild (section 7). Finite, never-refilling relics are intended. Three guild masters are left blank on purpose. The Drowning Scale's trigger (allies included) and the Hexing Needles' open "kind of roll" (attacks included, no save) are kept by choice. Canon is loose: the campaign uses the setting as a base, and a fact the books do not settle is a table roll, not an error. After a role review, four cards joined the draw (Gate Chain, Bear-Lodge Horn, Hut on Hen's Legs, Crafter's Codex) and four moved to faction rewards (Seven-Leaf Bracelet, Arch-Watch Mirror, Tide-Coat, Pitch-Sap Harness). The Hut on Hen's Legs stays as written: in a campaign of bottle episodes its travel lets the party take far-off jobs, and a Safe Rest ends an adventure anyway. The Valkyrie's claimed life stays: life comes cheap, and a player rolls a new hero (with a legacy bonus).
+- **Since the first audit, the GM decided:** Major cards stay in the level 1 draw on purpose ("random players, huge powers; I'd be surprised if nothing cataclysmic came from this, and in that lies the fun"). Class arcana and the Forgotten Key are rewards, never drawn; each class arcanum comes from its class guild (section 7). Finite, never-refilling relics are intended. Three guild masters are left blank on purpose. The Drowning Scale's trigger (allies included) and the Hexing Needles' open "kind of roll" (attacks included, no save) are kept by choice. Canon is loose: the campaign uses the setting as a base, and a fact the books do not settle is a table roll, not an error. After a role review, four cards joined the draw (Gate Chain, Bear-Lodge Horn, Hut on Hen's Legs, Crafter's Codex) and four moved to faction rewards (Seven-Leaf Bracelet, Arch-Watch Mirror, Tide-Coat, Pitch-Sap Harness). The Hut on Hen's Legs stays as written: in a campaign of bottle episodes its travel lets the party take far-off jobs, and a Safe Rest ends an adventure anyway. The Valkyrie's claimed life stays: life comes cheap, and a player rolls a new hero (with a legacy bonus). In round 8 the Worldtree Whistle took d20 face 18 and Sown Teeth moved to faction rewards; the Hut stays on face 19.
 - **Sources.** Many items are deliberate ports from other systems and real-world myth (Norse, Greek, Egyptian, fairy lore), justified because the arches lead to other realms. Stonetop's arcana are the main inspiration."""
+
+NEWEST = """The Worldtree Whistle (new, d20 face 18) and the Hut on Hen's Legs (face 19, kept as written by the GM) are the two draw cards that change what a whole party can do, not just one hero. The facts below are reference, not a verdict.
+
+**Monster Builder rows the Whistle reads (GM guide).** Unarmored HP and the damage of one attack:
+
+| Monster level | HP | One attack | Same-level attacks per turn |
+|---|---|---|---|
+| 1/2 | 15 | 4.5 (cannot crit) | 1 |
+| 1 | 21 | 7 | 1 |
+| 3 | 41 | 14 | 1 |
+| 6 | 75 | 24 | 1-3 |
+| 11 | 140 | 40 | 1-3 |
+| 16 | 219 | 55 | 1-3 |
+
+**What the Whistle's companion is, by hero level** (companion level is hero level minus 4, minimum 1/2; no armor, no crits, cannot Defend or Interpose; the player moves it and rolls for it after their own actions, at no action cost; Call costs 1 Action and 1 Trust per encounter):
+
+| Hero level | Companion level | HP | One attack | A d8-class hero for comparison |
+|---|---|---|---|---|
+| 1-4 | 1/2 | 15 | 4.5 | 13 HP at level 1 |
+| 5 | 1 | 21 | 7 | 33 HP |
+| 10 | 6 | 75 | 24 | 58 HP |
+| 15 | 11 | 140 | 40 | 83 HP |
+| 20 | 16 | 219 | 55 | 108 HP |
+
+An earlier draft used hero level minus 2 and was cut down because it made a full extra hero (100 HP and 30 damage at level 10).
+
+**Hut facts.** Home makes the hut a holding wherever it stands: a Safe Rest place for the owner and up to five guests (a Safe Rest recovers all HP, Hit Dice and class resources, and heals 1 Wound). Run carries everyone inside a day's overland travel in an hour. The Deadlands stretch about a hundred miles to the Shattered Teeth. Refills that need a place beyond the city are meant to need a gig, and the outer regions have hidden Neglect clocks. Stamp is 2d6 to every creature within 2 spaces of the hut, friends included.
+
+**Specific questions** (answer them inside the usual sections, not as a separate one):
+1. Whistle: is a companion at hero level minus 4 the right weight against the table above and against the deck's other summons (the Bear-Lodge Horn's Horde, the Hut's Stamp)? Check the free extra attack it adds each turn, what happens at 0 HP, whether the Mentor-downtime refill works off-screen for an absent player, and whether "no armor, no crits" is stated clearly enough to run.
+2. Hut: does Home plus Run remove the pressure that bottle episodes and gig-bound refills rely on (Safe Rest anywhere, far jobs in an hour, outer-region trips)? Does the Escalation ever fire if the hut is the party's bed? Rate it, and say whether the rating moves at this table.
+3. Together: a companion inside the hut, Stamp with a companion or ally adjacent, and Run carrying a companion."""
 
 CANON = """These names appear on the cards and exist in the setting books. Treat them as canon. Treat any claim about them that goes beyond this list (who wants what, what a place sells or allows) as possibly new canon and say so.
 
@@ -156,6 +188,7 @@ parts += [
     "\n- **Mage, Control Table:** " + mage_control_table(),
     "## 5. Setting names used on the cards\n\n" + CANON,
     "## 5b. Table rules for arcana\n\n" + (ROOT / "data/sejr_table_rules.md").read_text().split("\n", 2)[2].strip().replace("\n## ", "\n### "),
+    "## 5c. Two draw cards to examine closely\n\n" + NEWEST,
     "## 6. The cards\n\nClass arcana first, then found arcana. Each class arcanum belongs to the class named.\n\n" +
     "\n".join(card_md(c) for c in cards if c["kind"] == "class") + "\n" +
     "\n".join(card_md(c) for c in cards if c["kind"] == "found"),

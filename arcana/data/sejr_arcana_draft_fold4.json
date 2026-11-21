@@ -191,9 +191,9 @@
     ],
     "escalation": "If your companion drops to 0 HP, it flees and Trust falls to 0. It will not answer until you have spent a day finding it and caring for it. The hunters of Eruwynd hear the whistle was blown, and send one to ask what you have done with their beast.",
     "cracker": "Take the companion back to the dead Worldtree and let it choose. If it stays, it follows your level minus 2, not 4, and Heel costs it nothing. If it goes, it leads its herd to your call once per arc: three companions at your level minus 6. Either way a hunter of Eruwynd comes to see what the whistle called.",
-    "status": "draft",
+    "status": "promoted",
     "source": "fold 4 of analysis/arcana_by_effect.md",
-    "notes": "Fold 4. Rises with level (Monster Builder). The player runs the companion, which settles the table question. Level minus 4 keeps it near half a hero. At minus 2 it was a full extra hero: a 100 HP, 30 damage ally at level 10.",
+    "notes": "Fold 4. Rises with level (Monster Builder). The player runs the companion, which settles the table question. Level minus 4 keeps it near half a hero. At minus 2 it was a full extra hero: a 100 HP, 30 damage ally at level 10. PROMOTED to the live deck (data/sejr_arcana.json), d20 face 18, in round 8.",
     "matrix": {
       "tier": "Major",
       "resource_type": "pip tracker",

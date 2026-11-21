@@ -1,6 +1,6 @@
 # Blind audit: Sejr arcana deck
 
-You are auditing a deck of 39 magic items ("arcana") for a tabletop campaign. You have not seen any earlier review of this deck, and you should not try to guess what one said. Work from the material below only.
+You are auditing a deck of 40 magic items ("arcana") for a tabletop campaign. You have not seen any earlier review of this deck, and you should not try to guess what one said. Work from the material below only.
 
 ## Your job
 
@@ -42,7 +42,7 @@ Sejr is an episodic, drop-in Nimble 2 campaign in the City of Arches, a setting 
 - **Trackers carry memory.** A thread board of six index cards (one thread closes and one opens each episode), hidden Neglect clocks for the outer regions, six-step faction clocks. GM prep is the trackers and nothing else.
 - **Tiers.** Found arcana are Minor or Major. Class arcana are 1st echelon (levels 1-4). The found pool is 23 drawable cards plus faction rewards, diverse in look, role and mechanics.
 - **The GM, in their words:** these items are meant to be stronger than standard magic items, because they exist to drive player engagement. "Broken is not bad, because I will supercharge my combats and situations too." They are a very lenient GM: no player death across 4 systems and 7 groups.
-- **Since the first audit, the GM decided:** Major cards stay in the level 1 draw on purpose ("random players, huge powers; I'd be surprised if nothing cataclysmic came from this, and in that lies the fun"). Class arcana and the Forgotten Key are rewards, never drawn; each class arcanum comes from its class guild (section 7). Finite, never-refilling relics are intended. Three guild masters are left blank on purpose. The Drowning Scale's trigger (allies included) and the Hexing Needles' open "kind of roll" (attacks included, no save) are kept by choice. Canon is loose: the campaign uses the setting as a base, and a fact the books do not settle is a table roll, not an error. After a role review, four cards joined the draw (Gate Chain, Bear-Lodge Horn, Hut on Hen's Legs, Crafter's Codex) and four moved to faction rewards (Seven-Leaf Bracelet, Arch-Watch Mirror, Tide-Coat, Pitch-Sap Harness). The Hut on Hen's Legs stays as written: in a campaign of bottle episodes its travel lets the party take far-off jobs, and a Safe Rest ends an adventure anyway. The Valkyrie's claimed life stays: life comes cheap, and a player rolls a new hero (with a legacy bonus).
+- **Since the first audit, the GM decided:** Major cards stay in the level 1 draw on purpose ("random players, huge powers; I'd be surprised if nothing cataclysmic came from this, and in that lies the fun"). Class arcana and the Forgotten Key are rewards, never drawn; each class arcanum comes from its class guild (section 7). Finite, never-refilling relics are intended. Three guild masters are left blank on purpose. The Drowning Scale's trigger (allies included) and the Hexing Needles' open "kind of roll" (attacks included, no save) are kept by choice. Canon is loose: the campaign uses the setting as a base, and a fact the books do not settle is a table roll, not an error. After a role review, four cards joined the draw (Gate Chain, Bear-Lodge Horn, Hut on Hen's Legs, Crafter's Codex) and four moved to faction rewards (Seven-Leaf Bracelet, Arch-Watch Mirror, Tide-Coat, Pitch-Sap Harness). The Hut on Hen's Legs stays as written: in a campaign of bottle episodes its travel lets the party take far-off jobs, and a Safe Rest ends an adventure anyway. The Valkyrie's claimed life stays: life comes cheap, and a player rolls a new hero (with a legacy bonus). In round 8 the Worldtree Whistle took d20 face 18 and Sown Teeth moved to faction rewards; the Hut stays on face 19.
 - **Sources.** Many items are deliberate ports from other systems and real-world myth (Norse, Greek, Egyptian, fairy lore), justified because the arches lead to other realms. Stonetop's arcana are the main inspiration.
 
 ## 2. Design standard
@@ -313,7 +313,7 @@ Small house rules that sit beside the cards. The cards themselves live in `data/
 - Roll a d20 for one found arcanum on the ordered draw (`other_arcanum`, faces 1-20). Major cards are in the draw on purpose: the unlock is the gate, and a starting hero holding a campaign-changing relic is part of the fun.
 - **Legacy bonus.** Faces 21-23 hold the three strongest cards (`legacy_arcanum_top`: Hexing Needles, Bear-Lodge Horn, Axe of Nine Eyes). A player adds +1 to the draw for each of their heroes who died, retired, or was lost to an arcanum's Escalation, up to +3. In Perchance: `legacy_arcanum(bonus)`.
 - Take a holding, or join your class guild (`data/sejr_guilds.json`).
-- Class arcana are never drawn. A hero earns their class arcanum at Journeyman rank in their class guild. The Forgotten Key, Seven-Leaf Bracelet, Arch-Watch Mirror, Tide-Coat and Pitch-Sap Harness are faction rewards only.
+- Class arcana are never drawn. A hero earns their class arcanum at Journeyman rank in their class guild. The Forgotten Key, Seven-Leaf Bracelet, Arch-Watch Mirror, Tide-Coat, Pitch-Sap Harness and Sown Teeth are faction rewards only.
 
 ### Off-screen refills
 - Between episodes, each hero may make one refill off-screen, if it can be done inside the city. An off-screen refill restores 1 pip, or clears 1 point of accumulation, never the whole tracker: a vigil, a game of chance, a retelling to a new listener, a burial on the Cliffs of the Dead, hair, blood or cloth freely given by someone outside the party (Hexing Needles). Absent players may use it too, alongside their arcana-ritual tick.
@@ -335,6 +335,40 @@ Small house rules that sit beside the cards. The cards themselves live in `data/
 
 ### Long durations
 - A week, a lunar cycle, a full moon or a month on a card passes off-screen between episodes. Say it in the "last time" line. Absent players count it the same way.
+
+## 5c. Two draw cards to examine closely
+
+The Worldtree Whistle (new, d20 face 18) and the Hut on Hen's Legs (face 19, kept as written by the GM) are the two draw cards that change what a whole party can do, not just one hero. The facts below are reference, not a verdict.
+
+**Monster Builder rows the Whistle reads (GM guide).** Unarmored HP and the damage of one attack:
+
+| Monster level | HP | One attack | Same-level attacks per turn |
+|---|---|---|---|
+| 1/2 | 15 | 4.5 (cannot crit) | 1 |
+| 1 | 21 | 7 | 1 |
+| 3 | 41 | 14 | 1 |
+| 6 | 75 | 24 | 1-3 |
+| 11 | 140 | 40 | 1-3 |
+| 16 | 219 | 55 | 1-3 |
+
+**What the Whistle's companion is, by hero level** (companion level is hero level minus 4, minimum 1/2; no armor, no crits, cannot Defend or Interpose; the player moves it and rolls for it after their own actions, at no action cost; Call costs 1 Action and 1 Trust per encounter):
+
+| Hero level | Companion level | HP | One attack | A d8-class hero for comparison |
+|---|---|---|---|---|
+| 1-4 | 1/2 | 15 | 4.5 | 13 HP at level 1 |
+| 5 | 1 | 21 | 7 | 33 HP |
+| 10 | 6 | 75 | 24 | 58 HP |
+| 15 | 11 | 140 | 40 | 83 HP |
+| 20 | 16 | 219 | 55 | 108 HP |
+
+An earlier draft used hero level minus 2 and was cut down because it made a full extra hero (100 HP and 30 damage at level 10).
+
+**Hut facts.** Home makes the hut a holding wherever it stands: a Safe Rest place for the owner and up to five guests (a Safe Rest recovers all HP, Hit Dice and class resources, and heals 1 Wound). Run carries everyone inside a day's overland travel in an hour. The Deadlands stretch about a hundred miles to the Shattered Teeth. Refills that need a place beyond the city are meant to need a gig, and the outer regions have hidden Neglect clocks. Stamp is 2d6 to every creature within 2 spaces of the hut, friends included.
+
+**Specific questions** (answer them inside the usual sections, not as a separate one):
+1. Whistle: is a companion at hero level minus 4 the right weight against the table above and against the deck's other summons (the Bear-Lodge Horn's Horde, the Hut's Stamp)? Check the free extra attack it adds each turn, what happens at 0 HP, whether the Mentor-downtime refill works off-screen for an absent player, and whether "no armor, no crits" is stated clearly enough to run.
+2. Hut: does Home plus Run remove the pressure that bottle episodes and gig-bound refills rely on (Safe Rest anywhere, far jobs in an hour, outer-region trips)? Does the Escalation ever fire if the hut is the party's bed? Rate it, and say whether the rating moves at this table.
+3. Together: a companion inside the hut, Stamp with a companion or ally adjacent, and Run carrying a companion.
 
 ## 6. The cards
 
@@ -1036,8 +1070,26 @@ Class arcana first, then found arcana. Each class arcanum belongs to the class n
 
 **Escalation.** When you spend the last Ward, the chain locks: until the encounter ends, you cannot willingly move away from an enemy. The Wardens' Lodge hears the old gate chain rang again. They want it back on the gate, and their gate captain drinks where the wall guards drink.
 
+### The Worldtree Whistle
+`worldtree_whistle` · found, Major, level 1 draw
+
+**Object.** A whistle carved from a splinter of the dead Worldtree of Eruwynd, pale and light as bone, with a hunter's notch cut for every beast it has called. It came off a dwarven airship hunter who did not come back from the Endless Forest.
+
+**Unlock.**
+- Hunt beside a dwarven airship hunter of Eruwynd for a whole hunt, and share what you take
+- Blow the whistle alone at dusk at the foot of the dead Worldtree, and wait until something answers
+- Risk: What answers tests you first. Make a Naturecraft check, DC 14. On a failure it fights you as a monster of your level, and the bond takes only if you win without killing it.
+
+**Resource: Trust (pip tracker).** Trust (pip tracker, max 3). Spend 1 Trust each time you Call. Regain 1 each time you feed the companion from your own hand and hunt with it through a full day of downtime (the Mentor downtime, with the beast as your pupil). Trust returns only this way, and a companion with no Trust will not answer the whistle.
+
+**Powers.**
+- Call (Action, spend 1 Trust): Your companion arrives within 12 spaces and stays for the encounter, or for an hour outside one. Build it from the Monster Builder at your level minus 4 (minimum 1/2): its HP from the Unarmored column, one attack from the 1-attack damage column, Speed 6, no armor, no crits. You move it and roll for it on your turn, after your own actions. It cannot Defend or Interpose.
+- Heel (Free): Your companion moves to a space adjacent to you and makes no attack this round.
+
+**Escalation.** If your companion drops to 0 HP, it flees and Trust falls to 0. It will not answer until you have spent a day finding it and caring for it. The hunters of Eruwynd hear the whistle was blown, and send one to ask what you have done with their beast.
+
 ### The Sown Teeth
-`sown_teeth` · found, Major, level 1 draw
+`sown_teeth` · found, Major, faction reward
 
 **Object.** A hide satchel holding a handful of long dragon teeth from Drakeholm that click together like dice.
 

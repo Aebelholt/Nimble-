@@ -153,6 +153,10 @@ A second model audited the deck from `analysis/blind_audit_prompt.md`. Triage in
 - `analysis/arcana_by_effect.md` (folds 1-3) chose eight effects the deck lacks; `data/sejr_arcana_draft_fold4.json` holds them as five-part cards with Cracker lines, rendered in `analysis/arcana_fold4_cards.md`. Not in the live deck, the draw or the generator.
 - `tools/audit.py` takes an optional draft path. `tools/power_curve.py --draft` scores the eight. `tools/export_draft.py` renders a draft file.
 
+### Round 8: Worldtree Whistle into the draw
+- The Whistle takes d20 face 18, built at level minus 4. Sown Teeth, the weakest card in both assessments and an overlap with the Horn, moves to faction rewards. The Hut was already on face 19 and is unchanged. The draw is still 20 regular faces plus 3 legacy faces; the deck is 40 cards.
+- The audit prompt (`tools/export_blind_audit.py`) gains section 5c: Monster Builder rows, the companion's numbers by hero level, the Hut's travel and rest facts, and three specific questions. Print sheets, rule book, generator and exports rebuilt; the Perchance and generator tests pass.
+
 ## Diversity, found pool: before and after
 
 | | Before (25) | After (24) |

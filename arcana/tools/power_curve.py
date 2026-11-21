@@ -42,6 +42,7 @@ R = {
  "sown_teeth":("falls",[3,2.5,2,1.5,1],0),
  "hen_legs_hut":("story",[3,3,3,2.5,2.5],1),
  "crafters_codex":("falls",[1,1,1,0.5,0.5],0),
+ "worldtree_whistle":("rises",[1,1.5,2,2.5,3],0),  # live since round 8, d20 face 18
  # upload-only
  "envious_torque":("rises",[2,2,3,3,3.5],0),
  "bloodbound_bands":("rises",[1,1.5,2,2,2],0),
@@ -93,6 +94,7 @@ why={
 "sown_teeth":"As the Horn, and finite, so most teeth are spent while they are strong.",
 "hen_legs_hut":"Safe Rest anywhere and fast travel are campaign-shaping; Teleport (tier 6) catches Run late; Stamp's 2d6 fades.",
 "crafters_codex":"Double sale price matters less as gold piles up.",
+"worldtree_whistle":"Companion at level minus 4: a goblin at level 1, a level-6 monster at level 10. Scales with the Monster Builder.",
 "envious_torque":"Echoes or halves damage up to 2×LVL: grows with monster damage. Envy rarely fills (needs a higher-level foe).",
 "bloodbound_bands":"Shared Hit Dice grow; the 1-damage tax shrinks.",
 "key_of_inquiry":"Three true answers, or 30 minutes erased: ends mystery episodes at any level.",
@@ -111,7 +113,6 @@ DRAFT = {
  "iverundian_calipers": ("rises", [1, 1.5, 2.5, 3, 3], 0),
  "dead_gods_vial": ("flat", [2, 2, 2, 2, 2], 0),
  "veles_lamp": ("flat", [1.5, 1.5, 1.5, 1.5, 1.5], 0),
- "worldtree_whistle": ("rises", [1, 1.5, 2, 2.5, 3], 0),
  "silent_partner_chop": ("story", [2, 2, 2, 2, 2], 0),
  "standing_invitation": ("story", [2, 2, 2, 2, 2], 0),
  "deathreach_chalk": ("story", [2.5, 2.5, 2.5, 2.5, 2.5], 1),
@@ -121,7 +122,6 @@ DRAFT_WHY = {
  "iverundian_calipers": "Weakened X = level. Worth 1 against a level-1 monster's 7 damage, and all of a 3-attack monster's hit by level 10.",
  "dead_gods_vial": "Poisoned is disadvantage on everything and healing ends it. Holds at every level; Solo advantage and Taint cap the use.",
  "veles_lamp": "Light and fear immunity. Utility that does not scale; the Hit Die cost grows with the pool.",
- "worldtree_whistle": "Companion at level minus 4: a goblin at level 1, a level-6 monster at level 10. Scales with the Monster Builder.",
  "silent_partner_chop": "Payment of debts and a rumour per absence. Level-free; the gold sink scales.",
  "standing_invitation": "Access and a hook per Safe Rest. Level-free.",
  "deathreach_chalk": "Doors and walls through 2 spaces of stone. Terrain and route control (C) at every level.",

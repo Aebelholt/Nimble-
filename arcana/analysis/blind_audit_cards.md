@@ -1,4 +1,4 @@
-# Sejr arcana: 39 cards for blind audit
+# Sejr arcana: 40 cards for blind audit
 
 Class arcana first, then found arcana. No notes or prior review included.
 
@@ -698,8 +698,26 @@ Class arcana first, then found arcana. No notes or prior review included.
 
 **Escalation.** When you spend the last Ward, the chain locks: until the encounter ends, you cannot willingly move away from an enemy. The Wardens' Lodge hears the old gate chain rang again. They want it back on the gate, and their gate captain drinks where the wall guards drink.
 
+### The Worldtree Whistle
+`worldtree_whistle` · found, Major, level 1 draw
+
+**Object.** A whistle carved from a splinter of the dead Worldtree of Eruwynd, pale and light as bone, with a hunter's notch cut for every beast it has called. It came off a dwarven airship hunter who did not come back from the Endless Forest.
+
+**Unlock.**
+- Hunt beside a dwarven airship hunter of Eruwynd for a whole hunt, and share what you take
+- Blow the whistle alone at dusk at the foot of the dead Worldtree, and wait until something answers
+- Risk: What answers tests you first. Make a Naturecraft check, DC 14. On a failure it fights you as a monster of your level, and the bond takes only if you win without killing it.
+
+**Resource: Trust (pip tracker).** Trust (pip tracker, max 3). Spend 1 Trust each time you Call. Regain 1 each time you feed the companion from your own hand and hunt with it through a full day of downtime (the Mentor downtime, with the beast as your pupil). Trust returns only this way, and a companion with no Trust will not answer the whistle.
+
+**Powers.**
+- Call (Action, spend 1 Trust): Your companion arrives within 12 spaces and stays for the encounter, or for an hour outside one. Build it from the Monster Builder at your level minus 4 (minimum 1/2): its HP from the Unarmored column, one attack from the 1-attack damage column, Speed 6, no armor, no crits. You move it and roll for it on your turn, after your own actions. It cannot Defend or Interpose.
+- Heel (Free): Your companion moves to a space adjacent to you and makes no attack this round.
+
+**Escalation.** If your companion drops to 0 HP, it flees and Trust falls to 0. It will not answer until you have spent a day finding it and caring for it. The hunters of Eruwynd hear the whistle was blown, and send one to ask what you have done with their beast.
+
 ### The Sown Teeth
-`sown_teeth` · found, Major, level 1 draw
+`sown_teeth` · found, Major, faction reward
 
 **Object.** A hide satchel holding a handful of long dragon teeth from Drakeholm that click together like dice.
 
