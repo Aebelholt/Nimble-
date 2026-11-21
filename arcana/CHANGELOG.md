@@ -149,6 +149,10 @@ A second model audited the deck from `analysis/blind_audit_prompt.md`. Triage in
 ### Power curve
 - `analysis/power_curve.md`: every card rated at levels 1, 5, 10, 15 and 20 against the core rarity bands and the GM Guide's monster, minion and armor tables (scores in `tools/power_curve.py`). The deck sits at about Rare at every level and falls below band around level 8-10. Covers the 8 cards found only in the original JSON, now kept at `../reference/sources/sejr_arcana_original_44.json`. Options listed, none applied.
 
+### Fold 4: eight new cards (drafts)
+- `analysis/arcana_by_effect.md` (folds 1-3) chose eight effects the deck lacks; `data/sejr_arcana_draft_fold4.json` holds them as five-part cards with Cracker lines, rendered in `analysis/arcana_fold4_cards.md`. Not in the live deck, the draw or the generator.
+- `tools/audit.py` takes an optional draft path. `tools/power_curve.py --draft` scores the eight. `tools/export_draft.py` renders a draft file.
+
 ## Diversity, found pool: before and after
 
 | | Before (25) | After (24) |

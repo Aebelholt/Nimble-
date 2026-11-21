@@ -105,6 +105,40 @@ why={
 LV = [1, 5, 10, 15, 20]
 EXP = [0.5, 1.5, 2.5, 3.5, 4.0]  # core band expected at that level
 
+# Fold 4 drafts (data/sejr_arcana_draft_fold4.json), same scale. Kept apart so the live table is unchanged.
+DRAFT = {
+ "lich_muzzle": ("flat", [2, 2, 2, 2, 2], 0),
+ "iverundian_calipers": ("rises", [1, 1.5, 2.5, 3, 3], 0),
+ "dead_gods_vial": ("flat", [2, 2, 2, 2, 2], 0),
+ "veles_lamp": ("flat", [1.5, 1.5, 1.5, 1.5, 1.5], 0),
+ "worldtree_whistle": ("rises", [1, 1.5, 2, 2.5, 3], 0),
+ "silent_partner_chop": ("story", [2, 2, 2, 2, 2], 0),
+ "standing_invitation": ("story", [2, 2, 2, 2, 2], 0),
+ "deathreach_chalk": ("story", [2.5, 2.5, 2.5, 2.5, 2.5], 1),
+}
+DRAFT_WHY = {
+ "lich_muzzle": "Silenced counters casters at every level; a flat d20 save keeps DC 13 working. The self-silence is the cost.",
+ "iverundian_calipers": "Weakened X = level. Worth 1 against a level-1 monster's 7 damage, and all of a 3-attack monster's hit by level 10.",
+ "dead_gods_vial": "Poisoned is disadvantage on everything and healing ends it. Holds at every level; Solo advantage and Taint cap the use.",
+ "veles_lamp": "Light and fear immunity. Utility that does not scale; the Hit Die cost grows with the pool.",
+ "worldtree_whistle": "Companion at level minus 4: a goblin at level 1, a level-6 monster at level 10. Scales with the Monster Builder.",
+ "silent_partner_chop": "Payment of debts and a rumour per absence. Level-free; the gold sink scales.",
+ "standing_invitation": "Access and a hook per Safe Rest. Level-free.",
+ "deathreach_chalk": "Doors and walls through 2 spaces of stone. Terrain and route control (C) at every level.",
+}
+
+if "--draft" in sys.argv:
+    print("| Card | Shape | L1 | L5 | L10 | L15 | L20 | Why |\n|---|---|---|---|---|---|---|---|")
+    for k, (s, v, c) in DRAFT.items():
+        print(f"| {k}{' (C)' if c else ''} | {s} | " + " | ".join(lab[x] for x in v) + f" | {DRAFT_WHY[k]} |")
+    print()
+    for i, l in enumerate((1, 5, 10, 15, 20)):
+        a = [r[1][i] for r in R.values()]; b = a + [r[1][i] for r in DRAFT.values()]
+        print(f"L{l:<3} deck mean {sum(a)/len(a):.2f} -> {sum(b)/len(b):.2f} with the eight (drafts alone {sum(r[1][i] for r in DRAFT.values())/len(DRAFT):.2f})")
+    for s in ("falls", "flat", "rises", "story"):
+        print(s, sum(1 for r in R.values() if r[0] == s), "->", sum(1 for r in list(R.values()) + list(DRAFT.values()) if r[0] == s))
+    sys.exit()
+
 if "--table" in sys.argv:
     print("| Card | Shape | L1 | L5 | L10 | L15 | L20 | Why |\n|---|---|---|---|---|---|---|---|")
     for k, (s, v, c) in R.items():

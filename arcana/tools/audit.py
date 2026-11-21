@@ -16,12 +16,17 @@ Checks, per card (cut cards are skipped):
 
 Exceptions live in tools/audit_exceptions.json as {"card_id": {"check": "reason"}}.
 Exit status 1 if any check fails without an exception.
+
+Usage: audit.py [draft.json]. With a path, only that file's cards are audited, but their resource names are
+also checked against the live deck for duplicates.
 """
 import json, pathlib, re, sys
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 REF = ROOT.parent / "reference"
-CARDS = json.loads((ROOT / "data/sejr_arcana.json").read_text())
+LIVE = json.loads((ROOT / "data/sejr_arcana.json").read_text())
+DRAFT = pathlib.Path(sys.argv[1]) if len(sys.argv) > 1 else None
+CARDS = json.loads(DRAFT.read_text()) if DRAFT else LIVE
 EXC_PATH = ROOT / "tools/audit_exceptions.json"
 EXC = json.loads(EXC_PATH.read_text()) if EXC_PATH.exists() else {}
 
@@ -160,6 +165,10 @@ def main():
     active = [c for c in CARDS if c["status"] != "cut"]
     failed = excepted = 0
     names = {}
+    if DRAFT:
+        for c in LIVE:
+            if c["status"] != "cut":
+                names.setdefault(c["resource"]["name"], []).append(c["id"])
     for c in active:
         names.setdefault(c["resource"]["name"], []).append(c["id"])
     for c in active:

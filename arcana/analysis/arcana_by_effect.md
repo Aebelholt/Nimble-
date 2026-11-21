@@ -78,6 +78,12 @@ Costs (the bearer feels it), Connects (a named place, faction or tracker), Clean
 
 **Flags.** Companion actions (Whistle) need a rule for who plays the creature. The Chalk's door needs a cap. Both are fold 4 questions.
 
-## Fold 4, if you want it
+## Fold 4: done
 
-Pick any of the eight (or add concepts) and I write the five-part card with a Cracker line, then run the audit and the curve scoring. Or add a sweep first: for instance, one by the kinds of claimant the deck still lacks (the Children of Ibraxus, the Archkeepers).
+The eight are written as five-part cards with a Cracker line in `arcana_fold4_cards.md` (data in `data/sejr_arcana_draft_fold4.json`, outside the live deck and draw). Checks run:
+
+- `python3 -I tools/audit.py data/sejr_arcana_draft_fold4.json`: 8 cards, 0 failing. The live deck still audits at 0 failing.
+- `python3 -I tools/power_curve.py --draft`: the eight lift the deck's mean at levels 15-20 (1.95 to 1.99 at 20) and slightly lower it at level 1 (2.03 to 1.99).
+- A hand read against the rules found seven fixes, all applied: Assess options on the Calipers, the Whistle's companion cut from level minus 2 to minus 4, Bought Time paying directly so it cannot fund the Invest refill, the Seat's Safe Rest wording, the Chalk's rooms (plain, no upgrade slot, a clock to tick), a duplicated Chalk limit, and the Lamp's Hit Dice variant of Wound-cost.
+
+Open for fold 5: the Chalk's door cap, the Whistle's companion at table, and which of the eight to put in the draw.
