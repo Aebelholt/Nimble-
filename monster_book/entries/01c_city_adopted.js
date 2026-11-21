@@ -121,7 +121,7 @@ module.exports = [
           P("Spell-proof", "Half damage from spells."),
         ] },
     ],
-    stats: { stage: "Any arch" },
+    stats: { stage: "6, any arch" },
 
     tactics: "Holds the threshold and strikes everyone without the key. Fights only inside its leash.",
     sources: "Adopted from the setting: clay guardians at arches (Deathreach seed, Deadlands), skeletal tomb guardians (Threska seed), flesh and stone guardians. Keyed is this book's.",

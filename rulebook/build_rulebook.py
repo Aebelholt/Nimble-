@@ -323,6 +323,40 @@ def episode():
     return chapter("The episode", "how a session is rolled and run", cols(loop, stage, tier, arch, verb, butplus, guard) + '<div class="cols">' + hook + "</div>")
 
 
+STAGE_KITS = json.loads((ROOT / "rulebook/stages.json").read_text())["stages"]
+TAGS = ("Enemies", "Friends", "Complications", "Things", "Places")
+
+
+def stage_kits():
+    intro = p("A kit for each city Stage. Roll or pick from each column when a scene needs a face, a twist, a prize or a place. "
+              "For Stages 7-8 use the Lower Reaches in <i>Neglect places</i>.", "intro")
+    out = intro
+    for k in STAGE_KITS:
+        here = [m for m in MONSTERS if k["n"] in stages_of(m["stage"])[0]]
+        mons = ", ".join(f"{E(m['name'])} <span class='muted'>(L{lvl(m)})</span>" for m in here)
+        tags = table(["d6"] + list(TAGS), [[str(i + 1)] + [E(k["tags"][t][i]) for t in TAGS] for i in range(6)],
+                     "dt small kit", ["2em"] + ["auto"] * 5)
+        out += f'<div class="kitpage">' + h2(f"Stage {k['n']} · {E(k['name'])}", E(k["genre"])) + \
+            '<div class="cols">' + "".join(p(E(b)) for b in k["blurb"]) + p("<b>At the table.</b> " + E(k["play"])) + \
+            p("<b>Canon to lean on.</b> " + E(k["canon"])) + p("<b>Who turns up.</b> " + mons + ".") + "</div>" + tags + "</div>"
+    return chapter("Stage kits", "the six city Stages", out)
+
+
+NEGLECT = json.loads((ROOT / "rulebook/stages.json").read_text())["neglect"]
+
+
+def neglect_places():
+    intro = p("The places the party doesn't go. Each City episode ticks one of these clocks, hidden. When one fills, roll its payoff: "
+              "the place arrives at the party's door. Use the tags when an episode finally goes there.", "intro")
+    out = intro
+    for k in NEGLECT:
+        tags = table(["d4"] + list(TAGS), [[str(i + 1)] + [E(k["tags"][t][i]) for t in TAGS] for i in range(4)],
+                     "dt small kit", ["2em"] + ["auto"] * 5)
+        out += '<div class="kitpage">' + h2(E(k["name"]), E(k["where"])) + '<div class="cols">' + p(E(k["blurb"])) + \
+            p("<b>Canon to lean on.</b> " + E(k["canon"])) + dtable("When the clock fills", k["payoff"]) + "</div>" + tags + "</div>"
+    return chapter("Neglect places", "what the party skipped, and how it comes for them", out)
+
+
 def rooms():
     rr = [("Empty", "roll a feature"), ("Empty", "roll a feature"), ("Trap", "roll a trap"), ("Minor hazard", "one hazard"),
           ("Solo monster", "adjective and noun"), ("NPC", "d4 below"), ("Monster mob", "adjective and noun"),
@@ -330,14 +364,23 @@ def rooms():
     room = block(h2("Rooms", "d10 + average level ÷ 3, rounded down, max 10"),
                  table(["d10", "Room", "Then"], [[str(i + 1), a, b] for i, (a, b) in enumerate(rr)], "dt", ["2.6em", "auto", "auto"]),
                  dtable("Empty feature", txt("empty_feature")))
-    trap = block(h2("Traps"), table(["d12", "Type", "Trigger"], [[str(i + 1), a, b] for i, (a, b) in enumerate(zip(txt("trap_type"), txt("trap_trigger")))], "dt", ["2.6em", "auto", "auto"]),
-                 table(["d4", "Tier 1", "Tier 2", "Tier 3"], [[str(i + 1), a, b, c] for i, (a, b, c) in
-                       enumerate(zip(txt("trap_damage_low"), txt("trap_damage_mid"), txt("trap_damage_high")))], "dt", ["2.6em", "auto", "auto", "auto"]),
+    trap = block(h2("Traps", "a trap is a single-use monster: count it as level 1, 2 or 4 by tier"),
+                 table(["d12", "Type", "Trigger"], [[str(i + 1), a, b] for i, (a, b) in enumerate(zip(txt("trap_type"), txt("trap_trigger")))], "dt", ["2.6em", "auto", "auto"]),
                  p("<b>Flavor.</b> " + ", ".join(txt("trap_adj")) + " · " + ", ".join(txt("trap_noun")) + "."))
+    run_trap = block(h2("Springing a trap", "after the Monsters &amp; More trap model"),
+                 "<ol class='steps'><li><b>Spot it.</b> A hidden trap: Perception DC 12, 13 or 14 by tier stops the hero short. An obvious hazard needs no roll; it costs time or a detour.</li>"
+                 "<li><b>Save.</b> Otherwise a DEX save, read as a band: <b>1–9</b> full damage and the effect; <b>10–14</b> half damage, no effect; <b>15+</b> clear.</li>"
+                 "<li><b>Never a lost turn.</b> No trap takes a hero's whole turn. Holds have an escape DC, and conditions end with the hero's next turn.</li></ol>",
+                 table(["d4", "Tier 1", "Tier 2", "Tier 3"], [[str(i + 1), a, b, c] for i, (a, b, c) in
+                       enumerate(zip(txt("trap_damage_low"), txt("trap_damage_mid"), txt("trap_damage_high")))], "dt small", ["2.4em", "auto", "auto", "auto"]),
+                 cls="wide")
     haz = block(h2("Hazards", "minor: one column (d3). Major: two or three"),
                 table(["d12", "Movement", "Damage", "Weakening"], [[str(i + 1), a, b, c] for i, (a, b, c) in
                       enumerate(zip(txt("hazard_movement"), txt("hazard_damage"), txt("hazard_weakening")))], "dt", ["2.6em", "auto", "auto", "auto"]),
-                p("<b>Major hazard</b> (d4): 1 movement and damage, 2 movement and weakening, 3 damage and weakening, 4 all three."))
+                p("<b>Major hazard</b> (d4): 1 movement and damage, 2 movement and weakening, 3 damage and weakening, 4 all three."),
+                "<ul><li><b>Movement</b> hazards are Difficult Terrain, or a DEX save to cross without falling Prone or sliding 2 spaces.</li>"
+                "<li><b>Damage</b> hazards deal 1d6 per tier to anyone who enters or starts a turn in them.</li>"
+                "<li><b>Weakening</b> hazards give disadvantage on one kind of roll, or Slowed or Blinded while inside. Never a lost turn.</li></ul>")
     mon = block(h2("Monsters, treasure, bosses"),
                 table(["d4", "Solo", "", "Treasure", "Boss"], [[str(i + 1), a, b, c, d] for i, (a, b, c, d) in enumerate(zip(
                     txt("solo_adj"), txt("solo_noun"), ["Hidden", "Guarded by a solo monster", "Protected by a trap", "Protected by a minor hazard"],
@@ -363,7 +406,7 @@ def rooms():
         table(["d4", "Lawful", "Neutral", "Chaotic"], [[str(r + 1)] + [tac[a][r] for a in ("Lawful", "Neutral", "Chaotic")] for r in range(4)], "dt small", ["2.4em", "auto", "auto", "auto"]),
         p("<b>Members.</b> Four, each a name, a level (d6) and a class (d6): " + ", ".join(txt("rival_class")) + "."),
         p("<b>Alignment</b> (d3) picks the tactics column."))
-    return chapter("Rooms and people", "what's behind each door on the map", cols(room, trap, haz, mon, npc, people, rival) + names)
+    return chapter("Rooms and people", "what's behind each door on the map", cols(room, trap, haz, mon, npc, people, rival) + run_trap + names)
 
 
 PATRONS = [
@@ -434,7 +477,8 @@ def stages_of(s):
 
 
 def lvl(m):
-    ls = [x for x in m["levels"] if x != "Min"]
+    num = lambda x: eval(x) if re.fullmatch(r"\d+(/\d+)?", x) else 0
+    ls = sorted((x for x in m["levels"] if x != "Min"), key=num)
     return ls[0] if len(set(ls)) == 1 else f"{ls[0]}–{ls[-1]}"
 
 
@@ -555,7 +599,7 @@ FONTS = (ROOT / "rulebook/fonts/fonts.css").read_text()
 
 
 def main():
-    body = "".join([cover(), how_we_play(), make_hero(), arcana(), guilds(), episode(), rooms(), patrons(), trackers(), bia(),
+    body = "".join([cover(), how_we_play(), make_hero(), arcana(), guilds(), episode(), stage_kits(), rooms(), patrons(), trackers(), neglect_places(), bia(),
                     monsters(), deck(), forge(), sheets()])
     OUT.write_text(f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Sejr rule book</title>
 <style>{FONTS}{CSS}</style></head><body>{body}</body></html>""")

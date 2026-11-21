@@ -111,3 +111,6 @@ table.trk .stg { font-size: 8pt; }
 .rooms div { border: 0.6pt solid var(--rule); height: 24mm; padding: 1mm 1.5mm; }
 .rooms span { font-family: 'IM Fell English', serif; font-size: 12pt; }
 .cover .arch { width: 62mm; display: block; margin: 12mm auto 0; }
+.kitpage { break-inside: avoid; margin-bottom: 7mm; }
+.kitpage h2 { font-size: 18pt; }
+table.kit td { font-size: 8.2pt; }
