@@ -1,6 +1,6 @@
 # Review: Cracker lines 11-20 (proposed)
 
-Source: `Sejr_Cracker_Lines_11-20.md`. Read against the current card text, `power_curve.md` and the season mapping in `power_curve_vs_long_assessment.md`. Auditor notes only; fixes are at most two sentences.
+Source: the first draft of `Sejr_Cracker_Lines_11-39.md` (then 11-20). Its fixes are now applied there. Read against the current card text, `power_curve.md` and the season mapping in `power_curve_vs_long_assessment.md`. Auditor notes only; fixes are at most two sentences.
 
 ## Card by card
 
