@@ -2,13 +2,17 @@
 
 Compares `power_curve.md` (numbers against level) with *Sejr Arcana Assessment, long* (`Sejr_Arcana_Assessment_long.md`: meaning and loop against session count). They measure different things. On the structure they agree, and on most cards they complement each other.
 
-## The one assumption that decides how much the curve matters
+## Seasons decide which findings land when
 
-The long assessment plans for a **thirteen-session campaign**. The power curve assumed a full 1-20 run. Nothing in the repo fixes the length; the campaign overview gives only "milestone levelling every two to three episodes".
+Season 1 is 13 sessions; the campaign runs past it. At a level every two to three episodes:
 
-- **At thirteen sessions** heroes finish around **level 5-7**. The curve's crossover (level 8-10) never arrives. Every card stays at or above its band to the end, and the long assessment's middle-act plateau is the real problem.
-- **One power finding still lands inside thirteen sessions:** Medium armor from level 3 (around sessions 5-8) zeroes minion and flat-damage hits. The Horn, Sown Teeth, Kettle crossbow and Hut Stamp lose most of their combat value in the campaign's second half.
-- **At a full run** both problems stack: the arcanum stops giving the player a goal around session 4, and stops out-powering standard items around session 20-25.
+| Season | Sessions | Levels reached | What bites |
+|---|---|---|---|
+| 1 | 1-13 | about 5-7 | The long assessment's plateau: most arcana are awake by session 4 and become upkeep. Medium armor (from level 3, around sessions 5-8) zeroes minion and flat-damage hits: Horn, Sown Teeth, Kettle crossbow, Hut Stamp. Every card is still at or above its band. |
+| 2 | 14-26 | about 9-14 | The power curve's crossover (level 8-10, around sessions 18-27): most cards drop below band. Heavy armor from level 8. |
+| 3 | 27-39 | about 13-20 | Only the Rises and Story cards, and the Mortal Coil, keep pace. |
+
+So the two assessments describe the same deck one season apart. **The season break is the natural place for the Cracker or echelon stage:** it answers the season-1 plateau as season 2 opens, and gives the numbers a step just before the crossover.
 
 ## Where they agree
 
@@ -18,7 +22,7 @@ The long assessment plans for a **thirteen-session campaign**. The power curve a
 | Same fix | "A Cracker line for each card", tied to rank and post-wake absent ticks | "Echelon deepening": a second, third and fourth unlock on the held card at levels 5, 9 and 13 |
 | Flat-number cards are the weakest | Kettle Plate "reads as technology"; Tide-Coat and Pitch-Sap are chores | The same three, plus Sown Teeth, are in the Falls group |
 | Sown Teeth is the worst card | Finite, no arc, "just a bag" | Falls, finite, and spent while it is strong |
-| Rune Fragment is too big | Nine fragments in thirteen sessions | Its power rises with fragments found, so a short campaign never sees its peak |
+| Rune Fragment is too big | Nine fragments in thirteen sessions | Its power rises with fragments found, so season 1 never sees its peak; as a multi-season quest it fits |
 
 The two fixes can be one design. A Cracker stage keyed to a level band gives the player a goal past waking (their lens) and a step up in numbers (mine). That fills the empty University ranks.
 
@@ -58,12 +62,11 @@ Loop strength from the long assessment (strong and mid-strong counted as strong,
 
 - **Kettle Plate's "find the workshop" fetch** was replaced on branch `ccr-61edb5c2-15y1o4` (the unlock now asks whose measure the plate was built to). That branch is not on main yet, so the rule book appendix still shows the old line.
 - **Hellhide's Terror** lasts the encounter, so its tracking is per fight, not across the campaign. The load is small.
-- **The thirteen-session length** is not in the repo. If it is decided, put it in the campaign overview, because it changes which of these findings matter.
+- **Thirteen sessions is season 1**, not the whole campaign; now recorded in the campaign overview.
 
 ## Combined next steps (not done)
 
-1. Decide the campaign length. It sets whether the power curve matters beyond armor.
-2. One Cracker or echelon stage per card: a deed, a goal past waking, and a numeric step.
+1. One Cracker or echelon stage per card, opened at the season 1 to 2 break: a deed, a goal past waking, and a numeric step.
+2. Rule how hero minions meet armor before session 5 or so, when Medium armor can first appear.
 3. One d6-against-accumulation procedure for all five cards.
-4. One ruling for hero minions against monster armor.
-5. Shared refill gigs (the long assessment's idea), which also share out the later-level stages.
+4. Shared refill gigs (the long assessment's idea), which also share out the later-level stages.

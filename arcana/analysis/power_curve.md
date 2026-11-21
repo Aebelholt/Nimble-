@@ -14,7 +14,7 @@ Scope: the 39 active cards in `data/sejr_arcana.json`, plus the 8 cards that exi
 | 15 | Very Rare-Legendary | 2.0 | 1 | 1 | 45 |
 | 20 | Legendary | 1.95 | 0 | 1 | 46 |
 
-With milestone levels every two to three episodes, level 10 lands around episodes 20-27: about six months of weekly play. The "stronger than standard items" promise holds for the first half-year and then quietly expires, unless the GM keeps adding power some other way. The campaign-shaping cards (marked C) are the exception: their value is not measured in bands, and they keep shaping episodes at any level.
+With milestone levels every two to three episodes, level 10 lands around episodes 20-27: about six months of weekly play. Season 1 is 13 sessions and ends around level 5-7, so the crossover falls in season 2. The "stronger than standard items" promise holds for the first half-year and then quietly expires, unless the GM keeps adding power some other way. The campaign-shaping cards (marked C) are the exception: their value is not measured in bands, and they keep shaping episodes at any level.
 
 ## Why: four mechanisms in the GM Guide
 

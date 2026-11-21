@@ -20,6 +20,7 @@ Sessions run weekly for three hours with unknown attendance, so every session is
 - Heroes who are absent are elsewhere in the city. Their players tick an arcana ritual instead of losing progress.
 - Levels follow the group: new or returning players join at average group level, framed as the same hero "with a beard" in Mørk Borg style.
 - Milestone levelling every two to three episodes, so attendance never splits the party.
+- Season 1 is 13 sessions; heroes finish it around level 5-7.
 - Renown on the episode tables is capped at average group level.
 
 ## Session logic flow
