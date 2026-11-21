@@ -146,6 +146,9 @@ A second model audited the deck from `analysis/blind_audit_prompt.md`. Triage in
 - **Applied:** Kettle Plate's first unlock step asks whose measure the plate was built to, since the Forge's stamp already answered "find the workshop". Black Lotus: each Stain now pairs its gain with a cost (Might, Stealth, Perception in daylight), which closes the open v7 question. Unpaid Favor: "your name for a week", Salt ring, Cobwebs' atonement and Nemesis now have effects in play.
 - `tools/test_perchance.js` reads the generator lists from `../reference/sources/` (broken by the repo tidy).
 
+### Power curve
+- `analysis/power_curve.md`: every card rated at levels 1, 5, 10, 15 and 20 against the core rarity bands and the GM Guide's monster, minion and armor tables (scores in `tools/power_curve.py`). The deck sits at about Rare at every level and falls below band around level 8-10. Covers the 8 cards found only in the original JSON, now kept at `../reference/sources/sejr_arcana_original_44.json`. Options listed, none applied.
+
 ## Diversity, found pool: before and after
 
 | | Before (25) | After (24) |
